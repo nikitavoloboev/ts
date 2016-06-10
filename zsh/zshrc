@@ -10,6 +10,7 @@ source $ZPLUG_HOME/init.zsh
 
 
 #general
+alias sl='ln -s'
 alias tt='type'
 alias te='tree -a'
 alias p='python3'
