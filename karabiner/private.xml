@@ -1,0 +1,367 @@
+<?xml version="1.0"?>
+<root>
+
+<modifierdef>MY_CAPSLOCK</modifierdef>
+<modifierdef>MY_OPTION_L</modifierdef>
+<modifierdef>MY_CONTROL_L</modifierdef>
+
+<!-- can use constant 'US' when I want to use items specific only to US keyboard -->
+<inputsourcedef>
+<name>US</name>
+<inputsourceid_prefix>com.apple.keylayout.US</inputsourceid_prefi>
+</inputsourcedef>
+
+
+<!-- paths to files, creates constants I can use -->
+<vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_APP_Sublime Text</name>
+<url type="file">/Applications/Sublime Text.app</url>
+</vkopenurldef>
+
+<vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_APP_MindNode</name>
+<url type="file">/Applications/MindNode.app</url>
+</vkopenurldef>
+
+<vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_APP_Ulysses</name>
+<url type="file">/Applications/Ulysses.app</url>
+</vkopenurldef>
+
+<vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_APP_PocketCAS</name>
+<url type="file">/Applications/PocketCAS.app</url>
+</vkopenurldef>
+
+
+<vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_APP_SnippetsLab</name>
+<url type="file">/Applications/SnippetsLab.app</url>
+</vkopenurldef>
+
+
+
+<!-- needs checking -->
+<!-- <vkopenurldef>
+<name>KeyCode::VK_OPEN_URL_APP_Messenger</name>
+<url type="file">/Applications/Messenger for VK.app</url>
+</vkopenurldef> -->
+
+
+<!-- a big life changer -->
+<!-- makes  caps lock act as a combination of ⌥⌃ keys when pressed together with something, and acts as ⎋ key when pressed alone-->
+<!-- allows for caps lock + the entire keyboard of bindings that you can then use + the esc key is invaluable -->
+<!-- my caps lock + keys bindings are global hotkeys and not app specific -->
+<item>
+<name>caps lock as control + option and escape when alone</name>
+<identifier>private.left_alt_caps_tab_search_snippets</identifie>
+<autogen>
+__KeyToKey__
+KeyCode::TAB, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L | ModifierFlag::MY_CAPSLOCK | ModifierFlag::NONE,
+KeyCode::VK_OPEN_URL_APP_SnippetsLab,
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::CONTROL_L,
+KeyCode::CONTROL_L, ModifierFlag::MY_CONTROL_L,
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::OPTION_L,
+KeyCode::OPTION_L, ModifierFlag::MY_OPTION_L,
+</autogen>	
+<autogen>
+__KeyOverlaidModifier__
+KeyCode::F19,
+KeyCode::OPTION_L, ModifierFlag::CONTROL_L | ModifierFlag::MY_CAPSLOCK,
+KeyCode::ESCAPE,
+</autogen>
+</item>
+
+<!-- one more really nicely located app specific hotkey -->
+
+<item>
+<name>right shift and right command to app specific</name>	
+<identifier>private.right_shit_and_right_command_to_app_specific</identifier>
+<autogen>
+__KeyToKey__
+KeyCode::COMMAND_R, ModifierFlag::SHIFT_R, ModifierFlag::COMMAND_L,
+KeyCode::O, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L,
+</autogen>	
+</item>
+
+
+<!-- really useful as I use colon more often then semicolon except when coding javascript or java -->
+<item>
+<name>change colon to semicolon</name>	
+<identifier>private.colon_to_semicolon</identifier>
+<inputsource_only>US</inputsource_only>
+<autogen>
+__KeyToKey__
+KeyCode::SEMICOLON, ModifierFlag::SHIFT_L,
+KeyCode::SEMICOLON
+</autogen>	
+</item>
+
+<item>
+<name>change semicolon to colon</name>	
+<identifier>private.semicolon_to_colon</identifier>
+<inputsource_only>US</inputsource_only>
+<autogen>
+__KeyToKey__
+KeyCode::SEMICOLON,
+KeyCode::SEMICOLON, ModifierFlag::SHIFT_L
+</autogen>	
+</item>
+
+
+
+
+<!-- open applications with karabiner physical key presses -->
+
+<item>
+<name>right option key + right shift + enter to Ulysses</name>
+<identifier>private.right_opt_shift_enter_to_ulysses</identifier>
+<autogen>
+__KeyToKey__
+KeyCode::RETURN, ModifierFlag::SHIFT_R, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L,
+KeyCode::VK_OPEN_URL_APP_Ulysses,
+</autogen>
+</item>
+
+<item>
+<name>caps + left command + top delete to open PocketCAS</name>
+<identifier>private.caps_left_command_delete_open_pocketcas</identifier>
+<autogen>
+__KeyToKey__
+KeyCode::DELETE, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L,
+KeyCode::VK_OPEN_URL_APP_PocketCAS,
+</autogen>
+</item>
+
+
+<item>
+<name>caps + top delete to open magic number</name>
+<identifier>private.caps_to_delete_to_magic_number</identifier>
+<autogen>
+__KeyToKey__
+KeyCode::DELETE, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L,
+KeyCode::U, ModifierFlag::CONTROL_L, ModifierFlag::COMMAND_L,
+</autogen>
+</item>
+
+
+<item>
+<name>caps + right shift to open magic number</name>
+<identifier>private.caps_to_shift_to_magic_number</identifier>
+<autogen>
+__KeyToKey__
+KeyCode::SHIFT_R, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L,
+KeyCode::U, ModifierFlag::CONTROL_L, ModifierFlag::COMMAND_L,
+</autogen>
+</item>
+
+<item>
+<name>right option key + delete to MindNode</name>
+<identifier>private.right_opt_plus_delete_to_mindnode</identifier>
+<autogen>
+__KeyToKey__
+KeyCode::DELETE, ModifierFlag::CONTROL_L,
+KeyCode::VK_OPEN_URL_APP_MindNode,
+</autogen>
+</item>
+
+<!-- want to try make it work -->
+<!-- <item>
+<name>left option + colon to open VK Messenger</name>
+<identifier>private.left_opt_and_colon_open_messenger</identifier>
+<autogen>
+__KeyToKey__
+KeyCode::SEMICOLON, ModifierFlag::OPTION_L,
+KeyCode::X, ModifierFlag::COMMAND_L,
+</autogen>
+</item> -->
+
+
+<!-- make left shift + delete write \  -->
+
+<item>
+<name>left shift + delete to enter backslash</name>
+<identifier>private.left_shift_to_delete_enter_backslash</identifier>
+<autogen>
+ __KeyToKey__
+KeyCode::DELETE, ModifierFlag::SHIFT_L,
+KeyCode::BACKSLASH, ModifierFlag::NONE,
+</autogen>
+</item>
+
+
+<!-- make left shift + left command + return cut line before cursor  -->
+<item>
+<name>left shift + left command + return to cut line before cursor</name>
+<identifier>private.left_shift_and_left_command_and_return_to_cut_line_before_cursor</identifier>
+<autogen>
+__KeyToKey__
+KeyCode::RETURN, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L,
+KeyCode::CURSOR_LEFT, ModifierFlag::COMMAND_L | ModifierFlag::SHIFT_L,
+KeyCode::X, ModifierFlag::COMMAND_L,
+Option::NOREPEAT,
+</autogen>
+</item>
+
+<!-- make left shift + left command + right shift to cut line after cursor -->
+<item>
+<name>left shift + left command + right shift to cut line after cursor</name>
+<identifier>private.left_shift_and_left_command_and_right_shift_to_cut_line_after_cursor</identifier>
+<autogen>
+__KeyToKey__
+KeyCode::SHIFT_R, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L,
+KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L | ModifierFlag::SHIFT_L,
+KeyCode::X, ModifierFlag::COMMAND_L,
+Option::NOREPEAT,
+</autogen>
+</item>
+
+
+
+
+
+<!-- make left shift + return to cut word before cursor  -->
+<item>
+<name>left shift + return to cut word before cursor</name>
+<identifier>private.left_shift_and_return_to_cut_line_before_cursor</identifier>
+<autogen>
+__KeyToKey__
+KeyCode::RETURN, ModifierFlag::SHIFT_L,
+KeyCode::CURSOR_LEFT, ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L,
+KeyCode::X, ModifierFlag::COMMAND_L,
+Option::NOREPEAT,
+</autogen>
+</item>
+
+
+<!-- make left shift + right shift cut word after cursor -->
+<item>
+<name>left shift + right shift to cut line after cursor</name>
+<identifier>private.left_shift_and_right_shift__to_cut_word_after_cursor</identifier>
+<autogen>
+ __KeyToKey__
+KeyCode::SHIFT_R, ModifierFlag::SHIFT_L,
+KeyCode::CURSOR_RIGHT, ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L,
+KeyCode::X, ModifierFlag::COMMAND_L,
+Option::NOREPEAT,
+</autogen>
+</item>
+
+
+<!-- another big life changer -->
+<!-- allows me to use right shift as a normal delete button when pressed alone -->
+<!-- when pressed together makes command + shift combination which allows me to use varous neat bindings -->
+<!-- I personally use right shift + bindings as app specific bindings unlike my caps bindings which are global -->
+<item>
+<name>right shift to command and shift when together, delete when alone</name>
+<identifier>private.right_shift_to_command_and_shift</identifier>
+<autogen>
+--KeyOverlaidModifier--
+KeyCode::SHIFT_R,
+KeyCode::SHIFT_R, ModifierFlag::COMMAND_L,
+KeyCode::DELETE
+</autogen>
+</item>
+
+
+
+<!-- I use Alfred everyday as a replacement for spotlight -->
+<!-- this allows me to toggle Alfred prompt with one right command key press -->
+<!-- I then bind this combination in Alfred itself and I have a fully working command key which acts as Alfred prompt when pressed alone -->
+<item>
+<name>right command to Alfred</name>
+<identifier>private.right_command_to_alfred</identifier>
+<autogen>
+__KeyOverlaidModifier__
+KeyCode::COMMAND_R,
+KeyCode::COMMAND_R,
+KeyCode::SPACE, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L
+</autogen>
+</item>
+
+
+<!-- I use round brackets more often then square brackets -->
+<!-- I also use colon more often then semi colon -->
+<!-- this is just a personal preference of me changing brackets around to make my typing workflow much faster -->
+<!-- I might add and change things later but right now this is really nice -->
+<item>
+<name>Put {} () [] to a better place</name>	
+<identifier>private.brackets_around</identifier>
+<inputsource_only>US</inputsource_only>
+<autogen>
+__KeyToKey__
+KeyCode::BACKSLASH, ModifierFlag::NONE,
+KeyCode::BRACKET_LEFT, ModifierFlag::SHIFT_L,
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::BACKSLASH, ModifierFlag::SHIFT_L,
+KeyCode::BRACKET_RIGHT, ModifierFlag::SHIFT_L
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::0, ModifierFlag::SHIFT_L,
+KeyCode::BACKQUOTE, ModifierFlag::NONE,	
+</autogen>	
+<autogen>
+__KeyToKey__
+KeyCode::MINUS, ModifierFlag::SHIFT_L,
+KeyCode::BACKSLASH, ModifierFlag::SHIFT_L	
+</autogen>		
+<autogen>
+__KeyToKey__
+KeyCode::BRACKET_LEFT, ModifierFlag::NONE,
+KeyCode::9, ModifierFlag::SHIFT_L	
+</autogen>	
+<autogen>
+__KeyToKey__
+KeyCode::BRACKET_RIGHT, ModifierFlag::NONE,
+KeyCode::0, ModifierFlag::SHIFT_L	
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::BRACKET_LEFT, ModifierFlag::SHIFT_L,
+KeyCode::BRACKET_LEFT, ModifierFlag::NONE	
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::BRACKET_RIGHT, ModifierFlag::SHIFT_L,
+KeyCode::BRACKET_RIGHT, ModifierFlag::NONE	
+</autogen>	
+</item>
+
+
+
+<!-- I haven't found any use for my fn key on os x so I decided to make it useful -->
+<!-- this makes my fn key act as a 'superkey' ie all modifiers pressed together (alt, opt, command, shift) -->
+<!-- this allows for insane freedom in keybindings -->
+<!-- I also have fn + shift binding to a combination, I use it to lookup highlighted text in the dictionary -->
+<item>
+<name>fn shift to combination plus fn superkey</name>
+<identifier>private.fn_shift_to_combination</identifier>
+<autogen>
+__KeyOverlaidModifier__
+KeyCode::SHIFT_L, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L,
+KeyCode::SHIFT_L, ModifierFlag::FN,
+KeyCode::1, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L
+</autogen>
+<autogen>
+__KeyOverlaidModifier__
+KeyCode::SHIFT_L, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L,
+KeyCode::F19, ModifierFlag::FN,
+KeyCode::Z, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::FN,
+KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L,
+</autogen>
+</item>
+
+</root>
