@@ -15,7 +15,7 @@ These changes I have made have provided me with some really amazing productivity
 
 Speaking of vim, I am actually learning to use it and am planning to do all my development work in here, except of course java which will be handled by [IntelliJ](https://www.jetbrains.com/idea/). I am very new to vim so the config file is very bare, I want to first learn the already powerful default tools that come with the text editor before adding other plugins and things.I am also jumping straight into [neovim](https://github.com/neovim/neovim) instead of vim. So my neovim will be pretty bare and not that insightful at least for now. I will try to keep it clean as per the quote "don't put any lines in your vimrc that you don't understand."
 
-I also am using [zsh](http://www.zsh.org) as my shell with [prezto](https://github.com/sorin-ionescu/prezto) configuration. I really like it write now and I quite like the nice themes that it has that you can easily download with no set up necessary. Here is the one I am using now : 
+I also am using [zsh](http://www.zsh.org) as my shell with [prezto](https://github.com/sorin-ionescu/prezto) configuration. I really like it right now and I quite like the nice themes that it has that you can easily download with no set up necessary. Here is the one I am using now : 
 
 ![alt text](http://i.imgur.com/GSKZHXt.png)
 
