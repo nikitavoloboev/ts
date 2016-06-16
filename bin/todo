@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# got the script from https://github.com/holman/dotfiles/blob/master/bin/todo
+# don't know if I will use it as I have my 2Do for task management already
+# but may have some interesting use cases
+
+set -e 
+
+touch ~/Desktop/"$(echo $@)"

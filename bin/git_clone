@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# just a fast way to clone repositories
+# before I had to type my git clone alias and then copy and press enter
+# now I just use this simple script
+
+clipboard="$(pbpaste)"
+
+git clone $clipboard 
