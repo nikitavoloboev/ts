@@ -3,7 +3,7 @@ My configuration files for OSX
 Took me an embarrassingly long time to actually learn how to create a directory and learn how symlinking works
 but better late than never.
 
-Probably the most excited thing in there is my [Karabiner](https://pqrs.org/osx/karabiner/)  config file as I actually took some time to set it up and it has a lot of interesting things like : 
+Probably the most excited thing in there is my [Karabiner](https://pqrs.org/osx/karabiner/) config file as I actually took some time to set it up and it has a lot of interesting things like : 
 
 1. mapping my caps lock key to act as esc on single press and as two modifier keys when pressed with something, you have to also change caps lock to F19 with [Seil](https://pqrs.org/osx/karabiner/seil.html.en) first.
 2. mapping my right command to a combination for a single press so I can then use it as my [Alfred](https://www.alfredapp.com/) prompt

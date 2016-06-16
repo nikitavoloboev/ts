@@ -3,15 +3,5 @@ set relativenumber
 "allows me to yank text to system clipboard
 set clipboard=unnamed
 
-call plug#begin()
-Plug 'junegunn/seoul256.vim'
-call plug#end()
-
-"colour goodness
-autocmd VimEnter * colorscheme seoul256
-colo seoul256
-
-
-
 
 
