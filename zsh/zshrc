@@ -13,6 +13,7 @@ source $ZPLUG_HOME/init.zsh
 
 #general
 alias t='tmux'
+alias z='open'
 alias kt='killall tmux'
 alias ff='awk'
 alias k='kill'
@@ -80,11 +81,10 @@ alias ezz='nvim ~/.zprofile'
 alias ee='nvim ~/.config/nvim/init.vim'
 
 #open with app
-alias s='subl'
-
+#alias s='subl'
 #alias ss='subl .'
-alias ww="open -a Marked\ 2"
-alias qq="open -a Safari"
+alias qq="open -a Marked\ 2"
+alias s="open -a Safari"
 alias cr='open -a CodeRunner'
 alias jj='open -a IntelliJ\ IDEA'
 alias xx='open -a Xcode'
@@ -131,7 +131,6 @@ alias ba='brew update  && brew upgrade --all && brew cleanup && brew prune && br
 
 #silver searcher
 alias f="ag -g"
-alias r=ag
 
 #directory listings
 alias l.='ls -d .*'

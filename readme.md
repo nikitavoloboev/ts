@@ -1,4 +1,4 @@
-My configuration files for OSX 
+##my configuration files for OSX 
 
 Probably the most excited thing in there is my [Karabiner](https://pqrs.org/osx/karabiner/) config file as I actually took some time to set it up and it has a lot of interesting things like : 
 
