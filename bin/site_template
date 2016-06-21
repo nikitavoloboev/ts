@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# this script essentially just gives me a blank template structure for a project to work on
+# perhaps it is not the best way to structure it but I am still new to web development
+# so will be using this for now and update accordingly
+
+mkdir css
+mkdir js
+touch index.html
+touch css/styles.css
+touch js/script.js
+
+
+# bootstrap my index.html with the necessary html text
+# need to finish
+printf "<doctype html>\n\n<html lang=" >> index.html
+

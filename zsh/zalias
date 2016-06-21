@@ -1,0 +1,132 @@
+# general
+alias dus='du -s'
+alias th='touch'
+alias t='tmux'
+alias z='open'
+alias kt='killall tmux'
+alias ff='awk'
+alias k='kill'
+alias ig='imgcat'
+alias sl='ln -s'
+alias tt='type'
+alias te='tree -a'
+alias p='python3'
+alias p2='python'
+alias q='exit'
+alias l='ls -lh'
+alias e='nvim'
+alias d='cd'
+alias cwd='pwd | tr -d '\n' | pbcopy'
+alias m='man'
+alias md='mkdir'
+alias sf='screenfetch'
+alias zz='open .'
+alias mx='chmod a+x'
+alias rr='rm -rf'
+alias a='ls'
+alias hh='touch'
+alias wg='wget -r --no-parent'
+alias v='mv'
+alias os='osascript'
+alias lt='ls -lart'
+alias aa='ls -la'
+alias srp='ssh pi@192.168.1.17'
+alias tp='type'
+
+# delete things
+alias rrpdf='rm -rf *.pdf'
+
+# source things
+alias sz='source ~/.dotfiles/zsh/zshrc'
+
+#open with app
+#alias s='subl'
+#alias ss='subl .'
+alias ww="open -a Marked\ 2"
+alias s="open -a Safari"
+alias cr='open -a CodeRunner'
+alias jj='open -a IntelliJ\ IDEA'
+alias xx='open -a Xcode'
+alias pdf='open -a PDF\ Expert'
+
+#better ls
+alias la="ls -aF"
+alias ld="ls -ld"
+alias lso='ls -At1 && echo "------Oldest--"'
+alias lsn='ls -Art1 && echo "------Newest--"'
+
+#node 
+alias nd='node'
+alias ndi='node install'
+alias npi='npm install'
+alias nst='npm start'
+alias ns='npm ls'
+alias na='npm update'
+alias nit='npm init'
+alias n='npm'
+
+#meteor
+alias mt='meteor'
+
+#hugo
+alias hs='hugo server'
+alias hss='hugo server --theme=angels-ladder --buildDrafts'
+
+#express
+alias ep='express'
+
+#compile code
+alias sw='swift'
+alias c='gcc'
+
+#brew 
+alias b='brew'
+alias bl='brew list'
+alias bui='brew uninstall'
+alias bi='brew install'
+alias bu='brew update'
+alias bd='brew doctor'
+alias bcl='brew cask list'
+alias ba='brew update  && brew upgrade --all && brew cleanup && brew prune && brew doctor'
+
+#silver searcher
+alias f="ag -g"
+
+#directory listings
+alias l.='ls -d .*'
+
+#easier navigation
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+
+#shortcuts
+alias h="history"
+alias j="jobs"
+
+#git
+alias g="git"
+alias gl='git pull'
+alias gcl='git clone'
+alias gs='git status'
+alias ga.='git add .'
+alias ga='git add'
+alias gb='git branch'
+alias gc='git commit'
+alias gp='git push'
+alias gds='git commit . -m ':sparkles:''
+alias gdf='git commit . -m ':tada: initial commit''
+alias gpm="git push origin master"
+alias gpd="git push origin develop"
+
+# Remove git from a project
+alias ungit="find . -name '.git' -exec rm -rf {} \;"
+
+# scripts
+alias site='site_template'
+alias gll='git_clone'
+
+# top
+alias cpu='top -o cpu'   # cpu
+alias mem='top -o rsize' # memory

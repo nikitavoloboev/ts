@@ -14,7 +14,7 @@ Speaking of vim, I am actually learning to use it and am planning to do all my d
 
 I also am using [zsh](http://www.zsh.org) as my shell with [prezto](https://github.com/sorin-ionescu/prezto) configuration. I really like it right now and I quite like the nice themes that it has that you can easily download with no set up necessary. Here is the one I am using now : 
 
-![alt text](http://i.imgur.com/GSKZHXt.png)
+![](http://i.imgur.com/GXxTjeM.png)
 
 Prezto seems really nice and I really like how fast it seems to be although I really disklike how it has all these extra files that come with it that I still don't fully understand. I may try to run zsh without any frameworks and try to get a better understanding of what is done first and what needs what. 
 

@@ -1,0 +1,8 @@
+# aliases related to vim
+
+# open in vim
+alias ea='nvim ~/.dotfiles/zsh/zalias'
+alias ez='nvim ~/.dotfiles/zsh/zshrc'
+alias ek='nvim ~/Library/Application\ Support/Karabiner/private.xml'
+alias ezz='nvim ~/.zprofile'
+alias ee='nvim'
