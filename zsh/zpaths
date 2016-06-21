@@ -33,5 +33,5 @@ alias dF='cd ~/Documents/app/unclutter/Unclutter\ Files'
 alias dwf='cd ~/Documents/code/workflows'
 alias dgo='cd ~/Documents/code/go'
 alias d..='cd ~/.config'
-
+alias dsj='cd ~/Documents/code/solutions/java'
 

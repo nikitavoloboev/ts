@@ -3,6 +3,8 @@
 # open in vim
 alias ea='nvim ~/.dotfiles/zsh/zalias'
 alias ez='nvim ~/.dotfiles/zsh/zshrc'
+alias ezv='nvim ~/.dotfiles/vim/zvim'
+alias epa='nvim ~/.dotfiles/zsh/zpaths'
 alias ek='nvim ~/Library/Application\ Support/Karabiner/private.xml'
 alias ezz='nvim ~/.zprofile'
 alias ee='nvim'
