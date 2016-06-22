@@ -41,11 +41,34 @@
 
 
 
-<!-- needs checking -->
-<!-- <vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_APP_Messenger</name>
-<url type="file">/Applications/Messenger for VK.app</url>
-</vkopenurldef> -->
+<item>
+<name>command plus left shift to google selected text</name>
+<identifier>private.command_plus_left_shift_to_hotkey</identifier>
+<autogen>
+__KeyOverlaidModifier__
+KeyCode::SHIFT_L, ModifierFlag::COMMAND_L,
+KeyCode::SHIFT_L, ModifierFlag::COMMAND_L,
+KeyCode::9, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::COMMAND_L,
+</autogen>
+</item>
+
+
+
+<item>
+<name>left option plus left shift to search documentation for selected text</name>
+<identifier>private.left_option_plus_left_shift_to_hotkey</identifie>
+<autogen>
+__KeyOverlaidModifier__
+KeyCode::SHIFT_L, ModifierFlag::OPTION_L,
+KeyCode::SHIFT_L, ModifierFlag::OPTION_L,
+KeyCode::8, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::COMMAND_L,
+</autogen></item>
+
+
+
+
+
+
 
 
 <!-- a big life changer -->
@@ -79,7 +102,6 @@ KeyCode::ESCAPE,
 </item>
 
 <!-- one more really nicely located app specific hotkey -->
-
 <item>
 <name>right shift and right command to app specific</name>	
 <identifier>private.right_shit_and_right_command_to_app_specific</identifier>
