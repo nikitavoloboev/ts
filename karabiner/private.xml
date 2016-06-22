@@ -62,9 +62,22 @@ __KeyOverlaidModifier__
 KeyCode::SHIFT_L, ModifierFlag::OPTION_L,
 KeyCode::SHIFT_L, ModifierFlag::OPTION_L,
 KeyCode::8, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::COMMAND_L,
-</autogen></item>
+</autogen>
+</item>
 
 
+
+
+<item>
+<name>control plus left shift to search wiki with selection</name>
+<identifier>private.control_shift_for_wiki_selection</identifier>
+<autogen>
+__KeyOverlaidModifier__
+KeyCode::SHIFT_L, ModifierFlag::CONTROL_L,
+KeyCode::SHIFT_L, ModifierFlag::CONTROL_L,
+KeyCode::7, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::COMMAND_L,
+</autogen>
+</item>
 
 
 
