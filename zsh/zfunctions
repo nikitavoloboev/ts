@@ -1,0 +1,22 @@
+
+# (f)ind by (n)ame
+# find all files containing given user's input in their name
+function fn() { ls **/*$1* }
+
+function fnd() { ls **/*$1*(/) }
+
+# make a directory and go to it.
+function mdd {
+  [[ -n "$1" ]] && mkdir -p "$1" && builtin cd "$1"
+}
+
+# change to a directory and list its contents
+function D {
+  builtin cd "$argv[-1]" && ls "${(@)argv[1,-2]}"
+}
+
+# finds files and executes a command on them
+function fex {
+  find . -type f -iname "*${1:-}*" -exec "${2:-file}" '{}' \;
+}
+

@@ -7,6 +7,8 @@ fi
 source ~/.dotfiles/zsh/zpaths
 source ~/.dotfiles/zsh/zalias
 source ~/.dotfiles/vim/zvim
+source ~/.dotfiles/zsh/zfunctions
+
 
 # add bin to my path
 export PATH=$PATH:~/.dotfiles/bin
@@ -20,11 +22,6 @@ source $ZPLUG_HOME/init.zsh
 
 
 # some functions
-
-#(f)ind by (n)ame
-#usage: fn foo
-#to find all files containing 'foo' in the name
-function fn() { ls **/*$1* }
 
 #alt-s insert 'sudo' at start of line
 insert_sudo () { zle beginning-of-line; zle -U "sudo " }
