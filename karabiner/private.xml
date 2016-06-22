@@ -14,11 +14,6 @@
 
 <!-- paths to files, creates constants I can use -->
 <vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_APP_Sublime Text</name>
-<url type="file">/Applications/Sublime Text.app</url>
-</vkopenurldef>
-
-<vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_APP_MindNode</name>
 <url type="file">/Applications/MindNode.app</url>
 </vkopenurldef>
@@ -27,18 +22,6 @@
 <name>KeyCode::VK_OPEN_URL_APP_Ulysses</name>
 <url type="file">/Applications/Ulysses.app</url>
 </vkopenurldef>
-
-<vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_APP_PocketCAS</name>
-<url type="file">/Applications/PocketCAS.app</url>
-</vkopenurldef>
-
-
-<vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_APP_SnippetsLab</name>
-<url type="file">/Applications/SnippetsLab.app</url>
-</vkopenurldef>
-
 
 
 <item>
@@ -53,7 +36,6 @@ KeyCode::9, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L | ModifierFlag::SHI
 </item>
 
 
-
 <item>
 <name>left option plus left shift to search documentation for selected text</name>
 <identifier>private.left_option_plus_left_shift_to_hotkey</identifie>
@@ -64,8 +46,6 @@ KeyCode::SHIFT_L, ModifierFlag::OPTION_L,
 KeyCode::8, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::COMMAND_L,
 </autogen>
 </item>
-
-
 
 
 <item>
@@ -79,11 +59,6 @@ KeyCode::7, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L | ModifierFlag::SHI
 </autogen>
 </item>
 
-
-
-
-
-
 <!-- a big life changer -->
 <!-- makes  caps lock act as a combination of ⌥⌃ keys when pressed together with something, and acts as ⎋ key when pressed alone-->
 <!-- allows for caps lock + the entire keyboard of bindings that you can then use + the esc key is invaluable -->
@@ -94,7 +69,7 @@ KeyCode::7, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L | ModifierFlag::SHI
 <autogen>
 __KeyToKey__
 KeyCode::TAB, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L | ModifierFlag::MY_CAPSLOCK | ModifierFlag::NONE,
-KeyCode::VK_OPEN_URL_APP_SnippetsLab,
+KeyCode::W, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::COMMAND_L,
 </autogen>
 <autogen>
 __KeyToKey__
@@ -170,7 +145,7 @@ KeyCode::VK_OPEN_URL_APP_Ulysses,
 <autogen>
 __KeyToKey__
 KeyCode::DELETE, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L,
-KeyCode::VK_OPEN_URL_APP_PocketCAS,
+KeyCode::E, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::COMMAND_L,
 </autogen>
 </item>
 
@@ -202,7 +177,7 @@ KeyCode::U, ModifierFlag::CONTROL_L, ModifierFlag::COMMAND_L,
 <autogen>
 __KeyToKey__
 KeyCode::DELETE, ModifierFlag::CONTROL_L,
-KeyCode::VK_OPEN_URL_APP_MindNode,
+KeyCode::Q, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::COMMAND_L,
 </autogen>
 </item>
 
