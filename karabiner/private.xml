@@ -175,20 +175,8 @@ KeyCode::Q, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L | ModifierFlag::SHI
 </autogen>
 </item>
 
-<!-- want to try make it work -->
-<!-- <item>
-<name>left option + colon to open VK Messenger</name>
-<identifier>private.left_opt_and_colon_open_messenger</identifier>
-<autogen>
-__KeyToKey__
-KeyCode::SEMICOLON, ModifierFlag::OPTION_L,
-KeyCode::X, ModifierFlag::COMMAND_L,
-</autogen>
-</item> -->
-
 
 <!-- make left shift + delete write \  -->
-
 <item>
 <name>left shift + delete to enter backslash</name>
 <identifier>private.left_shift_to_delete_enter_backslash</identifier>
