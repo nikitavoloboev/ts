@@ -1,4 +1,6 @@
 # paths to go into
+alias dbit='cd ~/Documents/app/bitbar'
+alias doc='cd ~/Documents'
 alias dv='cd ~/.dotfiles/vim'
 alias dwp='cd ~/Documents/web/projects'
 alias ds='cd ~/Documents/code/solutions'

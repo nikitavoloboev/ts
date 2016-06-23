@@ -12,12 +12,6 @@
 </inputsourcedef>
 
 
-<!-- paths to files, creates constants I can use -->
-<vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_APP_MindNode</name>
-<url type="file">/Applications/MindNode.app</url>
-</vkopenurldef>
-
 <vkopenurldef>
 <name>KeyCode::VK_OPEN_URL_APP_Ulysses</name>
 <url type="file">/Applications/Ulysses.app</url>
