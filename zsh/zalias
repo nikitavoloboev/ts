@@ -1,4 +1,5 @@
 # general
+alias s='fuck'
 alias dus='du -s'
 alias th='touch'
 alias t='tmux'
@@ -43,7 +44,7 @@ alias sz='source ~/.dotfiles/zsh/zshrc'
 #alias s='subl'
 #alias ss='subl .'
 alias ww="open -a Marked\ 2"
-alias s="open -a Safari"
+alias qq="open -a Safari"
 alias cr='open -a CodeRunner'
 alias jj='open -a IntelliJ\ IDEA'
 alias xx='open -a Xcode'

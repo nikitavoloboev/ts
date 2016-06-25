@@ -11,13 +11,6 @@
 <inputsourceid_prefix>com.apple.keylayout.US</inputsourceid_prefi>
 </inputsourcedef>
 
-
-<vkopenurldef>
-<name>KeyCode::VK_OPEN_URL_APP_Ulysses</name>
-<url type="file">/Applications/Ulysses.app</url>
-</vkopenurldef>
-
-
 <item>
 <name>command plus left shift to google selected text</name>
 <identifier>private.command_plus_left_shift_to_hotkey</identifier>
@@ -83,6 +76,19 @@ KeyCode::ESCAPE,
 </autogen>
 </item>
 
+
+<item>
+<name>caps + left command + top delete to open Fantastical Calendar Input</name>
+<identifier>private.caps_left_command_delete_open_fantastical_input</identifier>
+<autogen>
+__KeyToKey__
+KeyCode::DELETE, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L,
+KeyCode::E, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::COMMAND_L,
+</autogen>
+</item>
+
+
+
 <!-- one more really nicely located app specific hotkey -->
 <item>
 <name>right shift and right command to app specific</name>	
@@ -122,27 +128,6 @@ KeyCode::SEMICOLON, ModifierFlag::SHIFT_L
 
 
 <!-- open applications with karabiner physical key presses -->
-
-<item>
-<name>right option key + right shift + enter to Ulysses</name>
-<identifier>private.right_opt_shift_enter_to_ulysses</identifier>
-<autogen>
-__KeyToKey__
-KeyCode::RETURN, ModifierFlag::SHIFT_R, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L,
-KeyCode::VK_OPEN_URL_APP_Ulysses,
-</autogen>
-</item>
-
-<item>
-<name>caps + left command + top delete to open PocketCAS</name>
-<identifier>private.caps_left_command_delete_open_pocketcas</identifier>
-<autogen>
-__KeyToKey__
-KeyCode::DELETE, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L,
-KeyCode::E, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::COMMAND_L,
-</autogen>
-</item>
-
 
 <item>
 <name>caps + top delete to open magic number</name>

@@ -18,16 +18,8 @@ export NODE_PATH='/usr/local/lib/node_modules'
 export ZPLUG_HOME=/usr/local/opt/zplug 
 source $ZPLUG_HOME/init.zsh
 
-
-
-
-# some functions
-
-#alt-s insert 'sudo' at start of line
-insert_sudo () { zle beginning-of-line; zle -U "sudo " }
-zle -N insert-sudo insert_sudo
-bindkey "^[s" insert-sudo
-
+# 'thefuck' command correction 
+eval "$(thefuck --alias)"
 
 
 
