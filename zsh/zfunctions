@@ -1,4 +1,3 @@
-
 # (f)ind by (n)ame
 # find all files containing given user's input in their name
 function fn() { ls **/*$1* }

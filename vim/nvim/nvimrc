@@ -4,6 +4,8 @@ set relativenumber
 " allows me to yank text to system clipboard
 set clipboard=unnamed
 
+syntax on
+
 " vim-plug plugin manager
 call plug#begin()
 Plug 'tpope/vim-sensible'

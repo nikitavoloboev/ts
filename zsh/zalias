@@ -11,8 +11,8 @@ alias ig='imgcat'
 alias sl='ln -s'
 alias tt='type'
 alias te='tree -a'
-alias p='python3'
-alias p2='python'
+alias p3='python3'
+alias p='python'
 alias q='exit'
 alias l='ls -lh'
 alias e='nvim'
@@ -40,7 +40,7 @@ alias rrpdf='rm -rf *.pdf'
 # source things
 alias sz='source ~/.dotfiles/zsh/zshrc'
 
-#open with app
+# open with app
 #alias s='subl'
 #alias ss='subl .'
 alias ww="open -a Marked\ 2"
@@ -50,13 +50,13 @@ alias jj='open -a IntelliJ\ IDEA'
 alias xx='open -a Xcode'
 alias pdf='open -a PDF\ Expert'
 
-#better ls
+# better ls
 alias la="ls -aF"
 alias ld="ls -ld"
 alias lso='ls -At1 && echo "------Oldest--"'
 alias lsn='ls -Art1 && echo "------Newest--"'
 
-#node 
+# node 
 alias nd='node'
 alias ndi='node install'
 alias npi='npm install'
@@ -66,21 +66,21 @@ alias na='npm update'
 alias nit='npm init'
 alias n='npm'
 
-#meteor
+# meteor
 alias mt='meteor'
 
-#hugo
+# hugo
 alias hs='hugo server'
 alias hss='hugo server --theme=angels-ladder --buildDrafts'
 
-#express
+# express
 alias ep='express'
 
-#compile code
+# compile code
 alias sw='swift'
 alias c='gcc'
 
-#brew 
+# brew 
 alias b='brew'
 alias bl='brew list'
 alias bui='brew uninstall'
@@ -90,23 +90,24 @@ alias bd='brew doctor'
 alias bcl='brew cask list'
 alias ba='brew update  && brew upgrade --all && brew cleanup && brew prune && brew doctor'
 
-#silver searcher
+# silver searcher
 alias f="ag -g"
 
-#directory listings
+# directory listings
 alias l.='ls -d .*'
 
-#easier navigation
+# easier navigation
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 
-#shortcuts
+# shortcuts
 alias h="history"
 alias j="jobs"
 
-#git
+
+# git
 alias g="git"
 alias gl='git pull'
 alias gcl='git clone'
@@ -121,8 +122,11 @@ alias gdf='git commit . -m ':tada: initial commit''
 alias gpm="git push origin master"
 alias gpd="git push origin develop"
 
-# Remove git from a project
+# remove git from a project
 alias ungit="find . -name '.git' -exec rm -rf {} \;"
+
+# copy workflow folder to the root workflow directory because I can't get pip to work normally
+alias wf='cp -r ~/Documents/tools/workflow .'
 
 # scripts
 alias site='site_template'

@@ -9,17 +9,15 @@ source ~/.dotfiles/zsh/zalias
 source ~/.dotfiles/vim/zvim
 source ~/.dotfiles/zsh/zfunctions
 
-
 # add bin to my path
 export PATH=$PATH:~/.dotfiles/bin
 
+# 'thefuck' command correction 
+eval "$(thefuck --alias)"
 
 export NODE_PATH='/usr/local/lib/node_modules'
 export ZPLUG_HOME=/usr/local/opt/zplug 
 source $ZPLUG_HOME/init.zsh
-
-# 'thefuck' command correction 
-eval "$(thefuck --alias)"
 
 
 
