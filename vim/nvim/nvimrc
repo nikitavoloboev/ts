@@ -7,6 +7,7 @@ set clipboard=unnamed
 " finally have a nice looking editor :D
 let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 
+" syntax highlighting
 syntax on
 
 " vim-plug plugin manager

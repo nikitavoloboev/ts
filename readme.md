@@ -1,6 +1,6 @@
 #my configuration files for macOS
 
-##Karabiner
+##karabiner
 
 Probably the most excited thing in there is my [Karabiner](https://pqrs.org/osx/karabiner/) config file as I actually took some time to set it up and it has a lot of interesting things like : 
 
@@ -12,7 +12,7 @@ Probably the most excited thing in there is my [Karabiner](https://pqrs.org/osx/
 
 These changes I have made have provided me with some really amazing productivity boosts. One thing that is also really amazing and comes as one of the default settings you can choose in Karabiner is system wide vim emulation. That to be honest is really incredible. I have it binded to my left command so I can essentially have vim navigation and all the vim good stuff in whatever application I will be working in.
 
-##Neovim
+##neovim
 
 Speaking of vim, I am actually learning to use it and am planning to do all my development work in here, except of course java which will be handled by [IntelliJ](https://www.jetbrains.com/idea/). I am very new to vim so the config file is very bare, I want to first learn the already powerful default tools that come with the text editor before adding other plugins and things.I am also jumping straight into [neovim](https://github.com/neovim/neovim) instead of vim. So my neovim will be pretty bare and not that insightful at least for now. I will try to keep it clean as per the quote "don't put any lines in your vimrc that you don't understand."
 
