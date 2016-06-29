@@ -33,7 +33,6 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'easymotion/vim-easymotion' " testing it out
 
 " Plug 'Shougo/deoplete.nvim' TODO:  need to get python 3 working
-
 call plug#end()
 
 colorscheme gruvbox " activate the colour scheme
