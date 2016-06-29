@@ -2,46 +2,40 @@
 set relativenumber
 set number
 
-" allows me to yank text to system clipboard
-set clipboard=unnamed
+set clipboard=unnamed " copy text to system clipboard
 
-" finally have a nice looking editor :D
-let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+let $NVIM_TUI_ENABLE_TRUE_COLOR=1 " finally have a nice looking editor :D
 
-" syntax highlighting
-syntax on
+syntax on " syntax highlighting
 
-" set terminal title
-set title
+set title " set terminal title
 
-" indentation
-set smartindent
+set hlsearch " highlight search results
 
-" plugins to use
-call plug#begin()
+filetype plugin indent on " not really sure what it does yet
 
-" sensible defaults
-Plug 'tpope/vim-sensible'
+set smartindent " indentation
 
-" go autocomplete
-Plug 'fatih/vim-go'
+call plug#begin() " plugins to use
 
-" colour goodness
-Plug 'morhetz/gruvbox'
+Plug 'tpope/vim-sensible' " sensible defaults
+
+Plug 'fatih/vim-go' " go autocompletion
+
+Plug 'morhetz/gruvbox' " colour goodness
+
+Plug 'tpope/vim-fugitive' " supposedly a really nice git wrapper
 
 " a nice looking status bar on the bottom
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
-" testing it out
-Plug 'easymotion/vim-easymotion'
+Plug 'easymotion/vim-easymotion' " testing it out
 
 " Plug 'Shougo/deoplete.nvim' TODO:  need to get python 3 working
 
 call plug#end()
 
-" activate the colour scheme
-colorscheme gruvbox
-" set night mode
-set background=dark 
+colorscheme gruvbox " activate the colour scheme
+set background=dark " set night mode
 
