@@ -8,6 +8,7 @@ source ~/.dotfiles/zsh/zpaths
 source ~/.dotfiles/zsh/zalias
 source ~/.dotfiles/vim/zvim
 source ~/.dotfiles/zsh/zfunctions
+source ~/.dotfiles/zsh/zdev
 
 # add bin to my path
 export PATH=$PATH:~/.dotfiles/bin

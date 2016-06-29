@@ -5,7 +5,7 @@ function fn() { ls **/*$1* }
 function fnd() { ls **/*$1*(/) }
 
 # make a directory and go to it.
-function mdd {
+function mD {
   [[ -n "$1" ]] && mkdir -p "$1" && builtin cd "$1"
 }
 

@@ -1,0 +1,43 @@
+# my aliases, functions that I use for development purposes
+
+# git
+alias g="git"
+alias gl='git pull'
+alias gcl='git clone'
+alias gs='git status'
+alias ga.='git add .'
+alias ga='git add'
+alias gb='git branch'
+alias gc='git commit'
+alias gp='git push'
+alias gds='git commit . -m ':sparkles:''
+alias gdf='git commit . -m ':tada: initial commit''
+alias gpm="git push origin master"
+alias gpd="git push origin develop"
+
+# remove git from a project
+alias ungit="find . -name '.git' -exec rm -rf {} \;"
+
+
+# node 
+alias nd='node'
+alias ndi='node install'
+alias npi='npm install'
+alias nst='npm start'
+alias ns='npm ls'
+alias na='npm update'
+alias nit='npm init'
+alias n='npm'
+
+# go
+alias o='go run'
+alias og='go get'
+
+
+# meteor
+alias mt='meteor'
+
+# compile code
+alias sw='swift'
+alias c='gcc'
+
