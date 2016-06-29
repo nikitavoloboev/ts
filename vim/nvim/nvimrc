@@ -1,5 +1,6 @@
-" not utilising the full usefulness of it but I think it can be great
+" make navigation easier
 set relativenumber
+set number
 
 " allows me to yank text to system clipboard
 set clipboard=unnamed
@@ -10,16 +11,37 @@ let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 " syntax highlighting
 syntax on
 
-" vim-plug plugin manager
+" set terminal title
+set title
+
+" indentation
+set smartindent
+
+" plugins to use
 call plug#begin()
+
+" sensible defaults
 Plug 'tpope/vim-sensible'
+
+" go autocomplete
 Plug 'fatih/vim-go'
+
+" colour goodness
 Plug 'morhetz/gruvbox'
+
+" a nice looking status bar on the bottom
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+
+" testing it out
+Plug 'easymotion/vim-easymotion'
+
+" Plug 'Shougo/deoplete.nvim' TODO:  need to get python 3 working
 
 call plug#end()
 
 " activate the colour scheme
 colorscheme gruvbox
-" night mode
+" set night mode
 set background=dark 
 
