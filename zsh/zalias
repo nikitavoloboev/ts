@@ -66,6 +66,11 @@ alias na='npm update'
 alias nit='npm init'
 alias n='npm'
 
+# go
+alias o='go run'
+
+
+
 # meteor
 alias mt='meteor'
 
