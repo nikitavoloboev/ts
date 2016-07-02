@@ -1,14 +1,15 @@
 # source prezto
-if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
-  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+if [[ -s "${ZDOTDIR:-$HOME}/.dotfiles/zsh/init.zsh" ]]; then
+  source "${ZDOTDIR:-$HOME}/.dotfiles/zsh/init.zsh"
 fi
 
-# source aliases 
+# source aliases
 source ~/.dotfiles/zsh/zpaths
 source ~/.dotfiles/zsh/zalias
 source ~/.dotfiles/vim/zvim
 source ~/.dotfiles/zsh/zfunctions
 source ~/.dotfiles/zsh/zdev
+source ~/.dotfiles/git/zgit
 
 # add bin to my path
 export PATH=$PATH:~/.dotfiles/bin
@@ -16,12 +17,21 @@ export PATH=$PATH:~/.dotfiles/bin
 # 'thefuck' command correction 
 eval "$(thefuck --alias)"
 
+# zplug package manager
+source /usr/local/Cellar/zplug/2.1.0/init.zsh
 
+
+# better than l file and dir listings with good info
+zplug "supercrabtree/k"
+
+# exported variables get passed on to child processes, not-exported variables do not
+# can call it like so $ZPLUG_HOME
 export NODE_PATH='/usr/local/lib/node_modules'
 export ZPLUG_HOME=/usr/local/opt/zplug 
 source $ZPLUG_HOME/init.zsh
 
 
-
+# source all zplug plugins and add commands to $PATH
+zplug load
 
 

@@ -1,28 +1,28 @@
 #
-# Sets Prezto options.
+# sets prezto options.
 #
-# Authors:
-#   Sorin Ionescu <sorin.ionescu@gmail.com>
-#
-
-#
-# General
+# authors:
+#   sorin ionescu <sorin.ionescu@gmail.com>
 #
 
-# Set case-sensitivity for completion, history lookup, etc.
+#
+# general
+#
+
+# set case-sensitivity for completion, history lookup, etc.
 # zstyle ':prezto:*:*' case-sensitive 'yes'
 
-# Color output (auto set to 'no' on dumb terminals).
+# color output (auto set to 'no' on dumb terminals).
 zstyle ':prezto:*:*' color 'yes'
 
-# Set the Zsh modules to load (man zshmodules).
+# set the zsh modules to load (man zshmodules).
 # zstyle ':prezto:load' zmodule 'attr' 'stat'
 
-# Set the Zsh functions to load (man zshcontrib).
+# set the zsh functions to load (man zshcontrib).
 # zstyle ':prezto:load' zfunction 'zargs' 'zmv'
 
-# Set the Prezto modules to load (browse modules).
-# The order matters.
+# set the prezto modules to load (browse modules).
+# the order matters.
 zstyle ':prezto:load' pmodule \
   'environment' \
   'terminal' \
@@ -38,14 +38,14 @@ zstyle ':prezto:load' pmodule \
   'prompt'
 
 #
-# Autosuggestions
+# autosuggestions
 #
 
-# Set the query found color.
+# set the query found color.
 # zstyle ':prezto:module:autosuggestions:color' found ''
 
 #
-# Editor
+# editor
 #
 
 # Set the key mapping style to 'emacs' or 'vi'.

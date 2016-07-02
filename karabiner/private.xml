@@ -248,6 +248,19 @@ KeyCode::DELETE
 
 
 
+<item>
+<name>right shift and right command to option and command</name>
+<identifier>private.right_shift_and_command_to_option_command</identifier>
+<autogen>
+--KeyOverlaidModifier--
+KeyCode::SHIFT_R, ModifierFlag::COMMAND_R,
+KeyCode::OPTION_L, ModifierFlag::COMMAND_L,
+KeyCode::DELETE, ModifierFlag::COMMAND_L
+</autogen>
+</item>
+
+
+
 <!-- I use Alfred everyday as a replacement for spotlight -->
 <!-- this allows me to toggle Alfred prompt with one right command key press -->
 <!-- I then bind this combination in Alfred itself and I have a fully working command key which acts as Alfred prompt when pressed alone -->

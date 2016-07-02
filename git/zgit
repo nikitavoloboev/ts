@@ -1,0 +1,19 @@
+# git alias 
+
+alias g="git"
+alias gl='git pull'
+alias gcl='git clone'
+alias gs='git status'
+alias ga.='git add .'
+alias ga='git add'
+alias gb='git branch'
+alias gc='git commit'
+alias gp='git push'
+alias gds='git commit . -m ':sparkles:''
+alias gdf='git commit . -m ':tada: initial commit''
+alias gpm="git push origin master"
+alias gpd="git push origin develop"
+
+# remove git from a project
+alias ungit="find . -name '.git' -exec rm -rf {} \;"
+

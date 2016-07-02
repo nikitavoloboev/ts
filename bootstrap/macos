@@ -1,0 +1,12 @@
+#!/usr/bin/bash
+
+# will need to fill in with system wide changes that I like
+# inspired by https://github.com/mathiasbynens/dotfiles
+
+# ask for administrator password
+sudo -v
+
+# keep alive : update existing 'sudo' time stamp until '.macos' has finished
+while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
+
+
