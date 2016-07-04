@@ -10,6 +10,7 @@ source ~/.dotfiles/vim/zvim
 source ~/.dotfiles/zsh/zfunctions
 source ~/.dotfiles/zsh/zdev
 source ~/.dotfiles/git/zgit
+source ~/.dotfiles/zsh/zenv
 
 # add bin to my path
 export PATH=$PATH:~/.dotfiles/bin
@@ -23,13 +24,6 @@ source /usr/local/Cellar/zplug/2.1.0/init.zsh
 
 # better than l file and dir listings with good info
 zplug "supercrabtree/k"
-
-# exported variables get passed on to child processes, not-exported variables do not
-# can call it like so $ZPLUG_HOME
-export NODE_PATH='/usr/local/lib/node_modules'
-export ZPLUG_HOME=/usr/local/opt/zplug 
-source $ZPLUG_HOME/init.zsh
-
 
 # source all zplug plugins and add commands to $PATH
 zplug load

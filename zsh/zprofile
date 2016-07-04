@@ -1,10 +1,8 @@
 #
-# Executes commands at login pre-zshrc.
+# executes commands at login pre-zshrc.
 #
-# Authors:
-#   Sorin Ionescu <sorin.ionescu@gmail.com>
 #
-# Browser
+# browser
 #
 
 if [[ "$OSTYPE" == darwin* ]]; then
@@ -12,7 +10,7 @@ if [[ "$OSTYPE" == darwin* ]]; then
 fi
 
 #
-# Editors
+# editors
 #
 
 export EDITOR='nano'
@@ -20,7 +18,7 @@ export VISUAL='nano'
 export PAGER='less'
 
 #
-# Language
+# language
 #
 
 if [[ -z "$LANG" ]]; then
@@ -28,42 +26,42 @@ if [[ -z "$LANG" ]]; then
 fi
 
 #
-# Paths
+# paths
 #
 export PATH=$PATH:$HOME/.bin
 
 
-# Ensure path arrays do not contain duplicates.
+# ensure path arrays do not contain duplicates.
 typeset -gU cdpath fpath mailpath path
 
-# Set the the list of directories that cd searches.
+# set the the list of directories that cd searches.
 # cdpath=(
 #   $cdpath
 # )
 
-# Set the list of directories that Zsh searches for programs.
+# set the list of directories that zsh searches for programs.
 path=(
   /usr/local/{bin,sbin}
   $path
 )
 
 #
-# Less
+# less
 #
 
-# Set the default Less options.
-# Mouse-wheel scrolling has been disabled by -X (disable screen clearing).
-# Remove -X and -F (exit if the content fits on one screen) to enable it.
+# set the default less options.
+# mouse-wheel scrolling has been disabled by -x (disable screen clearing).
+# remove -x and -f (exit if the content fits on one screen) to enable it.
 export LESS='-F -g -i -M -R -S -w -X -z-4'
 
-# Set the Less input preprocessor.
-# Try both `lesspipe` and `lesspipe.sh` as either might exist on a system.
+# set the less input preprocessor.
+# try both `lesspipe` and `lesspipe.sh` as either might exist on a system.
 if (( $#commands[(i)lesspipe(|.sh)] )); then
   export LESSOPEN="| /usr/bin/env $commands[(i)lesspipe(|.sh)] %s 2>&-"
 fi
 
 #
-# Temporary Files
+# temporary files
 #
 
 if [[ ! -d "$TMPDIR" ]]; then

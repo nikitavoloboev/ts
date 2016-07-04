@@ -26,6 +26,7 @@ Plug 'morhetz/gruvbox' " colour goodness
 
 Plug 'tpope/vim-fugitive' " supposedly a really nice git wrapper
 
+
 " a nice looking status bar on the bottom
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'

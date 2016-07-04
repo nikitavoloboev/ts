@@ -23,6 +23,17 @@ KeyCode::9, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L | ModifierFlag::SHI
 </item>
 
 
+
+<item>
+<name>left option to control and command</name>
+<identifier>private.left_option_to_control_and_command</identifier>
+<autogen>
+__KeyToKey__
+KeyCode::OPTION_L,
+KeyCode::CONTROL_L,ModifierFlag::COMMAND_L,
+</autogen>
+</item>
+
 <item>
 <name>left option plus left shift to search documentation for selected text</name>
 <identifier>private.left_option_plus_left_shift_to_hotkey</identifie>
@@ -128,7 +139,6 @@ KeyCode::SEMICOLON, ModifierFlag::SHIFT_L
 
 
 <!-- open applications with karabiner physical key presses -->
-
 <item>
 <name>caps + top delete to open magic number</name>
 <identifier>private.caps_to_delete_to_magic_number</identifier>
@@ -242,7 +252,9 @@ Option::NOREPEAT,
 --KeyOverlaidModifier--
 KeyCode::SHIFT_R,
 KeyCode::SHIFT_R, ModifierFlag::COMMAND_L,
-KeyCode::DELETE
+KeyCode::DELETE,
+
+Option::KEYOVERLAIDMODIFIER_REPEAT,
 </autogen>
 </item>
 
@@ -270,7 +282,7 @@ KeyCode::DELETE, ModifierFlag::COMMAND_L
 <autogen>
 __KeyOverlaidModifier__
 KeyCode::COMMAND_R,
-KeyCode::COMMAND_R,
+KeyCode::CONTROL_L,
 KeyCode::SPACE, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L
 </autogen>
 </item>
@@ -353,5 +365,6 @@ KeyCode::FN,
 KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L,
 </autogen>
 </item>
+
 
 </root>
