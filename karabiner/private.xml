@@ -11,6 +11,31 @@
 <inputsourceid_prefix>com.apple.keylayout.US</inputsourceid_prefi>
 </inputsourcedef>
 
+
+<item>
+<name>left option plus left shift to search documentation for selected text</name>
+<identifier>private.left_option_plus_left_shift_to_hotkey</identifie>
+<autogen>
+__KeyOverlaidModifier__
+KeyCode::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L,
+KeyCode::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L,
+KeyCode::8, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::COMMAND_L,
+</autogen>
+</item>
+
+
+<item>
+<name>control plus left shift to search wiki with selection</name>
+<identifier>private.control_shift_for_wiki_selection</identifier>
+<autogen>
+__KeyOverlaidModifier__
+KeyCode::SHIFT_L, ModifierFlag::CONTROL_L, ModifierFlag::COMMAND_L,
+KeyCode::SHIFT_L, ModifierFlag::CONTROL_L, ModifierFlag::COMMAND_L,
+KeyCode::7, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::COMMAND_L,
+</autogen>
+</item>
+
+
 <item>
 <name>command plus left shift to google selected text</name>
 <identifier>private.command_plus_left_shift_to_hotkey</identifier>
@@ -22,6 +47,7 @@ KeyCode::9, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L | ModifierFlag::SHI
 </autogen>
 </item>
 
+
 <item>
 <name>left control to left control and command</name>
 <identifier>private.left_control_to_left_control_and_command</identifier>
@@ -32,38 +58,30 @@ KeyCode::CONTROL_L, ModifierFlag::COMMAND_L,
 </autogen>
 </item>
 
+
 <item>
 <name>left option to control and command</name>
 <identifier>private.left_option_to_control_and_command</identifier>
 <autogen>
 __KeyToKey__
 KeyCode::OPTION_L,
-KeyCode::CONTROL_L,ModifierFlag::COMMAND_L,
-</autogen>
-</item>
-
-<item>
-<name>left option plus left shift to search documentation for selected text</name>
-<identifier>private.left_option_plus_left_shift_to_hotkey</identifie>
-<autogen>
-__KeyOverlaidModifier__
-KeyCode::SHIFT_L, ModifierFlag::OPTION_L,
-KeyCode::SHIFT_L, ModifierFlag::OPTION_L,
-KeyCode::8, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::COMMAND_L,
+KeyCode::OPTION_L,ModifierFlag::COMMAND_L,
 </autogen>
 </item>
 
 
 <item>
-<name>control plus left shift to search wiki with selection</name>
-<identifier>private.control_shift_for_wiki_selection</identifier>
+<name>left control to control and command</name>
+<identifier>private.left_control_to_control_and_command</identifier>
 <autogen>
-__KeyOverlaidModifier__
-KeyCode::SHIFT_L, ModifierFlag::CONTROL_L,
-KeyCode::SHIFT_L, ModifierFlag::CONTROL_L,
-KeyCode::7, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::COMMAND_L,
+__KeyToKey__
+KeyCode::CONTROL_L,
+KeyCode::CONTROL_L, ModifierFlag::COMMAND_L,
 </autogen>
 </item>
+
+
+
 
 <!-- a big life changer -->
 <!-- makes  caps lock act as a combination of ⌥⌃ keys when pressed together with something, and acts as ⎋ key when pressed alone-->
@@ -72,6 +90,11 @@ KeyCode::7, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L | ModifierFlag::SHI
 <item>
 <name>caps lock as control + option and escape when alone</name>
 <identifier>private.left_alt_caps_tab_search_snippets</identifie>
+<autogen>
+__KeyToKey__
+KeyCode::F19, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L,
+KeyCode::0, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::COMMAND_L,
+</autogen>
 <autogen>
 __KeyToKey__
 KeyCode::TAB, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L | ModifierFlag::MY_CAPSLOCK | ModifierFlag::NONE,
@@ -173,7 +196,7 @@ KeyCode::U, ModifierFlag::CONTROL_L, ModifierFlag::COMMAND_L,
 <identifier>private.right_opt_plus_delete_to_mindnode</identifier>
 <autogen>
 __KeyToKey__
-KeyCode::DELETE, ModifierFlag::CONTROL_L,
+KeyCode::DELETE, ModifierFlag::OPTION_R,
 KeyCode::Q, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::COMMAND_L,
 </autogen>
 </item>
