@@ -22,7 +22,15 @@ KeyCode::9, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L | ModifierFlag::SHI
 </autogen>
 </item>
 
-
+<item>
+<name>left control to left control and command</name>
+<identifier>private.left_control_to_left_control_and_command</identifier>
+<autogen>
+__KeyToKey__
+KeyCode::CONTROL_L,
+KeyCode::CONTROL_L, ModifierFlag::COMMAND_L,
+</autogen>
+</item>
 
 <item>
 <name>left option to control and command</name>
