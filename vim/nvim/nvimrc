@@ -18,7 +18,7 @@ set incsearch " highlight pattern matches as you type
 set history=1000 " remember everything
 set undolevels=1000
 
-filetype plugin indent on " not really sure what it does yet
+filetype plugin indent on
 
 set smartindent " indentation
 
@@ -26,21 +26,52 @@ set smartindent " indentation
 "  key mapping
 " --------------------------------------
 
-let mapleader=" " " map leader to space key
+" essential
+nnoremap <SPACE> <Nop>
+let mapleader="\<Space>"
 
-:nnoremap <leader>d dd
+" insert mode
+inoremap      jk  <Esc>
+inoremap      kj  <Esc>
 
-:nnoremap <leader>a :x<cr> " quit and save changes
+inoremap      '   ''<Esc>i
+inoremap      "   ""<Esc>i
+inoremap      (   ()<Esc>i
+inoremap      [   []<Esc>i
+inoremap      {   {}<Esc>i
 
-:nnoremap <leader>s :w<cr> " save changes
+inoremap (<Space>  ();<Esc>hi
+inoremap      (;   ();<Esc>o
+inoremap      ()   ()
 
-:nnoremap <leader>q :q!<cr> " quit and don't save any changes
+" navigation
+nnoremap      j   gj
+nnoremap      k   gk
+nnoremap  <C-h>   <C-w>h
+nnoremap  <C-j>   <C-w>j
+nnoremap  <C-k>   <C-w>k
+nnoremap  <C-l>   <C-w>l
 
-:nnoremap <leader>l :%d<cr> " delete content of the entire file
 
+" vim related
+nmap <Leader>d    dd
+nmap <Leader>a    :x<CR>
+nmap <Leader>s    :w<CR>
+nmap <Leader>q    :q!<CR>
+nmap <Leader>y    :%y<CR>
+nmap <Leader>vW   :wa<CR>
+nmap <Leader>vq   :wqall<CR>
+nmap <Leader>vQ   :qa<CR>
+nmap <Leader>ee   :e ~/.dotfiles/vim/nvim/nvimrc<CR>
+nmap <Leader>se   :source ~/.dotfiles/vim/nvim/nvimrc<CR>
+nmap <Leader>pi   :PlugInstall<CR>
+nmap <Leader>pu   :PlugUpdate<CR>
+nmap <Leader>vm   :make<CR>
+
+
+nnoremap <leader>l :%d<cr>
 map <C-l> :NERDTreeToggle<CR> 
-
-:nnoremap <leader>r :exec '!python' shellescape(@%, 1)<cr> " run python TODO : add it so it runs files according to what file type the file is
+nnoremap <leader>r :exec ':w !python' shellescape(@%, 1)<cr>
 
 " -------------------------------------
 "  basic UI config
@@ -89,9 +120,14 @@ Plug 'carlitux/deoplete-ternjs' " js autocomplete
 
 call plug#end()
 
+" -------------------------------------
+"  activating / modifying plugins
+" -------------------------------------
+
 colorscheme gruvbox " activate the colour scheme
 
 let g:deoplete#enable_at_startup = 1 " activate deoplete
+
 
 
 
