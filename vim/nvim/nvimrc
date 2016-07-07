@@ -30,11 +30,17 @@ let mapleader=" " " map leader to space key
 
 :nnoremap <leader>d dd
 
-:nnoremap <leader>s :x<cr> " space + s = save file and exit
+:nnoremap <leader>a :x<cr> " quit and save changes
 
-:nnoremap <leader>q :q!<cr> " space + q = exit file w/o saving
+:nnoremap <leader>s :w<cr> " save changes
 
-map <C-l> :NERDTreeToggle<CR>
+:nnoremap <leader>q :q!<cr> " quit and don't save any changes
+
+:nnoremap <leader>l :%d<cr> " delete content of the entire file
+
+map <C-l> :NERDTreeToggle<CR> 
+
+:nnoremap <leader>r :exec '!python' shellescape(@%, 1)<cr> " run python TODO : add it so it runs files according to what file type the file is
 
 " -------------------------------------
 "  basic UI config

@@ -24,6 +24,7 @@ source /usr/local/Cellar/zplug/2.1.0/init.zsh
 
 # better than l file and dir listings with good info
 zplug "supercrabtree/k"
+zplug "Tarrasch/zsh-bd"
 
 # source all zplug plugins and add commands to $PATH
 zplug load
