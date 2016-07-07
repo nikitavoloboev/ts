@@ -1,43 +1,101 @@
-" make navigation easier
-set relativenumber
-set number
+" --------------------------------------
+"  basic vim config
+" --------------------------------------
 
 set clipboard=unnamed " copy text to system clipboard
 
 let $NVIM_TUI_ENABLE_TRUE_COLOR=1 " finally have a nice looking editor :D
 
-filetype indent on
+filetype plugin indent on
 
 syntax on " syntax highlighting
 
 set title " set terminal title
 
 set hlsearch " highlight search results
+set incsearch " highlight pattern matches as you type
+
+set history=1000 " remember everything
+set undolevels=1000
 
 filetype plugin indent on " not really sure what it does yet
 
 set smartindent " indentation
 
+" --------------------------------------
+"  key mapping
+" --------------------------------------
+
+let mapleader=" " " map leader to space key
+
+:nnoremap <leader>d dd
+
+:nnoremap <leader>s :x<cr> " space + s = save file and exit
+
+:nnoremap <leader>q :q!<cr> " space + q = exit file w/o saving
+
+map <C-l> :NERDTreeToggle<CR>
+
+" -------------------------------------
+"  basic UI config
+" -------------------------------------
+
+set relativenumber " relative to current posion line numbers
+set number " show line numbers
+
+set cursorline " highlight current line
+
+set tabstop=4 " default indentation is 4 spaces long and uses tabs, not spaces
+
+set showmatch " highlight brackets
+set matchtime=2
+
+set background=dark " set night mode
+
+" -------------------------------------
+"  plugins
+" -------------------------------------
+
 call plug#begin() " plugins to use
 
 Plug 'tpope/vim-sensible' " sensible defaults
-
-Plug 'fatih/vim-go' " go autocompletion
 
 Plug 'morhetz/gruvbox' " colour goodness
 
 Plug 'tpope/vim-fugitive' " supposedly a really nice git wrapper
 
-
-" a nice looking status bar on the bottom
-Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline' " a nice looking status bar on the bottom
 Plug 'vim-airline/vim-airline-themes'
 
 Plug 'easymotion/vim-easymotion' " testing it out
 
-" Plug 'Shougo/deoplete.nvim' TODO:  need to get python 3 working
+Plug 'scrooloose/nerdcommenter'
+
+Plug 'scrooloose/nerdtree'
+
+" autocomplete engine
+function! DoRemote(arg)
+  UpdateRemotePlugins
+endfunction
+Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
+
+Plug 'carlitux/deoplete-ternjs' " js autocomplete
+
 call plug#end()
 
 colorscheme gruvbox " activate the colour scheme
-set background=dark " set night mode
+
+let g:deoplete#enable_at_startup = 1 " activate deoplete
+
+
+
+
+
+
+
+
+
+
+
+
 

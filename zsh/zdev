@@ -1,14 +1,14 @@
 # my aliases, functions that I use for development purposes
 
 # node 
-alias nd='node'
+alias n='node'
 alias ndi='node install'
 alias npi='npm install'
 alias nst='npm start'
 alias ns='npm ls'
 alias na='npm update'
 alias nit='npm init'
-alias n='npm'
+alias npm='npm'
 
 # go
 alias o='go run'
