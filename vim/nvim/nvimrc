@@ -4,7 +4,7 @@
 
 set clipboard=unnamed " copy text to system clipboard
 
-let $NVIM_TUI_ENABLE_TRUE_COLOR=1 " finally have a nice looking editor :D
+let $NVIM_TUI_ENABLE_TRUE_COLOR=1 " a nice looking editor
 
 filetype plugin indent on
 
@@ -34,23 +34,17 @@ let mapleader="\<Space>"
 inoremap      jk  <Esc>
 inoremap      kj  <Esc>
 
-inoremap      '   ''<Esc>i
-inoremap      "   ""<Esc>i
-inoremap      (   ()<Esc>i
-inoremap      [   []<Esc>i
-inoremap      {   {}<Esc>i
-
 inoremap (<Space>  ();<Esc>hi
 inoremap      (;   ();<Esc>o
 inoremap      ()   ()
 
 " navigation
-nnoremap      j   gj
-nnoremap      k   gk
-nnoremap  <C-h>   <C-w>h
-nnoremap  <C-j>   <C-w>j
-nnoremap  <C-k>   <C-w>k
-nnoremap  <C-l>   <C-w>l
+" nnoremap      j   gj
+" nnoremap      k   gk
+" nnoremap  <C-h>   <C-w>h
+" nnoremap  <C-j>   <C-w>j
+" nnoremap  <C-k>   <C-w>k
+" nnoremap  <C-l>   <C-w>l
 
 
 " vim related
@@ -70,8 +64,8 @@ nmap <Leader>vm   :make<CR>
 
 
 nnoremap <leader>l :%d<cr>
-map <C-l> :NERDTreeToggle<CR> 
 nnoremap <leader>r :exec ':w !python' shellescape(@%, 1)<cr>
+map <C-l> :NERDTreeToggle<CR> 
 
 " -------------------------------------
 "  basic UI config
@@ -84,7 +78,6 @@ set cursorline " highlight current line
 
 set tabstop=4 " default indentation is 4 spaces long and uses tabs, not spaces
 
-set showmatch " highlight brackets
 set matchtime=2
 
 set background=dark " set night mode
@@ -114,6 +107,7 @@ Plug 'scrooloose/nerdtree'
 function! DoRemote(arg)
   UpdateRemotePlugins
 endfunction
+
 Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
 
 Plug 'carlitux/deoplete-ternjs' " js autocomplete

@@ -12,6 +12,24 @@
 </inputsourcedef>
 
 
+<!-- added so that I can use vim emulation in iTerm too -->
+<replacementdef>
+  <replacementname>VIM_EMU_ONLY_APPS</replacementname>
+  <replacementvalue></replacementvalue>
+</replacementdef>
+<replacementdef>
+  <replacementname>VIM_EMU_IGNORE_APPS</replacementname>
+  <replacementvalue>PASSWORD</replacementvalue>
+</replacementdef>
+
+
+
+
+<appdef>
+<appname>ITERM</appname>
+<equal>com.googlecode.iterm2</equal>
+</appdef>
+
 <item>
 <name>left option plus left shift to search documentation for selected text</name>
 <identifier>private.left_option_plus_left_shift_to_hotkey</identifie>
@@ -167,8 +185,6 @@ KeyCode::SEMICOLON, ModifierFlag::SHIFT_L
 </item>
 
 
-
-
 <!-- open applications with karabiner physical key presses -->
 <item>
 <name>caps + top delete to open magic number</name>
@@ -284,7 +300,6 @@ Option::NOREPEAT,
 KeyCode::SHIFT_R,
 KeyCode::SHIFT_R, ModifierFlag::COMMAND_L,
 KeyCode::DELETE,
-
 Option::KEYOVERLAIDMODIFIER_REPEAT,
 </autogen>
 </item>
@@ -310,6 +325,7 @@ KeyCode::DELETE, ModifierFlag::COMMAND_L
 <item>
 <name>right command to Alfred</name>
 <identifier>private.right_command_to_alfred</identifier>
+<not>ITERM</not>
 <autogen>
 __KeyOverlaidModifier__
 KeyCode::COMMAND_R,
@@ -317,6 +333,25 @@ KeyCode::CONTROL_L,
 KeyCode::SPACE, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L
 </autogen>
 </item>
+
+<item>
+<name>left command as control, right command as command in iTerm</name>
+<identifier>iterm_remap</identifier>
+<only>ITERM</only>
+<autogen>
+__KeyOverlaidModifier__ 
+KeyCode::COMMAND_R, 
+KeyCode::COMMAND_R,
+KeyCode::SPACE, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L
+</autogen>
+
+<autogen>
+__KeyToKey__ 
+KeyCode::COMMAND_L, 
+KeyCode::CONTROL_L,
+</autogen>
+</item>
+
 
 
 <!-- I use round brackets more often then square brackets -->
@@ -370,7 +405,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 </item>
 
 
-
 <!-- I haven't found any use for my fn key on os x so I decided to make it useful -->
 <!-- this makes my fn key act as a 'superkey' ie all modifiers pressed together (alt, opt, command, shift) -->
 <!-- this allows for insane freedom in keybindings -->
@@ -394,8 +428,13 @@ KeyCode::Z, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMA
 __KeyToKey__
 KeyCode::FN,
 KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L,
-</autogen>
+</autogen> 
 </item>
+
+
+
+
+
 
 
 </root>
