@@ -12,6 +12,10 @@ syntax on " syntax highlighting
 
 set title " set terminal title
 
+set expandtab
+set shiftwidth=2
+set softtabstop=2
+
 set hlsearch " highlight search results
 set incsearch " highlight pattern matches as you type
 
@@ -122,7 +126,8 @@ colorscheme gruvbox " activate the colour scheme
 
 let g:deoplete#enable_at_startup = 1 " activate deoplete
 
-
+" autocomplete with tab
+inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 
 
 

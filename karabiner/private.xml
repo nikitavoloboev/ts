@@ -23,8 +23,6 @@
 </replacementdef>
 
 
-
-
 <appdef>
 <appname>ITERM</appname>
 <equal>com.googlecode.iterm2</equal>
@@ -346,10 +344,13 @@ KeyCode::SPACE, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::C
 </autogen>
 
 <autogen>
-__KeyToKey__ 
+__KeyOverlaidModifier__ 
 KeyCode::COMMAND_L, 
 KeyCode::CONTROL_L,
+KeyCode::COMMAND_L
 </autogen>
+
+
 </item>
 
 

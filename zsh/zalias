@@ -1,4 +1,5 @@
 # general
+alias jks='jekyll serve'
 alias b='bd'
 alias s='fuck'
 alias dus='du -s'
