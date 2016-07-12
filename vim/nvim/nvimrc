@@ -4,7 +4,6 @@
 
 set clipboard=unnamed " copy text to system clipboard
 
-
 let $NVIM_TUI_ENABLE_TRUE_COLOR=1 " a nice looking editor
 
 filetype plugin indent on
@@ -13,7 +12,7 @@ syntax on " syntax highlighting testing
 
 set title " set terminal title
 
-set mouse=
+:vnoremap <M-c> "+y
 
 set expandtab
 set shiftwidth=2
