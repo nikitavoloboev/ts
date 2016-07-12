@@ -3,6 +3,14 @@ if [[ -s "${ZDOTDIR:-$HOME}/.dotfiles/zsh/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.dotfiles/zsh/init.zsh"
 fi
 
+
+export PATH=$(brew --prefix ruby)/bin:$PATH
+
+
+
+
+
+
 # source aliases
 source ~/.dotfiles/zsh/zpaths
 source ~/.dotfiles/zsh/zalias

@@ -1,5 +1,5 @@
 # general
-alias jks='jekyll serve'
+alias rec='asciinema rec'
 alias b='bd'
 alias s='fuck'
 alias dus='du -s'
@@ -36,6 +36,8 @@ alias aa='ls -lah'
 alias srp='ssh pi@192.168.1.17'
 alias tp='type'
 
+
+
 # enable aliases to be sudo'd
 alias sudo='sudo '
 
@@ -65,7 +67,7 @@ alias lsn='ls -Art1 && echo "------Newest--"'
 
 # hugo
 alias hs='hugo server'
-alias hss='hugo server --theme=angels-ladder --buildDrafts'
+alias hss='hugo server -t hugo-theme-pixyll'
 
 # express
 alias ep='express'
