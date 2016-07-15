@@ -22,6 +22,109 @@
   <replacementvalue>PASSWORD</replacementvalue>
 </replacementdef>
 
+<item>
+<name>caps lock and c, two different hotkeys for quick and long press</name>
+<identifier>private.caps_c_long_press</identifie>
+<autogen>
+  __HoldingKeyToKey__
+  KeyCode::C, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L,
+
+  <!-- short press -->
+  @begin
+  KeyCode::C, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L,
+  @end
+
+  <!-- hold -->
+  @begin
+  KeyCode::2, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L,
+  @end
+
+  Option::NOREPEAT,
+</autogen>
+</item>
+
+<item>
+<name>caps lock and c, two different hotkeys for quick and long press</name>
+<identifier>private.caps_c_long_press</identifie>
+<autogen>
+  __HoldingKeyToKey__
+  KeyCode::C, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L,
+
+  <!-- short press -->
+  @begin
+  KeyCode::C, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L,
+  @end
+
+  <!-- hold -->
+  @begin
+  KeyCode::2, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L,
+  @end
+
+  Option::NOREPEAT,
+</autogen>
+</item>
+
+
+<item>
+    <name>ChangeKey11: Left Cmd toggles Insert Mode - Normal Mode</name>
+    <appendix>In Virtual or Command mode, it changes to Insert Mode.</appendix>
+    <identifier>private.vim_emu_l_cmd_toggles{{VIM_EMU_ALTCONFIG}}</identifier>
+
+    <only>ITERM</only>
+
+    <block>
+      <block> <!-- Vim Mode -->
+        <config_only>notsave.vim_emu{{VIM_EMU_ALTCONFIG}}</config_only>
+        <autogen> <!-- Other case -->
+          __KeyOverlaidModifier__
+          KeyCode::COMMAND_L,
+          KeyCode::CONTROL_L, <!-- Need one key shot to use as modifier -->
+          {{VIM_EMU_FORCE_OFF_ALL_BUT_LINE}}
+        </autogen>
+      </block>
+      <block> <!-- Complement Mode -->
+        <config_only>notsave.vim_emu_complement{{VIM_EMU_ALTCONFIG}}</config_only>
+        <autogen>
+          __KeyOverlaidModifier__
+          KeyCode::COMMAND_L,
+          KeyCode::CONTROL_L,
+          KeyCode::RETURN,
+          KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_complement{{VIM_EMU_ALTCONFIG}},
+          KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_normal{{VIM_EMU_ALTCONFIG}},
+        </autogen>
+      </block>
+      <block> <!-- Search Mode -->
+        <config_only>notsave.vim_emu_search{{VIM_EMU_ALTCONFIG}}</config_only>
+        <autogen>
+          __KeyOverlaidModifier__
+          KeyCode::COMMAND_L,
+          KeyCode::CONTROL_L,
+          KeyCode::ESCAPE,
+          KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_search{{VIM_EMU_ALTCONFIG}},
+          {{VIM_EMU_EMU_ON}}
+          KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_normal{{VIM_EMU_ALTCONFIG}},
+        </autogen>
+      </block>
+      <block> <!-- Turn Off also IME if enabled -->
+        <inputsource_only>JAPANESE</inputsource_only>
+        <autogen>
+          __KeyOverlaidModifier__
+          KeyCode::COMMAND_L,
+          KeyCode::CONTROL_L,
+          KeyCode::VK_CHANGE_INPUTSOURCE_ENGLISH,
+          KeyCode::VK_CHANGE_INPUTSOURCE_JAPANESE,
+          KeyCode::VK_CHANGE_INPUTSOURCE_ENGLISH,
+          {{VIM_EMU_FORCE_ON_NORMAL_MODE}}
+        </autogen>
+      </block>
+      <autogen> <!-- Other case -->
+        __KeyOverlaidModifier__
+        KeyCode::COMMAND_L,
+        KeyCode::CONTROL_L,
+        {{VIM_EMU_FORCE_ON_NORMAL_MODE}}
+      </autogen>
+    </block>
+  </item>
 
 <appdef>
 <appname>ITERM</appname>

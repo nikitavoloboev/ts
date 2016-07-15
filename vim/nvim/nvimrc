@@ -12,7 +12,6 @@ syntax on " syntax highlighting testing
 
 set title " set terminal title
 
-:vnoremap <M-c> "+y
 
 set expandtab
 set shiftwidth=2
@@ -56,7 +55,7 @@ inoremap      ()   ()
 " vim related
 nmap <Leader>d    dd
 nmap <Leader>a    :x<CR>
-nmap <Leader>s    :w<CR>
+nmap <Leader>w    :w<CR>
 nmap <Leader>q    :q!<CR>
 nmap <Leader>y    :%y<CR>
 nmap <Leader>vW   :wa<CR>
@@ -70,8 +69,16 @@ nmap <Leader>vm   :make<CR>
 
 
 nnoremap <leader>l :%d<cr>
-nnoremap <leader>r :exec ':w !python' shellescape(@%, 1)<cr>
 map <C-l> :NERDTreeToggle<CR> 
+
+
+
+" --------------------------------------
+"  command mapping
+" --------------------------------------
+
+:command R !node %
+
 
 " -------------------------------------
 "  basic UI config
@@ -95,6 +102,8 @@ set background=dark " set night mode
 call plug#begin() " plugins to use
 
 Plug 'tpope/vim-sensible' " sensible defaults
+
+Plug 'rizzatti/dash.vim'
 
 Plug 'morhetz/gruvbox' " colour goodness
 

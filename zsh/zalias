@@ -57,6 +57,7 @@ alias jj='open -a IntelliJ\ IDEA'
 alias xx='open -a Xcode'
 alias pdf='open -a PDF\ Expert'
 alias love="/Applications/love.app/Contents/MacOS/love"
+alias Q="open -a Google\ Chrome"
 
 
 # better ls
@@ -67,7 +68,6 @@ alias lsn='ls -Art1 && echo "------Newest--"'
 
 # hugo
 alias hs='hugo server'
-alias hss='hugo server -t hugo-theme-pixyll'
 
 # express
 alias ep='express'
