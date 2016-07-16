@@ -44,28 +44,6 @@
 </item>
 
 <item>
-<name>caps lock and c, two different hotkeys for quick and long press</name>
-<identifier>private.caps_c_long_press</identifie>
-<autogen>
-  __HoldingKeyToKey__
-  KeyCode::C, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L,
-
-  <!-- short press -->
-  @begin
-  KeyCode::C, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L,
-  @end
-
-  <!-- hold -->
-  @begin
-  KeyCode::2, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L,
-  @end
-
-  Option::NOREPEAT,
-</autogen>
-</item>
-
-
-<item>
     <name>ChangeKey11: Left Cmd toggles Insert Mode - Normal Mode</name>
     <appendix>In Virtual or Command mode, it changes to Insert Mode.</appendix>
     <identifier>private.vim_emu_l_cmd_toggles{{VIM_EMU_ALTCONFIG}}</identifier>
