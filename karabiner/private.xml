@@ -43,6 +43,28 @@
 </item>
 
 
+<item>
+<name>caps lock and x, two different hotkeys for quick and long press</name>
+<identifier>private.caps_x_long_press</identifie>
+<autogen>
+  __HoldingKeyToKey__
+  KeyCode::X, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L,
+
+  <!-- short press -->
+  @begin
+  KeyCode::X, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L,
+  @end
+
+  <!-- hold -->
+  @begin
+  KeyCode::8, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L,
+  @end
+
+  Option::NOREPEAT,
+</autogen>
+</item>
+
+
 
 <item>
 <name>caps lock and d, two different hotkeys for quick and long press</name>
@@ -289,7 +311,22 @@ KeyCode::ESCAPE,
   Option::NOREPEAT,
 </autogen>
 
+<autogen>
+  __HoldingKeyToKey__
+  KeyCode::D, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L,
 
+  <!-- short press -->
+  @begin
+  KeyCode::D, ModifierFlag::CONTROL_L 
+  @end
+
+  <!-- hold -->
+  @begin
+  KeyCode::D, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
+  @end
+
+  Option::NOREPEAT,
+</autogen>
 
 </item>
 
