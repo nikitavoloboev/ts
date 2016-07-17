@@ -11,7 +11,6 @@
 <inputsourceid_prefix>com.apple.keylayout.US</inputsourceid_prefi>
 </inputsourcedef>
 
-
 <!-- added so that I can use vim emulation in iTerm too -->
 <replacementdef>
   <replacementname>VIM_EMU_ONLY_APPS</replacementname>
@@ -42,6 +41,121 @@
   Option::NOREPEAT,
 </autogen>
 </item>
+
+
+
+<item>
+<name>caps lock and d, two different hotkeys for quick and long press</name>
+<identifier>private.caps_d_long_press</identifie>
+<autogen>
+  __HoldingKeyToKey__
+  KeyCode::D, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L,
+
+  <!-- short press -->
+  @begin
+  KeyCode::D, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L,
+  @end
+
+  <!-- hold -->
+  @begin
+  KeyCode::3, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L,
+  @end
+
+  Option::NOREPEAT,
+</autogen>
+</item>
+
+
+<item>
+<name>caps lock and e, two different hotkeys for quick and long press</name>
+<identifier>private.caps_e_long_press</identifie>
+<autogen>
+  __HoldingKeyToKey__
+  KeyCode::E, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L,
+
+  <!-- short press -->
+  @begin
+  KeyCode::E, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L,
+  @end
+
+  <!-- hold -->
+  @begin
+  KeyCode::1, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L,
+  @end
+
+  Option::NOREPEAT,
+</autogen>
+</item>
+
+
+
+<item>
+<name>caps lock and a, two different hotkeys for quick and long press</name>
+<identifier>private.caps_a_long_press</identifie>
+<autogen>
+  __HoldingKeyToKey__
+  KeyCode::A, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L,
+
+  <!-- short press -->
+  @begin
+  KeyCode::A, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L,
+  @end
+
+  <!-- hold -->
+  @begin
+  KeyCode::5, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L,
+  @end
+
+  Option::NOREPEAT,
+</autogen>
+</item>
+
+
+<item>
+<name>right shift and return, two different hotkeys on long and short</name>
+<identifier>private.right_shift_return_two_diff_actions</identifie>
+<autogen>
+  __HoldingKeyToKey__
+  KeyCode::RETURN, ModifierFlag::SHIFT_R,
+
+  <!-- short press -->
+  @begin
+  KeyCode::RETURN, ModifierFlag::SHIFT_R
+  @end
+
+  <!-- hold -->
+  @begin
+  KeyCode::7, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L,
+  @end
+
+  Option::NOREPEAT,
+</autogen>
+</item>
+
+
+
+<item>
+<name>left option and a, two different hotkeys when held and when quickly pressed</name>
+<identifier>private.left_opt_a_two_diff_actions</identifie>
+<autogen>
+  __HoldingKeyToKey__
+  KeyCode::A, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
+
+  <!-- short press -->
+  @begin
+  KeyCode::A, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
+  @end
+
+  <!-- hold -->
+  @begin
+  KeyCode::6, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L,
+  @end
+
+  Option::NOREPEAT,
+</autogen>
+</item>
+
+
 
 <item>
     <name>ChangeKey11: Left Cmd toggles Insert Mode - Normal Mode</name>
@@ -179,14 +293,13 @@ KeyCode::CONTROL_L, ModifierFlag::COMMAND_L,
 
 
 
-
 <!-- a big life changer -->
 <!-- makes  caps lock act as a combination of ⌥⌃ keys when pressed together with something, and acts as ⎋ key when pressed alone-->
 <!-- allows for caps lock + the entire keyboard of bindings that you can then use + the esc key is invaluable -->
 <!-- my caps lock + keys bindings are global hotkeys and not app specific -->
 <item>
-<name>caps lock as control + option and escape when alone</name>
-<identifier>private.left_alt_caps_tab_search_snippets</identifie>
+<name>caps lock as control + option and escape when alone not in iTerm</name>
+<identifier>private.left_alt_caps_tab_search_snippets</identifier>
 <autogen>
 __KeyToKey__
 KeyCode::F19, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L,
@@ -414,7 +527,7 @@ KeyCode::SPACE, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::C
 </item>
 
 <item>
-<name>left command as control, right command as command in iTerm</name>
+  <name>left command as control, right command as command in iTerm, and left command and tab working</name>
 <identifier>iterm_remap</identifier>
 <only>ITERM</only>
 <autogen>
@@ -429,6 +542,11 @@ __KeyOverlaidModifier__
 KeyCode::COMMAND_L, 
 KeyCode::CONTROL_L,
 KeyCode::COMMAND_L
+</autogen>
+<autogen>
+__KeyToKey__
+KeyCode::TAB, ModifierFlag::CONTROL_L,
+KeyCode::TAB, ModifierFlag::COMMAND_L,
 </autogen>
 </item>
 
