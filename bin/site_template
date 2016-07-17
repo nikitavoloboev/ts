@@ -12,6 +12,6 @@ touch js/script.js
 
 
 # bootstrap my index.html with the necessary html text
-# need to finish
+# TODO: finish it
 printf "<doctype html>\n\n<html lang=" >> index.html
 

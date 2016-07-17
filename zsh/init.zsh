@@ -65,7 +65,7 @@ function pmodload {
           # directories.
           setopt LOCAL_OPTIONS EXTENDED_GLOB
 
-          # Unload Prezto functions.
+          # unload prezto functions.
           for pfunction in ${ZDOTDIR:-$HOME}/.zprezto/modules/$pmodule/functions/$~pfunction_glob; do
             unfunction "$pfunction"
           done

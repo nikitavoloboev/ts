@@ -459,6 +459,11 @@ KeyCode::BACKQUOTE, ModifierFlag::NONE,
 </autogen>	
 <autogen>
 __KeyToKey__
+KeyCode::9, ModifierFlag::SHIFT_L,
+KeyCode::6, ModifierFlag::SHIFT_L
+</autogen>
+<autogen>
+__KeyToKey__
 KeyCode::MINUS, ModifierFlag::SHIFT_L,
 KeyCode::BACKSLASH, ModifierFlag::SHIFT_L	
 </autogen>		

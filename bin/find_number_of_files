@@ -1,6 +1,8 @@
 #!/bin/bash
 
 # finds recursively number of files in a directory given
-# TODO:  save the user input after the command, put into variable and replace the '.' in the script
 
-find . -type f | wc -l
+arg="$1"
+
+find $arg -type f | wc -l
+

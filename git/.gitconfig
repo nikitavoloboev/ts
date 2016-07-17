@@ -1,0 +1,9 @@
+[user]
+	name = nikitavoloboev
+	email = nikita.voloboev@gmail.com
+[core]
+	editor = nvim
+[alias]
+	cim = !git commit -m \"$*\" && :
+	s = status
+	d = diff
