@@ -43,6 +43,63 @@
 </item>
 
 
+
+<item>
+<name>caps lock and dot, short and long press</name>
+<identifier>private.caps_dot_short_long</identifie>
+<autogen>
+  __HoldingKeyToKey__
+  KeyCode::DOT, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L,
+
+  <!-- short press -->
+  @begin
+  KeyCode::DOT, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L,
+  @end
+
+  <!-- hold -->
+  @begin
+  KeyCode::Q, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L,
+  @end
+
+  Option::NOREPEAT,
+</autogen>
+</item>
+
+
+
+
+
+<item>
+<name>right option and right bracket, different actions on long and short press</name>
+<identifier>private.right_opt_right_bracket_short_long</identifie>
+<autogen>
+  __HoldingKeyToKey__
+  KeyCode::BRACKET_RIGHT, ModifierFlag::OPTION_R
+
+  <!-- short press -->
+  @begin
+  KeyCode::BRACKET_RIGHT, ModifierFlag::OPTION_R
+  @end
+
+  <!-- hold -->
+  @begin
+  KeyCode::9, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L,
+  @end
+
+  Option::NOREPEAT,
+</autogen>
+</item>
+
+
+
+
+
+
+
+
+
+
+
 <item>
 <name>caps lock and x, two different hotkeys for quick and long press</name>
 <identifier>private.caps_x_long_press</identifie>
@@ -69,6 +126,7 @@
 <item>
 <name>caps lock and d, two different hotkeys for quick and long press</name>
 <identifier>private.caps_d_long_press</identifie>
+<not>ITERM</not>
 <autogen>
   __HoldingKeyToKey__
   KeyCode::D, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L,
@@ -156,6 +214,13 @@
 
 
 
+
+
+
+
+
+
+
 <item>
 <name>left option and a, two different hotkeys when held and when quickly pressed</name>
 <identifier>private.left_opt_a_two_diff_actions</identifie>
@@ -182,6 +247,38 @@
 <appname>ITERM</appname>
 <equal>com.googlecode.iterm2</equal>
 </appdef>
+
+
+
+
+<appdef>
+<appname>DASH</appname>
+<equal>com.kapeli.dashdoc</equal>
+</appdef>
+
+<item>
+  <name>dash scrolling fixed</name>
+  <identifier>private.dash_fix</identifier>
+  <only>DASH</only>
+  <autogen>
+    __KeyToKey__
+    KeyCode::J, ModifierFlag::COMMAND_L,
+    KeyCode::CURSOR_DOWN, ModifierFlag::CONTROL_L,
+  </autogen>
+  <autogen>
+    __KeyToKey__
+    KeyCode::K, ModifierFlag::COMMAND_L,
+    KeyCode::CURSOR_UP, ModifierFlag::CONTROL_L,
+  </autogen>
+</item>
+
+
+
+
+
+
+
+
 
 <item>
 <name>left option plus left shift to search documentation for selected text</name>
@@ -311,9 +408,64 @@ KeyCode::ESCAPE,
   Option::NOREPEAT,
 </autogen>
 
+
 <autogen>
   __HoldingKeyToKey__
-  KeyCode::D, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L,
+  KeyCode::Q, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L,
+
+  <!-- short press -->
+  @begin
+  KeyCode::Q, ModifierFlag::CONTROL_L 
+  @end
+
+  <!-- hold -->
+  @begin
+  KeyCode::Q, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
+  @end
+
+  Option::NOREPEAT,
+</autogen>
+
+
+<autogen>
+  __HoldingKeyToKey__
+  KeyCode::W, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L,
+
+  <!-- short press -->
+  @begin
+  KeyCode::W, ModifierFlag::CONTROL_L 
+  @end
+
+  <!-- hold -->
+  @begin
+  KeyCode::W, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
+  @end
+
+  Option::NOREPEAT,
+</autogen>
+
+
+<autogen>
+  __HoldingKeyToKey__
+  KeyCode::E, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L,
+
+  <!-- short press -->
+  @begin
+  KeyCode::E, ModifierFlag::CONTROL_L 
+  @end
+
+  <!-- hold -->
+  @begin
+  KeyCode::E, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
+  @end
+
+  Option::NOREPEAT,
+</autogen>
+
+
+<autogen>
+  __HoldingKeyToKey__
+  KeyCode::D, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L,
 
   <!-- short press -->
   @begin
@@ -323,6 +475,24 @@ KeyCode::ESCAPE,
   <!-- hold -->
   @begin
   KeyCode::D, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
+  @end
+
+  Option::NOREPEAT,
+</autogen>
+
+
+<autogen>
+  __HoldingKeyToKey__
+  KeyCode::B, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L,
+
+  <!-- short press -->
+  @begin
+  KeyCode::B, ModifierFlag::CONTROL_L 
+  @end
+
+  <!-- hold -->
+  @begin
+  KeyCode::B, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
   @end
 
   Option::NOREPEAT,
