@@ -411,6 +411,27 @@ KeyCode::ESCAPE,
 
 <autogen>
   __HoldingKeyToKey__
+  KeyCode::R, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L,
+
+  <!-- short press -->
+  @begin
+  KeyCode::R, ModifierFlag::CONTROL_L 
+  @end
+
+  <!-- hold -->
+  @begin
+  KeyCode::R, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
+  @end
+
+  Option::NOREPEAT,
+</autogen>
+
+
+
+
+
+<autogen>
+  __HoldingKeyToKey__
   KeyCode::Q, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L,
 
   <!-- short press -->
@@ -548,12 +569,12 @@ KeyCode::U, ModifierFlag::CONTROL_L, ModifierFlag::COMMAND_L,
 
 
 <item>
-<name>caps + right shift to open magic number</name>
-<identifier>private.caps_to_shift_to_magic_number</identifier>
+<name>caps + right shift to a hotkey</name>
+<identifier>private.caps_right_shift_hotkey</identifier>
 <autogen>
 __KeyToKey__
 KeyCode::SHIFT_R, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L,
-KeyCode::U, ModifierFlag::CONTROL_L, ModifierFlag::COMMAND_L,
+KeyCode::W, ModifierFlag::CONTROL_L, ModifierFlag::COMMAND_L,
 </autogen>
 </item>
 

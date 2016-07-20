@@ -8,7 +8,7 @@ let $NVIM_TUI_ENABLE_TRUE_COLOR=1 " a nice looking editor
 
 filetype plugin indent on
 
-syntax on " syntax highlighting testing
+syntax enable " syntax highlighting testing
 
 set title " set terminal title
 
@@ -16,7 +16,7 @@ set whichwrap+=<,>,[,]
 
 
 set expandtab
-set shiftwidth=2
+set shiftwidth=4
 set softtabstop=2
 
 set hlsearch " highlight search results
@@ -78,6 +78,12 @@ map <Leader>e   :Dash<CR>
 command Rgo execute "!go run %"
 
 
+
+
+command Rp execute "!python3 %"
+cabbrev rp Rp
+
+
 " --------------------------------------
 "  command mapping
 " --------------------------------------
@@ -93,6 +99,12 @@ set relativenumber " relative to current posion line numbers
 set number " show line numbers
 
 set cursorline " highlight current line
+
+let python_highlight_all = 1
+
+set showmatch
+
+set autoindent
 
 set tabstop=4 " default indentation is 4 spaces long and uses tabs, not spaces
 
