@@ -9,6 +9,10 @@ export PATH=$(brew --prefix ruby)/bin:$PATH
 
 
 
+export GOPATH=/Users/nikivi/Documents/code/go/
+export PATH=$GOPATH/bin:$PATH
+
+
 
 
 # source aliases

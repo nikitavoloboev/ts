@@ -429,24 +429,6 @@ KeyCode::ESCAPE,
 
 <autogen>
   __HoldingKeyToKey__
-  KeyCode::W, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L,
-
-  <!-- short press -->
-  @begin
-  KeyCode::W, ModifierFlag::CONTROL_L 
-  @end
-
-  <!-- hold -->
-  @begin
-  KeyCode::W, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
-  @end
-
-  Option::NOREPEAT,
-</autogen>
-
-
-<autogen>
-  __HoldingKeyToKey__
   KeyCode::E, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L,
 
   <!-- short press -->

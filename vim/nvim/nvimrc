@@ -12,6 +12,8 @@ syntax on " syntax highlighting testing
 
 set title " set terminal title
 
+set whichwrap+=<,>,[,]
+
 
 set expandtab
 set shiftwidth=2
@@ -67,10 +69,13 @@ nmap <Leader>pi   :PlugInstall<CR>
 nmap <Leader>pu   :PlugUpdate<CR>
 nmap <Leader>vm   :make<CR>
 
-
 nnoremap <leader>l :%d<cr>
 map <C-l> :NERDTreeToggle<CR> 
 
+
+map <Leader>e   :Dash<CR>
+
+command Rgo execute "!go run %"
 
 
 " --------------------------------------
