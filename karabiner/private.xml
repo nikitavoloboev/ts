@@ -5,13 +5,16 @@
 <modifierdef>MY_OPTION_L</modifierdef>
 <modifierdef>MY_CONTROL_L</modifierdef>
 
+<!-- TODO: clean it up, add comments, make things easily searchable  -->
+
+
 <!-- can use constant 'US' when I want to use items specific only to US keyboard -->
 <inputsourcedef>
 <name>US</name>
 <inputsourceid_prefix>com.apple.keylayout.US</inputsourceid_prefi>
 </inputsourcedef>
 
-
+<!-- s on hold change  -->
   <replacementdef>
     <replacementname>SIMPLE_VI_MODE_EXTRA</replacementname>
     <replacementvalue>
@@ -23,7 +26,16 @@
                  KeyCode::TAB, ModifierFlag::COMMAND_L,
                  <!-- release command key to commit command-tab -->
                  KeyCode::COMMAND_L,
+             </autogen>
+
+               <autogen>
+                 __KeyToKey__
+                 KeyCode::N,
+                 KeyCode::RETURN,
+                 <!-- release command key to commit command-tab -->
+                 KeyCode::COMMAND_L,
                </autogen>
+
                ]]>
     </replacementvalue>
   </replacementdef>
@@ -79,20 +91,18 @@
       __KeyDownUpToKey__
       KeyCode::L,
       KeyCode::L, ModifierFlag::CONTROL_L
-	
+    </autogen>
+
+    <autogen>
+      __KeyDownUpToKey__
+      KeyCode::K,
+      KeyCode::RETURN
     </autogen>
 
     <autogen>
       __KeyDownUpToKey__
       KeyCode::J,
-      KeyCode::J, ModifierFlag::CONTROL_L,
-    </autogen>
-
-
-    <autogen>
-      __KeyDownUpToKey__
-      KeyCode::K,
-      KeyCode::K, ModifierFlag::CONTROL_L,
+      KeyCode::DELETE
     </autogen>
 
     <autogen>
@@ -101,6 +111,8 @@
       KeyCode::W, ModifierFlag::CONTROL_L
     </autogen>
   </item>
+
+
 
 
 <!-- added so that I can use vim emulation in iTerm too -->
