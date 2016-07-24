@@ -22,6 +22,4 @@ I also am using [zsh](http://www.zsh.org) as my shell with [prezto](https://gith
 
 ![](http://i.imgur.com/lCOTphH.png)
 
-Prezto seems really nice and I really like how fast it seems to be although I really disklike how it has all these extra files that come with it that I still don't fully understand. I may try to run zsh without any frameworks and try to get a better understanding of what is done first and what needs what. 
 
-I am planning to also play around with [Hammerspoon](http://www.hammerspoon.org/), mostly for trying out some window management ideas that I have. So will add my init.lua here later hopefully. 

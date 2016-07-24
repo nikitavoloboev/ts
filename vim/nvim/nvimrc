@@ -71,6 +71,7 @@ nmap <Leader>vm   :make<CR>
 
 nnoremap <leader>l :%d<cr>
 map <C-l> :NERDTreeToggle<CR> 
+nmap <C-s> :w<cr>
 
 
 map <Leader>e   :Dash<CR>
@@ -80,8 +81,11 @@ command Rgo execute "!go run %"
 
 
 
-command Rp execute "!python3 %"
+command Rp execute "w|!python3 %"
 cabbrev rp Rp
+
+
+
 
 
 " --------------------------------------

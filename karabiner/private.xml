@@ -45,7 +45,7 @@
 
 
   <item>
-    <name>a key hold as control modifier</name>
+    <name>sticky a modifier</name>
     <identifier>private.launcher_mode_example</identifier>
 
     <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
@@ -87,11 +87,168 @@
       __BlockUntilKeyUp__ KeyCode::A,
     </autogen>
 
+
     <autogen>
       __KeyDownUpToKey__
-      KeyCode::L,
-      KeyCode::L, ModifierFlag::CONTROL_L
+      KeyCode::S,
+      KeyCode::S, ModifierFlag::CONTROL_L
     </autogen>
+
+    <autogen>
+      __KeyDownUpToKey__
+      KeyCode::Q,
+      KeyCode::Q, ModifierFlag::CONTROL_L
+    </autogen>
+
+    <autogen>
+      __KeyDownUpToKey__
+      KeyCode::W,
+      KeyCode::W, ModifierFlag::CONTROL_L
+    </autogen>
+
+
+    <autogen>
+      __KeyDownUpToKey__
+      KeyCode::E,
+      KeyCode::E, ModifierFlag::CONTROL_L
+    </autogen>
+
+
+    <autogen>
+      __KeyDownUpToKey__
+      KeyCode::T,
+      KeyCode::T, ModifierFlag::CONTROL_L
+    </autogen>
+
+
+    <autogen>
+      __KeyDownUpToKey__
+      KeyCode::Y,
+      KeyCode::Y, ModifierFlag::CONTROL_L
+    </autogen>
+
+
+    <autogen>
+      __KeyDownUpToKey__
+      KeyCode::U,
+      KeyCode::U, ModifierFlag::CONTROL_L
+    </autogen>
+
+
+    <autogen>
+      __KeyDownUpToKey__
+      KeyCode::I,
+      KeyCode::I, ModifierFlag::CONTROL_L
+    </autogen>
+
+
+    <autogen>
+      __KeyDownUpToKey__
+      KeyCode::O,
+      KeyCode::O, ModifierFlag::CONTROL_L
+    </autogen>
+
+
+    <autogen>
+      __KeyDownUpToKey__
+      KeyCode::P,
+      KeyCode::P, ModifierFlag::CONTROL_L
+    </autogen>
+
+
+    <autogen>
+      __KeyDownUpToKey__
+      KeyCode::S,
+      KeyCode::S, ModifierFlag::CONTROL_L
+    </autogen>
+
+
+
+    <autogen>
+      __KeyDownUpToKey__
+      KeyCode::D,
+      KeyCode::D, ModifierFlag::CONTROL_L
+    </autogen>
+
+
+    <autogen>
+      __KeyDownUpToKey__
+      KeyCode::F,
+      KeyCode::F, ModifierFlag::CONTROL_L
+    </autogen>
+
+
+    <autogen>
+      __KeyDownUpToKey__
+      KeyCode::G,
+      KeyCode::G, ModifierFlag::CONTROL_L
+    </autogen>
+
+
+    <autogen>
+      __KeyDownUpToKey__
+      KeyCode::H,
+      KeyCode::H, ModifierFlag::CONTROL_L
+    </autogen>
+
+
+
+    <autogen>
+      __KeyDownUpToKey__
+      KeyCode::Z,
+      KeyCode::Z, ModifierFlag::CONTROL_L
+    </autogen>
+
+
+    <autogen>
+      __KeyDownUpToKey__
+      KeyCode::X,
+      KeyCode::X, ModifierFlag::CONTROL_L
+    </autogen>
+
+
+    <autogen>
+      __KeyDownUpToKey__
+      KeyCode::C,
+      KeyCode::C, ModifierFlag::CONTROL_L
+    </autogen>
+
+
+
+    <autogen>
+      __KeyDownUpToKey__
+      KeyCode::V,
+      KeyCode::V, ModifierFlag::CONTROL_L
+    </autogen>
+
+
+    <autogen>
+      __KeyDownUpToKey__
+      KeyCode::B,
+      KeyCode::B, ModifierFlag::CONTROL_L
+    </autogen>
+
+
+    <autogen>
+      __KeyDownUpToKey__
+      KeyCode::N,
+      KeyCode::N, ModifierFlag::CONTROL_L
+  </autogen>
+
+
+
+    <autogen>
+      __KeyDownUpToKey__
+      KeyCode::M,
+      KeyCode::M, ModifierFlag::CONTROL_L
+    </autogen>
+
+
+
+
+
+
+
 
     <autogen>
       __KeyDownUpToKey__
@@ -102,14 +259,16 @@
     <autogen>
       __KeyDownUpToKey__
       KeyCode::J,
-      KeyCode::DELETE
+      KeyCode::DELETE,
     </autogen>
+
 
     <autogen>
       __KeyDownUpToKey__
-      KeyCode::W,
-      KeyCode::W, ModifierFlag::CONTROL_L
+      KeyCode::L,
+      KeyCode::L, ModifierFlag::CONTROL_L
     </autogen>
+
   </item>
 
 

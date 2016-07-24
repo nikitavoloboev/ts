@@ -19,5 +19,4 @@ alias mt='meteor'
 
 # compile code
 alias sw='swift'
-alias c='gcc'
 
