@@ -124,6 +124,8 @@ call plug#begin() " plugins to use
 
 Plug 'tpope/vim-sensible' " sensible defaults
 
+Plug 'Shougo/vimproc.vim', {'do' : 'make'}
+
 Plug 'rizzatti/dash.vim'
 
 Plug 'morhetz/gruvbox' " colour goodness
