@@ -14,7 +14,7 @@
 <inputsourceid_prefix>com.apple.keylayout.US</inputsourceid_prefi>
 </inputsourcedef>
 
-<!-- s on hold change  -->
+<!-- sticky s addons  -->
   <replacementdef>
     <replacementname>SIMPLE_VI_MODE_EXTRA</replacementname>
     <replacementvalue>
@@ -42,6 +42,131 @@
 
 
   <modifierdef>MY_LAUNCHER_MODE</modifierdef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_APP_Maps</name>
+    <url type="file">/Applications/Maps.app</url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_APP_FaceTime</name>
+    <url type="file">/Applications/FaceTime.app</url>
+  </vkopenurldef>
+
+
+<item>
+    <name>sticky f modifier</name>
+    <identifier>private.launcher_mode_open_apps_v2</identifier>
+
+    <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
+    <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
+    <modifier_not>
+      ModifierFlag::COMMAND_L,
+      ModifierFlag::COMMAND_R,
+      ModifierFlag::CONTROL_L,
+      ModifierFlag::CONTROL_R,
+      ModifierFlag::FN,
+      ModifierFlag::OPTION_L,
+      ModifierFlag::OPTION_R,
+      ModifierFlag::SHIFT_L,
+      ModifierFlag::SHIFT_R,
+    </modifier_not>
+
+    <autogen>
+      __KeyOverlaidModifier__
+      KeyCode::F,
+
+      <!--
+          Use notsave.launcher_mode_v2 in order to be higher priority.
+          Use ModifierFlag::MY_LAUNCHER_MODE for __DropAllKeys__.
+      -->
+      @begin
+      KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v2, ModifierFlag::MY_LAUNCHER_MODE,
+      @end
+
+      @begin
+      KeyCode::F,
+      @end
+    </autogen>
+  </item>
+
+  <item hidden="true">
+    <identifier vk_config="true">notsave.private_launcher_mode_v2</identifier>
+
+    <autogen>
+      __BlockUntilKeyUp__ KeyCode::F,
+    </autogen>
+
+    <autogen>
+      __KeyDownUpToKey__
+      KeyCode::C,
+      KeyCode::VK_OPEN_URL_APP_Maps,
+    </autogen>
+
+    <autogen>
+      __KeyDownUpToKey__
+      KeyCode::V,
+      KeyCode::VK_OPEN_URL_APP_FaceTime,
+    </autogen>
+  </item>
+
+
+<item>
+    <name>sticky w modifier</name>
+    <identifier>private.launcher_mode_open_apps_v3</identifier>
+
+    <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
+    <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
+    <modifier_not>
+      ModifierFlag::COMMAND_L,
+      ModifierFlag::COMMAND_R,
+      ModifierFlag::CONTROL_L,
+      ModifierFlag::CONTROL_R,
+      ModifierFlag::FN,
+      ModifierFlag::OPTION_L,
+      ModifierFlag::OPTION_R,
+      ModifierFlag::SHIFT_L,
+      ModifierFlag::SHIFT_R,
+    </modifier_not>
+
+    <autogen>
+      __KeyOverlaidModifier__
+      KeyCode::W,
+
+      <!--
+          Use notsave.launcher_mode_v2 in order to be higher priority.
+          Use ModifierFlag::MY_LAUNCHER_MODE for __DropAllKeys__.
+      -->
+      @begin
+      KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v3, ModifierFlag::MY_LAUNCHER_MODE,
+      @end
+
+      @begin
+      KeyCode::W,
+      @end
+    </autogen>
+  </item>
+
+  <item hidden="true">
+    <identifier vk_config="true">notsave.private_launcher_mode_v3</identifier>
+
+    <autogen>
+      __BlockUntilKeyUp__ KeyCode::W,
+    </autogen>
+
+    <autogen>
+      __KeyDownUpToKey__
+      KeyCode::C,
+      KeyCode::VK_OPEN_URL_APP_Maps,
+    </autogen>
+
+    <autogen>
+      __KeyDownUpToKey__
+      KeyCode::V,
+      KeyCode::VK_OPEN_URL_APP_FaceTime,
+    </autogen>
+  </item>
+
 
 
   <item>
@@ -263,65 +388,6 @@
     </autogen>
 
   </item>
-
-
-
-<item>
-    <name>f on hold to open apps</name>
-    <identifier>private.launcher_mode_open_apps_v2</identifier>
-
-    <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
-    <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
-    <modifier_not>
-      ModifierFlag::COMMAND_L,
-      ModifierFlag::COMMAND_R,
-      ModifierFlag::CONTROL_L,
-      ModifierFlag::CONTROL_R,
-      ModifierFlag::FN,
-      ModifierFlag::OPTION_L,
-      ModifierFlag::OPTION_R,
-      ModifierFlag::SHIFT_L,
-      ModifierFlag::SHIFT_R,
-    </modifier_not>
-
-    <autogen>
-      __KeyOverlaidModifier__
-      KeyCode::F,
-
-      <!--
-          Use notsave.launcher_mode_v2 in order to be higher priority.
-          Use ModifierFlag::MY_LAUNCHER_MODE for __DropAllKeys__.
-      -->
-      @begin
-      KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode, ModifierFlag::MY_LAUNCHER_MODE,
-      @end
-
-      @begin
-      KeyCode::A,
-      @end
-    </autogen>
-  </item>
-
-  <item hidden="true">
-    <identifier vk_config="true">notsave.private_launcher_mode</identifier>
-
-    <autogen>
-      __BlockUntilKeyUp__ KeyCode::F,
-    </autogen>
-
-    <autogen>
-      __KeyDownUpToKey__
-      KeyCode::C,
-      KeyCode::VK_OPEN_URL_APP_Maps,
-    </autogen>
-
-    <autogen>
-      __KeyDownUpToKey__
-      KeyCode::V,
-      KeyCode::VK_OPEN_URL_APP_FaceTime,
-    </autogen>
-  </item>
-
 
 
 
