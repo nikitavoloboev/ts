@@ -70,7 +70,7 @@ nmap <Leader>pu   :PlugUpdate<CR>
 nmap <Leader>vm   :make<CR>
 
 nnoremap <leader>l :%d<cr>
-map <C-l> :NERDTreeToggle<CR> 
+map <C-l> :NERDTreeFocus<CR> 
 nmap <C-s> :w<cr>
 
 
