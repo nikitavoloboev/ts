@@ -44,19 +44,15 @@
   <modifierdef>MY_LAUNCHER_MODE</modifierdef>
 
   <vkopenurldef>
-    <name>KeyCode::VK_OPEN_URL_APP_Maps</name>
-    <url type="file">/Applications/Maps.app</url>
+    <name>KeyCode::VK_OPEN_URL_APP_IntelliJ</name>
+    <url type="file">/Applications/IntelliJ IDEA.app</url>
   </vkopenurldef>
 
-  <vkopenurldef>
-    <name>KeyCode::VK_OPEN_URL_APP_FaceTime</name>
-    <url type="file">/Applications/FaceTime.app</url>
-  </vkopenurldef>
 
 
 
 <item>
-    <name>sticky w modifier</name>
+    <name>sticky w modifier open apps</name>
     <identifier>private.launcher_mode_open_apps_v3</identifier>
 
     <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
@@ -100,20 +96,89 @@
 
     <autogen>
       __KeyDownUpToKey__
-      KeyCode::L,
+      KeyCode::K,
       KeyCode::RETURN, ModifierFlag::OPTION_R
     </autogen>
 
     <autogen>
       __KeyDownUpToKey__
-      KeyCode::K,
+      KeyCode::J,
       KeyCode::W, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
+    </autogen>
+
+
+    <autogen>
+      __KeyDownUpToKey__
+      KeyCode::L,
+      KeyCode::VK_OPEN_URL_APP_IntelliJ
+    </autogen>
+
+
+
+  </item>
+
+  
+<item>
+    <name>sticky z command shift modifier</name>
+    <identifier>private.launcher_mode_open_apps_v5</identifier>
+
+    <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
+    <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
+    <modifier_not>
+      ModifierFlag::COMMAND_L,
+      ModifierFlag::COMMAND_R,
+      ModifierFlag::CONTROL_L,
+      ModifierFlag::CONTROL_R,
+      ModifierFlag::FN,
+      ModifierFlag::OPTION_L,
+      ModifierFlag::OPTION_R,
+      ModifierFlag::SHIFT_L,
+      ModifierFlag::SHIFT_R,
+    </modifier_not>
+
+    <autogen>
+      __KeyOverlaidModifier__
+      KeyCode::Z,
+
+      <!--
+          Use notsave.launcher_mode_v2 in order to be higher priority.
+          Use ModifierFlag::MY_LAUNCHER_MODE for __DropAllKeys__.
+      -->
+      @begin
+      KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v5, ModifierFlag::MY_LAUNCHER_MODE,
+      @end
+
+      @begin
+      KeyCode::Z,
+      @end
     </autogen>
   </item>
 
+  <item hidden="true">
+    <identifier vk_config="true">notsave.private_launcher_mode_v5</identifier>
+
+    <autogen>
+      __BlockUntilKeyUp__ KeyCode::Z,
+    </autogen>
+
+    <autogen>
+      __KeyDownUpToKey__
+      KeyCode::Q,
+      KeyCode::Q, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L
+    </autogen>
+
+    <autogen>
+      __KeyDownUpToKey__
+      KeyCode::W,
+      KeyCode::W, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L
+    </autogen>
+
+  </item>
+
+
 
 <item>
-    <name>sticky f modifier</name>
+    <name>sticky f modifier custom</name>
     <identifier>private.launcher_mode_open_apps_v2</identifier>
 
     <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
@@ -162,7 +227,7 @@
     </autogen>
 
     <autogen>
-      __KeyDownUpToKey__
+      __KeyToKey__
       KeyCode::J,
       KeyCode::DELETE
     </autogen>
@@ -177,7 +242,7 @@
 
 
 <item>
-    <name>sticky e modifier</name>
+    <name>sticky e command</name>
     <identifier>private.launcher_mode_open_apps_v4</identifier>
 
     <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
@@ -218,7 +283,6 @@
     <autogen>
       __BlockUntilKeyUp__ KeyCode::E,
     </autogen>
-
 
 
     <autogen>

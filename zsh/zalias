@@ -1,5 +1,4 @@
 # general
-alias sudo='sudo ' # not sure if this is all right to do
 alias c='cat'
 alias rec='asciinema rec'
 alias b='bd'
