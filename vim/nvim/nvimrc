@@ -14,7 +14,6 @@ set title " set terminal title
 
 set whichwrap+=<,>,[,]
 
-
 set expandtab
 set shiftwidth=4
 set softtabstop=2
@@ -30,12 +29,8 @@ filetype plugin indent on
 set smartindent " indentation
 
 " --------------------------------------
-"  key mapping
+"  insert  mapping
 " --------------------------------------
-
-" essential
-nnoremap <SPACE> <Nop>
-let mapleader="\<Space>"
 
 " insert mode
 inoremap      jk  <Esc>
@@ -45,14 +40,32 @@ inoremap (<Space>  ();<Esc>hi
 inoremap      (;   ();<Esc>o
 inoremap      ()   ()
 
-" navigation
-" nnoremap      j   gj
-" nnoremap      k   gk
-" nnoremap  <C-h>   <C-w>h
-" nnoremap  <C-j>   <C-w>j
-" nnoremap  <C-k>   <C-w>k
-" nnoremap  <C-l>   <C-w>l
 
+" --------------------------------------
+"  command mapping
+" --------------------------------------
+
+:command R !node %
+command Rgo execute "!go run %"
+command Rp execute "w|!python3 %"
+cabbrev rp Rp
+
+" --------------------------------------
+"  control mapping
+" --------------------------------------
+
+vmap <C-x> :!pbcopy<CR>
+vmap <C-c> :w !pbcopy<CR><CR>
+
+
+" --------------------------------------
+"  leader mapping
+" --------------------------------------
+" essential
+nnoremap <SPACE> <Nop>
+let mapleader="\<Space>"
+
+nnoremap <leader>= yypVr=
 
 " vim related
 nmap <Leader>d    dd
@@ -73,27 +86,7 @@ nnoremap <leader>l :%d<cr>
 nnoremap <silent><expr> <C-L> winnr()==g:NERDTree.GetWinNum() ? ":NERDTreeClose\<CR>" : ":NERDTreeFocus\<CR>"
 nmap <C-s> :w<cr>
 
-
 map <Leader>e   :Dash<CR>
-
-command Rgo execute "!go run %"
-
-
-
-
-command Rp execute "w|!python3 %"
-cabbrev rp Rp
-
-
-
-
-
-" --------------------------------------
-"  command mapping
-" --------------------------------------
-
-:command R !node %
-
 
 " -------------------------------------
 "  basic UI config

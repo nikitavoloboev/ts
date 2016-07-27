@@ -100,20 +100,22 @@
     </autogen>
 
     <autogen>
+      __KeyToKey__
+      KeyCode::E,
+      KeyCode::BACKSLASH, ModifierFlag::OPTION_R
+    </autogen>
+
+    <autogen>
       __KeyDownUpToKey__
       KeyCode::J,
       KeyCode::W, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
     </autogen>
-
 
     <autogen>
       __KeyDownUpToKey__
       KeyCode::L,
       KeyCode::VK_OPEN_URL_APP_IntelliJ
     </autogen>
-
-
-
   </item>
 
   
@@ -220,7 +222,7 @@
     </autogen>
 
     <autogen>
-      __KeyDownUpToKey__
+      __KeyToKey__
       KeyCode::K,
       KeyCode::RETURN
     </autogen>
@@ -232,7 +234,7 @@
     </autogen>
 
     <autogen>
-      __KeyDownUpToKey__
+      __KeyToKey__
       KeyCode::L,
       KeyCode::SPACE
     </autogen>
@@ -283,6 +285,60 @@
       __BlockUntilKeyUp__ KeyCode::E,
     </autogen>
 
+
+    <autogen>
+      __KeyDownUpToKey__
+      KeyCode::1,
+      KeyCode::1, ModifierFlag::COMMAND_L
+    </autogen>
+
+    <autogen>
+      __KeyDownUpToKey__
+      KeyCode::2,
+      KeyCode::2, ModifierFlag::COMMAND_L
+    </autogen>
+
+    <autogen>
+      __KeyDownUpToKey__
+      KeyCode::3,
+      KeyCode::3, ModifierFlag::COMMAND_L
+    </autogen>
+    
+    <autogen>
+      __KeyDownUpToKey__
+      KeyCode::4,
+      KeyCode::4, ModifierFlag::COMMAND_L
+    </autogen>
+
+    <autogen>
+      __KeyDownUpToKey__
+      KeyCode::5,
+      KeyCode::5, ModifierFlag::COMMAND_L
+    </autogen>
+
+    <autogen>
+      __KeyDownUpToKey__
+      KeyCode::6,
+      KeyCode::6, ModifierFlag::COMMAND_L
+    </autogen>
+
+    <autogen>
+      __KeyDownUpToKey__
+      KeyCode::7,
+      KeyCode::7, ModifierFlag::COMMAND_L
+    </autogen>
+
+    <autogen>
+      __KeyDownUpToKey__
+      KeyCode::8,
+      KeyCode::8, ModifierFlag::COMMAND_L
+    </autogen>
+
+    <autogen>
+      __KeyDownUpToKey__
+      KeyCode::9,
+      KeyCode::9, ModifierFlag::COMMAND_L
+    </autogen>
 
     <autogen>
       __KeyDownUpToKey__
@@ -491,7 +547,7 @@
     </autogen>
 
     <autogen>
-      __KeyDownUpToKey__
+      __KeyToKey__
       KeyCode::W,
       KeyCode::W, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L,
     </autogen>
