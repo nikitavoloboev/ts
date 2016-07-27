@@ -1,3 +1,4 @@
+
 <?xml version="1.0"?>
 <root>
 
@@ -47,8 +48,6 @@
     <name>KeyCode::VK_OPEN_URL_APP_IntelliJ</name>
     <url type="file">/Applications/IntelliJ IDEA.app</url>
   </vkopenurldef>
-
-
 
 
 <item>
@@ -242,7 +241,7 @@
 
 
 <item>
-    <name>sticky e command</name>
+    <name>sticky e modifier</name>
     <identifier>private.launcher_mode_open_apps_v4</identifier>
 
     <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
@@ -444,14 +443,204 @@
       KeyCode::M,
       KeyCode::M, ModifierFlag::COMMAND_L
   </autogen>
-
-
   </item>
 
 
 
+<item>
+    <name>sticky q modifier as command shift</name>
+    <identifier>private.launcher_mode_open_apps_v6</identifier>
 
+    <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
+    <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
+    <modifier_not>
+      ModifierFlag::COMMAND_L,
+      ModifierFlag::COMMAND_R,
+      ModifierFlag::CONTROL_L,
+      ModifierFlag::CONTROL_R,
+      ModifierFlag::FN,
+      ModifierFlag::OPTION_L,
+      ModifierFlag::OPTION_R,
+      ModifierFlag::SHIFT_L,
+      ModifierFlag::SHIFT_R,
+    </modifier_not>
 
+    <autogen>
+      __KeyOverlaidModifier__
+      KeyCode::Q,
+
+      <!--
+          Use notsave.launcher_mode_v2 in order to be higher priority.
+          Use ModifierFlag::MY_LAUNCHER_MODE for __DropAllKeys__.
+      -->
+      @begin
+      KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v6, ModifierFlag::MY_LAUNCHER_MODE,
+      @end
+
+      @begin
+      KeyCode::Q,
+      @end
+    </autogen>
+  </item>
+
+  <item hidden="true">
+    <identifier vk_config="true">notsave.private_launcher_mode_v6</identifier>
+
+    <autogen>
+      __BlockUntilKeyUp__ KeyCode::Q,
+    </autogen>
+
+    <autogen>
+      __KeyDownUpToKey__
+      KeyCode::W,
+      KeyCode::W, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L,
+    </autogen>
+
+    <autogen>
+      __KeyDownUpToKey__
+      KeyCode::E,
+      KeyCode::E, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L,
+    </autogen>
+
+    <autogen>
+      __KeyDownUpToKey__
+      KeyCode::R,
+      KeyCode::R, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L,
+  </autogen>
+
+    <autogen>
+      __KeyDownUpToKey__
+      KeyCode::T,
+      KeyCode::T, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L,
+    </autogen>
+
+    <autogen>
+      __KeyDownUpToKey__
+      KeyCode::Y,
+      KeyCode::Y, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L,
+    </autogen>
+
+    <autogen>
+      __KeyDownUpToKey__
+      KeyCode::U,
+      KeyCode::U, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L,
+    </autogen>
+
+    <autogen>
+      __KeyDownUpToKey__
+      KeyCode::I,
+      KeyCode::I, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L,
+  </autogen>
+
+    <autogen>
+      __KeyDownUpToKey__
+      KeyCode::O,
+      KeyCode::O, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L,
+  </autogen>
+
+    <autogen>
+      __KeyDownUpToKey__
+      KeyCode::P,
+      KeyCode::P, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L,
+    </autogen>
+
+    <autogen>
+      __KeyDownUpToKey__
+      KeyCode::A,
+      KeyCode::A, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L,
+    </autogen>
+
+    <autogen>
+      __KeyDownUpToKey__
+      KeyCode::S,
+      KeyCode::S, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L,
+    </autogen>
+
+    <autogen>
+      __KeyDownUpToKey__
+      KeyCode::D,
+      KeyCode::D, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L,
+    </autogen>
+
+    <autogen>
+      __KeyDownUpToKey__
+      KeyCode::F,
+      KeyCode::F, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L,
+    </autogen>
+
+    <autogen>
+      __KeyDownUpToKey__
+      KeyCode::G,
+      KeyCode::G, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L,
+    </autogen>
+
+    <autogen>
+      __KeyDownUpToKey__
+      KeyCode::H,
+      KeyCode::H, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L,
+    </autogen>
+
+    <autogen>
+      __KeyDownUpToKey__
+      KeyCode::J,
+      KeyCode::J, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L,
+    </autogen>
+
+    <autogen>
+      __KeyDownUpToKey__
+      KeyCode::K,
+      KeyCode::K, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L,
+    </autogen>
+
+    <autogen>
+      __KeyDownUpToKey__
+      KeyCode::L,
+      KeyCode::L, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L,
+    </autogen>
+
+    <autogen>
+      __KeyDownUpToKey__
+      KeyCode::Z,
+      KeyCode::Z, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L,
+    </autogen>
+
+    <autogen>
+      __KeyDownUpToKey__
+      KeyCode::X,
+      KeyCode::X, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L,
+    </autogen>
+
+    <autogen>
+      __KeyDownUpToKey__
+      KeyCode::C,
+      KeyCode::C, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L,
+    </autogen>
+
+    <autogen>
+      __KeyDownUpToKey__
+      KeyCode::V,
+      KeyCode::V, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L,
+    </autogen>
+
+    <autogen>
+      __KeyDownUpToKey__
+      KeyCode::B,
+      KeyCode::B, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L,
+    </autogen>
+
+    <autogen>
+      __KeyDownUpToKey__
+      KeyCode::N,
+      KeyCode::N, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L,
+    </autogen>
+
+    <autogen>
+      __KeyDownUpToKey__
+      KeyCode::M,
+      KeyCode::M, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L,
+    </autogen>
+
+  </item>
 
   <item>
     <name>sticky a modifier</name>
