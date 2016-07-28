@@ -32,7 +32,6 @@ set smartindent " indentation
 "  insert  mapping
 " --------------------------------------
 
-" insert mode
 inoremap      jk  <Esc>
 inoremap      kj  <Esc>
 
@@ -61,7 +60,7 @@ vmap <C-c> :w !pbcopy<CR><CR>
 " --------------------------------------
 "  leader mapping
 " --------------------------------------
-" essential
+
 nnoremap <SPACE> <Nop>
 let mapleader="\<Space>"
 
