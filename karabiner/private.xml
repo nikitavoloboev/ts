@@ -41,6 +41,7 @@
                    KeyCode::A,
                    KeyCode::A, ModifierFlag::CONTROL_L,
                 </autogen>
+                
 
                ]]>
     </replacementvalue>
@@ -106,7 +107,13 @@
 
     <autogen>
       __KeyDownUpToKey__
-      KeyCode::N,
+      KeyCode::R,
+      KeyCode::Q, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L
+    </autogen>
+
+    <autogen>
+      __KeyDownUpToKey__
+      KeyCode::M,
       KeyCode::BACKQUOTE, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
     </autogen>
 
@@ -124,7 +131,7 @@
 
     <autogen>
       __KeyDownUpToKey__
-      KeyCode::M,
+      KeyCode::N,
       KeyCode::VK_OPEN_URL_APP_IntelliJ
     </autogen>
 
@@ -251,6 +258,11 @@
       KeyCode::SEMICOLON, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L
 		</autogen>
 
+        <autogen>
+      __KeyDownUpToKey__
+      KeyCode::L,
+      KeyCode::L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
+		</autogen>
 
   </item>
   
@@ -362,6 +374,18 @@
       KeyCode::RETURN
     </autogen>
 
+   <autogen>
+   __KeyToKey__
+   KeyCode::W,
+   KeyCode::SPACE, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L
+    </autogen>
+
+    <autogen>
+      __KeyToKey__
+      KeyCode::A,
+      KeyCode::TAB
+    </autogen>
+
     <autogen>
       __KeyToKey__
       KeyCode::J,
@@ -372,6 +396,12 @@
       __KeyToKey__
       KeyCode::L,
       KeyCode::SPACE
+    </autogen>
+
+    <autogen>
+      __KeyToKey__
+      KeyCode::D,
+      KeyCode::DELETE, ModifierFlag::COMMAND_L
     </autogen>
 
   </item>

@@ -1,5 +1,7 @@
 # aliases related to vim
 
+alias e.='nvim .'
+
 # open in vim
 alias ea='nvim ~/.dotfiles/zsh/zalias'
 alias ez='nvim ~/.dotfiles/zsh/zshrc'

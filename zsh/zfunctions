@@ -19,3 +19,77 @@ function fex {
   find . -type f -iname "*${1:-}*" -exec "${2:-file}" '{}' \;
 }
 
+# create a new directory and enter it
+mde() {
+	mkdir -p "$@" && cd "$@"
+}
+
+# determine size of a file or total size of a directory
+fs() {
+	if du -b /dev/null > /dev/null 2>&1; then
+		local arg=-sbh
+	else
+		local arg=-sh
+	fi
+	if [[ -n "$@" ]]; then
+		du $arg -- "$@"
+	else
+		du $arg .[^.]* *
+	fi
+}
+
+# start an http server from a directory, optionally specifying the port
+server() {
+	local port="${1:-8000}"
+	sleep 1 && open "http://localhost:${port}/" &
+	# set the default content-type to `text/plain` instead of `application/octet-stream`
+	# and serve everything as utf-8 (although not technically correct, this doesn’t break anything for binary files)
+	python -c $'import SimpleHTTPServer;\nmap = SimpleHTTPServer.SimpleHTTPRequestHandler.extensions_map;\nmap[""] = "text/plain";\nfor key, value in map.items():\n\tmap[key] = value + ";charset=UTF-8";\nSimpleHTTPServer.test();' "$port"
+}
+
+# `te` is a shorthand for `tree` with hidden files and color enabled, ignoring
+# the `.git` directory, listing directories first, the output gets piped into
+# `less` with options to preserve color and line numbers, unless the output is
+# small enough for one screen.
+te() {
+	tree -aC -I '.git' --dirsfirst "$@" | less -FRNX
+}
+
+# call from a local repo to open the repository on github/bitbucket in browser
+repo() {
+	local giturl=$(git config --get remote.origin.url | sed 's/git@/\/\//g' | sed 's/.git$//' | sed 's/https://g' | sed 's/:/\//g')
+	if [[ $giturl == "" ]]; then
+		echo "Not a git repository or no remote.origin.url is set."
+	else
+		local gitbranch=$(git rev-parse --abbrev-ref HEAD)
+		local giturl="http:${giturl}"
+
+		if [[ $gitbranch != "master" ]]; then
+			if echo "${giturl}" | grep -i "bitbucket" > /dev/null ; then
+				local giturl="${giturl}/branch/${gitbranch}"
+			else
+				local giturl="${giturl}/tree/${gitbranch}"
+			fi
+		fi
+
+		echo $giturl
+		open $giturl
+	fi
+}
+
+
+# get colors in manual pages
+man() {
+	env \
+		LESS_TERMCAP_mb=$(printf "\e[1;31m") \
+		LESS_TERMCAP_md=$(printf "\e[1;31m") \
+		LESS_TERMCAP_me=$(printf "\e[0m") \
+		LESS_TERMCAP_se=$(printf "\e[0m") \
+		LESS_TERMCAP_so=$(printf "\e[1;44;33m") \
+		LESS_TERMCAP_ue=$(printf "\e[0m") \
+		LESS_TERMCAP_us=$(printf "\e[1;32m") \
+		man "$@"
+}
+
+
+
