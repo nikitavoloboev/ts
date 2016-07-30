@@ -14,6 +14,8 @@ set title " set terminal title
 
 set whichwrap+=<,>,[,]
 
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+
 set expandtab
 set shiftwidth=4
 set softtabstop=2
@@ -55,6 +57,7 @@ cabbrev rp Rp
 
 vmap <C-x> :!pbcopy<CR>
 vmap <C-c> :w !pbcopy<CR><CR>
+vmap <C-d> :Dash<CR>
 
 
 " --------------------------------------

@@ -1,4 +1,5 @@
 # paths to go into
+alias dbl='cd ~/Documents/git/nikivi/hugo'
 alias dgh='cd ~/Documents/git/nikivi/hugo'
 alias dk='cd ~/Documents/app/unclutter/Unclutter\ Files'
 alias dpy='cd ~/code/python'

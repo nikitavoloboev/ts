@@ -58,7 +58,7 @@ alias jj='open -a IntelliJ\ IDEA'
 alias xx='open -a Xcode'
 alias pdf='open -a PDF\ Expert'
 alias love="/Applications/love.app/Contents/MacOS/love"
-alias Q="open -a Google\ Chrome"
+alias Q="open -a Google Chrome"
 
 
 # better ls
