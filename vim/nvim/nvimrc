@@ -20,6 +20,9 @@ set expandtab
 set shiftwidth=4
 set softtabstop=2
 
+set backspace=indent,eol,start  " makes backspace key more powerful
+
+
 set hlsearch " highlight search results
 set incsearch " highlight pattern matches as you type
 
@@ -29,6 +32,35 @@ set undolevels=1000
 filetype plugin indent on
 
 set smartindent " indentation
+
+" open help vertically
+command! -nargs=* -complete=help Help vertical belowright help <args>
+autocmd FileType help wincmd L
+
+" --------------------------------------
+"  experimental
+" --------------------------------------
+
+set showcmd         " show me what I'm typing
+set autowrite       " automatically save before :next, :make etc
+set ignorecase      " search case insensitive 
+set smartcase       " .. but not when search pattern contains upper case characters
+
+" should speed up syntax highlighting 
+set nocursorcolumn
+set nocursorline
+
+" make vim handle long lines nicely
+set wrap
+set textwidth=79
+set formatoptions=qrn1
+
+
+" time out on key codes but not mappings
+" basically this makes terminal vim work sanely
+set notimeout
+set ttimeout
+set ttimeoutlen=10
 
 " --------------------------------------
 "  insert  mapping
@@ -89,6 +121,7 @@ nnoremap <silent><expr> <C-L> winnr()==g:NERDTree.GetWinNum() ? ":NERDTreeClose\
 nmap <C-s> :w<cr>
 
 map <Leader>e   :Dash<CR>
+
 
 " -------------------------------------
 "  basic UI config
