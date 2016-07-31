@@ -79,7 +79,7 @@ inoremap      ()   ()
 " --------------------------------------
 
 :command R !node %
-command Rgo execute "!go run %"
+command Rg execute "!go run %"
 command Rp execute "w|!python3 %"
 cabbrev rp Rp
 

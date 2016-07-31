@@ -63,7 +63,6 @@
     <replacementvalue>
       <![CDATA[
 
-
        <autogen>
        __KeyToKey__
        KeyCode::F,
@@ -72,15 +71,44 @@
 
        <autogen>
        __KeyToKey__
-       KeyCode::G,
+       KeyCode::A,
        KeyCode::ESCAPE, ModifierFlag::COMMAND_L
         </autogen>
 
+       <autogen>
+       __KeyToKey__
+       KeyCode::R,
+       KeyCode::R, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
+        </autogen>
+        
+       <autogen>
+       __KeyToKey__
+       KeyCode::E,
+       KeyCode::E, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
+        </autogen>
+
+       <autogen>
+       __KeyToKey__
+       KeyCode::G,
+       KeyCode::G, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
+        </autogen>
+
+       <autogen>
+       __KeyToKey__
+       KeyCode::S,
+       KeyCode::S, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L
+        </autogen>
 
        <autogen>
        __KeyToKey__
        KeyCode::SPACE,
        KeyCode::E, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L
+        </autogen>
+
+       <autogen>
+       __KeyToKey__
+       KeyCode::P,
+       KeyCode::N, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
         </autogen>
 
        <autogen>
@@ -193,7 +221,55 @@
       KeyCode::L,
       KeyCode::8, ModifierFlag::CONTROL_L, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L
     </autogen>
+  </item>
 
+<item>
+    <name>sticky g modifier window control</name>
+    <identifier>private.launcher_mode_open_apps_v11</identifier>
+
+    <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
+    <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
+    <modifier_not>
+      ModifierFlag::COMMAND_L,
+      ModifierFlag::COMMAND_R,
+      ModifierFlag::CONTROL_L,
+      ModifierFlag::CONTROL_R,
+      ModifierFlag::FN,
+      ModifierFlag::OPTION_L,
+      ModifierFlag::OPTION_R,
+      ModifierFlag::SHIFT_L,
+      ModifierFlag::SHIFT_R,
+    </modifier_not>
+
+    <autogen>
+      __KeyOverlaidModifier__
+      KeyCode::G,
+
+      <!--
+          Use notsave.launcher_mode_v2 in order to be higher priority.
+          Use ModifierFlag::MY_LAUNCHER_MODE for __DropAllKeys__.
+      -->
+      @begin
+      KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v11, ModifierFlag::MY_LAUNCHER_MODE,
+      @end
+
+      @begin
+      KeyCode::G,
+      @end
+    </autogen>
+  </item>
+
+  <item hidden="true">
+    <identifier vk_config="true">notsave.private_launcher_mode_v11</identifier>
+
+    <autogen>
+      __BlockUntilKeyUp__ KeyCode::G,
+    </autogen>
+    <autogen>
+        __KeyToKey__
+        KeyCode::T,
+        KeyCode::T, ModifierFlag::COMMAND_L
+    </autogen>
   </item>
 
 <item>
@@ -268,6 +344,7 @@
 		</autogen>
 
   </item>
+
 
 <item>
     <name>sticky z modifier open chat apps</name>
@@ -440,7 +517,13 @@
        __KeyToKey__
        KeyCode::W,
        KeyCode::F, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
-        </autogen>
+       </autogen>
+
+       <autogen>
+       __KeyToKey__
+       KeyCode::E,
+       KeyCode::N, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L
+       </autogen>
 
     <autogen>
       __KeyToKey__
@@ -453,6 +536,7 @@
       KeyCode::S,
       KeyCode::TAB, ModifierFlag::SHIFT_L
     </autogen>
+    
     
 
     <autogen>
@@ -734,6 +818,9 @@
       KeyCode::M, ModifierFlag::COMMAND_L
   </autogen>
   </item>
+
+
+
 
 
 
@@ -1180,6 +1267,67 @@
   <!-- hold -->
   @begin
   KeyCode::2, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L,
+  @end
+
+  Option::NOREPEAT,
+</autogen>
+</item>
+
+<item>
+<name>caps and l, short and long</name>
+<identifier>private.caps_l_long_press</identifie>
+<autogen>
+  __HoldingKeyToKey__
+  KeyCode::L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L,
+
+  <!-- short press -->
+  @begin
+  KeyCode::L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L,
+  @end
+
+  <!-- hold -->
+  @begin
+  KeyCode::C, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L
+  @end
+  Option::NOREPEAT,
+</autogen>
+</item>
+
+<item>
+<name>caps and h, short and long</name>
+<identifier>private.caps_h_long_press</identifie>
+<autogen>
+  __HoldingKeyToKey__
+  KeyCode::H, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L,
+
+  <!-- short press -->
+  @begin
+  KeyCode::H, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L,
+  @end
+
+  <!-- hold -->
+  @begin
+  KeyCode::V, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L
+  @end
+  Option::NOREPEAT,
+</autogen>
+</item>
+
+<item>
+<name>caps and f, short and long</name>
+<identifier>private.caps_f_long_press</identifie>
+<autogen>
+  __HoldingKeyToKey__
+  KeyCode::F, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L,
+
+  <!-- short press -->
+  @begin
+  KeyCode::F, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L,
+  @end
+
+  <!-- hold -->
+  @begin
+  KeyCode::I, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L,
   @end
 
   Option::NOREPEAT,
