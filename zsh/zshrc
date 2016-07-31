@@ -9,8 +9,8 @@ export PATH=$(brew --prefix ruby)/bin:$PATH
 
 
 
-export GOPATH=/Users/nikivi/code/go/
-export PATH=$GOPATH/bin:$PATH
+#export GOPATH=/Users/nikivi/code/go/
+#export PATH=$GOPATH/bin:$PATH
 
 
 

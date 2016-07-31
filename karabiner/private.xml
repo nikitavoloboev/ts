@@ -22,7 +22,7 @@
                <!-- send command-tab by m -->
                <autogen>
                  __KeyToKey__
-                 KeyCode::M,
+                 KeyCode::G,
                  KeyCode::TAB, ModifierFlag::COMMAND_L,
                  <!-- release command key to commit command-tab -->
                  KeyCode::COMMAND_L,
@@ -42,6 +42,7 @@
                    KeyCode::A, ModifierFlag::CONTROL_L,
                 </autogen>
                 
+                
 
                ]]>
     </replacementvalue>
@@ -50,10 +51,49 @@
 
   <modifierdef>MY_LAUNCHER_MODE</modifierdef>
 
+  <!-- app definitions  -->
   <vkopenurldef>
     <name>KeyCode::VK_OPEN_URL_APP_IntelliJ</name>
     <url type="file">/Applications/IntelliJ IDEA.app</url>
   </vkopenurldef>
+
+  <!-- sticky o  -->
+  <replacementdef>
+    <replacementname>LAUNCHER_MODE_V2_EXTRA</replacementname>
+    <replacementvalue>
+      <![CDATA[
+
+
+       <autogen>
+       __KeyToKey__
+       KeyCode::F,
+       KeyCode::SPACE, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L
+        </autogen>
+
+       <autogen>
+       __KeyToKey__
+       KeyCode::G,
+       KeyCode::ESCAPE, ModifierFlag::COMMAND_L
+        </autogen>
+
+
+       <autogen>
+       __KeyToKey__
+       KeyCode::SPACE,
+       KeyCode::E, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L
+        </autogen>
+
+       <autogen>
+       __KeyToKey__
+       KeyCode::Z,
+       KeyCode::DOT, ModifierFlag::OPTION_L
+        </autogen>
+
+      ]]>
+    </replacementvalue>
+  </replacementdef>
+
+
 
 
 <item>
@@ -105,6 +145,7 @@
       KeyCode::RETURN, ModifierFlag::OPTION_R
     </autogen>
 
+
     <autogen>
       __KeyDownUpToKey__
       KeyCode::R,
@@ -113,8 +154,20 @@
 
     <autogen>
       __KeyDownUpToKey__
-      KeyCode::M,
+      KeyCode::G,
       KeyCode::BACKQUOTE, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
+    </autogen>
+
+    <autogen>
+      __KeyDownUpToKey__
+      KeyCode::F,
+      KeyCode::0, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
+    </autogen>
+
+    <autogen>
+      __KeyDownUpToKey__
+      KeyCode::A,
+      KeyCode::W, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
     </autogen>
 
     <autogen>
@@ -140,6 +193,7 @@
       KeyCode::L,
       KeyCode::8, ModifierFlag::CONTROL_L, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L
     </autogen>
+
   </item>
 
 <item>
@@ -199,10 +253,17 @@
       KeyCode::QUOTE, ModifierFlag::OPTION_L
 		</autogen>
 
+        <!-- timing  -->
+       <autogen>
+       __KeyToKey__
+       KeyCode::M,
+       KeyCode::9, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L
+        </autogen>
+
         <!-- ulysses -->
         <autogen>
       __KeyDownUpToKey__
-      KeyCode::J,
+      KeyCode::W,
       KeyCode::RETURN, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L
 		</autogen>
 
@@ -374,17 +435,25 @@
       KeyCode::RETURN
     </autogen>
 
-   <autogen>
-   __KeyToKey__
-   KeyCode::W,
-   KeyCode::SPACE, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L
-    </autogen>
+    <!-- typinator search  -->
+       <autogen>
+       __KeyToKey__
+       KeyCode::W,
+       KeyCode::F, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
+        </autogen>
 
     <autogen>
       __KeyToKey__
       KeyCode::A,
       KeyCode::TAB
     </autogen>
+
+    <autogen>
+      __KeyToKey__
+      KeyCode::S,
+      KeyCode::TAB, ModifierFlag::SHIFT_L
+    </autogen>
+    
 
     <autogen>
       __KeyToKey__
