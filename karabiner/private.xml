@@ -14,6 +14,7 @@
 <inputsourceid_prefix>com.apple.keylayout.US</inputsourceid_prefi>
 </inputsourcedef>
 
+
 <!-- sticky s addons  -->
   <replacementdef>
     <replacementname>SIMPLE_VI_MODE_EXTRA</replacementname>
@@ -193,20 +194,10 @@
 
     <autogen>
       __KeyToKey__
-      KeyCode::A,
-      KeyCode::FN
+      KeyCode::J,
+      KeyCode::J, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L
     </autogen>
 
-  </item>
-
-  <item>
-      <name>fn keys working</name>
-      <identifier>private.fn_keys_work</identifier>
-    <autogen>
-      __KeyToKey__
-      KeyCode::FN,
-      KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L,
-    </autogen>
   </item>
 
 
@@ -293,7 +284,7 @@
 
     <autogen>
       __KeyDownUpToKey__
-      KeyCode::N,
+      KeyCode::F,
       KeyCode::VK_OPEN_URL_APP_IntelliJ
     </autogen>
 
@@ -350,6 +341,12 @@
         __KeyToKey__
         KeyCode::L,
         KeyCode::I, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::A,
+        KeyCode::D, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
     </autogen>
 
     <autogen>
@@ -610,6 +607,12 @@
        __KeyToKey__
        KeyCode::W,
        KeyCode::F, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
+       </autogen>
+
+       <autogen>
+       __KeyToKey__
+       KeyCode::N,
+       KeyCode::RETURN, ModifierFlag::COMMAND_L
        </autogen>
 
        <autogen>
