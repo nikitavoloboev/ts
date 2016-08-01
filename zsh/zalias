@@ -65,7 +65,7 @@ alias lso='ls -At1 && echo "------Oldest--"'
 alias lsn='ls -Art1 && echo "------Newest--"'
 
 # hugo
-alias hs='hugo server'
+alias hse='hugo server'
 
 # express
 alias ep='express'
