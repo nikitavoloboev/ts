@@ -41,6 +41,13 @@
                    KeyCode::A,
                    KeyCode::A, ModifierFlag::CONTROL_L,
                 </autogen>
+
+               <autogen>
+                 __KeyToKey__
+                 KeyCode::V,
+                 KeyCode::SHIFT_L,
+               </autogen>
+               ]]>
                 
                 
 
@@ -184,6 +191,22 @@
       KeyCode::K, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L
     </autogen>
 
+    <autogen>
+      __KeyToKey__
+      KeyCode::A,
+      KeyCode::FN
+    </autogen>
+
+  </item>
+
+  <item>
+      <name>fn keys working</name>
+      <identifier>private.fn_keys_work</identifier>
+    <autogen>
+      __KeyToKey__
+      KeyCode::FN,
+      KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L,
+    </autogen>
   </item>
 
 
