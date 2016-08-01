@@ -370,13 +370,13 @@
 
     <autogen>
         __KeyToKey__
-        KeyCode::K,
+        KeyCode::J,
         KeyCode::U, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
     </autogen>
 
     <autogen>
         __KeyToKey__
-        KeyCode::J,
+        KeyCode::K,
         KeyCode::QUOTE, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L
     </autogen>
 
