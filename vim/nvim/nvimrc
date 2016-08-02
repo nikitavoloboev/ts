@@ -145,7 +145,7 @@ set matchtime=2
 set background=dark " set night mode
 
 " -------------------------------------
-"  plugins
+"  -plugins
 " -------------------------------------
 
 call plug#begin() " plugins to use
@@ -171,12 +171,16 @@ Plug 'scrooloose/nerdtree'
 
 Plug 'ctrlpvim/ctrlp.vim'
 
+Plug 'fatih/vim-go'
+
 " autocomplete engine
 function! DoRemote(arg)
   UpdateRemotePlugins
 endfunction
 
-Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
+" Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
+Plug 'Shougo/deoplete.nvim'
+Plug 'zchee/deoplete-go', { 'do': 'make'}
 
 Plug 'carlitux/deoplete-ternjs' " js autocomplete
 
@@ -192,9 +196,6 @@ let g:deoplete#enable_at_startup = 1 " activate deoplete
 
 " autocomplete with tab
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
-
-
-
 
 
 

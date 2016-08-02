@@ -6,14 +6,8 @@ fi
 
 export PATH=$(brew --prefix ruby)/bin:$PATH
 
-
-
-
-#export GOPATH=/Users/nikivi/code/go/
-#export PATH=$GOPATH/bin:$PATH
-
-
-
+export GOPATH=/Users/nikivi/go/
+export PATH=$PATH:$GOPATH/bin
 
 # source aliases
 source ~/.dotfiles/zsh/zpaths

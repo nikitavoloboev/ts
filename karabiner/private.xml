@@ -7,13 +7,11 @@
 
 <!-- TODO: clean it up, add comments, make things easily searchable  -->
 
-
 <!-- can use constant 'US' when I want to use items specific only to US keyboard -->
 <inputsourcedef>
 <name>US</name>
 <inputsourceid_prefix>com.apple.keylayout.US</inputsourceid_prefi>
 </inputsourcedef>
-
 
 <!-- sticky s addons  -->
   <replacementdef>
@@ -39,8 +37,20 @@
 
                <autogen>
                    __KeyToKey__
-                   KeyCode::A,
+                   KeyCode::E,
                    KeyCode::A, ModifierFlag::CONTROL_L,
+                </autogen>
+
+
+               <autogen>
+                   __KeyToKey__
+                   KeyCode::R,
+                   KeyCode::RETURN
+                </autogen>
+               <autogen>
+                   __KeyToKey__
+                   KeyCode::A,
+                   KeyCode::C, ModifierFlag::COMMAND_L
                 </autogen>
 
                <autogen>
@@ -51,8 +61,22 @@
 
                <autogen>
                  __KeyToKey__
-                 KeyCode::E,
+                 KeyCode::O,
+                 KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L,
+                 KeyCode::RETURN,
+               </autogen>
+
+               <autogen>
+                 __KeyToKey__
+                 KeyCode::D,
                  KeyCode::DELETE
+               </autogen>
+
+
+               <autogen>
+                 __KeyToKey__
+                 KeyCode::SHIFT_L,
+                 KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L
                </autogen>
 
                <autogen>
@@ -62,12 +86,10 @@
                </autogen>
 
                ]]>
-                
-                
-
                ]]>
     </replacementvalue>
   </replacementdef>
+
 
 
   <modifierdef>MY_LAUNCHER_MODE</modifierdef>
@@ -77,6 +99,11 @@
     <name>KeyCode::VK_OPEN_URL_APP_IntelliJ</name>
     <url type="file">/Applications/IntelliJ IDEA.app</url>
   </vkopenurldef>
+
+  <appdef>
+    <appname>XCODE</appname>
+    <equal>com.apple.dt.Xcode</equal>
+  </appdef>
 
   <!-- sticky o  -->
   <replacementdef>
@@ -106,6 +133,12 @@
        __KeyToKey__
        KeyCode::R,
        KeyCode::R, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
+        </autogen>
+
+       <autogen>
+       __KeyToKey__
+       KeyCode::X,
+       KeyCode::F2
         </autogen>
         
        <autogen>
@@ -207,8 +240,26 @@
 
     <autogen>
       __KeyToKey__
+      KeyCode::F, ModifierFlag::COMMAND_L,
+      KeyCode::F1, ModifierFlag::COMMAND_L | ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L,
+    </autogen>
+
+    <autogen>
+      __KeyToKey__
       KeyCode::J,
       KeyCode::J, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L
+    </autogen>
+
+    <autogen>
+      __KeyToKey__
+      KeyCode::G,
+      KeyCode::1, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L
+    </autogen>
+
+    <autogen>
+      __KeyToKey__
+      KeyCode::A,
+      KeyCode::F1, ModifierFlag::SHIFT_L,
     </autogen>
 
   </item>
@@ -290,6 +341,12 @@
     </autogen>
 
     <autogen>
+      __KeyToKey__
+      KeyCode::SLASH,
+      KeyCode::SLASH, ModifierFlag::OPTION_R
+    </autogen>
+
+    <autogen>
       __KeyDownUpToKey__
       KeyCode::J,
       KeyCode::W, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
@@ -303,9 +360,16 @@
 
     <autogen>
       __KeyDownUpToKey__
-      KeyCode::L,
+      KeyCode::B,
       KeyCode::8, ModifierFlag::CONTROL_L, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L
     </autogen>
+
+    <autogen>
+      __KeyToKey__
+      KeyCode::L,
+      KeyCode::K, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L
+    </autogen>
+
   </item>
 
 <item>
@@ -449,7 +513,7 @@
         <!-- ulysses -->
         <autogen>
       __KeyDownUpToKey__
-      KeyCode::W,
+      KeyCode::J,
       KeyCode::RETURN, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L
 		</autogen>
 
@@ -613,6 +677,12 @@
 
        <autogen>
        __KeyToKey__
+       KeyCode::M,
+       KeyCode::RETURN, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L
+       </autogen>
+
+       <autogen>
+       __KeyToKey__
        KeyCode::E,
        KeyCode::N, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L
        </autogen>
@@ -655,7 +725,6 @@
 <item>
     <name>sticky e modifier</name>
     <identifier>private.launcher_mode_open_apps_v4</identifier>
-    <not>DASH</not>
     <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
     <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
     <modifier_not>
@@ -1114,6 +1183,7 @@
   <item>
     <name>sticky a modifier</name>
     <identifier>private.launcher_mode_example</identifier>
+    <not>DASH</not>
 
     <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
     <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
@@ -1716,7 +1786,7 @@
 
     <autogen>
       __KeyOverlaidModifier__
-      KeyCode::E,
+      KeyCode::A,
 
       <!--
           Use notsave.launcher_mode_v2 in order to be higher priority.
@@ -1727,7 +1797,7 @@
       @end
 
       @begin
-      KeyCode::E,
+      KeyCode::A,
       @end
     </autogen>
   </item>
@@ -1736,7 +1806,7 @@
     <identifier vk_config="true">notsave.private_launcher_mode_v7</identifier>
 
     <autogen>
-      __BlockUntilKeyUp__ KeyCode::E,
+      __BlockUntilKeyUp__ KeyCode::A,
     </autogen>
 
   <autogen>
@@ -1833,6 +1903,7 @@ KeyCode::OPTION_L,ModifierFlag::COMMAND_L,
 <item>
 <name>left control to control and command</name>
 <identifier>private.left_control_to_control_and_command</identifier>
+<not>XCODE</not>
 <autogen>
 __KeyToKey__
 KeyCode::CONTROL_L,
