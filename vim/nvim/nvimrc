@@ -1,5 +1,5 @@
 " --------------------------------------
-"  basic vim config
+" -basic vim config
 " --------------------------------------
 
 set clipboard=unnamed " copy text to system clipboard
@@ -37,8 +37,10 @@ set smartindent " indentation
 command! -nargs=* -complete=help Help vertical belowright help <args>
 autocmd FileType help wincmd L
 
+:autocmd InsertEnter,InsertLeave * set cul! " notify on mode change visually
+
 " --------------------------------------
-"  experimental
+"  -testing
 " --------------------------------------
 
 set showcmd         " show me what I'm typing
@@ -63,7 +65,7 @@ set ttimeout
 set ttimeoutlen=10
 
 " --------------------------------------
-"  insert  mapping
+"  -insert  mapping
 " --------------------------------------
 
 inoremap      jk  <Esc>
@@ -75,16 +77,20 @@ inoremap      ()   ()
 
 
 " --------------------------------------
-"  command mapping
+"  -command mapping
 " --------------------------------------
 
 :command R !node %
-command Rg execute "!go run %"
 command Rp execute "w|!python3 %"
 cabbrev rp Rp
 
+" -go 
+command Rg execute "!go run %"
+command RR execute "!go build %"
+
+
 " --------------------------------------
-"  control mapping
+"  -control mapping
 " --------------------------------------
 
 vmap <C-x> :!pbcopy<CR>
@@ -93,7 +99,7 @@ vmap <C-d> :Dash<CR>
 
 
 " --------------------------------------
-"  leader mapping
+"  -leader mapping
 " --------------------------------------
 
 nnoremap <SPACE> <Nop>
@@ -124,7 +130,7 @@ map <Leader>e   :Dash<CR>
 
 
 " -------------------------------------
-"  basic UI config
+"  -basic UI config
 " -------------------------------------
 
 set relativenumber " relative to current posion line numbers
@@ -178,16 +184,16 @@ function! DoRemote(arg)
   UpdateRemotePlugins
 endfunction
 
-" Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
-Plug 'Shougo/deoplete.nvim'
-Plug 'zchee/deoplete-go', { 'do': 'make'}
+Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
+" Plug 'Shougo/deoplete.nvim'
+" Plug 'zchee/deoplete-go', { 'do': 'make'}
 
 Plug 'carlitux/deoplete-ternjs' " js autocomplete
 
 call plug#end()
 
 " -------------------------------------
-"  activating / modifying plugins
+"  -activating / modifying plugins
 " -------------------------------------
 
 colorscheme gruvbox " activate the colour scheme

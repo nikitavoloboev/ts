@@ -13,6 +13,7 @@ alias npm='npm'
 # go
 alias o='go run'
 alias og='go get'
+alias ob='go build'
 
 # meteor
 alias mt='meteor'

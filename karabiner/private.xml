@@ -41,12 +41,24 @@
                    KeyCode::A, ModifierFlag::CONTROL_L,
                 </autogen>
 
+               <autogen>
+                   __KeyToKey__
+                   KeyCode::SPACE,
+                   KeyCode::V, ModifierFlag::COMMAND_L
+                </autogen>
+
+               <autogen>
+                   __KeyToKey__
+                   KeyCode::F,
+                   KeyCode::RETURN
+                </autogen>
 
                <autogen>
                    __KeyToKey__
                    KeyCode::R,
                    KeyCode::RETURN
                 </autogen>
+
                <autogen>
                    __KeyToKey__
                    KeyCode::A,
@@ -81,6 +93,18 @@
 
                <autogen>
                  __KeyToKey__
+                 KeyCode::V | ModifierFlag::SHIFT_L,
+                 KeyCode::T, ModifierFlag::COMMAND_L
+               </autogen>
+
+               <autogen>
+                 __KeyToKey__
+                 KeyCode::B,
+                 KeyCode::CURSOR_LEFT, ModifierFlag::COMMAND_L
+               </autogen>
+
+               <autogen>
+                 __KeyToKey__
                  KeyCode::Z,
                  KeyCode::Z, ModifierFlag::COMMAND_L
                </autogen>
@@ -91,6 +115,33 @@
   </replacementdef>
 
 
+  <!-- sticky d for mouse movement  -->
+  <replacementdef>
+    <replacementname>MOUSE_KEYS_MODE_2_EXTRA</replacementname>
+    <replacementvalue>
+      <![CDATA[
+               <autogen>
+                 __KeyToKey__
+                 KeyCode::A,
+                 KeyCode::VK_OPEN_URL_SHELL_warp_mouse_cursor_position_screen_center_0,
+               </autogen>
+
+               <autogen>
+                 __KeyToKey__
+                 KeyCode::O,
+                 KeyCode::EQUAL, ModifierFlag::COMMAND_L
+               </autogen>
+
+               <autogen>
+                 __KeyToKey__
+                 KeyCode::I,
+                 KeyCode::MINUS, ModifierFlag::COMMAND_L
+               </autogen>
+
+               ]]>
+               ]]>
+    </replacementvalue>
+  </replacementdef>
 
   <modifierdef>MY_LAUNCHER_MODE</modifierdef>
 
@@ -117,11 +168,11 @@
        KeyCode::SPACE, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L
         </autogen>
 
-    <autogen>
-      __KeyDownUpToKey__
-      KeyCode::W,
-      KeyCode::0, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
-    </autogen>
+        <autogen>
+          __KeyDownUpToKey__
+          KeyCode::W,
+          KeyCode::0, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
+        </autogen>
 
        <autogen>
        __KeyToKey__
@@ -139,6 +190,13 @@
        __KeyToKey__
        KeyCode::X,
        KeyCode::F2
+        </autogen>
+
+        
+       <autogen>
+       __KeyToKey__
+       KeyCode::T,
+       KeyCode::T, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
         </autogen>
         
        <autogen>
@@ -182,6 +240,19 @@
        KeyCode::Z,
        KeyCode::DOT, ModifierFlag::OPTION_L
         </autogen>
+
+       <autogen>
+       __KeyToKey__
+       KeyCode::B,
+       KeyCode::F1, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
+        </autogen>
+
+       <autogen>
+       __KeyToKey__
+       KeyCode::Y,
+       KeyCode::Y, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
+        </autogen>
+
 
       ]]>
     </replacementvalue>
@@ -264,6 +335,66 @@
 
   </item>
 
+<item>
+    <name>sticky b for window control</name>
+    <identifier>private.launcher_mode_open_apps_v13</identifier>
+
+    <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
+    <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
+    <modifier_not>
+      ModifierFlag::COMMAND_L,
+      ModifierFlag::COMMAND_R,
+      ModifierFlag::CONTROL_L,
+      ModifierFlag::CONTROL_R,
+      ModifierFlag::FN,
+      ModifierFlag::OPTION_L,
+      ModifierFlag::OPTION_R,
+      ModifierFlag::SHIFT_L,
+      ModifierFlag::SHIFT_R,
+    </modifier_not>
+
+    <autogen>
+      __KeyOverlaidModifier__
+      KeyCode::B,
+
+      <!--
+          Use notsave.launcher_mode_v2 in order to be higher priority.
+          Use ModifierFlag::MY_LAUNCHER_MODE for __DropAllKeys__.
+      -->
+      @begin
+      KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v13, ModifierFlag::MY_LAUNCHER_MODE,
+      @end
+
+      @begin
+      KeyCode::B,
+      @end
+    </autogen>
+  </item>
+
+  <item hidden="true">
+    <identifier vk_config="true">notsave.private_launcher_mode_v13</identifier>
+
+    <autogen>
+      __BlockUntilKeyUp__ KeyCode::B,
+    </autogen>
+
+    <autogen>
+      __KeyToKey__
+      KeyCode::L,
+      KeyCode::F4, ModifierFlag::COMMAND_L
+    </autogen>
+
+    <autogen>
+      __KeyToKey__
+      KeyCode::K,
+      KeyCode::F1, ModifierFlag::COMMAND_L
+    </autogen>
+
+
+  </item>
+
+
+
 
 <item>
     <name>sticky w modifier open top apps</name>
@@ -314,10 +445,16 @@
       KeyCode::RETURN, ModifierFlag::OPTION_R
     </autogen>
 
+    <autogen>
+        __KeyToKey__
+        KeyCode::O,
+        KeyCode::F3
+    </autogen>
+
 
     <autogen>
       __KeyDownUpToKey__
-      KeyCode::R,
+      KeyCode::E,
       KeyCode::Q, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L
     </autogen>
 
@@ -336,7 +473,7 @@
 
     <autogen>
       __KeyToKey__
-      KeyCode::E,
+      KeyCode::F,
       KeyCode::BACKSLASH, ModifierFlag::OPTION_R
     </autogen>
 
@@ -346,17 +483,13 @@
       KeyCode::SLASH, ModifierFlag::OPTION_R
     </autogen>
 
+    <!-- iTerm  -->
     <autogen>
       __KeyDownUpToKey__
       KeyCode::J,
       KeyCode::W, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
     </autogen>
 
-    <autogen>
-      __KeyDownUpToKey__
-      KeyCode::F,
-      KeyCode::K, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L
-    </autogen>
 
     <autogen>
       __KeyDownUpToKey__
@@ -364,6 +497,7 @@
       KeyCode::8, ModifierFlag::CONTROL_L, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L
     </autogen>
 
+    <!-- xCode  -->
     <autogen>
       __KeyToKey__
       KeyCode::L,
@@ -373,7 +507,7 @@
   </item>
 
 <item>
-    <name>sticky g modifier window control</name>
+    <name>sticky g for handy actions</name>
     <identifier>private.launcher_mode_open_apps_v11</identifier>
 
     <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
@@ -420,28 +554,40 @@
         KeyCode::I, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
     </autogen>
 
+    <!-- new bitbar task  -->
     <autogen>
         __KeyToKey__
         KeyCode::A,
         KeyCode::D, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
     </autogen>
 
+    <!-- reload karabiner xml  -->
     <autogen>
         __KeyToKey__
         KeyCode::O,
         KeyCode::M, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L
     </autogen>
 
+    <!-- reload hammerspoon xml  -->
     <autogen>
         __KeyToKey__
         KeyCode::J,
         KeyCode::U, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
     </autogen>
 
+
+    <!-- quick bindable tester for alfred  -->
     <autogen>
         __KeyToKey__
         KeyCode::K,
-        KeyCode::QUOTE, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L
+        KeyCode::F8
+    </autogen>
+
+    <!-- screenflow start / stop  --> 
+    <autogen>
+        __KeyToKey__
+        KeyCode::M,
+        KeyCode::F5
     </autogen>
 
   </item>
@@ -512,9 +658,29 @@
 
         <!-- ulysses -->
         <autogen>
-      __KeyDownUpToKey__
+      __KeyToKey__
       KeyCode::J,
       KeyCode::RETURN, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L
+		</autogen>
+
+        <!-- iBooks  -->
+        <autogen>
+      __KeyToKey__
+      KeyCode::B,
+      KeyCode::QUOTE, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L
+		</autogen>
+
+        <!-- Focus  --> 
+        <autogen>
+      __KeyToKey__
+      KeyCode::A,
+      KeyCode::BRACKET_RIGHT, ModifierFlag::OPTION_L
+		</autogen>
+
+        <autogen>
+      __KeyToKey__
+      KeyCode::G,
+      KeyCode::BRACKET_LEFT, ModifierFlag::OPTION_L
 		</autogen>
 
   </item>
@@ -577,11 +743,20 @@
       KeyCode::L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
 		</autogen>
 
+        <!-- chatty  -->
+        <autogen>
+      __KeyDownUpToKey__
+      KeyCode::M,
+      KeyCode::M, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
+		</autogen>
+
+        <!-- textual  -->
         <autogen>
       __KeyDownUpToKey__
       KeyCode::J,
-      KeyCode::M, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
+      KeyCode::K, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
 		</autogen>
+
   </item>
 
   <item hidden="true">
@@ -1414,6 +1589,30 @@
 </replacementdef>
 
 
+<!-- -long and short rebinds  -->
+<item>
+<name>caps and space, short and long</name>
+<identifier>private.caps_space_long_press</identifie>
+<autogen>
+  __HoldingKeyToKey__
+  KeyCode::SPACE, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L,
+
+  <!-- short press -->
+  @begin
+  KeyCode::SPACE, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L,
+  @end
+
+  <!-- hold -->
+  @begin
+  KeyCode::F6,
+  @end
+
+  Option::NOREPEAT,
+</autogen>
+</item>
+
+
+
 <item>
 <name>caps and c, short and long</name>
 <identifier>private.caps_c_long_press</identifie>
@@ -1629,7 +1828,6 @@
 
 
 
-
 <item>
 <name>caps lock and d, two different hotkeys for quick and long press</name>
 <identifier>private.caps_d_long_press</identifie>
@@ -1652,7 +1850,6 @@
 </autogen>
 </item>
 
-
 <item>
 <name>caps lock and e, two different hotkeys for quick and long press</name>
 <identifier>private.caps_e_long_press</identifie>
@@ -1673,7 +1870,6 @@
   Option::NOREPEAT,
 </autogen>
 </item>
-
 
 
 <item>
@@ -1721,14 +1917,6 @@
 </item>
 
 
-
-
-
-
-
-
-
-
 <item>
 <name>left option and a, two different hotkeys when held and when quickly pressed</name>
 <identifier>private.left_opt_a_two_diff_actions</identifie>
@@ -1755,9 +1943,6 @@
 <appname>ITERM</appname>
 <equal>com.googlecode.iterm2</equal>
 </appdef>
-
-
-
 
 <appdef>
 <appname>DASH</appname>
@@ -1837,10 +2022,7 @@
 
   </item>
 
-
-
-
-
+<!-- -simple rebinds  -->
 
 <item>
 <name>left option plus left shift to search documentation for selected text</name>
@@ -1853,7 +2035,6 @@ KeyCode::8, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L | ModifierFlag::SHI
 </autogen>
 </item>
 
-
 <item>
 <name>control plus left shift to search wiki with selection</name>
 <identifier>private.control_shift_for_wiki_selection</identifier>
@@ -1864,7 +2045,6 @@ KeyCode::SHIFT_L, ModifierFlag::CONTROL_L, ModifierFlag::COMMAND_L,
 KeyCode::7, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::COMMAND_L,
 </autogen>
 </item>
-
 
 <item>
 <name>command plus left shift to google selected text</name>
@@ -1900,6 +2080,7 @@ KeyCode::OPTION_L,ModifierFlag::COMMAND_L,
 </item>
 
 
+
 <item>
 <name>left control to control and command</name>
 <identifier>private.left_control_to_control_and_command</identifier>
@@ -1910,7 +2091,6 @@ KeyCode::CONTROL_L,
 KeyCode::CONTROL_L, ModifierFlag::COMMAND_L,
 </autogen>
 </item>
-
 
 
 <!-- a big life changer -->
