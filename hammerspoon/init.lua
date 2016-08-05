@@ -24,18 +24,3 @@ end)
 -- called on every config reload to notify if it was reloaded
 hs.alert.show("config loaded")
 
--- move window left
-hs.hotkey.bind({"cmd"}, "F4", function()
-  local win = hs.window.focusedWindow()
-  local f = win:frame()
-
-  f.x = f.x - 10
-  win:setFrame(f)
-end)
-
-
-
-
-
-
-
