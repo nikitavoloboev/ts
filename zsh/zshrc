@@ -3,23 +3,24 @@ if [[ -s "${ZDOTDIR:-$HOME}/.dotfiles/zsh/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.dotfiles/zsh/init.zsh"
 fi
 
-
 export PATH=$(brew --prefix ruby)/bin:$PATH
 
+# add bin to my path
+export PATH=$PATH:~/.dotfiles/bin
+
+# set up go path
 export GOPATH=/Users/nikivi/go/
-export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:$GOPATH/bin:$GOPATH/bin
+
 
 # source aliases
 source ~/.dotfiles/zsh/zpaths
-source ~/.dotfiles/zsh/zalias
 source ~/.dotfiles/vim/zvim
 source ~/.dotfiles/zsh/zfunctions
 source ~/.dotfiles/zsh/zdev
 source ~/.dotfiles/git/zgit
 source ~/.dotfiles/zsh/zenv
-
-# add bin to my path
-export PATH=$PATH:~/.dotfiles/bin
+source ~/.dotfiles/zsh/zalias
 
 # 'thefuck' command correction 
 eval "$(thefuck --alias)"
@@ -27,12 +28,10 @@ eval "$(thefuck --alias)"
 # zplug package manager
 source /usr/local/Cellar/zplug/2.1.0/init.zsh
 
-
 # better than l file and dir listings with good info
 zplug "supercrabtree/k"
 zplug "Tarrasch/zsh-bd"
 
 # source all zplug plugins and add commands to $PATH
 zplug load
-
 
