@@ -7,7 +7,7 @@ alias npi='npm install'
 alias nst='npm start'
 alias ns='npm ls'
 alias na='npm update'
-alias nit='npm init'
+alias ii='npm init'
 alias npm='npm'
 
 # go

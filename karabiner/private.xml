@@ -32,11 +32,17 @@
                   KeyCode::N,
                   KeyCode::V, ModifierFlag::COMMAND_L
                 </autogen>
+                
+                <autogen>
+                  __KeyToKey__
+                  KeyCode::BRACKET_LEFT,
+                  KeyCode::F7
+                </autogen>
 
                 <autogen>
               __KeyToKey__
               KeyCode::SEMICOLON,
-              KeyCode::CAPSLOCK,
+              KeyCode::F2, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L,
                 </autogen>
 
                 <autogen>
@@ -51,6 +57,12 @@
                   __KeyToKey__
                   KeyCode::E,
                   KeyCode::TAB
+                </autogen>
+
+                <autogen>
+                  __KeyToKey__
+                  KeyCode::U,
+                  KeyCode::F12, ModifierFlag::COMMAND_L
                 </autogen>
 
                 <autogen>
@@ -507,6 +519,57 @@
   </item>
 
 <item>
+    <name>sticky slash modifier for more handy utils</name>
+    <identifier>private.launcher_mode_open_apps_v20</identifier>
+
+    <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
+    <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
+    <modifier_not>
+      ModifierFlag::COMMAND_L,
+      ModifierFlag::COMMAND_R,
+      ModifierFlag::CONTROL_L,
+      ModifierFlag::CONTROL_R,
+      ModifierFlag::FN,
+      ModifierFlag::OPTION_L,
+      ModifierFlag::OPTION_R,
+      ModifierFlag::SHIFT_L,
+      ModifierFlag::SHIFT_R,
+    </modifier_not>
+
+    <autogen>
+      __KeyOverlaidModifier__
+      KeyCode::SLASH,
+
+      <!--
+          Use notsave.launcher_mode_v2 in order to be higher priority.
+          Use ModifierFlag::MY_LAUNCHER_MODE for __DropAllKeys__.
+      -->
+      @begin
+      KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v20, ModifierFlag::MY_LAUNCHER_MODE,
+      @end
+
+      @begin
+      KeyCode::SLASH,
+      @end
+    </autogen>
+  </item>
+
+  <item hidden="true">
+    <identifier vk_config="true">notsave.private_launcher_mode_v20</identifier>
+
+    <autogen>
+      __BlockUntilKeyUp__ KeyCode::SLASH,
+    </autogen>
+    
+    <autogen>
+      __KeyToKey__
+      KeyCode::F,
+      KeyCode::RETURN
+    </autogen>
+
+  </item>
+
+<item>
     <name>sticky m modifier for handy utils</name>
     <identifier>private.launcher_mode_open_apps_v17</identifier>
 
@@ -804,7 +867,7 @@
 
     <autogen>
         __KeyToKey__
-        KeyCode::O,
+        KeyCode::P,
         KeyCode::F3
     </autogen>
 
@@ -889,6 +952,12 @@
       __KeyToKey__
       KeyCode::M,
       KeyCode::TAB, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
+    </autogen>
+
+    <autogen>
+      __KeyToKey__
+      KeyCode::O,
+      KeyCode::W, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L
     </autogen>
 
   </item>
