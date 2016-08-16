@@ -1,0 +1,84 @@
+#!/usr/bin/env bash
+
+# TODO: open playground in dir I am in
+
+# Display help if --h or --help was passed
+if [[ $1 == "-h" ]] || [[ $1 == "--help" ]]
+    then
+    echo "Playground"
+    echo "----------"
+    echo "Easily create Swift playgrounds from the command line"
+    echo ""
+    echo "Options:"
+    echo "   -f   [File path]   Create or open a playground at the specified path (default: ~/Desktop/[Date].playground)"
+    echo "   -p   [iOS | OSX]   Select what platform to use for the playground (default: iOS)"
+    echo ""
+    echo "   -h                 Display this information"
+
+    exit
+fi
+
+# Gather parameters
+while getopts f:p: opts; do
+   case ${opts} in
+      f) FILE_PATH=${OPTARG} ;;
+      p) PLATFORM=${OPTARG} ;;
+   esac
+done
+
+# Default file path & .playground suffix
+if [ -z "$FILE_PATH" ]
+    then
+    datetime=$(date "+%d-%m-%Y")
+    FILE_PATH="~/Desktop/$datetime.playground"
+else
+    case $FILE_PATH in
+        *.playground) ;;
+        *) FILE_PATH="$FILE_PATH.playground" ;;
+    esac
+fi
+
+# Expand tilde
+FILE_PATH="${FILE_PATH/#\~/$HOME}"
+
+# Default platform + validation
+case $PLATFORM in
+    "" | "iOS") PLATFORM="ios" ;;
+    "ios" | "osx") ;;
+    "OSX" | "OS X") PLATFORM="osx" ;;
+    *)
+        echo "Invalid platform: $PLATFORM"
+        exit
+        ;;
+esac
+
+# If the Playground already exists, simply open it
+if [ -d $FILE_PATH ]
+    then
+    open $FILE_PATH
+    exit
+fi
+
+# Create the Playground container and step into it
+mkdir $FILE_PATH
+cd $FILE_PATH
+
+# Create the settings file
+echo "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><playground version=\"5.0\" target-platform=\"$PLATFORM\"><timeline fileName='timeline.xctimeline'/></playground>" > contents.xcplayground
+
+# Determine framework to import
+case $PLATFORM in
+    "ios") FRAMEWORK="UIKit" ;;
+    "osx") FRAMEWORK="AppKit" ;;
+    *) FRAMEWORK="Foundation" ;;
+esac
+
+# Create the Contents.swift file
+printf "import $FRAMEWORK\n\n" > Contents.swift
+
+# Create timeline file
+echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?><Timeline version=\"3.0\"><TimelineItems></TimelineItems></Timeline>" > timeline.xctimeline
+
+# Open the Playground
+cd ..
+open $FILE_PATH

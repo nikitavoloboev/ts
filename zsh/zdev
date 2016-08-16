@@ -21,3 +21,6 @@ alias mt='meteor'
 # compile code
 alias sw='swift'
 
+# ruby
+alias r='ruby'
+

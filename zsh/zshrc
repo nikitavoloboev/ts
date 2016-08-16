@@ -12,6 +12,8 @@ export PATH=$PATH:~/.dotfiles/bin
 export GOPATH=/Users/nikivi/go/
 export PATH=$PATH:$GOPATH/bin:$GOPATH/bin
 
+# vi movement in iTerm
+set -o vi
 
 # source aliases
 source ~/.dotfiles/zsh/zpaths
@@ -24,6 +26,10 @@ source ~/.dotfiles/zsh/zalias
 
 # 'thefuck' command correction 
 eval "$(thefuck --alias)"
+
+
+# autojump > cd
+[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
 
 # zplug package manager
 source /usr/local/Cellar/zplug/2.1.0/init.zsh
