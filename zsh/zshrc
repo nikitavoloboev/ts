@@ -23,10 +23,10 @@ source ~/.dotfiles/zsh/zdev
 source ~/.dotfiles/git/zgit
 source ~/.dotfiles/zsh/zenv
 source ~/.dotfiles/zsh/zalias
+source ~/.dotfiles/zsh/zapp
 
 # 'thefuck' command correction 
 eval "$(thefuck --alias)"
-
 
 # autojump > cd
 [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh

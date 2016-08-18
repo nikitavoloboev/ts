@@ -5,6 +5,28 @@
 <modifierdef>MY_OPTION_L</modifierdef>
 <modifierdef>MY_CONTROL_L</modifierdef>
 
+  <!-- app definitions  -->
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_APP_IntelliJ</name>
+    <url type="file">/Applications/IntelliJ IDEA.app</url>
+  </vkopenurldef>
+
+  <appdef>
+    <appname>XCODE</appname>
+    <equal>com.apple.dt.Xcode</equal>
+  </appdef>
+
+
+<appdef>
+<appname>ITERM</appname>
+<equal>com.googlecode.iterm2</equal>
+</appdef>
+
+<appdef>
+<appname>DASH</appname>
+<equal>com.kapeli.dashdoc</equal>
+</appdef>
+
 <!-- todo: clean it up, add comments, make things easily searchable  -->
 
 <!-- can use constant 'US' when I want to use items specific only to US keyboard -->
@@ -13,9 +35,10 @@
 <inputsourceid_prefix>com.apple.keylayout.US</inputsourceid_prefi>
 </inputsourcedef>
 
+
 <!-- sticky s addons  -->
   <replacementdef>
-    <replacementname>SIMPLE_VI_MODE_EXTRA</replacementname>
+      <replacementname>SIMPLE_VI_MODE_EXTRA</replacementname>
     <replacementvalue>
       <![CDATA[
                <!-- send command-tab by m -->
@@ -219,16 +242,6 @@
 
   <modifierdef>MY_LAUNCHER_MODE</modifierdef>
 
-  <!-- app definitions  -->
-  <vkopenurldef>
-    <name>KeyCode::VK_OPEN_URL_APP_IntelliJ</name>
-    <url type="file">/Applications/IntelliJ IDEA.app</url>
-  </vkopenurldef>
-
-  <appdef>
-    <appname>XCODE</appname>
-    <equal>com.apple.dt.Xcode</equal>
-  </appdef>
 
   <!-- sticky o  -->
   <replacementdef>
@@ -660,6 +673,12 @@
 
     <autogen>
       __KeyToKey__
+      KeyCode::T,
+      KeyCode::F1, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
+    </autogen>
+
+    <autogen>
+      __KeyToKey__
       KeyCode::O,
       KeyCode::F9, ModifierFlag::COMMAND_L | ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L 
     </autogen>
@@ -764,10 +783,22 @@
     
     <autogen>
       __KeyToKey__
-      KeyCode::F,
+      KeyCode::V,
       KeyCode::5, ModifierFlag::SHIFT_L
     </autogen>
 
+    <autogen>
+      __KeyToKey__
+      KeyCode::J,
+      KeyCode::BRACKET_LEFT
+    </autogen>
+
+    <autogen>
+      __KeyToKey__
+      KeyCode::K,
+      KeyCode::BRACKET_RIGHT
+    </autogen>
+    
     <autogen>
       __KeyToKey__
       KeyCode::G,
@@ -777,18 +808,18 @@
     <autogen>
       __KeyToKey__
       KeyCode::A,
-      KeyCode::1, ModifierFlag::SHIFT_L
+      KeyCode::9, ModifierFlag::SHIFT_L
     </autogen>
 
     <autogen>
       __KeyToKey__
       KeyCode::S,
-      KeyCode::2, ModifierFlag::SHIFT_L
+      KeyCode::0, ModifierFlag::SHIFT_L
     </autogen>
 
     <autogen>
       __KeyToKey__
-      KeyCode::K,
+      KeyCode::F,
       KeyCode::BACKSLASH
     </autogen>
 
@@ -3161,16 +3192,6 @@
 </autogen>
 </item>
 
-
-<appdef>
-<appname>ITERM</appname>
-<equal>com.googlecode.iterm2</equal>
-</appdef>
-
-<appdef>
-<appname>DASH</appname>
-<equal>com.kapeli.dashdoc</equal>
-</appdef>
 
 
 <item>

@@ -48,17 +48,6 @@ alias rrpdf='rm -rf *.pdf'
 # source things
 alias sz='source ~/.dotfiles/zsh/zshrc'
 
-# open with app
-#alias s='subl'
-#alias ss='subl .'
-alias ww="open -a Marked\ 2"
-alias qq="open -a Safari"
-alias cr='open -a CodeRunner'
-alias jj='open -a IntelliJ\ IDEA'
-alias xx='open -a Xcode'
-alias pdf='open -a PDF\ Expert'
-alias love="/Applications/love.app/Contents/MacOS/love"
-alias Q="open -a \"Google Chrome\""
 
 # better ls
 alias la="ls -aF"
