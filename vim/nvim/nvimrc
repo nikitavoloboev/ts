@@ -6,10 +6,6 @@ set clipboard=unnamed " copy text to system clipboard
 
 let $NVIM_TUI_ENABLE_TRUE_COLOR=1 " a nice looking editor
 
-filetype plugin indent on
-
-syntax enable " syntax highlighting testing
-
 set title " set terminal title
 
 set whichwrap+=<,>,[,]
@@ -180,6 +176,8 @@ Plug 'scrooloose/nerdtree'
 Plug 'ctrlpvim/ctrlp.vim'
 
 Plug 'fatih/vim-go'
+
+Plug 'nsf/gocode', { 'rtp': 'nvim', 'do': '~/.config/nvim/plugged/gocode/nvim/symlink.sh' }
 
 " autocomplete engine
 function! DoRemote(arg)
