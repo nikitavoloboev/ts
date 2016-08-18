@@ -20,6 +20,6 @@ Speaking of vim, I am actually learning to use it and am planning to do all my d
 
 I also am using [zsh](http://www.zsh.org) as my shell with [prezto](https://github.com/sorin-ionescu/prezto) configuration. I really like it right now and I quite like the nice themes that it has that you can easily download with no set up necessary. Here is the one I am using now : 
 
-![](http://i.imgur.com/lCOTphH.png)
+![](http://i.imgur.com/4d63HOn.png)
 
 
