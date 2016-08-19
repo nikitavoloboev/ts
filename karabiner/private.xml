@@ -35,12 +35,50 @@
 <inputsourceid_prefix>com.apple.keylayout.US</inputsourceid_prefi>
 </inputsourcedef>
 
+<item>
+    <name>sticky s for essential things not in iTerm</name>
+    <identifier>private.launcher_mode_open_apps_v23</identifier>
+    <not>ITERM</not>
 
-<!-- sticky s addons  -->
-  <replacementdef>
-      <replacementname>SIMPLE_VI_MODE_EXTRA</replacementname>
-    <replacementvalue>
-      <![CDATA[
+    <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
+    <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
+    <modifier_not>
+      ModifierFlag::COMMAND_L,
+      ModifierFlag::COMMAND_R,
+      ModifierFlag::CONTROL_L,
+      ModifierFlag::CONTROL_R,
+      ModifierFlag::FN,
+      ModifierFlag::OPTION_L,
+      ModifierFlag::OPTION_R,
+      ModifierFlag::SHIFT_L,
+      ModifierFlag::SHIFT_R,
+    </modifier_not>
+
+    <autogen>
+      __KeyOverlaidModifier__
+      KeyCode::S,
+
+      <!--
+          Use notsave.launcher_mode_v2 in order to be higher priority.
+          Use ModifierFlag::MY_LAUNCHER_MODE for __DropAllKeys__.
+      -->
+      @begin
+      KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v23, ModifierFlag::MY_LAUNCHER_MODE,
+      @end
+
+      @begin
+      KeyCode::S,
+      @end
+    </autogen>
+  </item>
+
+  <item hidden="true">
+    <identifier vk_config="true">notsave.private_launcher_mode_v23</identifier>
+
+    <autogen>
+      __BlockUntilKeyUp__ KeyCode::S,
+    </autogen>
+
                <!-- send command-tab by m -->
                <autogen>
                  __KeyToKey__
@@ -136,7 +174,6 @@
                    KeyCode::RETURN
                 </autogen>
 
-
                <autogen>
                    __KeyToKey__
                    KeyCode::A,
@@ -199,11 +236,255 @@
                  KeyCode::Z, ModifierFlag::COMMAND_L
                </autogen>
 
-               ]]>
-               ]]>
-    </replacementvalue>
-  </replacementdef>
+               <autogen>
+                 __KeyToKey__
+                 KeyCode::H,
+                 KeyCode::CURSOR_LEFT
+               </autogen>
 
+               <autogen>
+                 __KeyToKey__
+                 KeyCode::L,
+                 KeyCode::CURSOR_RIGHT
+               </autogen>
+
+               <autogen>
+                 __KeyToKey__
+                 KeyCode::K,
+                 KeyCode::CURSOR_UP
+               </autogen>
+
+               <autogen>
+                 __KeyToKey__
+                 KeyCode::J,
+                 KeyCode::CURSOR_DOWN
+               </autogen>
+  </item>
+
+<item>
+    <name>sticky s for essential things in iTerm</name>
+    <identifier>private.launcher_mode_open_apps_v25</identifier>
+    <only>ITERM</only>
+
+    <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
+    <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
+    <modifier_not>
+      ModifierFlag::COMMAND_L,
+      ModifierFlag::COMMAND_R,
+      ModifierFlag::CONTROL_L,
+      ModifierFlag::CONTROL_R,
+      ModifierFlag::FN,
+      ModifierFlag::OPTION_L,
+      ModifierFlag::OPTION_R,
+      ModifierFlag::SHIFT_L,
+      ModifierFlag::SHIFT_R,
+    </modifier_not>
+
+    <autogen>
+      __KeyOverlaidModifier__
+      KeyCode::S,
+
+      <!--
+          Use notsave.launcher_mode_v2 in order to be higher priority.
+          Use ModifierFlag::MY_LAUNCHER_MODE for __DropAllKeys__.
+      -->
+      @begin
+      KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_private_launcher_mode_v25, ModifierFlag::MY_LAUNCHER_MODE,
+      @end
+
+      @begin
+      KeyCode::S,
+      @end
+    </autogen>
+  </item>
+
+  <item hidden="true">
+    <identifier vk_config="true">notsave.private_launcher_mode_v25</identifier>
+
+    <autogen>
+      __BlockUntilKeyUp__ KeyCode::S,
+    </autogen>
+
+               <!-- send command-tab by m -->
+               <autogen>
+                 __KeyToKey__
+                 KeyCode::G,
+                 KeyCode::TAB, ModifierFlag::COMMAND_L,
+                 <!-- release command key to commit command-tab -->
+                 KeyCode::COMMAND_L,
+             </autogen>
+
+                <autogen>
+                  __KeyToKey__
+                  KeyCode::N,
+                  KeyCode::V, ModifierFlag::COMMAND_L
+                </autogen>
+                
+                <autogen>
+                  __KeyToKey__
+                  KeyCode::BRACKET_LEFT,
+                  KeyCode::F7
+                </autogen>
+
+                <autogen>
+              __KeyToKey__
+              KeyCode::SEMICOLON,
+              KeyCode::F2, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L,
+                </autogen>
+
+                <autogen>
+                __KeyToKey__
+                KeyCode::SHIFT_R,
+                KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L | ModifierFlag::SHIFT_L,
+                KeyCode::X, ModifierFlag::COMMAND_L,
+                Option::NOREPEAT,
+                </autogen>
+
+                <autogen>
+                  __KeyToKey__
+                  KeyCode::E,
+                  KeyCode::TAB
+                </autogen>
+
+                <autogen>
+                  __KeyToKey__
+                  KeyCode::U,
+                  KeyCode::F12, ModifierFlag::COMMAND_L
+                </autogen>
+
+                <autogen>
+                  __KeyToKey__
+                  KeyCode::P,
+                  KeyCode::V, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
+                </autogen>
+
+                <autogen>
+                  __KeyToKey__
+                  KeyCode::QUOTE,
+                  KeyCode::F6, ModifierFlag::CONTROL_L, ModifierFlag::COMMAND_L
+                </autogen>
+
+                <autogen>
+                  __KeyToKey__
+                  KeyCode::SPACE,
+                  KeyCode::SPACE
+                </autogen>
+
+                <autogen>
+                  __KeyToKey__
+                  KeyCode::SLASH,
+                  KeyCode::F9
+                </autogen>
+
+               <autogen>
+                   __KeyToKey__
+                   KeyCode::DOT,
+                   KeyCode::F, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
+                </autogen>
+
+               <autogen>
+                   __KeyToKey__
+                   KeyCode::SEMICOLON,
+                   KeyCode::SEMICOLON
+                </autogen>
+
+               <autogen>
+                   __KeyToKey__
+                   KeyCode::R,
+                   KeyCode::V, ModifierFlag::COMMAND_L
+                </autogen>
+
+               <autogen>
+                   __KeyToKey__
+                   KeyCode::F,
+                   KeyCode::RETURN
+                </autogen>
+
+               <autogen>
+                   __KeyToKey__
+                   KeyCode::A,
+                   KeyCode::C, ModifierFlag::COMMAND_L
+                </autogen>
+
+               <autogen>
+                 __KeyToKey__
+                 KeyCode::V,
+                 KeyCode::SHIFT_L,
+               </autogen>
+
+               <autogen>
+                 __KeyToKey__
+                 KeyCode::O,
+                 KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L,
+                 KeyCode::RETURN,
+               </autogen>
+
+               <autogen>
+                 __KeyToKey__
+                 KeyCode::D,
+                 KeyCode::DELETE
+               </autogen>
+
+               <autogen>
+                 __KeyToKey__
+                 KeyCode::SHIFT_L,
+                 KeyCode::F10, ModifierFlag::COMMAND_L
+               </autogen>
+
+               <autogen>
+                 __KeyToKey__
+                 KeyCode::I,
+                 KeyCode::D, ModifierFlag::CONTROL_L
+               </autogen>
+
+               <autogen>
+                 __KeyToKey__
+                 KeyCode::M,
+                 KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L
+               </autogen>
+
+               <autogen>
+                 __KeyToKey__
+                 KeyCode::V | ModifierFlag::SHIFT_L,
+                 KeyCode::T, ModifierFlag::COMMAND_L
+               </autogen>
+
+               <autogen>
+                 __KeyToKey__
+                 KeyCode::B,
+                 KeyCode::CURSOR_LEFT, ModifierFlag::COMMAND_L
+               </autogen>
+
+               <autogen>
+                 __KeyToKey__
+                 KeyCode::Z,
+                 KeyCode::Z, ModifierFlag::COMMAND_L
+               </autogen>
+
+               <autogen>
+                 __KeyToKey__
+                 KeyCode::H,
+                 KeyCode::CURSOR_LEFT
+               </autogen>
+
+               <autogen>
+                 __KeyToKey__
+                 KeyCode::L,
+                 KeyCode::CURSOR_RIGHT
+               </autogen>
+
+               <autogen>
+                 __KeyToKey__
+                 KeyCode::K,
+                 KeyCode::CURSOR_UP
+               </autogen>
+
+               <autogen>
+                 __KeyToKey__
+                 KeyCode::J,
+                 KeyCode::CURSOR_DOWN
+               </autogen>
+  </item>
 
   <!-- sticky d for mouse movement  -->
   <replacementdef>
@@ -669,6 +950,12 @@
       __KeyToKey__
       KeyCode::F,
       KeyCode::F1, ModifierFlag::COMMAND_L | ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L,
+    </autogen>
+
+    <autogen>
+      __KeyToKey__
+      KeyCode::V,
+      KeyCode::F2, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L, ModifierFlag::COMMAND_L
     </autogen>
 
     <autogen>

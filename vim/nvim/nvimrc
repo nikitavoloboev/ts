@@ -12,6 +12,8 @@ set whichwrap+=<,>,[,]
 
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
+set completeopt-=preview " no annoying scratch preview above
+
 set expandtab
 set shiftwidth=4
 set softtabstop=2
