@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# just a simple commit all files with sparkles
+# no useful git message, I know but sometimes it is nice to have for things that don't really need a commit message
+
+git add .
+git commit . -m ':sparkles:''
+git push

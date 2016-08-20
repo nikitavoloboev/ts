@@ -24,6 +24,7 @@ source ~/.dotfiles/git/zgit
 source ~/.dotfiles/zsh/zenv
 source ~/.dotfiles/zsh/zalias
 source ~/.dotfiles/zsh/zapp
+source ~/.dotfiles/zsh/zscripts
 
 # 'thefuck' command correction 
 eval "$(thefuck --alias)"

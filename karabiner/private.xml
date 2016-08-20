@@ -101,6 +101,12 @@
                 </autogen>
 
                 <autogen>
+                  __KeyToKey__
+                  KeyCode::C,
+                  KeyCode::DELETE, ModifierFlag::COMMAND_L
+                </autogen>
+
+                <autogen>
               __KeyToKey__
               KeyCode::SEMICOLON,
               KeyCode::F2, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L,
@@ -119,6 +125,7 @@
                   KeyCode::E,
                   KeyCode::TAB
                 </autogen>
+
 
                 <autogen>
                   __KeyToKey__
@@ -2340,6 +2347,13 @@
       KeyCode::RETURN
     </autogen>
 
+
+    <autogen>
+      __KeyToKey__
+      KeyCode::O,
+      KeyCode::RETURN, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L
+    </autogen>
+
     <!-- typinator search  -->
        <autogen>
        __KeyToKey__
@@ -2357,6 +2371,12 @@
        __KeyToKey__
        KeyCode::I,
        KeyCode::2, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L
+       </autogen>
+
+       <autogen>
+       __KeyToKey__
+       KeyCode::H,
+       KeyCode::RETURN, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L
        </autogen>
 
        <autogen>

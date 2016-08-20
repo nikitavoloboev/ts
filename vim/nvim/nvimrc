@@ -20,7 +20,6 @@ set softtabstop=2
 
 set backspace=indent,eol,start  " makes backspace key more powerful
 
-
 set hlsearch " highlight search results
 set incsearch " highlight pattern matches as you type
 
@@ -63,6 +62,13 @@ set ttimeout
 set ttimeoutlen=10
 
 " --------------------------------------
+"  -comma mapping
+" --------------------------------------
+"
+nnoremap ,f :PlugInstall<return>
+nnoremap ,a :PlugUpdate<return>
+
+" --------------------------------------
 "  -insert  mapping
 " --------------------------------------
 
@@ -86,7 +92,6 @@ cabbrev rp Rp
 command Rg execute "!go run %"
 command RR execute "!go build %"
 
-
 " --------------------------------------
 "  -control mapping
 " --------------------------------------
@@ -94,7 +99,6 @@ command RR execute "!go build %"
 vmap <C-x> :!pbcopy<CR>
 vmap <C-c> :w !pbcopy<CR><CR>
 vmap <C-d> :Dash<CR>
-
 
 " --------------------------------------
 "  -leader mapping
@@ -126,7 +130,6 @@ nmap <C-s> :w<cr>
 
 map <Leader>e   :Dash<CR>
 
-
 " -------------------------------------
 "  -basic UI config
 " -------------------------------------
@@ -157,6 +160,8 @@ call plug#begin() " plugins to use
 Plug 'tpope/vim-sensible' " sensible defaults
 
 Plug 'zchee/deoplete-jedi'
+
+Plug 'szw/vim-g' " search selected text in google
 
 Plug 'Shougo/vimproc.vim', {'do' : 'make'}
 
@@ -204,6 +209,8 @@ let g:deoplete#enable_at_startup = 1 " activate deoplete
 
 " autocomplete with tab
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+
+let g:vim_g_open_command = "open"
 
 
 

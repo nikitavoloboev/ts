@@ -1,0 +1,6 @@
+# aliases for scripts
+
+alias site='site_template'
+alias gll='git_clone'
+alias nwf='workflow-install.py -s src'
+alias gds='git_commit_sparkles'
