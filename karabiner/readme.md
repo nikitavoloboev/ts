@@ -8,6 +8,7 @@ everything is within a seconds reach.
 Here are the *sticky keys* I use (it gets updated quite often to suit my needs) :
 
 ##sticky q - ⌘ + ⇧ 
+
 ##sticky w - open top apps
 - w + e - mindnode
 - w + r - focus timer
@@ -24,7 +25,9 @@ Here are the *sticky keys* I use (it gets updated quite often to suit my needs) 
 - w + b - chrome
 - w + m - IntelliJ
 - w + / - show desktop
+
 ##sticky e - ⌘
+
 ##sticky r - open other apps
 - r + a - focus timer (change)
 - r + j - ulysses
@@ -33,7 +36,9 @@ Here are the *sticky keys* I use (it gets updated quite often to suit my needs) 
 - r + o - reeder
 - r + / - iBooks
 - r + . - spotify
+
 ##sticky t - ⌘ + ⌃
+
 ##sticky o - alfred quick search
 - o + q - alfred downloads viewer
 - o + w - alfred open safari tabs
@@ -56,6 +61,7 @@ Here are the *sticky keys* I use (it gets updated quite often to suit my needs) 
 - o + v - alfred menu bar search
 - o + b - alfred bookmark viewer
 - o + m - alfred km search
+
 ##sticky p - documentation
 - p + e - ruby on rails
 - p + t - latex
@@ -67,7 +73,9 @@ Here are the *sticky keys* I use (it gets updated quite often to suit my needs) 
 - p + c - clojure
 - p + v - vim
 - p + m - man pages
+
 ##sticky a - ⌃ 
+
 ##sticky s - essential movement
 - s + e - tab
 - s + r - paste
@@ -91,6 +99,7 @@ Here are the *sticky keys* I use (it gets updated quite often to suit my needs) 
 - s + m - end of line
 - s + . - typinator quick search
 - s + / - cut current line
+
 ##sticky d - mouse movement
 - d + a - move mouse to middle of screen
 - d + v - visual text selection 
@@ -101,6 +110,7 @@ Here are the *sticky keys* I use (it gets updated quite often to suit my needs) 
 - d + o - zoom in (⌘ +)
 - d + p - zoom put (⌘ -)
 - d + f (held) - quickly move pointer
+
 ##sticky f -  writing help
 - f + a - tab
 - f + s - ⇧⇥ (shift + tab)
@@ -116,6 +126,7 @@ Here are the *sticky keys* I use (it gets updated quite often to suit my needs) 
 - f + p - cut to end of line
 - f + n - ⌘ + n
 - f + m - ⌘ + ⇧ + ⏎
+
 ##sticky g - handy actions
 - g + a - close open notifications
 - g + h - reset bitbar status
@@ -123,12 +134,14 @@ Here are the *sticky keys* I use (it gets updated quite often to suit my needs) 
 - g + l - show current task
 - g + n - show notification pane
 - g + m - show bartender menu bar
+
 ##sticky z - open chat apps 
 - z + j - textual
 - z + k - telegram
 - z + l - airmail
 - z + m - chatty
 - z + p - tweetbot
+
 ##sticky v - system actions
 - v + a - keyboard light down
 - v + s - keyboard light up
@@ -141,12 +154,14 @@ Here are the *sticky keys* I use (it gets updated quite often to suit my needs) 
 - v + m - sound up
 - v + o - screen brightness down
 - v + p - screen brightness up
+
 ##sticky b - window management
 - b + h - left half of screen
 - b + j - switch window between monitors
 - b + k - maximise window
 - b + l - right half of screen
 - b + m - full screen on / off
+
 ##sticky . - symbols
 - . + a - (
 - . + s - )
@@ -155,6 +170,7 @@ Here are the *sticky keys* I use (it gets updated quite often to suit my needs) 
 - . + j - [
 - . + k - ]
 - . + v - %
+
 ##sticky / - ⌥
 
 
