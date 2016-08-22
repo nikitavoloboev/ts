@@ -5,8 +5,10 @@ fi
 
 export PATH=$(brew --prefix ruby)/bin:$PATH
 
-# add bin to my path
+# add bin to my path and its subfolders (TODO: find out if adding more paths to $PATH will slow things down)
 export PATH=$PATH:~/.dotfiles/bin
+export PATH=$PATH:~/.dotfiles/bin/internets
+export PATH=$PATH:~/.dotfiles/bin/mine
 
 # set up go path
 export GOPATH=/Users/nikivi/go/

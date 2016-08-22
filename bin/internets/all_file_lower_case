@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# simply lowercases all files in current directory
+
+for i in * ; do mv $i `echo $i | tr [A-Z] [a-z]` ; done
