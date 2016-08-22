@@ -575,7 +575,7 @@
 
        <autogen>
        __KeyToKey__
-       KeyCode::P,
+       KeyCode::S,
        KeyCode::F6, ModifierFlag::OPTION_L
         </autogen>
 
@@ -591,10 +591,9 @@
        KeyCode::R, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
         </autogen>
 
-
        <autogen>
        __KeyToKey__
-       KeyCode::S,
+       KeyCode::P,
        KeyCode::F2, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
        </autogen>
 
@@ -604,10 +603,9 @@
        KeyCode::F2
         </autogen>
 
-    <!-- new bitbar task  -->
     <autogen>
     __KeyToKey__
-    KeyCode::V,
+    KeyCode::B,
     KeyCode::D, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
     </autogen>
 
@@ -679,7 +677,7 @@
 
        <autogen>
        __KeyToKey__
-       KeyCode::B,
+       KeyCode::V,
        KeyCode::M, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
         </autogen>
 
@@ -2347,11 +2345,20 @@
       KeyCode::RETURN
     </autogen>
 
+    <autogen>
+      __KeyToKey__
+      KeyCode::P,
+    KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L | ModifierFlag::SHIFT_L,
+    KeyCode::X, ModifierFlag::COMMAND_L,
+    Option::NOREPEAT,
+    </autogen>
 
     <autogen>
       __KeyToKey__
       KeyCode::O,
-      KeyCode::RETURN, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L
+    KeyCode::CURSOR_LEFT, ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L,
+    KeyCode::X, ModifierFlag::COMMAND_L,
+    Option::NOREPEAT,
     </autogen>
 
     <!-- typinator search  -->
@@ -2365,6 +2372,12 @@
        __KeyToKey__
        KeyCode::N,
        KeyCode::RETURN, ModifierFlag::COMMAND_L
+       </autogen>
+
+       <autogen>
+       __KeyToKey__
+       KeyCode::SEMICOLON,
+       KeyCode::QUOTE, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
        </autogen>
        
        <autogen>
@@ -2396,7 +2409,6 @@
       KeyCode::S,
       KeyCode::TAB, ModifierFlag::SHIFT_L
     </autogen>
-    
     
 
     <autogen>
