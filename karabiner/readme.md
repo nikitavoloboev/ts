@@ -173,4 +173,12 @@ Here are the *sticky keys* I use (it gets updated quite often to suit my needs) 
 
 ##sticky / - ⌥
 
+Other settings I love and use are : 
+
+1. mapping my caps lock key to act as esc on single press and as two modifier keys when pressed with something, you have to also change caps lock to F19 with [Seil](https://pqrs.org/osx/karabiner/seil.html.en) first.
+2. mapping my right command to a combination for a single press so I can then use it as my [Alfred](https://www.alfredapp.com/) prompt
+3. changing my right shift key to act as another two modifier keys that I can then map to some interesting app specific hotkeys and it it also serves as my delete key
+4. also switched around the locations of my round brackets to a more 'friendly' location for me
+
+One thing that is also really amazing and comes as one of the default settings you can choose in Karabiner is system wide vim emulation. That to be honest is really incredible. I have it binded to my left command so I can essentially have vim navigation and all the vim good stuff in whatever application I will be working in.
 
