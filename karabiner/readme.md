@@ -29,7 +29,7 @@ Here are the *sticky keys* I use (it gets updated quite often to suit my needs) 
 ##sticky e - ⌘
 
 ##sticky r - open other apps
-- r + a - focus timer (change)
+- r + a - focus timer
 - r + j - ulysses
 - r + k - pdf expert
 - r + l - day one
