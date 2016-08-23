@@ -61,6 +61,9 @@ Here are the *sticky keys* I use (it gets updated quite often to suit my needs) 
 - o + v - alfred menu bar search
 - o + b - alfred bookmark viewer
 - o + m - alfred km search
+- o + ⇥ - ⌘ + ⇥
+- o + ⇧ - ⌘ + ⇧ + ⇥ 
+- o + space - new fantastical event
 
 ##sticky p - documentation
 - p + e - ruby on rails
@@ -73,6 +76,7 @@ Here are the *sticky keys* I use (it gets updated quite often to suit my needs) 
 - p + c - clojure
 - p + v - vim
 - p + m - man pages
+- p + ⇧ - sleep
 
 ##sticky a - ⌃ 
 
