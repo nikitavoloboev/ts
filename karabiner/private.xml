@@ -27,6 +27,18 @@
 <equal>com.kapeli.dashdoc</equal>
 </appdef>
 
+    <item>
+  <name>space after comma</name>
+  <appendix>space after comma</appendix>
+  <identifier>space_after_comma</identifier>
+  <autogen>__KeyToKey__
+  KeyCode::COMMA, ModifierFlag::NONE,
+          
+  KeyCode::COMMA, ModifierFlag::NONE,
+  KeyCode::SPACE, ModifierFlag::NONE
+   </autogen>
+    </item>
+
 <!-- todo: clean it up, add comments, make things easily searchable  -->
 
 <!-- can use constant 'US' when I want to use items specific only to US keyboard -->
@@ -88,10 +100,22 @@
                  KeyCode::COMMAND_L,
              </autogen>
 
+               <autogen>
+               __KeyToKey__
+               KeyCode::T,
+               KeyCode::A, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
+               </autogen>
+
                 <autogen>
                   __KeyToKey__
                   KeyCode::N,
                   KeyCode::V, ModifierFlag::COMMAND_L
+                </autogen>
+
+                <autogen>
+                  __KeyToKey__
+                  KeyCode::COMMA,
+                  KeyCode::F12, ModifierFlag::COMMAND_L
                 </autogen>
                 
                 <autogen>
@@ -99,6 +123,7 @@
                   KeyCode::BRACKET_LEFT,
                   KeyCode::F7
                 </autogen>
+
 
                 <autogen>
                   __KeyToKey__
@@ -126,7 +151,6 @@
                   KeyCode::TAB
                 </autogen>
 
-
                 <autogen>
                   __KeyToKey__
                   KeyCode::U,
@@ -137,12 +161,13 @@
                   __KeyToKey__
                   KeyCode::P,
                   KeyCode::V, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
-                </autogen>
+                </autoger>
 
                 <autogen>
                   __KeyToKey__
                   KeyCode::QUOTE,
-                  KeyCode::F6, ModifierFlag::CONTROL_L, ModifierFlag::COMMAND_L
+                  KeyCode::CURSOR_LEFT, ModifierFlag::COMMAND_L,
+                  KeyCode::CURSOR_RIGHT, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L
                 </autogen>
 
                 <autogen>
@@ -519,6 +544,12 @@
 
                <autogen>
                  __KeyToKey__
+                 KeyCode::S,
+                 KeyCode::F12, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L
+               </autogen>
+
+               <autogen>
+                 __KeyToKey__
                  KeyCode::O,
                  KeyCode::MINUS, ModifierFlag::COMMAND_L
                </autogen>
@@ -548,6 +579,12 @@
           KeyCode::W,
           KeyCode::F2, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L
         </autogen>
+
+        <autogen>
+      __KeyToKey__
+      KeyCode::N,
+      KeyCode::E, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L
+		</autogen>
 
        <autogen>
        __KeyToKey__
@@ -1081,6 +1118,12 @@
 
     <autogen>
       __KeyToKey__
+      KeyCode::E,
+      KeyCode::3, ModifierFlag::SHIFT_L
+    </autogen>
+
+    <autogen>
+      __KeyToKey__
       KeyCode::J,
       KeyCode::BRACKET_LEFT
     </autogen>
@@ -1354,10 +1397,35 @@
       KeyCode::J, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
     </autogen>
 
+
     <autogen>
       __KeyToKey__
       KeyCode::H,
       KeyCode::H, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
+    </autogen>
+
+    <autogen>
+      __KeyToKey__
+      KeyCode::N,
+      KeyCode::F10, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L
+    </autogen>
+
+    <autogen>
+      __KeyToKey__
+      KeyCode::P,
+      KeyCode::F11, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L
+    </autogen>
+
+    <autogen>
+      __KeyToKey__
+      KeyCode::C,
+      KeyCode::F9, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L
+    </autogen>
+
+    <autogen>
+      __KeyToKey__
+      KeyCode::O,
+      KeyCode::F7, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L
     </autogen>
 
   </item>
@@ -1416,7 +1484,7 @@
 
     <autogen>
         __KeyToKey__
-        KeyCode::P,
+        KeyCode::H,
         KeyCode::F3
     </autogen>
 
@@ -1439,22 +1507,21 @@
 		</autogen>
 
     <autogen>
-      __KeyDownUpToKey__
+      __KeyToKey__
       KeyCode::E,
       KeyCode::Q, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L
     </autogen>
 
     <autogen>
-      __KeyDownUpToKey__
+      __KeyToKey__
       KeyCode::G,
       KeyCode::BACKQUOTE, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
     </autogen>
 
-
     <autogen>
-      __KeyDownUpToKey__
-      KeyCode::A,
-      KeyCode::W, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
+      __KeyToKey__
+      KeyCode::I,
+      KeyCode::SLASH, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
     </autogen>
 
     <autogen>
@@ -1465,7 +1532,7 @@
 
     <autogen>
       __KeyToKey__
-      KeyCode::SLASH,
+      KeyCode::DOT,
       KeyCode::SLASH, ModifierFlag::OPTION_R
     </autogen>
 
@@ -1507,6 +1574,12 @@
       __KeyToKey__
       KeyCode::O,
       KeyCode::W, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L
+    </autogen>
+
+    <autogen>
+      __KeyToKey__
+      KeyCode::P,
+      KeyCode::P, ModifierFlag::OPTION_L
     </autogen>
 
   </item>
@@ -1580,7 +1653,7 @@
 
         <autogen>
         __KeyToKey__
-        KeyCode::H,
+        KeyCode::J,
         KeyCode::V, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
         </autogen>
     
@@ -1669,6 +1742,19 @@
       KeyCode::SEMICOLON, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L 
 		</autogen>
 
+    <autogen>
+        __KeyToKey__
+        KeyCode::BRACKET_LEFT,
+        KeyCode::P, ModifierFlag::OPTION_L
+    </autogen>
+
+
+        <autogen>
+      __KeyToKey__
+      KeyCode::I,
+      KeyCode::2, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
+		</autogen>
+
         <!-- pdf expert  -->
         <autogen>
       __KeyToKey__
@@ -1676,16 +1762,16 @@
       KeyCode::QUOTE, ModifierFlag::OPTION_L
 		</autogen>
 
-        <autogen>
+    <autogen>
       __KeyToKey__
-      KeyCode::P,
-      KeyCode::F6, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
-		</autogen>
+     KeyCode::G,
+      KeyCode::BRACKET_RIGHT, ModifierFlag::OPTION_L
+    </autogen>
 
     <autogen>
       __KeyToKey__
-      KeyCode::G,
-      KeyCode::BRACKET_RIGHT, ModifierFlag::OPTION_L
+      KeyCode::P,
+      KeyCode::F1, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
     </autogen>
 
     <autogen>
@@ -1787,8 +1873,20 @@
 
         <autogen>
       __KeyToKey__
+      KeyCode::V,
+      KeyCode::BACKSLASH, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
+		</autogen>
+
+        <autogen>
+      __KeyToKey__
+      KeyCode::SEMICOLON,
+      KeyCode::F6, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L
+		</autogen>
+
+        <autogen>
+      __KeyToKey__
       KeyCode::W,
-      KeyCode::W, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
+      KeyCode::P, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
 		</autogen>
 
         <autogen>
@@ -2361,11 +2459,10 @@
     Option::NOREPEAT,
     </autogen>
 
-    <!-- typinator search  -->
        <autogen>
        __KeyToKey__
        KeyCode::W,
-       KeyCode::F, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
+       KeyCode::A, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
        </autogen>
 
        <autogen>
@@ -2373,6 +2470,7 @@
        KeyCode::N,
        KeyCode::RETURN, ModifierFlag::COMMAND_L
        </autogen>
+
 
        <autogen>
        __KeyToKey__

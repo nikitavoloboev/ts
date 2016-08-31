@@ -1,93 +1,67 @@
 " --------------------------------------
 " -basic vim config
 " --------------------------------------
-
-set clipboard=unnamed " copy text to system clipboard
-
-let $NVIM_TUI_ENABLE_TRUE_COLOR=1 " a nice looking editor
-
-set title " set terminal title
-
+set clipboard^=unnamed                             " copy text to system clipboard
+set clipboard^=unnamedplus
+let $NVIM_TUI_ENABLE_TRUE_COLOR=1                 " a nice looking editor
+set title                                         " set terminal title
 set whichwrap+=<,>,[,]
-
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
-
-set completeopt-=preview " no annoying scratch preview above
-
+set completeopt-=preview                          " no annoying scratch preview above
 set expandtab
 set shiftwidth=4
 set softtabstop=2
-
-set backspace=indent,eol,start  " makes backspace key more powerful
-
-set hlsearch " highlight search results
-set incsearch " highlight pattern matches as you type
-
-set history=1000 " remember everything
+set backspace=indent,eol,start                    " makes backspace key more powerful
+set hlsearch                                      " highlight search results
+set incsearch                                     " highlight pattern matches as you type
+set history=1000                                  " remember everything
 set undolevels=1000
-
-filetype plugin indent on
-
-set smartindent " indentation
+set smartindent                                   " indentation
 
 " open help vertically
 command! -nargs=* -complete=help Help vertical belowright help <args>
 autocmd FileType help wincmd L
 
-:autocmd InsertEnter,InsertLeave * set cul! " notify on mode change visually
+:autocmd InsertEnter,InsertLeave * set cul!       " notify on mode change visually
 
 " --------------------------------------
 "  -testing
 " --------------------------------------
-
-set showcmd         " show me what I'm typing
-set autowrite       " automatically save before :next, :make etc
-set ignorecase      " search case insensitive 
-set smartcase       " .. but not when search pattern contains upper case characters
-
-" should speed up syntax highlighting 
+set showcmd                                       " show me what I'm typing
+set autowrite                                     " automatically save before :next, :make etc
+set ignorecase                                    " search case insensitive 
+set smartcase                                     " .. but not when search pattern contains upper case characters
 set nocursorcolumn
 set nocursorline
-
-" make vim handle long lines nicely
 set wrap
 set textwidth=79
 set formatoptions=qrn1
-
-
-" time out on key codes but not mappings
-" basically this makes terminal vim work sanely
 set notimeout
 set ttimeout
 set ttimeoutlen=10
+set nobackup                                      " don't create annoying backup files
 
 " --------------------------------------
 "  -comma mapping
 " --------------------------------------
-"
 nnoremap ,f :PlugInstall<return>
 nnoremap ,a :PlugUpdate<return>
 
 " --------------------------------------
 "  -insert  mapping
 " --------------------------------------
-
 inoremap      jk  <Esc>
 inoremap      kj  <Esc>
-
 inoremap (<Space>  ();<Esc>hi
 inoremap      (;   ();<Esc>o
 inoremap      ()   ()
 
-
 " --------------------------------------
 "  -command mapping
 " --------------------------------------
-
 :command R !node %
 command Rp execute "w|!python3 %"
 cabbrev rp Rp
-
 " -go 
 command Rg execute "!go run %"
 command RR execute "!go build %"
@@ -95,7 +69,6 @@ command RR execute "!go build %"
 " --------------------------------------
 "  -control mapping
 " --------------------------------------
-
 vmap <C-x> :!pbcopy<CR>
 vmap <C-c> :w !pbcopy<CR><CR>
 vmap <C-d> :Dash<CR>
@@ -103,7 +76,6 @@ vmap <C-d> :Dash<CR>
 " --------------------------------------
 "  -leader mapping
 " --------------------------------------
-
 nnoremap <SPACE> <Nop>
 let mapleader="\<Space>"
 
@@ -123,33 +95,23 @@ nmap <Leader>se   :source ~/.dotfiles/vim/nvim/nvimrc<CR>
 nmap <Leader>pi   :PlugInstall<CR>
 nmap <Leader>pu   :PlugUpdate<CR>
 nmap <Leader>vm   :make<CR>
-
 nnoremap <leader>l :%d<cr>
 nnoremap <silent><expr> <C-L> winnr()==g:NERDTree.GetWinNum() ? ":NERDTreeClose\<CR>" : ":NERDTreeFocus\<CR>"
 nmap <C-s> :w<cr>
-
 map <Leader>e   :Dash<CR>
 
 " -------------------------------------
 "  -basic UI config
 " -------------------------------------
 
-set relativenumber " relative to current posion line numbers
-set number " show line numbers
-
-set cursorline " highlight current line
-
+set relativenumber                    " relative to current posion line numbers
+set number                            " show line numbers
+set cursorline                        " highlight current line
 let python_highlight_all = 1
-
 set showmatch
-
-set autoindent
-
-set tabstop=4 " default indentation is 4 spaces long and uses tabs, not spaces
-
+set tabstop=4                         " default indentation is 4 spaces long and uses tabs, not spaces
 set matchtime=2
-
-set background=dark " set night mode
+set background=dark                   " set night mode
 
 " -------------------------------------
 "  -plugins
@@ -157,44 +119,30 @@ set background=dark " set night mode
 
 call plug#begin() " plugins to use
 
-Plug 'tpope/vim-sensible' " sensible defaults
-
-Plug 'zchee/deoplete-jedi'
-
-Plug 'szw/vim-g' " search selected text in google
-
-Plug 'Shougo/vimproc.vim', {'do' : 'make'}
-
-Plug 'rizzatti/dash.vim'
-
-Plug 'morhetz/gruvbox' " colour goodness
-
-Plug 'tpope/vim-fugitive' " supposedly a really nice git wrapper
-
-Plug 'vim-airline/vim-airline' " a nice looking status bar on the bottom
-Plug 'vim-airline/vim-airline-themes'
-
-Plug 'easymotion/vim-easymotion' " testing it out
-
-Plug 'scrooloose/nerdcommenter'
-
-Plug 'scrooloose/nerdtree'
-
-Plug 'ctrlpvim/ctrlp.vim'
-
-Plug 'fatih/vim-go'
-
-Plug 'nsf/gocode', { 'rtp': 'nvim', 'do': '~/.config/nvim/plugged/gocode/nvim/symlink.sh' }
-
 " autocomplete engine
 function! DoRemote(arg)
   UpdateRemotePlugins
 endfunction
 
+Plug 'tpope/vim-sensible' " sensible defaults
+Plug 'zchee/deoplete-jedi'
+Plug 'szw/vim-g' " search selected text in google
+Plug 'Shougo/vimproc.vim', {'do' : 'make'}
+Plug 'rizzatti/dash.vim'
+Plug 'morhetz/gruvbox' " colour goodness
+Plug 'tpope/vim-fugitive' 
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-repeat'
+Plug 'vim-airline/vim-airline' " a nice looking status bar on the bottom
+Plug 'vim-airline/vim-airline-themes'
+Plug 'easymotion/vim-easymotion' 
+Plug 'scrooloose/nerdcommenter'
+Plug 'scrooloose/nerdtree'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'fatih/vim-go'
+Plug 'nsf/gocode', { 'rtp': 'nvim', 'do': '~/.config/nvim/plugged/gocode/nvim/symlink.sh' }
 Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
-" Plug 'Shougo/deoplete.nvim'
 Plug 'zchee/deoplete-go', { 'do': 'make'}
-
 Plug 'carlitux/deoplete-ternjs' " js autocomplete
 
 call plug#end()
@@ -202,21 +150,9 @@ call plug#end()
 " -------------------------------------
 "  -activating / modifying plugins
 " -------------------------------------
-
 colorscheme gruvbox " activate the colour scheme
-
 let g:deoplete#enable_at_startup = 1 " activate deoplete
-
 " autocomplete with tab
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
-
 let g:vim_g_open_command = "open"
-
-
-
-
-
-
-
-
 
