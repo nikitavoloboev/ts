@@ -9,3 +9,4 @@ alias pdf='open -a PDF\ Expert'
 alias love="/Applications/love.app/Contents/MacOS/love"
 alias Q="open -a \"Google Chrome\""
 alias we="open -a MacDown"
+alias jp='open_intellij_folder'

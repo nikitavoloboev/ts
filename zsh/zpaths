@@ -47,3 +47,6 @@ alias d..='cd ~/.config'
 alias dsj='cd ~/code/solutions/java'
 alias dios='cd ~/code/xcode/projects/ios'
 
+# projects 
+alias dpq='cd ~/code/xcode/projects/macos/quoter'
+

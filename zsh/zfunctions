@@ -4,6 +4,9 @@ function fn() { ls **/*$1* }
 
 function fnd() { ls **/*$1*(/) }
 
+# copy to clipboard current working dir
+cwd() { printf %s "$PWD" | pbcopy; }
+
 # make a directory and go to it.
 function mD {
   [[ -n "$1" ]] && mkdir -p "$1" && builtin cd "$1"

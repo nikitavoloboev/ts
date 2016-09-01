@@ -32,8 +32,8 @@ function mouseHighlight()
     mouseCircle:setStrokeWidth(5)
     mouseCircle:show()
 
-    -- set a timer to delete the circle after 3 seconds
-    mouseCircleTimer = hs.timer.doAfter(3, function() mouseCircle:delete() end)
+    -- set a timer to delete the circle after 2 seconds
+    mouseCircleTimer = hs.timer.doAfter(2, function() mouseCircle:delete() end)
 end
 
 --------------------------------------------------------------------------------
