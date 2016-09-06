@@ -1,7 +1,7 @@
 # general
 alias k='k -h'
 alias i='ack'
-alias c='cat'
+alias c='ccat'
 alias rec='asciinema rec'
 alias b='bd'
 alias s='fuck'
