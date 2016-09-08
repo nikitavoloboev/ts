@@ -573,7 +573,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
                 <autogen>
                   __KeyToKey__
                   KeyCode::P,
-                  KeyCode::V, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
+                  KeyCode::F12, ModifierFlag::COMMAND_L
                 </autoger>
 
                 <autogen>
@@ -591,14 +591,8 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
                 <autogen>
                   __KeyToKey__
-                  KeyCode::SLASH,
+                  KeyCode::DOT,
                   KeyCode::F9
-                </autogen>
-
-               <autogen>
-                   __KeyToKey__
-                   KeyCode::DOT,
-                   KeyCode::F, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
                 </autogen>
 
                <autogen>
@@ -810,20 +804,8 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
                 <autogen>
                   __KeyToKey__
-                  KeyCode::SPACE,
-                  KeyCode::SPACE
-                </autogen>
-
-                <autogen>
-                  __KeyToKey__
-                  KeyCode::SLASH,
+                  KeyCode::DOT,
                   KeyCode::F9
-                </autogen>
-
-               <autogen>
-                   __KeyToKey__
-                   KeyCode::DOT,
-                   KeyCode::F, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
                 </autogen>
 
                <autogen>
@@ -986,6 +968,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
        KeyCode::SPACE, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::SHIFT_L, ModifierFlag::COMMAND_L
         </autogen>
 
+       <autogen>
+       __KeyToKey__
+       KeyCode::SPACE,
+       KeyCode::F7, ModifierFlag::COMMAND_L
+        </autogen>
+
         <autogen>
           __KeyToKey__
           KeyCode::W,
@@ -1116,12 +1104,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
        __KeyToKey__
        KeyCode::D,
        KeyCode::F, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L, ModifierFlag::COMMAND_L
-        </autogen>
-
-       <autogen>
-       __KeyToKey__
-       KeyCode::SPACE,
-       KeyCode::E, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L
         </autogen>
 
        <autogen>
@@ -1609,7 +1591,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     <autogen>
       __KeyToKey__
       KeyCode::F,
-      KeyCode::BACKSLASH
+      KeyCode::MINUS, ModifierFlag::SHIFT_L
     </autogen>
 
   </item>
@@ -2422,11 +2404,11 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       __BlockUntilKeyUp__ KeyCode::U,
     </autogen>
 
-        <autogen>
-      __KeyToKey__
-      KeyCode::SPACE,
-      KeyCode::SPACE, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
-		</autogen>
+       <autogen>
+       __KeyToKey__
+       KeyCode::SPACE,
+       KeyCode::E, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L
+        </autogen>
         
         <autogen>
       __KeyToKey__
@@ -2735,7 +2717,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
         <autogen>
       __KeyToKey__
       KeyCode::V,
-      KeyCode::Q, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
+      KeyCode::F8, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L
 		</autogen>
 
         <autogen>
@@ -3186,6 +3168,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       KeyCode::A, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L, ModifierFlag::OPTION_L
 		</autogen>
 
+        <autogen>
+      __KeyToKey__
+      KeyCode::N,
+      KeyCode::F11, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
+		</autogen>
+
         <!-- airmail  -->
         <autogen>
       __KeyDownUpToKey__
@@ -3202,7 +3190,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
         <autogen>
       __KeyToKey__
-      KeyCode::P,
+      KeyCode::I,
       KeyCode::F4, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
 		</autogen>
 
@@ -3293,11 +3281,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       KeyCode::RETURN
     </autogen>
 
-    <autogen>
-      __KeyToKey__
-      KeyCode::K,
-      KeyCode::RETURN
-    </autogen>
 
     <autogen>
       __KeyToKey__
