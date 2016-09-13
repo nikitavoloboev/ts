@@ -1,5 +1,5 @@
 # aliases related to vim
-alias e.='nvim .'
+alias ee='nvim .'
 
 # open in vim
 alias ea='nvim ~/.dotfiles/zsh/zalias'
@@ -8,7 +8,7 @@ alias eze='nvim ~/.dotfiles/vim/zvim'
 alias ezp='nvim ~/.dotfiles/zsh/zpaths'
 alias ek='nvim ~/Library/Application\ Support/Karabiner/private.xml'
 alias ezz='nvim ~/.zprofile'
-alias ee='nvim ~/.dotfiles/vim/nvim/nvimrc'
+alias ew='nvim ~/.dotfiles/vim/nvim/nvimrc'
 alias ezf='nvim ~/.dotfiles/zsh/zfunctions'
 alias ezv='nvim ~/.dotfiles/vim/zvim'
 alias ehs='nvim ~/.dotfiles/hammerspoon/init.lua'

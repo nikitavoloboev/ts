@@ -1,5 +1,9 @@
 # paths to go into
 alias dxm='cd ~/code/xcode/projects/macos'
+alias dps='cd ~/code/projects/personal_site'
+alias dgp='cd ~/code/go/projects'
+alias dgl='cd ~/code/go/play'
+alias dte='cd ~/Documents/app/tester'
 alias dxi='cd ~/code/xcode/projects/ios'
 alias er='cd ~/code/ruby'
 alias dbl='cd ~/Documents/git/nikivi/hugo'

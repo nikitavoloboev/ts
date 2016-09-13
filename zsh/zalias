@@ -1,4 +1,6 @@
 # general
+alias sudo='sudo '
+alias m='man'
 alias k='k -h'
 alias i='ack'
 alias c='ccat'
@@ -21,7 +23,6 @@ alias p2='python'
 alias q='exit'
 alias e='nvim'
 alias d='cd'
-alias m='man'
 alias md='mkdir'
 alias sf='screenfetch'
 alias zz='open .'
@@ -37,9 +38,6 @@ alias aa='ls -lah'
 alias srp='ssh pi@192.168.1.17'
 alias tp='type'
 alias cl='/usr/local/bin/m'
-
-# enable aliases to be sudo'd
-alias sudo='sudo '
 
 # delete things
 alias rrpdf='rm -rf *.pdf'

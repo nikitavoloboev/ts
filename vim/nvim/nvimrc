@@ -17,6 +17,7 @@ set incsearch                                     " highlight pattern matches as
 set history=1000                                  " remember everything
 set undolevels=1000
 set smartindent                                   " indentation
+set shortmess=Ia                                  " disable startup message
 
 " open help vertically
 command! -nargs=* -complete=help Help vertical belowright help <args>
@@ -124,7 +125,10 @@ function! DoRemote(arg)
   UpdateRemotePlugins
 endfunction
 
+Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-sensible' " sensible defaults
+Plug 'pangloss/vim-javascript'
+Plug 'airblade/vim-gitgutter'
 Plug 'zchee/deoplete-jedi'
 Plug 'szw/vim-g' " search selected text in google
 Plug 'Shougo/vimproc.vim', {'do' : 'make'}
