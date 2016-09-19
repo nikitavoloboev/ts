@@ -3,12 +3,12 @@
 # node 
 alias n='node'
 alias ndi='node install'
-alias npi='npm install'
-alias nst='npm start'
+alias ri='npm install'
+alias rs='npm start'
 alias ns='npm ls'
-alias na='npm update'
-alias ii='npm init'
-alias npm='npm'
+alias ra='npm update'
+alias rp='npm init'
+alias rig='npm install -g'
 
 # go
 alias o='go run'
