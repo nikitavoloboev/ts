@@ -1,6 +1,7 @@
 # git alias 
 
 alias g="git"
+alias gi='git init'
 alias gl='git pull'
 alias gcl='git clone'
 alias gs='git status'
