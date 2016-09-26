@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# purpose : I create a new repository on github, this is a fast way to initialise my new project
+# and sync it with github
+
+git add .
+git commit -m 'init' .
+
+# get current safari url
+# check if it contains github in it
+# if it does, then just use that and write the rest of the instructions

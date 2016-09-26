@@ -41,7 +41,7 @@ end
 --------------------------------------------------------------------------------
 -- show my todo task in a neat window briefly
 hs.hotkey.bind({"cmd", "alt", "ctrl"}, "I", function()
-hs.alert.show( ( hs.execute("~/Documents/app/bitbar/todo") ) )
+hs.alert.show( ( hs.execute("~/Documents/d.\\ app/bitbar/todo") ) )
 end)
 
 -- visually circle my mouse pointer
