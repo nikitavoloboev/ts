@@ -117,7 +117,7 @@ set matchtime=2
 set background=dark                   " set night mode
 
 " -------------------------------------
-"  -plugins
+"  _plugins
 " -------------------------------------
 
 call plug#begin() " plugins to use
