@@ -86,7 +86,7 @@ nnoremap <leader>= yypVr=
 nmap <Leader>d    dd
 nmap <Leader>a    :x<CR>
 nmap <Leader>w    :w<CR>
-nmap <Leader>q    :q!<CR>
+nmap <Leader>q    :qa<CR>
 nmap <Leader>y    :%y<CR>
 nmap <Leader>vW   :wa<CR>
 nmap <Leader>vq   :wqall<CR>
@@ -104,7 +104,7 @@ nmap <C-s> :w<cr>
 map <Leader>e   :Dash<CR>
 
 " -------------------------------------
-"  -basic UI config
+"  _basic UI config
 " -------------------------------------
 
 set relativenumber                    " relative to current posion line numbers
@@ -128,6 +128,9 @@ function! DoRemote(arg)
 endfunction
 
 Plug 'jiangmiao/auto-pairs'
+Plug 'junegunn/vim-easy-align'
+Plug 'junegunn/limelight.vim'
+Plug 'junegunn/goyo.vim'
 Plug 'tpope/vim-sensible' " sensible defaults
 Plug 'pangloss/vim-javascript'
 Plug 'airblade/vim-gitgutter'
@@ -154,7 +157,7 @@ Plug 'carlitux/deoplete-ternjs' " js autocomplete
 call plug#end()
 
 " -------------------------------------
-"  -activating / modifying plugins
+"  _activating / modifying plugins
 " -------------------------------------
 colorscheme gruvbox " activate the colour scheme
 let g:deoplete#enable_at_startup = 1 " activate deoplete
@@ -162,3 +165,5 @@ let g:deoplete#enable_at_startup = 1 " activate deoplete
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 let g:vim_g_open_command = "open"
 
+autocmd VimEnter * Goyo
+let g:goyo_linenr = 1
