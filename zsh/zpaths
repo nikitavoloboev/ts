@@ -1,4 +1,4 @@
-# paths to go into
+# _paths to go into
 alias dxm='cd ~/code/xcode/projects/macos'
 alias dno='cd ~/Documents/d.\ app'
 alias djr='cd ~/code/java/research'
@@ -24,6 +24,7 @@ alias dwp='cd ~/web/projects'
 alias ds='cd ~/code/solutions'
 alias dvi='cd ~/.dotfiles/vim'
 alias d.='cd ~/.dotfiles'
+alias dpr="cd ~/code/python/research"
 alias drp='cd ~/Dropbox'
 alias dgf='cd ~/Documents/d. \git/forks'
 alias dp='cd ~/code/projects'
@@ -54,6 +55,6 @@ alias d..='cd ~/.config'
 alias dsj='cd ~/code/solutions/java'
 alias dios='cd ~/code/xcode/projects/ios'
 
-# projects 
+# _projects 
 alias dpq='cd ~/code/xcode/projects/macos/quoter'
 

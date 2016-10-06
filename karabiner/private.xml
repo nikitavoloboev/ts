@@ -11,6 +11,7 @@
     <url type="file">/Applications/IntelliJ IDEA.app</url>
   </vkopenurldef>
 
+
   <vkopenurldef>
     <name>KeyCode::VK_OPEN_URL_APP_Hazel</name>
     <url type="file">/Users/nikivi/Library/PreferencePanes/Hazel.prefPane</url>
@@ -29,6 +30,11 @@
 <appdef>
 <appname>DASH</appname>
 <equal>com.kapeli.dashdoc</equal>
+</appdef>
+
+<appdef>
+<appname>TODO</appname>
+<equal>com.guidedways.TodoMac</equal>
 </appdef>
 
   <item>
@@ -119,6 +125,8 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     KeyCode::SEMICOLON,
     </autogen>
 </item>
+
+
 
 
 <item>
@@ -1037,7 +1045,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
        <autogen>
        __KeyToKey__
        KeyCode::C,
-       KeyCode::C, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
+       KeyCode::F1, ModifierFlag::COMMAND_L
         </autogen>
 
        <autogen>
@@ -1277,6 +1285,24 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       __KeyToKey__
       KeyCode::E,
       KeyCode::RETURN, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
+		</autogen>
+
+        <autogen>
+      __KeyToKey__
+      KeyCode::P,
+      KeyCode::F2, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L
+		</autogen>
+
+        <autogen>
+      __KeyToKey__
+      KeyCode::N,
+      KeyCode::F8, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L
+		</autogen>
+
+        <autogen>
+      __KeyToKey__
+      KeyCode::R,
+      KeyCode::O, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
 		</autogen>
 
 
@@ -2020,7 +2046,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
         <autogen>
       __KeyToKey__
-      KeyCode::SLASH,
+      KeyCode::COMMA,
       KeyCode::F1, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L, ModifierFlag::COMMAND_L
 		</autogen>
 
@@ -2351,12 +2377,11 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
         </autogen>
     
 
-
     <!-- quick bindable tester for alfred  -->
     <autogen>
         __KeyToKey__
         KeyCode::K,
-        KeyCode::F8
+        KeyCode::F19
     </autogen>
 
     <!-- screenflow start / stop  --> 
@@ -3483,6 +3508,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
        KeyCode::A, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
        </autogen>
 
+
        <autogen>
        __KeyToKey__
        KeyCode::N,
@@ -3604,12 +3630,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       __KeyToKey__
       KeyCode::1,
       KeyCode::1, ModifierFlag::COMMAND_L
-    </autogen>
-
-    <autogen>
-      __KeyToKey__
-      KeyCode::SPACE,
-      KeyCode::SPACE, ModifierFlag::COMMAND_L
     </autogen>
 
     <autogen>
@@ -4662,7 +4682,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 </item>
 
 
-
 <item>
     <name>dash sticky scrolling</name>
     <identifier>private.launcher_mode_open_apps_v7</identifier>
@@ -5230,6 +5249,5 @@ KeyCode::COMMAND_L, ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L, ModifierFl
 </item>
 
 
-
-
 </root>
+
