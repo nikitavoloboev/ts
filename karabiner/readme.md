@@ -25,7 +25,6 @@ Here are the *sticky keys* I use (it gets updated quite often to suit my needs) 
 - w + v - fantastical
 - w + b - chrome
 - w + m - IntelliJ
-- w + / - show desktop
 - w + . - desktop 1
 - w + , - desktop 2
 - w + b - chrome browser
