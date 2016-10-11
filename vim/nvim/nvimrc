@@ -163,7 +163,3 @@ colorscheme gruvbox " activate the colour scheme
 let g:deoplete#enable_at_startup = 1 " activate deoplete
 " autocomplete with tab
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
-let g:vim_g_open_command = "open"
-
-autocmd VimEnter * Goyo
-let g:goyo_linenr = 1
