@@ -3,22 +3,12 @@ if [[ -s "${ZDOTDIR:-$HOME}/.dotfiles/zsh/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.dotfiles/zsh/init.zsh"
 fi
 
-export PATH=$(brew --prefix ruby)/bin:$PATH
-
-# add bin to my path and its subfolders (TODO: find out if adding more paths to $PATH will slow things down)
-export PATH=$PATH:~/.dotfiles/bin
-export PATH=$PATH:~/.dotfiles/bin/internets
-export PATH=$PATH:~/.dotfiles/bin/mine
-
-# set up go path
-export GOPATH=/Users/nikivi/go/
-export PATH=$PATH:$GOPATH/bin:$GOPATH/bin
-
 # vi movement in iTerm
 set -o vi
 
-# source aliases
+# source everything
 source ~/.dotfiles/zsh/zpaths
+source ~/.dotfiles/zsh/zcd
 source ~/.dotfiles/vim/zvim
 source ~/.dotfiles/zsh/zfunctions
 source ~/.dotfiles/zsh/zdev
@@ -35,6 +25,7 @@ eval "$(thefuck --alias)"
 [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
 
 # zplug package manager
+# todo: make it so I don't need to rely on specific ver number
 source /usr/local/Cellar/zplug/2.2.4/init.zsh
 
 # better than l file and dir listings with good info
@@ -43,4 +34,5 @@ zplug "Tarrasch/zsh-bd"
 
 # source all zplug plugins and add commands to $PATH
 zplug load
+
 

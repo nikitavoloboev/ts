@@ -1,10 +1,13 @@
-# aliases related to vim
+# _aliases related to vim
+
+# _main
 alias ee='nvim .'
 
-# open in vim
+# _dotfiles
 alias ea='nvim ~/.dotfiles/zsh/zalias'
 alias ez='nvim ~/.dotfiles/zsh/zshrc'
 alias eze='nvim ~/.dotfiles/vim/zvim'
+alias ezl='nvim ~/.dotfiles/zsh/zcd'
 alias ezp='nvim ~/.dotfiles/zsh/zpaths'
 alias ek='nvim ~/Library/Application\ Support/Karabiner/private.xml'
 alias ezz='nvim ~/.zprofile'
@@ -16,3 +19,5 @@ alias ezd='nvim ~/.dotfiles/zsh/zdev'
 alias ezg='nvim ~/.dotfiles/git/zgit'
 alias eza='nvim ~/.dotfiles/zsh/zapp'
 alias ezs='nvim ~/.dotfiles/zsh/zscripts'
+
+# _dev

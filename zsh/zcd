@@ -1,0 +1,65 @@
+# _documents
+alias dap='cd ~/Documents/d.\ app'
+alias dte='cd ~/Documents/d.\ app/tester'
+alias dk='cd ~/Documents/d. \app/unclutter/Unclutter\ Files'
+alias doc='cd ~/Documents'
+alias dbit='cd ~/Documents/d. \app/bitbar'
+alias dF='cd ~/Documents/app/unclutter/Unclutter\ Files'
+alias ddes='cd ~/Documents/design'
+
+# _code
+alias dxm='cd ~/code/xcode/projects/macos'
+alias djr='cd ~/code/java/research'
+alias dgr='cd ~/code/go/research'
+alias dgp='cd ~/code/go/projects'
+alias dgl='cd ~/code/go/play'
+alias dxi='cd ~/code/xcode/projects/ios'
+alias drb='cd ~/code/ruby'
+alias dpp='cd ~/code/python'
+alias dn='cd ~/code/node'
+alias dlove='cd ~/code/lua/love'
+alias dwp='cd ~/web/projects'
+alias dpr="cd ~/code/python/research"
+alias dp='cd ~/code/projects'
+alias dgs='cd ~/code/js'
+alias dw='cd ~/web'
+alias dwr='cd ~/web/research'
+alias da='cd ~/code'
+alias dweb='cd ~/web'
+alias dl='cd ~/code/play'
+alias dj='cd ~/code/java'
+alias dx='cd ~/code/xcode'
+alias dxr='cd ~/code/xcode/research'
+alias dpl='cd ~/code/xcode/playgrounds'
+alias dgo='cd ~/code/go'
+alias dsj='cd ~/code/solutions/java'
+alias dios='cd ~/code/xcode/projects/ios'
+
+# _oss
+alias ds='cd ~/oss/'
+alias dsn='cd ~/oss/nikivi'
+alias dsr='cd ~/oss/research'
+alias dsf='cd ~/oss/forks'
+
+# _macos
+alias dls='cd ~/Library/Services'
+alias dnm='cd /usr/local/lib/node_modules'
+alias dbb='cd /usr/local/bin'
+alias de='cd ~/Desktop'
+alias dq='cd ~/Downloads'
+alias dcl='cd /usr/local/Cellar'
+alias drp='cd ~/Dropbox'
+
+# _config
+alias d..='cd ~/.config'
+alias dvi='cd ~/.dotfiles/vim'
+alias dv='cd ~/.dotfiles/vim'
+alias d.='cd ~/.dotfiles'
+alias dsk='cd ~/Library/Application\ Support/Karabiner'
+alias db='cd ~/.dotfiles/bin'
+alias dbm='cd ~/.dotfiles/bin/mine'
+
+# _projects 
+alias dpq='cd ~/code/xcode/projects/macos/quoter'
+alias dps='cd ~/code/projects/personal_site'
+
