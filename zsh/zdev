@@ -1,10 +1,12 @@
 # my aliases, functions that I use for development purposes
 
-# node 
+# _node 
 alias n='node'
 alias ndi='node install'
 
-#npm
+# _yarn
+
+# _npm 
 alias zi='npm install'
 alias zs='npm start'
 alias zl='npm ls'
@@ -13,17 +15,17 @@ alias zo='npm init'
 alias zg='npm install -g'
 alias zb='npm run build'
 
-# go
+# _go
 alias o='go run'
 alias og='go get'
 alias oo='go build'
 
-# meteor
+# _meteor
 alias mt='meteor'
 
-# compile code
+# _compile code
 alias sw='swift'
 
-# ruby
+# _ruby
 alias r='ruby'
 

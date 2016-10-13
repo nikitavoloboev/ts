@@ -1,7 +1,7 @@
 " --------------------------------------
 " _basic vim config
 " --------------------------------------
-set clipboard^=unnamed                             " copy text to system clipboard
+set clipboard^=unnamed                            " copy text to system clipboard
 set clipboard^=unnamedplus
 let $NVIM_TUI_ENABLE_TRUE_COLOR=1                 " a nice looking editor
 set title                                         " set terminal title
@@ -131,18 +131,18 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'junegunn/vim-easy-align'
 Plug 'junegunn/limelight.vim'
 Plug 'junegunn/goyo.vim'
-Plug 'tpope/vim-sensible' " sensible defaults
+Plug 'tpope/vim-sensible'                           " sensible defaults
 Plug 'pangloss/vim-javascript'
 Plug 'airblade/vim-gitgutter'
 Plug 'zchee/deoplete-jedi'
-Plug 'szw/vim-g' " search selected text in google
+Plug 'szw/vim-g'                                    " search selected text in google
 Plug 'Shougo/vimproc.vim', {'do' : 'make'}
 Plug 'rizzatti/dash.vim'
 Plug 'morhetz/gruvbox' " colour goodness
 Plug 'tpope/vim-fugitive' 
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-repeat'
-Plug 'vim-airline/vim-airline' " a nice looking status bar on the bottom
+Plug 'vim-airline/vim-airline'                      " a nice looking status bar on the bottom
 Plug 'vim-airline/vim-airline-themes'
 Plug 'easymotion/vim-easymotion' 
 Plug 'scrooloose/nerdcommenter'
@@ -152,14 +152,15 @@ Plug 'fatih/vim-go'
 Plug 'nsf/gocode', { 'rtp': 'nvim', 'do': '~/.config/nvim/plugged/gocode/nvim/symlink.sh' }
 Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
 Plug 'zchee/deoplete-go', { 'do': 'make'}
-Plug 'carlitux/deoplete-ternjs' " js autocomplete
+Plug 'carlitux/deoplete-ternjs'                    " js autocomplete
 
 call plug#end()
 
 " -------------------------------------
 "  _activating / modifying plugins
 " -------------------------------------
-colorscheme gruvbox " activate the colour scheme
-let g:deoplete#enable_at_startup = 1 " activate deoplete
+colorscheme gruvbox                                " activate the colour scheme
+let g:deoplete#enable_at_startup = 1               " activate deoplete
+
 " autocomplete with tab
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
