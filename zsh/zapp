@@ -1,4 +1,4 @@
-# aliases for apps test
+# aliases for apps
 
 # _text editors
 alias cr='open -a CodeRunner'
