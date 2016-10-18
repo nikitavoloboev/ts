@@ -41,6 +41,8 @@ set notimeout
 set ttimeout
 set ttimeoutlen=10
 set nobackup                                      " don't create annoying backup files
+" TODO: maybe a plugin is better
+set path=+**                                      " search down into subfolders
 
 " --------------------------------------
 "  _comma mapping
@@ -82,7 +84,10 @@ let mapleader="\<Space>"
 
 nnoremap <leader>= yypVr=
 
-" vim related
+
+" --------------------------------------
+"  _leader key
+" --------------------------------------
 nmap <Leader>d    dd
 nmap <Leader>a    :x<CR>
 nmap <Leader>w    :w<CR>
@@ -106,7 +111,6 @@ map <Leader>e   :Dash<CR>
 " -------------------------------------
 "  _basic UI config
 " -------------------------------------
-
 set relativenumber                    " relative to current posion line numbers
 set number                            " show line numbers
 set cursorline                        " highlight current line
@@ -119,7 +123,6 @@ set background=dark                   " set night mode
 " -------------------------------------
 "  _plugins
 " -------------------------------------
-
 call plug#begin() " plugins to use
 
 " autocomplete engine

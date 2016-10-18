@@ -20,7 +20,7 @@ alias dn='cd ~/code/node'
 alias dlove='cd ~/code/lua/love'
 alias dwp='cd ~/web/projects'
 alias dpr="cd ~/code/python/research"
-alias dp='cd ~/code/projects'
+alias dp='cd ~/projects'
 alias dgs='cd ~/code/js'
 alias dw='cd ~/web'
 alias dwr='cd ~/web/research'
@@ -40,6 +40,7 @@ alias ds='cd ~/oss/'
 alias dsn='cd ~/oss/nikivi'
 alias dsr='cd ~/oss/research'
 alias dsf='cd ~/oss/forks'
+alias dr='cd ~/research'
 
 # _macos
 alias dls='cd ~/Library/Services'

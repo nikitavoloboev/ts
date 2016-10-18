@@ -126,9 +126,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     </autogen>
 </item>
 
-
-
-
 <item>
   <name>sticky semicolon as shift key</name>
   <!-- Don't change the line below, will break not sure why. Have to do with the prifix of the name. But if you want to have more launcher mode in the future for other key you can change the number 21 to 22 ...etc -->
@@ -185,6 +182,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       __KeyToKey__
       KeyCode::F19,
       KeyCode::F6
+		</autogen>
+
+        <autogen>
+      __KeyToKey__
+      KeyCode::DOT,
+      KeyCode::DOT, ModifierFlag::SHIFT_L
 		</autogen>
 
   <autogen>
@@ -516,7 +519,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
                KeyCode::SLASH,
                KeyCode::6, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L
                </autogen>
-
+               
 
                <autogen>
                __KeyToKey__
@@ -649,6 +652,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
                  __KeyToKey__
                  KeyCode::SHIFT_L,
                  KeyCode::9, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L
+              </autogen>
+
+               <autogen>
+               __KeyToKey__
+               KeyCode::BACKQUOTE,
+               KeyCode::9, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L
                </autogen>
 
                <autogen>
@@ -945,6 +954,13 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
                <autogen>
                  __KeyToKey__
+                 KeyCode::BACKQUOTE,
+               KeyCode::9, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L
+               </autogen>
+
+
+               <autogen>
+                 __KeyToKey__
                  KeyCode::W,
                  KeyCode::3, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
                </autogen>
@@ -984,6 +1000,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
                  KeyCode::I,
                  KeyCode::MINUS, ModifierFlag::COMMAND_L
                </autogen>
+
 
                ]]>
                ]]>
@@ -1292,6 +1309,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       __KeyToKey__
       KeyCode::P,
       KeyCode::F2, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L
+		</autogen>
+
+        <autogen>
+      __KeyToKey__
+      KeyCode::SEMICOLON,
+      KeyCode::F3, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
 		</autogen>
 
         <autogen>
@@ -2508,7 +2531,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
     <autogen>
       __KeyToKey__
-      KeyCode::DOT,
+      KeyCode::SEMICOLON,
       KeyCode::DOT, ModifierFlag::OPTION_L
     </autogen>
 
@@ -2835,6 +2858,14 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     __KeyToKey__
     KeyCode::G,
     KeyCode::MINUS
+  </autogen>
+
+  <autogen>
+    __KeyToKey__
+    KeyCode::H,
+    KeyCode::MINUS,
+    KeyCode::DOT, ModifierFlag::SHIFT_L,
+    KeyCode::SPACE
   </autogen>
 
   <autogen>
@@ -3498,7 +3529,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     <autogen>
       __KeyToKey__
       KeyCode::D,
-      KeyCode::DELETE, ModifierFlag::COMMAND_L
+      KeyCode::7, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L
     </autogen>
 
   </item>
