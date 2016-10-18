@@ -4,16 +4,18 @@
 alias cr='open -a CodeRunner'
 alias jj='open -a IntelliJ\ IDEA'
 alias xx='open -a Xcode'
-alias love="/Applications/love.app/Contents/MacOS/love"
 alias we='open -a MacDown'
 alias wt='open -a Atom'
 alias wk='open -a Sublime\ Text'
 alias ww="open -a Marked\ 2"
 
-#alias jp='open_intellij_folder'
 #alias we="open -a Visual\ Studio\ Code"
+
+# _scripts for apps
+#alias jp='open_intellij_folder'
 
 # _other
 alias Q="open -a \"Google Chrome\""
 alias pdf='open -a PDF\ Expert'
 alias qq="open -a Safari"
+alias love="/Applications/love.app/Contents/MacOS/love"
