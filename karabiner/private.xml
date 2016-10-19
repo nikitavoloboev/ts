@@ -4835,6 +4835,17 @@ KeyCode::ESCAPE,
 </item>
 
 
+<item>
+<name>right option on single press as app switcher</name>
+<identifier>private.right_opt_as_app_switch</identifier>
+<autogen>
+__KeyOverlaidModifier__
+KeyCode::OPTION_R,
+KeyCode::OPTION_R,
+KeyCode::TAB, ModifierFlag::COMMAND_L
+</autogen>
+</item>
+
 
 <item>
 <name>iTerm adjustments for better productivity</name>

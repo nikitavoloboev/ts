@@ -26,7 +26,7 @@ eval "$(thefuck --alias)"
 
 # zplug package manager
 # todo: make it so I don't need to rely on specific ver number
-source /usr/local/Cellar/zplug/2.2.4/init.zsh
+source /usr/local/Cellar/zplug/2.3.2/init.zsh
 
 # better than l file and dir listings with good info
 zplug "supercrabtree/k"
