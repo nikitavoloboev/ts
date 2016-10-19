@@ -69,12 +69,16 @@ cabbrev rp Rp
 command Rg execute "!go run %"
 command RR execute "!go build %"
 
+
 " --------------------------------------
 "  _control mapping
 " --------------------------------------
 vmap <C-x> :!pbcopy<CR>
 vmap <C-c> :w !pbcopy<CR><CR>
-vmap <C-d> :Dash<CR>
+vmap <C-k> :Dash<CR>
+
+"let g:ctrlp_map = '<c-k>'
+"let g:ctrlp_cmd = 'CtrlP'
 
 " --------------------------------------
 "  _space mapping
@@ -84,14 +88,10 @@ let mapleader="\<Space>"
 
 nnoremap <leader>= yypVr=
 
-
-" --------------------------------------
-"  _leader key
-" --------------------------------------
 nmap <Leader>d    dd
 nmap <Leader>a    :x<CR>
 nmap <Leader>w    :w<CR>
-nmap <Leader>q    :qa<CR>
+nmap <Leader>q    :q<CR>
 nmap <Leader>y    :%y<CR>
 nmap <Leader>vW   :wa<CR>
 nmap <Leader>vq   :wqall<CR>
@@ -131,6 +131,7 @@ function! DoRemote(arg)
 endfunction
 
 Plug 'jiangmiao/auto-pairs'
+Plug 'ctrlpvim/ctrlp.vim'
 Plug 'junegunn/vim-easy-align'
 Plug 'junegunn/limelight.vim'
 Plug 'junegunn/goyo.vim'

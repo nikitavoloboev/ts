@@ -4178,8 +4178,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       KeyCode::S, ModifierFlag::CONTROL_L
     </autogen>
 
-
-
     <autogen>
       __KeyDownUpToKey__
       KeyCode::D,
@@ -4207,8 +4205,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       KeyCode::H, ModifierFlag::CONTROL_L
     </autogen>
 
-
-
     <autogen>
       __KeyDownUpToKey__
       KeyCode::Z,
@@ -4228,8 +4224,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       KeyCode::C,
       KeyCode::C, ModifierFlag::CONTROL_L
     </autogen>
-
-
 
     <autogen>
       __KeyDownUpToKey__
