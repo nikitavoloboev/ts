@@ -75,10 +75,13 @@ command RR execute "!go build %"
 " --------------------------------------
 vmap <C-x> :!pbcopy<CR>
 vmap <C-c> :w !pbcopy<CR><CR>
-vmap <C-k> :Dash<CR>
+vmap <C-f> :Dash<CR>
 
-"let g:ctrlp_map = '<c-k>'
-"let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_map = '<c-k>'
+let g:ctrlp_cmd = 'CtrlP'
+
+
+
 
 " --------------------------------------
 "  _space mapping

@@ -6,7 +6,7 @@ alias jj='open -a IntelliJ\ IDEA'
 alias xx='open -a Xcode'
 alias we='open -a MacDown'
 alias wt='open -a Atom'
-alias wk='open -a Sublime\ Text'
+alias st='open -a Sublime\ Text'
 alias ww="open -a Marked\ 2"
 
 #alias we="open -a Visual\ Studio\ Code"

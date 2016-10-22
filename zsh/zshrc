@@ -3,10 +3,11 @@ if [[ -s "${ZDOTDIR:-$HOME}/.dotfiles/zsh/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.dotfiles/zsh/init.zsh"
 fi
 
+
 # vi movement in iTerm
 set -o vi
 
-# source everything
+# _source
 source ~/.dotfiles/zsh/zpaths
 source ~/.dotfiles/zsh/zcd
 source ~/.dotfiles/vim/zvim
@@ -18,8 +19,8 @@ source ~/.dotfiles/zsh/zalias
 source ~/.dotfiles/zsh/zapp
 source ~/.dotfiles/zsh/zscripts
 
-# 'thefuck' command correction 
-eval "$(thefuck --alias)"
+#source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+
 
 # autojump > cd
 [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
@@ -32,7 +33,10 @@ source /usr/local/Cellar/zplug/2.3.2/init.zsh
 zplug "supercrabtree/k"
 zplug "Tarrasch/zsh-bd"
 
+# 'thefuck' command correction 
+eval "$(thefuck --alias)"
+
+
 # source all zplug plugins and add commands to $PATH
 zplug load
-
 
