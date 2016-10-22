@@ -1,4 +1,4 @@
-# general
+# _general
 alias sudo='sudo '
 alias mm='tldr'
 alias ss='borg'
@@ -40,26 +40,26 @@ alias srp='ssh pi@192.168.1.17'
 alias tp='type'
 alias cl='/usr/local/bin/m'
 
-# delete things
+# _delete things
 alias rrpdf='rm -rf *.pdf'
 
-# source things
+# _source things
 alias sz='source ~/.dotfiles/zsh/zshrc'
 
 
-# better ls
+# _better ls
 alias la="ls -aF"
 alias ld="ls -ld"
 alias lso='ls -At1 && echo "------Oldest--"'
 alias lsn='ls -Art1 && echo "------Newest--"'
 
-# hugo
+# _hugo
 alias hse='hugo server'
 
-# express
+# _express
 alias ep='express'
 
-# brew 
+# _brew 
 alias br='brew'
 alias bl='brew list'
 alias bui='brew uninstall'
@@ -69,29 +69,29 @@ alias bdoc='brew doctor'
 alias bcl='brew cask list'
 alias ba='brew update  && brew upgrade --all && brew cleanup && brew prune && brew doctor'
 
-# silver searcher
+# _silver searcher
 alias f="ag -g"
 
-# directory listings
+# _directory listings
 alias l.='ls -d .*'
 
-# easier navigation
+# _easier navigation
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 
-# shortcuts
+# _shortcuts
 alias h="history"
 alias j="jobs"
 
-# copy workflow folder to the root workflow directory because I can't get pip to work normally
+# _copy workflow folder to the root workflow directory because I can't get pip to work normally
 alias wf='cp -r ~/Documents/tools/workflow .'
 
 
-# cli tools
+# _cli tools
 alias kb='/Applications/Karabiner.app/Contents/Library/bin/karabiner'
 
-# top
+# _top
 alias cpu='top -o cpu'   # cpu
 alias mem='top -o rsize' # memory
