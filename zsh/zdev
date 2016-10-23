@@ -17,8 +17,8 @@ alias zb='npm run build'
 
 # _go
 alias o='go run'
-alias og='go get'
-alias oo='go build'
+alias oo='go get'
+alias ob='go build'
 
 # _meteor
 alias mt='meteor'

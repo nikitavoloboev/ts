@@ -63,11 +63,13 @@ alias ep='express'
 # _brew 
 alias br='brew'
 alias bl='brew list'
-alias bui='brew uninstall'
+alias bs='brew search'
 alias bi='brew install'
 alias bu='brew update'
+alias binf='brew info'
 alias bdoc='brew doctor'
 alias bcl='brew cask list'
+alias bui='brew uninstall'
 alias ba='brew update  && brew upgrade --all && brew cleanup && brew prune && brew doctor'
 
 # _silver searcher

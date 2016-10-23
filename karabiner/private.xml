@@ -2845,6 +2845,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
   <autogen>
     __KeyToKey__
+    KeyCode::BACKQUOTE,
+    KeyCode::BACKQUOTE, ModifierFlag::SHIFT_L
+  </autogen>
+
+  <autogen>
+    __KeyToKey__
     KeyCode::L,
     KeyCode::SEMICOLON, ModifierFlag::SHIFT_L,
     KeyCode::EQUAL,
@@ -3105,7 +3111,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
   <autogen>
     __KeyToKey__
-    KeyCode::O,
+    KeyCode::I,
     KeyCode::COMMA, ModifierFlag::SHIFT_L,
     KeyCode::MINUS, 
     KeyCode::SPACE
@@ -3113,24 +3119,13 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
   <autogen>
     __KeyToKey__
-    KeyCode::P,
+    KeyCode::O,
     KeyCode::MINUS, 
     KeyCode::DOT, ModifierFlag::SHIFT_L,
     KeyCode::SPACE
   </autogen>
 
-  <autogen>
-    __KeyToKey__
-    KeyCode::I,
-    KeyCode::SLASH,
-    KeyCode::SLASH,
-    KeyCode::SPACE
-  </autogen>
-
-
   </item>
-
-
 
 <item>
     <name>sticky z modifier open chat apps</name>

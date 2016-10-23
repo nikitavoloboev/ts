@@ -171,3 +171,6 @@ let g:deoplete#enable_at_startup = 1               " activate deoplete
 
 " autocomplete with tab
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+
+" run goimports on save
+let g:go_fmt_command = "goimports" 
