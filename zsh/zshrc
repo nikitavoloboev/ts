@@ -8,6 +8,8 @@ fi
 # vi movement in iTerm
 set -o vi
 
+#bindkey -v
+
 # _source
 source ~/.dotfiles/zsh/zpaths
 source ~/.dotfiles/zsh/zcd

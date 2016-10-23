@@ -1,13 +1,19 @@
 # setting of different enviroment variables
 
 
-# go workspace
 
+# _dev paths
+export PATH=$(brew --prefix ruby)/bin:$PATH
+export PATH="$HOME/.yarn/bin:$PATH"
 
+# add bin to my path and its subfolders (TODO: find out if adding more paths to $PATH will slow things down)
+export PATH=$PATH:~/.dotfiles/bin
+export PATH=$PATH:~/.dotfiles/bin/internets
+export PATH=$PATH:~/.dotfiles/bin/mine
 
-
-
-
+# _go path
+export GOPATH=/Users/nikivi/go/
+export PATH=$PATH:$GOPATH/bin:$GOPATH/bin
 
 
 # exported variables get passed on to child processes, not-exported variables do not
