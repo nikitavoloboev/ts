@@ -1,8 +1,9 @@
+# this is what zsh sources first on bootup
+
 # source prezto
 if [[ -s "${ZDOTDIR:-$HOME}/.dotfiles/zsh/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.dotfiles/zsh/init.zsh"
 fi
-
 
 # vi movement in iTerm
 set -o vi
@@ -19,24 +20,11 @@ source ~/.dotfiles/zsh/zalias
 source ~/.dotfiles/zsh/zapp
 source ~/.dotfiles/zsh/zscripts
 
-#source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-
-
 # autojump > cd
 [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
-
-# zplug package manager
-# todo: make it so I don't need to rely on specific ver number
-source /usr/local/Cellar/zplug/2.3.2/init.zsh
-
-# better than l file and dir listings with good info
-zplug "supercrabtree/k"
-zplug "Tarrasch/zsh-bd"
 
 # 'thefuck' command correction 
 eval "$(thefuck --alias)"
 
-
-# source all zplug plugins and add commands to $PATH
-zplug load
-
+# _zplug package manager
+# TODO: set it up, and have vim autocompletion working (didn't work before)

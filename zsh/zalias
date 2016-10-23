@@ -1,5 +1,6 @@
 # _general
 alias sudo='sudo '
+alias ll='cloc'
 alias mm='tldr'
 alias ss='borg'
 alias m='man'
@@ -84,9 +85,6 @@ alias .....="cd ../../../.."
 # _shortcuts
 alias h="history"
 alias j="jobs"
-
-# _copy workflow folder to the root workflow directory because I can't get pip to work normally
-alias wf='cp -r ~/Documents/tools/workflow .'
 
 
 # _cli tools
