@@ -1,6 +1,7 @@
 " --------------------------------------
 " _basic vim config
 " --------------------------------------
+"  TODO: check if some of these settings come as default with neovim
 set clipboard^=unnamed                            " copy text to system clipboard
 set clipboard^=unnamedplus
 let $NVIM_TUI_ENABLE_TRUE_COLOR=1                 " a nice looking editor
@@ -44,6 +45,7 @@ set nobackup                                      " don't create annoying backup
 " TODO: maybe a plugin is better
 set path=+**                                      " search down into subfolders
 
+
 " --------------------------------------
 "  _comma mapping
 " --------------------------------------
@@ -75,13 +77,10 @@ command RR execute "!go build %"
 " --------------------------------------
 vmap <C-x> :!pbcopy<CR>
 vmap <C-c> :w !pbcopy<CR><CR>
-vmap <C-f> :Dash<CR>
+vmap <C-d> :Dash<CR>
 
 let g:ctrlp_map = '<c-k>'
 let g:ctrlp_cmd = 'CtrlP'
-
-
-
 
 " --------------------------------------
 "  _space mapping
@@ -134,6 +133,7 @@ function! DoRemote(arg)
 endfunction
 
 Plug 'jiangmiao/auto-pairs'
+Plug 'chriskempson/base16-vim'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'junegunn/vim-easy-align'
 Plug 'junegunn/limelight.vim'
@@ -145,7 +145,6 @@ Plug 'zchee/deoplete-jedi'
 Plug 'szw/vim-g'                                    " search selected text in google
 Plug 'Shougo/vimproc.vim', {'do' : 'make'}
 Plug 'rizzatti/dash.vim'
-Plug 'morhetz/gruvbox' " colour goodness
 Plug 'tpope/vim-fugitive' 
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-repeat'
@@ -166,7 +165,6 @@ call plug#end()
 " -------------------------------------
 "  _activating / modifying plugins
 " -------------------------------------
-colorscheme gruvbox                                " activate the colour scheme
 let g:deoplete#enable_at_startup = 1               " activate deoplete
 
 " autocomplete with tab
@@ -174,3 +172,4 @@ inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 
 " run goimports on save
 let g:go_fmt_command = "goimports" 
+

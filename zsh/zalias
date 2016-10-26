@@ -1,6 +1,5 @@
 # _general
 alias sudo='sudo '
-alias ll='cloc'
 alias mm='tldr'
 alias ss='borg'
 alias m='man'

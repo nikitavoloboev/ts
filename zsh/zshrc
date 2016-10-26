@@ -11,7 +11,6 @@ set -o vi
 #bindkey -v
 
 # _source
-source ~/.dotfiles/zsh/zpaths
 source ~/.dotfiles/zsh/zcd
 source ~/.dotfiles/vim/zvim
 source ~/.dotfiles/zsh/zfunctions
@@ -30,3 +29,7 @@ eval "$(thefuck --alias)"
 
 # _zplug package manager
 # TODO: set it up, and have vim autocompletion working (didn't work before)
+
+# neat colour schemes to use
+BASE16_SHELL=$HOME/.config/base16-shell/
+[ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"

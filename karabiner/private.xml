@@ -176,7 +176,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
     __KeyToKey__
     KeyCode::COMMA,
     KeyCode::COMMA, ModifierFlag::SHIFT_L
-</autogen>
+    </autogen>
 
         <autogen>
       __KeyToKey__
@@ -770,6 +770,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
                  <!-- release command key to commit command-tab -->
                  KeyCode::COMMAND_L,
              </autogen>
+
+               <autogen>
+                 __KeyToKey__
+                 KeyCode::A,
+                 KeyCode::Y
+               </autogen>
 
                 <autogen>
                   __KeyToKey__
@@ -2867,7 +2873,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
         <autogen>
       __KeyToKey__
       KeyCode::G,
-      KeyCode::SLASH, 
+      KeyCode::SLASH,
       KeyCode::SLASH,
       KeyCode::SPACE
 		</autogen>
