@@ -1,6 +1,29 @@
 " --------------------------------------
 " _basic vim config
 " --------------------------------------
+" rules : 
+"
+" 1. 
+" don't copy, use any line that I don't fully understand 
+" that is what _testing is for, once I understand it well, I can move it to the
+" appropriate part of my config
+"
+" 2. 
+" everything is structured into their appopriate parts, I use _ symbol to
+" signify some main part in my code that I want to search for, this vimrc
+" included
+"
+" 3.
+" read :h help for the commands in question, then search on internet, then
+" ask on irc
+" 
+" 4. 
+" going along with point 1, add comments to the commands and plugins I download
+" to document in my own words what its purpose is in my vimrc
+"
+" TODO: make macro that will take highlighted Plug '' text and open github
+" page with that plugin
+"
 "  TODO: check if some of these settings come as default with neovim
 set clipboard^=unnamed                            " copy text to system clipboard
 set clipboard^=unnamedplus
@@ -49,8 +72,6 @@ set path=+**                                      " search down into subfolders
 " --------------------------------------
 "  _comma mapping
 " --------------------------------------
-nnoremap ,f :PlugInstall<return>
-nnoremap ,a :PlugUpdate<return>
 
 " --------------------------------------
 "  _insert  mapping
@@ -86,11 +107,14 @@ let g:ctrlp_cmd = 'CtrlP'
 "  _space mapping
 " --------------------------------------
 nnoremap <SPACE> <Nop>
+
 let mapleader="\<Space>"
 
-nnoremap <leader>= yypVr=
+nnoremap <leader>= yypVr=  
 
-nmap <Leader>d    dd
+" TODO: tabe seems rather interesting
+nmap <leader>vimrc :tabe ~/.dotfiles/vim/nvim/nvimrc<cr>
+
 nmap <Leader>a    :x<CR>
 nmap <Leader>w    :w<CR>
 nmap <Leader>q    :q<CR>
@@ -108,7 +132,15 @@ nmap <Leader>k    :GoDef<CR>
 nnoremap <leader>l :%d<cr>
 nnoremap <silent><expr> <C-L> winnr()==g:NERDTree.GetWinNum() ? ":NERDTreeClose\<CR>" : ":NERDTreeFocus\<CR>"
 nmap <C-s> :w<cr>
-map <Leader>e   :Dash<CR>
+nmap <Leader>e   :Dash<CR>
+
+
+nmap <Leader>pi :PlugInstall<CR>
+nmap <Leader>pu :PlugUpdate<CR>
+" --------------------------------------
+"  _command + shift mapping
+" --------------------------------------
+nmap <D-S-F> :Ack<space>
 
 " -------------------------------------
 "  _basic UI config
@@ -133,6 +165,9 @@ function! DoRemote(arg)
 endfunction
 
 Plug 'jiangmiao/auto-pairs'
+Plug 'danro/rename.vim'                             " allow to :Rename files
+Plug 'rking/ag.vim'                                 " lightining fast :Ag searcher
+Plug 'sheerun/vim-polyglot'
 Plug 'chriskempson/base16-vim'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'junegunn/vim-easy-align'
