@@ -19,5 +19,6 @@ alias ezg='nvim ~/.dotfiles/git/zgit'
 alias eza='nvim ~/.dotfiles/zsh/zapp'
 alias ezs='nvim ~/.dotfiles/zsh/zscripts'
 alias ezn='nvim ~/.dotfiles/zsh/zenv'
+alias et='nvim ~/.dotfiles/tmux/tmux.conf'
 
 # _dev

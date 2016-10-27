@@ -5,7 +5,7 @@
 " don't copy, use any line that I don't fully understand 
 " that is what _testing is for, once I understand it well, I can move it to the
 " appropriate part of my config
-"
+"                                           
 " 2. 
 " everything is structured into their appopriate parts, I use _ symbol to
 " signify some main part in my code that I want to search for, this vimrc
@@ -22,35 +22,6 @@
 " TODO: make macro that will take highlighted Plug '' text and open github
 " page with that plugin
 "
-
-" --------------------------------------
-" _basic vim config
-" --------------------------------------
-
-"  TODO: check if some of these settings come as default with neovim
-set clipboard^=unnamed                            " copy text to system clipboard
-set clipboard^=unnamedplus
-let $NVIM_TUI_ENABLE_TRUE_COLOR=1                 " a nice looking editor
-set title                                         " set terminal title
-set whichwrap+=<,>,[,]
-autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
-set completeopt-=preview                          " no annoying scratch preview above
-set expandtab
-set shiftwidth=4
-set softtabstop=2
-set backspace=indent,eol,start                    " makes backspace key more powerful
-set hlsearch                                      " highlight search results
-set incsearch                                     " highlight pattern matches as you type
-set history=1000                                  " remember everything
-set undolevels=1000
-set smartindent                                   " indentation
-set shortmess=Ia                                  " disable startup message
-
-" open help vertically
-command! -nargs=* -complete=help Help vertical belowright help <args>
-autocmd FileType help wincmd L
-
-:autocmd InsertEnter,InsertLeave * set cul!       " notify on mode change visually
 
 " --------------------------------------
 "  _testing
@@ -71,6 +42,76 @@ set nobackup                                      " don't create annoying backup
 " TODO: maybe a plugin is better
 set path=+**                                      " search down into subfolders
 
+" --------------------------------------
+" _basic vim config
+" --------------------------------------
+"  TODO: check if some of these settings come as default with neovim
+set clipboard^=unnamed                            " copy text to system clipboard
+set clipboard^=unnamedplus
+let $NVIM_TUI_ENABLE_TRUE_COLOR=1                 " a nice looking editor
+set title                                         " set terminal title
+set whichwrap+=<,>,[,]
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+set completeopt-=preview                          " no annoying scratch preview above
+set expandtab                                     " spaces on tabs
+set shiftwidth=4
+set softtabstop=2
+set backspace=indent,eol,start                    " makes backspace key more powerful
+set hlsearch                                      " highlight search results
+set incsearch                                     " highlight pattern matches as you type
+set history=1000                                  " remember everything
+set undolevels=1000
+set smartindent                                   " indentation
+set shortmess=Ia                                  " disable startup message
+
+" open help vertically
+command! -nargs=* -complete=help Help vertical belowright help <args>
+autocmd FileType help wincmd L
+
+:autocmd InsertEnter,InsertLeave * set cul!       " notify on mode change visually
+
+" -------------------------------------
+"  _plugins
+" -------------------------------------
+call plug#begin() " plugins to use
+
+" autocomplete engine
+function! DoRemote(arg)
+  UpdateRemotePlugins
+endfunction
+
+Plug 'jiangmiao/auto-pairs'
+Plug 'danro/rename.vim'                             " allow to :Rename files
+Plug 'rking/ag.vim'                                 " lightining fast :Ag searcher
+Plug 'sheerun/vim-polyglot'
+Plug 'chriskempson/base16-vim'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'junegunn/vim-easy-align'
+Plug 'junegunn/limelight.vim'
+Plug 'junegunn/goyo.vim'
+Plug 'tpope/vim-sensible'                           " sensible defaults
+Plug 'pangloss/vim-javascript'
+Plug 'airblade/vim-gitgutter'
+Plug 'zchee/deoplete-jedi'
+Plug 'szw/vim-g'                                    " search selected text in google
+Plug 'Shougo/vimproc.vim', {'do' : 'make'}
+Plug 'rizzatti/dash.vim'
+Plug 'tpope/vim-fugitive' 
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-repeat'
+Plug 'vim-airline/vim-airline'                      " a nice looking status bar on the bottom
+Plug 'vim-airline/vim-airline-themes'
+Plug 'easymotion/vim-easymotion' 
+Plug 'scrooloose/nerdcommenter'
+Plug 'scrooloose/nerdtree'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'fatih/vim-go'
+Plug 'nsf/gocode', { 'rtp': 'nvim', 'do': '~/.config/nvim/plugged/gocode/nvim/symlink.sh' }
+Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
+Plug 'zchee/deoplete-go', { 'do': 'make'}
+Plug 'carlitux/deoplete-ternjs'                    " js autocomplete
+
+call plug#end()
 
 " --------------------------------------
 "  _comma mapping
@@ -158,48 +199,6 @@ set tabstop=4                         " default indentation is 4 spaces long and
 set matchtime=2
 set background=dark                   " set night mode
 
-" -------------------------------------
-"  _plugins
-" -------------------------------------
-call plug#begin() " plugins to use
-
-" autocomplete engine
-function! DoRemote(arg)
-  UpdateRemotePlugins
-endfunction
-
-Plug 'jiangmiao/auto-pairs'
-Plug 'danro/rename.vim'                             " allow to :Rename files
-Plug 'rking/ag.vim'                                 " lightining fast :Ag searcher
-Plug 'sheerun/vim-polyglot'
-Plug 'chriskempson/base16-vim'
-Plug 'ctrlpvim/ctrlp.vim'
-Plug 'junegunn/vim-easy-align'
-Plug 'junegunn/limelight.vim'
-Plug 'junegunn/goyo.vim'
-Plug 'tpope/vim-sensible'                           " sensible defaults
-Plug 'pangloss/vim-javascript'
-Plug 'airblade/vim-gitgutter'
-Plug 'zchee/deoplete-jedi'
-Plug 'szw/vim-g'                                    " search selected text in google
-Plug 'Shougo/vimproc.vim', {'do' : 'make'}
-Plug 'rizzatti/dash.vim'
-Plug 'tpope/vim-fugitive' 
-Plug 'tpope/vim-commentary'
-Plug 'tpope/vim-repeat'
-Plug 'vim-airline/vim-airline'                      " a nice looking status bar on the bottom
-Plug 'vim-airline/vim-airline-themes'
-Plug 'easymotion/vim-easymotion' 
-Plug 'scrooloose/nerdcommenter'
-Plug 'scrooloose/nerdtree'
-Plug 'ctrlpvim/ctrlp.vim'
-Plug 'fatih/vim-go'
-Plug 'nsf/gocode', { 'rtp': 'nvim', 'do': '~/.config/nvim/plugged/gocode/nvim/symlink.sh' }
-Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
-Plug 'zchee/deoplete-go', { 'do': 'make'}
-Plug 'carlitux/deoplete-ternjs'                    " js autocomplete
-
-call plug#end()
 
 " -------------------------------------
 "  _activating / modifying plugins
