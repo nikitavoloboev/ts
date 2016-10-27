@@ -151,16 +151,19 @@ let g:ctrlp_cmd = 'CtrlP'
 "  _space mapping
 " --------------------------------------
 "  TODO: structure it better
+
+"  TODO: find out what this does
 nnoremap <SPACE> <Nop>
 
 let mapleader="\<Space>"
 
+"  TODO: find out what this does
 nnoremap <leader>= yypVr=  
 
 " TODO: tabe seems rather interesting
 nmap <leader>vimrc :tabe ~/.dotfiles/vim/nvim/nvimrc<cr>
 
-nmap <Leader>a    :x<CR>
+nmap <Leader>k    :GoDef<CR>
 nmap <Leader>w    :w<CR>
 nmap <Leader>q    :q<CR>
 nmap <Leader>y    :%y<CR>
@@ -173,7 +176,6 @@ nmap <Leader>pi   :PlugInstall<CR>
 nmap <Leader>pu   :PlugUpdate<CR>
 nmap <Leader>vm   :make<CR>
 nmap <Leader>o    :!go run %<CR>
-nmap <Leader>k    :GoDef<CR>
 nnoremap <leader>l :%d<cr>
 nnoremap <silent><expr> <C-L> winnr()==g:NERDTree.GetWinNum() ? ":NERDTreeClose\<CR>" : ":NERDTreeFocus\<CR>"
 nmap <C-s> :w<cr>
