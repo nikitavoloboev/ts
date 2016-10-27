@@ -2,6 +2,7 @@
 
 # _main
 alias ee='nvim .'
+alias er='nvim readme.md'
 
 # _dotfiles
 alias ea='nvim ~/.dotfiles/zsh/zalias'
