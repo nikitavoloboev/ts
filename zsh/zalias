@@ -89,7 +89,6 @@ alias .....="cd ../../../.."
 alias h="history"
 alias j="jobs"
 
-
 # _cli tools
 alias kb='/Applications/Karabiner.app/Contents/Library/bin/karabiner'
 
