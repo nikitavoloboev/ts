@@ -18,6 +18,6 @@ I don't use [hammerspoon](http://www.hammerspoon.org/) as extensively and right 
 
 I also am using [zsh](http://www.zsh.org) as my shell with [prezto](https://github.com/sorin-ionescu/prezto) configuration. Here is how my prompt looks currently : 
 
-![](http://i.imgur.com/4d63HOn.png)
+![](https://i.imgur.com/iLAX5P6.png)
 
 
