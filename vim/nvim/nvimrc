@@ -1,8 +1,6 @@
 " --------------------------------------
-" _basic vim config
+" _rules
 " --------------------------------------
-" rules : 
-"
 " 1. 
 " don't copy, use any line that I don't fully understand 
 " that is what _testing is for, once I understand it well, I can move it to the
@@ -24,6 +22,11 @@
 " TODO: make macro that will take highlighted Plug '' text and open github
 " page with that plugin
 "
+
+" --------------------------------------
+" _basic vim config
+" --------------------------------------
+
 "  TODO: check if some of these settings come as default with neovim
 set clipboard^=unnamed                            " copy text to system clipboard
 set clipboard^=unnamedplus
@@ -106,6 +109,7 @@ let g:ctrlp_cmd = 'CtrlP'
 " --------------------------------------
 "  _space mapping
 " --------------------------------------
+"  TODO: structure it better
 nnoremap <SPACE> <Nop>
 
 let mapleader="\<Space>"
