@@ -1,0 +1,3 @@
+#!/bin/bash
+
+# purpose : given number of files as argument, convert them and delete original docx files

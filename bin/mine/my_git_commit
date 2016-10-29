@@ -1,3 +1,6 @@
+#!/bin/bash
+
+# purpose : 
 # I find it quite annoying to type -m flag every time I want to commit
 # I think this is a better way to do it
 

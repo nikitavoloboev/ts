@@ -2,6 +2,8 @@
 
 # source : https://github.com/tonsky/AnyBar
 
+# TODO: make something useful with it
+
 echo -n "red" | nc -4u -w0 localhost 1738
 
 

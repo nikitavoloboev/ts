@@ -6,6 +6,6 @@
 git add .
 git commit -m 'init' .
 
-# get current safari url
-# check if it contains github in it
-# if it does, then just use that and write the rest of the instructions
+# TODO: get current safari url
+# TODO: check if it contains github in it
+# TODO: if it does, then just use that and write the rest of the instructions

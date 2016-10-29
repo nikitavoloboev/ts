@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# purpose : 
 # this script essentially just gives me a blank template structure for a project to work on
 # perhaps it is not the best way to structure it but I am still new to web development
 # so will be using this for now and update accordingly

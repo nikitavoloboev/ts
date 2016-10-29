@@ -95,3 +95,8 @@ alias kb='/Applications/Karabiner.app/Contents/Library/bin/karabiner'
 # _top
 alias cpu='top -o cpu'   # cpu
 alias mem='top -o rsize' # memory
+
+# _move file locations 
+# TODO: add move files to hazel alias / function
+
+

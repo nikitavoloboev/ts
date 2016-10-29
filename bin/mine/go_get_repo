@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# purpose : quickly download go package
+
+
 # TODO: get safari current active url, parse it, go get the repo
 
 
