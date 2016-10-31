@@ -2,6 +2,7 @@
 
 # _main
 alias ee='nvim .'
+alias ep='nvim package.json'
 alias er='nvim readme.md'
 
 # _dotfiles
