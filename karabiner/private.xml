@@ -1312,7 +1312,13 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       KeyCode::SEMICOLON,
       KeyCode::F3, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
 		</autogen>
-
+        
+    <autogen>
+        __KeyToKey__
+        KeyCode::G,
+        KeyCode::I, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
+    </autogen>
+ 
         <autogen>
       __KeyToKey__
       KeyCode::N,
@@ -1324,7 +1330,6 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       KeyCode::R,
       KeyCode::O, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
 		</autogen>
-
 
         <autogen>
       __KeyToKey__
@@ -2224,7 +2229,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
 
 
 <item>
-		<name>sticky g for handy actions</name>
+		<name>sticky g for symbols</name>
 		<identifier>private.launcher_mode_open_apps_v11</identifier>
 
     <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
@@ -2266,83 +2271,32 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       __BlockUntilKeyUp__ KeyCode::G,
     </autogen>
 
-    <!-- reload karabiner xml  -->
-    <autogen>
-        __KeyToKey__
-        KeyCode::P,
-        KeyCode::M, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L
-    </autogen>
 
         <autogen>
       __KeyToKey__
-      KeyCode::SPACE,
-      KeyCode::RETURN, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
+      KeyCode::TAB,
+      KeyCode::BRACKET_RIGHT, ModifierFlag::SHIFT_L
 		</autogen>
-
-
+        
         <autogen>
       __KeyToKey__
       KeyCode::J,
-      KeyCode::F5, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L
+      KeyCode::COMMA, ModifierFlag::SHIFT_L
 		</autogen>
 
-
-    <autogen>
-        __KeyToKey__
-        KeyCode::L,
-        KeyCode::I, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L
-    </autogen>
-
-       <autogen>
-       __KeyToKey__
-       KeyCode::W,
-       KeyCode::N, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
-        </autogen>
-
-       <autogen>
-       __KeyToKey__
-       KeyCode::M,
-       KeyCode::B, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
-        </autogen>
-
-       <autogen>
-       __KeyToKey__
-       KeyCode::P,
-       KeyCode::F1, ModifierFlag::COMMAND_L
-        </autogen>
+        <autogen>
+      __KeyToKey__
+      KeyCode::K,
+      KeyCode::DOT, ModifierFlag::SHIFT_L
+		</autogen>
 
         <autogen>
-        __KeyToKey__
-        KeyCode::U,
-        KeyCode::V, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
-        </autogen>
-    
+      __KeyToKey__
+      KeyCode::L,
+      KeyCode::DOT,
+      KeyCode::SLASH
+		</autogen>
 
-    <!-- quick bindable tester for alfred  -->
-    <autogen>
-        __KeyToKey__
-        KeyCode::K,
-        KeyCode::F19
-    </autogen>
-
-    <!-- screenflow start / stop  --> 
-    <autogen>
-        __KeyToKey__
-        KeyCode::M,
-        KeyCode::F5
-    </autogen>
-
-    <autogen>
-        __KeyToKey__
-        KeyCode::N,
-        KeyCode::F12, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L
-    </autogen>
-
-    <autogen>
-        __KeyToKey__
-        KeyCode::A,
-        KeyCode::N, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
-    </autogen>
   </item>
 
 
@@ -2830,7 +2784,7 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
   </item>
 
 <item>
-    <name>sticky t for more symbols</name>
+    <name>sticky t for handy actions</name>
     <identifier>private.launcher_mode_open_apps_v14</identifier>
 
     <!-- condition: turn on launcher mode only when the trigger key is pressed without other keys. -->
@@ -2872,14 +2826,78 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       __BlockUntilKeyUp__ KeyCode::T,
     </autogen>
 
+    <!-- reload karabiner xml  -->
+    <autogen>
+        __KeyToKey__
+        KeyCode::L,
+        KeyCode::M, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L, ModifierFlag::SHIFT_L
+    </autogen>
 
         <autogen>
       __KeyToKey__
-      KeyCode::TAB,
-      KeyCode::BRACKET_RIGHT, ModifierFlag::SHIFT_L
+      KeyCode::SPACE,
+      KeyCode::RETURN, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
 		</autogen>
 
-        
+        <autogen>
+      __KeyToKey__
+      KeyCode::J,
+      KeyCode::F5, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L
+		</autogen>
+
+
+
+       <autogen>
+       __KeyToKey__
+       KeyCode::W,
+       KeyCode::N, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
+        </autogen>
+
+       <autogen>
+       __KeyToKey__
+       KeyCode::M,
+       KeyCode::B, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L
+        </autogen>
+
+       <autogen>
+       __KeyToKey__
+       KeyCode::P,
+       KeyCode::F1, ModifierFlag::COMMAND_L
+        </autogen>
+
+        <autogen>
+        __KeyToKey__
+        KeyCode::U,
+        KeyCode::V, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
+        </autogen>
+    
+
+    <!-- quick bindable tester for alfred  -->
+    <autogen>
+        __KeyToKey__
+        KeyCode::K,
+        KeyCode::F19
+    </autogen>
+
+    <!-- screenflow start / stop  --> 
+    <autogen>
+        __KeyToKey__
+        KeyCode::M,
+        KeyCode::F5
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::N,
+        KeyCode::F12, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L
+    </autogen>
+
+    <autogen>
+        __KeyToKey__
+        KeyCode::A,
+        KeyCode::N, ModifierFlag::CONTROL_L, ModifierFlag::OPTION_L, ModifierFlag::COMMAND_L
+    </autogen>
+
 
   </item>
 

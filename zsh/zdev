@@ -3,8 +3,12 @@
 # _node 
 alias n='node'
 alias ndi='node install'
+alias n.='node .'
 
 # _yarn
+alias y='yarn'
+alias ya='yarn add'
+alias yr='yarn remove'
 
 # _npm 
 alias zi='npm install'

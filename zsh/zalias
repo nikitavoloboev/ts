@@ -58,9 +58,6 @@ alias lsn='ls -Art1 && echo "------Newest--"'
 # _hugo
 alias hse='hugo server'
 
-# _express
-alias ep='express'
-
 # _brew 
 alias br='brew'
 alias bl='brew list'
