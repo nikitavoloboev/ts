@@ -1,1 +1,218 @@
-set relativenumber
+" --------------------------------------
+" _rules
+" --------------------------------------
+" 1. 
+" don't copy, use any line that I don't fully understand 
+" that is what _testing is for, once I understand it well, I can move it to the
+" appropriate part of my config
+"                                           
+" 2. 
+" everything is structured into their appopriate parts, I use _ symbol to
+" signify some main part in my code that I want to search for, this vimrc
+" included
+"
+" 3.
+" read :h help for the commands in question, then search on internet, then
+" ask on irc
+" 
+" 4. 
+" going along with point 1, add comments to the commands and plugins I download
+" to document in my own words what its purpose is in my vimrc
+"
+" TODO: make macro that will take highlighted Plug '' text and open github
+" page with that plugin
+"
+
+" --------------------------------------
+"  _testing
+" --------------------------------------
+set showcmd                                       " show me what I'm typing
+set autowrite                                     " automatically save before :next, :make etc
+set ignorecase                                    " search case insensitive 
+set smartcase                                     " .. but not when search pattern contains upper case characters
+set nocursorcolumn
+set nocursorline
+set wrap
+set textwidth=79
+set formatoptions=qrn1
+set notimeout
+set ttimeout
+set ttimeoutlen=10
+set nobackup                                      " don't create annoying backup files
+" TODO: maybe a plugin is better
+set path=+**                                      " search down into subfolders
+
+set scrolloff=5
+set so=999
+
+" --------------------------------------
+" _basic vim config
+" --------------------------------------
+"  TODO: check if some of these settings come as default with neovim
+set clipboard^=unnamed                            " copy text to system clipboard
+set clipboard^=unnamedplus
+let $NVIM_TUI_ENABLE_TRUE_COLOR=1                 " a nice looking editor
+set title                                         " set terminal title
+set whichwrap+=<,>,[,]
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+set completeopt-=preview                          " no annoying scratch preview above
+set expandtab                                     " spaces on tabs
+set shiftwidth=4
+set softtabstop=2
+set backspace=indent,eol,start                    " makes backspace key more powerful
+set hlsearch                                      " highlight search results
+set incsearch                                     " highlight pattern matches as you type
+set history=1000                                  " remember everything
+set undolevels=1000
+set smartindent                                   " indentation
+set shortmess=Ia                                  " disable startup message
+
+" open help vertically
+command! -nargs=* -complete=help Help vertical belowright help <args>
+autocmd FileType help wincmd L
+
+:autocmd InsertEnter,InsertLeave * set cul!       " notify on mode change visually
+
+" -------------------------------------
+"  _plugins
+" -------------------------------------
+call plug#begin() " plugins to use
+
+" autocomplete engine
+function! DoRemote(arg)
+  UpdateRemotePlugins
+endfunction
+
+Plug 'jiangmiao/auto-pairs'
+Plug 'danro/rename.vim'                             " allow to :Rename files
+Plug 'rking/ag.vim'                                 " lightining fast :Ag searcher
+Plug 'sheerun/vim-polyglot'
+Plug 'chriskempson/base16-vim'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'junegunn/vim-easy-align'
+Plug 'junegunn/limelight.vim'
+Plug 'junegunn/goyo.vim'
+Plug 'tpope/vim-sensible'                           " sensible defaults
+Plug 'pangloss/vim-javascript'
+Plug 'airblade/vim-gitgutter'
+Plug 'zchee/deoplete-jedi'
+Plug 'szw/vim-g'                                    " search selected text in google
+Plug 'Shougo/vimproc.vim', {'do' : 'make'}
+Plug 'rizzatti/dash.vim'
+Plug 'tpope/vim-fugitive' 
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-repeat'
+Plug 'vim-airline/vim-airline'                      " a nice looking status bar on the bottom
+Plug 'vim-airline/vim-airline-themes'
+Plug 'easymotion/vim-easymotion' 
+Plug 'scrooloose/nerdcommenter'
+Plug 'scrooloose/nerdtree'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'fatih/vim-go'
+Plug 'nsf/gocode', { 'rtp': 'nvim', 'do': '~/.config/nvim/plugged/gocode/nvim/symlink.sh' }
+Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
+Plug 'zchee/deoplete-go', { 'do': 'make'}
+Plug 'carlitux/deoplete-ternjs'                    " js autocomplete
+
+call plug#end()
+
+" --------------------------------------
+"  _comma mapping
+" --------------------------------------
+
+" --------------------------------------
+"  _insert  mapping
+" --------------------------------------
+inoremap      jk  <Esc>
+inoremap      kj  <Esc>
+inoremap (<Space>  ();<Esc>hi
+inoremap      (;   ();<Esc>o
+inoremap      ()   ()
+
+" --------------------------------------
+"  _command mapping
+" --------------------------------------
+:command R !node %
+command Rp execute "w|!python3 %"
+cabbrev rp Rp
+" -go 
+command Rg execute "!go run %"
+command RR execute "!go build %"
+
+
+" --------------------------------------
+"  _control mapping
+" --------------------------------------
+vmap <C-x> :!pbcopy<CR>
+vmap <C-c> :w !pbcopy<CR><CR>
+vmap <C-d> :Dash<CR>
+
+let g:ctrlp_map = '<c-k>'
+let g:ctrlp_cmd = 'CtrlP'
+
+" --------------------------------------
+"  _space mapping
+" --------------------------------------
+"  TODO: structure it better
+
+"  TODO: find out what this does
+nnoremap <SPACE> <Nop>
+
+let mapleader="\<Space>"
+
+"  TODO: find out what this does
+nnoremap <leader>= yypVr=  
+
+" TODO: tabe seems rather interesting
+nmap <leader>vimrc :tabe ~/.dotfiles/vim/nvim/nvimrc<cr>
+
+nmap <Leader>k    :GoDef<CR>
+nmap <Leader>a    :Dash<CR>
+nmap <Leader>w    :w<CR>
+nmap <Leader>q    :q<CR>
+nmap <Leader>y    :%y<CR>
+nmap <Leader>vW   :wa<CR>
+nmap <Leader>vq   :wqall<CR>
+nmap <Leader>vQ   :qa<CR>
+nmap <Leader>ee   :e ~/.dotfiles/vim/nvim/nvimrc<CR>
+nmap <Leader>se   :source ~/.dotfiles/vim/nvim/nvimrc<CR>
+nmap <Leader>pi   :PlugInstall<CR>
+nmap <Leader>pu   :PlugUpdate<CR>
+nmap <Leader>vm   :make<CR>
+nmap <Leader>o    :!go run %<CR>
+nnoremap <leader>l :%d<cr>
+nnoremap <silent><expr> <C-L> winnr()==g:NERDTree.GetWinNum() ? ":NERDTreeClose\<CR>" : ":NERDTreeFocus\<CR>"
+nmap <C-s> :w<cr>
+
+
+nmap <Leader>pi :PlugInstall<CR>
+nmap <Leader>pu :PlugUpdate<CR>
+" --------------------------------------
+"  _command + shift mapping
+" --------------------------------------
+nmap <D-S-F> :Ack<space>
+
+" -------------------------------------
+"  _basic UI config
+" -------------------------------------
+set relativenumber                    " relative to current posion line numbers
+set number                            " show line numbers
+set cursorline                        " highlight current line
+let python_highlight_all = 1
+set showmatch
+set tabstop=4                         " default indentation is 4 spaces long and uses tabs, not spaces
+set matchtime=2
+set background=dark                   " set night mode
+
+
+" -------------------------------------
+"  _activating / modifying plugins
+" -------------------------------------
+let g:deoplete#enable_at_startup = 1               " activate deoplete
+
+" autocomplete with tab
+inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+
+" run goimports on save
+let g:go_fmt_command = "goimports" 
+

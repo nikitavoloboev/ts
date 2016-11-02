@@ -1,7 +1,5 @@
 # setting of different enviroment variables
 
-
-
 # _dev paths
 export PATH=$(brew --prefix ruby)/bin:$PATH
 export PATH="$HOME/.yarn/bin:$PATH"
@@ -21,4 +19,7 @@ export PATH=$PATH:$GOPATH/bin:$GOPATH/bin
 export NODE_PATH='/usr/local/lib/node_modules'
 export ZPLUG_HOME=/usr/local/opt/zplug 
 source $ZPLUG_HOME/init.zsh
+
+
+
 

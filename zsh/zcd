@@ -9,6 +9,7 @@ alias ddes='cd ~/Documents/design'
 
 # _code
 alias dxm='cd ~/code/xcode/projects/macos'
+alias dp='cd ~/code/python'
 alias djr='cd ~/code/java/research'
 alias dgr='cd ~/code/go/research'
 alias dgp='cd ~/code/go/projects'

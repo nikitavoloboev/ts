@@ -1,5 +1,10 @@
 # my aliases, functions that I use for development purposes
 
+# _dev
+alias w='code'
+alias w.='code .'
+
+
 # _node 
 alias n='node'
 alias ndi='node install'
@@ -9,6 +14,7 @@ alias n.='node .'
 alias y='yarn'
 alias ya='yarn add'
 alias yr='yarn remove'
+alias yg='yarn global add'
 
 # _npm 
 alias zi='npm install'

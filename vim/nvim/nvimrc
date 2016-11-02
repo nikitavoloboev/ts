@@ -42,6 +42,9 @@ set nobackup                                      " don't create annoying backup
 " TODO: maybe a plugin is better
 set path=+**                                      " search down into subfolders
 
+set scrolloff=5
+set so=999
+
 " --------------------------------------
 " _basic vim config
 " --------------------------------------
