@@ -700,6 +700,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
                  KeyCode::CURSOR_DOWN
                </autogen>
 
+               <autogen>
+                 __KeyToKey__
+                 KeyCode::BACKQUOTE,
+               KeyCode::9, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L
+               </autogen>
+
   </item>
 
 <item>
@@ -947,9 +953,8 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
                <autogen>
                  __KeyToKey__
                  KeyCode::BACKQUOTE,
-               KeyCode::9, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L
+                 KeyCode::9, ModifierFlag::COMMAND_L, ModifierFlag::OPTION_L, ModifierFlag::CONTROL_L, ModifierFlag::SHIFT_L
                </autogen>
-
 
                <autogen>
                  __KeyToKey__
@@ -1019,6 +1024,12 @@ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE
       KeyCode::H,
       KeyCode::F7, ModifierFlag::COMMAND_L | ModifierFlag::CONTROL_L | ModifierFlag::OPTION_L
     </autogen>
+
+       <autogen>
+       __KeyToKey__
+       KeyCode::U,
+       KeyCode::F7, ModifierFlag::COMMAND_L, ModifierFlag::CONTROL_L
+        </autogen>
 
        <autogen>
        __KeyToKey__

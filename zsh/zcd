@@ -41,6 +41,7 @@ alias dsn='cd ~/oss/nikivi'
 alias dsr='cd ~/oss/research'
 alias dsf='cd ~/oss/forks'
 alias dr='cd ~/research'
+alias di='cd ~/inspiration'
 
 # _macos
 alias dls='cd ~/Library/Services'

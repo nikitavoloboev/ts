@@ -5,7 +5,7 @@ function fn() { ls **/*$1* }
 function fnd() { ls **/*$1*(/) }
 
 # download 
-function kk(){
+function download(){
 curl -O "$1"
 }
 

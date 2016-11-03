@@ -4,6 +4,8 @@
 alias w='code'
 alias w.='code .'
 
+# _web
+alias wk='open -a Google/ Chrome index.html'
 
 # _node 
 alias n='node'

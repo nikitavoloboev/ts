@@ -7,14 +7,16 @@ alias xx='open -a Xcode'
 alias we='open -a MacDown'
 alias wt='open -a Atom'
 alias st='open -a Sublime\ Text'
-alias ww="open -a Marked\ 2"
+alias wr="open -a Marked\ 2"
 
 # _scripts for apps
 #alias jp='open_intellij_folder'
 
+# _web
+alias kk="open -a \"Google Chrome\""
+alias ks="open -a Safari"
+
 # _other
-alias Q="open -a \"Google Chrome\""
 alias pdf='open -a PDF\ Expert'
-alias qq="open -a Safari"
 alias love="/Applications/love.app/Contents/MacOS/love"
 
