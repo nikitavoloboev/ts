@@ -1,3 +1,8 @@
+# _projects 
+alias dpq='cd ~/code/xcode/projects/macos/quoter'
+alias dps='cd ~/code/projects/personal_site'
+alias dk='cd ~/projects'
+
 # _documents
 alias dap='cd ~/Documents/d.\ app'
 alias dte='cd ~/Documents/d.\ app/tester'
@@ -34,6 +39,7 @@ alias dpl='cd ~/code/xcode/playgrounds'
 alias dgo='cd ~/code/go'
 alias dsj='cd ~/code/solutions/java'
 alias dios='cd ~/code/xcode/projects/ios'
+alias dss='cd ~/code/solutions'
 
 # _oss
 alias ds='cd ~/oss/'
@@ -61,8 +67,4 @@ alias dsk='cd ~/Library/Application\ Support/Karabiner'
 alias db='cd ~/.dotfiles/bin'
 alias dbm='cd ~/.dotfiles/bin/mine'
 
-# _projects 
-alias dpq='cd ~/code/xcode/projects/macos/quoter'
-alias dps='cd ~/code/projects/personal_site'
-alias dk='cd ~/projects'
 

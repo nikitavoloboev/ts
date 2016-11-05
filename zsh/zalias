@@ -1,5 +1,6 @@
 # _general
 alias sudo='sudo '
+alias ma='mkdir -p'
 alias tk='killall tmux'
 alias loc='count_number_of_lines'
 alias mm='tldr'
