@@ -26,6 +26,7 @@
 " --------------------------------------
 "  _testing
 " --------------------------------------
+noremap Q @q
 set showcmd                                       " show me what I'm typing
 set autowrite                                     " automatically save before :next, :make etc
 set ignorecase                                    " search case insensitive 

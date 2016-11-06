@@ -60,7 +60,6 @@ alias drp='cd ~/Dropbox'
 
 # _config
 alias d..='cd ~/.config'
-alias dvi='cd ~/.dotfiles/vim'
 alias dv='cd ~/.dotfiles/vim'
 alias d.='cd ~/.dotfiles'
 alias dsk='cd ~/Library/Application\ Support/Karabiner'

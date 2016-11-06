@@ -5,18 +5,19 @@ if [[ -s "${ZDOTDIR:-$HOME}/.dotfiles/zsh/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.dotfiles/zsh/init.zsh"
 fi
 
+
 # vi movement in iTerm
 set -o vi
 
 #bindkey -v
 
 # _source
+source ~/.dotfiles/zsh/zenv
 source ~/.dotfiles/zsh/zcd
 source ~/.dotfiles/vim/zvim
 source ~/.dotfiles/zsh/zfunctions
 source ~/.dotfiles/zsh/zdev
 source ~/.dotfiles/git/zgit
-source ~/.dotfiles/zsh/zenv
 source ~/.dotfiles/zsh/zalias
 source ~/.dotfiles/zsh/zapp
 source ~/.dotfiles/zsh/zscripts
