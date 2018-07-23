@@ -1,0 +1,16 @@
+# Plugins I use: https://wiki.nikitavoloboev.xyz/unix/shell/zsh/zsh-plugins.html
+
+mafredri/zsh-async
+spwhitt/nix-zsh-completions
+rupa/z
+sobolevn/wakatime-zsh-plugin
+Tarrasch/zsh-bd
+zsh-users/zsh-completions
+zsh-users/zsh-autosuggestions branch:develop
+junegunn/fzf
+sindresorhus/pure
+zsh-users/zsh-history-substring-search
+zsh-users/zsh-syntax-highlighting
+
+# TODO: make it work
+# chisui/zsh-nix-shell branch:issue-1 

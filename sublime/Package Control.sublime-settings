@@ -1,0 +1,22 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"A File Icon",
+		"AdvancedNewFile",
+		"ayu",
+		"DashDoc",
+		"GitGutter",
+		"Marked App Menu",
+		"Nix",
+		"Package Control",
+		"Pretty JSON",
+		"Six",
+		"SublimeLinter",
+		"TodoReview",
+		"WakaTime"
+	]
+}

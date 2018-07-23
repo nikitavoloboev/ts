@@ -1,0 +1,82 @@
+[user]
+	name = Nikita Voloboev
+	email = nikita.voloboev@gmail.com
+	signingkey = 29289B98E427FB2F
+[alias]
+    update = add -u .
+	unstage = reset HEAD
+	untracked = status -u .
+	untracked-at = status -u
+	assume-unchanged = update-index --assume-unchanged
+	ls = ls-files
+    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %C(dim white)(%an)%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+	lg2 = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+	a = apply --index
+	unstage = reset HEAD
+	p = format-patch --stdout
+	co = checkout
+	ci = commit
+	cp = cherry-pick
+	me = merge
+	pr = !open "$(git config remote.origin.url)/pull/new/master" # Create new PR
+	re = rebase
+	br = branch
+	su = submodule
+	rr = reset
+  	fm = fetch-merge # fetch and merge
+    tree = log --graph --pretty=format:'%C(auto)%h - %s [%an] (%C(blue)%ar)%C(auto)%d'
+ bigtree = log --graph --decorate --pretty=format:'%C(auto)%d%n%h %s%+b%n(%G?) %an <%ae> (%C(blue)%ad%C(auto))%n'
+    hist = log --date=short --pretty=format:'%C(auto)%ad %h (%G?) %s [%an] %d'
+    count = shortlog -sn  # give list of who commited to this repo
+    open = !open `git config remote.origin.url` # Open repo in browser
+    issues = !open "$(git config remote.origin.url)/issues" # Open repo's issues in browser
+    url =! bash -c 'git config --get remote.origin.url | sed -E "s/.+:\\(.+\\)\\.git$/https:\\\\/\\\\/github\\\\.com\\\\/\\\\1/g"' # show ul of remote
+[mergetool]
+	path = /usr/bin/nvim
+	prompt = false
+    keepBackup = false
+[diff]
+	renames = copy
+	tool = nvimdiff
+[status] # TODO: not sure if need
+	short = true
+	    branch = true
+	submoduleSummary = true
+	    showUntrackedFiles = all
+[color]
+	ui = true
+[branch]
+	autosetuprebase = always
+[push]
+	default = tracking
+[merge]
+	tool = nvimdiff
+    conflictstyle = diff3
+[core]
+	editor = nvim
+	excludesfile = ~/.gitignore_global
+	pager = diff-so-fancy | less --tabs=4 -RFX
+[github]
+    user = nikitavoloboev
+[commit]
+	gpgsign = true
+[gpg]
+	program = /usr/local/bin/gpg
+[http "https://gopkg.in"]
+	followRedirects = true
+[format]
+	pretty = %C(auto)%h - %s%d%n%+b%+N(%G?) %an <%ae> (%C(blue)%ad%C(auto))%n
+[hub]
+	protocol = https
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
+[color "diff"]
+	meta = yellow
+	frag = magenta bold
+	commit = yellow bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
