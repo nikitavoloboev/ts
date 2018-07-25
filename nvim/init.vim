@@ -3,9 +3,12 @@ function! DoRemote(arg)
   UpdateRemotePlugins
 endfunction
 
-
 " Install plugins
 call plug#begin()
+" Looks
+Plug 'nikitavoloboev/monokai-vim' " Theme
+Plug 'itchyny/lightline.vim' " Light and configurable statusline/tabline plugin.
+
 " Utility
 Plug 'romainl/vim-cool' " Stop matching after search is done.
 Plug 'jiangmiao/auto-pairs' " Insert or delete brackets, parens, quotes in pair.
@@ -43,10 +46,6 @@ Plug 'zchee/deoplete-jedi' " Deoplete source for jedi.
 
 " C
 Plug 'zchee/deoplete-clang', { 'for': 'c,cpp,objc' }
-
-" Looks
-Plug 'ayu-theme/ayu-vim' " Theme.
-Plug 'itchyny/lightline.vim' " Light and configurable statusline/tabline plugin.
 
 " Go
 Plug 'fatih/vim-go', { 'for': 'go' } " Go development.
@@ -146,9 +145,7 @@ let g:qs_highlight_on_keys = ['f', 'F', 't', 'T'] " Trigger a highlight in the a
 let g:incsearch#auto_nohlsearch = 1 " TODO
 
 " Theme
-set background=dark " Set night mode
-let ayucolor="mirage"
-colorscheme ayu
+colorscheme monokai
 
 " Bufferline
 let g:bufferline_echo = 0
