@@ -77,3 +77,5 @@
 # ~/Library/Preferences/com.pilotmoon.popclip.plist & ~/Library/Application Support/PopClip -> Popclip extensions
 
 # 3. Clone dotfiles to `~/.dotfiles` and run ./install.
+
+# Migration assistant helps transfer files from one mac to another mac easily too.

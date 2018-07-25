@@ -227,5 +227,6 @@
     "document"
   ],
   "workbench.statusBar.feedback.visible": false,
-  "typescript.updateImportsOnFileMove.enabled": "never"
+  "typescript.updateImportsOnFileMove.enabled": "never",
+  "javascript.updateImportsOnFileMove.enabled": "never"
 }
