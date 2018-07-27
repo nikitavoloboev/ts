@@ -33,14 +33,14 @@ I describe my custom configuration I use below. It is heavily tailored to my own
 
 The most exciting thing in here is probably how I utilize [Karabiner](https://pqrs.org/osx/karabiner/). It has absolutely transformed the way I interact with my computer and there is no going back now.
 
-I go over how I use Karabiner in detail [here](https://wiki.nikitavoloboev.xyz/macOS/apps/karabiner/karabiner.html). I generate my config for it [here](https://github.com/nikitavoloboev/karabiner-generator).
+I go over how I use Karabiner in detail [here](https://wiki.nikitavoloboev.xyz/macOS/apps/karabiner/karabiner.html). I generate my config for it [here](https://github.com/nikitavoloboev/karabiner-generator#readme).
 
 ## Neovim
 The best text editing experience you will ever get. It is worth learning it as you will start thinking about text editing differently.
 
-My Neovim config can be seen [here](nvim/init.vim). I use [Ayu theme](https://github.com/ayu-theme/ayu-vim) with [many plugins](https://wiki.nikitavoloboev.xyz/text-editors/vim/vim-plugins.html). Here is how it looks:
+My Neovim config can be seen [here](nvim/init.vim). I use [Monokai theme](https://github.com/nikitavoloboev/monokai-vim) with [many plugins](https://wiki.nikitavoloboev.xyz/text-editors/vim/vim-plugins.html). Here is how it looks:
 
-<img src="https://i.imgur.com/m6CK29L.png" width="500" alt="img">
+![](https://i.imgur.com/ljvCUoS.png)
 
 ## VS Code
 My main editor of choice is [VS Code](https://github.com/Microsoft/vscode) since it has well built [vim mode](https://github.com/VSCodeVim/Vim).

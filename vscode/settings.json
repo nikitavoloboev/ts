@@ -79,7 +79,8 @@
   // Vim
   "vim.leader": " ",
   "vim.cursorStylePerMode": {
-    "normal": "underline"
+    "normal": "underline",
+    "commandlineinprogress": "underline"
   },
   "vim.useSystemClipboard": true,
   "vim.easymotion": true,
