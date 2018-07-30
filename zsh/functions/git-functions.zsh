@@ -90,13 +90,13 @@ gwu() {
 
 # Commit all changes with `refactor`
 gwe() {
-    git commit . -am 'refactor'
+    git commit -am 'refactor'
     git push
 }
 
 # Commit all changes with `update`
 ggs() {
-    git commit . -am 'update'
+    git commit -am 'update'
     git push
 }
 

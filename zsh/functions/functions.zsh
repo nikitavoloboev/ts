@@ -1,5 +1,8 @@
 # Temp
 T() {
+  git add CONTRIBUTING.md
+  git commit -m "update contrib"
+  git push
 }
 
 # Update Zsh plugins
