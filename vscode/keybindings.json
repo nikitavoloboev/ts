@@ -46,10 +46,6 @@
     "when": "!terminalFocus"
   },
   {
-    "key": "ctrl+n",
-    "command": "workbench.action.tasks.build"
-  },
-  {
     "key": "shift+cmd+b",
     "command": "-workbench.action.tasks.build"
   },
@@ -404,5 +400,13 @@
   {
     "key": "cmd+k left",
     "command": "-workbench.action.moveActiveEditorGroupLeft"
+  },
+  {
+    "key": "ctrl+m",
+    "command": "bookmarks.toggle"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "bookmarks.jumpToNext"
   }
 ]

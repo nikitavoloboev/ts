@@ -44,13 +44,6 @@ Plug 'mhinz/vim-signify' " Show a diff using Vim its sign column.
 Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') } " Asynchronous completion framework.
 Plug 'zchee/deoplete-jedi' " Deoplete source for jedi.
 
-" C
-Plug 'zchee/deoplete-clang', { 'for': 'c,cpp,objc' }
-
-" Go
-Plug 'fatih/vim-go', { 'for': 'go' } " Go development.
-Plug 'zchee/deoplete-go', { 'for': 'go', 'do': 'make'} " Asynchronous Go completion.
-
 " Vim
 Plug 'Shougo/neco-vim', { 'for': 'vim' } " Vim source for neocomplete/deoplete.
 
@@ -353,4 +346,3 @@ autocmd VimLeave * set guicursor=a:ver25-blinkon25 " Make cursor block when leav
 set signcolumn=yes
 nnoremap <C-q> :q<cr>:q<cr>
 set foldcolumn=0 " Remove sidebar column
-

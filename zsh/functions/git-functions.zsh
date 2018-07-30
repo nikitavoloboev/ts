@@ -52,8 +52,7 @@ geb(){
 
 # Commit all changes with <commit-msg>. gw <commit-msg>
 gw() {
-    git add .
-    git commit -m "${(j: :)@}"
+    git commit -am "${(j: :)@}"
     # TODO: check if there is configured push destination. If not, don't push.
     # TODO: change other functions there to do the same
     git push
@@ -61,50 +60,43 @@ gw() {
 
 # Commit all changes with `add <commit-msg>`. gwa <commit-msg>
 gwa(){
-  git add .
-  git commit -m "add $*"
+  git commit -am "add $*"
   git push
 }
 
 # Commit all changes with `<fix commit-msg>`. gwf <commit-msg>
 gwf(){
-  git add .
-  git commit -m "fix $*"
+  git commit -am "fix $*"
   git push
 }
 
 # Commit all changes with `<remove commit-msg>`. gwr <commit-msg>
 gwr(){
-  git add .
-  git commit -m "remove $*"
+  git commit -am "remove $*"
   git push
 }
 
 # Commit all changes with `improve <msg>`. gwi <msg>
 gwi() {
-    git add .
-    git commit -m "improve $*"
+    git commit -am "improve $*"
     git push
 }
 
 # Commit all changes with `update <msg>`. gwe <msg>
 gwu() {
-    git add .
-    git commit -m "update $*"
+    git commit -am "update $*"
     git push
 }
 
 # Commit all changes with `refactor`
 gwe() {
-    git add .
-    git commit . -m 'refactor'
+    git commit . -am 'refactor'
     git push
 }
 
 # Commit all changes with `update`
 ggs() {
-    git add .
-    git commit . -m 'update'
+    git commit . -am 'update'
     git push
 }
 
@@ -165,8 +157,7 @@ ggo() {
 # git add origin from currently open Safari tab and push to master there
 ggg() {
     git init
-    git add .
-    git commit -m "Init"
+    git commit -am "Init"
     git remote add origin $(osascript -e 'tell application "Safari" to return URL of front document')
     git push $(osascript -e 'tell application "Safari" to return URL of front document') master
 }
@@ -175,16 +166,14 @@ ggg() {
 ggla() {
     git init
     license-up mit Learn Anything, learn-anything.xyz
-    git add .
-    git commit -m "Init"
+    git commit -am "Init"
 }
 
 # Initialise repository and add MIT license
 ggi() {
     git init
     license-up mit Nikita Voloboev nikitavoloboev.xyz
-    git add .
-    git commit -m "Init"
+    git commit -am "Init"
 }
 
 # git remote add origin of link found in clipboard

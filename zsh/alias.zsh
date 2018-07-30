@@ -134,15 +134,16 @@ alias ndi='node install'
 alias n.='node .'
 
 # NPM
+alias i='npm'
 alias ii='npm install'
 alias ig='npm install -g'
 alias iw='npm && npm start'
 alias in='npm init'
 alias ia='npm add'
 alias ir='npm run'
-alias im='npm remove'
+alias ire='npm remove'
 alias is='npm start'
-alias ie='npm run dev'
+alias dev='npm run dev'
 
 # Go
 alias org='richgo'

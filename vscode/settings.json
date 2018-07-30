@@ -1,6 +1,5 @@
 {
   // Testing
-  "editor.folding": false,
   "editor.hideCursorInOverviewRuler": true,
   "editor.lineHeight": 26,
   "editor.matchBrackets": false,
@@ -11,6 +10,7 @@
   "explorer.openEditors.visible": 0,
   "workbench.editor.showIcons": false,
   // General
+  "editor.folding": false,
   "newFile.defaultFileExtension": ".go",
   "newFile.showPathRelativeTo": "project",
   "search.smartCase": true,
@@ -72,7 +72,7 @@
   "sync.askGistName": false,
   // Fonts
   "editor.fontFamily": "Fira Code",
-  "workbench.fontAliasing": "auto",
+  "workbench.fontAliasing": "antialiased",
   "terminal.integrated.fontSize": 10,
   "editor.fontLigatures": true,
   "editor.fontSize": 15,
@@ -221,7 +221,7 @@
   "latex-workshop.message.update.show": false,
   "workbench.colorTheme": "Monokai Pro",
   "gitlens.historyExplorer.enabled": true,
-  "window.zoomLevel": 0,
+  "window.zoomLevel": -1,
   "gitlens.settings.mode": "advanced",
   "gitlens.codeLens.scopes": [
     "containers",
