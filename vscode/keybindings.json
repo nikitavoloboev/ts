@@ -333,10 +333,6 @@
     "when": "!inDebugMode"
   },
   {
-    "key": "ctrl+g",
-    "command": "git.commitAll"
-  },
-  {
     "key": "shift+cmd+n",
     "command": "newFile.createNewFile"
   },

@@ -11,6 +11,7 @@ junegunn/fzf
 sindresorhus/pure
 zsh-users/zsh-history-substring-search
 zsh-users/zsh-syntax-highlighting
+#lukechilds/zsh-better-npm-completion # TODO: get error installing due to SSL issue
 
 # TODO: make it work
-# chisui/zsh-nix-shell branch:issue-1 
+# chisui/zsh-nix-shell branch:issue-1

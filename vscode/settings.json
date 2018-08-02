@@ -60,8 +60,8 @@
   // Plugins
   "code-runner.runInTerminal": false,
   // Sync settings
-  "sync.gist": "0c57cbed63ec19108a8437f4325bdd32",
-  "sync.lastUpload": "2017-07-18T07:26:15.238Z",
+  "sync.gist": "94288845f0956f08d4766b477001c9eb",
+  "sync.lastUpload": "2018-08-02T12:28:16.842Z",
   "sync.autoDownload": false,
   "sync.autoUpload": false,
   "sync.lastDownload": "",
@@ -221,7 +221,7 @@
   "latex-workshop.message.update.show": false,
   "workbench.colorTheme": "Monokai Pro",
   "gitlens.historyExplorer.enabled": true,
-  "window.zoomLevel": 1,
+  "window.zoomLevel": 0,
   "gitlens.settings.mode": "advanced",
   "gitlens.codeLens.scopes": [
     "containers",
@@ -229,5 +229,8 @@
   ],
   "workbench.statusBar.feedback.visible": false,
   "typescript.updateImportsOnFileMove.enabled": "never",
-  "javascript.updateImportsOnFileMove.enabled": "never"
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "gitlens.codeLens.enabled": false,
+  "sync.removeExtensions": true,
+  "sync.syncExtensions": true
 }
