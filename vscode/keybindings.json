@@ -402,7 +402,7 @@
     "command": "bookmarks.toggle"
   },
   {
-    "key": "ctrl+n",
+    "key": "ctrl+l",
     "command": "bookmarks.jumpToNext"
   }
 ]

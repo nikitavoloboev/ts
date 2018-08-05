@@ -221,7 +221,7 @@
   "latex-workshop.message.update.show": false,
   "workbench.colorTheme": "Monokai Pro",
   "gitlens.historyExplorer.enabled": true,
-  "window.zoomLevel": 0,
+  "window.zoomLevel": 1,
   "gitlens.settings.mode": "advanced",
   "gitlens.codeLens.scopes": [
     "containers",
