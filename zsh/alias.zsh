@@ -235,6 +235,7 @@ alias ej='nvim package.json'
 alias ek='nvim ~/Library/Application\ Support/Karabiner/private.xml' # karabiner
 alias ew='nvim ~/.dotfiles/nvim/init.vim' # nvimrc
 alias essh='nvim ~/.ssh/config' # ssh config
+alias ez='nvim ~/.zshrc'
 
 # cd places
 alias dw='cd ~/src/web'

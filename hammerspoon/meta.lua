@@ -43,10 +43,6 @@ window.animationDuration = 0
 hs.hints.showTitleThresh = 9
 hs.allowAppleScript(true)
 
--- Google search
-local anycomplete = require "anycomplete/anycomplete"
-anycomplete.registerDefaultBindings(cmd_alt_ctrl, "R")
-
 function openConsole()
     hs.toggleConsole()
 end

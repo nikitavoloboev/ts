@@ -37,7 +37,7 @@
     "go",
     "godoc"
   ],
-  "editor.lineNumbers": "off",
+  "editor.lineNumbers": "on",
   "editor.cursorStyle": "line",
   "explorer.confirmDragAndDrop": false,
   "workbench.startupEditor": "newUntitledFile",
@@ -221,7 +221,7 @@
   "latex-workshop.message.update.show": false,
   "workbench.colorTheme": "Monokai Pro",
   "gitlens.historyExplorer.enabled": true,
-  "window.zoomLevel": 1,
+  "window.zoomLevel": -1,
   "gitlens.settings.mode": "advanced",
   "gitlens.codeLens.scopes": [
     "containers",

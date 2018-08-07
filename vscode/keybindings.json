@@ -404,5 +404,10 @@
   {
     "key": "ctrl+l",
     "command": "bookmarks.jumpToNext"
+  },
+  {
+    "key": "cmd+b",
+    "command": "-markdown.extension.editing.toggleBold",
+    "when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
   }
 ]
