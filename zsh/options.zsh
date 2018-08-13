@@ -23,3 +23,5 @@ eval "$(hub alias -s)" # git -> hub
 eval "$(direnv hook zsh)" # Direnv
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh # FZF fuzzy search
+
+if [ $commands[kubectl] ]; then source <(kubectl completion zsh); fi

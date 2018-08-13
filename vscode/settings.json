@@ -53,7 +53,7 @@
   // Zen
   "zenMode.fullScreen": false,
   "zenMode.restore": true,
-  "workbench.iconTheme": "Monokai Pro Icons",
+  "workbench.iconTheme": "Monokai Pro (Filter Octagon) Icons",
   // Prettier
   "editor.formatOnSave": true,
   "extensions.autoUpdate": true,
@@ -73,7 +73,7 @@
   // Fonts
   "editor.fontFamily": "Fira Code",
   "workbench.fontAliasing": "antialiased",
-  "terminal.integrated.fontSize": 10,
+  "terminal.integrated.fontSize": 8,
   "editor.fontLigatures": true,
   "editor.fontSize": 15,
   // Vim
@@ -219,7 +219,7 @@
   "python.linting.enabled": false,
   "gitlens.keymap": "chorded",
   "latex-workshop.message.update.show": false,
-  "workbench.colorTheme": "Monokai Pro",
+  "workbench.colorTheme": "Monokai Pro (Filter Octagon)",
   "gitlens.historyExplorer.enabled": true,
   "window.zoomLevel": -1,
   "gitlens.settings.mode": "advanced",

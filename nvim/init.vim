@@ -6,7 +6,7 @@ endfunction
 " Install plugins
 call plug#begin()
 " Looks
-Plug '~/src/vim-plugins/monokai-vim' " Theme
+Plug 'nikitavoloboev/monokai-vim' " Theme
 Plug 'itchyny/lightline.vim' " Light and configurable statusline/tabline plugin.
 
 " Utility

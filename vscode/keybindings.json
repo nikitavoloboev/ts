@@ -50,6 +50,11 @@
     "command": "-workbench.action.tasks.build"
   },
   {
+    "key": "ctrl+;",
+    "command": "workbench.action.maximizeEditor",
+    "when": "editorFocus"
+  },
+  {
     "key": "cmd+;",
     "command": "editor.action.commentLine",
     "when": "editorTextFocus && !editorReadonly"

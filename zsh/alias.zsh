@@ -17,7 +17,6 @@ alias nss="nix-shell --run zsh -p"
 
 # General
 alias te='tree'
-alias o='open'
 alias op='open'
 alias env='env | fzf'
 alias dnd='do-not-disturb toggle'
@@ -51,7 +50,6 @@ alias alf='alfred'
 alias ta='touch readme.md'
 alias d='cd'
 alias alert="tput bel" # Bell when the program is finished. i.e. npm install && alert
-alias gos='go-search'
 alias sd='sudo'
 # TODO: fk alias to run last cmd as sudo instantly
 alias lg='ls | grep'
@@ -100,7 +98,6 @@ alias ll='ln -s'
 alias jd='jid'
 alias tm='task'
 alias rf='reflex'
-alias kb='kubectl'
 alias ser='serve'
 # alias h='python -m http.server'
 alias cra='npx create-react-app'
@@ -120,13 +117,22 @@ alias wfa='alfred pack -o ~/Desktop'
 alias ws='workflow-install -s workflow' # Symlink `source` directory
 
 # Docker
-alias k='docker'
-alias kc='docker compose'
-alias kl='docker logs'
-alias klt='docker logs --tail 100'
-alias ks='docker ps'
-alias ksq='docker ps -q'
-alias kk='docker kill'
+alias o='docker'
+# alias or='docker rm'
+# alias oc='docker compose'
+# alias og='docker logs'
+# alias ogt='docker logs --tail 100'
+# alias os='docker ps'
+# alias osq='docker ps -q'
+# alias osa='docker ps -a'
+# alias ok='docker kill'
+
+# Kubernetes
+alias k='kubectl'
+alias kl='kubectl logs'
+alias ke='kubectl describe'
+alias kx='kubectl explain'
+alias kg='kubectl get'
 
 # Node
 alias nd='node'
@@ -147,17 +153,17 @@ alias dev='npm run dev'
 
 # Go
 alias org='richgo'
-alias og.='go get ./...' # Go get all packages for current project
+alias og.='go get ./...' # go get all packages for current project
 alias ot='playgo'
 alias or='go run'
 alias oo='go install'
 alias ov='go vet'
-alias ogu='go get -u' # Use the network to update the named packages and their dependencies
+alias ogu='go get -u' # use the network to update the named packages and their dependencies
 alias ob='go build'
 alias ora='go-pry'
 alias oe='go build -o main'
 
-alias ugo='Go-Package-Store'
+alias ugo='Go-Package-Store' # displays updates to Go packages
 
 # Ruby
 alias rb='ruby'
@@ -200,7 +206,7 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 
-alias kn='/Applications/Karabiner.app/Contents/Library/bin/karabiner' # Karabiner CLI
+alias kn='/Applications/Karabiner.app/Contents/Library/bin/karabiner' # Karabiner CLI TODO: delete with elements
 
 alias cpu='top -o cpu'   # CPU
 alias mem='top -o rsize' # Memory
