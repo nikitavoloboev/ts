@@ -1,6 +1,6 @@
 ### https://gist.github.com/octocat/9257657 ###
-# Compiled source #
-###################
+
+# Compiled source
 *.com
 *.class
 *.dll
@@ -315,9 +315,6 @@ TSWLatexianTemp*
 # WinEdt
 *.bak
 *.sav
-
-# Texpad
-.texpadtmp
 
 # Kile
 *.backup

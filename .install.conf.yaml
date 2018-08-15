@@ -3,7 +3,7 @@
     link:
       create: true
       relink: true
-      # force: true # Swap the original file
+      force: true # Swap the original file
 
 # TODO: ?
 - clean: ['~', '~/.config']
@@ -18,8 +18,8 @@
 # TODO: Install Antibody. Check if Antibody is installed first.
 
 # Install Zsh plugins with Antibody
-    - [antibody bundle <~/.dotfiles/zsh/plugins.txt >~/.zsh_plugins.sh]
-    - [antibody update]
+  #  - [antibody bundle <~/.dotfiles/zsh/plugins.txt >~/.zsh_plugins.sh]
+  #  - [antibody update]
 
 # TODO: Install Nix. Check if Nix is installed first.
 # - [curl https://nixos.org/nix/install | sh]

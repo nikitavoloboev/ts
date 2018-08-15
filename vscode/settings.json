@@ -1,5 +1,5 @@
 {
-  // Testing
+  // editor
   "editor.hideCursorInOverviewRuler": true,
   "editor.lineHeight": 26,
   "editor.matchBrackets": false,
@@ -7,16 +7,22 @@
   "editor.overviewRulerBorder": false,
   "editor.renderIndentGuides": false,
   "editor.renderLineHighlight": "none",
-  "explorer.openEditors.visible": 0,
-  "workbench.editor.showIcons": false,
-  // General
   "editor.folding": false,
+  "editor.snippetSuggestions": "top",
+  "editor.minimap.enabled": false,
+  "editor.cursorBlinking": "solid",
+  "editor.lineNumbers": "on",
+  "editor.cursorStyle": "line",
+  // new file
   "newFile.defaultFileExtension": ".go",
   "newFile.showPathRelativeTo": "project",
+  // search
   "search.smartCase": true,
-  "workbench.panel.defaultLocation": "right",
+  // terminal
   "terminal.integrated.copyOnSelection": true,
   "eslint.packageManager": "npm",
+  // files
+  "files.trimTrailingWhitespace": true,
   "files.exclude": {
     "**/.git": true,
     "**/.svn": true,
@@ -26,40 +32,28 @@
     "vendor": true,
     "package-lock.json": true
   },
-  "typescript.check.npmIsInstalled": false,
-  "workbench.activityBar.visible": false,
-  "editor.snippetSuggestions": "top",
-  "editor.minimap.enabled": false,
-  "editor.cursorBlinking": "solid",
-  "files.trimTrailingWhitespace": true,
-  // Dash
+  // dash
   "dash.docset.go": [
     "go",
     "godoc"
   ],
-  "editor.lineNumbers": "on",
-  "editor.cursorStyle": "line",
+  // explorer
+  "explorer.openEditors.visible": 0,
   "explorer.confirmDragAndDrop": false,
-  "workbench.startupEditor": "newUntitledFile",
-  // Python
+  // python
   "python.linting.pylintArgs": [
     "--errors-only"
   ],
-  // Code runner
+  // code runner
   "code-runner.clearPreviousOutput": true,
   "code-runner.executorMap": {
     "python": "python3",
   },
-  // Zen
-  "zenMode.fullScreen": false,
-  "zenMode.restore": true,
-  "workbench.iconTheme": "Monokai Pro (Filter Octagon) Icons",
-  // Prettier
+  // prettier
   "editor.formatOnSave": true,
-  "extensions.autoUpdate": true,
-  // Plugins
+  // code runner
   "code-runner.runInTerminal": false,
-  // Sync settings
+  // sync settings
   "sync.gist": "94288845f0956f08d4766b477001c9eb",
   "sync.lastUpload": "2018-08-02T12:28:16.842Z",
   "sync.autoDownload": false,
@@ -70,13 +64,12 @@
   "sync.pathPrefix": "",
   "sync.quietSync": false,
   "sync.askGistName": false,
-  // Fonts
+  // fonts
   "editor.fontFamily": "Fira Code",
-  "workbench.fontAliasing": "antialiased",
   "terminal.integrated.fontSize": 8,
   "editor.fontLigatures": true,
   "editor.fontSize": 15,
-  // Vim
+  // vim
   "vim.leader": " ",
   "vim.cursorStylePerMode": {
     "normal": "underline",
@@ -85,7 +78,7 @@
   "vim.useSystemClipboard": true,
   "vim.easymotion": true,
   "vim.easymotionMarkerBackgroundColor": "red",
-  // Space map
+  // space map
   "vim.normalModeKeyBindings": [
     {
       "before": [
@@ -184,7 +177,7 @@
       ]
     }
   ],
-  // Go
+  // go
   "go.liveErrors": {
     "enabled": true,
     "delay": 500
@@ -193,10 +186,40 @@
   "go.lintOnSave": "package",
   "go.useLanguageServer": true,
   "go.gocodePackageLookupMode": "gb",
-  // Files
+  // files
   "files.associations": {
     "*.toml": "toml"
   },
+  "explorer.confirmDelete": false,
+  // python
+  // TODO: update to p3 and nix?
+  "python.pythonPath": "/usr/bin/python2.7",
+  // TODO: maybe there is better?
+  "python.formatting.provider": "autopep8",
+  "python.linting.pylintEnabled": false,
+  "python.linting.flake8Enabled": true,
+  "python.linting.enabled": false,
+  // latex
+  "latex-workshop.message.update.show": false,
+  // window
+  "window.zoomLevel": 0,
+  // workbench
+  "workbench.statusBar.feedback.visible": false,
+  "workbench.fontAliasing": "antialiased",
+  "workbench.panel.defaultLocation": "right",
+  "workbench.activityBar.visible": false,
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.editor.showIcons": false,
+  "workbench.iconTheme": "Monokai Pro (Filter Octagon) Icons",
+  "workbench.colorTheme": "Monokai Pro (Filter Octagon)",
+  // TODO: maybe not need?
+  // typescript
+  "typescript.check.npmIsInstalled": false,
+  "typescript.updateImportsOnFileMove.enabled": "never",
+  // javascript
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  // git
+  "git.autofetch": true,
   "git.enableSmartCommit": true,
   "gitlens.advanced.messages": {
     "suppressCommitHasNoPreviousCommitWarning": false,
@@ -210,27 +233,18 @@
     "suppressUpdateNotice": true,
     "suppressWelcomeNotice": false
   },
-  "git.autofetch": true,
-  "explorer.confirmDelete": false,
-  "python.pythonPath": "/usr/bin/python2.7",
-  "python.formatting.provider": "autopep8",
-  "python.linting.pylintEnabled": false,
-  "python.linting.flake8Enabled": true,
-  "python.linting.enabled": false,
-  "gitlens.keymap": "chorded",
-  "latex-workshop.message.update.show": false,
-  "workbench.colorTheme": "Monokai Pro (Filter Octagon)",
-  "gitlens.historyExplorer.enabled": true,
-  "window.zoomLevel": -1,
+  // gitlens
+  "gitlens.codeLens.enabled": false,
   "gitlens.settings.mode": "advanced",
+  "gitlens.historyExplorer.enabled": true,
+  "gitlens.keymap": "chorded",
   "gitlens.codeLens.scopes": [
     "containers",
     "document"
   ],
-  "workbench.statusBar.feedback.visible": false,
-  "typescript.updateImportsOnFileMove.enabled": "never",
-  "javascript.updateImportsOnFileMove.enabled": "never",
-  "gitlens.codeLens.enabled": false,
+  // sync settings & extensions
   "sync.removeExtensions": true,
-  "sync.syncExtensions": true
+  "sync.syncExtensions": true,
+  // extensions
+  "extensions.autoUpdate": true
 }

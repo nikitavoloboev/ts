@@ -1,4 +1,4 @@
-source ~/.zsh_plugins.sh # Load zsh plugins
+#source ~/.zsh_plugins.sh # Load zsh plugins
 
 source ~/.dotfiles/zsh/env.zsh
 
