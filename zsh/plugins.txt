@@ -1,9 +1,9 @@
 # Plugins I use: https://wiki.nikitavoloboev.xyz/unix/shell/zsh/zsh-plugins.html
+# TODO: make this work with home manager
 
 mafredri/zsh-async
 spwhitt/nix-zsh-completions
 rupa/z
-sobolevn/wakatime-zsh-plugin
 Tarrasch/zsh-bd
 zsh-users/zsh-completions
 zsh-users/zsh-autosuggestions branch:develop

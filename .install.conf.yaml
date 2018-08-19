@@ -13,26 +13,6 @@
     # Install submodules
     - [git submodule update --init --recursive, Installing submodules]
 
-# TODO: Make sure ./install works independent of where dotfiles are stored
-
-# TODO: Install Antibody. Check if Antibody is installed first.
-
-# Install Zsh plugins with Antibody
-  #  - [antibody bundle <~/.dotfiles/zsh/plugins.txt >~/.zsh_plugins.sh]
-  #  - [antibody update]
-
-# TODO: Install Nix. Check if Nix is installed first.
-# - [curl https://nixos.org/nix/install | sh]
-
-# TODO: Install all the commands I use with Nix
-
-# TODO: Look into https://github.com/LnL7/nix-darwin and maybe add/use it
-# TODO: Look into https://github.com/rycee/home-manager and maybe add/use it
-
-# TODO: Install go tools (~/go/bin)
-
-# TODO: Install rust tools (~/.cargo/bin)
-
 # Symlink files
 - link:
     # Zsh
@@ -49,33 +29,3 @@
     # VS Code
     ~/Library/Application Support/Code/User/settings.json: vscode/settings.json
     ~/Library/Application Support/Code/User/keybindings.json: vscode/keybindings.json
-
-# macOS Time Machine install:
-# 1. Boot into new macOS with hard drive that has Time Machine backup inside.
-# 1. Boot macOS from time machine.
-
-# macOS fresh install:
-# Can use this: https://macdaddy.io/create-bootable-usb-macos-installer
-
-# Recovery mode > Disk Utility > Select your disk >
-# > Erase > Close Disk Utility > Select option Reinstall MacOS (Choose macOS ver. to install)
-
-# There's also option of:
-# Use Disk Utility in recovery partition to erase the hard drive to replace system files for full reset.
-# 1. Go to recovery partition. Reinstall macOS from scratch, don’t select the option to reinstall from Time Machine.
-# 1. Go through install process, setup a new account, then log in.
-# 2. When logged in, open Time Machine Migration Assistant and chose what you want to transfer from it.
-# 2. You can select specific things like Applications, Documents, etc.
-
-# ~/Library/Application Support -> App auxiliary files
-# ~/Library/Preferences -> App preferences
-# ~/Pictures/Photos Library -> Apple Photos
-# ~/Library/Fonts -> Custom fonts
-# ~/.wakatime.cfg -> WakaTime settings (API Key)
-# ~/.ssh -> SSH config + certs
-# ~/.npm-global/bin -> npm globally installed commands (have to run 'npm set prefix ~/.npm-global' to set this install location)
-# ~/Library/Preferences/com.pilotmoon.popclip.plist & ~/Library/Application Support/PopClip -> Popclip extensions
-
-# 3. Clone dotfiles to `~/.dotfiles` and run ./install.
-
-# Migration assistant helps transfer files from one mac to another mac easily too.
