@@ -15,4 +15,7 @@ set +e
 defaults write -g ApplePressAndHoldEnabled -bool false
 echo 'Enabled fast key repeat.'
 
+# Fast opening and closing windows and popovers
+defaults write -g NSAutomaticWindowAnimationsEnabled -bool false
+
 echo 'Some commands here require restart! Please do that for them to take effect.'
