@@ -107,7 +107,7 @@
 	"color_scheme": "Packages/ayu/ayu-mirage.tmTheme",
 	"dictionary": "Packages/Language - English/en_US.dic",
 	"font_face": "Fira Code",
-	"font_size": 16,
+	"font_size": 13,
 	"ignored_packages":
 	[
 		"Vintage"

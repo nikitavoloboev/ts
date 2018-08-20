@@ -12,7 +12,6 @@ local logger = require("hs.logger")
 
 -- TODO: modularise it, only contain essential setup stuff here
 
--- Config
 _asm = {} -- TODO: ?
 _asm.hs_default_require = require
 require = rawrequire

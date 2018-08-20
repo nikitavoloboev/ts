@@ -29,7 +29,7 @@ Plug 'Shougo/vimproc.vim', {'do' : 'make'} " Interactive command execution.
 Plug 'tpope/vim-repeat' " Enable repeating supported plugin maps.
 Plug 'tpope/vim-surround' " Quoting/parenthesizing made simple.
 Plug 'junegunn/vim-easy-align' " Simple, easy-to-use alignment.
-Plug '~/.fzf' " Fzf search. TODO: install with homebrew or nix instead
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' } " Fzf search. 
 Plug 'junegunn/fzf.vim' " Fzf search.
 Plug 'wakatime/vim-wakatime' " Automatic time tracking.
 Plug 'haya14busa/incsearch.vim' " Improved incremental searching.
@@ -192,9 +192,7 @@ inoremap      ()   ()
 cabbrev rp Rp
 
 " CTRL mappings
-nnoremap <C-M> /sticky 
 nnoremap <C-L> :Files<CR>
-nnoremap <C-O> /\c__\_sKeyCode::/e<Left><Left>
 
 " Space mappings
 nnoremap <SPACE> <Nop>
@@ -212,12 +210,7 @@ nnoremap <Leader>pu :PlugUpdate<CR>
 
 " Space w
 " Save
-"nmap <Leader>w :w<CR>
 nmap <Leader>w :w<CR>
-
-" Space k
-nmap <leader>kk :norm! ikey("", "", "", []),<esc>F(la
-nmap <leader>ks :norm! ishell('', '', ),<esc>F(la
 
 " Space e
 "nmap <Leader>e <Plug>(Prettier) :w<CR>
