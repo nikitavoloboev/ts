@@ -1,8 +1,7 @@
 # Temp
 T() {
-  git add CONTRIBUTING.md
-  git commit -m "update contrib"
-  git push
+    rm -r workflow
+    mkdir workflow
 }
 
 # Update Zsh plugins

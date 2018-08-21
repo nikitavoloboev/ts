@@ -40,7 +40,7 @@ The best text editing experience you will ever get. It is worth learning it as y
 
 My Neovim config can be seen [here](nvim/init.vim). I use [Monokai theme](https://github.com/nikitavoloboev/monokai-vim) with [many plugins](https://wiki.nikitavoloboev.xyz/text-editors/vim/vim-plugins.html). Here is how it looks:
 
-![](https://i.imgur.com/ljvCUoS.png)
+![](https://i.imgur.com/ra1KIww.png)
 
 ## VS Code
 My main editor of choice is [VS Code](https://github.com/Microsoft/vscode) since it has well built [vim mode](https://github.com/VSCodeVim/Vim).
@@ -60,7 +60,7 @@ I am using [Zsh](http://www.zsh.org) as my shell and [Antibody](https://github.c
 
 I am also using [Ayu theme](https://github.com/nikitavoloboev/my-mac-os/tree/master/iterm#readme) I made in Zsh. Here is how my prompt looks:
 
-<img src="https://i.imgur.com/3G9QffJ.png" width="400" alt="img">
+![](https://i.imgur.com/RLVyH6N.png)
 
 ### Aliases and functions
 I use many aliases to get around my system as fast as possible. You can view them all [here](zsh/alias.zsh).
