@@ -76,6 +76,7 @@ set ignorecase " Search case insensitive:
 set smartcase " .. but not when search pattern contains upper case characters
 set nocursorcolumn
 set nocursorline
+set number
 set wrap
 set textwidth=79
 set formatoptions=qrn1

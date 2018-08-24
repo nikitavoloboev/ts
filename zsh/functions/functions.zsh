@@ -1,7 +1,12 @@
 # Temp
 T() {
-    rm -r workflow
-    mkdir workflow
+
+}
+
+# Update nix-darwin configuration
+un(){
+  darwin-rebuild switch
+  __ETC_ZSHENV_SOURCED= exec zsh
 }
 
 # Update Zsh plugins
