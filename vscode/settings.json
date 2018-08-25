@@ -202,7 +202,8 @@
   // latex
   "latex-workshop.message.update.show": false,
   // window
-  "window.zoomLevel": -2,
+  "window.zoomLevel": 0,
+  "window.newWindowDimensions": "maximized",
   // workbench
   "workbench.statusBar.feedback.visible": false,
   "workbench.fontAliasing": "antialiased",

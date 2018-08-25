@@ -1,4 +1,3 @@
-bindkey -e # Emacs keymap
 export KEYTIMEOUT=1 # Shorter delay typing
 
 # TODO: see different widgets that can be ran. For moving especially
