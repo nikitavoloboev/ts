@@ -38,9 +38,9 @@ I go over how I use Karabiner in detail [here](https://wiki.nikitavoloboev.xyz/m
 ## Neovim
 The best text editing experience you will ever get. It is worth learning it as you will start thinking about text editing differently.
 
-My Neovim config can be seen [here](nvim/init.vim). I use [Monokai theme](https://github.com/nikitavoloboev/monokai-vim) with [many plugins](https://wiki.nikitavoloboev.xyz/text-editors/vim/vim-plugins.html). Here is how it looks:
+My Neovim config can be seen [here](nvim/init.vim). I use [Night Blue theme](https://github.com/nikitavoloboev/night-blue-vim) with [many plugins](https://wiki.nikitavoloboev.xyz/text-editors/vim/vim-plugins.html). Here is how it looks:
 
-![](https://i.imgur.com/ra1KIww.png)
+![](https://i.imgur.com/DR2E94n.png)
 
 ## VS Code
 My main editor of choice is [VS Code](https://github.com/Microsoft/vscode) since it has well built [vim mode](https://github.com/VSCodeVim/Vim).
@@ -58,9 +58,9 @@ I don't use [Hammerspoon](http://www.hammerspoon.org/) as extensively however I 
 ## Zsh
 I am using [Zsh](http://www.zsh.org) as my shell and [Antibody](https://github.com/getantibody/antibody) to install all [my Zsh plugins](https://wiki.nikitavoloboev.xyz/unix/shell/zsh/zsh-plugins.html).
 
-I am also using [Ayu theme](https://github.com/nikitavoloboev/my-mac-os/tree/master/iterm#readme) I made in Zsh. Here is how my prompt looks:
+I am also using [Night Blue theme](https://github.com/nikitavoloboev/my-mac-os/tree/master/iterm#readme) I made in Zsh. Here is how my prompt looks:
 
-![](https://i.imgur.com/RLVyH6N.png)
+![](https://i.imgur.com/Emw7NAj.png)
 
 ### Aliases and functions
 I use many aliases to get around my system as fast as possible. You can view them all [here](zsh/alias.zsh).
@@ -98,7 +98,7 @@ Which using [this CLI tool](https://github.com/nikitavoloboev/license-up), will 
 And thus in one command I initialized and pushed the repo. To create a new repo quickly I use [this Alfred workflow](https://github.com/nikitavoloboev/alfred-ask-create-share).
 
 #### Commit all with generic `update` message
-I use this command often when I find no commit message necessary.
+I use this command often when I find no commit message is necessary.
 
 ```Bash
 ggs() {
@@ -108,7 +108,7 @@ ggs() {
 }
 ```
 
-#### Clone current url in clipboard
+#### Clone current URL in clipboard
 
 ```Bash
 gll(){

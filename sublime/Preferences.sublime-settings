@@ -104,7 +104,7 @@
 		"*.Ulysses-Group.plist"
 	],
 	"caret_style": "solid",
-	"color_scheme": "Packages/ayu/ayu-mirage.tmTheme",
+	"color_scheme": "Packages/ayu/ayu-dark.tmTheme",
 	"dictionary": "Packages/Language - English/en_US.dic",
 	"font_face": "Fira Code",
 	"font_size": 15,
@@ -115,6 +115,6 @@
 	"line_numbers": false,
 	"open_files_in_new_window": true,
 	"spell_check": true,
-	"theme": "ayu-mirage.sublime-theme",
+	"theme": "ayu-dark.sublime-theme",
 	"trim_trailing_white_space_on_save": true
 }
