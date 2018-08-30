@@ -12,6 +12,8 @@
 - shell:
     # Install submodules
     - [git submodule update --init --recursive, Installing submodules]
+    # Nixify
+    #- npm config set prefix '~/.npm-global'
 
 # Symlink files
 - link:

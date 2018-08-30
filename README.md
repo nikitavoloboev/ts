@@ -1,7 +1,7 @@
 # My configuration files for macOS [![Thanks](https://img.shields.io/badge/Say%20Thanks-💗-ff69b4.svg)](https://www.patreon.com/nikitavoloboev)
 > Zsh, Karabiner, VS Code, Sublime, Neovim, Nix, Hammerspoon
 
-<img src="https://i.imgur.com/IKzGSND.jpg" width="600" alt="img">
+<img src="https://i.imgur.com/5xI4eJO.jpg" width="600" alt="img">
 
 These are the various configuration files I use on macOS. I wrote about how you can customize your shell experience in an article [here](https://medium.com/@NikitaVoloboev/pretty-and-fast-shell-97ea870f2805).
 
@@ -135,7 +135,6 @@ These are dotfiles I got many ideas from and liked.
 - [bluz71](https://github.com/bluz71/dotfiles) - Interesting vim setup.
 - [caarlos0](https://github.com/caarlos0/dotfiles) - Made antibody.
 - [wangsongiam](https://github.com/wangsongiam/dotfiles) - Interesting Hammerspoon and Zsh config.
-- [rvolosatovs](https://github.com/rvolosatovs/dotfiles) - Good vim setup for Go.
 - [Keith](https://github.com/keith/dotfiles) - Vim, Zsh, Tmux, and macOS.
 - [bresilla](https://github.com/bresilla/dotfiles) - Neat Linux look.
 

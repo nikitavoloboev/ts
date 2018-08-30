@@ -1,4 +1,8 @@
 {
+  // color theme
+  "workbench.colorCustomizations": {
+    "tab.inactiveBackground": "#18222D"
+  },
   // editor
   "editor.hideCursorInOverviewRuler": true,
   "editor.lineHeight": 26,
@@ -55,18 +59,14 @@
   "code-runner.runInTerminal": false,
   // sync settings
   "sync.gist": "94288845f0956f08d4766b477001c9eb",
-  "sync.lastUpload": "2018-08-02T12:28:16.842Z",
   "sync.autoDownload": false,
   "sync.autoUpload": false,
-  "sync.lastDownload": "",
   "sync.forceDownload": false,
-  "sync.host": "",
-  "sync.pathPrefix": "",
   "sync.quietSync": false,
   "sync.askGistName": false,
   // fonts
   "editor.fontFamily": "Fira Code",
-  "terminal.integrated.fontSize": 8,
+  "terminal.integrated.fontSize": 10,
   "editor.fontLigatures": true,
   "editor.fontSize": 15,
   // vim
@@ -202,7 +202,7 @@
   // latex
   "latex-workshop.message.update.show": false,
   // window
-  "window.zoomLevel": -1,
+  "window.zoomLevel": 0,
   "window.newWindowDimensions": "maximized",
   // workbench
   "workbench.statusBar.feedback.visible": false,
@@ -211,8 +211,7 @@
   "workbench.activityBar.visible": false,
   "workbench.startupEditor": "newUntitledFile",
   "workbench.editor.showIcons": false,
-  "workbench.iconTheme": "Monokai Pro (Filter Octagon) Icons",
-  "workbench.colorTheme": "Default Light+",
+  "workbench.colorTheme": "Night Blue",
   // TODO: maybe not need?
   // typescript
   "typescript.check.npmIsInstalled": false,

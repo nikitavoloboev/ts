@@ -6,7 +6,7 @@ endfunction
 " Install plugins
 call plug#begin()
 " Looks
-Plug 'nikitavoloboev/night-blue-vim' " Theme
+Plug 'nikitavoloboev/vim-night-blue' " Theme
 Plug 'itchyny/lightline.vim' " Light and configurable statusline/tabline plugin.
 
 " Utility
