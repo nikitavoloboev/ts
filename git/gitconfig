@@ -61,7 +61,7 @@
 [commit]
 	gpgsign = true
 [gpg]
-	program = /usr/local/bin/gpg
+	program = /usr/local/MacGPG2/bin/gpg2
 [http "https://gopkg.in"]
 	followRedirects = true
 [format]

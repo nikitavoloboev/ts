@@ -22,4 +22,7 @@ echo 'Fast opening and closing windows and popovers'
 defaults write NSGlobalDomain NSWindowResizeTime 0.001
 echo 'Sped up dialogue boxes'
 
+defaults write org.m0k.transmission WarningDonate -bool false
+echo 'Hide Transmission app donate message'
+
 echo 'Some commands here require restart! Please do that for them to take effect.'

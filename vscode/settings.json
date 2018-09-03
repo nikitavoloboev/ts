@@ -246,5 +246,6 @@
   "sync.removeExtensions": true,
   "sync.syncExtensions": true,
   // extensions
-  "extensions.autoUpdate": true
+  "extensions.autoUpdate": true,
+  "editor.multiCursorModifier": "alt"
 }

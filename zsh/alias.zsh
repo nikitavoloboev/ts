@@ -21,7 +21,7 @@ alias op='open'
 alias env='env | fzf'
 alias dnd='do-not-disturb toggle'
 alias cleanup="find . -type f -name '*.DS_Store' -ls -delete" # Recursively delete `.DS_Store` files
-alias g='hub' # Wrapper over git
+alias g='git' # Wrapper over git
 alias peek='tee >(cat 1>&2)' # Mirror stdout to stderr, useful for seeing data going through a pipe
 alias aet='subl CONTRIBUTING.md'
 alias crypto='curl rate.sx' # Get crypto prices
@@ -65,10 +65,10 @@ alias jj='killall tmux'
 alias mm='tldr'
 alias ma='man'
 # alias aw='k -h' TODO: ?
-alias c='ccat'
 alias rec='asciinema rec'
 alias dus='du -s'
-alias t='touch'
+alias to='touch'
+alias t='bat'
 alias zo='open'
 alias ff='open .'
 alias ki='kill'
@@ -104,7 +104,7 @@ alias cra='npx create-react-app'
 alias lic='legit'
 
 # App
-alias to='gittower .' # Open current dir in Tower
+#alias to.='gittower .' # Open current dir in Tower
 
 # Python
 alias p='python'
