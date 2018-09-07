@@ -1,6 +1,8 @@
 # Temp
-T() {
-
+b() {
+  cd "$@"
+  workflow-install -s workflow
+  cd ..
 }
 
 # Update nix-darwin configuration

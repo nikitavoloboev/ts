@@ -6,6 +6,10 @@
     "when": "terminalFocus"
   },
   {
+    "key": "cmd+shift+r",
+    "command": "renameFile"
+  },
+  {
     "key": "cmd+left",
     "command": "workbench.action.terminal.focusPrevious",
     "when": "terminalFocus"

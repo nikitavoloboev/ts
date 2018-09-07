@@ -80,7 +80,7 @@ set number
 set wrap
 set textwidth=79
 set formatoptions=qrn1
-set notimeout
+"set notimeout
 set ttimeout
 set ttimeoutlen=10
 set nobackup " Don't create annoying backup files

@@ -6,6 +6,17 @@ gz(){
   git push
 }
 
+ge() {
+  if [ $# -eq 0 ]; then
+    local branches branch
+    branches=$(git branch -vv) &&
+    branch=$(echo "$branches" | fzf +m) &&
+    git checkout $(echo "$branch" | awk '{print $1}' | sed "s/.* //")
+  else
+    git checkout "$@"
+  fi
+}
+
 # Pull from current branch
 gpo(){
   git pull origin $(git symbolic-ref --short -q HEAD)
@@ -16,14 +27,6 @@ pr() {
   # TODO: test it
   git push -u origin "$1"
   hub pull-request -h "$1" -F -
-}
-
-# Fork repo and move it to ~/src/forks
-gfandmove(){
-  hub fork
-  CLONE_DIR_NAME=$(basename "$PWD")
-  cd .. && mv $CLONE_DIR_NAME ~/src/forks
-  cd ~/src/forks/$CLONE_DIR_NAME
 }
 
 # Pull changes from upstream (fork) to master

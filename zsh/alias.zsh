@@ -244,17 +244,17 @@ alias essh='nvim ~/.ssh/config' # ssh config
 alias ez='nvim ~/.zshrc'
 
 # cd places
-alias dw='cd ~/src/web'
+alias dw='cd ~/Documents/src/web'
 alias dsh='cd ~/.ssh'
-alias dn='cd ~/src/clones'
-alias di='cd ~/src/ideas'
+alias dn='cd ~/Documents/src/clones'
+alias di='cd ~/Documents/src/ideas'
 alias dg='cd ~/go/src/github.com/nikitavoloboev'
-alias dl='cd ~/src/learn'
-alias dt='cd ~/src/test'
-alias dm='cd ~/src/games'
-alias da='cd ~/src/'
-alias ds='cd ~/src/alfred'
-alias dla='cd ~/src/orgs/learn-anything'
+alias dl='cd ~/Documents/src/learn'
+alias dt='cd ~/Documents/src/test'
+alias dm='cd ~/Documents/src/games'
+alias da='cd ~/Documents/src/'
+alias ds='cd ~/Documents/src/alfred'
+alias dla='cd ~/Documents/src/orgs/learn-anything'
 alias dz='cd ~/.dotfiles'
 alias dk='cd ~/Documents'
 alias de='cd ~/Desktop'
@@ -263,9 +263,9 @@ alias dls='cd ~/Library/Services'
 alias drp='cd ~/Dropbox'
 
 # Xcode
-alias dx='cd ~/src/Xcode'
-alias dxi='cd ~/src/Xcode/iOS'
-alias dxm='cd ~/src/xcode/macOS'
+alias dx='cd ~/Documents/src/Xcode'
+alias dxi='cd ~/Documents/src/Xcode/iOS'
+alias dxm='cd ~/Documents/src/xcode/macOS'
 
 # Config
 alias d..='cd ~/.config'
@@ -278,7 +278,9 @@ alias gto='gittower'
 
 # Git
 alias gj='open `git config remote.origin.url`'
+alias grhf='git checkout HEAD --' # Git reset single file
 alias gpm="git push origin master"
+alias gsp='git pull --rebase --autostash' # Git stash, pull and apply stash
 alias gu='git issues'
 alias gpd="git push origin develop"
 alias ggh='push -u origin HEAD'
@@ -291,7 +293,6 @@ alias ggn='git_add_origin_and_origin_push'
 # alias gt='git tag'
 alias g:='git push -u origin master'
 alias gn='git open'
-alias ge='git checkout'
 #alias gu='git commit --amend'
 alias ggf='git push -f'
 alias g::='git_remote_add_origin_from_active_link'
