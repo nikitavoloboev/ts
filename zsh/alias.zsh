@@ -162,7 +162,6 @@ alias ogu='go get -u' # use the network to update the named packages and their d
 alias ob='go build'
 alias ora='go-pry'
 alias oe='go build -o main'
-
 alias ugo='Go-Package-Store' # displays updates to Go packages
 
 # Ruby
@@ -206,12 +205,10 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 
-alias kn='/Applications/Karabiner.app/Contents/Library/bin/karabiner' # Karabiner CLI TODO: delete with elements
-
 alias cpu='top -o cpu'   # CPU
 alias mem='top -o rsize' # Memory
 
-# macos
+# macOS
 alias bb='pbcopy'
 
 # Text editors
@@ -238,7 +235,6 @@ alias egi='nvim .gitignore' # TODO: make it zsh func, go to root and then run it
 alias ej='nvim package.json'
 
 # Edit configs
-alias ek='nvim ~/Library/Application\ Support/Karabiner/private.xml' # karabiner
 alias ew='nvim ~/.dotfiles/nvim/init.vim' # nvimrc
 alias essh='nvim ~/.ssh/config' # ssh config
 alias ez='nvim ~/.zshrc'
@@ -282,6 +278,7 @@ alias grhf='git checkout HEAD --' # Git reset single file
 alias gpm="git push origin master"
 alias gsp='git pull --rebase --autostash' # Git stash, pull and apply stash
 alias gu='git issues'
+alias gdp='git reset --hard HEAD~; git push --force-with-lease' # Delete previous commit locally and remote
 alias gpd="git push origin develop"
 alias ggh='push -u origin HEAD'
 alias gre='git rebase -i HEAD~4'
