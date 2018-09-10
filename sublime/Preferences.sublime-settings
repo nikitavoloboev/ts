@@ -80,6 +80,8 @@
 		"downloadable"
 	],
 	"auto_format_on_save": true,
+	"tab_size": 2,
+	"translate_tabs_to_spaces": true,
 	"binary_file_patterns":
 	[
 		"dist/*",
@@ -108,7 +110,7 @@
 	"color_scheme": "Packages/ayu/ayu-dark.tmTheme",
 	"dictionary": "Packages/Language - English/en_US.dic",
 	"font_face": "Fira Code",
-	"font_size": 13,
+	"font_size": 14,
 	"ignored_packages":
 	[
 		"Vintage"

@@ -10,13 +10,16 @@
 		"ayu",
 		"DashDoc",
 		"GitGutter",
+		"JsPrettier",
 		"Marked App Menu",
-		"Nix",
 		"Package Control",
-		"Pretty JSON",
 		"Six",
 		"SublimeLinter",
 		"TodoReview",
 		"WakaTime"
+	],
+	"repositories":
+	[
+		"https://github.com/danreeves/sublime-prettier"
 	]
 }

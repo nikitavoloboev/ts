@@ -2,7 +2,7 @@
 gz(){
   # TODO: if 'readme.md' files exists, update it instead
   git add README.md
-  git commit -m "update readme"
+  git commit -m "readme: update"
   git push
 }
 
@@ -42,9 +42,9 @@ gri(){
 }
 
 # Update contributing file commit
-gwt(){
+gzo(){
   git add CONTRIBUTING.md
-  git commit -m "contributing: update"
+  git commit -m "contrib: update"
   git push
 }
 

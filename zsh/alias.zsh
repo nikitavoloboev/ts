@@ -283,7 +283,7 @@ alias gpd="git push origin develop"
 alias ggh='push -u origin HEAD'
 alias gre='git rebase -i HEAD~4'
 alias gsh='git stash'
-alias gr='git checkout -b'
+alias gb='git checkout -b'
 alias grh='git reset --hard HEAD'
 alias grc='git rm --cached'
 alias ggn='git_add_origin_and_origin_push'
@@ -320,3 +320,7 @@ alias gdn='git diff --name-only'
 # Git Status
 alias gs='git status --short'
 alias gss='git show --word-diff=color' # See changes made
+
+# Useful
+alias findEmptyDirsAndFiles='find . -type f -exec bash -c 'if [ `cat "{}" |wc -w` -eq 0 ]; then echo "file - {}";fi' \; -or -empty -exec bash -c "echo dir - {}" \;'
+alias convertAllFilesToTabs='find . -name '*.md' ! -type d -exec bash -c 'expand -t 4 "$0" > /tmp/e && mv /tmp/e "$0"' {} \;'

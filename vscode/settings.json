@@ -202,7 +202,7 @@
   // latex
   "latex-workshop.message.update.show": false,
   // window
-  "window.zoomLevel": 1,
+  "window.zoomLevel": 0,
   "window.newWindowDimensions": "maximized",
   // workbench
   "workbench.statusBar.feedback.visible": false,

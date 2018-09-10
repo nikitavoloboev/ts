@@ -1,9 +1,12 @@
 # Temp
 b() {
-  cd "$@"
-  workflow-install -s workflow
-  cd ..
 }
+
+# TODO:
+# Pass in extension as argument
+# prettierFormat(){
+#   prettier --write "**/*.md"
+# }
 
 # Update nix-darwin configuration
 un(){
