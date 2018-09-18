@@ -25,11 +25,6 @@
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+r",
-    "command": "editor.action.previewDeclaration",
-    "when": "editorHasDefinitionProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
-  },
-  {
     "key": "ctrl+d",
     "command": "extension.dash.specific",
     "when": "editorTextFocus"
@@ -59,11 +54,6 @@
   {
     "key": "ctrl+t",
     "command": "workbench.action.terminal.focus"
-  },
-  {
-    "key": "ctrl+r",
-    "command": "editor.action.marker.next",
-    "when": "editorFocus && !editorReadonly"
   },
   {
     "key": "ctrl+w",
@@ -213,5 +203,27 @@
   {
     "key": "ctrl+l",
     "command": "bookmarks.jumpToNext"
+  },
+  {
+    "key": "ctrl+r",
+    "command": "workbench.action.toggleSidebarVisibility"
+  },
+  {
+    "key": "cmd+b",
+    "command": "-workbench.action.toggleSidebarVisibility"
+  },
+  {
+    "key": "ctrl+r",
+    "command": "-workbench.action.openRecent"
+  },
+  {
+    "key": "ctrl+r",
+    "command": "-workbench.action.quickOpenNavigateNextInRecentFilesPicker",
+    "when": "inQuickOpen && inRecentFilesPicker"
+  },
+  {
+    "key": "ctrl+r",
+    "command": "-extension.vim_ctrl+r",
+    "when": "editorTextFocus && vim.active && vim.use<C-r> && !inDebugRepl"
   },
 ]

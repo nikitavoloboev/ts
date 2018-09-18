@@ -48,7 +48,7 @@
 [branch]
 	autosetuprebase = always
 [push]
-	default = tracking
+	default = current
 [merge]
 	tool = nvimdiff
     conflictstyle = diff3

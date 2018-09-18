@@ -66,7 +66,7 @@
   "sync.askGistName": false,
   // fonts
   "editor.fontFamily": "Fira Code",
-  "terminal.integrated.fontSize": 10,
+  "terminal.integrated.fontSize": 13,
   "editor.fontLigatures": true,
   "editor.fontSize": 15,
   // vim
@@ -202,7 +202,7 @@
   // latex
   "latex-workshop.message.update.show": false,
   // window
-  "window.zoomLevel": 0,
+  "window.zoomLevel": -1,
   "window.newWindowDimensions": "maximized",
   // workbench
   "workbench.statusBar.feedback.visible": false,

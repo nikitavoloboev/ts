@@ -2,6 +2,19 @@
 b() {
 }
 
+# cd to root dir of git project
+gr() {
+  cd $(git rev-parse --show-toplevel)
+}
+
+findEmptyDirsAndFiles(){
+  find . -type f -exec bash -c 'if [ `cat "{}" |wc -w` -eq 0 ]; then echo "file - {}";fi' \; -or -empty -exec bash -c "echo dir - {}" \;
+}
+
+convertAllMDFilesToTabs(){
+ find . -name '*.md' ! -type d -exec bash -c 'expand -t 4 "$0" > /tmp/e && mv /tmp/e "$0"' {} \;
+}
+
 # TODO:
 # Pass in extension as argument
 # prettierFormat(){

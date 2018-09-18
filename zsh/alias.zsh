@@ -240,7 +240,7 @@ alias essh='nvim ~/.ssh/config' # ssh config
 alias ez='nvim ~/.zshrc'
 
 # cd places
-alias dw='cd ~/Documents/src/web'
+alias dw='cd ~/Documents/'
 alias dsh='cd ~/.ssh'
 alias dn='cd ~/Documents/src/clones'
 alias di='cd ~/Documents/src/ideas'
@@ -252,7 +252,6 @@ alias da='cd ~/Documents/src/'
 alias ds='cd ~/Documents/src/alfred'
 alias dla='cd ~/Documents/src/orgs/learn-anything'
 alias dz='cd ~/.dotfiles'
-alias dk='cd ~/Documents'
 alias de='cd ~/Desktop'
 alias dq='cd ~/Downloads'
 alias dls='cd ~/Library/Services'
@@ -274,7 +273,10 @@ alias gto='gittower'
 
 # Git
 alias gj='open `git config remote.origin.url`'
+alias ger='git checkout -' # Checkout last branch you were on
+alias grl='git reset --hard && git clean -df' # Reset to exact state as last commit
 alias grhf='git checkout HEAD --' # Git reset single file
+alias glo='git log --pretty=oneline --abbrev-commit --graph --decorate'
 alias gpm="git push origin master"
 alias gsp='git pull --rebase --autostash' # Git stash, pull and apply stash
 alias gu='git issues'
@@ -321,6 +323,3 @@ alias gdn='git diff --name-only'
 alias gs='git status --short'
 alias gss='git show --word-diff=color' # See changes made
 
-# Useful
-alias findEmptyDirsAndFiles='find . -type f -exec bash -c 'if [ `cat "{}" |wc -w` -eq 0 ]; then echo "file - {}";fi' \; -or -empty -exec bash -c "echo dir - {}" \;'
-alias convertAllFilesToTabs='find . -name '*.md' ! -type d -exec bash -c 'expand -t 4 "$0" > /tmp/e && mv /tmp/e "$0"' {} \;'

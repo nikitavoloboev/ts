@@ -2,9 +2,9 @@
 autoload -Uz compinit && compinit # TODO: ?
 # Matches case insensitive for lowercase
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
-compdef w=-redirect-,-default-,-default- # So I can autocomplete w <tab>
+compdef w=-redirect-,-default-,-default- # Gives w <tab> autocomplete
 
-IFS=$' \n\t' # 
+IFS=$' \n\t'
 
 # History
 HISTSIZE=10000 # Lines of history to keep in memory for current session
