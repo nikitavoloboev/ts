@@ -25,7 +25,7 @@
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+d",
+    "key": "ctrl+s",
     "command": "extension.dash.specific",
     "when": "editorTextFocus"
   },
@@ -38,7 +38,7 @@
     "command": "workbench.action.quickOpen"
   },
   {
-    "key": "shift+cmd+e",
+    "key": "ctrl+t",
     "command": "workbench.view.explorer"
   },
   {
@@ -52,8 +52,18 @@
     "when": "editorTextFocus && vim.active && vim.use<C-o> && !inDebugRepl"
   },
   {
-    "key": "ctrl+t",
-    "command": "workbench.action.terminal.focus"
+    "key": "ctrl+j",
+    "command": "workbench.action.terminal.focus",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+j",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "!terminalFocus"
+  },
+  {
+    "key": "ctrl+j",
+    "command": "workbench.action.terminal.toggleTerminal"
   },
   {
     "key": "ctrl+w",
@@ -66,7 +76,7 @@
     "when": "editorTextFocus && inDebugMode"
   },
   {
-    "key": "ctrl+i",
+    "key": "ctrl+k",
     "command": "editor.action.showHover",
     "when": "editorTextFocus"
   },
@@ -185,11 +195,11 @@
     "command": "newFile.createNewFile"
   },
   {
-    "key": "ctrl+j",
+    "key": "shift+cmd+j",
     "command": "workbench.action.previousEditor"
   },
   {
-    "key": "ctrl+k",
+    "key": "shift+cmd+k",
     "command": "workbench.action.nextEditor"
   },
   {
@@ -225,5 +235,36 @@
     "key": "ctrl+r",
     "command": "-extension.vim_ctrl+r",
     "when": "editorTextFocus && vim.active && vim.use<C-r> && !inDebugRepl"
+  },
+  {
+    "key": "ctrl+d",
+    "command": "editor.action.previewDeclaration",
+    "when": "editorHasDefinitionProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
+  },
+  {
+    "key": "alt+f12",
+    "command": "-editor.action.previewDeclaration",
+    "when": "editorHasDefinitionProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
+  },
+  {
+    "key": "ctrl+e",
+    "command": "workbench.action.navigateBack"
+  },
+  {
+    "key": "ctrl+-",
+    "command": "-workbench.action.navigateBack"
+  },
+  {
+    "key": "ctrl+`",
+    "command": "-workbench.action.terminal.toggleTerminal"
+  },
+  {
+    "key": "ctrl+o",
+    "command": "-lineBreakInsert",
+    "when": "textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+cmd+e",
+    "command": "-workbench.view.explorer"
   },
 ]

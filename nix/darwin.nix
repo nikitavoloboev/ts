@@ -6,6 +6,7 @@
   environment.systemPackages =
     [
       pkgs.vim
+      pkgs.postgresql
     ];
 
   # Auto upgrade nix package and the daemon service.

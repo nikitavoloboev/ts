@@ -11,4 +11,6 @@ export GOPATH="$(go env GOPATH)" # Go
 export PATH="$PATH:$GOPATH/bin" # Go
 export PATH=$PATH:~/.npm-global/bin # npm globally installed
 
+. ~/.nix-profile/etc/profile.d/nix.sh # Nix working
+
 typeset -U PATH # Remove duplicates in $PATH

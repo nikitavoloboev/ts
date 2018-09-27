@@ -1,0 +1,501 @@
+{:templates {:alfred "osascript -e 'tell application \"Alfred 3\" to run trigger \"%s\" in workflow \"%s\" with argument \"\"'"
+             :km "osascript -e 'tell application \"Keyboard Maestro Engine\" to do script \"%s\"'"}
+ :simlayers {:semicolon-mode {:key :semicolon}
+             :q-mode {:key :q}
+             :w-mode {:key :w}
+             :e-mode {:key :e}
+             :r-mode {:key :r}
+             :i-mode {:key :i}
+             :o-mode {:key :o}
+             :a-mode {:key :a}
+             :s-mode {:key :s}
+             :d-mode {:key :d}
+             :f-mode {:key :f}
+             :g-mode {:key :g}
+             :z-mode {:key :z}
+             :x-mode {:key :x}
+             :v-mode {:key :v}
+             :b-mode {:key :b}
+             :n-mode {:key :n}
+             :m-mode {:key :m}
+             :t-mode {:key :t}
+             :c-mode {:key :c}
+             :u-mode {:key :u}
+             :comma-mode {:key :comma}
+             :caps_lock-mode {:key :caps_lock}}
+ :main [{:des "colon (shift)"
+         :rules [:semicolon-mode
+                 [:q :!Sq]
+                 [:w :!Sw]
+                 [:e :!Se]
+                 [:r :!Sr]
+                 [:t :!St]
+                 [:y :!Sy]
+                 [:u :!Su]
+                 [:i :!Si]
+                 [:o :!So]
+                 [:p :!Sp]
+                 [:a :!Sa]
+                 [:s :!Ss]
+                 [:d :!Sd]
+                 [:f :!Sf]
+                 [:g :!Sg]
+                 [:h :!Sh]
+                 [:j :!Sj]
+                 [:k :!Sk]
+                 [:l :!Sl]
+                 [:z :!Sz]
+                 [:x :!Sx]
+                 [:c :!Sc]
+                 [:v :!Sv]
+                 [:b :!Sb]
+                 [:n :!Sn]
+                 [:m :!Sm]
+                 [:1 :!S1]
+                 [:2 :!S2]
+                 [:3 :!S3]
+                 [:4 :!S4]
+                 [:5 :!S5]
+                 [:6 :!S6]]}
+        {:des "swap keys"
+         :rules[[:#Psemicolon :!Ssemicolon]
+                [:!Ssemicolon :semicolon]]}
+        {:des "j"
+         :rules[[[:j :k] [:alfred "search google" "net.deanishe.alfred-searchio"]]
+                [[:j :semicolon] [:alfred "search tabs" "net.deanishe.alfred.safari"]]
+                [[:j :spacebar] [:km "Get current URL from Safari"]]
+                [[:j :l] :!Cspacebar]]}
+        {:des "k"
+         :rules[[[:k :l] [:alfred "search dash" "com.nikivi.own.dash"]]]}
+        {:des "q (cmd + shift)"
+         :rules[:q-mode
+                [:open_bracket :!CSopen_bracket]
+                [:close_bracket :!CSclose_bracket]
+                [:semicolon :!CSsemicolon]
+                [:quote :!CSquote]
+                [:comma :!CScomma]
+                [:period :!CSperiod]
+                [:slash :!CSslash]
+                [:a :!CSa]
+                [:b :!CSb]
+                [:c :!CSc]
+                [:d :!CSd]
+                [:e :!CSe]
+                [:f :!CSf]
+                [:g :!CSg]
+                [:h :!CSh]
+                [:i :!CSi]
+                [:j :!CSj]
+                [:k :!CSk]
+                [:l :!CSl]
+                [:m :!CSm]
+                [:n :!CSn]
+                [:o :!CSo]
+                [:p :!CSp]
+                [:r :!CSr]
+                [:s :!CSs]
+                [:t :!CSt]
+                [:u :!CSu]
+                [:v :!CSv]
+                [:w :!CSw]
+                [:x :!CSx]
+                [:y :!CSy]
+                [:z :!CSz]
+                [:1 :!CS1]
+                [:2 :!CS2]
+                [:3 :!CS3]
+                [:4 :!CS4]
+                [:5 :!CS5]
+                [:6 :!CS6]
+                [:7 :!CS7]
+                [:8 :!CS8]
+                [:9 :!CS9]
+                [:0 :!CS0]
+                [:spacebar :!TOSx]]}
+        {:des "w (apps)"
+         :rules[:w-mode
+                [:k [:km "open: Safari"]]
+                [:a [:km "open: Dash"]]
+                [:semicolon [:km "open: Xcode"]]
+                [:n [:km "open: Bee"]]
+                [:t [:km "open: Console"]]
+                [:comma [:km "open: Spotify"]]
+                [:caps_lock [:km "open: Finder"]]
+                [:m [:km "open: Tower"]]
+                [:b [:km "open: BetterTouchTool"]]
+                [:r [:km "open: Fantastical"]]
+                [:e [:km "open: Trello"]]
+                [:i [:km "open: Chrome"]]
+                [:g [:km "open: SnippetsLab"]]
+                [:f [:km "open: 2do"]]
+                [:j [:km "open: iTerm"]]
+                [:h [:km "open: Sublime Text"]]
+                [:l [:km "open: VS Code"]]
+                [:period [:km "open: Paw"]]
+                [:o [:km "open: Keyboard Maestro"]]]}
+        {:des "e (cmd)"
+         :rules[:e-mode
+                [:open_bracket :!Copen_bracket]
+                [:close_bracket :!Cclose_bracket]
+                [:semicolon :!Csemicolon]
+                [:quote :!Cquote]
+                [:comma :!Ccomma]
+                [:period :!Cperiod]
+                [:slash :!Cslash]
+                [:a :!Ca]
+                [:b :!Cb]
+                [:c :!Cc]
+                [:d :!Cd]
+                [:f :!Cf]
+                [:g :!Cg]
+                [:h :!Ch]
+                [:i :!Ci]
+                [:j :!Cj]
+                [:k :!Ck]
+                [:l :!Cl]
+                [:m :!Cm]
+                [:n :!Cn]
+                [:o :!Co]
+                [:p :!Cp]
+                [:q :!Cq]
+                [:r :!Cr]
+                [:s :!Cs]
+                [:t :!Ct]
+                [:u :!Cu]
+                [:v :!Cv]
+                [:w :!Cw]
+                [:x :!Cx]
+                [:y :!Cy]
+                [:z :!Cz]
+                [:1 :!C1]
+                [:2 :!C2]
+                [:3 :!C3]
+                [:4 :!C4]
+                [:5 :!C5]
+                [:6 :!C6]
+                [:7 :!C7]
+                [:8 :!C8]
+                [:9 :!C9]
+                [:0 :!C0]]}
+        {:des "r (apps)"
+         :rules[:r-mode
+                [:u [:km "open: Actual"]]
+                [:q [:km "open: IINA"]]
+                [:l [:km "open: Ulysses"]]
+                [:t [:km "open: Transmission"]]
+                [:p [:km "open: Paprika Recipe Manager"]]
+                [:b [:km "Edit keyboard shortcuts"]]
+                ;; [:m [:km "open: Marked"]]
+                [:a [:km "open: Alfred Preferences"]]
+                [:i [:km "open: Pixave"]]
+                [:e [:km "open: Reeder"]]
+                [:j [:km "open: Dictionary"]]
+                [:k [:km "open: PDF Expert"]]
+                [:w [:km "open: 1Password"]]
+                [:n [:km "open: Timing"]]
+                [:o [:km "open: Affinity Designer"]]]}
+        {:des "i (symbols)"
+         :rules[:i-mode
+                [:q :!Sopen_bracket]
+                [:t :quote]
+                [:r :!Squote]
+                [:d :backslash]
+                [:x :!Sbackslash]
+                [:e :!S3]
+                [:1 :!S1]
+                [:4 :!S8]
+                [:semicolon :semicolon]
+                [:2 :!S2]
+                [:f :hyphen]
+                [:s :!Shyphen]
+                [:j :!Sequal_sign]
+                [:w :!S9]
+                [:g :!S4]
+                [:o :open_bracket]
+                [:a :slash]
+                [:z :!Sslash]
+                [:c :!S7]
+                [:3 :!Sequal_sign]
+                [:v :!Scomma]]}
+        {:des "o (alfred)"
+         :rules[:o-mode
+                [:1 :!C1]
+                [:2 :!C2]
+                [:3 :!C3]
+                [:4 :!C4]
+                [:5 :!C5]
+                [:6 :!C6]
+                [:w :!CObackslash]
+                [:g [ :alfred "search snippets" "com.renfei.SnippetsLab.AlfredWorkflow"]]
+                [:grave_accent_and_tilde [:alfred "search processes" "com.vitorgalvao.alfred.processcontrol"]]
+                [:e [:km "Make 2Do task"]]
+                [:r [:km "Make 2Do task with Safari title as name"]]
+                [:q [:alfred "search downloads" "recentdownloads.ddjfreedom"]]
+                [:t [:km "2Do with current url as note (read)"]]
+                [:tab [:km "2Do with current url as note (check)"]]
+                [:h [:km "2Do with current url as note (watch)"]]
+                [:a [:alfred "search files" "nikivi.manage.wiki"]]
+                [:y [:alfred "search trash" "com.vitorgalvao.alfred.directories"]]
+                [:c [:alfred "search emoji" "com.github.jsumners.alfred-emoji"]]
+                [:i [:alfred "search tty sessions" "net.isometry.alfred.tty"]]
+                [:f [:alfred "search repos" "net.deanishe.alfred-git-repos"]]
+                [:n [:alfred "search lists" "nikivi.learn.anything"]]
+                [:m [:alfred "search lists" "nikivi.awesome.lists"]]
+                [:v [:alfred "search PDF files" "nikivi.search.files"]]
+                [:b [:alfred "switch dash profile" "nikivi.dash.profiles"]]
+                [:s [:alfred "search clones" "com.vitorgalvao.alfred.directories"]]
+                [:d [:alfred "search desktop" "com.vitorgalvao.alfred.directories"]]
+                [:j [:alfred "search km macros" "iansinnott.keyboardmaestro"]]
+                [:caps_lock [:alfred "search folders" "nikivi.search.folders"]]
+                [:z [:alfred "search workflows" "org.jeef.workflowdirectory"]]
+                [:k [:alfred "search menu bar" "com.tedwise.menubarsearch"]]]}
+        {:des "a (ctrl)"
+         :rules[:a-mode
+                [:spacebar :!CT9]
+                [:open_bracket :!Topen_bracket]
+                [:close_bracket :!Tclose_bracket]
+                [:semicolon :!Tsemicolon]
+                [:quote :!Tquote]
+                [:comma :!Tcomma]
+                [:period :!Tperiod]
+                [:slash :!Tslash]
+                [:b :!Tb]
+                [:c :!Tc]
+                [:d :!Td]
+                [:e :!Te]
+                [:f :!Tf]
+                [:g :!Tg]
+                [:h :!Th]
+                [:i :!Ti]
+                [:j :!Tj]
+                [:k :!Tk]
+                [:l :!Tl]
+                [:m :!Tm]
+                [:n :!Tn]
+                [:o :!To]
+                [:p :!Tp]
+                [:q :!Tq]
+                [:r :!Tr]
+                [:s :!Ts]
+                [:t :!Tt]
+                [:u :!Tu]
+                [:v :!Tv]
+                [:w :!Tw]
+                [:x :!Tx]
+                [:y :!Ty]
+                [:z :!Tz]
+                [:1 :!T1]
+                [:2 :!T2]
+                [:3 :!T3]
+                [:4 :!T4]
+                [:5 :!T5]
+                [:6 :!T6]
+                [:7 :!T7]
+                [:8 :!T8]
+                [:9 :!T9]
+                [:0 :!T0]]}
+        {:des "s (essential)"
+         :rules[:s-mode
+                [:e :tab]
+                [:r :!Stab]
+                [:i :!Tspacebar]
+                [:o :!CTO9]
+                [:a :!Cc]
+                [:d :delete_or_backspace]
+                [:f :return_or_enter]
+                [:c :!Cdelete_or_backspace]
+                [:g :!Ctab]
+                [:h :left_arrow]
+                [:j :down_arrow]
+                [:k :up_arrow]
+                [:l :right_arrow]
+                [:b :!Cleft_arrow]
+                [:n :!Cv]
+                [:m :!Cright_arrow]
+                [:semicolon [:km "Add selected text as todo"]]]}
+        {:des "d (mouse)"
+         :rules[:d-mode
+                ;; don't support mouse key yet
+                ;; [:j {:mkey {:vwheel 40}}]
+                ;; [:k {:mkey {:vwheel -40}}]]}
+                [:i :!Ckeypad_hyphen] ;Zoom in
+                [:o :!Ckeypad_plus] ;Zoom out
+                [:a :!TCO8]
+                [:period :!CTO3]]}
+        {:des "f (essential)"
+         :rules[:f-mode
+                [:e :!CO8]
+                [:semicolon [:km "map: Think"]]
+                [:a :!CTO4]
+                [:j [:km "Open 1st iTerm tab"]]
+                [:h [:km "Make markdown link from selection"]]
+                [:comma  [:km "Add safari link to selected markdown text"]]
+                [:k :return_or_enter]
+                [:z :!Ospacebar]
+                [:l :!Creturn_or_enter]
+                [:3 :!CTOp]
+                [:o :!Freturn_or_enter]
+                [:i :!Sreturn_or_enter]
+                [:n :!Treturn_or_enter]
+                [:m :!Oreturn_or_enter]]}
+        {:des "g (things)"
+         :rules[:g-mode
+                [:k :!COSf]
+                [:n :!CTOg]
+                [:q :!CO0]
+                [:w :!CSgrave_accent_and_tilde]
+                [:semicolon :!Cgrave_accent_and_tilde]
+                [:i [:km "New SnippetsLab snippet"]]
+                [:q :!COequal_sign]
+                [:m :!CTO2]
+                [:j :!COslash]
+                [:s [:km "Test"]]
+                [:l :!CSOd]
+                [:h :!CSOa]
+                [:o [:alfred "new task" "nikivi.todo.task"]]
+                [:z [:km "Dismiss notifications"]]]}
+        {:des "z (chat)"
+         :rules[:z-mode
+                [:i [:km "open: Tweetbot"]]
+                [:f [:km "open: Spark"]]
+                [:g [:alfred "search contacts" "nikivi.search.content"]]
+                [:e [:km "open: Telegram"]]
+                [:n [:km "Create new contact"]]
+                [:k [:km "open: Telegram"]]
+                [:o [:km "open: Slack"]]
+                [:j [:km "open: Textual"]]
+                [:semicolon [:km "w: Slack"]]
+                [:l [:km "open: Discord"]]]}
+        {:des "x (alfred)"
+         :rules[:x-mode
+                [:l [:alfred "search wiki" "nikivi.mind"]]]}
+        {:des "v (media)"
+         :rules[:v-mode
+                [:semicolon [:km "edit: Karabiner"]]
+                [:p [:km "Connect/disconnect AirPods"]]
+                [:e [:km "edit: vimrc"]]
+                [:r [:km "edit: darwin.nix"]]
+                [:j :mute]
+                [:a [:km "Noizio change"]]
+                [:s :!TS0] ; Torn on/off Noizio
+                [:i :display_brightness_decrement]
+                [:o :display_brightness_increment]
+                [:h :vk_consumer_previous]
+                [:l :vk_consumer_next]
+                [:k :vk_consumer_play]
+                [:n :volume_decrement]
+                [:m :volume_increment]]}
+        {:des "b (alfred)"
+         :rules[:b-mode
+                [:h [:alfred "search hn" "com.vitorgalvao.alfred.hackerboard"]]
+                [:j [:km "Clone repo to ~/src/clones"]]
+                [:o [:km "test: JavaScript"]]]}
+        {:des "n (alfred)"
+         :rules[:n-mode
+                [:1 :!O1]
+                [:2 :!O2]
+                [:3 :!O3]
+                [:4 :!O4]
+                [:5 :!O5]
+                [:6 :!O6]
+                [:e [:alfred "search subs" "net.deanishe.alfred-reddit"]]
+                [:r [:alfred "search reddit" "nikivi.search.the.web"]]
+                [:d [:alfred "search packages" "com.sindresorhus.npms"]]
+                [:x [:alfred "search lobsters" "nikivi.search.the.web"]]
+                [:a [:alfred "search shares" "nikivi.ask.create.share"]]
+                [:s [:alfred "search websites" "nikivi.web.searches"]]
+                [:f [:alfred "search repos" "me.lachlan.githubjump"]]
+                [:g [:alfred "search godoc" "nikivi.search.the.web"]]
+                [:w [:alfred "search github" "nikivi.search.the.web"]]
+                [:caps_lock [:alfred "search learn anything" "nikivi.learn.anything"]]]}
+        {:des "m (spotify)"
+         :rules[:m-mode
+                [:a :!CTO1]
+                [:s [:alfred "spot_mini" "com.vdesabou.spotify.mini.player"]]
+                [:z [:alfred "song_radio" "com.vdesabou.spotify.mini.player"]]
+                [:d [:alfred "show_current_track" "com.vdesabou.spotify.mini.player"]]
+                [:x [:alfred "web_search_current_track" "com.vdesabou.spotify.mini.player"]]
+                [:grave_accent_and_tilde [:alfred "copy_current_track_url_to_clipboard" "com.vdesabou.spotify.mini.player"]]
+                [:g [:alfred "add_current_track_to_alfred_playlist_or_your_music" "com.vdesabou.spotify.mini.player"]]
+                [:h [:alfred "remove_current_track_from" "com.vdesabou.spotify.mini.player"]]
+                [:caps_lock [:km "Send tweet with current URL"]]
+                [:f [:km "New tweet with current URL"]]]}
+        {:des "c"
+         :rules[:c-mode
+                [:m [:km "w: GitHub notifications"]]
+                [:n [:km "w: Medium"]]
+                [:j [:km "w: YouTube"]]
+                [:i [:km "w: regex101"]]
+                [:semicolon [:km "w: Stack Overflow"]]]}
+        {:des "t (handy actions)"
+         :rules[:t-mode
+                [:k [:km "Go to KM group of current app from picklist"]]
+                [:j [:km "Go to KM group of current app"]]
+                [:spacebar :!COSr]
+                [:s :!CTOx]
+                [:a [:alfred "trash desktop" "nikivi.clean.folders"]]]}
+        {:des "u (websites)"
+         :rules[:u-mode
+                [:e [:km "w: Repl"]]
+                [:d [:km "w: Codepen"]]
+                [:a [:km "w: Arxiv"]]
+                [:x [:km "w: Dropbox"]]
+                [:v [:km "w: Twitch"]]
+                [:r [:km "w: Google Drive"]]
+                [:h [:km "w: Khan Academy"]]
+                [:t [:km "w: GitHub trending"]]
+                [:z [:km "w: MDN"]]
+                [:y [:km "w: Netlify"]]
+                [:g [:km "w: Kaggle"]]
+                [:i [:km "w: WakaTime"]]
+                [:w [:km "w: AWS"]]
+                [:s [:km "w: NPM"]]]}
+        {:des "comma"
+         :rules[:comma-mode
+                [:a [:km "Google clipboard"]]
+                [:g [:km "Commit my wiki"]]]}
+        {:des "caps_lock"
+         :rules [:caps_lock-mode
+                 [:open_bracket :!TOopen_bracket]
+                 [:close_bracket :!TOclose_bracket]
+                 [:semicolon :!TOsemicolon]
+                 [:quote :!TOquote]
+                 [:comma :!TOcomma]
+                 [:period :!TOperiod]
+                 [:slash :!TOslash]
+                 [:a :!TOa]
+                 [:b :!TOb]
+                 [:c :!TOc]
+                 [:d :!TOd]
+                 [:e :!TOe]
+                 [:f :!TOf]
+                 [:g :!TOg]
+                 [:h :!TOh]
+                 [:i :!TOi]
+                 [:j :!TOj]
+                 [:k :!TOk]
+                 [:l :!TOl]
+                 [:m :!TOm]
+                 [:n :!TOn]
+                 [:o :!TOo]
+                 [:p :!TOp]
+                 [:q :!TOq]
+                 [:r :!TOr]
+                 [:s :!TOs]
+                 [:t :!TOt]
+                 [:u :!TOu]
+                 [:v :!TOv]
+                 [:w :!TOw]
+                 [:x :!TOx]
+                 [:y :!TOy]
+                 [:z :!TOz]
+                 [:1 :!TO1]
+                 [:2 :!TO2]
+                 [:3 :!TO3]
+                 [:4 :!TO4]
+                 [:5 :!TO5]
+                 [:6 :!TO6]
+                 [:7 :!TO7]
+                 [:8 :!TO8]
+                 [:9 :!TO9]
+                 [:0 :!TO0]]}]}

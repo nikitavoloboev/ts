@@ -207,7 +207,6 @@
   // workbench
   "workbench.statusBar.feedback.visible": false,
   "workbench.fontAliasing": "antialiased",
-  "workbench.panel.defaultLocation": "right",
   "workbench.activityBar.visible": false,
   "workbench.startupEditor": "newUntitledFile",
   "workbench.editor.showIcons": false,
