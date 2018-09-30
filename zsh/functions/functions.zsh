@@ -1,5 +1,8 @@
 # Temp
 b() {
+  git add .
+  git commit -m 'CC0 -> MIT'
+  git push
 }
 
 # cd to root dir of git project

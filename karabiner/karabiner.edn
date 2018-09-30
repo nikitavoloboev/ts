@@ -23,7 +23,7 @@
              :u-mode {:key :u}
              :comma-mode {:key :comma}
              :caps_lock-mode {:key :caps_lock}}
- :main [{:des "colon (shift)"
+ :main [{:des "colonkey (shift)"
          :rules [:semicolon-mode
                  [:q :!Sq]
                  [:w :!Sw]
@@ -51,12 +51,12 @@
                  [:b :!Sb]
                  [:n :!Sn]
                  [:m :!Sm]
-                 [:1 :!S1]
-                 [:2 :!S2]
-                 [:3 :!S3]
-                 [:4 :!S4]
-                 [:5 :!S5]
-                 [:6 :!S6]]}
+                 [:1 :!T1]
+                 [:2 :!T2]
+                 [:3 :!T3]
+                 [:4 :!T4]
+                 [:5 :!T5]
+                 [:6 :!T6]]}
         {:des "swap keys"
          :rules[[:#Psemicolon :!Ssemicolon]
                 [:!Ssemicolon :semicolon]]}
@@ -177,7 +177,7 @@
                 [:8 :!C8]
                 [:9 :!C9]
                 [:0 :!C0]]}
-        {:des "r (apps)"
+        {:des "rkey (apps)"
          :rules[:r-mode
                 [:u [:km "open: Actual"]]
                 [:q [:km "open: IINA"]]
@@ -194,7 +194,7 @@
                 [:w [:km "open: 1Password"]]
                 [:n [:km "open: Timing"]]
                 [:o [:km "open: Affinity Designer"]]]}
-        {:des "i (symbols)"
+        {:des "ikey (symbols)"
          :rules[:i-mode
                 [:q :!Sopen_bracket]
                 [:t :quote]

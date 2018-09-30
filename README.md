@@ -1,10 +1,10 @@
-# My configuration files for macOS [![Thanks](https://img.shields.io/badge/Say%20Thanks-💗-ff69b4.svg)](https://www.patreon.com/nikitavoloboev)
+# My configuration files for macOS [![Thanks](http://bit.ly/saythankss)](https://patreon.com/nikitavoloboev)
 
 > Zsh, Karabiner, VS Code, Sublime, Neovim, Nix, Hammerspoon
 
 <img src="https://i.imgur.com/5xI4eJO.jpg" width="600" alt="img">
 
-These are the various configuration files I use on macOS. I wrote about how you can customize your shell experience in an article [here](https://medium.com/@NikitaVoloboev/pretty-and-fast-shell-97ea870f2805).
+These are the various configuration files I use on macOS. I wrote about how you can customize your shell experience in an article [here](https://medium.com/@nikitavoloboev/pretty-and-fast-shell-97ea870f2805).
 
 You can also see my top used applications, Safari extensions and Alfred workflows I use [here](https://github.com/nikitavoloboev/my-mac-os#readme).
 
@@ -40,9 +40,9 @@ I go over how I use Karabiner in detail [here](https://wiki.nikitavoloboev.xyz/m
 
 ## Neovim
 
-The best text editing experience you will ever get. It is worth learning it as you will start thinking about text editing differently.
+[Vim language](https://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim/1220118#1220118) is the text editing experience you will ever get. It is worth learning it as you will start thinking about text editing differently.
 
-My Neovim config can be seen [here](nvim/init.vim). I use [Night Blue theme](https://github.com/nikitavoloboev/night-blue-vim) with [many plugins](https://wiki.nikitavoloboev.xyz/text-editors/vim/vim-plugins.html). Here is how it looks:
+My Neovim config can be seen [here](nvim/init.vim). I use [Night Blue theme](https://github.com/nikitavoloboev/night-blue-vim#readme) with [many plugins](https://wiki.nikitavoloboev.xyz/text-editors/vim/vim-plugins.html). Here is how it looks:
 
 ![](https://i.imgur.com/DR2E94n.png)
 
@@ -66,7 +66,7 @@ I don't use [Hammerspoon](http://www.hammerspoon.org/) as extensively however I 
 
 I am using [Zsh](http://www.zsh.org) as my shell and [Antibody](https://github.com/getantibody/antibody) to install all [my Zsh plugins](https://wiki.nikitavoloboev.xyz/unix/shell/zsh/zsh-plugins.html).
 
-I am also using [Night Blue theme](https://github.com/nikitavoloboev/my-mac-os/tree/master/iterm#readme) I made in Zsh. Here is how my prompt looks:
+I am also using [Night Blue theme](https://github.com/nikitavoloboev/my-mac-os/tree/master/iterm#readme) I made for iTerm. Here is how my prompt looks:
 
 ![](https://i.imgur.com/Emw7NAj.png)
 
@@ -108,7 +108,7 @@ And thus in one command I initialized and pushed the repo. To create a new repo 
 
 #### Commit all with generic `update` message
 
-I use this command often when I find no commit message is necessary.
+I use this command when I find no commit message is necessary.
 
 ```Bash
 ggs() {
@@ -156,10 +156,8 @@ These are dotfiles I got many ideas from and liked.
 
 [Suggestions](../../issues/) on how I can improve the structure of these dotfiles as well as suggesting new and awesome tools are welcome.
 
-## Thank you 💜
+## Thank you
 
 You can support me on [Patreon](https://www.patreon.com/nikitavoloboev) or look into [other projects](https://nikitavoloboev.xyz/projects) I shared.
 
-## License
-
-MIT © [Nikita Voloboev](https://www.nikitavoloboev.xyz)
+[![MIT](https://img.shields.io/badge/license-MIT-0a0a0a.svg?style=flat&colorA=0a0a0a)](LICENSE) [![Twitter](http://bit.ly/nikitweet)](https://twitter.com/nikitavoloboev)
