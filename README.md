@@ -36,7 +36,7 @@ I describe my custom configuration I use below. It is heavily tailored to my own
 
 The most exciting thing in here is probably how I utilize [Karabiner](https://pqrs.org/osx/karabiner/). It has absolutely transformed the way I interact with my computer and there is no going back now.
 
-I go over how I use Karabiner in detail [here](https://wiki.nikitavoloboev.xyz/macOS/apps/karabiner/karabiner.html). I generate my config for it [here](https://github.com/nikitavoloboev/karabiner-generator#readme).
+I go over how I use Karabiner in detail [here](https://wiki.nikitavoloboev.xyz/macOS/apps/karabiner/karabiner.html). I generate [my config](karabiner/karabiner.edn) for it with [Goku](https://github.com/yqrashawn/GokuRakuJoudo#readme).
 
 ## Neovim
 
