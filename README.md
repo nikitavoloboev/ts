@@ -40,7 +40,7 @@ I go over how I use Karabiner in detail [here](https://wiki.nikitavoloboev.xyz/m
 
 ## Neovim
 
-[Vim language](https://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim/1220118#1220118) is the text editing experience you will ever get. It is worth learning it as you will start thinking about text editing differently.
+[Vim language](https://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim/1220118#1220118) is the best text editing experience you will ever get. It is worth learning it as you will start thinking about text editing differently.
 
 My Neovim config can be seen [here](nvim/init.vim). I use [Night Blue theme](https://github.com/nikitavoloboev/night-blue-vim#readme) with [many plugins](https://wiki.nikitavoloboev.xyz/text-editors/vim/vim-plugins.html). Here is how it looks:
 

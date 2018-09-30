@@ -11,9 +11,9 @@ fi
 
 set +e
 
-# https://www.howtogeek.com/267463/how-to-enable-key-repeating-in-macos. Requires restart.
+# https://www.howtogeek.com/267463/how-to-enable-key-repeating-in-macos. 
 defaults write -g ApplePressAndHoldEnabled -bool false
-echo 'Fast key repeat'
+echo 'Fast key repeat. Requires restart.'
 
 defaults write -g NSAutomaticWindowAnimationsEnabled -bool false
 echo 'Fast opening and closing windows and popovers'
