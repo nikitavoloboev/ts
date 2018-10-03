@@ -6,6 +6,11 @@ gz(){
   git push
 }
 
+# cd to root dir of git project
+droot() {
+  cd $(git rev-parse --show-toplevel)
+}
+
 ge() {
   if [ $# -eq 0 ]; then
     local branches branch

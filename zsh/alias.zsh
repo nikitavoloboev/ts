@@ -237,6 +237,7 @@ alias ej='nvim package.json'
 # Edit configs
 alias ew='nvim ~/.dotfiles/nvim/init.vim' # nvimrc
 alias essh='nvim ~/.ssh/config' # ssh config
+alias ek='nvim ~/.dotfiles/karabiner/karabiner.edn'
 alias ez='nvim ~/.zshrc'
 
 # cd places
@@ -278,6 +279,7 @@ alias grl='git reset --hard && git clean -df' # Reset to exact state as last com
 alias grhf='git checkout HEAD --' # Git reset single file
 alias glo='git log --pretty=oneline --abbrev-commit --graph --decorate'
 alias gpm="git push origin master"
+alias gfk='git fetch && git reset --hard && git clean -dfx' # Reset repo to clean remote state
 alias gsp='git pull --rebase --autostash' # Git stash, pull and apply stash
 alias gu='git issues'
 alias gdp='git reset --hard HEAD~; git push --force-with-lease' # Delete previous commit locally and remote
@@ -287,6 +289,7 @@ alias gre='git rebase -i HEAD~4'
 alias gsh='git stash'
 alias gb='git checkout -b'
 alias grh='git reset --hard HEAD'
+alias gr='git reset --hard'
 alias grc='git rm --cached'
 alias ggn='git_add_origin_and_origin_push'
 # alias gt='git tag'

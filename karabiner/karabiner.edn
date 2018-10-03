@@ -1,10 +1,13 @@
 {:templates {:alfred "osascript -e 'tell application \"Alfred 3\" to run trigger \"%s\" in workflow \"%s\" with argument \"\"'"
              :km "osascript -e 'tell application \"Keyboard Maestro Engine\" to do script \"%s\"'"}
  :simlayers {:semicolon-mode {:key :semicolon}
+             :2-mode {:key :2}
              :q-mode {:key :q}
              :w-mode {:key :w}
              :e-mode {:key :e}
              :r-mode {:key :r}
+             :t-mode {:key :t}
+             :u-mode {:key :u}
              :i-mode {:key :i}
              :o-mode {:key :o}
              :a-mode {:key :a}
@@ -14,16 +17,15 @@
              :g-mode {:key :g}
              :z-mode {:key :z}
              :x-mode {:key :x}
+             :c-mode {:key :c}
              :v-mode {:key :v}
              :b-mode {:key :b}
              :n-mode {:key :n}
              :m-mode {:key :m}
-             :t-mode {:key :t}
-             :c-mode {:key :c}
-             :u-mode {:key :u}
              :comma-mode {:key :comma}
              :caps_lock-mode {:key :caps_lock}}
- :main [{:des "colonkey (shift)"
+ :main [
+        {:des "colonkey (shift)"
          :rules [:semicolon-mode
                  [:q :!Sq]
                  [:w :!Sw]
@@ -57,17 +59,20 @@
                  [:4 :!T4]
                  [:5 :!T5]
                  [:6 :!T6]]}
+        {:des "2key (move)"
+         :rules [:2-mode
+                 [:j :!Cdown_arrow]
         {:des "swap keys"
          :rules[[:#Psemicolon :!Ssemicolon]
                 [:!Ssemicolon :semicolon]]}
-        {:des "j"
+        {:des "j sim"
          :rules[[[:j :k] [:alfred "search google" "net.deanishe.alfred-searchio"]]
                 [[:j :semicolon] [:alfred "search tabs" "net.deanishe.alfred.safari"]]
                 [[:j :spacebar] [:km "Get current URL from Safari"]]
                 [[:j :l] :!Cspacebar]]}
-        {:des "k"
+        {:des "k sim"
          :rules[[[:k :l] [:alfred "search dash" "com.nikivi.own.dash"]]]}
-        {:des "q (cmd + shift)"
+        {:des "qkey (cmd + shift)"
          :rules[:q-mode
                 [:open_bracket :!CSopen_bracket]
                 [:close_bracket :!CSclose_bracket]
@@ -112,28 +117,28 @@
                 [:9 :!CS9]
                 [:0 :!CS0]
                 [:spacebar :!TOSx]]}
-        {:des "w (apps)"
+        {:des "wkey (apps)"
          :rules[:w-mode
                 [:k [:km "open: Safari"]]
-                [:a [:km "open: Dash"]]
-                [:semicolon [:km "open: Xcode"]]
-                [:n [:km "open: Bee"]]
-                [:t [:km "open: Console"]]
+                [:a [:km "open: Console"]]
+                [:n [:km "open: Xcode"]]
+                [:g [:km "open: Bee"]]
+                [:t [:km "open: Trello"]]
                 [:comma [:km "open: Spotify"]]
                 [:caps_lock [:km "open: Finder"]]
                 [:m [:km "open: Tower"]]
                 [:b [:km "open: BetterTouchTool"]]
                 [:r [:km "open: Fantastical"]]
-                [:e [:km "open: Trello"]]
+                [:e [:km "open: Dash"]]
                 [:i [:km "open: Chrome"]]
-                [:g [:km "open: SnippetsLab"]]
+                [:u [:km "open: SnippetsLab"]]
                 [:f [:km "open: 2do"]]
                 [:j [:km "open: iTerm"]]
                 [:h [:km "open: Sublime Text"]]
                 [:l [:km "open: VS Code"]]
                 [:period [:km "open: Paw"]]
                 [:o [:km "open: Keyboard Maestro"]]]}
-        {:des "e (cmd)"
+        {:des "ekey (cmd)"
          :rules[:e-mode
                 [:open_bracket :!Copen_bracket]
                 [:close_bracket :!Cclose_bracket]
@@ -185,7 +190,7 @@
                 [:t [:km "open: Transmission"]]
                 [:p [:km "open: Paprika Recipe Manager"]]
                 [:b [:km "Edit keyboard shortcuts"]]
-                ;; [:m [:km "open: Marked"]]
+                [:m [:km "open: Postico"]]
                 [:a [:km "open: Alfred Preferences"]]
                 [:i [:km "open: Pixave"]]
                 [:e [:km "open: Reeder"]]
@@ -201,6 +206,7 @@
                 [:r :!Squote]
                 [:d :backslash]
                 [:x :!Sbackslash]
+                [:caps_lock [:km "Match symbols"]]
                 [:e :!S3]
                 [:1 :!S1]
                 [:4 :!S8]
@@ -208,7 +214,7 @@
                 [:2 :!S2]
                 [:f :hyphen]
                 [:s :!Shyphen]
-                [:j :!Sequal_sign]
+                [:j :equal_sign]
                 [:w :!S9]
                 [:g :!S4]
                 [:o :open_bracket]
@@ -217,7 +223,7 @@
                 [:c :!S7]
                 [:3 :!Sequal_sign]
                 [:v :!Scomma]]}
-        {:des "o (alfred)"
+        {:des "okey (alfred)"
          :rules[:o-mode
                 [:1 :!C1]
                 [:2 :!C2]
@@ -249,7 +255,7 @@
                 [:caps_lock [:alfred "search folders" "nikivi.search.folders"]]
                 [:z [:alfred "search workflows" "org.jeef.workflowdirectory"]]
                 [:k [:alfred "search menu bar" "com.tedwise.menubarsearch"]]]}
-        {:des "a (ctrl)"
+        {:des "akey (ctrl)"
          :rules[:a-mode
                 [:spacebar :!CT9]
                 [:open_bracket :!Topen_bracket]
@@ -294,7 +300,7 @@
                 [:8 :!T8]
                 [:9 :!T9]
                 [:0 :!T0]]}
-        {:des "s (essential)"
+        {:des "skey (essential)"
          :rules[:s-mode
                 [:e :tab]
                 [:r :!Stab]
@@ -313,7 +319,7 @@
                 [:n :!Cv]
                 [:m :!Cright_arrow]
                 [:semicolon [:km "Add selected text as todo"]]]}
-        {:des "d (mouse)"
+        {:des "dkey (mouse)"
          :rules[:d-mode
                 ;; don't support mouse key yet
                 ;; [:j {:mkey {:vwheel 40}}]
@@ -322,10 +328,10 @@
                 [:o :!Ckeypad_plus] ;Zoom out
                 [:a :!TCO8]
                 [:period :!CTO3]]}
-        {:des "f (essential)"
+        {:des "fkey (essential)"
          :rules[:f-mode
                 [:e :!CO8]
-                [:semicolon [:km "map: Think"]]
+                [:semicolon [:km "edit: Think"]]
                 [:a :!CTO4]
                 [:j [:km "Open 1st iTerm tab"]]
                 [:h [:km "Make markdown link from selection"]]
@@ -338,7 +344,7 @@
                 [:i :!Sreturn_or_enter]
                 [:n :!Treturn_or_enter]
                 [:m :!Oreturn_or_enter]]}
-        {:des "g (things)"
+        {:des "gkey (things)"
          :rules[:g-mode
                 [:k :!COSf]
                 [:n :!CTOg]
@@ -354,7 +360,7 @@
                 [:h :!CSOa]
                 [:o [:alfred "new task" "nikivi.todo.task"]]
                 [:z [:km "Dismiss notifications"]]]}
-        {:des "z (chat)"
+        {:des "zkey (chat)"
          :rules[:z-mode
                 [:i [:km "open: Tweetbot"]]
                 [:f [:km "open: Spark"]]
@@ -366,10 +372,10 @@
                 [:j [:km "open: Textual"]]
                 [:semicolon [:km "w: Slack"]]
                 [:l [:km "open: Discord"]]]}
-        {:des "x (alfred)"
+        {:des "xkey (alfred)"
          :rules[:x-mode
                 [:l [:alfred "search wiki" "nikivi.mind"]]]}
-        {:des "v (media)"
+        {:des "vkey (media)"
          :rules[:v-mode
                 [:semicolon [:km "edit: Karabiner"]]
                 [:p [:km "Connect/disconnect AirPods"]]
@@ -385,12 +391,12 @@
                 [:k :vk_consumer_play]
                 [:n :volume_decrement]
                 [:m :volume_increment]]}
-        {:des "b (alfred)"
+        {:des "bkey (alfred)"
          :rules[:b-mode
                 [:h [:alfred "search hn" "com.vitorgalvao.alfred.hackerboard"]]
-                [:j [:km "Clone repo to ~/src/clones"]]
+                [:j [:km "Clone repo to ~/clones"]]
                 [:o [:km "test: JavaScript"]]]}
-        {:des "n (alfred)"
+        {:des "nkey (alfred)"
          :rules[:n-mode
                 [:1 :!O1]
                 [:2 :!O2]
@@ -408,7 +414,7 @@
                 [:g [:alfred "search godoc" "nikivi.search.the.web"]]
                 [:w [:alfred "search github" "nikivi.search.the.web"]]
                 [:caps_lock [:alfred "search learn anything" "nikivi.learn.anything"]]]}
-        {:des "m (spotify)"
+        {:des "mkey (spotify)"
          :rules[:m-mode
                 [:a :!CTO1]
                 [:s [:alfred "spot_mini" "com.vdesabou.spotify.mini.player"]]
@@ -420,21 +426,23 @@
                 [:h [:alfred "remove_current_track_from" "com.vdesabou.spotify.mini.player"]]
                 [:caps_lock [:km "Send tweet with current URL"]]
                 [:f [:km "New tweet with current URL"]]]}
-        {:des "c"
+        {:des "ckey (websites)"
          :rules[:c-mode
                 [:m [:km "w: GitHub notifications"]]
+                [:k [:km "w: GitHub"]]
                 [:n [:km "w: Medium"]]
                 [:j [:km "w: YouTube"]]
+                [:l [:km "w: CodeSandbox"]]
                 [:i [:km "w: regex101"]]
                 [:semicolon [:km "w: Stack Overflow"]]]}
-        {:des "t (handy actions)"
+        {:des "tkey (handy actions)"
          :rules[:t-mode
                 [:k [:km "Go to KM group of current app from picklist"]]
                 [:j [:km "Go to KM group of current app"]]
                 [:spacebar :!COSr]
                 [:s :!CTOx]
                 [:a [:alfred "trash desktop" "nikivi.clean.folders"]]]}
-        {:des "u (websites)"
+        {:des "ukey (websites)"
          :rules[:u-mode
                 [:e [:km "w: Repl"]]
                 [:d [:km "w: Codepen"]]
@@ -450,11 +458,11 @@
                 [:i [:km "w: WakaTime"]]
                 [:w [:km "w: AWS"]]
                 [:s [:km "w: NPM"]]]}
-        {:des "comma"
+        {:des "commakey"
          :rules[:comma-mode
                 [:a [:km "Google clipboard"]]
                 [:g [:km "Commit my wiki"]]]}
-        {:des "caps_lock"
+        {:des "capskey"
          :rules [:caps_lock-mode
                  [:open_bracket :!TOopen_bracket]
                  [:close_bracket :!TOclose_bracket]
