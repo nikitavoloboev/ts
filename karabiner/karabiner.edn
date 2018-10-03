@@ -62,6 +62,9 @@
         {:des "2key (move)"
          :rules [:2-mode
                  [:j :!Cdown_arrow]
+                 [:k :!Cup_arrow]
+                 [:l :!Cright_arrow]
+                 [:h :!Cleft_arrow]]}
         {:des "swap keys"
          :rules[[:#Psemicolon :!Ssemicolon]
                 [:!Ssemicolon :semicolon]]}
