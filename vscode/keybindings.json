@@ -211,10 +211,6 @@
     "command": "bookmarks.toggle"
   },
   {
-    "key": "ctrl+l",
-    "command": "bookmarks.jumpToNext"
-  },
-  {
     "key": "ctrl+r",
     "command": "workbench.action.toggleSidebarVisibility"
   },
@@ -237,7 +233,7 @@
     "when": "editorTextFocus && vim.active && vim.use<C-r> && !inDebugRepl"
   },
   {
-    "key": "ctrl+d",
+    "key": "ctrl+l",
     "command": "editor.action.previewDeclaration",
     "when": "editorHasDefinitionProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
   },

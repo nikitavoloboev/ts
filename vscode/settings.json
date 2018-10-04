@@ -202,7 +202,8 @@
   // latex
   "latex-workshop.message.update.show": false,
   // window
-  "window.zoomLevel": -2,
+  "window.zoomLevel": -1,
+  "window.title": "${activeEditorLong}",
   "window.newWindowDimensions": "maximized",
   // workbench
   "workbench.statusBar.feedback.visible": false,
@@ -246,5 +247,6 @@
   "sync.syncExtensions": true,
   // extensions
   "extensions.autoUpdate": true,
-  "editor.multiCursorModifier": "alt"
+  "editor.multiCursorModifier": "alt",
+  "workbench.tree.horizontalScrolling": true
 }
