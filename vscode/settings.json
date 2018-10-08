@@ -1,7 +1,8 @@
 {
   // color theme
   "workbench.colorCustomizations": {
-    "tab.inactiveBackground": "#18222D"
+    "tab.inactiveBackground": "#18222D",
+    "peekViewEditor.background": "#16222E"
   },
   // editor
   "editor.hideCursorInOverviewRuler": true,
@@ -202,8 +203,9 @@
   // latex
   "latex-workshop.message.update.show": false,
   // window
-  "window.zoomLevel": -1,
-  "window.title": "${activeEditorLong}",
+  "window.zoomLevel": 0,
+  // "window.title": "${activeEditorShort}",
+  "window.title": "${activeEditorMedium}",
   "window.newWindowDimensions": "maximized",
   // workbench
   "workbench.statusBar.feedback.visible": false,
@@ -211,7 +213,7 @@
   "workbench.activityBar.visible": false,
   "workbench.startupEditor": "newUntitledFile",
   "workbench.editor.showIcons": false,
-  "workbench.colorTheme": "Night Blue",
+  "workbench.colorTheme": "Monokai Night",
   // TODO: maybe not need?
   // typescript
   "typescript.check.npmIsInstalled": false,

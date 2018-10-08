@@ -2,6 +2,7 @@
              :km "osascript -e 'tell application \"Keyboard Maestro Engine\" to do script \"%s\"'"}
  :simlayers {:semicolon-mode {:key :semicolon}
              :2-mode {:key :2}
+             :3-mode {:key :3}
              :q-mode {:key :q}
              :w-mode {:key :w}
              :e-mode {:key :e}
@@ -65,17 +66,23 @@
                  [:k :!Cup_arrow]
                  [:l :!Cright_arrow]
                  [:h :!Cleft_arrow]]}
+        {:des "3key (test)"
+         :rules [:3-mode
+                 [:j [:km "test: JavaScript"]]]}
         {:des "swap keys"
          :rules[[:#Psemicolon :!Ssemicolon]
                 [:!Ssemicolon :semicolon]]}
-        {:des "j sim"
+        {:des "jsim"
          :rules[[[:j :k] [:alfred "search google" "net.deanishe.alfred-searchio"]]
                 [[:j :semicolon] [:alfred "search tabs" "net.deanishe.alfred.safari"]]
                 [[:j :spacebar] [:km "Get current URL from Safari"]]
                 [[:j :l] :!Cspacebar]]}
-        {:des "k sim"
-         :rules [[[:k :l] [:alfred "search dash" "com.nikivi.own.dash"]]
-         [[:k :m] [:alfred "search google lucky" "net.deanishe.alfred-searchio"]]]}
+        {:des "ksim"
+         :rules [
+                 [[:k :l] [:alfred "search dash" "com.nikivi.own.dash"]]
+                 [[:k :m] [:alfred "search google lucky" "net.deanishe.alfred-searchio"]]
+                 [[:k :n] [:alfred "search history" "net.deanishe.alfred.safari"]]
+                 ]}
         {:des "qkey (cmd + shift)"
          :rules[:q-mode
                 [:open_bracket :!CSopen_bracket]
@@ -128,12 +135,13 @@
                 [:n [:km "open: Xcode"]]
                 [:g [:km "open: Bee"]]
                 [:t [:km "open: Trello"]]
+                ;[:space :!CSO7]
                 [:comma [:km "open: Spotify"]]
                 [:caps_lock [:km "open: Finder"]]
                 [:m [:km "open: Tower"]]
                 [:b [:km "open: BetterTouchTool"]]
                 [:r [:km "open: Fantastical"]]
-                [:e [:km "open: Dash"]]
+                [:e :!OSC1] ; Search Dash
                 [:i [:km "open: Chrome"]]
                 [:u [:km "open: SnippetsLab"]]
                 [:f [:km "open: 2do"]]
@@ -226,6 +234,7 @@
                 [:z :!Sslash]
                 [:c :!S7]
                 [:3 :!Sequal_sign]
+                [:5 :!S5]
                 [:v :!Scomma]]}
         {:des "okey (alfred)"
          :rules[:o-mode
@@ -343,7 +352,8 @@
                 [:k :return_or_enter]
                 [:z :!Ospacebar]
                 [:l :!Creturn_or_enter]
-                [:3 :!CTOp]
+                [:3 :!CTOp] ; Sip color picker 
+                [:2 :!COclose_bracket] ; PixelSNap
                 [:o :!Freturn_or_enter]
                 [:i :!Sreturn_or_enter]
                 [:n :!Treturn_or_enter]

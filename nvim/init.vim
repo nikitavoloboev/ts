@@ -6,7 +6,7 @@ endfunction
 " Install plugins
 call plug#begin()
 " Looks
-Plug 'nikitavoloboev/vim-night-blue' " Theme
+Plug 'nikitavoloboev/vim-monokai-night' " Theme
 Plug 'itchyny/lightline.vim' " Light and configurable statusline/tabline plugin.
 
 " Utility
@@ -139,7 +139,7 @@ let g:qs_highlight_on_keys = ['f', 'F', 't', 'T'] " Trigger a highlight in the a
 let g:incsearch#auto_nohlsearch = 1 " TODO
 
 " Theme
-colorscheme night-blue
+colorscheme monokai-night
 
 " Bufferline
 let g:bufferline_echo = 0

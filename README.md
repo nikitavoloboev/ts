@@ -42,9 +42,9 @@ I go over how I use Karabiner in detail [here](https://wiki.nikitavoloboev.xyz/m
 
 [Vim language](https://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim/1220118#1220118) is the best text editing experience you will ever get. It is worth learning it as you will start thinking about text editing differently.
 
-My Neovim config can be seen [here](nvim/init.vim). I use [Night Blue theme](https://github.com/nikitavoloboev/night-blue-vim#readme) with [many plugins](https://wiki.nikitavoloboev.xyz/text-editors/vim/vim-plugins.html). Here is how it looks:
+My Neovim config can be seen [here](nvim/init.vim). I use [Monokai Night theme](https://github.com/nikitavoloboev/night-blue-vim#readme) with [many plugins](https://wiki.nikitavoloboev.xyz/text-editors/vim/vim-plugins.html). Here is how it looks:
 
-![](https://i.imgur.com/DR2E94n.png)
+![](https://i.imgur.com/sLXBvv7.png)
 
 ## VS Code
 
@@ -66,9 +66,9 @@ I don't use [Hammerspoon](http://www.hammerspoon.org/) as extensively however I 
 
 I am using [Zsh](http://www.zsh.org) as my shell and [Antibody](https://github.com/getantibody/antibody) to install all [my Zsh plugins](https://wiki.nikitavoloboev.xyz/unix/shell/zsh/zsh-plugins.html).
 
-I am also using [Night Blue theme](https://github.com/nikitavoloboev/my-mac-os/tree/master/iterm#readme) I made for iTerm. Here is how my prompt looks:
+I am also using [Monokai Night theme](https://github.com/nikitavoloboev/my-mac-os/tree/master/iterm#readme) I made for iTerm. Here is how my prompt looks:
 
-![](https://i.imgur.com/Emw7NAj.png)
+![](https://i.imgur.com/SQbqPLN.png)
 
 ### Aliases and functions
 

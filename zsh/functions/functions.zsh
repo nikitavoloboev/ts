@@ -1,7 +1,7 @@
 # Temp
 b() {
-  git add .
-  git commit -m 'CC0 -> MIT'
+  git add LICENSE
+  git commit -m 'license: update'
   git push
 }
 
