@@ -1,9 +1,4 @@
 {
-  // color theme
-  "workbench.colorCustomizations": {
-    "tab.inactiveBackground": "#18222D",
-    "peekViewEditor.background": "#16222E"
-  },
   // editor
   "editor.hideCursorInOverviewRuler": true,
   "editor.lineHeight": 26,
