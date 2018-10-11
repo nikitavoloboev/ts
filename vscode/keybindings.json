@@ -25,11 +25,6 @@
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+s",
-    "command": "extension.dash.specific",
-    "when": "editorTextFocus"
-  },
-  {
     "key": "cmd+k",
     "command": "workbench.action.showCommands"
   },
@@ -263,4 +258,34 @@
     "key": "shift+cmd+e",
     "command": "-workbench.view.explorer"
   },
+  {
+    "key": "ctrl+n",
+    "command": "bookmarks.jumpToNext",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+cmd+l",
+    "command": "-bookmarks.jumpToNext",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+h",
+    "command": "-extension.dash.specific",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+h",
+    "command": "-extension.dash.emptySyntax",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+d",
+    "command": "extension.dash.all",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+alt+h",
+    "command": "-extension.dash.all",
+    "when": "editorTextFocus"
+  }
 ]

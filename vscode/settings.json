@@ -1,45 +1,80 @@
 {
+  // looks
+  "workbench.colorCustomizations": {
+    "editor.lineHighlightBackground": "#212121"
+  },
   // editor
+  "editor.renderLineHighlight": "line",
   "editor.hideCursorInOverviewRuler": true,
+  "editor.scrollBeyondLastLine": false,
   "editor.lineHeight": 26,
   "editor.matchBrackets": false,
   "editor.occurrencesHighlight": false,
+  "editor.multiCursorModifier": "alt",
   "editor.overviewRulerBorder": false,
-  "editor.renderIndentGuides": false,
-  "editor.renderLineHighlight": "none",
+  "editor.overviewRulerLanes": 0,
+  "editor.renderIndentGuides": true,
   "editor.folding": false,
   "editor.snippetSuggestions": "top",
+  "editor.lightbulb.enabled": false,
   "editor.minimap.enabled": false,
   "editor.cursorBlinking": "solid",
+  "editor.tabSize": 2,
   "editor.lineNumbers": "on",
   "editor.cursorStyle": "line",
+  // workbench
+  "workbench.tree.horizontalScrolling": true,
+  "workbench.statusBar.feedback.visible": false,
+  "workbench.fontAliasing": "antialiased",
+  "workbench.activityBar.visible": false,
+  "workbench.startupEditor": "none",
+  "workbench.settings.editor": "json",
+  "workbench.editor.showIcons": false,
+  "workbench.editor.enablePreview": false,
+  "workbench.settings.enableNaturalLanguageSearch": false,
+  "workbench.colorTheme": "Monokai Night",
+  // window
+  "window.zoomLevel": 0,
+  "window.restoreWindows": "all",
+  "window.title": "${activeEditorMedium}${separator}${rootName}",
+  "window.newWindowDimensions": "maximized",
+  // debug
+  "debug.openDebug": "neverOpen",
+  "debug.showInStatusBar": "never",
+  "debug.toolBarLocation": "hidden",
+  // fonts
+  "editor.fontFamily": "Fira Code",
+  "terminal.integrated.fontSize": 13,
+  "editor.fontLigatures": true,
+  "editor.fontSize": 15,
   // new file
   "newFile.defaultFileExtension": ".go",
   "newFile.showPathRelativeTo": "project",
   // search
   "search.smartCase": true,
+  "search.exclude": {
+    "dist": true,
+    "out": true,
+    "coverage": true
+  },
   // terminal
   "terminal.integrated.copyOnSelection": true,
   "eslint.packageManager": "npm",
   // files
   "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
   "files.exclude": {
     "**/.git": true,
-    "**/.svn": true,
-    "**/.hg": true,
-    "**/CVS": true,
     "**/.DS_Store": true,
     "vendor": true,
-    "package-lock.json": true
+    "package-lock.json": true,
+    "**/node_modules": true,
+    "**/npm-debug.log": true,
   },
-  // dash
-  "dash.docset.go": [
-    "go",
-    "godoc"
-  ],
   // explorer
   "explorer.openEditors.visible": 0,
   "explorer.confirmDragAndDrop": false,
+  "explorer.decorations.badges": false,
   // python
   "python.linting.pylintArgs": [
     "--errors-only"
@@ -60,17 +95,9 @@
   "sync.forceDownload": false,
   "sync.quietSync": false,
   "sync.askGistName": false,
-  // fonts
-  "editor.fontFamily": "Fira Code",
-  "terminal.integrated.fontSize": 13,
-  "editor.fontLigatures": true,
-  "editor.fontSize": 15,
   // vim
   "vim.leader": " ",
-  "vim.cursorStylePerMode": {
-    "normal": "underline",
-    "commandlineinprogress": "underline"
-  },
+  "vim.cursorStylePerMode.normal": "underline",
   "vim.useSystemClipboard": true,
   "vim.easymotion": true,
   "vim.easymotionMarkerBackgroundColor": "red",
@@ -197,18 +224,6 @@
   "python.linting.enabled": false,
   // latex
   "latex-workshop.message.update.show": false,
-  // window
-  "window.zoomLevel": 0,
-  // "window.title": "${activeEditorShort}",
-  "window.title": "${activeEditorMedium}",
-  "window.newWindowDimensions": "maximized",
-  // workbench
-  "workbench.statusBar.feedback.visible": false,
-  "workbench.fontAliasing": "antialiased",
-  "workbench.activityBar.visible": false,
-  "workbench.startupEditor": "newUntitledFile",
-  "workbench.editor.showIcons": false,
-  "workbench.colorTheme": "Monokai Night",
   // TODO: maybe not need?
   // typescript
   "typescript.check.npmIsInstalled": false,
@@ -217,7 +232,19 @@
   "javascript.updateImportsOnFileMove.enabled": "never",
   // git
   "git.autofetch": true,
+  "git.confirmSync": false,
+  "git.ignoreLimitWarning": true,
   "git.enableSmartCommit": true,
+  "git.ignoreMissingGitWarning": true,
+  // gitlens
+  "gitlens.codeLens.enabled": false,
+  "gitlens.settings.mode": "advanced",
+  "gitlens.historyExplorer.enabled": true,
+  "gitlens.keymap": "chorded",
+  "gitlens.codeLens.scopes": [
+    "containers",
+    "document"
+  ],
   "gitlens.advanced.messages": {
     "suppressCommitHasNoPreviousCommitWarning": false,
     "suppressCommitNotFoundWarning": false,
@@ -230,20 +257,10 @@
     "suppressUpdateNotice": true,
     "suppressWelcomeNotice": false
   },
-  // gitlens
-  "gitlens.codeLens.enabled": false,
-  "gitlens.settings.mode": "advanced",
-  "gitlens.historyExplorer.enabled": true,
-  "gitlens.keymap": "chorded",
-  "gitlens.codeLens.scopes": [
-    "containers",
-    "document"
-  ],
   // sync settings & extensions
   "sync.removeExtensions": true,
   "sync.syncExtensions": true,
   // extensions
-  "extensions.autoUpdate": true,
-  "editor.multiCursorModifier": "alt",
-  "workbench.tree.horizontalScrolling": true
+  "extensions.ignoreRecommendations": true,
+  "extensions.showRecommendationsOnlyOnDemand": true,
 }

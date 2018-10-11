@@ -1,6 +1,7 @@
 {:templates {:alfred "osascript -e 'tell application \"Alfred 3\" to run trigger \"%s\" in workflow \"%s\" with argument \"\"'"
              :km "osascript -e 'tell application \"Keyboard Maestro Engine\" to do script \"%s\"'"}
- :simlayers {:semicolon-mode {:key :semicolon}
+ :simlayers {
+             :semicolon-mode {:key :semicolon}
              :2-mode {:key :2}
              :3-mode {:key :3}
              :q-mode {:key :q}
@@ -24,7 +25,8 @@
              :n-mode {:key :n}
              :m-mode {:key :m}
              :comma-mode {:key :comma}
-             :caps_lock-mode {:key :caps_lock}}
+             :caps_lock-mode {:key :caps_lock}
+             :js-mode {:key :period}}
  :main [
         {:des "colonkey (shift)"
          :rules [:semicolon-mode
@@ -82,6 +84,10 @@
                  [[:k :l] [:alfred "search dash" "com.nikivi.own.dash"]]
                  [[:k :m] [:alfred "search google lucky" "net.deanishe.alfred-searchio"]]
                  [[:k :n] [:alfred "search history" "net.deanishe.alfred.safari"]]
+                 ]}
+        {:des "lsim"
+         :rules [
+                 [[:l :m] [:alfred "search bookmarks" "net.deanishe.alfred.safari"]]
                  ]}
         {:des "qkey (cmd + shift)"
          :rules[:q-mode
@@ -145,10 +151,10 @@
                 [:i [:km "open: Chrome"]]
                 [:u [:km "open: SnippetsLab"]]
                 [:f [:km "open: 2do"]]
+                [:v [:km "open: MindNode"]]
                 [:j [:km "open: iTerm"]]
                 [:h [:km "open: Sublime Text"]]
                 [:l [:km "open: VS Code"]]
-                [:period [:km "open: Paw"]]
                 [:o [:km "open: Keyboard Maestro"]]]}
         {:des "ekey (cmd)"
          :rules[:e-mode
@@ -334,13 +340,17 @@
                 [:semicolon [:km "Add selected text as todo"]]]}
         {:des "dkey (mouse)"
          :rules[:d-mode
-                ;; don't support mouse key yet
-                ;; [:j {:mkey {:vwheel 40}}]
-                ;; [:k {:mkey {:vwheel -40}}]]}
+                [:h {:mkey {:hwheel -100}}]
+                [:l {:mkey {:hwheel 100}}]
+                [:j {:mkey {:vwheel 100}}]
+                [:k {:mkey {:vwheel -100}}]
                 [:i :!Ckeypad_hyphen] ;Zoom in
                 [:o :!Ckeypad_plus] ;Zoom out
                 [:a :!TCO8]
                 [:period :!CTO3]]}
+        {:des "jsmode"
+         :rules[:js-mode
+                [:d [:km "Add selected text as todo"]]]} ; TODO: add JS mappins like cmd + a -> d for deleting file contents
         {:des "fkey (essential)"
          :rules[:f-mode
                 [:e :!CO8]
@@ -366,7 +376,8 @@
                 [:n :!CTOg]
                 [:w :!CSgrave_accent_and_tilde]
                 [:semicolon :!Cgrave_accent_and_tilde]
-                [:i [:km "New SnippetsLab snippet"]]
+                ;[:i [:km "New SnippetsLab snippet"]]
+                [:i [:alfred "search months" "nikivi.month.numbers"]]
                 [:q :!COequal_sign]
                 [:m :!CTO2]
                 [:j :!COslash]
