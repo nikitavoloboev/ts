@@ -279,7 +279,7 @@
     "when": "editorTextFocus"
   },
   {
-    "key": "ctrl+d",
+    "key": "ctrl+;",
     "command": "extension.dash.all",
     "when": "editorTextFocus"
   },
@@ -287,5 +287,21 @@
     "key": "ctrl+alt+h",
     "command": "-extension.dash.all",
     "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+o",
+    "command": "workbench.action.moveEditorToNextGroup"
+  },
+  {
+    "key": "ctrl+cmd+right",
+    "command": "-workbench.action.moveEditorToNextGroup"
+  },
+  {
+    "key": "cmd+i",
+    "command": "workbench.action.moveEditorToPreviousGroup"
+  },
+  {
+    "key": "ctrl+cmd+left",
+    "command": "-workbench.action.moveEditorToPreviousGroup"
   }
 ]

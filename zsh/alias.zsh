@@ -150,7 +150,7 @@ alias ia='npm add'
 alias ir='npm run'
 alias ire='npm remove'
 alias is='npm start'
-alias dev='npm dev'
+alias dev='npm run dev'
 
 # Go
 alias org='richgo'

@@ -88,6 +88,7 @@
         {:des "lsim"
          :rules [
                  [[:l :m] [:alfred "search bookmarks" "net.deanishe.alfred.safari"]]
+                 [[:l :n] [:alfred "search dash profiles" "nikivi.dash.profiles"]]
                  ]}
         {:des "qkey (cmd + shift)"
          :rules[:q-mode
@@ -138,7 +139,7 @@
          :rules[:w-mode
                 [:k [:km "open: Safari"]]
                 [:a [:km "open: Console"]]
-                [:n [:km "open: Xcode"]]
+                [:n [:km "open: Chrome"]]
                 [:g [:km "open: Bee"]]
                 [:t [:km "open: Trello"]]
                 ;[:space :!CSO7]
@@ -148,7 +149,7 @@
                 [:b [:km "open: BetterTouchTool"]]
                 [:r [:km "open: Fantastical"]]
                 [:e :!OSC1] ; Search Dash
-                [:i [:km "open: Chrome"]]
+                [:i [:km "open: Xcode"]]
                 [:u [:km "open: SnippetsLab"]]
                 [:f [:km "open: 2do"]]
                 [:v [:km "open: MindNode"]]
@@ -206,6 +207,7 @@
                 [:q [:km "open: IINA"]]
                 [:l [:km "open: Ulysses"]]
                 [:t [:km "open: Transmission"]]
+                [:h [:km "open: Activity Monitor"]]
                 [:p [:km "open: Paprika Recipe Manager"]]
                 [:b [:km "Edit keyboard shortcuts"]]
                 [:m [:km "open: Postico"]]
@@ -267,7 +269,6 @@
                 [:n [:alfred "search lists" "nikivi.learn.anything"]]
                 [:m [:alfred "search lists" "nikivi.awesome.lists"]]
                 [:v [:alfred "search PDF files" "nikivi.search.files"]]
-                [:b [:alfred "switch dash profile" "nikivi.dash.profiles"]]
                 [:s [:alfred "search clones" "com.vitorgalvao.alfred.directories"]]
                 [:d [:alfred "search desktop" "com.vitorgalvao.alfred.directories"]]
                 [:j [:alfred "search km macros" "iansinnott.keyboardmaestro"]]
@@ -376,8 +377,7 @@
                 [:n :!CTOg]
                 [:w :!CSgrave_accent_and_tilde]
                 [:semicolon :!Cgrave_accent_and_tilde]
-                ;[:i [:km "New SnippetsLab snippet"]]
-                [:i [:alfred "search months" "nikivi.month.numbers"]]
+                [:i [:km "New SnippetsLab snippet"]]
                 [:q :!COequal_sign]
                 [:m :!CTO2]
                 [:j :!COslash]
@@ -419,9 +419,11 @@
                 [:m :volume_increment]]}
         {:des "bkey (alfred)"
          :rules[:b-mode
+                [:j [:km "Google clipboard"]]
+                [:k [:km "Select line and google"]]
                 [:h [:alfred "search hn" "com.vitorgalvao.alfred.hackerboard"]]
-                [:j [:km "Clone repo to ~/clones"]]
-                [:o [:km "test: JavaScript"]]]}
+                [:m [:km "Clone repo to ~/clones"]]
+                [:l [:km "Clone repo to ~/clones and open with VS Code"]]]}
         {:des "nkey (alfred)"
          :rules[:n-mode
                 [:1 :!O1]
@@ -486,7 +488,6 @@
                 [:s [:km "w: NPM"]]]}
         {:des "commakey"
          :rules[:comma-mode
-                [:a [:km "Google clipboard"]]
                 [:g [:km "Commit my wiki"]]]}
         {:des "capskey"
          :rules [:caps_lock-mode
