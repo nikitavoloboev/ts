@@ -87,12 +87,12 @@
                  ]}
         {:des "lsim"
          :rules [
-                 [[:l :m] [:alfred "search bookmarks" "net.deanishe.alfred.safari"]]
                  [[:l :n] [:alfred "search dash profiles" "nikivi.dash.profiles"]]
                  ]}
         {:des "qkey (cmd + shift)"
          :rules[:q-mode
                 [:open_bracket :!CSopen_bracket]
+                [:spacebar :!CT7]
                 [:close_bracket :!CSclose_bracket]
                 [:semicolon :!CSsemicolon]
                 [:quote :!CSquote]
@@ -139,20 +139,19 @@
          :rules[:w-mode
                 [:k [:km "open: Safari"]]
                 [:a [:km "open: Console"]]
-                [:n [:km "open: Chrome"]]
+                [:i [:km "open: Chrome"]]
                 [:g [:km "open: Bee"]]
                 [:t [:km "open: Trello"]]
-                ;[:space :!CSO7]
+                [:spacebar :!CSO7]
                 [:comma [:km "open: Spotify"]]
                 [:caps_lock [:km "open: Finder"]]
                 [:m [:km "open: Tower"]]
                 [:b [:km "open: BetterTouchTool"]]
                 [:r [:km "open: Fantastical"]]
                 [:e :!OSC1] ; Search Dash
-                [:i [:km "open: Xcode"]]
+                [:n [:km "open: Xcode"]]
                 [:u [:km "open: SnippetsLab"]]
                 [:f [:km "open: 2do"]]
-                [:v [:km "open: MindNode"]]
                 [:j [:km "open: iTerm"]]
                 [:h [:km "open: Sublime Text"]]
                 [:l [:km "open: VS Code"]]
@@ -203,6 +202,7 @@
                 [:0 :!C0]]}
         {:des "rkey (apps)"
          :rules[:r-mode
+                [:spacebar :!CT8]
                 [:u [:km "open: Actual"]]
                 [:q [:km "open: IINA"]]
                 [:l [:km "open: Ulysses"]]
@@ -338,20 +338,25 @@
                 [:b :!Cleft_arrow]
                 [:n :!Cv]
                 [:m :!Cright_arrow]
-                [:semicolon [:km "Add selected text as todo"]]]}
+                [:period [:km "Selected text -> TODO"]]
+                [:semicolon [:km "Tasks from apps -> TODO"]]]}
         {:des "dkey (mouse)"
          :rules[:d-mode
-                [:h {:mkey {:hwheel -100}}]
-                [:l {:mkey {:hwheel 100}}]
+                ;[:h {:mkey {:hwheel -100}}]
+                ;[:l {:mkey {:hwheel 100}}]
                 [:j {:mkey {:vwheel 100}}]
                 [:k {:mkey {:vwheel -100}}]
                 [:i :!Ckeypad_hyphen] ;Zoom in
                 [:o :!Ckeypad_plus] ;Zoom out
+                [:l [:km "Select line and google"]]
+                [:m [:km "Google clipboard"]]
+                [:z {:pkey :button2}]
+                [:v {:pkey :button1}]
                 [:a :!TCO8]
                 [:period :!CTO3]]}
         {:des "jsmode"
          :rules[:js-mode
-                [:d [:km "Add selected text as todo"]]]} ; TODO: add JS mappins like cmd + a -> d for deleting file contents
+                [:d [:km ""]]]} ; TODO: add JS mappins like cmd + a -> d for deleting file contents
         {:des "fkey (essential)"
          :rules[:f-mode
                 [:e :!CO8]
@@ -359,6 +364,7 @@
                 [:a :!CTO4]
                 [:j [:km "Open 1st iTerm tab"]]
                 [:h [:km "Make markdown link from selection"]]
+                [:w [:km "Lowercase selected text"]]
                 [:comma  [:km "Add safari link to selected markdown text"]]
                 [:k :return_or_enter]
                 [:z :!Ospacebar]
@@ -419,11 +425,9 @@
                 [:m :volume_increment]]}
         {:des "bkey (alfred)"
          :rules[:b-mode
-                [:j [:km "Google clipboard"]]
-                [:k [:km "Select line and google"]]
                 [:h [:alfred "search hn" "com.vitorgalvao.alfred.hackerboard"]]
-                [:m [:km "Clone repo to ~/clones"]]
-                [:l [:km "Clone repo to ~/clones and open with VS Code"]]]}
+                [:m [:km "Clone repo to ~/src/clones"]]
+                [:l [:km "Clone repo to ~/src/clones and open with VS Code"]]]}
         {:des "nkey (alfred)"
          :rules[:n-mode
                 [:1 :!O1]
@@ -473,19 +477,20 @@
         {:des "ukey (websites)"
          :rules[:u-mode
                 [:e [:km "w: Repl"]]
-                [:d [:km "w: Codepen"]]
                 [:a [:km "w: Arxiv"]]
                 [:x [:km "w: Dropbox"]]
                 [:v [:km "w: Twitch"]]
-                [:r [:km "w: Google Drive"]]
+                [:d [:km "w: Google Drive"]]
                 [:h [:km "w: Khan Academy"]]
                 [:t [:km "w: GitHub trending"]]
                 [:z [:km "w: MDN"]]
+                [:r [:km "w: Reddit Saved"]]
                 [:y [:km "w: Netlify"]]
                 [:g [:km "w: Kaggle"]]
                 [:i [:km "w: WakaTime"]]
                 [:w [:km "w: AWS"]]
-                [:s [:km "w: NPM"]]]}
+                [:s [:km "w: Asana"]]
+                [:n [:km "w: NPM"]]]}
         {:des "commakey"
          :rules[:comma-mode
                 [:g [:km "Commit my wiki"]]]}

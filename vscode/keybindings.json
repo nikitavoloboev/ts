@@ -42,17 +42,12 @@
     "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
   },
   {
-    "key": "ctrl+e",
-    "command": "extension.vim_ctrl+o",
-    "when": "editorTextFocus && vim.active && vim.use<C-o> && !inDebugRepl"
-  },
-  {
-    "key": "ctrl+j",
+    "key": "ctrl+o",
     "command": "workbench.action.terminal.focus",
     "when": "terminalFocus"
   },
   {
-    "key": "ctrl+j",
+    "key": "ctrl+o",
     "command": "workbench.action.focusActiveEditorGroup",
     "when": "!terminalFocus"
   },
@@ -279,7 +274,7 @@
     "when": "editorTextFocus"
   },
   {
-    "key": "ctrl+;",
+    "key": "ctrl+j",
     "command": "extension.dash.all",
     "when": "editorTextFocus"
   },
@@ -303,5 +298,15 @@
   {
     "key": "ctrl+cmd+left",
     "command": "-workbench.action.moveEditorToPreviousGroup"
+  },
+  {
+    "key": "ctrl+j",
+    "command": "-editor.action.joinLines",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "cmd+o",
+    "command": "-workbench.action.files.openFileFolder",
+    "when": "fileDialog == 'local'"
   }
 ]
