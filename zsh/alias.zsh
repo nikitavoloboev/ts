@@ -18,7 +18,7 @@ alias nss="nix-shell --run zsh -p"
 # General
 alias te='tree'
 alias op='open'
-alias env='env | fzf'
+#alias env='env | fzf'
 alias dnd='do-not-disturb toggle'
 alias cleanup="find . -type f -name '*.DS_Store' -ls -delete" # Recursively delete `.DS_Store` files
 alias g='git' # Wrapper over git
@@ -243,9 +243,10 @@ alias ez='nvim ~/.zshrc'
 
 # cd places
 alias dw='cd ~/Documents/'
+alias dk='cd ~/Dropbox/Write/knowledge'
 alias dsh='cd ~/.ssh'
 alias dn='cd ~/src/clones'
-alias di='cd ~/src/ideas'
+alias di='cd ~/src/nix'
 alias dg='cd ~/go/src/github.com/nikitavoloboev'
 alias dl='cd ~/src/learn'
 alias dt='cd ~/src/test'

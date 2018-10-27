@@ -49,6 +49,11 @@
 	autosetuprebase = always
 [push]
 	default = current
+[rerere]
+    enabled = true
+[pull]
+    rebase = true
+    autostash = true
 [merge]
 	tool = nvimdiff
     conflictstyle = diff3

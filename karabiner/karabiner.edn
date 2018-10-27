@@ -79,6 +79,7 @@
                 [[:j :semicolon] [:alfred "search tabs" "net.deanishe.alfred.safari"]]
                 [[:j :spacebar] [:km "Get current URL from Safari"]]
                 [[:j :l] :!Cspacebar]]}
+                [:v [:alfred "" ""]]
         {:des "ksim"
          :rules [
                  [[:k :l] [:alfred "search dash" "com.nikivi.own.dash"]]
@@ -140,12 +141,13 @@
          :rules[:w-mode
                 [:k [:km "open: Safari"]]
                 [:a [:km "open: Console"]]
-                [:i [:km "open: Firefox Dev"]]
-                [:u [:km "open: Chrome"]]
+                [:i [:km "open: Chrome Canary"]]
+                [:u [:km "open: Firefox Dev"]]
                 [:g [:km "open: Bee"]]
                 [:t [:km "open: Trello"]]
+                [:p [:km "open: Activity Monitor"]]
                 [:spacebar :!CSO7]
-                [:comma [:km "open: Spotify"]]
+                [:period [:km "open: Spotify"]]
                 [:d [:km "open: MindNode"]]
                 [:caps_lock [:km "open: Finder"]]
                 [:m [:km "open: Tower"]]
@@ -210,7 +212,6 @@
                 [:q [:km "open: IINA"]]
                 [:l [:km "open: Ulysses"]]
                 [:t [:km "open: Transmission"]]
-                [:h [:km "open: Activity Monitor"]]
                 [:p [:km "open: Paprika Recipe Manager"]]
                 [:b [:km "Edit keyboard shortcuts"]]
                 [:m [:km "open: Postico"]]
@@ -263,6 +264,7 @@
                 [:r [:km "Make 2Do task with Safari title as name"]]
                 [:q [:alfred "search downloads" "recentdownloads.ddjfreedom"]]
                 [:t [:km "2Do with current url as note (read)"]]
+                [:b [:km "2Do task (ask)"]]
                 [:tab [:km "2Do with current url as note (check)"]]
                 [:h [:km "2Do with current url as note (watch)"]]
                 [:a [:alfred "search files" "nikivi.manage.wiki"]]
@@ -366,12 +368,14 @@
                 [:e :!CO8]
                 [:period [:km "edit: Karabiner"]]
                 [:semicolon [:km "open: TaskPaper"]]
-                [:w :!CTO4]
+                [:a :!CTO4]
                 [:j [:km "Open 1st iTerm tab"]]
                 [:h [:km "Make markdown link from selection"]]
                 [:1 [:km "Lowercase selected text"]]
-                [:a [:km "w: lvh.me"]]
+                [:w [:km "w: lvh.me"]]
+                [:p :!CTOc]
                 [:q [:km "Uppercase selected text"]]
+                [:slash [:km "edit: Darwin Nix"]]
                 [:comma  [:km "Add safari link to selected markdown text"]]
                 [:k :return_or_enter]
                 [:z :!Ospacebar]
@@ -384,21 +388,21 @@
                 [:m :!Oreturn_or_enter]]}
         {:des "gkey (things)"
          :rules[:g-mode
-                [:q :!CO0]
-                [:e :!COd]
-                [:k :!COSf]
-                [:n :!CTOg]
-                [:w :!CSgrave_accent_and_tilde]
-                [:semicolon :!Cgrave_accent_and_tilde]
+                [:q :!CO0] ; Show Dropzone dropdown
+                [:e :!COd] ; Show/hide dock
+                [:k :!COSf] ; Maximize window
+                [:n :!CTOg] ; Turn on/off notifications
+                [:w :!CSgrave_accent_and_tilde] ; Switch between active windows (go up)
+                [:semicolon :!Cgrave_accent_and_tilde] ; Switch between active windows  (go down)
                 [:i [:km "New SnippetsLab snippet"]]
-                [:q :!COequal_sign]
-                [:m :!CTO2]
-                [:j :!COslash]
-                [:s [:km "Test"]]
-                [:l :!CSOd]
-                [:h :!CSOa]
+                ;[:q :!COequal_sign]
+                [:m :!CTO2] ; Full screen app
+                [:j :!COslash] ; Show/hide notification centre
+                ;[:q [:km "Test"]]
+                [:l :!CSOd] ; Move window right
+                [:h :!CSOa] ; Move window left
                 [:o [:alfred "new task" "nikivi.todo.task"]]
-                [:z [:km "Dismiss notifications"]]]}
+                [:s [:km "Dismiss notifications"]]]}
         {:des "zkey (chat)"
          :rules[:z-mode
                 [:i [:km "open: Tweetbot"]]
@@ -459,6 +463,7 @@
                 [:z [:alfred "song_radio" "com.vdesabou.spotify.mini.player"]]
                 [:d [:alfred "show_current_track" "com.vdesabou.spotify.mini.player"]]
                 [:x [:alfred "web_search_current_track" "com.vdesabou.spotify.mini.player"]]
+                [:c [:alfred "add_current_track_to" "com.vdesabou.spotify.mini.player"]]
                 [:grave_accent_and_tilde [:alfred "copy_current_track_url_to_clipboard" "com.vdesabou.spotify.mini.player"]]
                 [:g [:alfred "add_current_track_to_alfred_playlist_or_your_music" "com.vdesabou.spotify.mini.player"]]
                 [:h [:alfred "remove_current_track_from" "com.vdesabou.spotify.mini.player"]]
@@ -470,6 +475,7 @@
                 [:k [:km "w: GitHub"]]
                 [:n [:km "w: Medium"]]
                 [:j [:km "w: YouTube"]]
+                [:o [:km "w: Jira"]]
                 [:l [:km "w: CodeSandbox"]]
                 [:i [:km "w: regex101"]]
                 [:semicolon [:km "w: Stack Overflow"]]]}
