@@ -25,7 +25,7 @@ setopt auto_cd # Auto change to a dir without typing cd
 #eval "$(git-hub alias -s)" # git -> hub. TODO: make it work with nix installed git-hub!
 eval "$(direnv hook zsh)" # Direnv
 
-export DIRENV_LOG_FORMAT=
+export DIRENV_LOG_FORMAT= # Remove logs from direnv
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh # FZF fuzzy search
 

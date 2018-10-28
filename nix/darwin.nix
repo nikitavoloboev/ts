@@ -14,23 +14,21 @@
       pkgs.direnv
       pkgs.exa
       pkgs.fzf
-      pkgs.git
-      pkgs.httpie
+      #pkgs.httpie
       pkgs.gitAndTools.git-hub
       pkgs.git
-      pkgs.hugo
+      #pkgs.hugo
       #pkgs.kubectl
-      pkgs.leiningen
-      pkgs.loc
-      pkgs.ocamlPackages.merlin
-      pkgs.minikube
+      #pkgs.leiningen
+      #pkgs.loc
+      #pkgs.ocamlPackages.merlin
+      #pkgs.minikube
       pkgs.neovim
-      pkgs.nodejs-10_x
+      #pkgs.nodejs-10_x
       pkgs.cacert # ?
-      pkgs.ripgrep
-      pkgs.rustup
-      pkgs.screenfetch
-      pkgs.yarn
+      #pkgs.ripgrep
+      #pkgs.screenfetch
+      #pkgs.yarn
       pkgs.nix
     ];
 

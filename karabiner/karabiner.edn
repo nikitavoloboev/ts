@@ -79,7 +79,6 @@
                 [[:j :semicolon] [:alfred "search tabs" "net.deanishe.alfred.safari"]]
                 [[:j :spacebar] [:km "Get current URL from Safari"]]
                 [[:j :l] :!Cspacebar]]}
-                [:v [:alfred "" ""]]
         {:des "ksim"
          :rules [
                  [[:k :l] [:alfred "search dash" "com.nikivi.own.dash"]]
