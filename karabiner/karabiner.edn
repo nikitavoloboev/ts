@@ -24,6 +24,7 @@
              :b-mode {:key :b}
              :n-mode {:key :n}
              :m-mode {:key :m}
+             :tab-mode {:key :tab}
              :comma-mode {:key :comma}
              :caps_lock-mode {:key :caps_lock}
              :js-mode {:key :period}}
@@ -65,6 +66,8 @@
         {:des "2key (move)"
          :rules [:2-mode
                  [:j :!Cdown_arrow]
+                 [:quote :!Odown_arrow]
+                 [:semicolon :!Oup_arrow]
                  [:k :!Cup_arrow]
                  [:l :!Cright_arrow]
                  [:h :!Cleft_arrow]]}
@@ -77,7 +80,7 @@
         {:des "jsim"
          :rules[[[:j :k] [:alfred "search google" "net.deanishe.alfred-searchio"]]
                 [[:j :semicolon] [:alfred "search tabs" "net.deanishe.alfred.safari"]]
-                [[:j :spacebar] [:km "Get current URL from Safari"]]
+                ;[[:j :spacebar] [:km "Get current URL from Safari"]]
                 [[:j :l] :!Cspacebar]]}
         {:des "ksim"
          :rules [
@@ -139,14 +142,13 @@
         {:des "wkey (apps)"
          :rules[:w-mode
                 [:k [:km "open: Safari"]]
-                [:a [:km "open: Console"]]
+                [:a [:km "open: Activity Monitor"]]
                 [:i [:km "open: Chrome Canary"]]
                 [:u [:km "open: Firefox Dev"]]
                 [:g [:km "open: Bee"]]
                 [:t [:km "open: Trello"]]
-                [:p [:km "open: Activity Monitor"]]
                 [:spacebar :!CSO7]
-                [:period [:km "open: Spotify"]]
+                [:comma [:km "open: Spotify"]]
                 [:d [:km "open: MindNode"]]
                 [:caps_lock [:km "open: Finder"]]
                 [:m [:km "open: Tower"]]
@@ -154,7 +156,7 @@
                 [:r [:km "open: Fantastical"]]
                 [:e :!OSC1] ; Search Dash
                 [:semicolon [:km "open: Xcode"]]
-                [:v [:km "open: SnippetsLab"]]
+                [:period [:km "open: SnippetsLab"]]
                 [:f [:km "open: 2do"]]
                 [:j [:km "open: iTerm"]]
                 [:n [:km "open: Sublime Text"]]
@@ -256,6 +258,7 @@
                 [:5 :!C5]
                 [:6 :!C6]
                 [:w :!CObackslash]
+                [:v :!CT5] ; New Fantastical event
                 [:spacebar [:alfred "search PDF files" "nikivi.search.files"]]
                 [:g [ :alfred "search snippets" "com.renfei.SnippetsLab.AlfredWorkflow"]]
                 [:grave_accent_and_tilde [:alfred "search processes" "com.vitorgalvao.alfred.processcontrol"]]
@@ -279,6 +282,10 @@
                 [:caps_lock [:alfred "search folders" "nikivi.search.folders"]]
                 [:z [:alfred "search workflows" "org.jeef.workflowdirectory"]]
                 [:k [:alfred "search menu bar" "com.tedwise.menubarsearch"]]]}
+        {:des "tabkey ()"
+         :rules[:tab-mode
+                [:o [:km "task: open source"]]
+                [:l [:km "task: learn"]]]}
         {:des "akey (ctrl)"
          :rules[:a-mode
                 [:spacebar :!CT9]
@@ -355,7 +362,8 @@
                 [:o :!Ckeypad_plus] ;Zoom out
                 [:l [:km "Select line and google"]]
                 [:m [:km "Google clipboard"]]
-                [:z {:pkey :button2}]
+                [:b {:pkey :button3}]
+                [:s {:pkey :button2}]
                 [:v {:pkey :button1}]
                 [:a :!TCO8]
                 [:period :!CTO3]]}
@@ -372,7 +380,8 @@
                 [:h [:km "Make markdown link from selection"]]
                 [:1 [:km "Lowercase selected text"]]
                 [:w [:km "w: lvh.me"]]
-                [:p :!CTOc]
+                [:p :!CTOc] ; Sleep
+                [:open_bracket :!CT5] ; Sleep display 
                 [:q [:km "Uppercase selected text"]]
                 [:slash [:km "edit: Darwin Nix"]]
                 [:comma  [:km "Add safari link to selected markdown text"]]
@@ -398,6 +407,8 @@
                 [:m :!CTO2] ; Full screen app
                 [:j :!COslash] ; Show/hide notification centre
                 ;[:q [:km "Test"]]
+                [:period [:km "Break 5 min"]]
+                [:comma [:km "Break 10 min"]]
                 [:l :!CSOd] ; Move window right
                 [:h :!CSOa] ; Move window left
                 [:o [:alfred "new task" "nikivi.todo.task"]]
@@ -421,7 +432,6 @@
          :rules[:v-mode
                 [:p [:km "Connect/disconnect AirPods"]]
                 [:e [:km "edit: vimrc"]]
-                [:r [:km "edit: darwin.nix"]]
                 [:j :mute]
                 ;[:a [:km "Noizio change"]]
                 ;[:s :!TS0] ; Torn on/off Noizio

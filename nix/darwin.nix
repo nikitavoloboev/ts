@@ -5,35 +5,35 @@
   # $ nix-env -qaP | grep wget
   environment.systemPackages =
     [
+      pkgs.neovim
       pkgs.vim
+      pkgs.cacert # ?
       pkgs.postgresql
       pkgs.antibody
-      pkgs.bat
-      # pkgs.clog-cli
       pkgs.gitAndTools.diff-so-fancy
       pkgs.direnv
       pkgs.exa
       pkgs.fzf
-      #pkgs.httpie
+      pkgs.httpie
       pkgs.gitAndTools.git-hub
       pkgs.git
-      #pkgs.hugo
+      pkgs.hugo
+      pkgs.nix
+      #pkgs.bat # TODO: fix on darwin. tries to build for long time & fails
+      #pkgs.clog-cli
       #pkgs.kubectl
       #pkgs.leiningen
       #pkgs.loc
       #pkgs.ocamlPackages.merlin
       #pkgs.minikube
-      pkgs.neovim
       #pkgs.nodejs-10_x
-      pkgs.cacert # ?
       #pkgs.ripgrep
       #pkgs.screenfetch
       #pkgs.yarn
-      pkgs.nix
     ];
 
 
-    # TODO: remove & test more
+  # TODO: remove & test more
   #nixpkgs.overlays = [(import ../../src/clones/overlay-example/overlay.nix)];
 
   # Auto upgrade nix package and the daemon service.

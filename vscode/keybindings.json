@@ -52,7 +52,7 @@
     "when": "!terminalFocus"
   },
   {
-    "key": "ctrl+j",
+    "key": "ctrl+h",
     "command": "workbench.action.terminal.toggleTerminal"
   },
   {
