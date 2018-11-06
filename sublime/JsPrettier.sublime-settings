@@ -6,5 +6,5 @@
     "*.css"
   ],
   "trailingComma": "es5",
-  "prettier_cli_path": "/Users/nikivi/.npm-global/bin/prettier",
+  "prettier_cli_path": "/Users/nikivi/.nvm/versions/node/v10.8.0/bin/prettier",
 }

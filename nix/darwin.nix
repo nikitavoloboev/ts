@@ -14,6 +14,7 @@
       pkgs.direnv
       pkgs.exa
       pkgs.fzf
+      pkgs.htop
       pkgs.httpie
       pkgs.gitAndTools.git-hub
       pkgs.git

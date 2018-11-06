@@ -66,7 +66,7 @@
     "when": "editorTextFocus && inDebugMode"
   },
   {
-    "key": "ctrl+k",
+    "key": "ctrl+;",
     "command": "editor.action.showHover",
     "when": "editorTextFocus"
   },
@@ -185,11 +185,11 @@
     "command": "newFile.createNewFile"
   },
   {
-    "key": "shift+cmd+j",
+    "key": "ctrl+j",
     "command": "workbench.action.previousEditor"
   },
   {
-    "key": "shift+cmd+k",
+    "key": "ctrl+k",
     "command": "workbench.action.nextEditor"
   },
   {
@@ -197,7 +197,7 @@
     "command": "extension.copyGitHubLinkToClipboard"
   },
   {
-    "key": "ctrl+m",
+    "key": "ctrl+g",
     "command": "bookmarks.toggle"
   },
   {
@@ -274,7 +274,7 @@
     "when": "editorTextFocus"
   },
   {
-    "key": "ctrl+j",
+    "key": "ctrl+m",
     "command": "extension.dash.all",
     "when": "editorTextFocus"
   },

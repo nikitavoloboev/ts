@@ -16,6 +16,9 @@ _asm = {} -- TODO: ?
 _asm.hs_default_require = require
 require = rawrequire
 
+-- Make the console dark
+hs.console.darkMode(true)
+
 -- Link Spoons dir
 -- TODO: doesn't work
 -- package.path = hs.configdir .. "/Spoons/?.spoon/init.lua;"

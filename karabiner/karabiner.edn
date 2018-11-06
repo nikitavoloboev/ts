@@ -142,7 +142,7 @@
         {:des "wkey (apps)"
          :rules[:w-mode
                 [:k [:km "open: Safari"]]
-                [:a [:km "open: Activity Monitor"]]
+                [:h [:km "open: Activity Monitor"]]
                 [:i [:km "open: Chrome Canary"]]
                 [:u [:km "open: Firefox Dev"]]
                 [:g [:km "open: Bee"]]
@@ -154,7 +154,7 @@
                 [:m [:km "open: Tower"]]
                 [:b [:km "open: BetterTouchTool"]]
                 [:r [:km "open: Fantastical"]]
-                [:e :!OSC1] ; Search Dash
+                [:e :!OSC1] ; Open Dash 
                 [:semicolon [:km "open: Xcode"]]
                 [:period [:km "open: SnippetsLab"]]
                 [:f [:km "open: 2do"]]
@@ -231,6 +231,7 @@
                 [:r :!Squote]
                 [:d :backslash]
                 [:x :!Sbackslash]
+                [:b [:!St :!So :!Sd :!So :!Ssemicolon :spacebar]]
                 [:caps_lock [:km "Match symbols"]]
                 [:e :!S3]
                 [:1 :!S1]
@@ -258,7 +259,6 @@
                 [:5 :!C5]
                 [:6 :!C6]
                 [:w :!CObackslash]
-                [:v :!CT5] ; New Fantastical event
                 [:spacebar [:alfred "search PDF files" "nikivi.search.files"]]
                 [:g [ :alfred "search snippets" "com.renfei.SnippetsLab.AlfredWorkflow"]]
                 [:grave_accent_and_tilde [:alfred "search processes" "com.vitorgalvao.alfred.processcontrol"]]
@@ -363,7 +363,7 @@
                 [:l [:km "Select line and google"]]
                 [:m [:km "Google clipboard"]]
                 [:b {:pkey :button3}]
-                [:s {:pkey :button2}]
+                [:z {:pkey :button2}]
                 [:v {:pkey :button1}]
                 [:a :!TCO8]
                 [:period :!CTO3]]}
