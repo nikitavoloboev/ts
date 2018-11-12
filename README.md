@@ -11,7 +11,7 @@ You can also see my top used applications, Safari extensions and Alfred workflow
 ##### Contents
 
 - [Install](#install)
-- [Clean install everything](#clean-install-everything)
+  - [Clean install everything](#clean-install-everything)
 - [Karabiner](#karabiner)
 - [Neovim](#neovim)
 - [VS Code](#vs-code)
