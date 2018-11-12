@@ -10,6 +10,8 @@ export PATH=$PATH:~/.cargo/bin # Rust
 export GOPATH="$(go env GOPATH)" # Go
 export PATH="$PATH:$GOPATH/bin" # Go
 
+export PATH=$PATH:./node_modules/.bin/
+
 # TODO: ?
 . "$HOME/.nix-profile/etc/profile.d/hm-session-vars.sh"
 

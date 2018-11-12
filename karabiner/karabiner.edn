@@ -24,6 +24,8 @@
              :b-mode {:key :b}
              :n-mode {:key :n}
              :m-mode {:key :m}
+             :backquote-mode {:key :grave_accent_and_tilde}
+             :dotjs-mode {:key :period}
              :tab-mode {:key :tab}
              :comma-mode {:key :comma}
              :caps_lock-mode {:key :caps_lock}
@@ -259,6 +261,7 @@
                 [:5 :!C5]
                 [:6 :!C6]
                 [:w :!CObackslash]
+                [:v :!CT4]
                 [:spacebar [:alfred "search PDF files" "nikivi.search.files"]]
                 [:g [ :alfred "search snippets" "com.renfei.SnippetsLab.AlfredWorkflow"]]
                 [:grave_accent_and_tilde [:alfred "search processes" "com.vitorgalvao.alfred.processcontrol"]]
@@ -282,10 +285,10 @@
                 [:caps_lock [:alfred "search folders" "nikivi.search.folders"]]
                 [:z [:alfred "search workflows" "org.jeef.workflowdirectory"]]
                 [:k [:alfred "search menu bar" "com.tedwise.menubarsearch"]]]}
-        {:des "tabkey ()"
-         :rules[:tab-mode
-                [:o [:km "task: open source"]]
-                [:l [:km "task: learn"]]]}
+        ;{:des "tabkey ()"
+         ;:rules[:tab-mode
+                ;[:o [:km "task: open source"]]
+                ;[:l [:km "task: learn"]]]}
         {:des "akey (ctrl)"
          :rules[:a-mode
                 [:spacebar :!CT9]
@@ -367,9 +370,6 @@
                 [:v {:pkey :button1}]
                 [:a :!TCO8]
                 [:period :!CTO3]]}
-        {:des "jsmode"
-         :rules[:js-mode
-                [:d [:km ""]]]} ; TODO: add JS mappins like cmd + a -> d for deleting file contents
         {:des "fkey (essential)"
          :rules[:f-mode
                 [:e :!CO8]
@@ -444,9 +444,13 @@
                 [:k :vk_consumer_play]
                 [:n :volume_decrement]
                 [:m :volume_increment]]}
-        {:des "bkey (alfred)"
-         :rules[:b-mode
-                [:h [:alfred "search hn" "com.vitorgalvao.alfred.hackerboard"]]]}
+        {:des "bkey (break)"
+          :rules[:b-mode
+                [:h [:alfred "search hn" "com.vitorgalvao.alfred.hackerboard"]]
+                [:k [:km "w: GitHub (trending)"]]
+                [:l [:km "w: Lobsters"]]
+                [:m [:km "w: GitHub (front page)"]]
+                [:n [:km "w: Hacker News"]]]}
         {:des "nkey (alfred)"
          :rules[:n-mode
                 [:1 :!O1]
@@ -502,7 +506,7 @@
                 [:x [:km "w: Dropbox"]]
                 [:v [:km "w: Twitch"]]
                 [:d [:km "w: Google Drive"]]
-                [:h [:km "w: Khan Academy"]]
+                ;[:h [:km "w: Khan Academy"]]
                 [:t [:km "w: GitHub trending"]]
                 [:z [:km "w: MDN"]]
                 [:r [:km "w: Reddit Saved"]]
@@ -512,6 +516,13 @@
                 [:w [:km "w: AWS"]]
                 [:s [:km "w: Asana"]]
                 [:n [:km "w: NPM"]]]}
+        {:des "dotjs"
+         :rules[:dotjs-mode
+                [:s [:t :h :a :n :k :s]]]}
+        {:des "backkey (todo)"
+         :rules[:backquote-mode
+                [:o [:km "todo: open source"]]
+                [:l [:km "todo: learn"]]]}
         {:des "commakey"
          :rules[:comma-mode
                 [:g [:km "Commit my wiki"]]]}

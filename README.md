@@ -11,6 +11,7 @@ You can also see my top used applications, Safari extensions and Alfred workflow
 ##### Contents
 
 - [Install](#install)
+- [Clean install everything](#clean-install-everything)
 - [Karabiner](#karabiner)
 - [Neovim](#neovim)
 - [VS Code](#vs-code)
@@ -29,6 +30,10 @@ To install my configuration, clone the repository and run: `./install`. This ins
 This will automatically setup all the configuration files using [Dotbot](https://github.com/anishathalye/dotbot). Look [here](https://github.com/nikitavoloboev/dotfiles/blob/master/.install.conf.yaml#L1) for what exactly it will do.
 
 I describe my custom configuration I use below. It is heavily tailored to my own workflow so it is best you take ideas from it rather than copying the entire config.
+
+### Clean install everything
+
+
 
 ## Karabiner
 

@@ -7,7 +7,7 @@
     [
       pkgs.neovim
       pkgs.vim
-      pkgs.cacert # ?
+      pkgs.cacert # TODO: doesn't this come default?
       pkgs.postgresql
       pkgs.antibody
       pkgs.gitAndTools.diff-so-fancy
@@ -20,15 +20,15 @@
       pkgs.git
       pkgs.hugo
       pkgs.nix
+      pkgs.ripgrep
+      pkgs.kubectl
+      #pkgs.leiningen
       #pkgs.bat # TODO: fix on darwin. tries to build for long time & fails
       #pkgs.clog-cli
-      #pkgs.kubectl
-      #pkgs.leiningen
       #pkgs.loc
       #pkgs.ocamlPackages.merlin
       #pkgs.minikube
       #pkgs.nodejs-10_x
-      #pkgs.ripgrep
       #pkgs.screenfetch
       #pkgs.yarn
     ];

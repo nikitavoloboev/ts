@@ -254,7 +254,7 @@
     "command": "-workbench.view.explorer"
   },
   {
-    "key": "ctrl+n",
+    "key": "ctrl+v",
     "command": "bookmarks.jumpToNext",
     "when": "editorTextFocus"
   },
