@@ -33,7 +33,10 @@ I describe my custom configuration I use below. It is heavily tailored to my own
 
 ### Clean install everything
 
-
+1. Download [KM macros](https://wiki.nikitavoloboev.xyz/macOS/apps/keyboard-maestro/km-macros.html)
+2. Download [Alfred workflows](https://github.com/learn-anything/alfred-workflows#readme)
+3. Download dotfiles & set everything up (instructions above)
+4. Download & install apps from [my macOS](https://github.com/nikitavoloboev/my-mac-os)
 
 ## Karabiner
 
