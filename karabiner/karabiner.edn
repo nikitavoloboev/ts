@@ -151,7 +151,6 @@
                 [:t [:km "open: Trello"]]
                 [:spacebar :!CSO7]
                 [:comma [:km "open: Spotify"]]
-                [:d [:km "open: MindNode"]]
                 [:caps_lock [:km "open: Finder"]]
                 [:m [:km "open: Tower"]]
                 [:b [:km "open: BetterTouchTool"]]
@@ -373,17 +372,15 @@
         {:des "fkey (essential)"
          :rules[:f-mode
                 [:e :!CO8]
-                [:period [:km "edit: Karabiner"]]
                 [:semicolon [:km "open: TaskPaper"]]
-                [:a :!CTO4]
+                [:period [:km "open: MindNode"]]
+                [:a :!CTO4] ; Alfred file action
                 [:j [:km "Open 1st iTerm tab"]]
                 [:h [:km "Make markdown link from selection"]]
                 [:1 [:km "Lowercase selected text"]]
-                [:w [:km "w: lvh.me"]]
                 [:p :!CTOc] ; Sleep
                 [:open_bracket :!CT5] ; Sleep display 
                 [:q [:km "Uppercase selected text"]]
-                [:slash [:km "edit: Darwin Nix"]]
                 [:comma  [:km "Add safari link to selected markdown text"]]
                 [:k :return_or_enter]
                 [:z :!Ospacebar]
@@ -432,6 +429,9 @@
          :rules[:v-mode
                 [:p [:km "Connect/disconnect AirPods"]]
                 [:e [:km "edit: vimrc"]]
+                [:period [:km "edit: Darwin Nix"]]
+                [:r [:km "wiki: Rules"]]
+                [:semicolon [:km "edit: Karabiner"]]
                 [:j :mute]
                 ;[:a [:km "Noizio change"]]
                 ;[:s :!TS0] ; Torn on/off Noizio
@@ -525,6 +525,7 @@
                 [:l [:km "todo: learn"]]]}
         {:des "commakey"
          :rules[:comma-mode
+                [:e [:alfred "restart wifi" "nikivi.wifi.tools"]]
                 [:g [:km "Commit my wiki"]]]}
         {:des "capskey"
          :rules [:caps_lock-mode
