@@ -82,7 +82,7 @@ I am using [Zsh](http://www.zsh.org) as my shell and [Antibody](https://github.c
 
 I am also using [Monokai Night theme](https://github.com/nikitavoloboev/my-mac-os/tree/master/iterm#readme) I made for iTerm. Here is how my prompt looks:
 
-![](https://i.imgur.com/SQbqPLN.png)
+![](https://i.imgur.com/UujRUMV.png)
 
 ### Aliases and functions
 

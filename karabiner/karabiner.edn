@@ -12,6 +12,7 @@
              :u-mode {:key :u}
              :i-mode {:key :i}
              :o-mode {:key :o}
+             :p-mode {:key :p}
              :a-mode {:key :a}
              :s-mode {:key :s}
              :d-mode {:key :d}
@@ -232,7 +233,9 @@
                 [:r :!Squote]
                 [:d :backslash]
                 [:x :!Sbackslash]
-                [:b [:!St :!So :!Sd :!So :!Ssemicolon :spacebar]]
+                [:b [:!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> thanks
+                [:l [:hyphen :!Speriod :spacebar]] ; -> arrow (->)
+                [:n [:slash :slash :spacebar :!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> // TODO:
                 [:caps_lock [:km "Match symbols"]]
                 [:e :!S3]
                 [:1 :!S1]
@@ -340,14 +343,15 @@
                 [:i :!Tspacebar]
                 [:o :!CTO9]
                 [:a :!Cc]
+                [:v :left_shift]
                 [:d :delete_or_backspace]
                 [:f :return_or_enter]
                 [:c :!Cdelete_or_backspace]
                 [:g :!Ctab]
-                [:h :left_arrow]
-                [:j :down_arrow]
-                [:k :up_arrow]
-                [:l :right_arrow]
+                [:##h :left_arrow]
+                [:##j :down_arrow]
+                [:##k :up_arrow]
+                [:##l :right_arrow]
                 [:b :!Cleft_arrow]
                 [:n :!Cv]
                 [:m :!Cright_arrow]
@@ -369,11 +373,15 @@
                 [:v {:pkey :button1}]
                 [:a :!TCO8]
                 [:period :!CTO3]]}
+        {:des "pkey (words)"
+         :rules[:p-mode
+                [:s [:t :h :a :n :k :s]]]} ; -> thanks 
         {:des "fkey (essential)"
          :rules[:f-mode
                 [:e :!CO8]
                 [:semicolon [:km "open: TaskPaper"]]
-                [:period [:km "open: MindNode"]]
+                [:period [:km "edit: Karabiner"]]
+                ;[:period [:km "open: MindNode"]]
                 [:a :!CTO4] ; Alfred file action
                 [:j [:km "Open 1st iTerm tab"]]
                 [:h [:km "Make markdown link from selection"]]
@@ -431,7 +439,6 @@
                 [:e [:km "edit: vimrc"]]
                 [:period [:km "edit: Darwin Nix"]]
                 [:r [:km "wiki: Rules"]]
-                [:semicolon [:km "edit: Karabiner"]]
                 [:j :mute]
                 ;[:a [:km "Noizio change"]]
                 ;[:s :!TS0] ; Torn on/off Noizio
@@ -447,10 +454,14 @@
         {:des "bkey (break)"
           :rules[:b-mode
                 [:h [:alfred "search hn" "com.vitorgalvao.alfred.hackerboard"]]
-                [:k [:km "w: GitHub (trending)"]]
+                [:m [:km "w: GitHub (trending)"]]
                 [:l [:km "w: Lobsters"]]
-                [:m [:km "w: GitHub (front page)"]]
-                [:n [:km "w: Hacker News"]]]}
+                [:n [:km "w: Lobsters (new)"]]
+                [:k [:km "w: Hacker News (new)"]]
+                [:i [:km "w: Alfred Forum"]]
+                [:o [:km "w: KM Forum"]]
+                [:semicolon [:km "w: GitHub (front page)"]]
+                [:j [:km "w: Hacker News"]]]}
         {:des "nkey (alfred)"
          :rules[:n-mode
                 [:1 :!O1]
@@ -516,9 +527,12 @@
                 [:w [:km "w: AWS"]]
                 [:s [:km "w: Asana"]]
                 [:n [:km "w: NPM"]]]}
-        {:des "dotjs"
+        {:des "jsdot"
          :rules[:dotjs-mode
-                [:s [:t :h :a :n :k :s]]]}
+                [:s [:equal_sign :!Speriod :spacebar]] ; -> =>
+                [:r [:r :e :t :u :r :n :spacebar]] ; -> return
+                [:t [:r :e :t :u :r :n :spacebar :!Sopen_bracket :!Sclose_bracket :left_arrow :return_or_enter]] ; -> return {}
+                [:a [:c :o :n :s :o :l :e :period :l :o :g :!S9 :!S0 :left_arrow]]]} ; -> console.log()
         {:des "backkey (todo)"
          :rules[:backquote-mode
                 [:o [:km "todo: open source"]]
@@ -526,6 +540,7 @@
         {:des "commakey"
          :rules[:comma-mode
                 [:e [:alfred "restart wifi" "nikivi.wifi.tools"]]
+                [:w [:alfred "toggle wifi" "nikivi.wifi.tools"]]
                 [:g [:km "Commit my wiki"]]]}
         {:des "capskey"
          :rules [:caps_lock-mode

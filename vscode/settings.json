@@ -29,12 +29,12 @@
   // workbench
   "workbench.tree.horizontalScrolling": true,
   "workbench.statusBar.feedback.visible": false,
+  "workbench.editor.enablePreview": false,
   "workbench.fontAliasing": "antialiased",
   "workbench.activityBar.visible": false,
   "workbench.startupEditor": "none",
   "workbench.settings.editor": "json",
   "workbench.editor.showIcons": false,
-  "workbench.editor.enablePreview": false,
   "workbench.settings.enableNaturalLanguageSearch": false,
   "workbench.colorTheme": "Monokai Night",
   // window
