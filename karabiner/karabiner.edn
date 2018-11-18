@@ -88,13 +88,9 @@
         {:des "ksim"
          :rules [
                  [[:k :l] [:alfred "search dash" "com.nikivi.own.dash"]]
-                 [[:k :m] [:alfred "search google lucky" "net.deanishe.alfred-searchio"]]
+                 [[:k :m] [:alfred "search youtube" "net.deanishe.alfred-searchio"]]
                  [[:k :n] [:alfred "search history" "net.deanishe.alfred.safari"]]
-                 [[:k :spacebar] [:alfred "search youtube" "net.deanishe.alfred-searchio"]]
-                 ]}
-        {:des "lsim"
-         :rules [
-                 [[:l :n] [:alfred "search dash profiles" "nikivi.dash.profiles"]]
+                 [[:k :spacebar] [:alfred "search dash profiles" "nikivi.dash.profiles"]]
                  ]}
         {:des "qkey (cmd + shift)"
          :rules[:q-mode
@@ -147,7 +143,6 @@
                 [:k [:km "open: Safari"]]
                 [:h [:km "open: Activity Monitor"]]
                 [:i [:km "open: Chrome Canary"]]
-                [:u [:km "open: Firefox Dev"]]
                 [:g [:km "open: Bee"]]
                 [:t [:km "open: Trello"]]
                 [:spacebar :!CSO7]
@@ -233,7 +228,7 @@
                 [:r :!Squote]
                 [:d :backslash]
                 [:x :!Sbackslash]
-                [:b [:!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> thanks
+                [:b [:!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> TODO:
                 [:l [:hyphen :!Speriod :spacebar]] ; -> arrow (->)
                 [:n [:slash :slash :spacebar :!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> // TODO:
                 [:caps_lock [:km "Match symbols"]]
@@ -352,9 +347,9 @@
                 [:##j :down_arrow]
                 [:##k :up_arrow]
                 [:##l :right_arrow]
-                [:b :!Cleft_arrow]
+                [:##b :!Cleft_arrow]
                 [:n :!Cv]
-                [:m :!Cright_arrow]
+                [:##m :!Cright_arrow]
                 [:period [:km "Selected text -> TODO"]]
                 [:semicolon [:km "Tasks from apps -> TODO"]]]}
         {:des "dkey (mouse)"
@@ -381,7 +376,6 @@
                 [:e :!CO8]
                 [:semicolon [:km "open: TaskPaper"]]
                 [:period [:km "edit: Karabiner"]]
-                ;[:period [:km "open: MindNode"]]
                 [:a :!CTO4] ; Alfred file action
                 [:j [:km "Open 1st iTerm tab"]]
                 [:h [:km "Make markdown link from selection"]]
@@ -455,12 +449,13 @@
           :rules[:b-mode
                 [:h [:alfred "search hn" "com.vitorgalvao.alfred.hackerboard"]]
                 [:m [:km "w: GitHub (trending)"]]
+                [:period [:km "w: Reddit Saved"]]
                 [:l [:km "w: Lobsters"]]
                 [:n [:km "w: Lobsters (new)"]]
-                [:k [:km "w: Hacker News (new)"]]
+                [:semicolon [:km "w: Hacker News (new)"]]
                 [:i [:km "w: Alfred Forum"]]
                 [:o [:km "w: KM Forum"]]
-                [:semicolon [:km "w: GitHub (front page)"]]
+                [:k [:km "w: GitHub (front page)"]]
                 [:j [:km "w: Hacker News"]]]}
         {:des "nkey (alfred)"
          :rules[:n-mode
@@ -520,7 +515,6 @@
                 ;[:h [:km "w: Khan Academy"]]
                 [:t [:km "w: GitHub trending"]]
                 [:z [:km "w: MDN"]]
-                [:r [:km "w: Reddit Saved"]]
                 [:y [:km "w: Netlify"]]
                 [:g [:km "w: Kaggle"]]
                 [:i [:km "w: WakaTime"]]

@@ -24,6 +24,7 @@
       pkgs.kubectl
       #pkgs.leiningen
       #pkgs.bat # TODO: fix on darwin. tries to build for long time & fails
+      pkgs.cloc
       #pkgs.clog-cli
       #pkgs.loc
       #pkgs.ocamlPackages.merlin
