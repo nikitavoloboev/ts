@@ -19,12 +19,14 @@
       pkgs.gitAndTools.git-hub
       pkgs.git
       pkgs.hugo
+      pkgs.texlive.combined.scheme-full
       pkgs.nix
       pkgs.ripgrep
       pkgs.kubectl
       #pkgs.leiningen
       #pkgs.bat # TODO: fix on darwin. tries to build for long time & fails
       pkgs.cloc
+      pkgs.python3
       #pkgs.clog-cli
       #pkgs.loc
       #pkgs.ocamlPackages.merlin
@@ -32,6 +34,10 @@
       #pkgs.nodejs-10_x
       #pkgs.screenfetch
       #pkgs.yarn
+
+      # python global
+      pkgs.python36Packages.autopep8
+      #pkgs.python27Packages.autopep8
     ];
 
 

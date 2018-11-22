@@ -61,11 +61,6 @@
     "when": "editorFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+i",
-    "command": "editor.debug.action.showDebugHover",
-    "when": "editorTextFocus && inDebugMode"
-  },
-  {
     "key": "ctrl+;",
     "command": "editor.action.showHover",
     "when": "editorTextFocus"
