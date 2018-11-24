@@ -586,4 +586,4 @@
                  [:8 :!TO8]
                  [:9 :!TO9]
                  [:0 :!TO0]]}]}
-[:right_command :right_command nil {:alone !Cspacebar}]
+[:right_command :right_command nil {:alone :!Cspacebar}]
