@@ -80,7 +80,7 @@
         {:des "swap keys"
          :rules[[:#Psemicolon :!Ssemicolon]
                 [:!Ssemicolon :semicolon]]}
-        {:des "bind keys"
+        {:des "right cmd -> Alfred"
          :rules[[:right_command :right_command nil {:alone :!Cspacebar}]]}
         {:des "jsim"
          :rules[[[:j :k] [:alfred "search google" "net.deanishe.alfred-searchio"]]
