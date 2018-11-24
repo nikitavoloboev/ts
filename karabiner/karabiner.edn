@@ -80,6 +80,8 @@
         {:des "swap keys"
          :rules[[:#Psemicolon :!Ssemicolon]
                 [:!Ssemicolon :semicolon]]}
+        {:des "bind keys"
+         :rules[[:right_command :right_command nil {:alone :!Cspacebar}]]}
         {:des "jsim"
          :rules[[[:j :k] [:alfred "search google" "net.deanishe.alfred-searchio"]]
                 [[:j :semicolon] [:alfred "search tabs" "net.deanishe.alfred.safari"]]
@@ -586,4 +588,3 @@
                  [:8 :!TO8]
                  [:9 :!TO9]
                  [:0 :!TO0]]}]}
-[:right_command :right_command nil {:alone :!Cspacebar}]
