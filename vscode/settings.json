@@ -37,7 +37,7 @@
   "workbench.settings.enableNaturalLanguageSearch": false,
   "workbench.colorTheme": "Monokai Night",
   // window
-  "window.zoomLevel": -1,
+  "window.zoomLevel": 0,
   "window.restoreWindows": "all",
   "window.title": "${activeEditorMedium}${separator}${rootName}",
   "window.newWindowDimensions": "maximized",

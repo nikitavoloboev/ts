@@ -208,7 +208,7 @@
         {:des "rkey (apps)"
          :rules[:r-mode
                 [:spacebar :!CT8]
-                [:u [:km "open: Actual"]]
+                [:period [:km "open: Actual"]]
                 [:q [:km "open: IINA"]]
                 [:l [:km "open: Ulysses"]]
                 [:t [:km "open: Transmission"]]
@@ -341,6 +341,8 @@
                 [:o :!CTO9]
                 [:a :!Cc]
                 [:v :left_shift]
+                [:quote [:!Cleft_arrow :!CSright_arrow]] ; highlight current line 
+                [:w [:!Oleft_arrow :!OSright_arrow]] ; highlight word
                 [:d :delete_or_backspace]
                 [:f :return_or_enter]
                 [:c :!Cdelete_or_backspace]
@@ -360,9 +362,9 @@
                 ;[:l {:mkey {:hwheel 100}}]
                 [:j {:mkey {:vwheel 100}}]
                 [:k {:mkey {:vwheel -100}}]
-                [:i :!Ckeypad_hyphen] ;Zoom in
+                [:i :!Ckeypad_hyphen] ; Zoom in
                 [:a :!CT6] ; Smart zoom
-                [:o :!Ckeypad_plus] ;Zoom out
+                [:o :!Ckeypad_plus] ; Zoom out
                 [:l [:km "Select line and google"]]
                 [:g [:km "Centre mouse to active app"]]
                 [:m [:km "Google clipboard"]]
@@ -402,6 +404,7 @@
         {:des "gkey (things)"
          :rules[:g-mode
                 [:q :!CO0] ; Show Dropzone dropdown
+                [:a [:km "Test"]]
                 [:e :!COd] ; Show/hide dock
                 [:k :!COSf] ; Maximize window
                 [:n :!CTOg] ; Turn on/off notifications
@@ -411,7 +414,6 @@
                 ;[:q :!COequal_sign]
                 [:m :!CTO2] ; Full screen app
                 [:j :!COslash] ; Show/hide notification centre
-                ;[:q [:km "Test"]]
                 [:period [:km "Break 5 min"]]
                 [:comma [:km "Break 10 min"]]
                 [:l :!CSOd] ; Move window right
@@ -535,8 +537,10 @@
         {:des "backkey (todo)"
          :rules[:backquote-mode
                 [:o [:km "todo: open source"]]
-                [:j [:km "todo: clean"]]
-                [:k [:km "todo: empty"]]
+                [:n [:km "todo: clean"]]
+                [:j [:km "todo: empty"]]
+                [:k [:km "todo: 2Do"]]
+                [:m [:km "todo: learn anything"]]
                 [:l [:km "todo: learn"]]]}
         {:des "commakey"
          :rules[:comma-mode
