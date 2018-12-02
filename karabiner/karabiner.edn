@@ -536,11 +536,12 @@
                 [:a [:c :o :n :s :o :l :e :period :l :o :g :!S9 :!S0 :left_arrow]]]} ; -> console.log()
         {:des "backkey (todo)"
          :rules[:backquote-mode
-                [:o [:km "todo: open source"]]
+                [:o [:km "todo: code"]]
                 [:n [:km "todo: clean"]]
                 [:j [:km "todo: empty"]]
                 [:k [:km "todo: 2Do"]]
-                [:m [:km "todo: learn anything"]]
+                [:i [:km "todo: ideas"]]
+                [:m [:km "todo: LA"]]
                 [:l [:km "todo: learn"]]]}
         {:des "commakey"
          :rules[:comma-mode

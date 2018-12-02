@@ -40,7 +40,7 @@ I also use [Dotbot](https://github.com/anishathalye/dotbot) to apply appropriate
 3. Download & install apps from [my macOS](https://github.com/nikitavoloboev/my-mac-os).
 4. Download dotfiles & set everything up (instructions above).
 3. Download [Alfred workflows](https://github.com/learn-anything/alfred-workflows#readme).
-4. Download [KM macros](https://wiki.nikitavoloboev.xyz/macOS/apps/keyboard-maestro/km-macros.html).
+4. Download [KM macros](https://wiki.nikitavoloboev.xyz/macos/macos-apps/keyboard-maestro/km-macros).
 
 I describe my custom configuration I use below. It is heavily tailored to my own workflow so it is best you take ideas from it rather than copying the entire config.
 
@@ -50,13 +50,13 @@ I describe my custom configuration I use below. It is heavily tailored to my own
 
 The most exciting thing in here is probably how I utilize [Karabiner](https://pqrs.org/osx/karabiner/). It has absolutely transformed the way I interact with my computer and there is no going back now.
 
-I go over how I use Karabiner in detail [here](https://wiki.nikitavoloboev.xyz/macOS/apps/karabiner/karabiner.html). I generate [my config](karabiner/karabiner.edn) for it with [Goku](https://github.com/yqrashawn/GokuRakuJoudo#readme).
+I go over how I use Karabiner in detail [here](https://wiki.nikitavoloboev.xyz/macos/macos-apps/karabiner). I generate [my config](karabiner/karabiner.edn) for it with [Goku](https://github.com/yqrashawn/GokuRakuJoudo#readme).
 
 ## Neovim
 
 [Vim language](https://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim/1220118#1220118) is the best text editing experience you will ever get. It is worth learning it as you will start thinking about text editing differently.
 
-My Neovim config can be seen [here](nvim/init.vim). I use [Monokai Night theme](https://github.com/nikitavoloboev/vim-monokai-night#readme) with [many plugins](https://wiki.nikitavoloboev.xyz/text-editors/vim/vim-plugins.html). Here is how it looks:
+My Neovim config can be seen [here](nvim/init.vim). I use [Monokai Night theme](https://github.com/nikitavoloboev/vim-monokai-night#readme) with [many plugins](https://wiki.nikitavoloboev.xyz/text-editors/vim/vim-plugins). Here is how it looks:
 
 ![](https://i.imgur.com/sLXBvv7.png)
 
@@ -64,13 +64,13 @@ My Neovim config can be seen [here](nvim/init.vim). I use [Monokai Night theme](
 
 My main editor of choice is [VS Code](https://github.com/Microsoft/vscode) since it has well built [vim mode](https://github.com/VSCodeVim/Vim).
 
-Configs I use for it can be seen [here](https://github.com/nikitavoloboev/dotfiles/tree/master/vscode). And [here](https://wiki.nikitavoloboev.xyz/text-editors/vs-code/vs-code-extensions.html) is a list of extensions I use.
+Configs I use for it can be seen [here](https://github.com/nikitavoloboev/dotfiles/tree/master/vscode). And [here](https://wiki.nikitavoloboev.xyz/text-editors/vs-code/vs-code-extensions) is a list of extensions I use.
 
 ## Sublime Text
 
-I use it primarily to edit markdown files like [my wiki](https://wiki.nikitavoloboev.xyz/other/wiki-workflow.html). I also edit config files and open large and small files for quick edits.
+I use it primarily to edit markdown files like [my wiki](https://wiki.nikitavoloboev.xyz/other/wiki-workflow). I also edit config files and open large and small files for quick edits.
 
-I use [many plugins](https://wiki.nikitavoloboev.xyz/text-editors/sublime-text/sublime-text-plugins.html) together with [Ayu theme](https://github.com/dempfi/ayu).
+I use [many plugins](https://wiki.nikitavoloboev.xyz/text-editors/sublime-text/sublime-text-plugins) together with [Ayu theme](https://github.com/dempfi/ayu).
 
 ## Hammerspoon
 
@@ -78,7 +78,7 @@ I don't use [Hammerspoon](http://www.hammerspoon.org/) as extensively however I 
 
 ## Zsh
 
-I am using [Zsh](http://www.zsh.org) as my shell and [Antibody](https://github.com/getantibody/antibody) to install all [my Zsh plugins](https://wiki.nikitavoloboev.xyz/unix/shell/zsh/zsh-plugins.html).
+I am using [Zsh](http://www.zsh.org) as my shell and [Antibody](https://github.com/getantibody/antibody) to install all [my Zsh plugins](https://wiki.nikitavoloboev.xyz/unix/shell/zsh/zsh-plugins).
 
 I am also using [Monokai Night theme](https://github.com/nikitavoloboev/my-mac-os/tree/master/iterm#readme) I made for iTerm. Here is how my prompt looks:
 
