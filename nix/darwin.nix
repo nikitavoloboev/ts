@@ -21,6 +21,7 @@
       pkgs.hugo
       pkgs.texlive.combined.scheme-full
       pkgs.nix
+      pkgs.go
       pkgs.ripgrep
       pkgs.kubectl
       #pkgs.leiningen

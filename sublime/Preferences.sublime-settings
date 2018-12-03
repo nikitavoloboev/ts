@@ -77,7 +77,8 @@
 		"extendable",
 		"searchable",
 		"Veganism",
-		"downloadable"
+		"downloadable",
+		"Neuromorphic"
 	],
 	"auto_format_on_save": true,
 	"binary_file_patterns":

@@ -3,17 +3,20 @@
     link:
       create: true
       relink: true
-      force: true # Swap the original file
+      force: true # Swap original file
 
 # TODO: ?
-- clean: ['~', '~/.config']
+- clean: ["~", "~/.config"]
 
 # Run shell commands
 - shell:
     # Install submodules
     - [git submodule update --init --recursive, Installing submodules]
-    # Nixify
+    # TODO: delete! probably dont need it
     #- npm config set prefix '~/.npm-global'
+    # TODO: add currently non nix installed tools
+    # Install go tools
+    # Install rust
 
 # Symlink files
 - link:
