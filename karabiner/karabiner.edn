@@ -426,11 +426,12 @@
                 [:f [:km "open: Spark"]]
                 [:g [:alfred "search contacts" "nikivi.search.content"]]
                 [:e [:km "open: Telegram"]]
+                [:period [:km "open: Caprine"]]
                 [:n [:km "Create new contact"]]
                 [:k [:km "open: Telegram"]]
-                [:o [:km "open: Slack"]]
+                [:semicolon [:km "open: Sblack"]]
                 [:j [:km "open: Textual"]]
-                [:semicolon [:km "w: Slack"]]
+                [:o [:km "w: Slack"]]
                 [:l [:km "open: Discord"]]]}
         {:des "xkey (alfred)"
          :rules[:x-mode

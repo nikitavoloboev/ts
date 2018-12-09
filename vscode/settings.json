@@ -174,7 +174,6 @@
   "go.lintTool": "golint",
   "go.lintOnSave": "package",
   "go.useLanguageServer": true,
-  "go.gocodePackageLookupMode": "gb",
   // files
   "files.associations": {
     "*.toml": "toml"

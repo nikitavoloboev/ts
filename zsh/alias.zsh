@@ -117,22 +117,22 @@ alias wfa='alfred pack -o ~/Desktop'
 alias ws='workflow-install -s workflow' # Symlink `source` directory
 
 # Docker
-alias o='docker'
-# alias or='docker rm'
-# alias oc='docker compose'
-# alias og='docker logs'
-# alias ogt='docker logs --tail 100'
-# alias os='docker ps'
-# alias osq='docker ps -q'
-# alias osa='docker ps -a'
-# alias ok='docker kill'
+alias k='docker'
+# alias kr='docker rm'
+# alias kc='docker compose'
+# alias kg='docker logs'
+# alias kgt='docker logs --tail 100'
+# alias ks='docker ps'
+# alias ksq='docker ps -q'
+# alias ksa='docker ps -a'
+# alias kk='docker kill'
 
 # Kubernetes
-alias k='kubectl'
-alias kl='kubectl logs'
-alias ke='kubectl describe'
-alias kx='kubectl explain'
-alias kg='kubectl get'
+alias kb='kubectl'
+alias kbl='kubectl logs'
+alias kbe='kubectl describe'
+alias kbx='kubectl explain'
+alias kbg='kubectl get'
 
 # Node
 alias nd='node'
@@ -153,6 +153,7 @@ alias is='npm start'
 alias dev='npm run dev'
 
 # Go
+alias o='go'
 alias org='richgo'
 alias og.='go get ./...' # go get all packages for current project
 alias ot='playgo'
