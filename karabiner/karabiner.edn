@@ -25,6 +25,7 @@
              :b-mode {:key :b}
              :n-mode {:key :n}
              :m-mode {:key :m}
+             :spacebar-mode {:key :spacebar}
              :backquote-mode {:key :grave_accent_and_tilde}
              :dotjs-mode {:key :period}
              :tab-mode {:key :tab}
@@ -81,12 +82,12 @@
          :rules[[:#Psemicolon :!Ssemicolon]
                 [:!Ssemicolon :semicolon]]}
         {:des "right cmd -> Alfred"
-         :rules[[:right_command :right_command nil {:alone :!Cspacebar}]]}
+         :rules[[:right_command :right_command nil {:alone :!CTOSspacebar}]]}
         {:des "jsim"
          :rules[[[:j :k] [:alfred "search google" "net.deanishe.alfred-searchio"]]
                 [[:j :semicolon] [:alfred "search tabs" "net.deanishe.alfred.safari"]]
                 ;[[:j :spacebar] [:km "Get current URL from Safari"]]
-                [[:j :l] :!Cspacebar]]}
+                [[:j :l] :!CTOSspacebar]]} ; Alfred
         {:des "ksim"
          :rules [
                  [[:k :l] [:alfred "search dash" "com.nikivi.own.dash"]]
@@ -166,6 +167,7 @@
                 [:open_bracket :!Copen_bracket]
                 [:close_bracket :!Cclose_bracket]
                 [:semicolon :!Csemicolon]
+                [:spacebar :!CT8] ; search selection in Dictionary (wiki)
                 [:quote :!Cquote]
                 [:comma :!Ccomma]
                 [:period :!Cperiod]
@@ -207,7 +209,6 @@
                 [:0 :!C0]]}
         {:des "rkey (apps)"
          :rules[:r-mode
-                [:spacebar :!CT8]
                 [:period [:km "open: Actual"]]
                 [:q [:km "open: IINA"]]
                 [:l [:km "open: Ulysses"]]
@@ -379,6 +380,7 @@
         {:des "fkey (essential)"
          :rules[:f-mode
                 [:e :!CO8]
+                [:spacebar :!CTq] ; search selection in Web Searches
                 [:semicolon [:km "open: TaskPaper"]]
                 [:w [:km "Lowercase selected text"]]
                 [:q [:km "Uppercase selected text"]]
@@ -529,6 +531,9 @@
                 [:w [:km "w: AWS"]]
                 [:s [:km "w: Asana"]]
                 [:n [:km "w: NPM"]]]}
+        {:des "spacekey (km palettes)"
+         :rules[:spacebar-mode
+                [:t :!SOTr]]} ; personal
         {:des "jsdot"
          :rules[:dotjs-mode
                 [:s [:equal_sign :!Speriod :spacebar]] ; -> =>

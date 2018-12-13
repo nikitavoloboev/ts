@@ -24,6 +24,7 @@
       pkgs.go
       pkgs.ripgrep
       pkgs.kubectl
+      pkgs.clojure
       #pkgs.leiningen
       #pkgs.bat # TODO: fix on darwin. tries to build for long time & fails
       pkgs.cloc
