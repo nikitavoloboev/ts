@@ -21,10 +21,11 @@
       pkgs.hugo
       pkgs.texlive.combined.scheme-full
       pkgs.nix
+      pkgs.clojure
       pkgs.go
       pkgs.ripgrep
+      pkgs.tree
       pkgs.kubectl
-      pkgs.clojure
       #pkgs.leiningen
       #pkgs.bat # TODO: fix on darwin. tries to build for long time & fails
       pkgs.cloc

@@ -165,6 +165,7 @@ These are dotfiles I got many ideas from and liked.
 - [wangsongiam](https://github.com/wangsongiam/dotfiles) - Interesting Hammerspoon and Zsh config.
 - [Keith](https://github.com/keith/dotfiles) - Vim, Zsh, Tmux, and macOS.
 - [bresilla](https://github.com/bresilla/dotfiles) - Neat Linux look.
+- [Jess Frazelle](https://github.com/jessfraz/dotfiles) - Docker/Linux.
 
 I also mention Nix configurations I liked in [my wiki](https://wiki.nikitavoloboev.xyz/package-managers/nix/nix-darwin).
 

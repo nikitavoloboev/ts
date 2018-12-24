@@ -206,7 +206,8 @@
                  [:0 :!C0]]}
         {:des "rkey (apps)"
          :rules [:r-mode
-                 [:period [:km "open: Actual"]]
+                 ;[:period [:km "open: Actual"]]
+                 [:period [:km "open: Marked"]]
                  [:q [:km "open: IINA"]]
                  [:l [:km "open: Ulysses"]]
                  [:t [:km "open: Transmission"]]
@@ -423,7 +424,7 @@
         {:des "zkey (chat)"
          :rules [:z-mode
                  [:i [:km "open: Tweetbot"]]
-                 [:m [:km "open: Whalebird"]]
+                 [:b [:km "open: Whalebird"]]
                  [:f [:km "open: Spark"]]
                  [:g [:alfred "search contacts" "nikivi.search.content"]]
                  [:e [:km "open: Telegram"]]
@@ -441,6 +442,7 @@
          :rules [:v-mode
                  [:p [:km "Connect/disconnect AirPods"]]
                  [:r [:km "wiki: Rules"]]
+                 [:e [:km "wiki: Month"]]
                  [:j :mute]
                 ;[:a [:km "Noizio change"]]
                 ;[:s :!TS0] ; Torn on/off Noizio
@@ -545,8 +547,8 @@
         {:des "backkey (todo)"
          :rules [:backquote-mode
                  [:o [:km "todo: code"]]
-                 [:n [:km "todo: clean"]]
-                 [:j [:km "todo: empty"]]
+                 [:j [:km "todo: clean"]]
+                 [:n [:km "todo: empty"]]
                  [:k [:km "todo: 2Do"]]
                  [:i [:km "todo: ideas"]]
                  [:m [:km "todo: LA"]]
