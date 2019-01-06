@@ -48,7 +48,7 @@ I describe my custom configuration I use below. It is heavily tailored to my own
 
 <img src="https://imgs.xkcd.com/comics/borrow_your_laptop_2x.png" width="300" alt="img">
 
-The most exciting thing in here is probably how I utilize [Karabiner](https://pqrs.org/osx/karabiner/). It has absolutely transformed the way I interact with my computer and there is no going back now.
+The most exciting thing in here is probably how I utilize [Karabiner](https://pqrs.org/osx/karabiner/). It has absolutely [transformed the way I interact with my computer](https://medium.com/@nikitavoloboev/karabiner-god-mode-7407a5ddc8f6) and there is no going back now.
 
 I go over how I use Karabiner in detail [here](https://wiki.nikitavoloboev.xyz/macos/macos-apps/karabiner). I generate [my config](karabiner/karabiner.edn) for it with [Goku](https://github.com/yqrashawn/GokuRakuJoudo#readme).
 

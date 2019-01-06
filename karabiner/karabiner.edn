@@ -441,11 +441,11 @@
         {:des "vkey (media)"
          :rules [:v-mode
                  [:p [:km "Connect/disconnect AirPods"]]
-                 [:r [:km "wiki: Rules"]]
+                 [:w [:km "wiki: Rules"]]
                  [:e [:km "wiki: Month"]]
                  [:j :mute]
-                ;[:a [:km "Noizio change"]]
-                ;[:s :!TS0] ; Torn on/off Noizio
+                 [:comma [:km "Noizio change"]]
+                 [:period :!TS0] ; Torn on/off Noizio
                  [:a [:km "Clone repo to ~/src/clones"]]
                  [:s [:km "Clone repo to ~/src/clones and open with VS Code"]]
                  [:i :display_brightness_decrement]

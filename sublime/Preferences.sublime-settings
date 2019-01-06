@@ -78,7 +78,8 @@
 		"searchable",
 		"Veganism",
 		"downloadable",
-		"Neuromorphic"
+		"Neuromorphic",
+		"Immunotherapy"
 	],
 	"auto_format_on_save": true,
 	"binary_file_patterns":
@@ -109,7 +110,7 @@
 	"color_scheme": "Packages/ayu/ayu-dark.tmTheme",
 	"dictionary": "Packages/Language - English/en_US.dic",
 	"font_face": "Fira Code",
-	"font_size": 12,
+	"font_size": 13,
 	"ignored_packages":
 	[
 		"Vintage"
