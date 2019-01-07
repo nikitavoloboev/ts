@@ -381,6 +381,7 @@
                  [:spacebar :!CTq] ; search selection in Web Searches
                  [:semicolon [:km "open: TaskPaper"]]
                  [:w [:km "Lowercase selected text"]]
+                 [:u [:km "Add question"]]
                  [:q [:km "Uppercase selected text"]]
                  [:period [:km "edit: Karabiner"]]
                  [:a :!CTO4] ; Alfred file action
@@ -440,9 +441,9 @@
                  [:l [:alfred "search wiki" "nikivi.mind"]]]}
         {:des "vkey (media)"
          :rules [:v-mode
-                 [:p [:km "Connect/disconnect AirPods"]]
+                 [:e [:km "Connect/disconnect AirPods"]]
                  [:w [:km "wiki: Rules"]]
-                 [:e [:km "wiki: Month"]]
+                 [:q [:km "wiki: Month"]]
                  [:j :mute]
                  [:comma [:km "Noizio change"]]
                  [:period :!TS0] ; Torn on/off Noizio
@@ -546,12 +547,16 @@
         ;         [:a [:g :o :l :a :n :g :spacekey]]]} ; -> golang
         {:des "backkey (todo)"
          :rules [:backquote-mode
+                 [:semicolon [:km "Open Focus Trello"]]
+                 [:m [:km "Open Learn Trello"]]
+                 [:r [:km "Open Write Trello"]]
+                 [:period [:km "Open Books Trello"]]
+                 [:comma [:km "Open Research Papers Trello"]]
+                 [:i [:km "Open Ideas Trello"]]
                  [:o [:km "todo: code"]]
-                 [:j [:km "todo: clean"]]
-                 [:n [:km "todo: empty"]]
+                 [:n [:km "todo: clean"]]
+                 [:j [:km "todo: empty"]]
                  [:k [:km "todo: 2Do"]]
-                 [:i [:km "todo: ideas"]]
-                 [:m [:km "todo: LA"]]
                  [:l [:km "todo: learn"]]]}
         {:des "commakey"
          :rules [:comma-mode
