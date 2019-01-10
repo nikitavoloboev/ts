@@ -41,6 +41,13 @@
       # python global
       pkgs.python36Packages.autopep8
       #pkgs.python27Packages.autopep8
+
+      # temp
+      pkgs.autoconf
+      pkgs.automake
+      pkgs.gettext
+      pkgs.libtool
+      pkgs.xz
     ];
 
 

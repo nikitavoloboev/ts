@@ -56,8 +56,8 @@ set mouse=a " Copy selected text with mouse to system clipboard
 set undofile " Save undos after file closes
 set wildmode=longest:list,full " Complete longest common string, then each full match
 set updatetime=250 " If this many milliseconds nothing is typed the swap file will be written to disk
-set visualbell " Turn off the audio bell
-set clipboard^=unnamed  " Copy text to system clipboard
+set visualbell " Turn off the audio bell (no beeps)
+set clipboard^=unnamed  " Make yanking copy to clipboard
 set gdefault " Always do global substitutions
 set title " Set terminal title
 set whichwrap+=<,>,[,]

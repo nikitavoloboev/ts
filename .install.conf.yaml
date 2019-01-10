@@ -34,3 +34,5 @@
     # VS Code
     ~/Library/Application Support/Code/User/settings.json: vscode/settings.json
     ~/Library/Application Support/Code/User/keybindings.json: vscode/keybindings.json
+    # IDEA
+    ~/.ideavimrc: idea/ideavimrc

@@ -30,7 +30,7 @@
              :godot-mode {:key :period}
              :tab-mode {:key :tab}
              :comma-mode {:key :comma}
-             :caps_lock-mode {:key :caps_lock}
+             :caps-mode {:key :caps_lock}
              :js-mode {:key :period}}
  :main [{:des "colonkey (shift)"
          :rules [:semicolon-mode
@@ -141,7 +141,7 @@
         {:des "wkey (apps)"
          :rules [:w-mode
                  [:k [:km "open: Safari"]]
-                 [:h [:km "open: Activity Monitor"]]
+                 [:u [:km "open: Activity Monitor"]]
                  [:i [:km "open: Chrome Canary"]]
                  [:g [:km "open: Bee"]]
                  [:t [:km "open: Trello"]]
@@ -153,6 +153,7 @@
                  [:r [:km "open: Fantastical"]]
                  [:e :!OSC1] ; Open Dash 
                  [:semicolon [:km "open: Xcode"]]
+                 [:h [:km "open: IntelliJ IDEA"]]
                  [:period [:km "open: SnippetsLab"]]
                  [:f [:km "open: 2do"]]
                  [:j [:km "open: iTerm"]]
@@ -412,10 +413,11 @@
                  [:n :!CTOg] ; Turn on/off notifications
                  [:w :!CSgrave_accent_and_tilde] ; Switch between active windows (go up)
                  [:semicolon :!Cgrave_accent_and_tilde] ; Switch between active windows  (go down)
-                 [:i [:km "New SnippetsLab snippet"]]
                 ;[:q :!COequal_sign]
-                 [:m :!CTO2] ; Full screen app
+                 [:b :!CTO2] ; Full screen app
                  [:j :!COslash] ; Show/hide notification centre
+                 [:i [:km "New SnippetsLab snippet"]]
+                 [:m :!CO6] ; Maximize window to next monitor
                  [:period [:km "Break 5 min"]]
                  [:comma [:km "Break 10 min"]]
                  [:l :!CSOd] ; Move window right
@@ -445,8 +447,8 @@
                  [:w [:km "wiki: Rules"]]
                  [:q [:km "wiki: Month"]]
                  [:j :mute]
-                 [:comma [:km "Noizio change"]]
-                 [:period :!TS0] ; Torn on/off Noizio
+                 [:period [:km "Noizio change"]]
+                 [:semicolon :!TS0] ; Torn on/off Noizio
                  [:a [:km "Clone repo to ~/src/clones"]]
                  [:s [:km "Clone repo to ~/src/clones and open with VS Code"]]
                  [:i :display_brightness_decrement]
@@ -477,6 +479,7 @@
                  [:5 :!O5]
                  [:6 :!O6]
                  [:e [:alfred "search subs" "net.deanishe.alfred-reddit"]]
+                 [:b [:alfred "search bookmarks" "net.deanishe.alfred.safari"]]
                  [:r [:alfred "search reddit" "nikivi.search.the.web"]]
                  [:d [:alfred "search packages" "com.sindresorhus.npms"]]
                  [:x [:alfred "search lobsters" "nikivi.search.the.web"]]
@@ -545,26 +548,8 @@
         ; {:des "godot"
         ;  :rules[:godot-mode
         ;         [:a [:g :o :l :a :n :g :spacekey]]]} ; -> golang
-        {:des "backkey (todo)"
+        {:des "backkey (dash)"
          :rules [:backquote-mode
-                 [:semicolon [:km "Open Focus Trello"]]
-                 [:m [:km "Open Learn Trello"]]
-                 [:r [:km "Open Write Trello"]]
-                 [:period [:km "Open Books Trello"]]
-                 [:comma [:km "Open Research Papers Trello"]]
-                 [:i [:km "Open Ideas Trello"]]
-                 [:o [:km "todo: code"]]
-                 [:n [:km "todo: clean"]]
-                 [:j [:km "todo: empty"]]
-                 [:k [:km "todo: 2Do"]]
-                 [:l [:km "todo: learn"]]]}
-        {:des "commakey"
-         :rules [:comma-mode
-                 [:e [:alfred "restart wifi" "nikivi.wifi.tools"]]
-                 [:w [:alfred "toggle wifi" "nikivi.wifi.tools"]]
-                 [:g [:km "Commit my wiki"]]]}
-        {:des "capskey"
-         :rules [:caps_lock-mode
                  [:open_bracket :!TOopen_bracket]
                  [:close_bracket :!TOclose_bracket]
                  [:semicolon :!TOsemicolon]
@@ -607,4 +592,22 @@
                  [:7 :!TO7]
                  [:8 :!TO8]
                  [:9 :!TO9]
-                 [:0 :!TO0]]}]}
+                 [:0 :!TO0]]}
+        {:des "commakey"
+         :rules [:comma-mode
+                 [:e [:alfred "restart wifi" "nikivi.wifi.tools"]]
+                 [:w [:alfred "toggle wifi" "nikivi.wifi.tools"]]
+                 [:g [:km "Commit my wiki"]]]}
+        {:des "capskey (todo + trello)"
+         :rules [:caps-mode
+                 [:m [:km "Open Focus Trello"]]
+                 [:semicolon [:km "Open Learn Trello"]]
+                 [:r [:km "Open Write Trello"]]
+                 [:period [:km "Open Books Trello"]]
+                 [:comma [:km "Open Research Papers Trello"]]
+                 [:i [:km "Open Ideas Trello"]]
+                 [:o [:km "todo: code"]]
+                 [:n [:km "todo: clean"]]
+                 [:j [:km "todo: empty"]]
+                 [:k [:km "todo: 2Do"]]
+                 [:l [:km "todo: learn"]]]}]}
