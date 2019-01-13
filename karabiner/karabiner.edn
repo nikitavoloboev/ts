@@ -91,6 +91,7 @@
          :rules [[[:k :l] [:alfred "search dash" "com.nikivi.own.dash"]]
                  [[:k :m] [:alfred "search youtube" "net.deanishe.alfred-searchio"]]
                  [[:k :n] [:alfred "search history" "net.deanishe.alfred.safari"]]
+                 [[:k :semicolon] [:alfred "ssh" "net.deanishe.alfred-ssh"]]
                  [[:k :spacebar] [:alfred "search dash profiles" "nikivi.dash.profiles"]]]}
         {:des "qkey (cmd + shift)"
          :rules [:q-mode
@@ -290,7 +291,7 @@
                 ;[:l [:km "task: learn"]]]}
         {:des "akey (ctrl)"
          :rules [:a-mode
-                 [:spacebar :!CT9]
+                 [:spacebar :!CT9] ; Search selection on Google
                  [:open_bracket :!Topen_bracket]
                  [:close_bracket :!Tclose_bracket]
                  [:semicolon :!Tsemicolon]
@@ -337,7 +338,7 @@
          :rules [:s-mode
                  [:e :tab]
                  [:r :!Stab]
-                 [:i :!Tspacebar]
+                 [:i :!Tspacebar] iii
                  [:o :!CTO9]
                  [:a :!Cc]
                  [:v :left_shift]
@@ -582,7 +583,14 @@
                  [:w :!TOw]
                  [:x :!TOx]
                  [:y :!TOy]
-                 [:z :!TOz]
+                 [:z :!TOz]]}
+        {:des "commakey"
+         :rules [:comma-mode
+                 [:e [:alfred "restart wifi" "nikivi.wifi.tools"]]
+                 [:w [:alfred "toggle wifi" "nikivi.wifi.tools"]]
+                 [:g [:km "Commit my wiki"]]]}
+        {:des "capskey (todo + trello)"
+         :rules [:caps-mode
                  [:1 :!TO1]
                  [:2 :!TO2]
                  [:3 :!TO3]
@@ -592,14 +600,7 @@
                  [:7 :!TO7]
                  [:8 :!TO8]
                  [:9 :!TO9]
-                 [:0 :!TO0]]}
-        {:des "commakey"
-         :rules [:comma-mode
-                 [:e [:alfred "restart wifi" "nikivi.wifi.tools"]]
-                 [:w [:alfred "toggle wifi" "nikivi.wifi.tools"]]
-                 [:g [:km "Commit my wiki"]]]}
-        {:des "capskey (todo + trello)"
-         :rules [:caps-mode
+                 [:0 :!TO0]
                  [:m [:km "Open Focus Trello"]]
                  [:semicolon [:km "Open Learn Trello"]]
                  [:r [:km "Open Write Trello"]]
