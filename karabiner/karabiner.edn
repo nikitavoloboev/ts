@@ -338,7 +338,7 @@
          :rules [:s-mode
                  [:e :tab]
                  [:r :!Stab]
-                 [:i :!Tspacebar] iii
+                 [:i :!Tspacebar]
                  [:o :!CTO9]
                  [:a :!Cc]
                  [:v :left_shift]
