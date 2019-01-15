@@ -11,6 +11,30 @@ droot() {
   cd $(git rev-parse --show-toplevel)
 }
 
+# search local branches -> checkout to branch & delete branch previous branch
+gbb() {
+  local branches branch
+  branches=$(git branch -vv) &&
+  branch=$(echo "$branches" | fzf +m) &&
+  git checkout $(echo "$branch" | awk '{print $1}' | sed "s/.* //")
+  # delete previous branch I was on
+  git branch -d @{-1}
+}
+
+
+# search local branches -> delete local branch. gbd <branch> = delete local branch
+gbd() {
+  if [ $# -eq 0 ]; then
+    local branches branch
+    branches=$(git branch -vv) &&
+    branch=$(echo "$branches" | fzf +m) &&
+    git branch -d $(echo "$branch" | awk '{print $1}' | sed "s/.* //")
+  else
+    git branch -d "$@"
+  fi
+}
+
+# git checkout branch (searches local branches). ge <branch> = checkout branch
 ge() {
   if [ $# -eq 0 ]; then
     local branches branch
@@ -118,8 +142,8 @@ ggs() {
 
 # Write quick commit message. gc <commit-msg>
 gc() {
-    git commit -m "$*" 
-    #set -x; git commit -m "$*"; set +x; 
+    git commit -m "$*"
+    #set -x; git commit -m "$*"; set +x;
 }
 
 # cd to root of .git project

@@ -1,8 +1,8 @@
 { config, pkgs, ... }:
 
 {
-  # List packages installed in system profile. To search by name, run:
-  # $ nix-env -qaP | grep wget
+
+  # Global Packages. Non nix installed packages can be seen 
   environment.systemPackages =
     [
       pkgs.neovim

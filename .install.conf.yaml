@@ -12,11 +12,17 @@
 - shell:
     # Install submodules
     - [git submodule update --init --recursive, Installing submodules]
+
+# TODO: add specific shell block to install tools (not sure how)
+#- shell:
     # TODO: delete! probably dont need it
     #- npm config set prefix '~/.npm-global'
-    # TODO: add currently non nix installed tools
-    # Install go tools
-    # Install rust
+    # TODO: Automate filling in the list
+    # TODO: Install go tools
+    #- go get -u github.com/m3ng9i/ran
+    # TODO: Install rust
+    # TODO: Install npm global tools
+    #- npm install -g @fabiospampinato/bump
 
 # Symlink files
 - link:

@@ -77,7 +77,7 @@
         {:des "3key (test)"
          :rules [:3-mode
                  [:j [:km "test: JavaScript"]]]}
-        {:des "swap keys"
+        {:des "swap : and ;"
          :rules [[:#Psemicolon :!Ssemicolon]
                  [:!Ssemicolon :semicolon]]}
         {:des "right cmd -> Alfred"
@@ -91,8 +91,7 @@
          :rules [[[:k :l] [:alfred "search dash" "com.nikivi.own.dash"]]
                  [[:k :m] [:alfred "search youtube" "net.deanishe.alfred-searchio"]]
                  [[:k :n] [:alfred "search history" "net.deanishe.alfred.safari"]]
-                 [[:k :semicolon] [:alfred "ssh" "net.deanishe.alfred-ssh"]]
-                 [[:k :spacebar] [:alfred "search dash profiles" "nikivi.dash.profiles"]]]}
+                 [[:k :semicolon] [:alfred "ssh" "net.deanishe.alfred-ssh"]]]}
         {:des "qkey (cmd + shift)"
          :rules [:q-mode
                  [:open_bracket :!CSopen_bracket]
@@ -233,7 +232,7 @@
                  [:x :!Sbackslash]
                  [:b [:!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> TODO:
                  [:l [:hyphen :!Speriod :spacebar]] ; -> arrow (->)
-                 [:n [:slash :slash :spacebar :!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> // TODO:
+                 ;[:n [:slash :slash :spacebar :!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> // TODO:
                  [:caps_lock [:km "Match symbols"]]
                  [:e :!S3]
                  [:1 :!S1]
@@ -262,7 +261,8 @@
                  [:6 :!C6]
                  [:w :!CObackslash]
                  [:v :!CT4]
-                 [:spacebar [:alfred "search PDF files" "nikivi.search.files"]]
+                 [:spacebar [:alfred "search dash profiles" "nikivi.dash.profiles"]]
+                 [:z [:alfred "search PDF files" "nikivi.search.files"]]
                  [:g [:alfred "search snippets" "com.renfei.SnippetsLab.AlfredWorkflow"]]
                  [:grave_accent_and_tilde [:alfred "search processes" "com.vitorgalvao.alfred.processcontrol"]]
                  [:e [:km "Make 2Do task"]]
@@ -283,7 +283,7 @@
                  [:d [:alfred "search desktop" "com.vitorgalvao.alfred.directories"]]
                  [:j [:alfred "search km macros" "iansinnott.keyboardmaestro"]]
                  [:caps_lock [:alfred "search folders" "nikivi.search.folders"]]
-                 [:z [:alfred "search workflows" "org.jeef.workflowdirectory"]]
+                 [:x [:alfred "search workflows" "org.jeef.workflowdirectory"]]
                  [:k [:alfred "search menu bar" "com.tedwise.menubarsearch"]]]}
         ;{:des "tabkey ()"
          ;:rules[:tab-mode
@@ -601,13 +601,14 @@
                  [:8 :!TO8]
                  [:9 :!TO9]
                  [:0 :!TO0]
-                 [:m [:km "Open Focus Trello"]]
-                 [:semicolon [:km "Open Learn Trello"]]
+                 [:f [:km "Open Focus Trello"]]
+                 [:e [:km "Open Learn Trello"]]
                  [:r [:km "Open Write Trello"]]
                  [:period [:km "Open Books Trello"]]
-                 [:comma [:km "Open Research Papers Trello"]]
+                 [:h [:km "Open Research Papers Trello"]]
                  [:i [:km "Open Ideas Trello"]]
                  [:o [:km "todo: code"]]
+                 [:m [:km "todo: tools"]]
                  [:n [:km "todo: clean"]]
                  [:j [:km "todo: empty"]]
                  [:k [:km "todo: 2Do"]]
