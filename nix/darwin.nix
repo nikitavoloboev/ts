@@ -2,7 +2,8 @@
 
 {
 
-  # Global Packages. Non nix installed packages can be seen 
+  # Global Packages. Non nix installed packages can be seen:
+  # https://github.com/nikitavoloboev/dotfiles/blob/master/.install.conf.yaml#L17
   environment.systemPackages =
     [
       pkgs.neovim
@@ -12,6 +13,7 @@
       pkgs.antibody
       pkgs.gitAndTools.diff-so-fancy
       pkgs.direnv
+      pkgs.wget
       pkgs.exa
       pkgs.fzf
       pkgs.htop
