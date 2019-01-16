@@ -260,7 +260,6 @@
                  [:5 :!C5]
                  [:6 :!C6]
                  [:w :!CObackslash]
-                 [:v :!CT4]
                  [:spacebar [:alfred "search dash profiles" "nikivi.dash.profiles"]]
                  [:z [:alfred "search PDF files" "nikivi.search.files"]]
                  [:g [:alfred "search snippets" "com.renfei.SnippetsLab.AlfredWorkflow"]]
@@ -415,7 +414,7 @@
                  [:w :!CSgrave_accent_and_tilde] ; Switch between active windows (go up)
                  [:semicolon :!Cgrave_accent_and_tilde] ; Switch between active windows  (go down)
                 ;[:q :!COequal_sign]
-                 [:b :!CTO2] ; Full screen app
+                 [:p :!CTO2] ; Full screen app
                  [:j :!COslash] ; Show/hide notification centre
                  [:i [:km "New SnippetsLab snippet"]]
                  [:m :!CO6] ; Maximize window to next monitor
@@ -536,10 +535,6 @@
                  [:w [:km "w: AWS"]]
                  [:s [:km "w: Asana"]]
                  [:n [:km "w: NPM"]]]}
-        {:des "spacekey (km palettes)"
-         :rules [:spacebar-mode
-                 [:f :!SOTf] ; app specific
-                 [:t :!SOTr]]} ; personal
         ; {:des "jsdot"
         ;  :rules[:jsdot-mode
         ;         [:s [:equal_sign :!Speriod :spacebar]] ; -> =>
@@ -589,6 +584,11 @@
                  [:e [:alfred "restart wifi" "nikivi.wifi.tools"]]
                  [:w [:alfred "toggle wifi" "nikivi.wifi.tools"]]
                  [:g [:km "Commit my wiki"]]]}
+        {:des "spacekey (km palettes + actions)"
+         :rules [:spacebar-mode
+                 [:f :!SOTf] ; app specific
+                 [:j :!CT4] ; create new Fantastical event
+                 [:t :!SOTr]]} ; personal
         {:des "capskey (todo + trello)"
          :rules [:caps-mode
                  [:1 :!TO1]
@@ -603,13 +603,14 @@
                  [:0 :!TO0]
                  [:f [:km "Open Focus Trello"]]
                  [:e [:km "Open Learn Trello"]]
-                 [:r [:km "Open Write Trello"]]
+                 [:w [:km "Open Write Trello"]]
                  [:period [:km "Open Books Trello"]]
                  [:h [:km "Open Research Papers Trello"]]
                  [:i [:km "Open Ideas Trello"]]
-                 [:o [:km "todo: code"]]
                  [:m [:km "todo: tools"]]
+                 [:r [:km "todo: write"]]
                  [:n [:km "todo: clean"]]
+                 [:o [:km "todo: code"]]
                  [:j [:km "todo: empty"]]
                  [:k [:km "todo: 2Do"]]
                  [:l [:km "todo: learn"]]]}]}

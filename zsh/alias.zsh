@@ -99,7 +99,6 @@ alias jd='jid'
 alias tm='task'
 alias rf='reflex'
 alias ser='serve'
-# alias h='python -m http.server'
 alias cra='npx create-react-app'
 alias lic='legit'
 
