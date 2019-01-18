@@ -27,7 +27,8 @@
              :spacebar-mode {:key :spacebar}
              :backquote-mode {:key :grave_accent_and_tilde}
              ;:jsdot-mode {:key :period}
-             :godot-mode {:key :period}
+             ;:godot-mode {:key :period}
+             :pydot-mode {:key :period}
              :tab-mode {:key :tab}
              :comma-mode {:key :comma}
              :caps-mode {:key :caps_lock}
@@ -153,7 +154,7 @@
                  [:r [:km "open: Fantastical"]]
                  [:e :!OSC1] ; Open Dash 
                  [:semicolon [:km "open: Xcode"]]
-                 [:h [:km "open: IntelliJ IDEA"]]
+                 [:h [:km "open: PyCharm"]]
                  [:period [:km "open: SnippetsLab"]]
                  [:f [:km "open: 2do"]]
                  [:j [:km "open: iTerm"]]
@@ -358,14 +359,14 @@
                  [:semicolon [:km "Tasks from apps -> TODO"]]]}
         {:des "dkey (mouse)"
          :rules [:d-mode
-                ;[:h {:mkey {:hwheel -100}}]
-                ;[:l {:mkey {:hwheel 100}}]
                  [:j {:mkey {:vwheel 100}}]
                  [:k {:mkey {:vwheel -100}}]
                  [:i :!Ckeypad_hyphen] ; Zoom in
                  [:a :!CT6] ; Smart zoom
                  [:o :!Ckeypad_plus] ; Zoom out
+                 [:h :!CT3] ; Search menu bar items
                  [:l [:km "Select line and google"]]
+                 [:n [:km "Open URL in clipboard in Safari"]]
                  [:g [:km "Centre mouse to active app"]]
                  [:m [:km "Google clipboard"]]
                  [:b {:pkey :button3}]
@@ -543,7 +544,10 @@
         ;         [:a [:c :o :n :s :o :l :e :period :l :o :g :!S9 :!S0 :left_arrow]]]} ; -> console.log()
         ; {:des "godot"
         ;  :rules[:godot-mode
-        ;         [:a [:g :o :l :a :n :g :spacekey]]]} ; -> golang
+        ;         [:a [:g :o :l :a :n :g :spacebar]]]} ; -> golang
+        {:des "pydot"
+          :rules[:pydot-mode
+                 [:a [:p :r :i :n :t :!S9 :!S0 :left_arrow]]]} ; -> print()
         {:des "backkey (dash)"
          :rules [:backquote-mode
                  [:open_bracket :!TOopen_bracket]
@@ -586,9 +590,9 @@
                  [:g [:km "Commit my wiki"]]]}
         {:des "spacekey (km palettes + actions)"
          :rules [:spacebar-mode
-                 [:f :!SOTf] ; app specific
-                 [:j :!CT4] ; create new Fantastical event
-                 [:t :!SOTr]]} ; personal
+                 [:f :!SOTf] ; App specific
+                 [:j :!CT4] ; Create new Fantastical event
+                 [:t :!SOTr]]} ; Personal
         {:des "capskey (todo + trello)"
          :rules [:caps-mode
                  [:1 :!TO1]
@@ -609,6 +613,7 @@
                  [:i [:km "Open Ideas Trello"]]
                  [:m [:km "todo: tools"]]
                  [:r [:km "todo: write"]]
+                 [:d [:km "todo: draw"]]
                  [:n [:km "todo: clean"]]
                  [:o [:km "todo: code"]]
                  [:j [:km "todo: empty"]]

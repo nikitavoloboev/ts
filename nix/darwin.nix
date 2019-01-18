@@ -25,6 +25,7 @@
       pkgs.nix
       pkgs.clojure
       pkgs.go
+      pkgs.python2Full
       pkgs.ripgrep
       pkgs.tree
       pkgs.kubectl
@@ -35,21 +36,15 @@
       #pkgs.clog-cli
       #pkgs.loc
       #pkgs.ocamlPackages.merlin
-      #pkgs.minikube
+      pkgs.minikube
       #pkgs.nodejs-10_x
       #pkgs.screenfetch
       #pkgs.yarn
 
-      # python global
+      # python
+      pkgs.python36Packages.pip
       pkgs.python36Packages.autopep8
-      #pkgs.python27Packages.autopep8
-
-      # temp
-      pkgs.autoconf
-      pkgs.automake
-      pkgs.gettext
-      pkgs.libtool
-      pkgs.xz
+      pkgs.python36Packages.black
     ];
 
 

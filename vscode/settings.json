@@ -23,9 +23,9 @@
   "editor.lightbulb.enabled": false,
   "editor.minimap.enabled": false,
   "editor.cursorBlinking": "solid",
-  "editor.tabSize": 2,
   "editor.lineNumbers": "on",
   "editor.cursorStyle": "line",
+  "editor.tabSize": 2,
   // workbench
   "workbench.tree.horizontalScrolling": true,
   "workbench.statusBar.feedback.visible": false,
@@ -37,7 +37,7 @@
   "workbench.settings.enableNaturalLanguageSearch": false,
   "workbench.colorTheme": "Monokai Night",
   // window
-  "window.zoomLevel": 1,
+  "window.zoomLevel": 0,
   "window.restoreWindows": "all",
   "window.title": "${activeEditorMedium}${separator}${rootName}",
   "window.newWindowDimensions": "maximized",
@@ -181,7 +181,7 @@
   "explorer.confirmDelete": false,
   // python
   // TODO: update to p3 and nix?
-  "python.pythonPath": "/usr/bin/python2.7",
+  "python.pythonPath": "/run/current-system/sw/bin/python",
   // TODO: maybe there is better?
   "python.formatting.provider": "autopep8",
   "python.linting.pylintEnabled": false,
