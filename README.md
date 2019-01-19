@@ -36,7 +36,7 @@ I also use [Dotbot](https://github.com/anishathalye/dotbot) to apply appropriate
 ### Clean install everything
 
 1. Boot fresh macOS copy.
-2. Go through [preferences](https://imgur.com/a/rlkOyUg) & set everything up.
+2. Go through [preferences](https://imgur.com/a/KoVAxFQ) & set everything up.
 3. Download & install apps from [my macOS](https://github.com/nikitavoloboev/my-mac-os).
 4. Download dotfiles & set everything up (instructions above).
 3. Download [Alfred workflows](https://github.com/learn-anything/alfred-workflows#readme).

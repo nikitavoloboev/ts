@@ -20,6 +20,7 @@
       pkgs.httpie
       pkgs.gitAndTools.git-hub
       pkgs.git
+      #pkgs.dhall TODO: fix
       pkgs.hugo
       pkgs.texlive.combined.scheme-full
       pkgs.nix
