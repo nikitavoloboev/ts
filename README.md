@@ -25,9 +25,9 @@ You can also see my top used applications, Safari extensions and Alfred workflow
 
 ## Install
 
-I use [Nix Darwin](https://github.com/LnL7/nix-darwin) with Nix to manage my system configuration. Nix is a declarative language and you can read through [my configuration file](https://github.com/nikitavoloboev/dotfiles/blob/master/nix/darwin.nix) to see what settings it applies and what programs it installs.
+I use [Nix](https://nixos.org/nix/) with [Nix Darwin](https://github.com/LnL7/nix-darwin) to manage my system configuration. Nix is a declarative language and you can read through [my configuration file](https://github.com/nikitavoloboev/dotfiles/blob/master/nix/darwin.nix) to see what settings it applies and what programs it installs.
 
-Assuming you have Nix Darwin installed and this dotfiles repo cloned to `~/.dotfiles`, you should first run `/run/current-system/sw/bin/darwin-rebuild switch -I darwin-config=$HOME/.dotfiles/nix/darwin.nix`. This lets Nix Darwin know that the configuration file it should read is placed inside `~/.dotfiles/darwin.nix`.
+Assuming you have Nix & Nix Darwin installed and this dotfiles repo cloned to `~/.dotfiles`, you should first run `/run/current-system/sw/bin/darwin-rebuild switch -I darwin-config=$HOME/.dotfiles/nix/darwin.nix`. This lets Nix Darwin know that the configuration file it should read is placed inside `~/.dotfiles/darwin.nix`.
 
 You can then run `darwin-rebuild switch` to apply my configuration on your system.
 

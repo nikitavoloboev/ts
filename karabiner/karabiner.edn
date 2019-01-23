@@ -282,7 +282,7 @@
                  [:d [:alfred "search desktop" "com.vitorgalvao.alfred.directories"]]
                  [:j [:alfred "search km macros" "iansinnott.keyboardmaestro"]]
                  [:caps_lock [:alfred "search folders" "nikivi.search.folders"]]
-                 [:x [:alfred "search workflows" "org.jeef.workflowdirectory"]]
+                 [:v [:alfred "search workflows" "org.jeef.workflowdirectory"]]
                  [:k [:alfred "search menu bar" "com.tedwise.menubarsearch"]]]}
         ;{:des "tabkey ()"
          ;:rules[:tab-mode
@@ -381,9 +381,13 @@
                  [:e :!CO8]
                  [:spacebar :!CTq] ; search selection in Web Searches
                  [:semicolon [:km "open: TaskPaper"]]
-                 [:w [:km "Lowercase selected text"]]
+                 ;[:w [:km "Lowercase selected text"]]
+                 ;[:q :!STh] ; Record macro
+                 [:q [:km "Go to test macro"]]
+                 [:s [:km "New SnippetsLab snippet"]]
+                 [:w [:km "Test"]]
                  [:u [:km "Add question"]]
-                 [:q [:km "Uppercase selected text"]]
+                 ;[:q [:km "Uppercase selected text"]]
                  [:period [:km "edit: Karabiner"]]
                  [:a :!CTO4] ; Alfred file action
                  [:j [:km "Open 1st iTerm tab"]]
@@ -407,7 +411,6 @@
         {:des "gkey (things)"
          :rules [:g-mode
                  [:q :!CO0] ; Show Dropzone dropdown
-                 [:a [:km "Test"]]
                  [:e :!COd] ; Show/hide dock
                  [:k :!COSf] ; Maximize window
                  [:n :!CTOg] ; Turn on/off notifications
@@ -416,7 +419,6 @@
                 ;[:q :!COequal_sign]
                  [:m :!CTO2] ; Full screen app
                  [:j :!COslash] ; Show/hide notification centre
-                 [:i [:km "New SnippetsLab snippet"]]
                  ;[:m :!CO6] ; Maximize window to next monitor
                  [:period [:km "Break 5 min"]]
                  [:comma [:km "Break 10 min"]]
@@ -494,11 +496,12 @@
          :rules [:m-mode
                  [:a :!CTO1]
                  [:s [:alfred "spot_mini" "com.vdesabou.spotify.mini.player"]]
-                 [:z [:alfred "song_radio" "com.vdesabou.spotify.mini.player"]]
+                 [:e [:alfred "song_radio" "com.vdesabou.spotify.mini.player"]]
+                 [:w [:alfred "artist_radio" "com.vdesabou.spotify.mini.player"]]
                  [:d [:alfred "show_current_track" "com.vdesabou.spotify.mini.player"]]
                  [:x [:alfred "web_search_current_track" "com.vdesabou.spotify.mini.player"]]
                  [:c [:alfred "add_current_track_to" "com.vdesabou.spotify.mini.player"]]
-                 [:v [:alfred "show_playlists" "com.vdesabou.spotify.mini.player"]]
+                 [:z [:alfred "show_playlists" "com.vdesabou.spotify.mini.player"]]
                  [:grave_accent_and_tilde [:alfred "copy_current_track_url_to_clipboard" "com.vdesabou.spotify.mini.player"]]
                  [:g [:alfred "add_current_track_to_alfred_playlist_or_your_music" "com.vdesabou.spotify.mini.player"]]
                  [:h [:alfred "remove_current_track_from" "com.vdesabou.spotify.mini.player"]]
@@ -608,9 +611,12 @@
                  [:0 :!TO0]
                  [:f [:km "Open Focus Trello"]]
                  [:e [:km "Open Learn Trello"]]
+                 [:v [:km "Open Videos Trello"]]
                  [:w [:km "Open Write Trello"]]
+                 [:s [:km "Open Possessions Trello"]]
                  [:period [:km "Open Books Trello"]]
                  [:h [:km "Open Research Papers Trello"]]
+                 [:c [:km "Open Courses Trello"]]
                  [:i [:km "Open Ideas Trello"]]
                  [:m [:km "todo: tools"]]
                  [:r [:km "todo: write"]]
