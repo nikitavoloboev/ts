@@ -13,8 +13,6 @@ Plug 'itchyny/lightline.vim' " Light and configurable statusline/tabline plugin.
 Plug 'romainl/vim-cool' " Stop matching after search is done.
 Plug 'jiangmiao/auto-pairs' " Insert or delete brackets, parens, quotes in pair.
 Plug 'w0rp/ale' " Asynchronous Lint Engine.
-Plug 'honza/vim-snippets' " Snippet files for various programming languages.
-Plug 'sbdchd/neoformat' " Format code.
 Plug 'rizzatti/dash.vim' " Search Dash app.
 Plug 'jremmen/vim-ripgrep' " Use RipGrep in Vim and display results in a quickfix list.
 
@@ -39,13 +37,6 @@ Plug 'thinca/vim-quickrun' " Run commands quickly.
 " Git
 Plug 'tpope/vim-fugitive' " Git wrapper.
 Plug 'mhinz/vim-signify' " Show a diff using Vim its sign column.
-
-" Deoplete
-Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') } " Asynchronous completion framework.
-Plug 'zchee/deoplete-jedi' " Deoplete source for jedi.
-
-" Vim
-Plug 'Shougo/neco-vim', { 'for': 'vim' } " Vim source for neocomplete/deoplete.
 
 " Nix
 Plug 'LnL7/vim-nix', { 'for': 'nix' } " Vim configuration files for Nix.
@@ -133,33 +124,11 @@ set grepformat^=%f:%l:%c:%m
 
 set viewoptions=cursor,slash,unix
 
-" Plugins
-let g:deoplete#enable_at_startup = 1 " Activate deoplete
-let g:qs_highlight_on_keys = ['f', 'F', 't', 'T'] " Trigger a highlight in the appropriate direction when pressing these keys
-let g:incsearch#auto_nohlsearch = 1 " TODO
-
 " Theme
 colorscheme monokai-night
 
 " Bufferline
 let g:bufferline_echo = 0
-
-" Called once right before you start selecting multiple cursors
-function! Multiple_cursors_before()
-    if exists('g:deoplete#disable_auto_complete')
-        let g:deoplete#disable_auto_complete = 1
-    endif
-endfunction
-
-" Called once only when the multiple selection is canceled (default <Esc>)
-function! Multiple_cursors_after()
-    if exists('g:deoplete#disable_auto_complete')
-        let g:deoplete#disable_auto_complete = 0
-    endif
-endfunction
-
-let g:multi_cursor_exit_from_visual_mode = 0
-let g:multi_cursor_exit_from_insert_mode = 0
 
 let g:AutoPairsFlyMode = 0
 let g:AutoPairsShortcutToggle = '<C-P>'

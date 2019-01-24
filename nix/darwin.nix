@@ -6,6 +6,7 @@
   # https://github.com/nikitavoloboev/dotfiles/blob/master/.install.conf.yaml#L17
   environment.systemPackages =
     [
+      # tools
       pkgs.neovim
       pkgs.vim
       pkgs.cacert # TODO: doesn't this come default?
@@ -26,14 +27,12 @@
       pkgs.nix
       pkgs.clojure
       pkgs.go
-      pkgs.python2Full
       pkgs.ripgrep
       pkgs.tree
       pkgs.kubectl
       #pkgs.leiningen
       #pkgs.bat # TODO: fix on darwin. tries to build for long time & fails
       pkgs.cloc
-      pkgs.python3
       #pkgs.clog-cli
       #pkgs.loc
       #pkgs.ocamlPackages.merlin
@@ -43,6 +42,8 @@
       #pkgs.yarn
 
       # python
+      pkgs.python3
+      pkgs.python2Full
       pkgs.python36Packages.pip
       pkgs.python36Packages.autopep8
       pkgs.python36Packages.black

@@ -613,7 +613,7 @@
                  [:e [:km "Open Learn Trello"]]
                  [:v [:km "Open Videos Trello"]]
                  [:w [:km "Open Write Trello"]]
-                 [:s [:km "Open Possessions Trello"]]
+                 [:s [:km "Open Visit Trello"]]
                  [:period [:km "Open Books Trello"]]
                  [:h [:km "Open Research Papers Trello"]]
                  [:c [:km "Open Courses Trello"]]
