@@ -90,7 +90,6 @@
         {:des "ksim"
          :rules [[[:k :l] [:alfred "search dash" "com.nikivi.own.dash"]]
                  [[:k :m] [:alfred "search youtube" "net.deanishe.alfred-searchio"]]
-                 ;[[:k :n] [:alfred "search history" "net.deanishe.alfred.safari"]]
                  [[:k :semicolon] [:alfred "ssh" "net.deanishe.alfred-ssh"]]]}
         {:des "qkey (cmd + shift)"
          :rules [:q-mode
@@ -408,7 +407,7 @@
                  [:i :!Sreturn_or_enter]
                  [:n :!Treturn_or_enter]
                  [:m :!Oreturn_or_enter]]}
-        {:des "gkey (things)"
+        {:des "gkey (actions)"
          :rules [:g-mode
                  [:q :!CO0] ; Show Dropzone dropdown
                  [:e :!COd] ; Show/hide dock
@@ -417,11 +416,12 @@
                  [:w :!CSgrave_accent_and_tilde] ; Switch between active windows (go up)
                  [:semicolon :!Cgrave_accent_and_tilde] ; Switch between active windows  (go down)
                 ;[:q :!COequal_sign]
-                 [:m :!CTO2] ; Full screen app
-                 [:j :!COslash] ; Show/hide notification centre
+                 [:u :!CTO2] ; Full screen app
+                 [:i :!COslash] ; Show/hide notification centre
+                 [:j :!CT4] ; Create new Fantastical event
                  ;[:m :!CO6] ; Maximize window to next monitor
-                 [:period [:km "Break 5 min"]]
-                 [:comma [:km "Break 10 min"]]
+                 [:period [:km "Go to KM group of current app"]]
+                 [:m [:km "Make global macro"]]
                  [:l :!CSOd] ; Move window right
                  [:h :!CSOa] ; Move window left
                  [:o [:alfred "new task" "nikivi.todo.task"]]
@@ -462,9 +462,11 @@
                  [:m :volume_increment]]}
         {:des "bkey (break)"
          :rules [:b-mode
+                 [:period [:km "Break 5 min"]]
+                 [:comma [:km "Break 10 min"]]
                  [:h [:alfred "search hn" "com.vitorgalvao.alfred.hackerboard"]]
                  [:m [:km "w: GitHub (trending)"]]
-                 [:period [:km "w: Reddit Saved"]]
+                 [:s [:km "w: Reddit Saved"]]
                  [:l [:km "w: Lobsters"]]
                  [:semicolon [:km "w: Lobsters (new)"]]
                  [:n [:km "w: Hacker News (new)"]]
@@ -507,20 +509,13 @@
                  [:h [:alfred "remove_current_track_from" "com.vdesabou.spotify.mini.player"]]
                  [:caps_lock [:km "Send tweet with current URL"]]
                  [:f [:km "New tweet with current URL"]]]}
-        {:des "ckey (websites)"
+        {:des "ckey (palettes)"
          :rules [:c-mode
-                 [:m [:km "w: GitHub notifications"]]
-                 [:k [:km "w: GitHub"]]
-                 [:n [:km "w: Medium"]]
-                 [:j [:km "w: YouTube"]]
-                 [:o [:km "w: Jira"]]
-                 [:l [:km "w: CodeSandbox"]]
-                 [:i [:km "w: regex101"]]
-                 [:semicolon [:km "w: Stack Overflow"]]]}
+                 [:j :!SOTf] ; App specific
+                 [:s :!SOTr]]} ; Personal
         {:des "tkey (handy actions)"
          :rules [:t-mode
                  [:k [:km "Go to KM group of current app from picklist"]]
-                 [:j [:km "Go to KM group of current app"]]
                  [:spacebar :!COSr]
                  [:s :!CTOx]
                  [:period [:alfred "trash desktop" "nikivi.clean.folders"]]]}
@@ -592,11 +587,16 @@
                  [:e [:alfred "restart wifi" "nikivi.wifi.tools"]]
                  [:w [:alfred "toggle wifi" "nikivi.wifi.tools"]]
                  [:g [:km "Commit my wiki"]]]}
-        {:des "spacekey (km palettes + actions)"
+        {:des "spacekey (top sites)"
          :rules [:spacebar-mode
-                 [:f :!SOTf] ; App specific
-                 [:j :!CT4] ; Create new Fantastical event
-                 [:t :!SOTr]]} ; Personal
+                 [:m [:km "w: GitHub notifications"]]
+                 [:k [:km "w: GitHub"]]
+                 [:n [:km "w: Medium"]]
+                 [:a [:km "w: YouTube"]]
+                 [:o [:km "w: Jira"]]
+                 [:l [:km "w: CodeSandbox"]]
+                 [:i [:km "w: regex101"]]
+                 [:semicolon [:km "w: Stack Overflow"]]]}
         {:des "capskey (todo + trello)"
          :rules [:caps-mode
                  [:1 :!TO1]
@@ -612,15 +612,18 @@
                  [:f [:km "Open Focus Trello"]]
                  [:e [:km "Open Learn Trello"]]
                  [:v [:km "Open Videos Trello"]]
-                 [:w [:km "Open Write Trello"]]
+                 [:t [:km "Open Write Trello"]]
                  [:s [:km "Open Visit Trello"]]
                  [:period [:km "Open Books Trello"]]
-                 [:h [:km "Open Research Papers Trello"]]
-                 [:c [:km "Open Courses Trello"]]
-                 [:i [:km "Open Ideas Trello"]]
-                 [:m [:km "todo: tools"]]
-                 [:r [:km "todo: write"]]
-                 [:d [:km "todo: draw"]]
+                 [:r [:km "Open Research Papers Trello"]]
+                 [:u [:km "Open Courses Trello"]]
+                 [:c [:km "Open 2Do Clean"]]
+                 [:i [:km "Open 2Do Fix"]]
+                 [:d [:km "Open Ideas Trello"]]
+                 [:w [:km "Open 2Do Read"]]
+                 [:h [:km "Open 2Do Check"]]
+                 [:semicolon [:km "Open 2Do PR"]]
+                 [:m [:km "todo: write"]]
                  [:n [:km "todo: clean"]]
                  [:o [:km "todo: code"]]
                  [:j [:km "todo: empty"]]
