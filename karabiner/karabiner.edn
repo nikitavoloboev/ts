@@ -258,7 +258,8 @@
                  [:4 :!C4]
                  [:5 :!C5]
                  [:6 :!C6]
-                 [:w :!CObackslash]
+                 [:w :!CObackslash] ; 1Password search
+                 [:caps_lock [:alfred "search folders" "nikivi.search.folders"]]
                  [:spacebar [:alfred "search dash profiles" "nikivi.dash.profiles"]]
                  [:z [:alfred "search PDF files" "nikivi.search.files"]]
                  [:g [:alfred "search snippets" "com.renfei.SnippetsLab.AlfredWorkflow"]]
@@ -280,7 +281,6 @@
                  [:s [:alfred "search clones" "com.vitorgalvao.alfred.directories"]]
                  [:d [:alfred "search desktop" "com.vitorgalvao.alfred.directories"]]
                  [:j [:alfred "search km macros" "iansinnott.keyboardmaestro"]]
-                 [:caps_lock [:alfred "search folders" "nikivi.search.folders"]]
                  [:v [:alfred "search workflows" "org.jeef.workflowdirectory"]]
                  [:k [:alfred "search menu bar" "com.tedwise.menubarsearch"]]]}
         ;{:des "tabkey ()"
@@ -453,6 +453,7 @@
                  [:semicolon :!TS0] ; Torn on/off Noizio
                  [:a [:km "Clone repo to ~/src/clones"]]
                  [:s [:km "Clone repo to ~/src/clones and open with VS Code"]]
+                 [:d [:km "Clone repo to ~/src/clones and open with Sublime Text"]]
                  [:i :display_brightness_decrement]
                  [:o :display_brightness_increment]
                  [:h :vk_consumer_previous]
@@ -592,8 +593,10 @@
                  [:m [:km "w: GitHub notifications"]]
                  [:k [:km "w: GitHub"]]
                  [:n [:km "w: Medium"]]
+                 [:f [:km "w: Confluence"]]
                  [:a [:km "w: YouTube"]]
-                 [:o [:km "w: Jira"]]
+                 [:j [:km "w: Jira"]]
+                 [:b [:km "w: Bitbucket"]]
                  [:l [:km "w: CodeSandbox"]]
                  [:i [:km "w: regex101"]]
                  [:semicolon [:km "w: Stack Overflow"]]]}
