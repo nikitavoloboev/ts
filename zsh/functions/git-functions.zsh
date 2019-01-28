@@ -211,7 +211,7 @@ ggo() {
 ggg() {
     git init
     git add .
-    git commit -m "Init"
+    git commit -m "init"
     git remote add origin $(osascript -e 'tell application "Safari" to return URL of front document')
     git push $(osascript -e 'tell application "Safari" to return URL of front document') master
 }

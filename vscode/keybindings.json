@@ -351,5 +351,15 @@
   {
     "key": "ctrl+alt+j",
     "command": "-code-runner.runByLanguage"
+  },
+  {
+    "key": "shift+cmd+r",
+    "command": "markdown.showPreview",
+    "when": "editorLangId == 'markdown'"
+  },
+  {
+    "key": "shift+cmd+v",
+    "command": "-markdown.showPreview",
+    "when": "editorLangId == 'markdown'"
   }
 ]
