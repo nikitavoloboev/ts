@@ -28,6 +28,7 @@
 - link:
     # Zsh
     ~/.zshrc: zsh/zshrc.zsh
+    ~/.zprofile: zsh/zprofile.zsh
     # Git
     ~/.gitconfig: git/gitconfig
     ~/.gitignore_global: git/gitignore_global
