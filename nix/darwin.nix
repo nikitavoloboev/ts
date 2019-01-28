@@ -21,7 +21,6 @@
       pkgs.httpie
       pkgs.gitAndTools.git-hub
       pkgs.git
-      #pkgs.dhall TODO: fix
       pkgs.hugo
       pkgs.texlive.combined.scheme-full
       pkgs.nix
@@ -30,16 +29,18 @@
       pkgs.ripgrep
       pkgs.tree
       pkgs.kubectl
+      pkgs.cloc
+      pkgs.minikube
+      pkgs.cmake
+      #pkgs.dhall TODO: fix
       #pkgs.leiningen
       #pkgs.bat # TODO: fix on darwin. tries to build for long time & fails
-      pkgs.cloc
-      #pkgs.clog-cli
-      #pkgs.loc
-      #pkgs.ocamlPackages.merlin
-      pkgs.minikube
       #pkgs.nodejs-10_x
       #pkgs.screenfetch
       #pkgs.yarn
+      #pkgs.clog-cli
+      #pkgs.loc
+      #pkgs.ocamlPackages.merlin
 
       # python
       pkgs.python3

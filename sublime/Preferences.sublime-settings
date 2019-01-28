@@ -111,7 +111,7 @@
 	"color_scheme": "Packages/ayu/ayu-dark.tmTheme",
 	"dictionary": "Packages/Language - English/en_US.dic",
 	"font_face": "Fira Code",
-	"font_size": 15,
+	"font_size": 13,
 	"ignored_packages":
 	[
 		"Vintage"

@@ -50,7 +50,6 @@ alias alf='alfred'
 alias ta='touch readme.md'
 alias d='cd'
 alias alert="tput bel" # Bell when the program is finished. i.e. npm install && alert
-alias sd='sudo'
 # TODO: fk alias to run last cmd as sudo instantly
 alias lg='ls | grep'
 alias so='source'

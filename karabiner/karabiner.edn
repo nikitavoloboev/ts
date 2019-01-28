@@ -367,6 +367,7 @@
                  [:n [:km "Open URL in clipboard in Safari"]]
                  [:g [:km "Centre mouse to active app"]]
                  [:m [:km "Google clipboard"]]
+                 [:semicolon [:km "2Do with current url as note (pr)"]]
                  [:b {:pkey :button3}]
                  [:z {:pkey :button2}]
                  [:v {:pkey :button1}]
@@ -420,7 +421,7 @@
                  [:i :!COslash] ; Show/hide notification centre
                  [:j :!CT4] ; Create new Fantastical event
                  ;[:m :!CO6] ; Maximize window to next monitor
-                 [:period [:km "Go to KM group of current app"]]
+                 [:a [:km "Go to KM group of current app"]]
                  [:m [:km "Make global macro"]]
                  [:l :!CSOd] ; Move window right
                  [:h :!CSOa] ; Move window left
@@ -615,18 +616,18 @@
                  [:f [:km "Open Focus Trello"]]
                  [:e [:km "Open Learn Trello"]]
                  [:v [:km "Open Videos Trello"]]
-                 [:t [:km "Open Write Trello"]]
+                 [:w [:km "Open Write Trello"]]
                  [:s [:km "Open Visit Trello"]]
-                 [:period [:km "Open Books Trello"]]
-                 [:r [:km "Open Research Papers Trello"]]
+                 [:m [:km "Open Books Trello"]]
+                 [:t [:km "Open Research Papers Trello"]]
                  [:u [:km "Open Courses Trello"]]
                  [:c [:km "Open 2Do Clean"]]
-                 [:i [:km "Open 2Do Fix"]]
+                 [:period [:km "Open 2Do Fix"]]
                  [:d [:km "Open Ideas Trello"]]
-                 [:w [:km "Open 2Do Read"]]
+                 [:r [:km "Open 2Do Read"]]
                  [:h [:km "Open 2Do Check"]]
                  [:semicolon [:km "Open 2Do PR"]]
-                 [:m [:km "todo: write"]]
+                 [:i [:km "todo: write"]]
                  [:n [:km "todo: clean"]]
                  [:o [:km "todo: code"]]
                  [:j [:km "todo: empty"]]
