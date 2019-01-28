@@ -16,7 +16,7 @@
     "when": "editorFocus && !inDebugRepl && vim.mode == 'Normal Mode'"
   },
   {
-    "key": "shift+cmd+0",
+    "key": "alt+cmd+o",
     "command": "code-runner.run"
   },
   {
@@ -52,7 +52,7 @@
     "when": "!terminalFocus"
   },
   {
-    "key": "ctrl+n",
+    "key": "ctrl+i",
     "command": "workbench.action.terminal.toggleTerminal"
   },
   {
@@ -192,7 +192,7 @@
     "command": "extension.copyGitHubLinkToClipboard"
   },
   {
-    "key": "ctrl+g",
+    "key": "ctrl+b",
     "command": "bookmarks.toggle"
   },
   {
@@ -333,5 +333,23 @@
     "key": "shift+alt+f12",
     "command": "-references-view.find",
     "when": "editorHasReferenceProvider"
+  },
+  {
+    "key": "ctrl+g",
+    "command": "editor.action.revealDefinitionAside",
+    "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+  },
+  {
+    "key": "cmd+k f12",
+    "command": "-editor.action.revealDefinitionAside",
+    "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+  },
+  {
+    "key": "ctrl+g",
+    "command": "-workbench.action.gotoLine"
+  },
+  {
+    "key": "ctrl+alt+j",
+    "command": "-code-runner.runByLanguage"
   }
 ]

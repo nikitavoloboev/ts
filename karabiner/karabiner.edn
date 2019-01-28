@@ -26,13 +26,12 @@
              :m-mode {:key :m}
              :spacebar-mode {:key :spacebar}
              :backquote-mode {:key :grave_accent_and_tilde}
-             ;:jsdot-mode {:key :period}
-             ;:godot-mode {:key :period}
-             :pydot-mode {:key :period}
              :tab-mode {:key :tab}
              :comma-mode {:key :comma}
-             :caps-mode {:key :caps_lock}
-             :js-mode {:key :period}}
+             :jsdot-mode {:key :period}
+             ;:godot-mode {:key :period}
+             ;:pydot-mode {:key :period}
+             :caps-mode {:key :caps_lock}}
  :main [{:des "colonkey (shift)"
          :rules [:semicolon-mode
                  [:q :!Sq]
@@ -75,9 +74,9 @@
                  [:k :!Cup_arrow]
                  [:l :!Cright_arrow]
                  [:h :!Cleft_arrow]]}
-        {:des "3key (test)"
+        {:des "3key (test code)"
          :rules [:3-mode
-                 [:j [:km "test: JavaScript"]]]}
+                 [:j [:km "test: JS"]]]}
         {:des "swap : and ;"
          :rules [[:#Psemicolon :!Ssemicolon]
                  [:!Ssemicolon :semicolon]]}
@@ -206,7 +205,7 @@
                  [:0 :!C0]]}
         {:des "rkey (apps)"
          :rules [:r-mode
-                 ;[:period [:km "open: Actual"]]
+                 [:u [:km "open: Actual"]]
                  [:period [:km "open: Marked"]]
                  [:q [:km "open: IINA"]]
                  [:l [:km "open: Ulysses"]]
@@ -422,6 +421,7 @@
                  [:j :!CT4] ; Create new Fantastical event
                  ;[:m :!CO6] ; Maximize window to next monitor
                  [:a [:km "Go to KM group of current app"]]
+                 [:period [:km "Go to KM group of current app from picklist"]]
                  [:m [:km "Make global macro"]]
                  [:l :!CSOd] ; Move window right
                  [:h :!CSOa] ; Move window left
@@ -498,17 +498,17 @@
                  [:caps_lock [:alfred "search learn anything" "nikivi.learn.anything"]]]}
         {:des "mkey (spotify)"
          :rules [:m-mode
-                 [:a :!CTO1]
+                 [:a :!CTO1] ; New tweet 
                  [:s [:alfred "spot_mini" "com.vdesabou.spotify.mini.player"]]
                  [:e [:alfred "song_radio" "com.vdesabou.spotify.mini.player"]]
-                 [:w [:alfred "artist_radio" "com.vdesabou.spotify.mini.player"]]
+                 [:r [:alfred "artist_radio" "com.vdesabou.spotify.mini.player"]]
                  [:d [:alfred "show_current_track" "com.vdesabou.spotify.mini.player"]]
                  [:x [:alfred "web_search_current_track" "com.vdesabou.spotify.mini.player"]]
                  [:c [:alfred "add_current_track_to" "com.vdesabou.spotify.mini.player"]]
                  [:z [:alfred "show_playlists" "com.vdesabou.spotify.mini.player"]]
                  [:grave_accent_and_tilde [:alfred "copy_current_track_url_to_clipboard" "com.vdesabou.spotify.mini.player"]]
-                 [:g [:alfred "add_current_track_to_alfred_playlist_or_your_music" "com.vdesabou.spotify.mini.player"]]
-                 [:h [:alfred "remove_current_track_from" "com.vdesabou.spotify.mini.player"]]
+                 [:w [:alfred "add_current_track_to_alfred_playlist_or_your_music" "com.vdesabou.spotify.mini.player"]]
+                 [:q [:alfred "remove_current_track_from" "com.vdesabou.spotify.mini.player"]]
                  [:caps_lock [:km "Send tweet with current URL"]]
                  [:f [:km "New tweet with current URL"]]]}
         {:des "ckey (palettes)"
@@ -517,9 +517,8 @@
                  [:s :!SOTr]]} ; Personal
         {:des "tkey (handy actions)"
          :rules [:t-mode
-                 [:k [:km "Go to KM group of current app from picklist"]]
-                 [:spacebar :!COSr]
-                 [:s :!CTOx]
+                 [:spacebar :!COSr] ; Google Translate selected text
+                 [:s :!CTOx] ; Little Snitch
                  [:period [:alfred "trash desktop" "nikivi.clean.folders"]]]}
         {:des "ukey (websites)"
          :rules [:u-mode
@@ -528,7 +527,6 @@
                  [:x [:km "w: Dropbox"]]
                  [:v [:km "w: Twitch"]]
                  [:d [:km "w: Google Drive"]]
-                ;[:h [:km "w: Khan Academy"]]
                  [:t [:km "w: GitHub trending"]]
                  [:z [:km "w: MDN"]]
                  [:y [:km "w: Netlify"]]
@@ -537,18 +535,18 @@
                  [:w [:km "w: AWS"]]
                  [:s [:km "w: Asana"]]
                  [:n [:km "w: NPM"]]]}
-        ; {:des "jsdot"
-        ;  :rules[:jsdot-mode
-        ;         [:s [:equal_sign :!Speriod :spacebar]] ; -> =>
-        ;         [:r [:r :e :t :u :r :n :spacebar]] ; -> return
-        ;         [:t [:r :e :t :u :r :n :spacebar :!Sopen_bracket :!Sclose_bracket :left_arrow :return_or_enter]] ; -> return {}
-        ;         [:a [:c :o :n :s :o :l :e :period :l :o :g :!S9 :!S0 :left_arrow]]]} ; -> console.log()
+         {:des "jsdot"
+          :rules[:jsdot-mode
+                 [:s [:equal_sign :!Speriod :spacebar]] ; -> =>
+                 [:r [:r :e :t :u :r :n :spacebar]] ; -> return
+                 [:t [:r :e :t :u :r :n :spacebar :!Sopen_bracket :!Sclose_bracket :left_arrow :return_or_enter]] ; -> return {}
+                 [:a [:c :o :n :s :o :l :e :period :l :o :g :!S9 :!S0 :left_arrow]]]} ; -> console.log()
         ; {:des "godot"
         ;  :rules[:godot-mode
         ;         [:a [:g :o :l :a :n :g :spacebar]]]} ; -> golang
-        {:des "pydot"
-          :rules[:pydot-mode
-                 [:a [:p :r :i :n :t :!S9 :!S0 :left_arrow]]]} ; -> print()
+        ;{:des "pydot"
+          ;:rules[:pydot-mode
+                 ;[:a [:p :r :i :n :t :!S9 :!S0 :left_arrow]]]} ; -> print()
         {:des "backkey (dash)"
          :rules [:backquote-mode
                  [:open_bracket :!TOopen_bracket]

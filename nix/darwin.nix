@@ -1,7 +1,6 @@
 { config, pkgs, ... }:
 
 {
-
   # Global Packages. Non nix installed packages can be seen:
   # https://github.com/nikitavoloboev/dotfiles/blob/master/.install.conf.yaml#L17
   environment.systemPackages =
