@@ -353,7 +353,7 @@
     "command": "-code-runner.runByLanguage"
   },
   {
-    "key": "shift+cmd+r",
+    "key": "cmd+m",
     "command": "markdown.showPreview",
     "when": "editorLangId == 'markdown'"
   },
@@ -361,5 +361,20 @@
     "key": "shift+cmd+v",
     "command": "-markdown.showPreview",
     "when": "editorLangId == 'markdown'"
+  },
+  {
+    "key": "ctrl+,",
+    "command": "editor.action.quickFix",
+    "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "cmd+.",
+    "command": "-editor.action.quickFix",
+    "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "cmd+m",
+    "command": "-markdown.extension.editing.toggleMath",
+    "when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
   }
 ]

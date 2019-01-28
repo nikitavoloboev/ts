@@ -7,7 +7,7 @@
         ],
     },
   { "keys": ["alt+i"], "command": "copy_path" },
-  { "keys": ["ctrl+e"], "command": "marked" },
+  { "keys": ["super+m"], "command": "marked" },
   { "keys": ["ctrl+d"], "command": "dash_doc" },
   { "keys": ["super+b"], "command": "toggle_side_bar" },
   { "keys": ["ctrl+f"], "command": "goto_definition" },
