@@ -143,8 +143,8 @@
                  [:i [:km "open: Chrome Canary"]]
                  [:t [:km "open: Trello"]]
                  [:v [:km "open: Spotify"]]
-                 [:spacebar :!CSO7]
-                 [:g [:km "open: Bee"]]
+                 [:spacebar :!CSO7] ; Search selection with Google Lucky search
+                 [:h [:km "open: Bee"]]
                  [:caps_lock [:km "open: Finder"]]
                  [:m [:km "open: Tower"]]
                  [:b [:km "open: BetterTouchTool"]]
@@ -152,7 +152,7 @@
                  [:e :!OSC1] ; Open Dash 
                  [:semicolon [:km "open: Xcode"]]
                  [:period [:km "open: Paw"]]
-                 [:h [:km "open: SnippetsLab"]]
+                 [:g [:km "open: SnippetsLab"]]
                  [:f [:km "open: 2do"]]
                  [:j [:km "open: iTerm"]]
                  [:n [:km "open: Sublime Text"]]
@@ -163,7 +163,7 @@
                  [:open_bracket :!Copen_bracket]
                  [:close_bracket :!Cclose_bracket]
                  [:semicolon :!Csemicolon]
-                 [:spacebar :!CT8] ; search selection in Dictionary (wiki)
+                 [:spacebar :!CT8] ; Search selection in Dictionary (wiki)
                  [:quote :!Cquote]
                  [:comma :!Ccomma]
                  [:period :!Cperiod]
@@ -205,7 +205,8 @@
                  [:0 :!C0]]}
         {:des "rkey (apps)"
          :rules [:r-mode
-                 [:u [:km "open: Actual"]]
+                 ;[:u [:km "open: Actual"]]
+                 [:spacebar :!CTq] ; Search selection in Web Searches
                  [:period [:km "open: Marked"]]
                  [:q [:km "open: IINA"]]
                  [:l [:km "open: Ulysses"]]
@@ -358,32 +359,32 @@
          :rules [:d-mode
                  [:j {:mkey {:vwheel 100}}]
                  [:k {:mkey {:vwheel -100}}]
-                 [:i :!Ckeypad_hyphen] ; Zoom in
+                 [:i :!Ckeypad_hyphen] ; Zoom out
                  [:a :!CT6] ; Smart zoom
-                 [:o :!Ckeypad_plus] ; Zoom out
+                 [:o :!Ckeypad_plus] ; Zoom in
                  [:h :!CT3] ; Search menu bar items
                  [:l [:km "Select line and google"]]
                  [:n [:km "Open URL in clipboard in Safari"]]
                  [:g [:km "Centre mouse to active app"]]
                  [:m [:km "Google clipboard"]]
                  [:semicolon [:km "2Do with current url as note (pr)"]]
-                 [:b {:pkey :button3}]
-                 [:z {:pkey :button2}]
-                 [:v {:pkey :button1}]
-                 [:a :!TCO8]
-                 [:period :!CTO3]]}
+                 [:b {:pkey :button3}] ; Middle click
+                 [:z {:pkey :button2}] ; Right click
+                 [:v {:pkey :button1}] ; Left click
+                 [:a :!TCO8] ; Smart zoom in/out
+                 [:period :!CTO3]]} ; Mission control
         {:des "pkey (words)"
          :rules [:p-mode
                  [:s [:t :h :a :n :k :s]]]} ; -> thanks 
         {:des "fkey (essential)"
          :rules [:f-mode
-                 [:e :!CO8]
-                 [:spacebar :!CTq] ; search selection in Web Searches
+                 [:e :!CO8] ; Alfred clipboard history search
+                 [:spacebar [:km "Paste selected text in previous app"]]
                  [:semicolon [:km "open: TaskPaper"]]
+                 [:s [:km "New SnippetsLab snippet"]]
                  ;[:w [:km "Lowercase selected text"]]
                  ;[:q :!STh] ; Record macro
                  [:q [:km "Go to test macro"]]
-                 [:s [:km "New SnippetsLab snippet"]]
                  [:w [:km "Test"]]
                  [:u [:km "Add question"]]
                  ;[:q [:km "Uppercase selected text"]]
@@ -452,7 +453,7 @@
                  [:q [:km "wiki: Month"]]
                  [:j :mute]
                  [:period [:km "Noizio change"]]
-                 [:semicolon :!TS0] ; Torn on/off Noizio
+                 ;[:semicolon :!TS0] ; Torn on/off Noizio
                  [:a [:km "Clone repo to ~/src/clones"]]
                  [:s [:km "Clone repo to ~/src/clones and open with VS Code"]]
                  [:d [:km "Clone repo to ~/src/clones and open with Sublime Text"]]
@@ -591,14 +592,16 @@
         {:des "spacekey (top sites)"
          :rules [:spacebar-mode
                  [:m [:km "w: GitHub notifications"]]
+                 [:i [:km "w: Localhost"]]
                  [:k [:km "w: GitHub"]]
+                 [:a [:km "w: Google"]]
                  [:n [:km "w: Medium"]]
                  [:f [:km "w: Confluence"]]
-                 [:a [:km "w: YouTube"]]
+                 [:e [:km "w: YouTube"]]
                  [:j [:km "w: Jira"]]
                  [:b [:km "w: Bitbucket"]]
                  [:l [:km "w: CodeSandbox"]]
-                 [:i [:km "w: regex101"]]
+                 [:o [:km "w: regex101"]]
                  [:semicolon [:km "w: Stack Overflow"]]]}
         {:des "capskey (todo + trello)"
          :rules [:caps-mode

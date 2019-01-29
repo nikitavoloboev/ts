@@ -131,6 +131,8 @@ alias kbl='kubectl logs'
 alias kbe='kubectl describe'
 alias kbx='kubectl explain'
 alias kbg='kubectl get'
+alias kbd='kubectl get pods'
+alias kbw='kubectl get pods -o=wide -w'
 
 # Node
 alias nd='node'
