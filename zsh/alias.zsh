@@ -128,11 +128,14 @@ alias k='docker'
 # Kubernetes
 alias kb='kubectl'
 alias kbl='kubectl logs'
+alias kbf='kubectl logs -f' # Get logs for <pod> streaming in real time
 alias kbe='kubectl describe'
 alias kbx='kubectl explain'
 alias kbg='kubectl get'
-alias kbd='kubectl get pods'
+alias kbo='kubectl get pods'
+alias kbd='kubectl delete pods'
 alias kbw='kubectl get pods -o=wide -w'
+#alias kbcontexts='kubectl config view -o jsonpath='{.contexts[*].name}'' # List kubernetes contexts
 
 # Node
 alias nd='node'

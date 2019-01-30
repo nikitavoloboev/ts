@@ -56,7 +56,7 @@
     "command": "workbench.action.terminal.toggleTerminal"
   },
   {
-    "key": "ctrl+w",
+    "key": "ctrl+l",
     "command": "editor.action.marker.prev",
     "when": "editorFocus && !editorReadonly"
   },
@@ -218,7 +218,7 @@
     "when": "editorTextFocus && vim.active && vim.use<C-r> && !inDebugRepl"
   },
   {
-    "key": "ctrl+l",
+    "key": "ctrl+w",
     "command": "editor.action.previewDeclaration",
     "when": "editorHasDefinitionProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
   },
