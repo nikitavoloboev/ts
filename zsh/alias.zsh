@@ -132,7 +132,7 @@ alias kbf='kubectl logs -f' # Get logs for <pod> streaming in real time
 alias kbe='kubectl describe'
 alias kbx='kubectl explain'
 alias kbg='kubectl get'
-alias kbo='kubectl get pods'
+alias kbs='kubectl get pods'
 alias kbd='kubectl delete pods'
 alias kbw='kubectl get pods -o=wide -w'
 #alias kbcontexts='kubectl config view -o jsonpath='{.contexts[*].name}'' # List kubernetes contexts

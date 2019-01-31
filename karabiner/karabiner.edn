@@ -67,8 +67,11 @@
                  [:4 :!T4]
                  [:5 :!T5]
                  [:6 :!T6]]}
-        {:des "1key (open files + project)"
+        {:des "1key (open files + projects)"
          :rules [:1-mode
+                 [:u [:km "wiki: Rules"]]
+                 [:m [:km "wiki: Month"]]
+                 [:k [:km "proj: Knowledge"]]
                  [:l [:km "edit: Aliases"]]]}
         {:des "2key (move)"
          :rules [:2-mode
@@ -270,6 +273,7 @@
                  [:grave_accent_and_tilde [:alfred "search processes" "com.vitorgalvao.alfred.processcontrol"]]
                  [:e [:km "Make 2Do task"]]
                  [:r [:km "Make 2Do task with Safari title as name"]]
+                 [:v [:km "2Do with current url as note (pr)"]]
                  [:q [:alfred "search downloads" "recentdownloads.ddjfreedom"]]
                  [:t [:km "2Do with current url as note (read)"]]
                  [:b [:km "2Do task (ask)"]]
@@ -285,7 +289,7 @@
                  [:s [:alfred "search clones" "com.vitorgalvao.alfred.directories"]]
                  [:d [:alfred "search desktop" "com.vitorgalvao.alfred.directories"]]
                  [:j [:alfred "search km macros" "iansinnott.keyboardmaestro"]]
-                 [:v [:alfred "search workflows" "org.jeef.workflowdirectory"]]
+                 [:x [:alfred "search workflows" "org.jeef.workflowdirectory"]]
                  [:k [:alfred "search menu bar" "com.tedwise.menubarsearch"]]]}
         ;{:des "tabkey ()"
          ;:rules[:tab-mode
@@ -370,8 +374,8 @@
                  [:l [:km "Select line and google"]]
                  [:n [:km "Open URL in clipboard in Safari"]]
                  [:g [:km "Centre mouse to active app"]]
+                 [:semicolon [:km "Google selected word"]]
                  [:m [:km "Google clipboard"]]
-                 [:semicolon [:km "2Do with current url as note (pr)"]]
                  [:b {:pkey :button3}] ; Middle click
                  [:z {:pkey :button2}] ; Right click
                  [:v {:pkey :button1}] ; Left click
@@ -453,8 +457,6 @@
         {:des "vkey (media)"
          :rules [:v-mode
                  [:e [:km "Connect/disconnect AirPods"]]
-                 [:w [:km "wiki: Rules"]]
-                 [:q [:km "wiki: Month"]]
                  [:j :mute]
                  [:period [:km "Noizio change"]]
                  ;[:semicolon :!TS0] ; Torn on/off Noizio
@@ -599,10 +601,10 @@
                  [:i [:km "w: Localhost"]]
                  [:k [:km "w: GitHub"]]
                  [:a [:km "w: Google"]]
-                 [:e [:km "w: Medium"]]
+                 [:d [:km "w: Medium"]]
                  [:f [:km "w: Confluence"]]
-                 [:j [:km "w: YouTube"]]
-                 [:r [:km "w: Jira"]]
+                 [:e [:km "w: YouTube"]]
+                 [:j [:km "w: Jira"]]
                  [:b [:km "w: Bitbucket"]]
                  [:l [:km "w: CodeSandbox"]]
                  [:o [:km "w: regex101"]]
