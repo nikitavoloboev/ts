@@ -115,26 +115,26 @@ alias wfa='alfred pack -o ~/Desktop'
 alias ws='workflow-install -s workflow' # Symlink `source` directory
 
 # Docker
-alias k='docker'
-# alias kr='docker rm'
-# alias kc='docker compose'
-# alias kg='docker logs'
-# alias kgt='docker logs --tail 100'
-# alias ks='docker ps'
-# alias ksq='docker ps -q'
-# alias ksa='docker ps -a'
-# alias kk='docker kill'
+alias c='docker'
+# alias cr='docker rm'
+# alias cc='docker compose'
+# alias cg='docker logs'
+# alias cgt='docker logs --tail 100'
+# alias cs='docker ps'
+# alias csq='docker ps -q'
+# alias csa='docker ps -a'
+# alias ck='docker kill'
 
 # Kubernetes
-alias kb='kubectl'
-alias kbl='kubectl logs'
-alias kbf='kubectl logs -f' # Get logs for <pod> streaming in real time
-alias kbe='kubectl describe'
-alias kbx='kubectl explain'
-alias kbg='kubectl get'
-alias kbs='kubectl get pods'
-alias kbd='kubectl delete pods'
-alias kbw='kubectl get pods -o=wide -w'
+alias k='kubectl'
+alias kl='kubectl logs'
+alias kf='kubectl logs -f' # Get logs for <pod> streaming in real time
+alias kde='kubectl describe'
+alias ke='kubectl explain'
+alias kg='kubectl get'
+alias ks='kubectl get pods'
+alias kd='kubectl delete pods'
+alias ksw='kubectl get pods -o=wide -w'
 #alias kbcontexts='kubectl config view -o jsonpath='{.contexts[*].name}'' # List kubernetes contexts
 
 # Node

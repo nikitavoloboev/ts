@@ -83,6 +83,8 @@
                  [:h :!Cleft_arrow]]}
         {:des "3key (test code)"
          :rules [:3-mode
+                 [:semicolon [:km "test: Web"]]
+                 [:k [:km "test: TS"]]
                  [:j [:km "test: JS"]]]}
         {:des "swap : and ;"
          :rules [[:#Psemicolon :!Ssemicolon]
@@ -602,7 +604,7 @@
                  [:k [:km "w: GitHub"]]
                  [:a [:km "w: Google"]]
                  [:d [:km "w: Medium"]]
-                 [:f [:km "w: Confluence"]]
+                 [:u [:km "w: Confluence"]]
                  [:e [:km "w: YouTube"]]
                  [:j [:km "w: Jira"]]
                  [:b [:km "w: Bitbucket"]]

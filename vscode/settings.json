@@ -98,6 +98,7 @@
   "sync.askGistName": false,
   // vim
   "vim.leader": " ",
+  "vim.debug.silent": true,
   "vim.cursorStylePerMode.normal": "underline",
   "vim.useSystemClipboard": true,
   "vim.easymotion": true,

@@ -31,6 +31,7 @@
       pkgs.cloc
       pkgs.minikube
       pkgs.cmake
+      pkgs.yarn
       #pkgs.dhall TODO: fix
       #pkgs.leiningen
       #pkgs.bat # TODO: fix on darwin. tries to build for long time & fails
