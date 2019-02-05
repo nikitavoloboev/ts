@@ -280,7 +280,8 @@
                  [:r [:km "2Do with current url as note (pr)"]]
                  [:q [:alfred "search downloads" "recentdownloads.ddjfreedom"]]
                  [:t [:km "2Do with current url as note (read)"]]
-                 [:b [:km "2Do task (ask)"]]
+                 ;[:b [:km "2Do task (ask)"]]
+                 [:b [:alfred "search ulysses sheets" "nikivi.search.files"]]
                  [:tab [:km "2Do with current url as note (check)"]]
                  [:h [:km "2Do with current url as note (watch)"]]
                  [:a [:alfred "search files" "nikivi.manage.wiki"]]
@@ -508,7 +509,7 @@
                  [:g [:alfred "search godoc" "nikivi.search.the.web"]]
                  [:w [:alfred "search github" "nikivi.search.the.web"]]
                  [:caps_lock [:alfred "search learn anything" "nikivi.learn.anything"]]]}
-        {:des "mkey (spotify)"
+        {:des "mkey (spotify + twitter)"
          :rules [:m-mode
                  [:a :!CTO1] ; New tweet 
                  [:s [:alfred "spot_mini" "com.vdesabou.spotify.mini.player"]]
@@ -629,12 +630,12 @@
                  [:e [:km "Open Learn Trello"]]
                  [:v [:km "Open Videos Trello"]]
                  [:w [:km "Open Write Trello"]]
-                 [:s [:km "Open Visit Trello"]]
-                 [:m [:km "Open Books Trello"]]
-                 [:t [:km "Open Research Papers Trello"]]
+                 [:t [:km "Open Visit Trello"]]
+                 [:period [:km "Open Books Trello"]]
+                 [:s [:km "Open Research Papers Trello"]]
                  [:u [:km "Open Courses Trello"]]
                  [:c [:km "Open 2Do Clean"]]
-                 [:period [:km "Open 2Do Fix"]]
+                 [:x [:km "Open 2Do Fix"]]
                  [:d [:km "Open Ideas Trello"]]
                  [:r [:km "Open 2Do Read"]]
                  [:h [:km "Open 2Do Check"]]

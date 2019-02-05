@@ -15,7 +15,6 @@
   "editor.hideCursorInOverviewRuler": true,
   "editor.scrollBeyondLastLine": false,
   "editor.lineHeight": 26,
-  "editor.matchBrackets": false,
   "editor.occurrencesHighlight": false,
   "editor.multiCursorModifier": "alt",
   "editor.overviewRulerBorder": false,
@@ -39,7 +38,7 @@
   "workbench.settings.enableNaturalLanguageSearch": false,
   "workbench.colorTheme": "Monokai Night",
   // window
-  "window.zoomLevel": -1,
+  "window.zoomLevel": -2,
   "window.restoreWindows": "all",
   "window.newWindowDimensions": "maximized",
   // debug
@@ -60,7 +59,6 @@
   },
   // terminal
   "terminal.integrated.copyOnSelection": true,
-  "eslint.packageManager": "npm",
   // files
   "files.trimTrailingWhitespace": true,
   "files.insertFinalNewline": true,
@@ -90,13 +88,6 @@
   "editor.formatOnSave": true,
   // code runner
   "code-runner.runInTerminal": false,
-  // sync settings
-  "sync.gist": "94288845f0956f08d4766b477001c9eb",
-  "sync.autoDownload": false,
-  "sync.autoUpload": false,
-  "sync.forceDownload": false,
-  "sync.quietSync": false,
-  "sync.askGistName": false,
   // vim
   "vim.leader": " ",
   "vim.debug.silent": true,
@@ -258,12 +249,10 @@
     "suppressUpdateNotice": true,
     "suppressWelcomeNotice": false
   },
-  // sync settings & extensions
-  "sync.removeExtensions": true,
-  "sync.syncExtensions": true,
   // extensions
   "extensions.ignoreRecommendations": true,
   "extensions.showRecommendationsOnlyOnDemand": true,
   "gitlens.views.fileHistory.enabled": true,
-  "gitlens.views.lineHistory.enabled": true
+  "gitlens.views.lineHistory.enabled": true,
+  "editor.matchBrackets": false
 }
