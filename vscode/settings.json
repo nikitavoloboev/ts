@@ -254,5 +254,4 @@
   "extensions.showRecommendationsOnlyOnDemand": true,
   "gitlens.views.fileHistory.enabled": true,
   "gitlens.views.lineHistory.enabled": true,
-  "editor.matchBrackets": false
 }

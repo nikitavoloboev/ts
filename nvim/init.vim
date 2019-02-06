@@ -150,15 +150,16 @@ let mapleader="\<Space>"
 let maplocalleader = "\<Space>"
 nnoremap <leader>= yypVr=
 
+" Space q
+nmap <Leader>q    :q<CR>
+
 " Space w
 " Save
 nmap <Leader>w :w<CR>
 
-" Space d
-nmap <Leader>d :bd<CR>
-
-" Space a
-nnoremap <Leader>a :wq<CR>
+" Space y
+" Yank whole file
+nnoremap <Leader>y :%y<CR>
 
 " Space i
 nnoremap <Leader>ii :PlugInstall<CR>
@@ -167,16 +168,15 @@ nnoremap <Leader>iu :PlugUpdate<CR>
 " Check vim health
 nnoremap <Leader>ih :CheckHealth<CR>
 
+" Space a
+nnoremap <Leader>a :wq<CR>
+
 " Space s
 " Source vimrc
 nnoremap <Leader>s :source ~/.dotfiles/nvim/init.vim<CR>
 
-" Space q
-nmap <Leader>q    :q<CR>
-
-" Space y
-" Yank whole file
-nnoremap <Leader>y :%y<CR>
+" Space d
+nmap <Leader>d :bd<CR>
 
 " Auto commands
 au FileType dirvish call fugitive#detect(@%)
@@ -195,5 +195,4 @@ autocmd VimLeave * set guicursor=a:ver25-blinkon25 " Make cursor block when leav
 
 " Testing
 set signcolumn=yes
-nnoremap <C-q> :q<cr>:q<cr>
 set foldcolumn=0 " Remove sidebar column

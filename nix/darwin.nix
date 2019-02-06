@@ -26,6 +26,7 @@
       pkgs.clojure
       pkgs.go
       pkgs.ripgrep
+      pkgs.mitmproxy
       pkgs.tree
       pkgs.kubectl
       pkgs.cloc

@@ -4,6 +4,7 @@
              :1-mode {:key :1}
              :2-mode {:key :2}
              :3-mode {:key :3}
+             :4-mode {:key :4}
              :q-mode {:key :q}
              :w-mode {:key :w}
              :e-mode {:key :e}
@@ -27,7 +28,7 @@
              :m-mode {:key :m}
              :spacebar-mode {:key :spacebar}
              :backquote-mode {:key :grave_accent_and_tilde}
-             :tab-mode {:key :tab}
+             ;:tab-mode {:key :tab}
              :comma-mode {:key :comma}
              :jsdot-mode {:key :period}
              ;:godot-mode {:key :period}
@@ -69,7 +70,6 @@
                  [:6 :!T6]]}
         {:des "1key (open files + projects)"
          :rules [:1-mode
-                 [:o [:km "list: command line tools"]]
                  [:u [:km "wiki: Rules"]]
                  [:m [:km "wiki: Month"]]
                  [:k [:km "proj: Knowledge"]]
@@ -87,6 +87,10 @@
                  [:semicolon [:km "test: Web"]]
                  [:k [:km "test: TS"]]
                  [:j [:km "test: JS"]]]}
+        {:des "4key (open curated lists)"
+         :rules [:4-mode
+                 [:o [:km "list: alfred workflows"]]
+                 [:l [:km "list: command line tools"]]]}
         {:des "swap : and ;"
          :rules [[:#Psemicolon :!Ssemicolon]
                  [:!Ssemicolon :semicolon]]}
@@ -296,10 +300,12 @@
                  [:j [:alfred "search km macros" "iansinnott.keyboardmaestro"]]
                  [:x [:alfred "search workflows" "org.jeef.workflowdirectory"]]
                  [:k [:alfred "search menu bar" "com.tedwise.menubarsearch"]]]}
-        ;{:des "tabkey ()"
-         ;:rules[:tab-mode
-                ;[:o [:km "task: open source"]]
-                ;[:l [:km "task: learn"]]]}
+       ; {:des "tabkey ()"
+       ;  :rules[:tab-mode
+       ;         [:o [:km "list: command line tools"]]
+       ;         [:t [:km "list: command line tools"]]
+       ;         [:o [:km "task: open source"]]
+       ;         [:l [:km "task: learn"]]]}
         {:des "akey (ctrl)"
          :rules [:a-mode
                  [:spacebar :!CT9] ; Search selection on Google
@@ -349,12 +355,12 @@
          :rules [:s-mode
                  [:e :tab]
                  [:r :!Stab]
-                 [:i :!Tspacebar]
+                 [:i :!CTperiod] ; Contexts search active windows
                  [:o :!CTO9]
                  [:a :!Cc]
                  [:v :left_shift]
-                 [:quote [:!Cleft_arrow :!CSright_arrow]] ; highlight current line 
-                 [:w [:!Oleft_arrow :!OSright_arrow]] ; highlight word
+                 [:quote [:!Cleft_arrow :!CSright_arrow]] ; Highlight current line 
+                 [:w [:!Oleft_arrow :!OSright_arrow]] ; Highlight word
                  [:d :delete_or_backspace]
                  [:f :return_or_enter]
                  [:c :!Cdelete_or_backspace]
@@ -480,10 +486,10 @@
                  [:period [:km "Break 5 min"]]
                  [:comma [:km "Break 10 min"]]
                  [:h [:alfred "search hn" "com.vitorgalvao.alfred.hackerboard"]]
-                 [:m [:km "w: GitHub (trending)"]]
+                 [:semicolon [:km "w: GitHub (trending)"]]
                  [:s [:km "w: Reddit Saved"]]
                  [:l [:km "w: Lobsters"]]
-                 [:semicolon [:km "w: Lobsters (new)"]]
+                 [:m [:km "w: Lobsters (new)"]]
                  [:n [:km "w: Hacker News (new)"]]
                  [:i [:km "w: Alfred Forum"]]
                  [:o [:km "w: KM Forum"]]
@@ -642,7 +648,7 @@
                  [:semicolon [:km "Open 2Do PR"]]
                  [:i [:km "todo: write"]]
                  [:n [:km "todo: clean"]]
-                 [:o [:km "todo: code"]]
+                 [:k [:km "todo: code"]]
                  [:j [:km "todo: empty"]]
-                 [:k [:km "todo: 2Do"]]
+                 [:o [:km "todo: 2Do"]]
                  [:l [:km "todo: learn"]]]}]}
