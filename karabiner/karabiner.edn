@@ -28,7 +28,6 @@
              :m-mode {:key :m}
              :spacebar-mode {:key :spacebar}
              :backquote-mode {:key :grave_accent_and_tilde}
-             ;:tab-mode {:key :tab}
              :comma-mode {:key :comma}
              :jsdot-mode {:key :period}
              ;:godot-mode {:key :period}
@@ -300,12 +299,6 @@
                  [:j [:alfred "search km macros" "iansinnott.keyboardmaestro"]]
                  [:x [:alfred "search workflows" "org.jeef.workflowdirectory"]]
                  [:k [:alfred "search menu bar" "com.tedwise.menubarsearch"]]]}
-       ; {:des "tabkey ()"
-       ;  :rules[:tab-mode
-       ;         [:o [:km "list: command line tools"]]
-       ;         [:t [:km "list: command line tools"]]
-       ;         [:o [:km "task: open source"]]
-       ;         [:l [:km "task: learn"]]]}
         {:des "akey (ctrl)"
          :rules [:a-mode
                  [:spacebar :!CT9] ; Search selection on Google
@@ -487,12 +480,12 @@
                  [:comma [:km "Break 10 min"]]
                  [:h [:alfred "search hn" "com.vitorgalvao.alfred.hackerboard"]]
                  [:semicolon [:km "w: GitHub (trending)"]]
-                 [:s [:km "w: Reddit Saved"]]
+                 [:r [:km "w: Reddit Saved"]]
                  [:l [:km "w: Lobsters"]]
-                 [:m [:km "w: Lobsters (new)"]]
-                 [:n [:km "w: Hacker News (new)"]]
-                 [:i [:km "w: Alfred Forum"]]
-                 [:o [:km "w: KM Forum"]]
+                 [:o [:km "w: Lobsters (new)"]]
+                 [:i [:km "w: Hacker News (new)"]]
+                 [:n [:km "w: Alfred Forum"]]
+                 [:m [:km "w: KM Forum"]]
                  [:k [:km "w: GitHub (front page)"]]
                  [:j [:km "w: Hacker News"]]]}
         {:des "nkey (alfred)"
