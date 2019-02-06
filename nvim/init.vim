@@ -138,27 +138,7 @@ au filetype vim let b:AutoPairs = {'(':')', '[':']', '{':'}',"'":"'", '`':'`'} "
 let g:session_autosave="no"
 let g:session_autoload="no"
 
-" Autocomplete with tab
-inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
-" Activate leader for easymotion
-map <Leader> <Plug>(easymotion-prefix)
-
-" Advanced customization using autoload functions
-inoremap <expr> <c-x><c-k> fzf#vim#complete#word({'left': '15%'})
-
-" Start interactive EasyAlign in visual mode (e.g. vipga)
-xmap ga <Plug>(EasyAlign)
-
-" Start interactive EasyAlign for a motion/text object (e.g. gaip)
-nnoremap ga <Plug>(EasyAlign)
-
-" _Insert mappings
-inoremap      jk  <Esc>
-inoremap      kj  <Esc>
-inoremap      (;   ();<Esc>o
-inoremap      ()   ()
-
-"Command mappings
+" Command mappings
 cabbrev rp Rp
 
 " CTRL mappings
@@ -170,41 +150,15 @@ let mapleader="\<Space>"
 let maplocalleader = "\<Space>"
 nnoremap <leader>= yypVr=
 
-" Space z
-nmap <Leader>ze   :enew <CR>
-nmap <Leader>zt   :tabnew<CR>
-
-" Space p
-nnoremap <Leader>pi :PlugInstall<CR>
-nnoremap <Leader>pu :PlugUpdate<CR>
-
 " Space w
 " Save
 nmap <Leader>w :w<CR>
-
-" Space e
-"nmap <Leader>e <Plug>(Prettier) :w<CR>
-
-" Space e
-" nmap <Leader>e.   :e .<CR>
-" Search files inside current dir
-" nnoremap <Leader>e :Files<CR>
 
 " Space d
 nmap <Leader>d :bd<CR>
 
 " Space a
 nnoremap <Leader>a :wq<CR>
-
-" Space v
-" Write all changed buffers and exit vim
-nnoremap <Leader>vq :wqall<CR>
-nnoremap <Leader>vQ :qa<CR>
-nnoremap <Leader>vm :make<CR>
-
-" Space o
-" Move 10 lines down (for karabiner sticky keys)
-nnoremap <Leader>o 29jzz
 
 " Space i
 nnoremap <Leader>ii :PlugInstall<CR>
@@ -213,37 +167,9 @@ nnoremap <Leader>iu :PlugUpdate<CR>
 " Check vim health
 nnoremap <Leader>ih :CheckHealth<CR>
 
-" Space c
-" Switch dir for fzf searching to current dir
-map <Leader>cd :lcd %:p:h<CR>
-
-" Space l
-" Yank xml block to next line
-nnoremap <Leader>l vat:t'><CR>'[<Esc><CR>
-
-" Space t
-nmap <Leader>to   :e %:p:h<CR>
-" Yank function block
-nnoremap <Leader>tgt :exe search('^function','cb')';/}/y'<CR>
-" Dash doc lookup
-nnoremap <Leader>ttt :Dash<CR>
-" Write all changed buffers
-nnoremap <Leader>tttt :wa<CR>
-" Run commands in new splits
-nnoremap <Leader>tt :tabedit <Bar> term.
-nnoremap <Leader>ts :split <Bar> term.
-nnoremap <Leader>tv :vsplit <Bar> term.
-
 " Space s
-" Buffer control
-nmap <Leader>s    :bprevious<CR>
 " Source vimrc
-nnoremap <Leader>ss :source ~/.dotfiles/nvim/init.vim<CR>
-
-" Space n
-nmap <Leader>n    :bnext<CR>
-" Search lines with fzf
-nnoremap <silent> <Leader>n :Lines<CR>
+nnoremap <Leader>s :source ~/.dotfiles/nvim/init.vim<CR>
 
 " Space q
 nmap <Leader>q    :q<CR>
@@ -251,43 +177,6 @@ nmap <Leader>q    :q<CR>
 " Space y
 " Yank whole file
 nnoremap <Leader>y :%y<CR>
-
-" Space f
-nmap <Leader>fw   :Autoformat<CR>
-nmap <Leader>ff :FZF <CR>
-nmap <Leader>fb   :Buffers <CR>
-nmap <Leader>fl   :BLines <CR>
-nmap <Leader>fL   :Lines <CR>
-nmap <Leader>fh   :History<CR>
-nmap <Leader>f;   :History:<CR>
-nmap <Leader>f:   :Commands<CR>
-nmap <Leader>ft   :BTags<CR>
-nmap <Leader>fT   :Tags<CR>
-nmap <Leader>fm   :Marks<CR>
-nmap <Leader>fw   :Windows<CR>
-nmap <Leader>fs   :Snippets<CR>
-nmap <Leader>fg   :BCommits<CR>
-nmap <Leader>fG   :Commits<CR>
-
-" Space o
-nmap <Leader>o    :Files %:p:h<CR>
-nmap <Leader>O    :GFiles <CR>
-
-" Mapping selecting mappings
-nnoremap <leader><tab> <plug>(fzf-maps-n)
-xmap <leader><tab> <plug>(fzf-maps-x)
-omap <leader><tab> <plug>(fzf-maps-o)
-
-" Insert mode completion
-imap <c-x><c-k> <plug>(fzf-complete-word)
-imap <c-x><c-f> <plug>(fzf-complete-path)
-imap <c-x><c-j> <plug>(fzf-complete-file-ag)
-imap <c-x><c-l> <plug>(fzf-complete-line)
-
-" For conceal markers
-if has('conceal')
-    set conceallevel=2 concealcursor=nc
-endif
 
 " Auto commands
 au FileType dirvish call fugitive#detect(@%)
@@ -299,8 +188,6 @@ xnoremap gs y:%s/<C-r>"//g<Left><Left>
 
 " Yank a line with Y.
 nnoremap Y y$
-
-" Functions
 
 " Other
 set guicursor=n-v-c:hor20,i-ci:ver20 " Make cursor block in insert mode and underline in normal mode
