@@ -95,6 +95,8 @@
                  [:!Ssemicolon :semicolon]]}
         {:des "right cmd -> Alfred"
          :rules [[:right_command :right_command nil {:alone :!CTOSspacebar}]]}
+        {:des "right shift -> Pair Program (Karabiner/VSCodeVim off)"
+         :rules [[:right_shift :right_shift nil {:alone [:km "Pair Program (Karabiner/VSCodeVim on/off)"]}]]}
         {:des "jsim"
          :rules [[[:j :k] [:alfred "search google" "net.deanishe.alfred-searchio"]]
                  [[:j :semicolon] [:alfred "search tabs" "net.deanishe.alfred.safari"]]
@@ -463,7 +465,7 @@
                  [:e [:km "Connect/disconnect AirPods"]]
                  [:j :mute]
                  [:period [:km "Noizio change"]]
-                 [:semicolon :!TS0] ; Torn on/off Noizio
+                 [:semicolon :!TS0] ; Turn on/off Noizio
                  [:a [:km "Clone repo to ~/src/clones"]]
                  [:s [:km "Clone repo to ~/src/clones and open with VS Code"]]
                  [:d [:km "Clone repo to ~/src/clones and open with Sublime Text"]]
