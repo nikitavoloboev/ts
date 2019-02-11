@@ -13,7 +13,6 @@
              :u-mode {:key :u}
              :i-mode {:key :i}
              :o-mode {:key :o}
-             :p-mode {:key :p}
              :a-mode {:key :a}
              :s-mode {:key :s}
              :d-mode {:key :d}
@@ -89,6 +88,7 @@
         {:des "4key (open curated lists)"
          :rules [:4-mode
                  [:o [:km "list: alfred workflows"]]
+                 [:k [:km "list: events"]]
                  [:l [:km "list: command line tools"]]]}
         {:des "swap : and ;"
          :rules [[:#Psemicolon :!Ssemicolon]
@@ -159,15 +159,14 @@
                  [:t [:km "open: Trello"]]
                  [:v [:km "open: Spotify"]]
                  [:spacebar :!CSO7] ; Search selection with Google Lucky search
-                 [:h [:km "open: Bee"]]
                  [:caps_lock [:km "open: Finder"]]
                  [:semicolon [:km "open: Tower"]]
                  [:b [:km "open: BetterTouchTool"]]
                  [:r [:km "open: Fantastical"]]
                  [:e :!OSC1] ; Open Dash 
-                 [:m [:km "open: Xcode"]]
-                 [:period [:km "open: Paw"]]
-                 [:g [:km "open: SnippetsLab"]]
+                 [:g [:km "open: Sketch"]]
+                 [:h [:km "open: Paw"]]
+                 [:period [:km "open: SnippetsLab"]]
                  [:f [:km "open: 2do"]]
                  [:j [:km "open: iTerm"]]
                  [:n [:km "open: Sublime Text"]]
@@ -222,13 +221,14 @@
          :rules [:r-mode
                  ;[:u [:km "open: Actual"]]
                  [:spacebar :!CTq] ; Search selection in Web Searches
-                 [:period [:km "open: Marked"]]
+                 [:m [:km "open: Marked"]]
                  [:q [:km "open: IINA"]]
+                 [:period [:km "open: Arq"]]
                  [:l [:km "open: Ulysses"]]
                  [:t [:km "open: Transmission"]]
                  [:p [:km "open: Paprika Recipe Manager"]]
                  [:b [:km "Edit keyboard shortcuts"]]
-                 [:m [:km "open: Postico"]]
+                 [:semicolon [:km "open: Postico"]]
                  [:a [:km "open: Alfred Preferences"]]
                  [:i [:km "open: Pixave"]]
                  [:e [:km "open: Reeder"]]
@@ -276,9 +276,9 @@
                  [:6 :!C6]
                  [:w :!CObackslash] ; 1Password search
                  [:caps_lock [:alfred "search folders" "nikivi.search.folders"]]
-                 [:spacebar [:alfred "search dash profiles" "nikivi.dash.profiles"]]
+                 [:g [:alfred "search dash profiles" "nikivi.dash.profiles"]]
                  [:z [:alfred "search PDF files" "nikivi.search.files"]]
-                 [:g [:alfred "search snippets" "com.renfei.SnippetsLab.AlfredWorkflow"]]
+                 [:spacebar [:alfred "search snippets" "com.renfei.SnippetsLab.AlfredWorkflow"]]
                  [:grave_accent_and_tilde [:alfred "search processes" "com.vitorgalvao.alfred.processcontrol"]]
                  [:e [:km "Make 2Do task"]]
                  [:v [:km "Make 2Do task with Safari title as name"]]
@@ -387,9 +387,6 @@
                  [:v {:pkey :button1}] ; Left click
                  [:a :!TCO8] ; Smart zoom in/out
                  [:period :!CTO3]]} ; Mission control
-        {:des "pkey (words)"
-         :rules [:p-mode
-                 [:s [:t :h :a :n :k :s]]]} ; -> thanks 
         {:des "fkey (essential)"
          :rules [:f-mode
                  [:e :!CO8] ; Alfred clipboard history search
@@ -551,6 +548,8 @@
                  [:n [:km "w: NPM"]]]}
          {:des "jsdot"
           :rules[:jsdot-mode
+                 [:caps_lock [:!Sd :o :n :e]] ; -> Done
+                 [:z [:!St :h :a :n :k :s]] ; -> Thanks 
                  [:s [:equal_sign :!Speriod :spacebar]] ; -> =>
                  [:r [:r :e :t :u :r :n :spacebar]] ; -> return
                  [:t [:r :e :t :u :r :n :spacebar :!Sopen_bracket :!Sclose_bracket :left_arrow :return_or_enter]] ; -> return {}
@@ -608,7 +607,7 @@
                  [:k [:km "w: GitHub"]]
                  [:a [:km "w: Google"]]
                  [:d [:km "w: Medium"]]
-                 [:u [:km "w: Confluence"]]
+                 [:f [:km "w: Confluence"]]
                  [:j [:km "w: YouTube"]]
                  [:r [:km "w: Jira"]]
                  [:b [:km "w: Bitbucket"]]
