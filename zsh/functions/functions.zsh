@@ -5,9 +5,9 @@ b() {
   git push
 }
 
-# bin <binary>. Move <binary> to bin (which is in my PATH).
+# bin <binary>. Move <binary> to /usr/local/bin (in my PATH).
 bin(){
-  mv "$@" ~/.bin
+  mv "$@" /usr/local/bin
 }
 
 

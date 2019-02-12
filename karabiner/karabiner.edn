@@ -430,6 +430,7 @@
                  [:u :!CTO2] ; Full screen app
                  [:i :!COslash] ; Show/hide notification centre
                  [:j :!CT4] ; Create new Fantastical event
+                 [:r [:km "Search events"]]
                  ;[:m :!CO6] ; Maximize window to next monitor
                  [:a [:km "Go to KM group of current app"]]
                  [:period [:km "Go to KM group of current app from picklist"]]
@@ -547,7 +548,7 @@
                  [:n [:km "w: NPM"]]]}
          {:des "jsdot"
           :rules[:jsdot-mode
-                 [:d [:!Sd :o :n :e]] ; -> done
+                 [:e [:!Sd :o :n :e]] ; -> Done
                  [:caps_lock [:!St :h :a :n :k :s]] ; -> Thanks 
                  [:s [:equal_sign :!Speriod :spacebar]] ; -> =>
                  [:r [:r :e :t :u :r :n :spacebar]] ; -> return
@@ -632,15 +633,15 @@
                  [:t [:km "Open Visit Trello"]]
                  [:period [:km "Open Books Trello"]]
                  [:s [:km "Open Research Papers Trello"]]
-                 [:u [:km "Open Courses Trello"]]
-                 [:c [:km "Open 2Do Clean"]]
-                 [:x [:km "Open 2Do Fix"]]
+                 [:c [:km "Open Courses Trello"]]
+                 [:n [:km "Open 2Do Clean"]]
+                 [:m [:km "Open 2Do Fix"]]
                  [:d [:km "Open Ideas Trello"]]
                  [:r [:km "Open 2Do Read"]]
                  [:h [:km "Open 2Do Check"]]
-                 [:semicolon [:km "Open 2Do PR"]]
+                 [:spacebar [:km "Open 2Do PR"]]
                  [:i [:km "todo: write"]]
-                 [:n [:km "todo: clean"]]
+                 [:semicolon [:km "todo: clean"]]
                  [:k [:km "todo: code"]]
                  [:j [:km "todo: empty"]]
                  [:o [:km "todo: 2Do"]]

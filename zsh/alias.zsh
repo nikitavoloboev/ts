@@ -89,7 +89,6 @@ alias lt='ls -lart'
 # alias aa='ls -lahFG'
 # alias aa='exa -lahF'
 alias tp='type'
-#alias cl='/usr/local/bin/m'
 # alias gr='goreleaser'
 
 # Dev
@@ -264,6 +263,7 @@ alias de='cd ~/Desktop'
 alias dq='cd ~/Downloads'
 alias dls='cd ~/Library/Services'
 alias drp='cd ~/Dropbox'
+alias dbin='cd /usr/local/bin/'
 
 # Xcode
 alias dx='cd ~/src/Xcode'

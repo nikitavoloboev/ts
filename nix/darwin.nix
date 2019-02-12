@@ -8,6 +8,7 @@
       # tools
       pkgs.neovim
       pkgs.vim
+      pkgs.hyperfine
       pkgs.cacert # TODO: doesn't this come default?
       pkgs.postgresql
       pkgs.antibody

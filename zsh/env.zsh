@@ -5,7 +5,6 @@ export EDITOR='nvim'
 export SUDO_EDITOR='nvim'
 
 # PATH
-export PATH=$PATH:~/.bin # Binaries I am testing that need to be packed with Nix
 export PATH=$PATH:~/.dotfiles/bin # Scripts & utilities
 export PATH=$PATH:~/.cargo/bin # Rust
 export GOPATH="$(go env GOPATH)" # Go
