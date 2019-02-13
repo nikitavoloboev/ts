@@ -103,8 +103,7 @@
                  [[:j :l] :!CTOSspacebar]]} ; Alfred
         {:des "ksim"
          :rules [[[:k :l] [:alfred "search dash" "com.nikivi.own.dash"]]
-                 [[:k :m] [:alfred "search youtube" "net.deanishe.alfred-searchio"]]
-                 [[:k :semicolon] [:alfred "ssh" "net.deanishe.alfred-ssh"]]]}
+                 [[:k :m] [:alfred "search youtube" "net.deanishe.alfred-searchio"]]]}
         {:des "qkey (cmd + shift)"
          :rules [:q-mode
                  [:open_bracket :!CSopen_bracket]
@@ -165,7 +164,7 @@
                  [:r [:km "open: Fantastical"]]
                  [:e :!OSC1] ; Open Dash 
                  [:g [:km "open: Sketch"]]
-                 [:a [:km "open: Paw"]]
+                 ;[:a [:km "open: Paw"]]
                  [:m [:km "open: Postico"]]
                  [:period [:km "open: SnippetsLab"]]
                  [:f [:km "open: 2Do"]]
@@ -495,6 +494,7 @@
                  [:4 :!O4]
                  [:5 :!O5]
                  [:6 :!O6]
+                 [:v [:alfred "ssh" "net.deanishe.alfred-ssh"]]
                  [:e [:alfred "search subs" "net.deanishe.alfred-reddit"]]
                  [:b [:alfred "search bookmarks" "net.deanishe.alfred.safari"]]
                  [:r [:alfred "search reddit" "nikivi.search.the.web"]]

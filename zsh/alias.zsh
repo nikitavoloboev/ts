@@ -27,7 +27,6 @@ alias aet='subl CONTRIBUTING.md'
 alias crypto='curl rate.sx' # Get crypto prices
 alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> public key copied to pasteboard'"
 alias lc='tokei'
-alias sf='screenfetch -E'
 alias rw='open -a "Marked 2" README.md'
 alias mr='open -a "Marked 2"'
 alias _='sudo'
@@ -308,7 +307,7 @@ alias g::='git_remote_add_origin_from_active_link'
 # alias g="git"
 alias gi='git init'
 alias gl='git pull'
-alias gcl='git clone'
+alias gn='git clone'
 alias g.='git add .'
 alias ga='git add'
 # alias gb='git branch'

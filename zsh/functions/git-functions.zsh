@@ -46,7 +46,7 @@ ge() {
 }
 
 # git commit browser (searches commits)
-gn ()
+gC()
 {
   git log --graph --color=always --format="%C(auto)%h%d %s %C(black)%C(bold)%cr"  | \
    fzf --ansi --no-sort --reverse --tiebreak=index --preview \

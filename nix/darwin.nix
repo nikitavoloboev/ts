@@ -34,11 +34,11 @@
       pkgs.minikube
       pkgs.cmake
       pkgs.yarn
+      pkgs.screenfetch
       #pkgs.dhall TODO: fix
       #pkgs.leiningen
       #pkgs.bat # TODO: fix on darwin. tries to build for long time & fails
       #pkgs.nodejs-10_x
-      #pkgs.screenfetch
       #pkgs.yarn
       #pkgs.clog-cli
       #pkgs.loc
