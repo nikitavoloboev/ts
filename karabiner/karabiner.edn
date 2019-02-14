@@ -71,6 +71,7 @@
                  [:u [:km "wiki: Rules"]]
                  [:m [:km "wiki: Month"]]
                  [:k [:km "proj: Knowledge"]]
+                 [:i [:km "edit: Zsh functions"]]
                  [:l [:km "edit: Aliases"]]]}
         {:des "2key (move)"
          :rules [:2-mode
@@ -153,7 +154,7 @@
         {:des "wkey (apps)"
          :rules [:w-mode
                  [:k [:km "open: Safari"]]
-                 [:u [:km "open: Activity Monitor"]]
+                 [:c [:km "open: Activity Monitor"]]
                  [:i [:km "open: Chrome Canary"]]
                  [:t [:km "open: Trello"]]
                  [:v [:km "open: Spotify"]]
@@ -164,7 +165,7 @@
                  [:r [:km "open: Fantastical"]]
                  [:e :!OSC1] ; Open Dash 
                  [:g [:km "open: Sketch"]]
-                 ;[:a [:km "open: Paw"]]
+                 [:a [:km "open: Paw"]]
                  [:m [:km "open: Postico"]]
                  [:period [:km "open: SnippetsLab"]]
                  [:f [:km "open: 2Do"]]

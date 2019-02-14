@@ -133,6 +133,7 @@ alias kg='kubectl get'
 alias ks='kubectl get pods'
 alias kd='kubectl delete pods'
 alias ksw='kubectl get pods -o=wide -w'
+alias kp='kubectl port-forward'
 #alias kbcontexts='kubectl config view -o jsonpath='{.contexts[*].name}'' # List kubernetes contexts
 
 # Node

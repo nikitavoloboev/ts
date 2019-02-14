@@ -5,6 +5,10 @@ b() {
   git push
 }
 
+# kp() {
+#   kubectl port-forward "$@" 5300:5432
+# }
+
 # bin <binary>. Move <binary> to /usr/local/bin (in my PATH).
 bin(){
   mv "$@" /usr/local/bin
