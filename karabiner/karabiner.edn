@@ -225,6 +225,7 @@
                  [:m [:km "open: Marked"]]
                  [:q [:km "open: IINA"]]
                  [:period [:km "open: Arq"]]
+                 [:semicolon [:km "open: OBS"]]
                  [:l [:km "open: Ulysses"]]
                  [:t [:km "open: Transmission"]]
                  [:p [:km "open: Paprika Recipe Manager"]]
@@ -245,7 +246,7 @@
                  [:x :!Sbackslash]
                  [:b [:!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> TODO:
                  [:l [:hyphen :!Speriod :spacebar]] ; -> arrow (->)
-                 ;[:n [:slash :slash :spacebar :!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> // TODO:
+                 [:tab [:slash :slash :spacebar :!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> // TODO:
                  [:grave_accent_and_tilde [:slash :slash :spacebar]] ; -> // 
                  [:caps_lock [:km "Match symbols"]]
                  [:e :!S3]
@@ -452,7 +453,7 @@
                  [:k [:km "open: Telegram"]]
                  [:semicolon [:km "open: Sblack"]]
                  [:j [:km "open: Textual"]]
-                 [:period [:km "w: Skype"]]
+                 [:period [:km "open: Skype"]]
                  [:l [:km "open: Discord"]]]}
         {:des "xkey (alfred)"
          :rules [:x-mode
