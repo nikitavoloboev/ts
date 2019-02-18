@@ -422,7 +422,8 @@
         {:des "gkey (actions)"
          :rules [:g-mode
                  [:q :!CO0] ; Show Dropzone dropdown
-                 [:e :!COd] ; Show/hide dock
+                 [:r :!CT3] ; Search bartender menu items
+                 [:d :!COd] ; Show/hide dock
                  [:k :!COSf] ; Maximize window
                  [:n :!CTOg] ; Turn on/off notifications
                  [:w :!CSgrave_accent_and_tilde] ; Switch between active windows (go up)
@@ -431,7 +432,7 @@
                  [:u :!CTO2] ; Full screen app
                  [:i :!COslash] ; Show/hide notification centre
                  [:j :!CT4] ; Create new Fantastical event
-                 [:r [:km "Search events"]]
+                 [:e [:km "Search events"]]
                  ;[:m :!CO6] ; Maximize window to next monitor
                  [:a [:km "Go to KM group of current app"]]
                  [:period [:km "Go to KM group of current app from picklist"]]
