@@ -108,7 +108,7 @@
         {:des "qkey (cmd + shift)"
          :rules [:q-mode
                  [:open_bracket :!CSopen_bracket]
-                 [:spacebar :!CT7]
+                 [:spacebar :!CT7] ; Start Google Searchio search with selection 
                  [:close_bracket :!CSclose_bracket]
                  [:semicolon :!CSsemicolon]
                  [:quote :!CSquote]
@@ -276,9 +276,9 @@
                  [:6 :!C6]
                  [:w :!CObackslash] ; 1Password search
                  [:caps_lock [:alfred "search folders" "nikivi.search.folders"]]
-                 [:spacebar [:alfred "search dash profiles" "nikivi.dash.profiles"]]
+                 [:g [:alfred "search dash profiles" "nikivi.dash.profiles"]]
                  [:z [:alfred "search PDF files" "nikivi.search.files"]]
-                 [:g [:alfred "search snippets" "com.renfei.SnippetsLab.AlfredWorkflow"]]
+                 [:spacebar [:alfred "search snippets" "com.renfei.SnippetsLab.AlfredWorkflow"]]
                  [:grave_accent_and_tilde [:alfred "search processes" "com.vitorgalvao.alfred.processcontrol"]]
                  [:e [:km "Make 2Do task"]]
                  [:v [:km "Make 2Do task with Safari title as name"]]
@@ -288,9 +288,9 @@
                  ;[:b [:km "2Do task (ask)"]]
                  [:b [:alfred "search ulysses sheets" "nikivi.search.files"]]
                  [:tab [:km "2Do with current url as note (check)"]]
+                 [:y [:alfred "search trash" "com.vitorgalvao.alfred.directories"]]
                  [:h [:km "2Do with current url as note (watch)"]]
                  [:a [:alfred "search files" "nikivi.manage.wiki"]]
-                 [:y [:alfred "search trash" "com.vitorgalvao.alfred.directories"]]
                  [:c [:alfred "search emoji" "com.github.jsumners.alfred-emoji"]]
                  [:i [:alfred "search tty sessions" "net.isometry.alfred.tty"]]
                  [:f [:alfred "search repos" "net.deanishe.alfred-git-repos"]]
@@ -373,10 +373,9 @@
          :rules [:d-mode
                  [:j {:mkey {:vwheel 100}}]
                  [:k {:mkey {:vwheel -100}}]
-                 [:i :!Ckeypad_hyphen] ; Zoom out
                  [:a :!CT6] ; Smart zoom
+                 [:i :!Ckeypad_hyphen] ; Zoom out
                  [:o :!Ckeypad_plus] ; Zoom in
-                 [:h :!CT3] ; Search menu bar items
                  [:l [:km "Select line and google"]]
                  [:n [:km "Open URL in clipboard in Safari"]]
                  [:g [:km "Centre mouse to active app"]]
@@ -385,7 +384,6 @@
                  [:b {:pkey :button3}] ; Middle click
                  [:z {:pkey :button2}] ; Right click
                  [:v {:pkey :button1}] ; Left click
-                 [:a :!TCO8] ; Smart zoom in/out
                  [:period :!CTO3]]} ; Mission control
         {:des "fkey (essential)"
          :rules [:f-mode
@@ -456,9 +454,6 @@
                  [:j [:km "open: Textual"]]
                  [:period [:km "open: Skype"]]
                  [:l [:km "open: Discord"]]]}
-        {:des "xkey (alfred)"
-         :rules [:x-mode
-                 [:l [:alfred "search wiki" "nikivi.mind"]]]}
         {:des "vkey (media)"
          :rules [:v-mode
                  [:e [:km "Connect/disconnect AirPods"]]
@@ -525,10 +520,13 @@
                  [:q [:alfred "remove_current_track_from" "com.vdesabou.spotify.mini.player"]]
                  [:caps_lock [:km "Send tweet with current URL"]]
                  [:f [:km "New tweet with current URL"]]]}
-        {:des "ckey (palettes)"
+        {:des "xkey (alfred)"
+         :rules [:x-mode
+                 [:l [:alfred "search wiki" "nikivi.mind"]]]}
+        {:des "ckey (palettes + alfred)"
          :rules [:c-mode
                  [:j :!SOTf] ; App specific
-                 [:s :!SOTr]]} ; Personal
+                 [:l :!SOTr]]} ; Personal
         {:des "tkey (handy actions)"
          :rules [:t-mode
                  [:spacebar :!COSr] ; Google Translate selected text
@@ -630,16 +628,15 @@
                  [:9 :!TO9]
                  [:0 :!TO0]
                  [:f [:km "Open Focus Trello"]]
-                 [:e [:km "Open Learn Trello"]]
+                 [:w [:km "Open Learn Trello"]]
                  [:v [:km "Open Videos Trello"]]
-                 [:w [:km "Open Write Trello"]]
                  [:t [:km "Open Visit Trello"]]
                  [:period [:km "Open Books Trello"]]
-                 [:s [:km "Open Research Papers Trello"]]
+                 [:d [:km "Open Research Papers Trello"]]
                  [:c [:km "Open Courses Trello"]]
                  [:n [:km "Open 2Do Clean"]]
                  [:m [:km "Open 2Do Fix"]]
-                 [:d [:km "Open Ideas Trello"]]
+                 [:e [:km "Open Ideas Trello"]]
                  [:r [:km "Open 2Do Read"]]
                  [:h [:km "Open 2Do Check"]]
                  [:spacebar [:km "Open 2Do PR"]]
