@@ -15,6 +15,8 @@ export PATH=$PATH:./node_modules/.bin
 # TODO: remove?
 . "$HOME/.nix-profile/etc/profile.d/hm-session-vars.sh"
 
+eval "$(hub alias -s)"
+
 # node.js ver. manager (https://github.com/Schniz/fnm)
 eval `fnm env`
 

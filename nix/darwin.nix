@@ -6,6 +6,8 @@
   environment.systemPackages =
     [
       # tools
+      pkgs.git
+      pkgs.gitAndTools.hub
       pkgs.neovim
       pkgs.vim
       pkgs.hyperfine
@@ -17,10 +19,7 @@
       pkgs.wget
       pkgs.exa
       pkgs.fzf
-      pkgs.htop
       pkgs.httpie
-      pkgs.gitAndTools.git-hub
-      pkgs.git
       pkgs.hugo
       pkgs.texlive.combined.scheme-full
       pkgs.nix

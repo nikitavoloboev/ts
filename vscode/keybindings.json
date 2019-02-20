@@ -42,20 +42,6 @@
     "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
   },
   {
-    "key": "ctrl+o",
-    "command": "workbench.action.terminal.focus",
-    "when": "terminalFocus"
-  },
-  {
-    "key": "ctrl+o",
-    "command": "workbench.action.focusActiveEditorGroup",
-    "when": "!terminalFocus"
-  },
-  {
-    "key": "ctrl+i",
-    "command": "workbench.action.terminal.toggleTerminal"
-  },
-  {
     "key": "ctrl+l",
     "command": "editor.action.marker.prev",
     "when": "editorFocus && !editorReadonly"
@@ -363,7 +349,7 @@
     "when": "editorLangId == 'markdown'"
   },
   {
-    "key": "ctrl+,",
+    "key": "ctrl+i",
     "command": "editor.action.quickFix",
     "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
   },
@@ -380,5 +366,15 @@
   {
     "key": "shift+cmd+'",
     "command": "toggleVim"
+  },
+  {
+    "key": "ctrl+o",
+    "command": "editor.action.triggerSuggest",
+    "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+space",
+    "command": "-editor.action.triggerSuggest",
+    "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
   }
 ]

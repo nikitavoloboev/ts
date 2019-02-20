@@ -108,7 +108,7 @@
         {:des "qkey (cmd + shift)"
          :rules [:q-mode
                  [:open_bracket :!CSopen_bracket]
-                 [:spacebar :!CT7] ; Start Google Searchio search with selection 
+                 [:spacebar :!CT7] ; Start Google search with selection 
                  [:close_bracket :!CSclose_bracket]
                  [:semicolon :!CSsemicolon]
                  [:quote :!CSquote]
@@ -224,8 +224,10 @@
                  [:spacebar :!CTq] ; Search selection in Web Searches
                  [:m [:km "open: Marked"]]
                  [:q [:km "open: IINA"]]
-                 [:period [:km "open: Arq"]]
-                 [:semicolon [:km "open: OBS"]]
+                 [:h [:km "open: Arq"]]
+                 [:o :!CO7] ; Open Typinator
+                 [:period [:km "open: OBS"]]
+                 [:semicolon [:km "open: Affinity Designer"]]
                  [:l [:km "open: Ulysses"]]
                  [:t [:km "open: Transmission"]]
                  [:p [:km "open: Paprika Recipe Manager"]]
@@ -456,7 +458,7 @@
                  [:l [:km "open: Discord"]]]}
         {:des "vkey (media)"
          :rules [:v-mode
-                 [:e [:km "Connect/disconnect AirPods"]]
+                 [:e :!CO9] ; Connect/disconnect AirPods
                  [:j :mute]
                  [:period [:km "Noizio change"]]
                  [:semicolon :!TS0] ; Turn on/off Noizio
@@ -639,10 +641,10 @@
                  [:e [:km "Open Ideas Trello"]]
                  [:r [:km "Open 2Do Read"]]
                  [:h [:km "Open 2Do Check"]]
+                 [:o [:km "Open 2Do Tools"]]
                  [:spacebar [:km "Open 2Do PR"]]
                  [:i [:km "todo: write"]]
                  [:semicolon [:km "todo: clean"]]
                  [:k [:km "todo: code"]]
                  [:j [:km "todo: empty"]]
-                 [:o [:km "todo: 2Do"]]
                  [:l [:km "todo: learn"]]]}]}
