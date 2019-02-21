@@ -52,7 +52,7 @@ alias alert="tput bel" # Bell when the program is finished. i.e. npm install && 
 # TODO: fk alias to run last cmd as sudo instantly
 alias lg='ls | grep'
 alias so='source'
-alias top="vtop"
+alias top='gotop'
 alias ka='echo'
 alias rl='curl'
 alias how='howdoi'
@@ -246,9 +246,8 @@ alias ez='nvim ~/.zshrc'
 
 # cd places
 alias dw='cd ~/Documents/'
-alias ds='cd ~/src/ideas'
+alias ds='cd ~/.ssh'
 alias dk='cd ~/Dropbox/Write/knowledge'
-alias dsh='cd ~/.ssh'
 alias dn='cd ~/src/clones'
 alias di='cd ~/src/nix'
 alias dg='cd ~/go/src/github.com/nikitavoloboev'

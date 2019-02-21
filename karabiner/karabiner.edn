@@ -287,7 +287,6 @@
                  [:r [:km "2Do with current url as note (pr)"]]
                  [:q [:alfred "search downloads" "recentdownloads.ddjfreedom"]]
                  [:t [:km "2Do with current url as note (read)"]]
-                 ;[:b [:km "2Do task (ask)"]]
                  [:b [:alfred "search ulysses sheets" "nikivi.search.files"]]
                  [:tab [:km "2Do with current url as note (check)"]]
                  [:y [:alfred "search trash" "com.vitorgalvao.alfred.directories"]]
@@ -397,7 +396,7 @@
                  ;[:q :!STh] ; Record macro
                  [:q [:km "Go to test macro"]]
                  [:w [:km "Test"]]
-                 [:u [:km "Add question"]]
+                 [:u [:km "2Do task (ask)"]]
                  ;[:q [:km "Uppercase selected text"]]
                  [:period [:km "edit: Karabiner"]]
                  [:a :!CTO4] ; Alfred file action
@@ -461,6 +460,7 @@
                  [:e :!CO9] ; Connect/disconnect AirPods
                  [:j :mute]
                  [:period [:km "Noizio change"]]
+                 [:comma [:km "Noizio pick audio device"]]
                  [:semicolon :!TS0] ; Turn on/off Noizio
                  [:a [:km "Clone repo to ~/src/clones"]]
                  [:s [:km "Clone repo to ~/src/clones and open with VS Code"]]
@@ -638,6 +638,7 @@
                  [:c [:km "Open Courses Trello"]]
                  [:n [:km "Open 2Do Clean"]]
                  [:m [:km "Open 2Do Fix"]]
+                 [:u [:km "Open 2Do Ask"]]
                  [:e [:km "Open Ideas Trello"]]
                  [:r [:km "Open 2Do Read"]]
                  [:h [:km "Open 2Do Check"]]
