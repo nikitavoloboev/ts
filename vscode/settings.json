@@ -69,6 +69,7 @@
     "package-lock.json": true,
     "**/node_modules": true,
     "**/npm-debug.log": true,
+    "**/dist": true,
     "**/*.bs.js": true
   },
   // explorer
@@ -76,9 +77,7 @@
   "explorer.confirmDragAndDrop": false,
   "explorer.decorations.badges": false,
   // python
-  "python.linting.pylintArgs": [
-    "--errors-only"
-  ],
+  "python.linting.pylintArgs": ["--errors-only"],
   // code runner
   "code-runner.clearPreviousOutput": true,
   "code-runner.executorMap": {
@@ -98,10 +97,7 @@
   // space map
   "vim.normalModeKeyBindings": [
     {
-      "before": [
-        "<leader>",
-        "w"
-      ],
+      "before": ["<leader>", "w"],
       "after": [],
       "commands": [
         {
@@ -111,10 +107,7 @@
       ]
     },
     {
-      "before": [
-        "<leader>",
-        "q"
-      ],
+      "before": ["<leader>", "q"],
       "after": [],
       "commands": [
         {
@@ -124,10 +117,7 @@
       ]
     },
     {
-      "before": [
-        "<leader>",
-        "a"
-      ],
+      "before": ["<leader>", "a"],
       "after": [],
       "commands": [
         {
@@ -141,50 +131,23 @@
       ]
     },
     {
-      "before": [
-        "K"
-      ],
-      "after": [
-        "leader",
-        "leader",
-        "k"
-      ]
+      "before": ["K"],
+      "after": ["leader", "leader", "k"]
     },
     {
-      "before": [
-        "J"
-      ],
-      "after": [
-        "leader",
-        "leader",
-        "j"
-      ]
+      "before": ["J"],
+      "after": ["leader", "leader", "j"]
     },
     {
-      "before": [
-        "<leader>",
-        "i"
-      ],
-      "after": [
-        "y",
-        "i",
-        "\""
-      ]
+      "before": ["<leader>", "i"],
+      "after": ["y", "i", "\""]
     },
     {
-      "before": [
-        "Y"
-      ],
-      "after": [
-        "y",
-        "$"
-      ]
+      "before": ["Y"],
+      "after": ["y", "$"]
     },
     {
-      "before": [
-        "<leader>",
-        "e"
-      ],
+      "before": ["<leader>", "e"],
       "after": [],
       "commands": [
         {
@@ -233,10 +196,7 @@
   "gitlens.codeLens.enabled": false,
   "gitlens.settings.mode": "advanced",
   "gitlens.keymap": "chorded",
-  "gitlens.codeLens.scopes": [
-    "containers",
-    "document"
-  ],
+  "gitlens.codeLens.scopes": ["containers", "document"],
   "gitlens.advanced.messages": {
     "suppressCommitHasNoPreviousCommitWarning": false,
     "suppressCommitNotFoundWarning": false,
@@ -253,5 +213,5 @@
   "extensions.ignoreRecommendations": true,
   "extensions.showRecommendationsOnlyOnDemand": true,
   "gitlens.views.fileHistory.enabled": true,
-  "gitlens.views.lineHistory.enabled": true,
+  "gitlens.views.lineHistory.enabled": true
 }

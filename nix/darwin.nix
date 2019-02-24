@@ -10,6 +10,7 @@
       pkgs.gitAndTools.hub
       pkgs.neovim
       pkgs.vim
+      pkgs.ffmpeg
       pkgs.hyperfine
       pkgs.cacert # TODO: doesn't this come default?
       pkgs.postgresql

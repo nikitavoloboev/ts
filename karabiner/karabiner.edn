@@ -108,7 +108,7 @@
         {:des "qkey (cmd + shift)"
          :rules [:q-mode
                  [:open_bracket :!CSopen_bracket]
-                 [:spacebar :!CT7] ; Start Google search with selection 
+                 [:spacebar [:km "Paste selected text in previous app"]]
                  [:close_bracket :!CSclose_bracket]
                  [:semicolon :!CSsemicolon]
                  [:quote :!CSquote]
@@ -177,8 +177,8 @@
          :rules [:e-mode
                  [:open_bracket :!Copen_bracket]
                  [:close_bracket :!Cclose_bracket]
+                 [:spacebar :!CT7] ; Start Google search with selection 
                  [:semicolon :!Csemicolon]
-                 [:spacebar :!CT8] ; Search selection in Dictionary (wiki)
                  [:quote :!Cquote]
                  [:comma :!Ccomma]
                  [:period :!Cperiod]
@@ -227,7 +227,7 @@
                  [:h [:km "open: Arq"]]
                  [:o :!CO7] ; Open Typinator
                  [:period [:km "open: OBS"]]
-                 [:semicolon [:km "open: Affinity Designer"]]
+                 [:semicolon [:km "open: Affinity Photo"]]
                  [:l [:km "open: Ulysses"]]
                  [:t [:km "open: Transmission"]]
                  [:p [:km "open: Paprika Recipe Manager"]]
@@ -283,11 +283,12 @@
                  [:spacebar [:alfred "search snippets" "com.renfei.SnippetsLab.AlfredWorkflow"]]
                  [:grave_accent_and_tilde [:alfred "search processes" "com.vitorgalvao.alfred.processcontrol"]]
                  [:e [:km "Make 2Do task"]]
-                 [:v [:km "Make 2Do task with Safari title as name"]]
+                 [:b [:km "Make 2Do task with Safari title as name + note as current URL"]]
+                 [:v [:km "Make 2Do task with note as current URL"]]
                  [:r [:km "2Do with current url as note (pr)"]]
                  [:q [:alfred "search downloads" "recentdownloads.ddjfreedom"]]
                  [:t [:km "2Do with current url as note (read)"]]
-                 [:b [:alfred "search ulysses sheets" "nikivi.search.files"]]
+                 [:left_gui [:alfred "search ulysses sheets" "nikivi.search.files"]]
                  [:tab [:km "2Do with current url as note (check)"]]
                  [:y [:alfred "search trash" "com.vitorgalvao.alfred.directories"]]
                  [:h [:km "2Do with current url as note (watch)"]]
@@ -380,7 +381,7 @@
                  [:l [:km "Select line and google"]]
                  [:n [:km "Open URL in clipboard in Safari"]]
                  [:g [:km "Centre mouse to active app"]]
-                 [:semicolon [:km "Google selected word"]]
+                 [:h [:km "Google Searchio selected word"]]
                  [:m [:km "Google clipboard"]]
                  [:b {:pkey :button3}] ; Middle click
                  [:z {:pkey :button2}] ; Right click
@@ -389,7 +390,7 @@
         {:des "fkey (essential)"
          :rules [:f-mode
                  [:e :!CO8] ; Alfred clipboard history search
-                 [:spacebar [:km "Paste selected text in previous app"]]
+                 [:spacebar :!CT8] ; Search selection in Dictionary (wiki)
                  [:semicolon [:km "open: TaskPaper"]]
                  [:s [:km "New SnippetsLab snippet"]]
                  ;[:w [:km "Lowercase selected text"]]
@@ -531,9 +532,9 @@
                  [:l :!SOTr]]} ; Personal
         {:des "tkey (handy actions)"
          :rules [:t-mode
-                 [:spacebar :!COSr] ; Google Translate selected text
+                 ;[:period [:alfred "trash desktop" "nikivi.clean.folders"]]]}
                  [:s :!CTOx] ; Little Snitch
-                 [:period [:alfred "trash desktop" "nikivi.clean.folders"]]]}
+                 [:spacebar :!COSr]]}; Google Translate selected text
         {:des "ukey (websites)"
          :rules [:u-mode
                  [:e [:km "w: Repl"]]
@@ -643,8 +644,7 @@
                  [:r [:km "Open 2Do Read"]]
                  [:h [:km "Open 2Do Check"]]
                  [:o [:km "Open 2Do Tools"]]
-                 [:spacebar [:km "Open 2Do PR"]]
-                 [:i [:km "todo: write"]]
+                 [:i [:km "Open 2Do PR"]]
                  [:semicolon [:km "todo: clean"]]
                  [:k [:km "todo: code"]]
                  [:j [:km "todo: empty"]]
