@@ -396,11 +396,12 @@
                  ;[:w [:km "Lowercase selected text"]]
                  ;[:q :!STh] ; Record macro
                  [:q [:km "Go to test macro"]]
-                 [:w [:km "Test"]]
+                 [:caps_lock [:km "Test"]]
+                 [:a [:alfred "new task" "nikivi.todo.task"]]
                  [:u [:km "2Do task (ask)"]]
                  ;[:q [:km "Uppercase selected text"]]
                  [:period [:km "edit: Karabiner"]]
-                 [:a :!CTO4] ; Alfred file action
+                 [:w :!CTO4] ; Alfred file action
                  [:j [:km "Open 1st iTerm tab"]]
                  [:h [:km "Make markdown link from selection {link}"]]
                  [:1 [:km "Lowercase selected text"]]
@@ -411,7 +412,7 @@
                  [:quote [:km "edit: vimrc"]]
                  [:comma  [:km "Add safari link to selected markdown text"]]
                  [:k :return_or_enter]
-                 [:z :!Ospacebar]
+                 [:z :!Ospacebar] ; Switch language (Russian <-> English)
                  [:l :!Creturn_or_enter]
                  [:3 :!CTOp] ; Sip color picker 
                  [:2 :!COclose_bracket] ; PixelSnap
@@ -449,12 +450,12 @@
                  [:g [:alfred "search contacts" "nikivi.search.content"]]
                  [:e [:km "open: Telegram"]]
                  [:m [:km "open: Caprine"]]
-                 [:o [:km "open: Slack"]]
+                 [:period [:km "open: Slack"]]
                  [:n [:km "Create new contact"]]
                  [:k [:km "open: Telegram"]]
                  [:semicolon [:km "open: Sblack"]]
                  [:j [:km "open: Textual"]]
-                 [:period [:km "open: Skype"]]
+                 [:o [:km "open: Zoom"]]
                  [:l [:km "open: Discord"]]]}
         {:des "vkey (media)"
          :rules [:v-mode
