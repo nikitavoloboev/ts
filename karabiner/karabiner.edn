@@ -246,6 +246,7 @@
                  [:r :!Squote]
                  [:d :backslash]
                  [:x :!Sbackslash]
+                 [:left_command [:!St :h :a :n :k :s]] ; -> Thanks 
                  [:b [:!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> TODO:
                  [:l [:hyphen :!Speriod :spacebar]] ; -> arrow (->)
                  [:tab [:slash :slash :spacebar :!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> // TODO:
@@ -290,7 +291,7 @@
                  [:t [:km "2Do with current url as note (read)"]]
                  [:left_gui [:alfred "search ulysses sheets" "nikivi.search.files"]]
                  [:tab [:km "2Do with current url as note (check)"]]
-                 [:y [:alfred "search trash" "com.vitorgalvao.alfred.directories"]]
+                 [:y [:km "2Do with current url as note (try)"]]
                  [:h [:km "2Do with current url as note (watch)"]]
                  [:a [:alfred "search files" "nikivi.manage.wiki"]]
                  [:c [:alfred "search emoji" "com.github.jsumners.alfred-emoji"]]
@@ -416,10 +417,10 @@
                  [:l :!Creturn_or_enter]
                  [:3 :!CTOp] ; Sip color picker 
                  [:2 :!COclose_bracket] ; PixelSnap
-                 [:o :!Freturn_or_enter]
-                 [:i :!Sreturn_or_enter]
-                 [:n :!Treturn_or_enter]
-                 [:m :!Oreturn_or_enter]]}
+                 [:n :!Freturn_or_enter]
+                 [:m :!Sreturn_or_enter]
+                 [:i :!Treturn_or_enter]
+                 [:o :!Oreturn_or_enter]]}
         {:des "gkey (actions)"
          :rules [:g-mode
                  [:q :!CO0] ; Show Dropzone dropdown
@@ -526,6 +527,7 @@
                  [:f [:km "New tweet with current URL"]]]}
         {:des "xkey (alfred)"
          :rules [:x-mode
+                 [:h [:alfred "search trash" "com.vitorgalvao.alfred.directories"]]
                  [:l [:alfred "search wiki" "nikivi.mind"]]]}
         {:des "ckey (palettes + alfred)"
          :rules [:c-mode
@@ -554,7 +556,6 @@
          {:des "jsdot"
           :rules[:jsdot-mode
                  [:e [:!Sd :o :n :e]] ; -> Done
-                 [:caps_lock [:!St :h :a :n :k :s]] ; -> Thanks 
                  [:s [:equal_sign :!Speriod :spacebar]] ; -> =>
                  [:r [:r :e :t :u :r :n :spacebar]] ; -> return
                  [:t [:r :e :t :u :r :n :spacebar :!Sopen_bracket :!Sclose_bracket :left_arrow :return_or_enter]] ; -> return {}
