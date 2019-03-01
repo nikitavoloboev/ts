@@ -19,7 +19,6 @@
              :f-mode {:key :f}
              :g-mode {:key :g}
              :z-mode {:key :z}
-             :x-mode {:key :x}
              :c-mode {:key :c}
              :v-mode {:key :v}
              :b-mode {:key :b}
@@ -228,7 +227,7 @@
                  [:o :!CO7] ; Open Typinator
                  [:period [:km "open: OBS"]]
                  [:semicolon [:km "open: Affinity Photo"]]
-                 [:l [:km "open: Ulysses"]]
+                 [:l [:km "open: Affinity Designer"]]
                  [:t [:km "open: Transmission"]]
                  [:p [:km "open: Paprika Recipe Manager"]]
                  [:b [:km "Edit keyboard shortcuts"]]
@@ -289,7 +288,6 @@
                  [:r [:km "2Do with current url as note (pr)"]]
                  [:q [:alfred "search downloads" "recentdownloads.ddjfreedom"]]
                  [:t [:km "2Do with current url as note (read)"]]
-                 [:left_gui [:alfred "search ulysses sheets" "nikivi.search.files"]]
                  [:tab [:km "2Do with current url as note (check)"]]
                  [:y [:km "2Do with current url as note (try)"]]
                  [:h [:km "2Do with current url as note (watch)"]]
@@ -525,12 +523,10 @@
                  [:q [:alfred "remove_current_track_from" "com.vdesabou.spotify.mini.player"]]
                  [:caps_lock [:km "Send tweet with current URL"]]
                  [:f [:km "New tweet with current URL"]]]}
-        {:des "xkey (alfred)"
-         :rules [:x-mode
-                 [:h [:alfred "search trash" "com.vitorgalvao.alfred.directories"]]
-                 [:l [:alfred "search wiki" "nikivi.mind"]]]}
-        {:des "ckey (palettes + alfred)"
+        {:des "ckey (alfred + palette)"
          :rules [:c-mode
+                 [:l [:alfred "search wiki" "nikivi.mind"]]
+                 [:o [:alfred "search blog" "nikivi.private.directories"]]
                  [:j :!SOTf] ; App specific
                  [:l :!SOTr]]} ; Personal
         {:des "tkey (handy actions)"
