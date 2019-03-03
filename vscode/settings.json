@@ -12,6 +12,9 @@
   "breadcrumbs.enabled": true,
   // editor
   "editor.renderLineHighlight": "line",
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true
+  },
   "editor.hideCursorInOverviewRuler": true,
   "editor.scrollBeyondLastLine": false,
   "editor.lineHeight": 26,
@@ -38,7 +41,7 @@
   "workbench.settings.enableNaturalLanguageSearch": false,
   "workbench.colorTheme": "Monokai Night",
   // window
-  "window.zoomLevel": -2,
+  "window.zoomLevel": -1,
   "window.restoreWindows": "all",
   "window.newWindowDimensions": "maximized",
   // debug

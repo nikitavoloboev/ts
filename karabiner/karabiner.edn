@@ -24,9 +24,9 @@
              :b-mode {:key :b}
              :n-mode {:key :n}
              :m-mode {:key :m}
+             :tab-mode {:key :tab}
              :spacebar-mode {:key :spacebar}
              :backquote-mode {:key :grave_accent_and_tilde}
-             :comma-mode {:key :comma}
              :jsdot-mode {:key :period}
              ;:godot-mode {:key :period}
              ;:pydot-mode {:key :period}
@@ -68,6 +68,7 @@
         {:des "1key (open files + projects)"
          :rules [:1-mode
                  [:u [:km "wiki: Rules"]]
+                 [:n [:km "edit: Private notes"]]
                  [:m [:km "wiki: Month"]]
                  [:k [:km "proj: Knowledge"]]
                  [:i [:km "edit: Zsh functions"]]
@@ -302,6 +303,11 @@
                  [:j [:alfred "search km macros" "iansinnott.keyboardmaestro"]]
                  [:x [:alfred "search workflows" "org.jeef.workflowdirectory"]]
                  [:k [:alfred "search menu bar" "com.tedwise.menubarsearch"]]]}
+        {:des "tabkey (actions)"
+         :rules [:tab-mode
+                 [:r [:alfred "restart wifi" "nikivi.wifi.tools"]]
+                 [:w [:alfred "toggle wifi" "nikivi.wifi.tools"]]
+                 [:k [:km "Commit my wiki"]]]}
         {:des "akey (ctrl)"
          :rules [:a-mode
                  [:spacebar :!CT9] ; Search selection on Google
@@ -597,11 +603,6 @@
                  [:x :!TOx]
                  [:y :!TOy]
                  [:z :!TOz]]}
-        {:des "commakey"
-         :rules [:comma-mode
-                 [:e [:alfred "restart wifi" "nikivi.wifi.tools"]]
-                 [:w [:alfred "toggle wifi" "nikivi.wifi.tools"]]
-                 [:g [:km "Commit my wiki"]]]}
         {:des "spacekey (top sites)"
          :rules [:spacebar-mode
                  [:n [:km "w: GitHub notifications"]]

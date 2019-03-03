@@ -18,7 +18,7 @@ gbb() {
   branch=$(echo "$branches" | fzf +m) &&
   git checkout $(echo "$branch" | awk '{print $1}' | sed "s/.* //")
   # delete previous branch I was on
-  git branch -d @{-1}
+  git branch -D @{-1}
 }
 
 # search local branches -> delete local branch. gbd <branch> = delete local branch
@@ -27,9 +27,9 @@ gbd() {
     local branches branch
     branches=$(git branch -vv) &&
     branch=$(echo "$branches" | fzf +m) &&
-    git branch -d $(echo "$branch" | awk '{print $1}' | sed "s/.* //")
+    git branch -D $(echo "$branch" | awk '{print $1}' | sed "s/.* //")
   else
-    git branch -d "$@"
+    git branch -D "$@"
   fi
 }
 
