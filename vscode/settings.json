@@ -12,9 +12,6 @@
   "breadcrumbs.enabled": true,
   // editor
   "editor.renderLineHighlight": "line",
-  "editor.codeActionsOnSave": {
-    "source.organizeImports": true
-  },
   "editor.hideCursorInOverviewRuler": true,
   "editor.scrollBeyondLastLine": false,
   "editor.lineHeight": 26,

@@ -24,7 +24,7 @@
              :b-mode {:key :b}
              :n-mode {:key :n}
              :m-mode {:key :m}
-             :tab-mode {:key :tab}
+             :p-mode {:key :p}
              :spacebar-mode {:key :spacebar}
              :backquote-mode {:key :grave_accent_and_tilde}
              :jsdot-mode {:key :period}
@@ -69,10 +69,13 @@
          :rules [:1-mode
                  [:u [:km "wiki: Rules"]]
                  [:n [:km "edit: Private notes"]]
+                 [:r [:km "edit: Projects"]]
+                 [:o [:km "edit: Now"]]
                  [:m [:km "wiki: Month"]]
                  [:k [:km "proj: Knowledge"]]
+                 [:l [:km "proj: Build to learn"]]
                  [:i [:km "edit: Zsh functions"]]
-                 [:l [:km "edit: Aliases"]]]}
+                 [:j [:km "edit: Aliases"]]]}
         {:des "2key (move)"
          :rules [:2-mode
                  [:j :!Cdown_arrow]
@@ -303,11 +306,11 @@
                  [:j [:alfred "search km macros" "iansinnott.keyboardmaestro"]]
                  [:x [:alfred "search workflows" "org.jeef.workflowdirectory"]]
                  [:k [:alfred "search menu bar" "com.tedwise.menubarsearch"]]]}
-        {:des "tabkey (actions)"
-         :rules [:tab-mode
+        {:des "pkey (actions)"
+         :rules [:p-mode
                  [:r [:alfred "restart wifi" "nikivi.wifi.tools"]]
-                 [:w [:alfred "toggle wifi" "nikivi.wifi.tools"]]
-                 [:k [:km "Commit my wiki"]]]}
+                 [:f [:alfred "toggle wifi" "nikivi.wifi.tools"]]
+                 [:w [:km "Commit my wiki"]]]}
         {:des "akey (ctrl)"
          :rules [:a-mode
                  [:spacebar :!CT9] ; Search selection on Google
