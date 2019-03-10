@@ -19,6 +19,7 @@
              :f-mode {:key :f}
              :g-mode {:key :g}
              :z-mode {:key :z}
+             :x-mode {:key :x}
              :c-mode {:key :c}
              :v-mode {:key :v}
              :b-mode {:key :b}
@@ -229,7 +230,7 @@
                  [:q [:km "open: IINA"]]
                  [:h [:km "open: Arq"]]
                  [:o :!CO7] ; Open Typinator
-                 [:period [:km "open: OBS"]]
+                 [:comma [:km "open: OBS"]]
                  [:semicolon [:km "open: Affinity Photo"]]
                  [:l [:km "open: Affinity Designer"]]
                  [:t [:km "open: Transmission"]]
@@ -237,7 +238,7 @@
                  [:b [:km "Edit keyboard shortcuts"]]
                  [:a [:km "open: Alfred Preferences"]]
                  [:i [:km "open: Pixave"]]
-                 [:e [:km "open: Reeder"]]
+                 [:period [:km "open: Reeder"]]
                  [:j [:km "open: Dictionary"]]
                  [:k [:km "open: PDF Expert"]]
                  [:w [:km "open: 1Password"]]
@@ -309,8 +310,8 @@
         {:des "pkey (actions)"
          :rules [:p-mode
                  [:r [:alfred "restart wifi" "nikivi.wifi.tools"]]
-                 [:f [:alfred "toggle wifi" "nikivi.wifi.tools"]]
-                 [:w [:km "Commit my wiki"]]]}
+                 [:w [:alfred "toggle wifi" "nikivi.wifi.tools"]]
+                 [:t [:km "Commit my wiki"]]]}
         {:des "akey (ctrl)"
          :rules [:a-mode
                  [:spacebar :!CT9] ; Search selection on Google
@@ -532,12 +533,14 @@
                  [:q [:alfred "remove_current_track_from" "com.vdesabou.spotify.mini.player"]]
                  [:caps_lock [:km "Send tweet with current URL"]]
                  [:f [:km "New tweet with current URL"]]]}
-        {:des "ckey (alfred + palette)"
-         :rules [:c-mode
-                 [:l [:alfred "search wiki" "nikivi.mind"]]
-                 [:o [:alfred "search blog" "nikivi.private.directories"]]
+        {:des "xkey (palettes)"
+         :rules [:x-mode
                  [:j :!SOTf] ; App specific
                  [:l :!SOTr]]} ; Personal
+        {:des "ckey (alfred)"
+         :rules [:c-mode
+                 [:l [:alfred "search wiki" "nikivi.mind"]]
+                 [:o [:alfred "search blog" "nikivi.private.directories"]]]}
         {:des "tkey (handy actions)"
          :rules [:t-mode
                  ;[:period [:alfred "trash desktop" "nikivi.clean.folders"]]]}
