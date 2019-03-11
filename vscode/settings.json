@@ -31,7 +31,7 @@
   "editor.lineNumbers": "on",
   "editor.cursorStyle": "line",
   // workbench
-  "workbench.tree.horizontalScrolling": true,
+  "workbench.list.horizontalScrolling": true,
   "workbench.statusBar.feedback.visible": false,
   "workbench.fontAliasing": "antialiased",
   "workbench.activityBar.visible": false,

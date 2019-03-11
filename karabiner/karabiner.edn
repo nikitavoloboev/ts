@@ -158,7 +158,7 @@
         {:des "wkey (apps)"
          :rules [:w-mode
                  [:k [:km "open: Safari"]]
-                 [:c [:km "open: Activity Monitor"]]
+                 [:h [:km "open: Activity Monitor"]]
                  [:i [:km "open: Chrome Canary"]]
                  [:t [:km "open: Trello"]]
                  [:v [:km "open: Spotify"]]
@@ -168,10 +168,10 @@
                  [:b [:km "open: BetterTouchTool"]]
                  [:r [:km "open: Fantastical"]]
                  [:e :!OSC1] ; Open Dash 
-                 [:g [:km "open: Sketch"]]
+                 [:c [:km "open: Sketch"]]
                  [:a [:km "open: Paw"]]
                  [:m [:km "open: Postico"]]
-                 [:period [:km "open: SnippetsLab"]]
+                 [:g [:km "open: SnippetsLab"]]
                  [:f [:km "open: 2Do"]]
                  [:j [:km "open: iTerm"]]
                  [:n [:km "open: Sublime Text"]]
@@ -283,9 +283,9 @@
                  [:6 :!C6]
                  [:w :!CObackslash] ; 1Password search
                  [:caps_lock [:alfred "search folders" "nikivi.search.folders"]]
-                 [:g [:alfred "search dash profiles" "nikivi.dash.profiles"]]
+                 [:spacebar [:alfred "search dash profiles" "nikivi.dash.profiles"]]
                  [:z [:alfred "search PDF files" "nikivi.search.files"]]
-                 [:spacebar [:alfred "search snippets" "com.renfei.SnippetsLab.AlfredWorkflow"]]
+                 [:g :!TCclose_bracket] ; Search SnippetsLab library with assistant
                  [:grave_accent_and_tilde [:alfred "search processes" "com.vitorgalvao.alfred.processcontrol"]]
                  [:e [:km "Make 2Do task"]]
                  [:b [:km "Make 2Do task with Safari title as name + note as current URL"]]
@@ -612,16 +612,16 @@
         {:des "spacekey (top sites)"
          :rules [:spacebar-mode
                  [:n [:km "w: GitHub notifications"]]
-                 [:i [:km "w: Localhost"]]
+                 [:t [:km "w: Localhost"]]
                  [:k [:km "w: GitHub"]]
                  [:a [:km "w: Google"]]
-                 [:d [:km "w: Medium"]]
+                 [:e [:km "w: Medium"]]
                  [:f [:km "w: Confluence"]]
                  [:j [:km "w: YouTube"]]
-                 [:r [:km "w: Jira"]]
-                 [:b [:km "w: Bitbucket"]]
+                 [:i [:km "w: Jira"]]
+                 [:u [:km "w: Bitbucket"]]
                  [:l [:km "w: CodeSandbox"]]
-                 [:o [:km "w: regex101"]]
+                 [:g [:km "w: regex101"]]
                  [:semicolon [:km "w: Stack Overflow"]]]}
         {:des "capskey (todo + trello)"
          :rules [:caps-mode
