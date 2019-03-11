@@ -161,14 +161,14 @@
                  [:h [:km "open: Activity Monitor"]]
                  [:i [:km "open: Chrome Canary"]]
                  [:t [:km "open: Trello"]]
-                 [:v [:km "open: Spotify"]]
+                 [:c [:km "open: Spotify"]]
                  [:spacebar :!CSO7] ; Search selection with Google Lucky search
                  [:caps_lock [:km "open: Finder"]]
                  [:semicolon [:km "open: Tower"]]
                  [:b [:km "open: BetterTouchTool"]]
                  [:r [:km "open: Fantastical"]]
                  [:e :!OSC1] ; Open Dash 
-                 [:c [:km "open: Sketch"]]
+                 [:v [:km "open: Sketch"]]
                  [:a [:km "open: Paw"]]
                  [:m [:km "open: Postico"]]
                  [:g [:km "open: SnippetsLab"]]
@@ -231,14 +231,14 @@
                  [:h [:km "open: Arq"]]
                  [:o :!CO7] ; Open Typinator
                  [:comma [:km "open: OBS"]]
-                 [:semicolon [:km "open: Affinity Photo"]]
-                 [:l [:km "open: Affinity Designer"]]
+                 [:period [:km "open: Affinity Photo"]]
+                 [:semicolon [:km "open: Affinity Designer"]]
                  [:t [:km "open: Transmission"]]
                  [:p [:km "open: Paprika Recipe Manager"]]
                  [:b [:km "Edit keyboard shortcuts"]]
                  [:a [:km "open: Alfred Preferences"]]
                  [:i [:km "open: Pixave"]]
-                 [:period [:km "open: Reeder"]]
+                 [:l [:km "open: Reeder"]]
                  [:j [:km "open: Dictionary"]]
                  [:k [:km "open: PDF Expert"]]
                  [:w [:km "open: 1Password"]]
@@ -431,14 +431,13 @@
                  [:o :!Oreturn_or_enter]]}
         {:des "gkey (actions)"
          :rules [:g-mode
+                 [:semicolon :!Cgrave_accent_and_tilde] ; Switch between active windows  (go down)
+                 [:w :!CSgrave_accent_and_tilde] ; Switch between active windows (go up)
                  [:q :!CO0] ; Show Dropzone dropdown
                  [:r :!CT3] ; Search bartender menu items
                  [:d :!COd] ; Show/hide dock
                  [:k :!COSf] ; Maximize window
                  [:n :!CTOg] ; Turn on/off notifications
-                 [:w :!CSgrave_accent_and_tilde] ; Switch between active windows (go up)
-                 [:semicolon :!Cgrave_accent_and_tilde] ; Switch between active windows  (go down)
-                ;[:q :!COequal_sign]
                  [:u :!CTO2] ; Full screen app
                  [:i :!COslash] ; Show/hide notification centre
                  [:j :!CT4] ; Create new Fantastical event
@@ -449,7 +448,6 @@
                  [:m [:km "Make global macro"]]
                  [:l :!CSOd] ; Move window right
                  [:h :!CSOa] ; Move window left
-                 [:o [:alfred "new task" "nikivi.todo.task"]]
                  [:s [:km "Dismiss notifications"]]]}
         {:des "zkey (chat)"
          :rules [:z-mode
