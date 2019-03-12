@@ -162,7 +162,7 @@
                  [:h [:km "open: Activity Monitor"]]
                  [:i [:km "open: Chrome Canary"]]
                  [:t [:km "open: Trello"]]
-                 [:period [:km "open: Xcode"]]
+                 [:m [:km "open: Xcode"]]
                  [:c [:km "open: Spotify"]]
                  [:spacebar :!CSO7] ; Search selection with Google Lucky search
                  [:caps_lock [:km "open: Finder"]]
@@ -171,7 +171,7 @@
                  [:r [:km "open: Fantastical"]]
                  [:e :!OSC1] ; Open Dash 
                  [:v [:km "open: Sketch"]]
-                 [:m [:km "open: Paw"]]
+                 [:period [:km "open: Paw"]]
                  [:a [:km "open: Postico"]]
                  [:g [:km "open: SnippetsLab"]]
                  [:f [:km "open: 2Do"]]
@@ -251,7 +251,7 @@
                  [:r :!Squote]
                  [:d :backslash]
                  [:x :!Sbackslash]
-                 [:left_command [:!St :h :a :n :k :s]] ; -> Thanks 
+                 [:left_command [:t :h :a :n :k :s]] ; -> thanks 
                  [:b [:!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> TODO:
                  [:l [:hyphen :!Speriod :spacebar]] ; -> arrow (->)
                  [:tab [:slash :slash :spacebar :!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> // TODO:
@@ -457,15 +457,16 @@
                  [:i [:km "open: Tweetbot"]]
                  [:b [:km "open: Whalebird"]]
                  [:f [:km "open: Spark"]]
+                 [:n [:km "New Spark email"]]
                  [:g [:alfred "search contacts" "nikivi.search.content"]]
                  [:e [:km "open: Telegram"]]
-                 [:m [:km "open: Caprine"]]
+                 [:h [:km "open: Caprine"]]
                  [:period [:km "open: Slack"]]
-                 [:n [:km "Create new contact"]]
+                 [:c [:km "Create new contact"]]
                  [:k [:km "open: Telegram"]]
                  [:semicolon [:km "open: Sblack"]]
                  [:j [:km "open: Textual"]]
-                 [:p [:km "open: Zoom"]]
+                 [:m [:km "open: Zoom"]]
                  [:l [:km "open: Discord"]]]}
         {:des "vkey (media)"
          :rules [:v-mode
@@ -586,10 +587,10 @@
                  [:o [:alfred "song_radio" "com.vdesabou.spotify.mini.player"]]
                  [:i [:alfred "artist_radio" "com.vdesabou.spotify.mini.player"]]
                  [:k [:alfred "show_current_track" "com.vdesabou.spotify.mini.player"]]
-                 [:h [:alfred "web_search_current_track" "com.vdesabou.spotify.mini.player"]]
+                 [:l [:alfred "web_search_current_track" "com.vdesabou.spotify.mini.player"]]
                  [:m [:alfred "add_current_track_to" "com.vdesabou.spotify.mini.player"]]
                  [:n [:alfred "show_playlists" "com.vdesabou.spotify.mini.player"]]
-                 [:l [:alfred "copy_current_track_url_to_clipboard" "com.vdesabou.spotify.mini.player"]]
+                 [:h [:alfred "copy_current_track_url_to_clipboard" "com.vdesabou.spotify.mini.player"]]
                  [:semicolon [:alfred "add_current_track_to_alfred_playlist_or_your_music" "com.vdesabou.spotify.mini.player"]]
                  [:period [:alfred "remove_current_track_from" "com.vdesabou.spotify.mini.player"]]]}
         {:des "spacekey (top sites)"
