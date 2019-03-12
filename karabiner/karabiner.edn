@@ -19,7 +19,6 @@
              :f-mode {:key :f}
              :g-mode {:key :g}
              :z-mode {:key :z}
-             :x-mode {:key :x}
              :c-mode {:key :c}
              :v-mode {:key :v}
              :b-mode {:key :b}
@@ -68,7 +67,7 @@
                  [:6 :!T6]]}
         {:des "1key (open files + projects)"
          :rules [:1-mode
-                 [:u [:km "wiki: Rules"]]
+                 [:semicolon [:km "wiki: Rules"]]
                  [:n [:km "edit: Private notes"]]
                  [:r [:km "edit: Projects"]]
                  [:o [:km "edit: Now"]]
@@ -161,6 +160,7 @@
                  [:h [:km "open: Activity Monitor"]]
                  [:i [:km "open: Chrome Canary"]]
                  [:t [:km "open: Trello"]]
+                 [:period [:km "open: Xcode"]]
                  [:c [:km "open: Spotify"]]
                  [:spacebar :!CSO7] ; Search selection with Google Lucky search
                  [:caps_lock [:km "open: Finder"]]
@@ -224,7 +224,6 @@
                  [:0 :!C0]]}
         {:des "rkey (apps)"
          :rules [:r-mode
-                 ;[:u [:km "open: Actual"]]
                  [:spacebar :!CTq] ; Search selection in Web Searches
                  [:m [:km "open: Marked"]]
                  [:q [:km "open: IINA"]]
@@ -451,6 +450,8 @@
                  [:s [:km "Dismiss notifications"]]]}
         {:des "zkey (chat)"
          :rules [:z-mode
+                 [:o :!CTO1] ; New tweet 
+                 [:u [:km "New tweet with current URL"]]
                  [:i [:km "open: Tweetbot"]]
                  [:b [:km "open: Whalebird"]]
                  [:f [:km "open: Spark"]]
@@ -462,7 +463,7 @@
                  [:k [:km "open: Telegram"]]
                  [:semicolon [:km "open: Sblack"]]
                  [:j [:km "open: Textual"]]
-                 [:o [:km "open: Zoom"]]
+                 [:p [:km "open: Zoom"]]
                  [:l [:km "open: Discord"]]]}
         {:des "vkey (media)"
          :rules [:v-mode
@@ -516,25 +517,40 @@
                  [:g [:alfred "search godoc" "nikivi.search.the.web"]]
                  [:w [:alfred "search github" "nikivi.search.the.web"]]
                  [:caps_lock [:alfred "search learn anything" "nikivi.learn.anything"]]]}
-        {:des "mkey (spotify + twitter)"
+        {:des "mkey (dash)"
          :rules [:m-mode
-                 [:a :!CTO1] ; New tweet 
-                 [:s [:alfred "spot_mini" "com.vdesabou.spotify.mini.player"]]
-                 [:z [:alfred "song_radio" "com.vdesabou.spotify.mini.player"]]
-                 [:r [:alfred "artist_radio" "com.vdesabou.spotify.mini.player"]]
-                 [:d [:alfred "show_current_track" "com.vdesabou.spotify.mini.player"]]
-                 [:x [:alfred "web_search_current_track" "com.vdesabou.spotify.mini.player"]]
-                 [:c [:alfred "add_current_track_to" "com.vdesabou.spotify.mini.player"]]
-                 [:e [:alfred "show_playlists" "com.vdesabou.spotify.mini.player"]]
-                 [:grave_accent_and_tilde [:alfred "copy_current_track_url_to_clipboard" "com.vdesabou.spotify.mini.player"]]
-                 [:g [:alfred "add_current_track_to_alfred_playlist_or_your_music" "com.vdesabou.spotify.mini.player"]]
-                 [:q [:alfred "remove_current_track_from" "com.vdesabou.spotify.mini.player"]]
-                 [:caps_lock [:km "Send tweet with current URL"]]
-                 [:f [:km "New tweet with current URL"]]]}
-        {:des "xkey (palettes)"
-         :rules [:x-mode
-                 [:j :!SOTf] ; App specific
-                 [:l :!SOTr]]} ; Personal
+                 [:open_bracket :!TOopen_bracket]
+                 [:close_bracket :!TOclose_bracket]
+                 [:semicolon :!TOsemicolon]
+                 [:quote :!TOquote]
+                 [:comma :!TOcomma]
+                 [:period :!TOperiod]
+                 [:slash :!TOslash]
+                 [:b :!TOb]
+                 [:c :!TOc]
+                 [:d :!TOd]
+                 [:e :!TOe]
+                 [:f :!TOf]
+                 [:g :!TOg]
+                 [:h :!TOh]
+                 [:i :!TOi]
+                 [:j :!TOj]
+                 [:k :!TOk]
+                 [:l :!TOl]
+                 [:a :!TOm]
+                 [:n :!TOn]
+                 [:o :!TOo]
+                 [:p :!TOp]
+                 [:q :!TOq]
+                 [:r :!TOr]
+                 [:s :!TOs]
+                 [:t :!TOt]
+                 [:u :!TOu]
+                 [:v :!TOv]
+                 [:w :!TOw]
+                 [:x :!TOx]
+                 [:y :!TOy]
+                 [:z :!TOz]]}
         {:des "ckey (alfred)"
          :rules [:c-mode
                  [:l [:alfred "search wiki" "nikivi.mind"]]
@@ -572,47 +588,26 @@
         ;{:des "pydot"
           ;:rules[:pydot-mode
                  ;[:a [:p :r :i :n :t :!S9 :!S0 :left_arrow]]]} ; -> print()
-        {:des "backkey (dash)"
+        {:des "backkey"
          :rules [:backquote-mode
-                 [:open_bracket :!TOopen_bracket]
-                 [:close_bracket :!TOclose_bracket]
-                 [:semicolon :!TOsemicolon]
-                 [:quote :!TOquote]
-                 [:comma :!TOcomma]
-                 [:period :!TOperiod]
-                 [:slash :!TOslash]
-                 [:a :!TOa]
-                 [:b :!TOb]
-                 [:c :!TOc]
-                 [:d :!TOd]
-                 [:e :!TOe]
-                 [:f :!TOf]
-                 [:g :!TOg]
-                 [:h :!TOh]
-                 [:i :!TOi]
-                 [:j :!TOj]
-                 [:k :!TOk]
-                 [:l :!TOl]
-                 [:m :!TOm]
-                 [:n :!TOn]
-                 [:o :!TOo]
-                 [:p :!TOp]
-                 [:q :!TOq]
-                 [:r :!TOr]
-                 [:s :!TOs]
-                 [:t :!TOt]
-                 [:u :!TOu]
-                 [:v :!TOv]
-                 [:w :!TOw]
-                 [:x :!TOx]
-                 [:y :!TOy]
-                 [:z :!TOz]]}
+                 [:j :!SOTf] ; App specific
+                 [:l :!SOTr]]} ; Personal
+                 [:s [:alfred "spot_mini" "com.vdesabou.spotify.mini.player"]]
+                 [:z [:alfred "song_radio" "com.vdesabou.spotify.mini.player"]]
+                 [:r [:alfred "artist_radio" "com.vdesabou.spotify.mini.player"]]
+                 [:d [:alfred "show_current_track" "com.vdesabou.spotify.mini.player"]]
+                 [:x [:alfred "web_search_current_track" "com.vdesabou.spotify.mini.player"]]
+                 [:c [:alfred "add_current_track_to" "com.vdesabou.spotify.mini.player"]]
+                 [:e [:alfred "show_playlists" "com.vdesabou.spotify.mini.player"]]
+                 [:grave_accent_and_tilde [:alfred "copy_current_track_url_to_clipboard" "com.vdesabou.spotify.mini.player"]]
+                 [:g [:alfred "add_current_track_to_alfred_playlist_or_your_music" "com.vdesabou.spotify.mini.player"]]
+                 [:q [:alfred "remove_current_track_from" "com.vdesabou.spotify.mini.player"]]]}
         {:des "spacekey (top sites)"
          :rules [:spacebar-mode
                  [:n [:km "w: GitHub notifications"]]
                  [:t [:km "w: Localhost"]]
                  [:k [:km "w: GitHub"]]
-                 [:a [:km "w: Google"]]
+                 [:o [:km "w: Google"]]
                  [:e [:km "w: Medium"]]
                  [:f [:km "w: Confluence"]]
                  [:j [:km "w: YouTube"]]
