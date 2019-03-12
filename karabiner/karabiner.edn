@@ -19,6 +19,7 @@
              :f-mode {:key :f}
              :g-mode {:key :g}
              :z-mode {:key :z}
+             :x-mode {:key :x}
              :c-mode {:key :c}
              :v-mode {:key :v}
              :b-mode {:key :b}
@@ -588,20 +589,22 @@
         ;{:des "pydot"
           ;:rules[:pydot-mode
                  ;[:a [:p :r :i :n :t :!S9 :!S0 :left_arrow]]]} ; -> print()
-        {:des "backkey"
+        {:des "backkey (palettes)"
          :rules [:backquote-mode
                  [:j :!SOTf] ; App specific
                  [:l :!SOTr]]} ; Personal
-                 [:s [:alfred "spot_mini" "com.vdesabou.spotify.mini.player"]]
-                 [:z [:alfred "song_radio" "com.vdesabou.spotify.mini.player"]]
-                 [:r [:alfred "artist_radio" "com.vdesabou.spotify.mini.player"]]
-                 [:d [:alfred "show_current_track" "com.vdesabou.spotify.mini.player"]]
-                 [:x [:alfred "web_search_current_track" "com.vdesabou.spotify.mini.player"]]
-                 [:c [:alfred "add_current_track_to" "com.vdesabou.spotify.mini.player"]]
-                 [:e [:alfred "show_playlists" "com.vdesabou.spotify.mini.player"]]
-                 [:grave_accent_and_tilde [:alfred "copy_current_track_url_to_clipboard" "com.vdesabou.spotify.mini.player"]]
-                 [:g [:alfred "add_current_track_to_alfred_playlist_or_your_music" "com.vdesabou.spotify.mini.player"]]
-                 [:q [:alfred "remove_current_track_from" "com.vdesabou.spotify.mini.player"]]]}
+        {:des "xkey (spotify)"
+         :rules [:x-mode
+                 [:j [:alfred "spot_mini" "com.vdesabou.spotify.mini.player"]]
+                 [:o [:alfred "song_radio" "com.vdesabou.spotify.mini.player"]]
+                 [:i [:alfred "artist_radio" "com.vdesabou.spotify.mini.player"]]
+                 [:k [:alfred "show_current_track" "com.vdesabou.spotify.mini.player"]]
+                 [:h [:alfred "web_search_current_track" "com.vdesabou.spotify.mini.player"]]
+                 [:m [:alfred "add_current_track_to" "com.vdesabou.spotify.mini.player"]]
+                 [:n [:alfred "show_playlists" "com.vdesabou.spotify.mini.player"]]
+                 [:u [:alfred "copy_current_track_url_to_clipboard" "com.vdesabou.spotify.mini.player"]]
+                 [:semicolon [:alfred "add_current_track_to_alfred_playlist_or_your_music" "com.vdesabou.spotify.mini.player"]]
+                 [:period [:alfred "remove_current_track_from" "com.vdesabou.spotify.mini.player"]]]}
         {:des "spacekey (top sites)"
          :rules [:spacebar-mode
                  [:n [:km "w: GitHub notifications"]]
