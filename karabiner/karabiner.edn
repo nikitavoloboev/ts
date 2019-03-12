@@ -1,4 +1,5 @@
 {:templates {:alfred "osascript -e 'tell application \"Alfred 3\" to run trigger \"%s\" in workflow \"%s\" with argument \"\"'"
+             :alfarg "osascript -e 'tell application \"Alfred 3\" to run trigger \"%s\" in workflow \"%s\" with argument \"%s\"'"
              :km "osascript -e 'tell application \"Keyboard Maestro Engine\" to do script \"%s\"'"}
  :simlayers {:semicolon-mode {:key :semicolon}
              :1-mode {:key :1}
@@ -170,8 +171,8 @@
                  [:r [:km "open: Fantastical"]]
                  [:e :!OSC1] ; Open Dash 
                  [:v [:km "open: Sketch"]]
-                 [:a [:km "open: Paw"]]
-                 [:m [:km "open: Postico"]]
+                 [:m [:km "open: Paw"]]
+                 [:a [:km "open: Postico"]]
                  [:g [:km "open: SnippetsLab"]]
                  [:f [:km "open: 2Do"]]
                  [:j [:km "open: iTerm"]]
@@ -520,38 +521,24 @@
                  [:caps_lock [:alfred "search learn anything" "nikivi.learn.anything"]]]}
         {:des "mkey (dash)"
          :rules [:m-mode
-                 [:open_bracket :!TOopen_bracket]
-                 [:close_bracket :!TOclose_bracket]
-                 [:semicolon :!TOsemicolon]
-                 [:quote :!TOquote]
-                 [:comma :!TOcomma]
-                 [:period :!TOperiod]
-                 [:slash :!TOslash]
-                 [:b :!TOb]
-                 [:c :!TOc]
-                 [:d :!TOd]
-                 [:e :!TOe]
-                 [:f :!TOf]
-                 [:g :!TOg]
-                 [:h :!TOh]
-                 [:i :!TOi]
-                 [:j :!TOj]
-                 [:k :!TOk]
-                 [:l :!TOl]
-                 [:a :!TOm]
-                 [:n :!TOn]
-                 [:o :!TOo]
-                 [:p :!TOp]
-                 [:q :!TOq]
-                 [:r :!TOr]
-                 [:s :!TOs]
-                 [:t :!TOt]
-                 [:u :!TOu]
-                 [:v :!TOv]
-                 [:w :!TOw]
-                 [:x :!TOx]
-                 [:y :!TOy]
-                 [:z :!TOz]]}
+                 [:a [:alfarg "search dash" "com.nikivi.own.dash" "man: "]] 
+                 [:c [:alfarg "search dash" "com.nikivi.own.dash" "css: "]]
+                 [:e [:alfarg "search dash" "com.nikivi.own.dash" "python: "]]
+                 [:g [:alfarg "search dash" "com.nikivi.own.dash" "go: "]]
+                 [:k [:alfarg "search dash" "com.nikivi.own.dash" "docker: "]]
+                 [:r [:alfarg "search dash" "com.nikivi.own.dash" "rust: "]]
+                 [:v [:alfarg "search dash" "com.nikivi.own.dash" "vim: "]]
+                 [:d [:alfarg "search dash" "com.nikivi.own.dash" "node: "]]
+                 [:h [:alfarg "search dash" "com.nikivi.own.dash" "html: "]]
+                 [:q [:alfarg "search dash" "com.nikivi.own.dash" "apple: "]]
+                 [:s [:alfarg "search dash" "com.nikivi.own.dash" "js: "]]
+                 [:b [:alfarg "search dash" "com.nikivi.own.dash" "bash: "]]
+                 [:w [:alfarg "search dash" "com.nikivi.own.dash" "ts: "]]
+                 [:l [:alfarg "search dash" "com.nikivi.own.dash" "haskell: "]]
+                 [:z [:alfarg "search dash" "com.nikivi.own.dash" "tldr: "]]
+                 [:t [:alfarg "search dash" "com.nikivi.own.dash" "react: "]]
+                 [:caps_lock [:alfarg "search dash" "com.nikivi.own.dash" "c: "]]
+                 [:o [:alfarg "search dash" "com.nikivi.own.dash" "godoc: "]]]}
         {:des "ckey (alfred)"
          :rules [:c-mode
                  [:l [:alfred "search wiki" "nikivi.mind"]]
@@ -602,7 +589,7 @@
                  [:h [:alfred "web_search_current_track" "com.vdesabou.spotify.mini.player"]]
                  [:m [:alfred "add_current_track_to" "com.vdesabou.spotify.mini.player"]]
                  [:n [:alfred "show_playlists" "com.vdesabou.spotify.mini.player"]]
-                 [:u [:alfred "copy_current_track_url_to_clipboard" "com.vdesabou.spotify.mini.player"]]
+                 [:l [:alfred "copy_current_track_url_to_clipboard" "com.vdesabou.spotify.mini.player"]]
                  [:semicolon [:alfred "add_current_track_to_alfred_playlist_or_your_music" "com.vdesabou.spotify.mini.player"]]
                  [:period [:alfred "remove_current_track_from" "com.vdesabou.spotify.mini.player"]]]}
         {:des "spacekey (top sites)"
@@ -621,16 +608,11 @@
                  [:semicolon [:km "w: Stack Overflow"]]]}
         {:des "capskey (todo + trello)"
          :rules [:caps-mode
-                 [:1 :!TO1]
-                 [:2 :!TO2]
-                 [:3 :!TO3]
-                 [:4 :!TO4]
-                 [:5 :!TO5]
-                 [:6 :!TO6]
-                 [:7 :!TO7]
-                 [:8 :!TO8]
-                 [:9 :!TO9]
-                 [:0 :!TO0]
+                 [:1 :!TO1] ; Screenshot + recording options
+                 [:2 :!TO2] ; Imgur screenshow
+                 [:3 :!TO3] ; Annotate screenshot
+                 [:4 :!TO4] ; Show Annotate
+                 [:5 :!TO5] ; Save picture of screen to Desktop
                  [:f [:km "Open Focus Trello"]]
                  [:w [:km "Open Learn Trello"]]
                  [:v [:km "Open Videos Trello"]]
