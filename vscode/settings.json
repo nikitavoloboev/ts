@@ -148,16 +148,6 @@
     {
       "before": ["Y"],
       "after": ["y", "$"]
-    },
-    {
-      "before": ["<leader>", "e"],
-      "after": [],
-      "commands": [
-        {
-          "command": "editor.action.commentLine",
-          "args": []
-        }
-      ]
     }
   ],
   // go

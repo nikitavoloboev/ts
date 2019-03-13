@@ -11,7 +11,6 @@
              :e-mode {:key :e}
              :r-mode {:key :r}
              :t-mode {:key :t}
-             :u-mode {:key :u}
              :i-mode {:key :i}
              :o-mode {:key :o}
              :a-mode {:key :a}
@@ -26,7 +25,7 @@
              :b-mode {:key :b}
              :n-mode {:key :n}
              :m-mode {:key :m}
-             :p-mode {:key :p}
+             :tab-mode {:key :tab}
              :spacebar-mode {:key :spacebar}
              :backquote-mode {:key :grave_accent_and_tilde}
              :jsdot-mode {:key :period}
@@ -284,7 +283,6 @@
                  [:6 :!C6]
                  [:w :!CObackslash] ; 1Password search
                  [:caps_lock [:alfred "search folders" "nikivi.search.folders"]]
-                 [:spacebar [:alfred "search dash profiles" "nikivi.dash.profiles"]]
                  [:z [:alfred "search PDF files" "nikivi.search.files"]]
                  [:g :!TCclose_bracket] ; Search SnippetsLab library with assistant
                  [:grave_accent_and_tilde [:alfred "search processes" "com.vitorgalvao.alfred.processcontrol"]]
@@ -308,11 +306,12 @@
                  [:j [:alfred "search km macros" "iansinnott.keyboardmaestro"]]
                  [:x [:alfred "search workflows" "org.jeef.workflowdirectory"]]
                  [:k [:alfred "search menu bar" "com.tedwise.menubarsearch"]]]}
-        {:des "pkey (actions)"
-         :rules [:p-mode
+        {:des "tabkey (actions)"
+         :rules [:tab-mode
+                 [:n :!CTOx] ; Little Snitch
                  [:r [:alfred "restart wifi" "nikivi.wifi.tools"]]
                  [:w [:alfred "toggle wifi" "nikivi.wifi.tools"]]
-                 [:t [:km "Commit my wiki"]]]}
+                 [:k [:km "Commit my wiki"]]]}
         {:des "akey (ctrl)"
          :rules [:a-mode
                  [:spacebar :!CT9] ; Search selection on Google
@@ -460,11 +459,10 @@
                  [:n [:km "New Spark email"]]
                  [:g [:alfred "search contacts" "nikivi.search.content"]]
                  [:e [:km "open: Telegram"]]
-                 [:h [:km "open: Caprine"]]
-                 [:period [:km "open: Slack"]]
+                 [:period [:km "open: Caprine"]]
+                 [:semicolon [:km "open: Slack"]]
                  [:c [:km "Create new contact"]]
                  [:k [:km "open: Telegram"]]
-                 [:semicolon [:km "open: Sblack"]]
                  [:j [:km "open: Textual"]]
                  [:m [:km "open: Zoom"]]
                  [:l [:km "open: Discord"]]]}
@@ -522,48 +520,43 @@
                  [:caps_lock [:alfred "search learn anything" "nikivi.learn.anything"]]]}
         {:des "mkey (dash)"
          :rules [:m-mode
+                 [:spacebar [:alfred "search dash profiles" "nikivi.dash.profiles"]]
                  [:a [:alfarg "search dash" "com.nikivi.own.dash" "man: "]] 
                  [:c [:alfarg "search dash" "com.nikivi.own.dash" "css: "]]
-                 [:e [:alfarg "search dash" "com.nikivi.own.dash" "python: "]]
+                 [:t [:alfarg "search dash" "com.nikivi.own.dash" "python: "]]
                  [:g [:alfarg "search dash" "com.nikivi.own.dash" "go: "]]
                  [:k [:alfarg "search dash" "com.nikivi.own.dash" "docker: "]]
                  [:r [:alfarg "search dash" "com.nikivi.own.dash" "rust: "]]
                  [:v [:alfarg "search dash" "com.nikivi.own.dash" "vim: "]]
                  [:d [:alfarg "search dash" "com.nikivi.own.dash" "node: "]]
-                 [:h [:alfarg "search dash" "com.nikivi.own.dash" "html: "]]
+                 [:w [:alfarg "search dash" "com.nikivi.own.dash" "html: "]]
                  [:q [:alfarg "search dash" "com.nikivi.own.dash" "apple: "]]
                  [:s [:alfarg "search dash" "com.nikivi.own.dash" "js: "]]
                  [:b [:alfarg "search dash" "com.nikivi.own.dash" "bash: "]]
-                 [:w [:alfarg "search dash" "com.nikivi.own.dash" "ts: "]]
+                 [:f [:alfarg "search dash" "com.nikivi.own.dash" "ts: "]]
                  [:l [:alfarg "search dash" "com.nikivi.own.dash" "haskell: "]]
-                 [:z [:alfarg "search dash" "com.nikivi.own.dash" "tldr: "]]
-                 [:t [:alfarg "search dash" "com.nikivi.own.dash" "react: "]]
-                 [:caps_lock [:alfarg "search dash" "com.nikivi.own.dash" "c: "]]
+                 [:caps_lock [:alfarg "search dash" "com.nikivi.own.dash" "tldr: "]]
+                 [:e [:alfarg "search dash" "com.nikivi.own.dash" "react: "]]
+                 [:z [:alfarg "search dash" "com.nikivi.own.dash" "c: "]]
                  [:o [:alfarg "search dash" "com.nikivi.own.dash" "godoc: "]]]}
         {:des "ckey (alfred)"
          :rules [:c-mode
                  [:l [:alfred "search wiki" "nikivi.mind"]]
                  [:o [:alfred "search blog" "nikivi.private.directories"]]]}
-        {:des "tkey (handy actions)"
+        {:des "tkey (websites)"
          :rules [:t-mode
-                 ;[:period [:alfred "trash desktop" "nikivi.clean.folders"]]]}
-                 [:s :!CTOx] ; Little Snitch
-                 [:spacebar :!COSr]]}; Google Translate selected text
-        {:des "ukey (websites)"
-         :rules [:u-mode
-                 [:e [:km "w: Repl"]]
-                 [:a [:km "w: Arxiv"]]
-                 [:x [:km "w: Dropbox"]]
-                 [:v [:km "w: Twitch"]]
-                 [:d [:km "w: Google Drive"]]
-                 [:t [:km "w: GitHub trending"]]
+                 [:l [:km "w: Repl"]]
+                 [:i [:km "w: Arxiv"]]
+                 [:o [:km "w: Dropbox"]]
+                 [:h [:km "w: Twitch"]]
+                 [:o [:km "w: Google Drive"]]
                  [:z [:km "w: MDN"]]
-                 [:y [:km "w: Netlify"]]
-                 [:g [:km "w: Kaggle"]]
-                 [:i [:km "w: WakaTime"]]
-                 [:w [:km "w: AWS"]]
-                 [:s [:km "w: Asana"]]
-                 [:n [:km "w: NPM"]]]}
+                 [:period [:km "w: Netlify"]]
+                 [:k [:km "w: Kaggle"]]
+                 [:m [:km "w: WakaTime"]]
+                 [:semicolon [:km "w: AWS"]]
+                 [:n [:km "w: NPM"]]
+                 [:spacebar :!COSr]]}; Google Translate selected text
          {:des "jsdot"
           :rules[:jsdot-mode
                  [:e [:!Sd :o :n :e]] ; -> Done
@@ -623,6 +616,7 @@
                  [:c [:km "Open Courses Trello"]]
                  [:n [:km "Open 2Do Clean"]]
                  [:m [:km "Open 2Do Fix"]]
+                 [:y [:km "Open 2Do Try"]]
                  [:u [:km "Open 2Do Ask"]]
                  [:e [:km "Open Ideas Trello"]]
                  [:r [:km "Open 2Do Read"]]
