@@ -281,7 +281,10 @@
                  [:4 :!C4]
                  [:5 :!C5]
                  [:6 :!C6]
+                 [:n [:alfred "search lists" "nikivi.learn.anything"]]
+                 [:m [:alfred "search lists" "nikivi.awesome.lists"]]
                  [:z [:alfred "search blog" "nikivi.private.directories"]]
+                 [:left_gui [:km "2Do with current url as note (try)"]]
                  [:w :!CObackslash] ; 1Password search
                  [:caps_lock [:alfred "search folders" "nikivi.search.folders"]]
                  [:spacebar [:alfred "search PDF files" "nikivi.search.files"]]
@@ -294,14 +297,11 @@
                  [:q [:alfred "search downloads" "recentdownloads.ddjfreedom"]]
                  [:t [:km "2Do with current url as note (read)"]]
                  [:tab [:km "2Do with current url as note (check)"]]
-                 [:y [:km "2Do with current url as note (try)"]]
                  [:h [:km "2Do with current url as note (watch)"]]
                  [:a [:alfred "search files" "nikivi.manage.wiki"]]
                  [:c [:alfred "search emoji" "com.github.jsumners.alfred-emoji"]]
                  [:i [:alfred "search tty sessions" "net.isometry.alfred.tty"]]
                  [:f [:alfred "search repos" "net.deanishe.alfred-git-repos"]]
-                 [:n [:alfred "search lists" "nikivi.learn.anything"]]
-                 [:m [:alfred "search lists" "nikivi.awesome.lists"]]
                  [:s [:alfred "search clones" "com.vitorgalvao.alfred.directories"]]
                  [:d [:alfred "search desktop" "com.vitorgalvao.alfred.directories"]]
                  [:j [:alfred "search km macros" "iansinnott.keyboardmaestro"]]
@@ -558,7 +558,7 @@
                  [:spacebar :!COSr]]}; Google Translate selected text
          {:des "jsdot"
           :rules[:jsdot-mode
-                 [:e [:!Sd :o :n :e]] ; -> Done
+                 [:e [:d :o :n :e]] ; -> done
                  [:s [:equal_sign :!Speriod :spacebar]] ; -> =>
                  [:r [:r :e :t :u :r :n :spacebar]] ; -> return
                  [:t [:r :e :t :u :r :n :spacebar :!Sopen_bracket :!Sclose_bracket :left_arrow :return_or_enter]] ; -> return {}

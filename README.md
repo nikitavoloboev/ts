@@ -39,8 +39,8 @@ I also use [Dotbot](https://github.com/anishathalye/dotbot) to apply appropriate
 2. Go through [preferences](https://imgur.com/a/KoVAxFQ) & set everything up.
 3. Download & install apps from [my macOS](https://github.com/nikitavoloboev/my-mac-os).
 4. Download dotfiles & set everything up (instructions above).
-3. Download [Alfred workflows](https://github.com/learn-anything/alfred-workflows#readme).
-4. Download [KM macros](https://wiki.nikitavoloboev.xyz/macos/macos-apps/keyboard-maestro/km-macros).
+5. Download [Alfred workflows](https://github.com/learn-anything/alfred-workflows#readme).
+6. Download [KM macros](https://wiki.nikitavoloboev.xyz/macos/macos-apps/keyboard-maestro/km-macros).
 
 I describe my custom configuration I use below. It is heavily tailored to my own workflow so it is best you take ideas from it rather than copying the entire config.
 
@@ -56,7 +56,7 @@ I go over how I use Karabiner in detail [here](https://wiki.nikitavoloboev.xyz/m
 
 [Vim language](https://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim/1220118#1220118) is the best text editing experience you will ever get. It is worth learning it as you will start thinking about text editing differently.
 
-My Neovim config can be seen [here](nvim/init.vim). I use [Monokai Night theme](https://github.com/nikitavoloboev/vim-monokai-night#readme) with [many plugins](https://wiki.nikitavoloboev.xyz/text-editors/vim/vim-plugins). Here is how it looks:
+My Neovim config can be seen [here](nvim/init.vim). I use [Monokai Night theme](https://github.com/nikitavoloboev/vim-monokai-night#readme) with a [few plugins](https://wiki.nikitavoloboev.xyz/text-editors/vim/vim-plugins). Here is how it looks:
 
 ![](https://i.imgur.com/sLXBvv7.png)
 
@@ -70,7 +70,7 @@ Configs I use for it can be seen [here](https://github.com/nikitavoloboev/dotfil
 
 I use it primarily to edit markdown files like [my wiki](https://wiki.nikitavoloboev.xyz/other/wiki-workflow). I also edit config files and open large and small files for quick edits.
 
-I use [many plugins](https://wiki.nikitavoloboev.xyz/text-editors/sublime-text/sublime-text-plugins) together with [Ayu theme](https://github.com/dempfi/ayu).
+I use a [few plugins](https://wiki.nikitavoloboev.xyz/text-editors/sublime-text/sublime-text-plugins) together with [Ayu theme](https://github.com/dempfi/ayu).
 
 ## Hammerspoon
 
@@ -82,7 +82,7 @@ I am using [Zsh](http://www.zsh.org) as my shell and [Antibody](https://github.c
 
 I am also using [Monokai Night theme](https://github.com/nikitavoloboev/my-mac-os/tree/master/iterm#readme) I made for iTerm. Here is how my prompt looks:
 
-![](https://i.imgur.com/UujRUMV.png)
+![](https://i.imgur.com/ItDUF98.png)
 
 ### Aliases and functions
 
