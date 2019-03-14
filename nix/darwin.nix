@@ -7,6 +7,7 @@
     [
       # tools
       pkgs.git
+      pkgs.idris
       pkgs.gitAndTools.hub
       pkgs.neovim
       pkgs.vim

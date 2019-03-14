@@ -284,7 +284,7 @@
                  [:z [:alfred "search blog" "nikivi.private.directories"]]
                  [:w :!CObackslash] ; 1Password search
                  [:caps_lock [:alfred "search folders" "nikivi.search.folders"]]
-                 [:z [:alfred "search PDF files" "nikivi.search.files"]]
+                 [:spacebar [:alfred "search PDF files" "nikivi.search.files"]]
                  [:g :!TCclose_bracket] ; Search SnippetsLab library with assistant
                  [:grave_accent_and_tilde [:alfred "search processes" "com.vitorgalvao.alfred.processcontrol"]]
                  [:e [:km "Make 2Do task"]]
@@ -307,12 +307,10 @@
                  [:j [:alfred "search km macros" "iansinnott.keyboardmaestro"]]
                  [:x [:alfred "search workflows" "org.jeef.workflowdirectory"]]
                  [:k [:alfred "search menu bar" "com.tedwise.menubarsearch"]]]}
-        {:des "tabkey (actions)"
+        {:des "tabkey (palettes)"
          :rules [:tab-mode
-                 [:n :!CTOx] ; Little Snitch
-                 [:r [:alfred "restart wifi" "nikivi.wifi.tools"]]
-                 [:w [:alfred "toggle wifi" "nikivi.wifi.tools"]]
-                 [:k [:km "Commit my wiki"]]]}
+                 [:j :!SOTf] ; App specific
+                 [:l :!SOTr]]} ; Personal
         {:des "akey (ctrl)"
          :rules [:a-mode
                  [:spacebar :!CT9] ; Search selection on Google
@@ -547,9 +545,9 @@
         {:des "tkey (websites)"
          :rules [:t-mode
                  [:l [:km "w: Repl"]]
-                 [:i [:km "w: Arxiv"]]
                  [:o [:km "w: Dropbox"]]
                  [:h [:km "w: Twitch"]]
+                 [:i [:km "w: IFTTT"]]
                  [:o [:km "w: Google Drive"]]
                  [:z [:km "w: MDN"]]
                  [:period [:km "w: Netlify"]]
@@ -571,14 +569,18 @@
         ;{:des "pydot"
           ;:rules[:pydot-mode
                  ;[:a [:p :r :i :n :t :!S9 :!S0 :left_arrow]]]} ; -> print()
-        {:des "backkey (palettes)"
+        {:des "backkey (actions)"
          :rules [:backquote-mode
-                 [:j :!SOTf] ; App specific
-                 [:l :!SOTr]]} ; Personal
+                 [:n :!CTOx] ; Little Snitch
+                 [:g [:km "New SnippetsLab snippet"]]
+                 [:r [:alfred "restart wifi" "nikivi.wifi.tools"]]
+                 [:w [:alfred "toggle wifi" "nikivi.wifi.tools"]]
+                 [:i [:km "Commit my wiki"]]]}
         {:des "xkey (spotify)"
          :rules [:x-mode
                  [:o [:km "Share current song on Twitter"]]
                  [:j [:alfred "spot_mini" "com.vdesabou.spotify.mini.player"]]
+                 [:period [:alfred "show_alfred_playlist" "com.vdesabou.spotify.mini.player"]]
                  [:i [:alfred "song_radio" "com.vdesabou.spotify.mini.player"]]
                  [:u [:alfred "artist_radio" "com.vdesabou.spotify.mini.player"]]
                  [:k [:alfred "show_current_track" "com.vdesabou.spotify.mini.player"]]
@@ -587,17 +589,18 @@
                  [:n [:alfred "show_playlists" "com.vdesabou.spotify.mini.player"]]
                  [:h [:alfred "copy_current_track_url_to_clipboard" "com.vdesabou.spotify.mini.player"]]
                  [:semicolon [:alfred "add_current_track_to_alfred_playlist_or_your_music" "com.vdesabou.spotify.mini.player"]]
-                 [:period [:alfred "remove_current_track_from" "com.vdesabou.spotify.mini.player"]]]}
+                 [:p [:alfred "remove_current_track_from" "com.vdesabou.spotify.mini.player"]]]}
         {:des "spacekey (top sites)"
          :rules [:spacebar-mode
                  [:n [:km "w: GitHub notifications"]]
+                 [:i [:km "w: Arxiv"]]
                  [:t [:km "w: Localhost"]]
                  [:k [:km "w: GitHub"]]
                  [:o [:km "w: Google"]]
                  [:e [:km "w: Medium"]]
                  [:f [:km "w: Confluence"]]
                  [:j [:km "w: YouTube"]]
-                 [:i [:km "w: Jira"]]
+                 [:r [:km "w: Jira"]]
                  [:u [:km "w: Bitbucket"]]
                  [:l [:km "w: CodeSandbox"]]
                  [:g [:km "w: regex101"]]
