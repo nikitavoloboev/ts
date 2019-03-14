@@ -281,6 +281,7 @@
                  [:4 :!C4]
                  [:5 :!C5]
                  [:6 :!C6]
+                 [:z [:alfred "search blog" "nikivi.private.directories"]]
                  [:w :!CObackslash] ; 1Password search
                  [:caps_lock [:alfred "search folders" "nikivi.search.folders"]]
                  [:z [:alfred "search PDF files" "nikivi.search.files"]]
@@ -401,7 +402,7 @@
                  [:e :!CO8] ; Alfred clipboard history search
                  [:spacebar :!CT8] ; Search selection in Dictionary (wiki)
                  [:semicolon [:km "open: TaskPaper"]]
-                 [:s [:km "New SnippetsLab snippet"]]
+                 [:s :!COp] ; Make HasteBin link from selection
                  ;[:w [:km "Lowercase selected text"]]
                  ;[:q :!STh] ; Record macro
                  [:q [:km "Go to test macro"]]
@@ -509,6 +510,7 @@
                  [:e [:alfred "search subs" "net.deanishe.alfred-reddit"]]
                  [:b [:alfred "search bookmarks" "net.deanishe.alfred.safari"]]
                  [:r [:alfred "search reddit" "nikivi.search.the.web"]]
+                 [:t [:alfred "search twitter" "nikivi.search.the.web"]]
                  [:spacebar [:alfred "search history" "net.deanishe.alfred.safari"]]
                  [:d [:alfred "search packages" "com.sindresorhus.npms"]]
                  [:x [:alfred "search lobsters" "nikivi.search.the.web"]]
@@ -521,28 +523,27 @@
         {:des "mkey (dash)"
          :rules [:m-mode
                  [:spacebar [:alfred "search dash profiles" "nikivi.dash.profiles"]]
-                 [:a [:alfarg "search dash" "com.nikivi.own.dash" "man: "]] 
+                 [:caps_lock [:alfarg "search dash" "com.nikivi.own.dash" "man: "]] 
                  [:c [:alfarg "search dash" "com.nikivi.own.dash" "css: "]]
                  [:t [:alfarg "search dash" "com.nikivi.own.dash" "python: "]]
-                 [:g [:alfarg "search dash" "com.nikivi.own.dash" "go: "]]
+                 [:f [:alfarg "search dash" "com.nikivi.own.dash" "go: "]]
                  [:k [:alfarg "search dash" "com.nikivi.own.dash" "docker: "]]
                  [:r [:alfarg "search dash" "com.nikivi.own.dash" "rust: "]]
                  [:v [:alfarg "search dash" "com.nikivi.own.dash" "vim: "]]
                  [:d [:alfarg "search dash" "com.nikivi.own.dash" "node: "]]
-                 [:w [:alfarg "search dash" "com.nikivi.own.dash" "html: "]]
-                 [:q [:alfarg "search dash" "com.nikivi.own.dash" "apple: "]]
+                 [:g [:alfarg "search dash" "com.nikivi.own.dash" "html: "]]
+                 [:a [:alfarg "search dash" "com.nikivi.own.dash" "apple: "]]
                  [:s [:alfarg "search dash" "com.nikivi.own.dash" "js: "]]
                  [:b [:alfarg "search dash" "com.nikivi.own.dash" "bash: "]]
-                 [:f [:alfarg "search dash" "com.nikivi.own.dash" "ts: "]]
+                 [:w [:alfarg "search dash" "com.nikivi.own.dash" "ts: "]]
                  [:l [:alfarg "search dash" "com.nikivi.own.dash" "haskell: "]]
-                 [:caps_lock [:alfarg "search dash" "com.nikivi.own.dash" "tldr: "]]
+                 [:grave_accent_and_tilde [:alfarg "search dash" "com.nikivi.own.dash" "tldr: "]]
                  [:e [:alfarg "search dash" "com.nikivi.own.dash" "react: "]]
                  [:z [:alfarg "search dash" "com.nikivi.own.dash" "c: "]]
                  [:o [:alfarg "search dash" "com.nikivi.own.dash" "godoc: "]]]}
-        {:des "ckey (alfred)"
+        {:des "ckey (wiki + curated)"
          :rules [:c-mode
-                 [:l [:alfred "search wiki" "nikivi.mind"]]
-                 [:o [:alfred "search blog" "nikivi.private.directories"]]]}
+                 [:l [:alfred "search wiki" "nikivi.mind"]]]}
         {:des "tkey (websites)"
          :rules [:t-mode
                  [:l [:km "w: Repl"]]
@@ -576,9 +577,10 @@
                  [:l :!SOTr]]} ; Personal
         {:des "xkey (spotify)"
          :rules [:x-mode
+                 [:o [:km "Share current song on Twitter"]]
                  [:j [:alfred "spot_mini" "com.vdesabou.spotify.mini.player"]]
-                 [:o [:alfred "song_radio" "com.vdesabou.spotify.mini.player"]]
-                 [:i [:alfred "artist_radio" "com.vdesabou.spotify.mini.player"]]
+                 [:i [:alfred "song_radio" "com.vdesabou.spotify.mini.player"]]
+                 [:u [:alfred "artist_radio" "com.vdesabou.spotify.mini.player"]]
                  [:k [:alfred "show_current_track" "com.vdesabou.spotify.mini.player"]]
                  [:l [:alfred "web_search_current_track" "com.vdesabou.spotify.mini.player"]]
                  [:m [:alfred "add_current_track_to" "com.vdesabou.spotify.mini.player"]]
