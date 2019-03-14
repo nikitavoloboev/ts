@@ -3,6 +3,7 @@
 # TODO: clean it & use only what I need
 
 # Nix
+alias n='nix'
 alias nr='nix repl'
 
 # Nix shell
