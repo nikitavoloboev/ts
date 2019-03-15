@@ -51,6 +51,9 @@
       pkgs.python36Packages.pip
       pkgs.python36Packages.autopep8
       pkgs.python36Packages.black
+
+      # haskell
+      pkgs.haskellPackages.Agda
     ];
 
 
