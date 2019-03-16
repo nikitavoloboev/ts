@@ -32,7 +32,7 @@
              :m-mode {:key :m}
              :tab-mode {:key :tab}
              :spacebar-mode {:key :spacebar}
-             :backquote-mode {:key :grave_accent_and_tilde}
+             :tilde-mode {:key :grave_accent_and_tilde}
              :jsdot-mode {:key :period}
              ;:godot-mode {:key :period}
              ;:pydot-mode {:key :period}
@@ -303,7 +303,7 @@
                  [:t [:km "2Do with current url as note (read)"]]
                  [:tab [:km "2Do with current url as note (check)"]]
                  [:h [:km "2Do with current url as note (watch)"]]
-                 [:a [:alfred "search files" "nikivi.manage.wiki"]]
+                 [:a [:alfred "search files" "nikivi.manage.notes"]]
                  [:c [:alfred "search emoji" "com.github.jsumners.alfred-emoji"]]
                  [:i [:alfred "search tty sessions" "net.isometry.alfred.tty"]]
                  [:f [:alfred "search repos" "net.deanishe.alfred-git-repos"]]
@@ -386,12 +386,14 @@
                  [:semicolon [:km "Tasks from apps -> TODO"]]]}
         {:des "dkey (mouse)"
          :rules [:d-mode
-                 [:j {:mkey {:vwheel 100}}]
-                 [:k {:mkey {:vwheel -100}}]
+                 [:j {:mkey {:vwheel 100}}] ; Scroll down
+                 [:k {:mkey {:vwheel -100}}] ; Scroll up
+                 [:semicolon :!CT4] ; Create new Fantastical event
                  [:a :!CT6] ; Smart zoom
                  [:i :!Ckeypad_hyphen] ; Zoom out
                  [:o :!Ckeypad_plus] ; Zoom in
-                 [:l [:km "Select line and google"]]
+                 [:l [:km "Search events"]]
+                 [:u [:km "Select line and google"]]
                  [:n [:km "Open URL in clipboard in Safari"]]
                  [:g [:km "Centre mouse to active app"]]
                  [:h [:km "Google Searchio selected word"]]
@@ -399,6 +401,7 @@
                  [:b {:pkey :button3}] ; Middle click
                  [:z {:pkey :button2}] ; Right click
                  [:v {:pkey :button1}] ; Left click
+                 [:comma :!CO1] ; Show Launchpad
                  [:period :!CTO3]]} ; Mission control
         {:des "fkey (essential)"
          :rules [:f-mode
@@ -420,7 +423,7 @@
                  [:1 [:km "Lowercase selected text"]]
                  [:p :!CTOc] ; Sleep
                  [:open_bracket :!CT5] ; Turn display on/off 
-                 [:q [:km "Uppercase selected text"]]
+                 [:tab [:km "Uppercase selected text"]]
                  [:slash [:km "edit: Darwin Nix"]]
                  [:quote [:km "edit: vimrc"]]
                  [:comma  [:km "Add safari link to selected markdown text"]]
@@ -436,16 +439,14 @@
         {:des "gkey (actions)"
          :rules [:g-mode
                  [:semicolon :!Cgrave_accent_and_tilde] ; Switch between active windows  (go down)
-                 [:w :!CSgrave_accent_and_tilde] ; Switch between active windows (go up)
-                 [:q :!CO0] ; Show Dropzone dropdown
+                 [:e :!CSgrave_accent_and_tilde] ; Switch between active windows (go up)
+                 [:w :!CO0] ; Show Dropzone dropdown
                  [:r :!CT3] ; Search bartender menu items
                  [:d :!COd] ; Show/hide dock
                  [:k :!COSf] ; Maximize window
                  [:n :!CTOg] ; Turn on/off notifications
                  [:u :!CTO2] ; Full screen app
-                 [:i :!COslash] ; Show/hide notification centre
-                 [:j :!CT4] ; Create new Fantastical event
-                 [:e [:km "Search events"]]
+                 [:j :!COslash] ; Show/hide notification centre
                  ;[:m :!CO6] ; Maximize window to next monitor
                  [:a [:km "Go to KM group of current app"]]
                  [:period [:km "Go to KM group of current app from picklist"]]
@@ -574,10 +575,11 @@
         ;{:des "pydot"
           ;:rules[:pydot-mode
                  ;[:a [:p :r :i :n :t :!S9 :!S0 :left_arrow]]]} ; -> print()
-        {:des "backkey (actions)"
-         :rules [:backquote-mode
+        {:des "tilkey (actions)"
+         :rules [:tilde-mode
                  [:n :!CTOx] ; Little Snitch
                  [:g [:km "New SnippetsLab snippet"]]
+                 [:l [:km "Add blog to Reeder"]]
                  [:r [:alfred "restart wifi" "nikivi.wifi.tools"]]
                  [:w [:alfred "toggle wifi" "nikivi.wifi.tools"]]
                  [:i [:km "Commit my wiki"]]]}
