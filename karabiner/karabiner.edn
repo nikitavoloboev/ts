@@ -234,6 +234,7 @@
                  [:m [:km "open: Marked"]]
                  [:q [:km "open: IINA"]]
                  [:h [:km "open: Arq"]]
+                 [:v [:km "open: Preview"]]
                  [:o :!CO7] ; Open Typinator
                  [:comma [:km "open: OBS"]]
                  [:period [:km "open: Affinity Photo"]]
@@ -255,7 +256,7 @@
                  [:r :!Squote]
                  [:d :backslash]
                  [:x :!Sbackslash]
-                 [:left_command [:t :h :a :n :k :s]] ; -> thanks 
+                 [:left_command [:!St :h :a :n :k :s]] ; -> Thanks 
                  [:b [:!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> TODO:
                  [:l [:hyphen :!Speriod :spacebar]] ; -> arrow (->)
                  [:tab [:slash :slash :spacebar :!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> // TODO:
@@ -439,8 +440,8 @@
         {:des "gkey (actions)"
          :rules [:g-mode
                  [:semicolon :!Cgrave_accent_and_tilde] ; Switch between active windows  (go down)
-                 [:e :!CSgrave_accent_and_tilde] ; Switch between active windows (go up)
-                 [:w :!CO0] ; Show Dropzone dropdown
+                 [:w :!CSgrave_accent_and_tilde] ; Switch between active windows (go up)
+                 [:q :!CO0] ; Show Dropzone dropdown
                  [:r :!CT3] ; Search bartender menu items
                  [:d :!COd] ; Show/hide dock
                  [:k :!COSf] ; Maximize window
@@ -564,7 +565,7 @@
                  [:spacebar :!COSr]]}; Google Translate selected text
          {:des "jsdot"
           :rules[:jsdot-mode
-                 [:e [:d :o :n :e]] ; -> done
+                 [:e [:!Sd :o :n :e]] ; -> Done
                  [:s [:equal_sign :!Speriod :spacebar]] ; -> =>
                  [:r [:r :e :t :u :r :n :spacebar]] ; -> return
                  [:t [:r :e :t :u :r :n :spacebar :!Sopen_bracket :!Sclose_bracket :left_arrow :return_or_enter]] ; -> return {}
@@ -586,10 +587,11 @@
         {:des "xkey (spotify)"
          :rules [:x-mode
                  [:o [:km "Share current song on Twitter"]]
+                 [:i [:km "Repeat Spotify song"]]
                  [:l [:alfred "spot_mini" "com.vdesabou.spotify.mini.player"]]
                  [:comma [:alfred "show_alfred_playlist" "com.vdesabou.spotify.mini.player"]]
                  [:j [:alfred "song_radio" "com.vdesabou.spotify.mini.player"]]
-                 [:i [:alfred "artist_radio" "com.vdesabou.spotify.mini.player"]]
+                 [:u [:alfred "artist_radio" "com.vdesabou.spotify.mini.player"]]
                  [:k [:alfred "show_current_track" "com.vdesabou.spotify.mini.player"]]
                  [:period [:alfred "web_search_current_track" "com.vdesabou.spotify.mini.player"]]
                  [:m [:alfred "add_current_track_to" "com.vdesabou.spotify.mini.player"]]
