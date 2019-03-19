@@ -93,7 +93,8 @@
         {:des "3key (test code)"
          :rules [:3-mode
                  [:semicolon [:km "test: Web"]]
-                 [:k [:km "test: TS"]]
+                 [:l [:km "test: TS"]]
+                 [:k [:km "test: Go"]]
                  [:j [:km "test: JS"]]]}
         {:des "4key (open curated lists)"
          :rules [:4-mode
@@ -117,7 +118,6 @@
         {:des "qkey (cmd + shift)"
          :rules [:q-mode
                  [:open_bracket :!CSopen_bracket]
-                 [:spacebar [:km "Paste selected text in previous app"]]
                  [:close_bracket :!CSclose_bracket]
                  [:semicolon :!CSsemicolon]
                  [:quote :!CSquote]
@@ -162,19 +162,18 @@
                  [:spacebar :!TOSx]]}
         {:des "wkey (apps)"
          :rules [:w-mode
+                 [:spacebar :!CSO7] ; Search selection with Google Lucky search
                  [:k [:km "open: Safari"]]
                  [:h [:km "open: Activity Monitor"]]
                  [:i [:km "open: Chrome Canary"]]
                  [:t [:km "open: Trello"]]
                  [:m [:km "open: Xcode"]]
-                 [:c [:km "open: Spotify"]]
-                 [:spacebar :!CSO7] ; Search selection with Google Lucky search
+                 [:v [:km "open: Spotify"]]
                  [:caps_lock [:km "open: Finder"]]
                  [:semicolon [:km "open: Tower"]]
                  [:b [:km "open: BetterTouchTool"]]
                  [:r [:km "open: Fantastical"]]
                  [:e :!OSC1] ; Open Dash 
-                 [:v [:km "open: Sketch"]]
                  [:period [:km "open: Paw"]]
                  [:a [:km "open: Postico"]]
                  [:g [:km "open: SnippetsLab"]]
@@ -233,12 +232,14 @@
                  [:spacebar :!CTq] ; Search selection in Web Searches
                  [:m [:km "open: Marked"]]
                  [:q [:km "open: IINA"]]
-                 [:h [:km "open: Arq"]]
+                 [:u [:km "open: Arq"]]
                  [:v [:km "open: Preview"]]
                  [:o :!CO7] ; Open Typinator
                  [:comma [:km "open: OBS"]]
-                 [:period [:km "open: Affinity Photo"]]
-                 [:semicolon [:km "open: Affinity Designer"]]
+                 [:period [:km "open: Figma"]]
+                 [:h [:km "open: Affinity Photo"]]
+                 [:semicolon [:km "open: Sketch"]]
+                 [:comma [:km "open: Affinity Designer"]]
                  [:t [:km "open: Transmission"]]
                  [:p [:km "open: Paprika Recipe Manager"]]
                  [:b [:km "Edit keyboard shortcuts"]]
@@ -390,7 +391,7 @@
                  [:j {:mkey {:vwheel 100}}] ; Scroll down
                  [:k {:mkey {:vwheel -100}}] ; Scroll up
                  [:semicolon :!CT4] ; Create new Fantastical event
-                 [:a :!CT6] ; Smart zoom
+				 [:spacebar [:km "Copy and activate previous app"]]
                  [:i :!Ckeypad_hyphen] ; Zoom out
                  [:o :!Ckeypad_plus] ; Zoom in
                  [:l [:km "Search events"]]
@@ -407,8 +408,8 @@
         {:des "fkey (essential)"
          :rules [:f-mode
                  [:e :!CO8] ; Alfred clipboard history search
-                 [:spacebar :!CT8] ; Search selection in Dictionary (wiki)
                  [:semicolon [:km "open: TaskPaper"]]
+                 [:spacebar :!CT8] ; Search selection in Dictionary (wiki)
                  [:s :!COp] ; Make HasteBin link from selection
                  ;[:w [:km "Lowercase selected text"]]
                  ;[:q :!STh] ; Record macro
@@ -588,24 +589,24 @@
          :rules [:x-mode
                  [:o [:km "Share current song on Twitter"]]
                  [:i [:km "Repeat Spotify song"]]
+                 [:h [:km "Paste current Spotify song link"]]
                  [:l [:alfred "spot_mini" "com.vdesabou.spotify.mini.player"]]
-                 [:comma [:alfred "show_alfred_playlist" "com.vdesabou.spotify.mini.player"]]
+                 [:b [:alfred "show_alfred_playlist" "com.vdesabou.spotify.mini.player"]]
                  [:j [:alfred "song_radio" "com.vdesabou.spotify.mini.player"]]
                  [:u [:alfred "artist_radio" "com.vdesabou.spotify.mini.player"]]
                  [:k [:alfred "show_current_track" "com.vdesabou.spotify.mini.player"]]
                  [:period [:alfred "web_search_current_track" "com.vdesabou.spotify.mini.player"]]
                  [:m [:alfred "add_current_track_to" "com.vdesabou.spotify.mini.player"]]
                  [:n [:alfred "show_playlists" "com.vdesabou.spotify.mini.player"]]
-                 [:h [:alfred "copy_current_track_url_to_clipboard" "com.vdesabou.spotify.mini.player"]]
                  [:semicolon [:alfred "add_current_track_to_alfred_playlist_or_your_music" "com.vdesabou.spotify.mini.player"]]
-                 [:b [:alfred "remove_current_track_from" "com.vdesabou.spotify.mini.player"]]]}
+                 [:comma [:alfred "remove_current_track_from" "com.vdesabou.spotify.mini.player"]]]}
         {:des "spacekey (top sites)"
          :rules [:spacebar-mode
-                 [:n [:km "w: GitHub notifications"]]
-                 [:i [:km "w: Arxiv"]]
+                 [:i [:km "w: GitHub notifications"]]
+                 [:n [:km "w: Arxiv"]]
                  [:t [:km "w: Localhost"]]
                  [:k [:km "w: GitHub"]]
-                 [:o [:km "w: Google"]]
+                 [:a [:km "w: Google"]]
                  [:e [:km "w: Medium"]]
                  [:f [:km "w: Confluence"]]
                  [:j [:km "w: YouTube"]]
