@@ -235,7 +235,7 @@
                  [:u [:km "open: Arq"]]
                  [:v [:km "open: Preview"]]
                  [:o :!CO7] ; Open Typinator
-                 [:comma [:km "open: OBS"]]
+                 [:s [:km "open: OBS"]]
                  [:period [:km "open: Figma"]]
                  [:h [:km "open: Affinity Photo"]]
                  [:semicolon [:km "open: Sketch"]]
