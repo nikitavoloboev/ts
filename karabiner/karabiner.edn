@@ -92,10 +92,7 @@
                  [:h :!Cleft_arrow]]}
         {:des "3key (test code)"
          :rules [:3-mode
-                 [:semicolon [:km "test: Web"]]
-                 [:l [:km "test: TS"]]
-                 [:k [:km "test: Go"]]
-                 [:j [:km "test: JS"]]]}
+                 [:l [:km "test: TS"]]]}
         {:des "4key (open curated lists)"
          :rules [:4-mode
                  [:o [:km "list: alfred workflows"]]
@@ -257,6 +254,7 @@
                  [:r :!Squote]
                  [:d :backslash]
                  [:x :!Sbackslash]
+                 [:h [:!Sd :o :n :e]] ; -> Done
                  [:left_command [:!St :h :a :n :k :s]] ; -> Thanks 
                  [:b [:!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> TODO:
                  [:l [:hyphen :!Speriod :spacebar]] ; -> arrow (->)
@@ -288,6 +286,7 @@
                  [:4 :!C4]
                  [:5 :!C5]
                  [:6 :!C6]
+                 [:y [:km "2Do task (ask)"]]
                  [:n [:alfred "search lists" "nikivi.learn.anything"]]
                  [:m [:alfred "search lists" "nikivi.awesome.lists"]]
                  [:z [:alfred "search blog" "nikivi.private.directories"]]
@@ -390,7 +389,7 @@
          :rules [:d-mode
                  [:j {:mkey {:vwheel 100}}] ; Scroll down
                  [:k {:mkey {:vwheel -100}}] ; Scroll up
-				 [:spacebar [:km "Copy and activate previous app"]]
+			     [:spacebar [:km "Copy and activate previous app"]]
                  [:l [:km "Select line and google"]]
                  [:i :!Ckeypad_hyphen] ; Zoom out
                  [:o :!Ckeypad_plus] ; Zoom in
@@ -405,6 +404,10 @@
                  [:period :!CTO3]]} ; Mission control
         {:des "fkey (essential)"
          :rules [:f-mode
+                 [:8 [:km "edit: Web test server"]]
+                 [:9 [:km "test: JS"]]
+                 [:0 [:km "test: Go"]]
+                 [:u [:km "test: Web"]]
                  [:e :!CO8] ; Alfred clipboard history search
                  [:semicolon [:km "open: TaskPaper"]]
                  [:spacebar :!CT8] ; Search selection in Dictionary (wiki)
@@ -414,7 +417,6 @@
                  [:q [:km "Go to test macro"]]
                  [:caps_lock [:km "Test"]]
                  [:a [:alfred "new task" "nikivi.todo.task"]]
-                 [:u [:km "2Do task (ask)"]]
                  ;[:q [:km "Uppercase selected text"]]
                  [:period [:km "edit: Karabiner"]]
                  [:w :!CTO4] ; Alfred file action
@@ -561,12 +563,10 @@
                  [:period [:km "w: Netlify"]]
                  [:k [:km "w: Kaggle"]]
                  [:m [:km "w: WakaTime"]]
-                 [:semicolon [:km "w: AWS"]]
                  [:n [:km "w: NPM"]]
                  [:spacebar :!COSr]]}; Google Translate selected text
          {:des "jsdot"
           :rules[:jsdot-mode
-                 [:e [:!Sd :o :n :e]] ; -> Done
                  [:s [:equal_sign :!Speriod :spacebar]] ; -> =>
                  [:r [:r :e :t :u :r :n :spacebar]] ; -> return
                  [:t [:r :e :t :u :r :n :spacebar :!Sopen_bracket :!Sclose_bracket :left_arrow :return_or_enter]] ; -> return {}
@@ -602,16 +602,16 @@
                  [:comma [:alfred "remove_current_track_from" "com.vdesabou.spotify.mini.player"]]]}
         {:des "spacekey (top sites)"
          :rules [:spacebar-mode
-                 [:i [:km "w: GitHub notifications"]]
-                 [:n [:km "w: Arxiv"]]
-                 [:t [:km "w: Localhost"]]
                  [:k [:km "w: GitHub"]]
+                 [:n [:km "w: GitHub notifications"]]
+                 [:w [:km "w: AWS"]]
+                 [:r [:km "w: Arxiv"]]
                  [:a [:km "w: Google"]]
                  [:e [:km "w: Medium"]]
-                 [:f [:km "w: Confluence"]]
+                 [:u [:km "w: Confluence"]]
                  [:j [:km "w: YouTube"]]
-                 [:r [:km "w: Jira"]]
-                 [:u [:km "w: Bitbucket"]]
+                 [:i [:km "w: Jira"]]
+                 [:f [:km "w: Bitbucket"]] ; TODO: switch to GitHub (pulls) when it works
                  [:l [:km "w: CodeSandbox"]]
                  [:g [:km "w: regex101"]]
                  [:semicolon [:km "w: Stack Overflow"]]]}

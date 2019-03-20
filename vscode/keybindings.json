@@ -368,7 +368,7 @@
     "command": "toggleVim"
   },
   {
-    "key": "ctrl+o",
+    "key": "ctrl+n",
     "command": "editor.action.triggerSuggest",
     "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
   },

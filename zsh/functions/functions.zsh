@@ -56,7 +56,7 @@ i(){
   if [ $# -eq 0 ]; then
     npm install
   else
-    npm "$@"
+    npm install "$@"
   fi
 }
 
@@ -82,11 +82,6 @@ falias() {
     eval $CMD
 }
 
-unalias ni
-ni(){
-    nix-env -f '<nixpkgs>'  -iA "$@"
-}
-
 # Open Xcode projects from the command line
 function co {
   proj=$(ls -d *.xcodeproj/ 2>/dev/null)
@@ -109,7 +104,7 @@ path(){
 }
 
 # Install all node dependencies and run project
-it(){
+iS(){
   npm install
   npm start
 }
