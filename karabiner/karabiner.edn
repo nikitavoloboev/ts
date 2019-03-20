@@ -74,6 +74,7 @@
         {:des "1key (open curated lists)"
          :rules [:1-mode
                  [:o [:km "list: alfred workflows"]]
+                 [:p [:km "list: podcasts"]]
                  [:k [:km "list: events"]]
                  [:l [:km "list: command line tools"]]]}
         {:des "2key (move)"
@@ -161,7 +162,7 @@
          :rules [:w-mode
                  [:spacebar :!CSO7] ; Search selection with Google Lucky search
                  [:k [:km "open: Safari"]]
-                 [:h [:km "open: Activity Monitor"]]
+                 [:d [:km "open: Activity Monitor"]]
                  [:i [:km "open: Chrome Canary"]]
                  [:t [:km "open: Trello"]]
                  [:m [:km "open: Xcode"]]
@@ -231,17 +232,17 @@
                  [:spacebar :!CTq] ; Search selection in Web Searches
                  [:m [:km "open: Marked"]]
                  [:q [:km "open: IINA"]]
-                 [:h [:km "open: Arq"]]
+                 [:comma [:km "open: Arq"]]
                  [:v [:km "open: Preview"]]
                  [:o :!CO7] ; Open Typinator
-                 [:semicolon [:km "open: Affinity Photo"]]
-                 [:period [:km "open: ScreenFlow"]]
-                 [:comma [:km "open: OBS"]]
-                 [:u [:km "open: Affinity Designer"]]
+                 [:h [:km "open: Affinity Photo"]]
+                 [:semicolon [:km "open: ScreenFlow"]]
+                 [:period [:km "open: OBS"]]
                  [:t [:km "open: Transmission"]]
                  [:p [:km "open: Paprika Recipe Manager"]]
                  [:b [:km "Edit keyboard shortcuts"]]
                  [:a [:km "open: Alfred Preferences"]]
+                 [:u [:km "open: Flume"]]
                  [:i [:km "open: Pixave"]]
                  [:l [:km "open: Reeder"]]
                  [:j [:km "open: Dictionary"]]
@@ -592,16 +593,16 @@
                  [:i [:km "Repeat Spotify song"]]
                  [:h [:km "Paste current Spotify song link"]]
                  [:l [:alfred "spot_mini" "com.vdesabou.spotify.mini.player"]]
-                 [:b [:alfred "show_alfred_playlist" "com.vdesabou.spotify.mini.player"]]
+                 [:p [:alfred "show_alfred_playlist" "com.vdesabou.spotify.mini.player"]]
                  [:j [:alfred "song_radio" "com.vdesabou.spotify.mini.player"]]
                  [:u [:alfred "artist_radio" "com.vdesabou.spotify.mini.player"]]
                  [:k [:alfred "show_current_track" "com.vdesabou.spotify.mini.player"]]
                  [:period [:alfred "youtube_search_current_track" "com.vdesabou.spotify.mini.player"]]
-                 [:slash [:alfred "reddit_search_current_track" "com.vdesabou.spotify.mini.player"]]
+                 [:comma [:alfred "reddit_search_current_track" "com.vdesabou.spotify.mini.player"]]
                  [:m [:alfred "add_current_track_to" "com.vdesabou.spotify.mini.player"]]
                  [:n [:alfred "show_playlists" "com.vdesabou.spotify.mini.player"]]
                  [:semicolon [:alfred "add_current_track_to_alfred_playlist_or_your_music" "com.vdesabou.spotify.mini.player"]]
-                 [:comma [:alfred "remove_current_track_from" "com.vdesabou.spotify.mini.player"]]]}
+                 [:b [:alfred "remove_current_track_from" "com.vdesabou.spotify.mini.player"]]]}
         {:des "spacekey (top sites)"
          :rules [:spacebar-mode
                  [:k [:km "w: GitHub"]]
