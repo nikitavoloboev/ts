@@ -172,6 +172,7 @@
                  [:r [:km "open: Fantastical"]]
                  [:e :!OSC1] ; Open Dash 
                  [:period [:km "open: Paw"]]
+                 [:p [:km "open: Postico"]]
                  [:a [:km "open: Sketch"]]
                  [:c [:km "open: Figma"]]
                  [:g [:km "open: SnippetsLab"]]
@@ -233,9 +234,10 @@
                  [:h [:km "open: Arq"]]
                  [:v [:km "open: Preview"]]
                  [:o :!CO7] ; Open Typinator
-                 [:s [:km "open: OBS"]]
                  [:semicolon [:km "open: Affinity Photo"]]
-                 [:comma [:km "open: Affinity Designer"]]
+                 [:period [:km "open: ScreenFlow"]]
+                 [:comma [:km "open: OBS"]]
+                 [:u [:km "open: Affinity Designer"]]
                  [:t [:km "open: Transmission"]]
                  [:p [:km "open: Paprika Recipe Manager"]]
                  [:b [:km "Edit keyboard shortcuts"]]
@@ -595,6 +597,7 @@
                  [:u [:alfred "artist_radio" "com.vdesabou.spotify.mini.player"]]
                  [:k [:alfred "show_current_track" "com.vdesabou.spotify.mini.player"]]
                  [:period [:alfred "youtube_search_current_track" "com.vdesabou.spotify.mini.player"]]
+                 [:slash [:alfred "reddit_search_current_track" "com.vdesabou.spotify.mini.player"]]
                  [:m [:alfred "add_current_track_to" "com.vdesabou.spotify.mini.player"]]
                  [:n [:alfred "show_playlists" "com.vdesabou.spotify.mini.player"]]
                  [:semicolon [:alfred "add_current_track_to_alfred_playlist_or_your_music" "com.vdesabou.spotify.mini.player"]]
@@ -610,6 +613,7 @@
                  [:u [:km "w: Confluence"]]
                  [:j [:km "w: YouTube"]]
                  [:i [:km "w: Jira"]]
+                 [:o [:km "w: Observable"]]
                  [:f [:km "w: Bitbucket"]] ; TODO: switch to GitHub (pulls) when it works
                  [:l [:km "w: CodeSandbox"]]
                  [:g [:km "w: regex101"]]
