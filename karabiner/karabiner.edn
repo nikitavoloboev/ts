@@ -18,6 +18,7 @@
              :t-mode {:key :t}
              :i-mode {:key :i}
              :o-mode {:key :o}
+             :p-mode {:key :p}
              :a-mode {:key :a}
              :s-mode {:key :s}
              :d-mode {:key :d}
@@ -256,11 +257,9 @@
                  [:r :!Squote]
                  [:d :backslash]
                  [:x :!Sbackslash]
-                 [:h [:!Sd :o :n :e]] ; -> Done
-                 [:left_command [:!St :h :a :n :k :s]] ; -> Thanks 
+                 [:left_command [:slash :slash :spacebar :!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> // TODO:
                  [:b [:!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> TODO:
                  [:l [:hyphen :!Speriod :spacebar]] ; -> arrow (->)
-                 [:tab [:slash :slash :spacebar :!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> // TODO:
                  [:grave_accent_and_tilde [:slash :slash :spacebar]] ; -> // 
                  [:caps_lock [:km "Match symbols"]]
                  [:e :!S3]
@@ -315,9 +314,13 @@
                  [:j [:alfred "search km macros" "iansinnott.keyboardmaestro"]]
                  [:x [:alfred "search workflows" "org.jeef.workflowdirectory"]]
                  [:k [:alfred "search menu bar" "com.tedwise.menubarsearch"]]]}
+        {:des "pkey (words/phrases)"
+         :rules [:p-mode
+                 [:e [:!Sd :o :n :e]] ; -> Done
+                 [:a [:!St :h :a :n :k :s]]]} ; -> Thanks 
         {:des "tabkey (palettes)"
          :rules [:tab-mode
-                 [:j :!SOTf] ; App specific
+                 [:k :!SOTf] ; App specific
                  [:l :!SOTr]]} ; Personal
         {:des "akey (ctrl)"
          :rules [:a-mode
@@ -551,7 +554,7 @@
                  [:e [:alfred "search dash" "com.nikivi.own.dash" "react: "]]
                  [:q [:alfred "search dash" "com.nikivi.own.dash" "c: "]]
                  [:o [:alfred "search dash" "com.nikivi.own.dash" "godoc: "]]]}
-        {:des "ckey (wiki + curated)"
+        {:des "ckey (curated)"
          :rules [:c-mode
                  [:l [:alfred "search wiki" "nikivi.mind"]]]}
         {:des "tkey (websites)"
@@ -579,10 +582,10 @@
         ;{:des "pykey"
           ;:rules[:pydot-mode
                  ;[:a [:p :r :i :n :t :!S9 :!S0 :left_arrow]]]} ; -> print()
-        {:des "tilkey (actions)"
+        {:des "tilkey (actions + words)"
          :rules [:tilde-mode
                  [:n :!CTOx] ; Little Snitch
-                 [:g [:km "New SnippetsLab snippet"]]
+                 [:semicolon [:km "New SnippetsLab snippet"]]
                  [:l [:km "Add blog to Reeder"]]
                  [:r [:alfred "restart wifi" "nikivi.wifi.tools"]]
                  [:w [:alfred "toggle wifi" "nikivi.wifi.tools"]]
@@ -635,14 +638,14 @@
                  [:d [:km "Open Research Papers Trello"]]
                  [:c [:km "Open Courses Trello"]]
                  [:n [:km "Open 2Do Clean"]]
-                 [:m [:km "Open 2Do Fix"]]
+                 [:i [:km "Open 2Do Fix"]]
                  [:y [:km "Open 2Do Try"]]
                  [:u [:km "Open 2Do Ask"]]
                  [:e [:km "Open Ideas Trello"]]
                  [:r [:km "Open 2Do Read"]]
                  [:h [:km "Open 2Do Check"]]
-                 [:o [:km "Open 2Do Tools"]]
-                 [:i [:km "Open 2Do PR"]]
+                 [:m [:km "Open 2Do Tools"]]
+                 [:o [:km "Open 2Do PR"]]
                  [:semicolon [:km "todo: clean"]]
                  [:k [:km "todo: code"]]
                  [:j [:km "todo: empty"]]
