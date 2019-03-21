@@ -73,9 +73,10 @@
                  [:6 :!T6]]}
         {:des "1key (open curated lists)"
          :rules [:1-mode
-                 [:o [:km "list: alfred workflows"]]
+                 [:k [:km "list: alfred workflows"]]
+                 [:o [:km "list: blogs"]]
                  [:p [:km "list: podcasts"]]
-                 [:k [:km "list: events"]]
+                 [:t [:km "list: events"]]
                  [:l [:km "list: command line tools"]]]}
         {:des "2key (move)"
          :rules [:2-mode
@@ -87,13 +88,12 @@
                  [:h :!Cleft_arrow]]}
         {:des "3key (open files + projects)"
          :rules [:3-mode
-                 [:semicolon [:km "wiki: Rules"]]
+                 [:l [:km "wiki: Rules"]]
                  [:n [:km "edit: Private notes"]]
-                 [:r [:km "edit: Projects"]]
+                 [:semicolon [:km "edit: Projects"]]
                  [:o [:km "edit: Now"]]
                  [:m [:km "wiki: Month"]]
                  [:k [:km "proj: Knowledge"]]
-                 [:l [:km "proj: Build to learn"]]
                  [:i [:km "edit: Zsh functions"]]
                  [:j [:km "edit: Aliases"]]]}
         {:des "4key (test code)"
@@ -406,10 +406,10 @@
                  [:period :!CTO3]]} ; Mission control
         {:des "fkey (essential)"
          :rules [:f-mode
-                 [:8 [:km "edit: Web test server"]]
+                 [:8 [:km "edit: Build to learn server"]]
                  [:9 [:km "test: JS"]]
                  [:0 [:km "test: Go"]]
-                 [:u [:km "test: Web"]]
+                 [:u [:km "proj: Build to learn"]]
                  [:e :!CO8] ; Alfred clipboard history search
                  [:semicolon [:km "open: TaskPaper"]]
                  [:spacebar :!CT8] ; Search selection in Dictionary (wiki)
