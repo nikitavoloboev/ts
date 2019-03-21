@@ -1,5 +1,5 @@
 {:profiles
- {:Go {:default true
+ {:JS {:default true
          :sim     50
          :delay   500
          :alone   1000
@@ -236,7 +236,8 @@
                  [:comma [:km "open: Arq"]]
                  [:v [:km "open: Preview"]]
                  [:o :!CO7] ; Open Typinator
-                 [:h [:km "open: Affinity Photo"]]
+                 [:l [:km "open: Affinity Photo"]]
+                 [:h [:km "open: Photos"]]
                  [:semicolon [:km "open: ScreenFlow"]]
                  [:period [:km "open: OBS"]]
                  [:t [:km "open: Transmission"]]
@@ -245,7 +246,7 @@
                  [:a [:km "open: Alfred Preferences"]]
                  [:u [:km "open: Flume"]]
                  [:i [:km "open: Pixave"]]
-                 [:l [:km "open: Reeder"]]
+                 [:e [:km "open: Reeder"]]
                  [:j [:km "open: Dictionary"]]
                  [:k [:km "open: PDF Expert"]]
                  [:w [:km "open: 1Password"]]
@@ -586,7 +587,7 @@
          :rules [:tilde-mode
                  [:n :!CTOx] ; Little Snitch
                  [:semicolon [:km "New SnippetsLab snippet"]]
-                 [:l [:km "Add blog to Reeder"]]
+                 [:e [:km "Add blog to Reeder"]]
                  [:r [:alfred "restart wifi" "nikivi.wifi.tools"]]
                  [:w [:alfred "toggle wifi" "nikivi.wifi.tools"]]
                  [:i [:km "Commit my wiki"]]]}
