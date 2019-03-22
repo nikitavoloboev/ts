@@ -90,9 +90,10 @@
         {:des "3key (open files + projects)"
          :rules [:3-mode
                  [:l [:km "wiki: Rules"]]
-                 [:n [:km "edit: Private notes"]]
-                 [:semicolon [:km "edit: Projects"]]
-                 [:o [:km "edit: Now"]]
+                 [:semicolon [:km "wiki: Processes"]]
+                 [:period [:km "edit: Private notes"]]
+                 [:o [:km "edit: Projects"]]
+                 [:n [:km "edit: Now"]]
                  [:m [:km "wiki: Month"]]
                  [:k [:km "proj: Knowledge"]]
                  [:i [:km "edit: Zsh functions"]]
@@ -232,14 +233,14 @@
          :rules [:r-mode
                  [:spacebar :!CTq] ; Search selection in Web Searches
                  [:m [:km "open: Marked"]]
-                 [:q [:km "open: IINA"]]
-                 [:comma [:km "open: Arq"]]
+                 [:n [:km "open: IINA"]]
                  [:v [:km "open: Preview"]]
                  [:o :!CO7] ; Open Typinator
-                 [:n [:km "open: Affinity Photo"]]
                  [:h [:km "open: Photos"]]
+                 ;[:n [:km "open: Final Cut Pro"]]
                  [:semicolon [:km "open: ScreenFlow"]]
                  [:period [:km "open: OBS"]]
+                 [:comma [:km "open: Arq"]]
                  [:t [:km "open: Transmission"]]
                  [:p [:km "open: Paprika Recipe Manager"]]
                  [:b [:km "Edit keyboard shortcuts"]]
@@ -573,11 +574,11 @@
                  [:n [:km "w: NPM"]]
                  [:spacebar :!COSr]]}; Google Translate selected text
          {:des "jskey"
-          :rules[:jsdot-mode
-                 [:s [:equal_sign :!Speriod :spacebar]] ; -> =>
-                 [:r [:r :e :t :u :r :n :spacebar]] ; -> return
-                 [:e [:r :e :t :u :r :n :spacebar :!Sopen_bracket :!Sclose_bracket :left_arrow :return_or_enter]] ; -> return {}
-                 [:a [:c :o :n :s :o :l :e :period :l :o :g :!S9 :!S0 :left_arrow]]]} ; -> console.log()
+          :rules [:jsdot-mode
+                  [:s [:equal_sign :!Speriod :spacebar]] ; -> =>
+                  [:r [:r :e :t :u :r :n :spacebar]] ; -> return
+                  [:e [:r :e :t :u :r :n :spacebar :!Sopen_bracket :!Sclose_bracket :left_arrow :return_or_enter]] ; -> return {}
+                  [:a [:c :o :n :s :o :l :e :period :l :o :g :!S9 :!S0 :left_arrow]]]} ; -> console.log()
         ; {:des "gokey"
         ;  :rules[:godot-mode
         ;         [:a [:g :o :l :a :n :g :spacebar]]]} ; -> golang
