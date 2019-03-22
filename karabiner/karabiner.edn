@@ -236,7 +236,7 @@
                  [:comma [:km "open: Arq"]]
                  [:v [:km "open: Preview"]]
                  [:o :!CO7] ; Open Typinator
-                 [:l [:km "open: Affinity Photo"]]
+                 [:n [:km "open: Affinity Photo"]]
                  [:h [:km "open: Photos"]]
                  [:semicolon [:km "open: ScreenFlow"]]
                  [:period [:km "open: OBS"]]
@@ -250,7 +250,7 @@
                  [:j [:km "open: Dictionary"]]
                  [:k [:km "open: PDF Expert"]]
                  [:w [:km "open: 1Password"]]
-                 [:n [:km "open: Timing"]]]}
+                 [:l [:km "open: Timing"]]]}
         {:des "ikey (symbols)"
          :rules [:i-mode
                  [:q :!Sopen_bracket]
@@ -396,17 +396,18 @@
                  [:j {:mkey {:vwheel 100}}] ; Scroll down
                  [:k {:mkey {:vwheel -100}}] ; Scroll up
 			     [:spacebar [:km "Copy and activate previous app"]]
-                 [:l [:km "Select line and google"]]
+                 [:h [:km "Select line and google"]]
                  [:i :!Ckeypad_hyphen] ; Zoom out
                  [:o :!Ckeypad_plus] ; Zoom in
                  [:n [:km "Open URL in clipboard in Safari"]]
                  [:g [:km "Centre mouse to active app"]]
-                 [:m [:km "Google Searchio selected word"]]
-                 [:semicolon [:km "Google clipboard"]]
+                 [:l [:km "Google Searchio selected word"]]
+                 [:semicolon [:km "Google selected word"]]
+                 [:m [:km "Google clipboard"]]
                  [:b {:pkey :button3}] ; Middle click
                  [:z {:pkey :button2}] ; Right click
                  [:v {:pkey :button1}] ; Left click
-                 [:comma :!CO1] ; Show Launchpad
+                 [:comma :!TO9] ; Show Launchpad
                  [:period :!CTO3]]} ; Mission control
         {:des "fkey (essential)"
          :rules [:f-mode
