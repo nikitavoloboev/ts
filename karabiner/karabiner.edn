@@ -167,17 +167,17 @@
                  [:d [:km "open: Activity Monitor"]]
                  [:i [:km "open: Chrome Canary"]]
                  [:t [:km "open: Trello"]]
-                 [:m [:km "open: Xcode"]]
+                 [:period [:km "open: Xcode"]]
                  [:v [:km "open: Spotify"]]
                  [:caps_lock [:km "open: Finder"]]
                  [:semicolon [:km "open: Tower"]]
                  [:b [:km "open: BetterTouchTool"]]
                  [:r [:km "open: Fantastical"]]
                  [:e :!OSC1] ; Open Dash 
-                 [:period [:km "open: Paw"]]
+                 [:a [:km "open: Paw"]]
                  [:p [:km "open: Postico"]]
-                 [:a [:km "open: Sketch"]]
-                 [:c [:km "open: Figma"]]
+                 [:m [:km "open: Figma"]]
+                 [:c [:km "open: Sketch"]]
                  [:g [:km "open: SnippetsLab"]]
                  [:f [:km "open: 2Do"]]
                  [:j [:km "open: iTerm"]]
@@ -233,7 +233,7 @@
          :rules [:r-mode
                  [:spacebar :!CTq] ; Search selection in Web Searches
                  [:m [:km "open: Marked"]]
-                 [:n [:km "open: IINA"]]
+                 [:q [:km "open: IINA"]]
                  [:v [:km "open: Preview"]]
                  [:o :!CO7] ; Open Typinator
                  [:h [:km "open: Photos"]]
@@ -241,7 +241,8 @@
                  [:semicolon [:km "open: ScreenFlow"]]
                  [:period [:km "open: OBS"]]
                  [:comma [:km "open: Arq"]]
-                 [:q [:km "open: Transmission"]]
+                 [:l [:km "open: MindNode"]]
+                 [:2 [:km "open: Transmission"]]
                  [:p [:km "open: Paprika Recipe Manager"]]
                  [:b [:km "Edit keyboard shortcuts"]]
                  [:a [:km "open: Alfred Preferences"]]
@@ -251,7 +252,7 @@
                  [:j [:km "open: Dictionary"]]
                  [:k [:km "open: PDF Expert"]]
                  [:w [:km "open: 1Password"]]
-                 [:l [:km "open: Timing"]]]}
+                 [:n [:km "open: Timing"]]]}
         {:des "ikey (symbols)"
          :rules [:i-mode
                  [:q :!Sopen_bracket]
