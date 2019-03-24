@@ -92,7 +92,6 @@ set hidden
 set wrapscan
 set ignorecase
 set smartcase
-set gdefault
 
 " Usable 'Tab'
 set shiftwidth=4
