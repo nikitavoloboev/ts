@@ -452,8 +452,8 @@
         {:des "gkey (actions)"
          :rules [:g-mode
                  [:semicolon :!Cgrave_accent_and_tilde] ; Switch between active windows  (go down)
-                 [:j :!CT4] ; Create new Fantastical event
-                 [:i [:km "Search events"]]
+                 [:i [:km "New Fantastical event"]]
+                 [:o [:km "Search events"]]
                  [:w :!CSgrave_accent_and_tilde] ; Switch between active windows (go up)
                  [:q :!CO0] ; Show Dropzone dropdown
                  [:r :!CT3] ; Search bartender menu items
