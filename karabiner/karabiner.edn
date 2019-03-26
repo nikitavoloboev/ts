@@ -66,6 +66,7 @@
                  [:b :!Sb]
                  [:n :!Sn]
                  [:m :!Sm]
+                 [:grave_accent_and_tilde [:!Sgrave_accent_and_tilde]] ; -> ~
                  [:1 :!T1]
                  [:2 :!T2]
                  [:3 :!T3]
@@ -166,16 +167,16 @@
                  [:k [:km "open: Safari"]]
                  [:d [:km "open: Activity Monitor"]]
                  [:i [:km "open: Chrome Canary"]]
-                 [:t [:km "open: Trello"]]
+                 [:r [:km "open: Trello"]]
                  [:period [:km "open: Xcode"]]
                  [:v [:km "open: Spotify"]]
                  [:caps_lock [:km "open: Finder"]]
                  [:semicolon [:km "open: Tower"]]
                  [:b [:km "open: BetterTouchTool"]]
-                 [:r [:km "open: Fantastical"]]
-                 [:e :!OSC1] ; Open Dash 
-                 [:a [:km "open: Paw"]]
-                 [:p [:km "open: Postico"]]
+                 [:e [:km "open: Fantastical"]]
+                 [:a :!OSC1] ; Open Dash 
+                 [:h [:km "open: Paw"]]
+                 [:t [:km "open: Postico"]]
                  [:m [:km "open: Figma"]]
                  [:c [:km "open: Sketch"]]
                  [:g [:km "open: SnippetsLab"]]
@@ -263,7 +264,7 @@
                  [:left_command [:slash :slash :spacebar :!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> // TODO:
                  [:b [:!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> TODO:
                  [:l [:hyphen :!Speriod :spacebar]] ; -> arrow (->)
-                 [:grave_accent_and_tilde [:slash :slash :spacebar]] ; -> // 
+                 [:grave_accent_and_tilde [:slash :slash :spacebar]] ; -> //
                  [:caps_lock [:km "Match symbols"]]
                  [:e :!S3]
                  [:1 :!S1]
@@ -451,8 +452,8 @@
         {:des "gkey (actions)"
          :rules [:g-mode
                  [:semicolon :!Cgrave_accent_and_tilde] ; Switch between active windows  (go down)
-                 [:i :!CT4] ; Create new Fantastical event
-                 [:o [:km "Search events"]]
+                 [:j :!CT4] ; Create new Fantastical event
+                 [:i [:km "Search events"]]
                  [:w :!CSgrave_accent_and_tilde] ; Switch between active windows (go up)
                  [:q :!CO0] ; Show Dropzone dropdown
                  [:r :!CT3] ; Search bartender menu items
@@ -590,6 +591,7 @@
         {:des "tilkey (actions + words)"
          :rules [:tilde-mode
                  [:n :!CTOx] ; Little Snitch
+                 [:o [:km "Paste active todo"]]
                  [:semicolon [:km "New SnippetsLab snippet"]]
                  [:e [:km "Add blog to Reeder"]]
                  [:r [:alfred "restart wifi" "nikivi.wifi.tools"]]
