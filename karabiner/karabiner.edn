@@ -394,7 +394,6 @@
          :rules [:d-mode
                  [:j {:mkey {:vwheel 100}}] ; Scroll down
                  [:k {:mkey {:vwheel -100}}] ; Scroll up
-                 [:u :!COS0] ; Make Typinator snippet from selection
                  [:a :!CT6] ; Smart zoom
 			     [:spacebar [:km "Copy and activate previous app"]]
                  [:h [:km "Select line and google"]]
@@ -589,8 +588,10 @@
         {:des "tilkey (actions + words)"
          :rules [:tilde-mode
                  [:n :!CTOx] ; Little Snitch
-                 [:o [:km "Paste active todo"]]
-                 [:semicolon [:km "New SnippetsLab snippet"]]
+                 [:semicolon [:km "Paste active todo"]]
+                 [:l [:km "New SnippetsLab snippet"]]
+                 [:j :!COS0] ; Make Typinator snippet from selection
+                 [:k :!COS9] ; Make Typinator snippet from clipboard
                  [:e [:km "Add blog to Reeder"]]
                  [:r [:alfred "restart wifi" "nikivi.wifi.tools"]]
                  [:w [:alfred "toggle wifi" "nikivi.wifi.tools"]]
