@@ -235,12 +235,12 @@
                  [:spacebar :!CTq] ; Search selection in Web Searches
                  [:m [:km "open: Marked"]]
                  [:q [:km "open: IINA"]]
-                 [:v [:km "open: Preview"]]
+                 [:caps_lock [:km "open: Preview"]]
                  [:o :!CO7] ; Open Typinator
-                 [:h [:km "open: Photos"]]
-                 ;[:n [:km "open: Final Cut Pro"]]
+                 [:p [:km "open: Photos"]]
+                 ;[:period [:km "open: Final Cut Pro"]]
                  [:semicolon [:km "open: ScreenFlow"]]
-                 [:period [:km "open: OBS"]]
+                 [:h [:km "open: OBS"]]
                  [:comma [:km "open: Arq"]]
                  [:l [:km "open: MindNode"]]
                  [:2 [:km "open: Transmission"]]

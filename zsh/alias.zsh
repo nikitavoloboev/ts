@@ -219,8 +219,8 @@ alias ww='code .'
 alias zr='open -a Preview'
 
 # Web
-alias sc="open -a Google\ Chrome"
-alias sf="open -a Safari"
+alias can="open -a Google\ Chrome\ Canary"
+alias saf="open -a Safari"
 
 # Other
 alias pdf='open -a PDF\ Expert'
