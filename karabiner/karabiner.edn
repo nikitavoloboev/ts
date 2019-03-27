@@ -386,7 +386,7 @@
                  [:##k :up_arrow]
                  [:##l :right_arrow]
                  [:##b :!Cleft_arrow]
-                 [:n :!Cv]
+                 [:n :!Cv] ; Paste
                  [:##m :!Cright_arrow]
                  [:period [:km "Selected text -> TODO"]]
                  [:semicolon [:km "Tasks from apps -> TODO"]]]}
@@ -394,6 +394,7 @@
          :rules [:d-mode
                  [:j {:mkey {:vwheel 100}}] ; Scroll down
                  [:k {:mkey {:vwheel -100}}] ; Scroll up
+                 [:u :!COS0] ; Make Typinator snippet from selection
                  [:a :!CT6] ; Smart zoom
 			     [:spacebar [:km "Copy and activate previous app"]]
                  [:h [:km "Select line and google"]]
@@ -517,7 +518,7 @@
                  [:4 :!O4]
                  [:5 :!O5]
                  [:6 :!O6]
-                 [:caps_lock [:alfred "search wiki" "nikivi.mind"]]
+                 [:c [:alfred "search wiki" "nikivi.mind"]]
                  [:v [:alfred "ssh" "net.deanishe.alfred-ssh"]]
                  [:e [:alfred "search subs" "net.deanishe.alfred-reddit"]]
                  [:b [:alfred "search bookmarks" "net.deanishe.alfred.safari"]]
@@ -531,7 +532,7 @@
                  [:f [:alfred "search repos" "me.lachlan.githubjump"]]
                  [:g [:alfred "search godoc" "nikivi.search.the.web"]]
                  [:w [:alfred "search github" "nikivi.search.the.web"]]
-                 [:c [:alfred "search learn anything" "nikivi.learn.anything"]]]}
+                 [:caps_lock [:alfred "search learn anything" "nikivi.learn.anything"]]]}
         {:des "mkey (dash)"
          :rules [:m-mode
                  [:spacebar [:alfred "search dash profiles" "nikivi.dash.profiles"]]
@@ -553,7 +554,7 @@
                  [:e [:alfred "search dash" "com.nikivi.own.dash" "react: "]]
                  [:q [:alfred "search dash" "com.nikivi.own.dash" "c: "]]
                  [:o [:alfred "search dash" "com.nikivi.own.dash" "godoc: "]]]}
-        {:des "ckey (test + curated)"
+        {:des "ckey (test)"
          :rules [:c-mode
                  [:j [:km "test: JS"]]
                  [:y [:km "test: TS"]]
@@ -572,7 +573,7 @@
                  [:k [:km "w: Kaggle"]]
                  [:m [:km "w: WakaTime"]]
                  [:n [:km "w: NPM"]]
-                 [:spacebar :!COSr]]}; Google Translate selected text
+                 [:spacebar :!COSr]]} ; Google Translate selected text
          {:des "jskey"
           :rules [:jsdot-mode
                   [:s [:equal_sign :!Speriod :spacebar]] ; -> =>
