@@ -51,12 +51,12 @@ l(){
   "$@" | pbcopy
 }
 
-# npm install if no args. npm <cmd> otherwise
+# npm install. npm <cmd>
 i(){
   if [ $# -eq 0 ]; then
     npm install
   else
-    npm install "$@"
+    npm "$@"
   fi
 }
 

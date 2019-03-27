@@ -10,7 +10,6 @@
              :1-mode {:key :1}
              :2-mode {:key :2}
              :3-mode {:key :3}
-             :4-mode {:key :4}
              :q-mode {:key :q}
              :w-mode {:key :w}
              :e-mode {:key :e}
@@ -99,9 +98,6 @@
                  [:k [:km "proj: Knowledge"]]
                  [:i [:km "edit: Zsh functions"]]
                  [:j [:km "edit: Aliases"]]]}
-        {:des "4key (test code)"
-         :rules [:4-mode
-                 [:k [:km "test: TS"]]]}
         {:des "swap : and ;"
          :rules [[:#Psemicolon :!Ssemicolon]
                  [:!Ssemicolon :semicolon]]}
@@ -415,10 +411,6 @@
                  [:period :!CTO3]]} ; Mission control
         {:des "fkey (essential)"
          :rules [:f-mode
-                 [:8 [:km "edit: Build to learn server"]]
-                 [:9 [:km "test: JS"]]
-                 [:0 [:km "test: Go"]]
-                 [:u [:km "proj: Build to learn"]]
                  [:e :!CO8] ; Alfred clipboard history search
                  [:semicolon [:km "open: TaskPaper"]]
                  [:spacebar :!CT8] ; Search selection in Dictionary (wiki)
@@ -525,6 +517,7 @@
                  [:4 :!O4]
                  [:5 :!O5]
                  [:6 :!O6]
+                 [:caps_lock [:alfred "search wiki" "nikivi.mind"]]
                  [:v [:alfred "ssh" "net.deanishe.alfred-ssh"]]
                  [:e [:alfred "search subs" "net.deanishe.alfred-reddit"]]
                  [:b [:alfred "search bookmarks" "net.deanishe.alfred.safari"]]
@@ -538,7 +531,7 @@
                  [:f [:alfred "search repos" "me.lachlan.githubjump"]]
                  [:g [:alfred "search godoc" "nikivi.search.the.web"]]
                  [:w [:alfred "search github" "nikivi.search.the.web"]]
-                 [:caps_lock [:alfred "search learn anything" "nikivi.learn.anything"]]]}
+                 [:c [:alfred "search learn anything" "nikivi.learn.anything"]]]}
         {:des "mkey (dash)"
          :rules [:m-mode
                  [:spacebar [:alfred "search dash profiles" "nikivi.dash.profiles"]]
@@ -560,9 +553,13 @@
                  [:e [:alfred "search dash" "com.nikivi.own.dash" "react: "]]
                  [:q [:alfred "search dash" "com.nikivi.own.dash" "c: "]]
                  [:o [:alfred "search dash" "com.nikivi.own.dash" "godoc: "]]]}
-        {:des "ckey (curated)"
+        {:des "ckey (test + curated)"
          :rules [:c-mode
-                 [:l [:alfred "search wiki" "nikivi.mind"]]]}
+                 [:j [:km "test: JS"]]
+                 [:y [:km "test: TS"]]
+                 [:o [:km "test: Go"]]
+                 [:k [:km "edit: Build to learn server"]]
+                 [:l [:km "proj: Build to learn"]]]}
         {:des "tkey (websites)"
          :rules [:t-mode
                  [:l [:km "w: Repl"]]
