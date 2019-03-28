@@ -231,12 +231,13 @@
          :rules [:r-mode
                  [:spacebar :!CTq] ; Search selection in Web Searches
                  [:m [:km "open: Marked"]]
-                 [:semicolon [:km "open: IINA"]]
-                 [:q [:km "open: Preview"]]
+                 [:q [:km "open: IINA"]]
+                 [:open_bracket [:km "open: Preview"]]
                  [:o :!CO7] ; Open Typinator
                  [:p [:km "open: Photos"]]
-                 ;[:period [:km "open: Final Cut Pro"]]
+                 ;[:semicolon [:km "open: Final Cut Pro"]]
                  [:l [:km "open: ScreenFlow"]]
+                 [:period [:km "open: Affinity Photo"]]
                  [:h [:km "open: OBS"]]
                  [:comma [:km "open: Arq"]]
                  [:caps_lock [:km "open: Transmission"]]

@@ -52,7 +52,7 @@
 [rerere]
     enabled = true
 [pull]
-    rebase = true
+	rebase = true
     autostash = true
 [merge]
 	tool = nvimdiff
@@ -85,3 +85,5 @@
 	old = red bold
 	new = green bold
 	whitespace = red reverse
+[rebase]
+	autoStash = true
