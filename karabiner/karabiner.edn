@@ -415,17 +415,12 @@
                  [:semicolon [:km "open: TaskPaper"]]
                  [:spacebar :!CT8] ; Search selection in Dictionary (wiki)
                  [:s :!COp] ; Make HasteBin link from selection
-                 ;[:w [:km "Lowercase selected text"]]
-                 ;[:q :!STh] ; Record macro
-                 [:q [:km "Go to test macro"]]
-                 [:caps_lock [:km "Test"]]
                  [:a [:alfred "new task" "nikivi.todo.task"]]
-                 ;[:q [:km "Uppercase selected text"]]
                  [:period [:km "edit: Karabiner"]]
                  [:w :!CTO4] ; Alfred file action
                  [:j [:km "Open 1st iTerm tab"]]
                  [:h [:km "Make markdown link from selection {link}"]]
-                 [:1 [:km "Lowercase selected text"]]
+                 [:q [:km "Lowercase selected text"]]
                  [:p :!CTOc] ; Sleep
                  [:open_bracket :!CT5] ; Turn display on/off 
                  [:tab [:km "Uppercase selected text"]]
@@ -435,8 +430,9 @@
                  [:k :return_or_enter]
                  [:z :!Ospacebar] ; Switch language (Russian <-> English)
                  [:l :!Creturn_or_enter]
-                 [:3 :!CTOp] ; Sip color picker 
+                 [:1 [:km "Uppercase selected text"]]
                  [:2 :!COclose_bracket] ; PixelSnap
+                 [:3 :!CTOp] ; Sip color picker 
                  [:n :!Freturn_or_enter]
                  [:m :!Sreturn_or_enter]
                  [:i :!Treturn_or_enter]
@@ -446,6 +442,8 @@
                  [:semicolon :!Cgrave_accent_and_tilde] ; Switch between active windows  (go down)
                  [:i [:km "New Fantastical event"]]
                  [:o [:km "Search events"]]
+                 [:m [:km "Go to test macro"]]
+                 [:period [:km "Test"]]
                  [:w :!CSgrave_accent_and_tilde] ; Switch between active windows (go up)
                  [:q :!CO0] ; Show Dropzone dropdown
                  [:r :!CT3] ; Search bartender menu items
@@ -456,8 +454,7 @@
                  [:j :!COslash] ; Show/hide notification centre
                  ;[:m :!CO6] ; Maximize window to next monitor
                  [:a [:km "Go to KM group of current app"]]
-                 [:period [:km "Go to KM group of current app from picklist"]]
-                 [:m [:km "Make global macro"]]
+                 [:caps_lock [:km "Go to KM group of current app from picklist"]]
                  [:l :!CSOd] ; Move window right
                  [:h :!CSOa] ; Move window left
                  [:s [:km "Dismiss notifications"]]]}
@@ -587,12 +584,14 @@
                  ;[:a [:p :r :i :n :t :!S9 :!S0 :left_arrow]]]} ; -> print()
         {:des "tilkey (actions + words)"
          :rules [:tilde-mode
-                 [:n :!CTOx] ; Little Snitch
-                 [:semicolon [:km "Paste active todo"]]
+                 [:h :!CTOx] ; Little Snitch
+                 [:n [:km "Paste active todo"]]
                  [:l [:km "New SnippetsLab snippet"]]
                  [:j :!COS0] ; Make Typinator snippet from selection
                  [:k :!COS9] ; Make Typinator snippet from clipboard
                  [:e [:km "Add blog to Reeder"]]
+                 ;[:n :!STh] ; Record macro
+                 [:m [:km "Make global macro"]]
                  [:r [:alfred "restart wifi" "nikivi.wifi.tools"]]
                  [:w [:alfred "toggle wifi" "nikivi.wifi.tools"]]
                  [:i [:km "Commit my wiki"]]]}
@@ -600,9 +599,10 @@
          :rules [:x-mode
                  [:o [:km "Share current song on Twitter"]]
                  [:i [:km "Repeat Spotify song"]]
-                 [:h [:km "Paste current Spotify song link"]]
+                 [:h [:km "Play La song"]]
+                 [:p [:km "Paste current Spotify song link"]]
                  [:l [:alfred "spot_mini" "com.vdesabou.spotify.mini.player"]]
-                 [:p [:alfred "show_alfred_playlist" "com.vdesabou.spotify.mini.player"]]
+                 [:v [:alfred "show_alfred_playlist" "com.vdesabou.spotify.mini.player"]]
                  [:j [:alfred "song_radio" "com.vdesabou.spotify.mini.player"]]
                  [:u [:alfred "artist_radio" "com.vdesabou.spotify.mini.player"]]
                  [:k [:alfred "show_current_track" "com.vdesabou.spotify.mini.player"]]
