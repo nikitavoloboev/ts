@@ -161,9 +161,9 @@
          :rules [:w-mode
                  [:spacebar :!CSO7] ; Search selection with Google Lucky search
                  [:k [:km "open: Safari"]]
-                 [:d [:km "open: Activity Monitor"]]
+                 [:c [:km "open: Activity Monitor"]]
+                 [:d [:km "open: MindNode"]]
                  [:i [:km "open: Chrome Canary"]]
-                 [:r [:km "open: Trello"]]
                  [:period [:km "open: Xcode"]]
                  [:v [:km "open: Spotify"]]
                  [:caps_lock [:km "open: Finder"]]
@@ -171,10 +171,11 @@
                  [:b [:km "open: BetterTouchTool"]]
                  [:e [:km "open: Fantastical"]]
                  [:a :!OSC1] ; Open Dash 
+                 [:r :!CTOSt] ; Open Trello
                  [:h [:km "open: Paw"]]
                  [:t [:km "open: Postico"]]
                  [:m [:km "open: Figma"]]
-                 [:c [:km "open: Sketch"]]
+                 [:comma [:km "open: Sketch"]]
                  [:g [:km "open: SnippetsLab"]]
                  [:f [:km "open: 2Do"]]
                  [:j [:km "open: iTerm"]]
@@ -230,16 +231,15 @@
          :rules [:r-mode
                  [:spacebar :!CTq] ; Search selection in Web Searches
                  [:m [:km "open: Marked"]]
-                 [:q [:km "open: IINA"]]
-                 [:caps_lock [:km "open: Preview"]]
+                 [:semicolon [:km "open: IINA"]]
+                 [:q [:km "open: Preview"]]
                  [:o :!CO7] ; Open Typinator
                  [:p [:km "open: Photos"]]
                  ;[:period [:km "open: Final Cut Pro"]]
-                 [:semicolon [:km "open: ScreenFlow"]]
+                 [:l [:km "open: ScreenFlow"]]
                  [:h [:km "open: OBS"]]
                  [:comma [:km "open: Arq"]]
-                 [:l [:km "open: MindNode"]]
-                 [:2 [:km "open: Transmission"]]
+                 [:caps_lock [:km "open: Transmission"]]
                  [:p [:km "open: Paprika Recipe Manager"]]
                  [:b [:km "Edit keyboard shortcuts"]]
                  [:a [:km "open: Alfred Preferences"]]
@@ -585,7 +585,7 @@
         {:des "tilkey (actions + words)"
          :rules [:tilde-mode
                  [:h :!CTOx] ; Little Snitch
-                 [:n [:km "Paste active todo"]]
+                 [:semicolon [:km "Paste active todo"]]
                  [:l [:km "New SnippetsLab snippet"]]
                  [:j :!COS0] ; Make Typinator snippet from selection
                  [:k :!COS9] ; Make Typinator snippet from clipboard
@@ -599,7 +599,7 @@
          :rules [:x-mode
                  [:o [:km "Share current song on Twitter"]]
                  [:i [:km "Repeat Spotify song"]]
-                 [:h [:km "Play La song"]]
+                 [:h [:km "Play Top song"]]
                  [:p [:km "Paste current Spotify song link"]]
                  [:l [:alfred "spot_mini" "com.vdesabou.spotify.mini.player"]]
                  [:v [:alfred "show_alfred_playlist" "com.vdesabou.spotify.mini.player"]]
@@ -630,11 +630,12 @@
                  [:semicolon [:km "w: Stack Overflow"]]]}
         {:des "capskey (todo + trello)"
          :rules [:caps-mode
-                 [:1 :!TO1] ; Screenshot + recording options
-                 [:2 :!TO2] ; Imgur screenshow
+                 [:1 :!TO1] ; New Kap recording
+                 [:2 :!TO2] ; Imgur screenshot
                  [:3 :!TO3] ; Annotate screenshot
                  [:4 :!TO4] ; Show Annotate
                  [:5 :!TO5] ; Save picture of screen to Desktop
+                 [:6 :!TO6] ; Screenshot + recording options
                  [:f [:km "Open Focus Trello"]]
                  [:w [:km "Open Learn Trello"]]
                  [:v [:km "Open Videos Trello"]]
