@@ -38,7 +38,7 @@
 [diff]
 	renames = copy
 	tool = nvimdiff
-[status] 
+[status]
 	short = true
 	    branch = true
 	submoduleSummary = true

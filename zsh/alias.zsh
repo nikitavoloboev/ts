@@ -98,7 +98,7 @@ alias lic='legit'
 #alias to.='gittower .' # Open current dir in Tower
 
 # Python
-alias p='python'
+alias p='python3'
 alias p2='python2'
 
 # Alfred
