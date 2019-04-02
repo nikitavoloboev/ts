@@ -85,5 +85,4 @@
   nix.buildCores = 1;
 
   # TODO: create ~/.hushlogin file to supress login msg on new terminal sessions 
-   
 }

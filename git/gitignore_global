@@ -37,6 +37,9 @@ node_modules
 ehthumbs.db
 Thumbs.db
 *.Ulysses
+.Ulysses-favorites.plist
+.Ulysses-Group.plist
+.UlyssesRoot
 
 ### https://github.com/github/gitignore/blob/master/Global/Vim.gitignore ###
 # Swap

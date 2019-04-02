@@ -368,7 +368,7 @@
     "command": "toggleVim"
   },
   {
-    "key": "ctrl+n",
+    "key": "ctrl+o",
     "command": "editor.action.triggerSuggest",
     "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
   },
@@ -385,5 +385,10 @@
   {
     "key": "ctrl+h",
     "command": "editor.action.rename"
+  },
+  {
+    "key": "ctrl+o",
+    "command": "workbench.action.quickOpenSelectNext",
+    "when": "inQuickOpen"
   }
 ]

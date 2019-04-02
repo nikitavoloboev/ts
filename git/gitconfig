@@ -87,3 +87,5 @@
 	whitespace = red reverse
 [rebase]
 	autoStash = true
+[credential]
+	helper = osxkeychain

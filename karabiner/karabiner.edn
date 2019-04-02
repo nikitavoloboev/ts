@@ -466,15 +466,15 @@
                  [:i [:km "open: Tweetbot"]]
                  [:b [:km "open: Whalebird"]]
                  [:f [:km "open: Spark"]]
-                 [:v [:km "New Spark email"]]
+                 [:m [:km "New Spark email"]]
                  [:g [:alfred "search contacts" "nikivi.search.content"]]
                  [:e [:km "open: Telegram"]]
-                 [:period [:km "open: Caprine"]]
+                 [:r [:km "open: Caprine"]]
                  [:semicolon [:km "open: Slack"]]
-                 [:c [:km "Create new contact"]]
+                 [:v [:km "Create new contact"]]
                  [:k [:km "open: Telegram"]]
                  [:j [:km "open: Textual"]]
-                 [:m [:km "open: Zoom"]]
+                 [:period [:km "open: Zoom"]]
                  [:l [:km "open: Discord"]]]}
         {:des "vkey (media)"
          :rules [:v-mode
@@ -575,8 +575,8 @@
          {:des "jskey"
           :rules [:jsdot-mode
                   [:s [:equal_sign :!Speriod :spacebar]] ; -> =>
-                  [:r [:r :e :t :u :r :n :spacebar]] ; -> return
-                  [:e [:r :e :t :u :r :n :spacebar :!Sopen_bracket :!Sclose_bracket :left_arrow :return_or_enter]] ; -> return {}
+                  [:e [:r :e :t :u :r :n :spacebar]] ; -> return
+                  [:r [:r :e :t :u :r :n :spacebar :!Sopen_bracket :!Sclose_bracket :left_arrow :return_or_enter]] ; -> return {}
                   [:a [:c :o :n :s :o :l :e :period :l :o :g :!S9 :!S0 :left_arrow]]]} ; -> console.log()
         ; {:des "gokey"
         ;  :rules[:godot-mode
