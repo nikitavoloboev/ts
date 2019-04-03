@@ -91,6 +91,7 @@
          :rules [:3-mode
                  [:l [:km "wiki: Rules"]]
                  [:semicolon [:km "wiki: Processes"]]
+                 [:g [:km "edit: Git config"]]
                  [:period [:km "edit: Private notes"]]
                  [:o [:km "edit: Projects"]]
                  [:n [:km "edit: Now"]]
@@ -164,7 +165,8 @@
                  [:c [:km "open: Activity Monitor"]]
                  [:d [:km "open: MindNode"]]
                  [:i [:km "open: Chrome Canary"]]
-                 [:period [:km "open: Xcode"]]
+                 [:period [:km "open: Safari Technology Preview"]]
+                 [:u [:km "open: Xcode"]]
                  [:v [:km "open: Spotify"]]
                  [:caps_lock [:km "open: Finder"]]
                  [:semicolon [:km "open: Tower"]]

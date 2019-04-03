@@ -114,10 +114,6 @@
 	"dictionary": "Packages/Language - English/en_US.dic",
 	"font_face": "Fira Code",
 	"font_size": 15,
-	"ignored_packages":
-	[
-		"Vintage"
-	],
 	"line_numbers": false,
 	"open_files_in_new_window": true,
 	"spell_check": true,
