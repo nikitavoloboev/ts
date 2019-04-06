@@ -320,8 +320,9 @@
          :rules [:p-mode
                  [:e [:!Sd :o :n :e]] ; -> Done
                  [:a [:!St :h :a :n :k :s]]]} ; -> Thanks 
-        {:des "tabkey (palettes)"
+        {:des "tabkey (palettes + alfred)"
          :rules [:tab-mode
+                 [:i [:alfred "search iOS tabs" "net.deanishe.alfred.safari"]]
                  [:k :!SOTf] ; App specific
                  [:l :!SOTr]]} ; Personal
         {:des "akey (ctrl)"
@@ -462,19 +463,18 @@
                  [:s [:km "Dismiss notifications"]]]}
         {:des "zkey (chat)"
          :rules [:z-mode
-                 [:o :!CTO1] ; New tweet 
+                 [:j :!CTO1] ; New tweet 
                  [:n [:km "New tweet with current URL"]]
                  [:i [:km "open: Tweetbot"]]
                  [:b [:km "open: Whalebird"]]
                  [:f [:km "open: Spark"]]
                  [:m [:km "New Spark email"]]
                  [:g [:alfred "search contacts" "nikivi.search.content"]]
-                 [:e [:km "open: Telegram"]]
                  [:r [:km "open: Caprine"]]
                  [:semicolon [:km "open: Slack"]]
                  [:v [:km "Create new contact"]]
                  [:k [:km "open: Telegram"]]
-                 [:j [:km "open: Textual"]]
+                 [:e [:km "open: Textual"]]
                  [:period [:km "open: Zoom"]]
                  [:l [:km "open: Discord"]]]}
         {:des "vkey (media)"
@@ -570,7 +570,7 @@
                  [:z [:km "w: MDN"]]
                  [:period [:km "w: Netlify"]]
                  [:k [:km "w: Kaggle"]]
-                 [:m [:km "w: WakaTime"]]
+                 [:w [:km "w: WakaTime"]]
                  [:n [:km "w: NPM"]]
                  [:spacebar :!COSr]]} ; Google Translate selected text
          {:des "jskey"
