@@ -10,6 +10,7 @@
              :1-mode {:key :1}
              :2-mode {:key :2}
              :3-mode {:key :3}
+             :4-mode {:key :4}
              :q-mode {:key :q}
              :w-mode {:key :w}
              :e-mode {:key :e}
@@ -99,6 +100,9 @@
                  [:k [:km "proj: Knowledge"]]
                  [:i [:km "edit: Zsh functions"]]
                  [:j [:km "edit: Aliases"]]]}
+        {:des "4key (alfred)"
+         :rules [:4-mode
+                 [:i [:alfred "search iOS tabs" "net.deanishe.alfred.safari"]]]}
         {:des "swap : and ;"
          :rules [[:#Psemicolon :!Ssemicolon]
                  [:!Ssemicolon :semicolon]]}
@@ -322,7 +326,6 @@
                  [:a [:!St :h :a :n :k :s]]]} ; -> Thanks 
         {:des "tabkey (palettes + alfred)"
          :rules [:tab-mode
-                 [:i [:alfred "search iOS tabs" "net.deanishe.alfred.safari"]]
                  [:k :!SOTf] ; App specific
                  [:l :!SOTr]]} ; Personal
         {:des "akey (ctrl)"
