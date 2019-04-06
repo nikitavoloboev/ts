@@ -478,7 +478,7 @@
                  [:v [:km "Create new contact"]]
                  [:k [:km "open: Telegram"]]
                  [:e [:km "open: Textual"]]
-                 [:period [:km "open: Zoom"]]
+                 [:o [:km "open: Zoom"]]
                  [:l [:km "open: Discord"]]]}
         {:des "vkey (media)"
          :rules [:v-mode
@@ -504,6 +504,7 @@
                  [:h [:alfred "search hn" "com.vitorgalvao.alfred.hackerboard"]]
                  [:semicolon [:km "w: GitHub (trending)"]]
                  [:s [:km "w: Reddit Saved"]]
+                 [:d [:km "w: Medium (network)"]]
                  [:l [:km "w: Lobsters"]]
                  [:o [:km "w: Lobsters (new)"]]
                  [:i [:km "w: Hacker News (new)"]]
@@ -520,6 +521,7 @@
                  [:5 :!O5]
                  [:6 :!O6]
                  [:c [:alfred "search wiki" "nikivi.mind"]]
+                 [:z [:alfred "search stack" "net.deanishe.alfred-stackoverflow"]]
                  [:v [:alfred "ssh" "net.deanishe.alfred-ssh"]]
                  [:e [:alfred "search subs" "net.deanishe.alfred-reddit"]]
                  [:b [:alfred "search bookmarks" "net.deanishe.alfred.safari"]]
