@@ -3,18 +3,13 @@
   "workbench.colorCustomizations": {
     "editor.lineHighlightBackground": "#212121"
   },
-  // reason
-  "[reason]": {
-    "editor.formatOnSave": true
-  },
-  "reason_language_server.dependencies_codelens": false,
   // breadcrumbs
   "breadcrumbs.enabled": true,
   // editor
   "editor.renderLineHighlight": "line",
-  "editor.codeActionsOnSave": {
-    "source.organizeImports": true
-  },
+  // "editor.codeActionsOnSave": {
+  //   "source.organizeImports": true
+  // },
   "editor.hideCursorInOverviewRuler": true,
   "editor.scrollBeyondLastLine": false,
   "editor.lineHeight": 26,
@@ -41,7 +36,7 @@
   "workbench.settings.enableNaturalLanguageSearch": false,
   "workbench.colorTheme": "Monokai Night",
   // window
-  "window.zoomLevel": -2,
+  "window.zoomLevel": -1,
   "window.restoreWindows": "all",
   "window.newWindowDimensions": "maximized",
   // debug
@@ -164,7 +159,7 @@
   },
   "explorer.confirmDelete": false,
   // python
-  // TODO: update to p3 and nix?
+  // TODO: update to p3 & nix?
   "python.pythonPath": "/run/current-system/sw/bin/python",
   // TODO: maybe there is better?
   "python.formatting.provider": "autopep8",

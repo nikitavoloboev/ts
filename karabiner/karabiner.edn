@@ -466,18 +466,20 @@
                  [:s [:km "Dismiss notifications"]]]}
         {:des "zkey (chat)"
          :rules [:z-mode
-                 [:j :!CTO1] ; New tweet 
+                 [:j [:km "New tweet"]]
                  [:n [:km "New tweet with current URL"]]
-                 [:i [:km "open: Tweetbot"]]
+                 [:v [:km "open: Tweetbot"]]
                  [:b [:km "open: Whalebird"]]
                  [:f [:km "open: Spark"]]
-                 [:m [:km "New Spark email"]]
+                 [:i [:km "New Spark email"]]
                  [:g [:alfred "search contacts" "nikivi.search.content"]]
+                 [:h [:km "Create new contact"]]
+                 [:period [:km "open: FaceTime"]]
                  [:r [:km "open: Caprine"]]
                  [:semicolon [:km "open: Slack"]]
-                 [:v [:km "Create new contact"]]
                  [:k [:km "open: Telegram"]]
-                 [:e [:km "open: Textual"]]
+                 [:e [:km "open: Telegram"]]
+                 [:m [:km "open: Textual"]]
                  [:o [:km "open: Zoom"]]
                  [:l [:km "open: Discord"]]]}
         {:des "vkey (media)"
