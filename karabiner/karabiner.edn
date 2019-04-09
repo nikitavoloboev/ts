@@ -102,7 +102,7 @@
                  [:j [:km "edit: Aliases"]]]}
         {:des "4key (alfred)"
          :rules [:4-mode
-                 [:i [:alfred "search iOS tabs" "net.deanishe.alfred.safari"]]]}
+                 [:i [:alfred "search ios tabs" "net.deanishe.alfred.safari"]]]}
         {:des "swap : and ;"
          :rules [[:#Psemicolon :!Ssemicolon]
                  [:!Ssemicolon :semicolon]]}
@@ -160,14 +160,12 @@
                  [:7 :!CS7]
                  [:8 :!CS8]
                  [:9 :!CS9]
-                 [:0 :!CS0]
-                 [:spacebar :!TOSx]]}
+                 [:0 :!CS0]]}
         {:des "wkey (apps)"
          :rules [:w-mode
                  [:spacebar :!CSO7] ; Search selection with Google Lucky search
                  [:k [:km "open: Safari"]]
                  [:t [:km "open: Activity Monitor"]]
-                 [:d [:km "open: MindNode"]]
                  [:period [:km "open: Chrome Canary"]]
                  [:comma [:km "open: Safari Technology Preview"]]
                  [:i [:km "open: Xcode"]]
@@ -179,7 +177,9 @@
                  [:a :!OSC1] ; Open Dash 
                  [:r :!CTOSt] ; Open Trello
                  [:h [:km "open: Paw"]]
-                 [:c [:km "open: Postico"]]
+                 [:d [:km "open: MindNode"]]
+                 [:p [:km "open: Postico"]]
+                 [:c [:km "open: Sketch"]]
                  [:m [:km "open: Figma"]]
                  [:g [:km "open: SnippetsLab"]]
                  [:f [:km "open: 2Do"]]
@@ -464,6 +464,7 @@
                  [:s [:km "Dismiss notifications"]]]}
         {:des "zkey (chat)"
          :rules [:z-mode
+                 [:spacebar :!COS0] ; Make Typinator snippet from selection
                  [:j [:km "New tweet"]]
                  [:n [:km "New tweet with current URL"]]
                  [:v [:km "open: Tweetbot"]]
@@ -472,7 +473,6 @@
                  [:i [:km "New Spark email"]]
                  [:g [:alfred "search contacts" "nikivi.search.content"]]
                  [:h [:km "Create new contact"]]
-                 [:spacebar :!COS0] ; Make Typinator snippet from selection
                  [:period [:km "open: FaceTime"]]
                  [:r [:km "open: Caprine"]]
                  [:semicolon [:km "open: Slack"]]
