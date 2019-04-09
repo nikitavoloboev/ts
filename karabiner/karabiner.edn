@@ -432,7 +432,6 @@
                  [:open_bracket :!CT5] ; Turn display on/off 
                  [:tab [:km "Uppercase selected text"]]
                  [:slash [:km "edit: Darwin Nix"]]
-                 [:quote [:km "edit: vimrc"]]
                  [:comma  [:km "Add safari link to selected markdown text"]]
                  [:k :return_or_enter]
                  [:z :!Ospacebar] ; Switch language (Russian <-> English)

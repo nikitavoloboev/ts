@@ -51,14 +51,24 @@ l(){
   "$@" | pbcopy
 }
 
-# npm install. npm <cmd>
+# npm install. npm install <cmd>
 i(){
   if [ $# -eq 0 ]; then
     npm install
   else
+    npm install "$@"
+  fi
+}
+
+# npm install && npm start. npm <cmd>
+ii(){
+  if [ $# -eq 0 ]; then
+    npm install && npm start
+  else
     npm "$@"
   fi
 }
+
 
 # Open files/project with VS Code TODO: w <tab> should autocomplete files
 w() {

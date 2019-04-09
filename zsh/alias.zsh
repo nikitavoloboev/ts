@@ -137,7 +137,6 @@ alias ndi='node install'
 alias n.='node .'
 
 # NPM
-alias ii='npm install'
 alias ig='npm install -g'
 alias iir='npm install && npm run dev'
 alias iis='npm install && npm start'
