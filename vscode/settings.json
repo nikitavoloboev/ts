@@ -36,7 +36,7 @@
   "workbench.settings.enableNaturalLanguageSearch": false,
   "workbench.colorTheme": "Monokai Night",
   // window
-  "window.zoomLevel": -1,
+  "window.zoomLevel": -2,
   "window.restoreWindows": "all",
   "window.newWindowDimensions": "maximized",
   // debug
@@ -63,8 +63,8 @@
   "files.exclude": {
     "**/.git": true,
     "**/.DS_Store": true,
+    "**/package-lock.json": true,
     "vendor": true,
-    "package-lock.json": true,
     "**/node_modules": true,
     "**/npm-debug.log": true,
     "**/dist": true,

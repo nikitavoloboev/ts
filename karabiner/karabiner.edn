@@ -166,11 +166,11 @@
          :rules [:w-mode
                  [:spacebar :!CSO7] ; Search selection with Google Lucky search
                  [:k [:km "open: Safari"]]
-                 [:c [:km "open: Activity Monitor"]]
+                 [:t [:km "open: Activity Monitor"]]
                  [:d [:km "open: MindNode"]]
-                 [:i [:km "open: Chrome Canary"]]
-                 [:period [:km "open: Safari Technology Preview"]]
-                 [:u [:km "open: Xcode"]]
+                 [:period [:km "open: Chrome Canary"]]
+                 [:comma [:km "open: Safari Technology Preview"]]
+                 [:i [:km "open: Xcode"]]
                  [:v [:km "open: Spotify"]]
                  [:caps_lock [:km "open: Finder"]]
                  [:semicolon [:km "open: Tower"]]
@@ -179,7 +179,7 @@
                  [:a :!OSC1] ; Open Dash 
                  [:r :!CTOSt] ; Open Trello
                  [:h [:km "open: Paw"]]
-                 [:t [:km "open: Postico"]]
+                 [:c [:km "open: Postico"]]
                  [:m [:km "open: Figma"]]
                  [:g [:km "open: SnippetsLab"]]
                  [:f [:km "open: 2Do"]]
@@ -237,17 +237,17 @@
                  [:spacebar :!CTq] ; Search selection in Web Searches
                  [:m [:km "open: Marked"]]
                  [:q [:km "open: IINA"]]
-                 [:open_bracket [:km "open: Preview"]]
+                 [:caps_lock [:km "open: Preview"]]
                  [:o :!CO7] ; Open Typinator
-                 [:p [:km "open: Photos"]]
+                 [:h [:km "open: Photos"]]
                  ;[:semicolon [:km "open: Final Cut Pro"]]
                  [:l [:km "open: ScreenFlow"]]
                  [:period [:km "open: Affinity Photo"]]
-                 [:h [:km "open: OBS"]]
+                 [:b [:km "open: OBS"]]
                  [:comma [:km "open: Arq"]]
-                 [:caps_lock [:km "open: Transmission"]]
+                 [:s [:km "open: Transmission"]]
                  [:p [:km "open: Paprika Recipe Manager"]]
-                 [:b [:km "Edit keyboard shortcuts"]]
+                 [:y [:km "Edit keyboard shortcuts"]]
                  [:a [:km "open: Alfred Preferences"]]
                  [:u [:km "open: Flume"]]
                  [:i [:km "open: Pixave"]]
@@ -408,6 +408,7 @@
                  [:n [:km "Open URL in clipboard in Safari"]]
                  [:g [:km "Centre mouse to active app"]]
                  [:l [:km "Google Searchio selected word"]]
+                 ;[:l [:km "Google Lucky selected word"]] ; TODO: write macro. bind to nice key
                  [:semicolon [:km "Google selected word"]]
                  [:m [:km "Google clipboard"]]
                  [:b {:pkey :button3}] ; Middle click
@@ -435,13 +436,13 @@
                  [:comma  [:km "Add safari link to selected markdown text"]]
                  [:k :return_or_enter]
                  [:z :!Ospacebar] ; Switch language (Russian <-> English)
-                 [:l :!Creturn_or_enter]
                  [:1 [:km "Uppercase selected text"]]
                  [:2 :!COclose_bracket] ; PixelSnap
                  [:3 :!CTOp] ; Sip color picker 
-                 [:n :!Freturn_or_enter]
+                 [:l :!Creturn_or_enter]
+                 [:i :!Freturn_or_enter]
                  [:m :!Sreturn_or_enter]
-                 [:i :!Treturn_or_enter]
+                 [:n :!Treturn_or_enter]
                  [:o :!Oreturn_or_enter]]}
         {:des "gkey (actions)"
          :rules [:g-mode
