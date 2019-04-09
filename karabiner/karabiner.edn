@@ -240,7 +240,7 @@
                  [:caps_lock [:km "open: Preview"]]
                  [:o :!CO7] ; Open Typinator
                  [:h [:km "open: Photos"]]
-                 ;[:semicolon [:km "open: Final Cut Pro"]]
+                 [:semicolon [:km "open: Final Cut Pro"]]
                  [:l [:km "open: ScreenFlow"]]
                  [:period [:km "open: Affinity Photo"]]
                  [:b [:km "open: OBS"]]
@@ -408,7 +408,7 @@
                  [:n [:km "Open URL in clipboard in Safari"]]
                  [:g [:km "Centre mouse to active app"]]
                  [:l [:km "Google Searchio selected word"]]
-                 ;[:l [:km "Google Lucky selected word"]] ; TODO: write macro. bind to nice key
+                 [:u [:km "Google Lucky selected word"]]
                  [:semicolon [:km "Google selected word"]]
                  [:m [:km "Google clipboard"]]
                  [:b {:pkey :button3}] ; Middle click
@@ -440,17 +440,15 @@
                  [:2 :!COclose_bracket] ; PixelSnap
                  [:3 :!CTOp] ; Sip color picker 
                  [:l :!Creturn_or_enter]
-                 [:i :!Freturn_or_enter]
                  [:m :!Sreturn_or_enter]
                  [:n :!Treturn_or_enter]
+                 [:i :!Freturn_or_enter]
                  [:o :!Oreturn_or_enter]]}
         {:des "gkey (actions)"
          :rules [:g-mode
                  [:semicolon :!Cgrave_accent_and_tilde] ; Switch between active windows  (go down)
                  [:i [:km "New Fantastical event"]]
                  [:o [:km "Search events"]]
-                 [:m [:km "Go to test macro"]]
-                 [:period [:km "Test"]]
                  [:w :!CSgrave_accent_and_tilde] ; Switch between active windows (go up)
                  [:q :!CO0] ; Show Dropzone dropdown
                  [:r :!CT3] ; Search bartender menu items
@@ -475,6 +473,7 @@
                  [:i [:km "New Spark email"]]
                  [:g [:alfred "search contacts" "nikivi.search.content"]]
                  [:h [:km "Create new contact"]]
+                 [:spacebar :!COS0] ; Make Typinator snippet from selection
                  [:period [:km "open: FaceTime"]]
                  [:r [:km "open: Caprine"]]
                  [:semicolon [:km "open: Slack"]]
@@ -596,13 +595,14 @@
         {:des "tilkey (actions + words)"
          :rules [:tilde-mode
                  [:h :!CTOx] ; Little Snitch
-                 [:semicolon [:km "Paste active todo"]]
-                 [:l [:km "New SnippetsLab snippet"]]
-                 [:j :!COS0] ; Make Typinator snippet from selection
-                 [:k :!COS9] ; Make Typinator snippet from clipboard
+                 [:n :!COS9] ; Make Typinator snippet from clipboard
                  [:e [:km "Add blog to Reeder"]]
                  ;[:n :!STh] ; Record macro
-                 [:m [:km "Make global macro"]]
+                 [:j [:km "Go to test macro"]]
+                 [:k [:km "Make global macro"]]
+                 [:l [:km "New SnippetsLab snippet"]]
+                 [:semicolon [:km "Test"]]
+                 [:m [:km "Paste active todo"]]
                  [:r [:alfred "restart wifi" "nikivi.wifi.tools"]]
                  [:w [:alfred "toggle wifi" "nikivi.wifi.tools"]]
                  [:i [:km "Commit my wiki"]]]}
@@ -641,12 +641,12 @@
                  [:semicolon [:km "w: Stack Overflow"]]]}
         {:des "capskey (todo + trello)"
          :rules [:caps-mode
-                 [:1 :!TO1] ; New Kap recording
+                 [:1 :!TO1] ; Save picture of screen to Desktop
                  [:2 :!TO2] ; Imgur screenshot
                  [:3 :!TO3] ; Annotate screenshot
                  [:4 :!TO4] ; Show Annotate
-                 [:5 :!TO5] ; Save picture of screen to Desktop
-                 [:6 :!TO6] ; Screenshot + recording options
+                 [:left_gui :!TO7] ; New Kap recording
+                 [:spacebar :!CO5] ; Start/stop ScreenFlow recording
                  [:f [:km "Open Focus Trello"]]
                  [:w [:km "Open Learn Trello"]]
                  [:v [:km "Open Videos Trello"]]
