@@ -108,8 +108,8 @@
                  [:!Ssemicolon :semicolon]]}
         {:des "right cmd -> Alfred"
          :rules [[:right_command :right_command nil {:alone :!CTOSspacebar}]]}
-        {:des "right shift -> Pair Program (Karabiner/VSCodeVim off)"
-         :rules [[:right_shift :right_shift nil {:alone [:km "Pair Program (Karabiner/VSCodeVim on/off)"]}]]}
+        ;{:des "right shift -> Pair Program (Karabiner/VSCodeVim off)"
+        ; :rules [[:right_shift :right_shift nil {:alone [:km "Pair Program (Karabiner/VSCodeVim on/off)"]}]]}
         {:des "jsim"
          :rules [[[:j :k] [:alfred "search google" "net.deanishe.alfred-searchio"]]
                  [[:j :semicolon] [:alfred "search tabs" "net.deanishe.alfred.safari"]]
@@ -646,11 +646,11 @@
                  [:2 :!TO2] ; Imgur screenshot
                  [:3 :!TO3] ; Annotate screenshot
                  [:4 :!TO4] ; Show Annotate
-                 [:left_gui :!TO7] ; New Kap recording
-                 [:spacebar :!CO5] ; Start/stop ScreenFlow recording
+                 [:spacebar :!TO7] ; New Kap recording
+                 [:q :!CO5] ; Start/stop ScreenFlow recording
                  [:f [:km "Open Focus Trello"]]
                  [:w [:km "Open Learn Trello"]]
-                 [:v [:km "Open Videos Trello"]]
+                 [:d [:km "Open Videos Trello"]]
                  [:p [:km "Open Possessions Trello"]]
                  [:comma [:km "Open TV Series Trello"]]
                  [:o [:km "Open Books Trello"]]
@@ -663,8 +663,8 @@
                  [:i [:km "Open 2Do Fix"]]
                  [:y [:km "Open 2Do Try"]]
                  [:s [:km "Open 2Do Ask"]]
-                 [:e [:km "Open Ideas Trello"]]
-                 [:d [:km "Open 2Do Read"]]
+                 [:v [:km "Open Ideas Trello"]]
+                 [:e [:km "Open 2Do Read"]]
                  [:c [:km "Open 2Do Check"]]
                  [:t [:km "Open 2Do Tools"]]
                  [:r [:km "Open 2Do PR"]]
