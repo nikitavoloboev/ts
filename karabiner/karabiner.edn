@@ -75,6 +75,7 @@
                  [:6 :!T6]]}
         {:des "1key (open curated lists)"
          :rules [:1-mode
+                 [:r [:km "edit: Web Searches"]]
                  [:k [:km "list: alfred workflows"]]
                  [:o [:km "list: blogs"]]
                  [:p [:km "list: podcasts"]]
@@ -242,10 +243,10 @@
                  [:h [:km "open: Photos"]]
                  [:semicolon [:km "open: Final Cut Pro"]]
                  [:l [:km "open: ScreenFlow"]]
-                 [:p [:km "open: Affinity Photo"]]
-                 [:period [:km "open: OBS"]]
+                 [:period [:km "open: Affinity Photo"]]
+                 [:b [:km "open: OBS"]]
                  [:comma [:km "open: Arq"]]
-                 [:s [:km "open: Transmission"]]
+                 [:tab [:km "open: Transmission"]]
                  [:p [:km "open: Paprika Recipe Manager"]]
                  [:y [:km "Edit keyboard shortcuts"]]
                  [:a [:km "open: Alfred Preferences"]]
@@ -606,7 +607,8 @@
                  [:m [:km "Paste active todo"]]
                  [:r [:alfred "restart wifi" "nikivi.wifi.tools"]]
                  [:w [:alfred "toggle wifi" "nikivi.wifi.tools"]]
-                 [:i [:km "Commit my wiki"]]]}
+                 [:i [:km "Commit build to learn"]]
+                 [:o [:km "Commit wiki"]]]}
         {:des "xkey (spotify)"
          :rules [:x-mode
                  [:o [:km "Share current song on Twitter"]]
