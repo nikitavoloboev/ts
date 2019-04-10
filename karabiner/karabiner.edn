@@ -441,10 +441,10 @@
                  [:2 :!COclose_bracket] ; PixelSnap
                  [:3 :!CTOp] ; Sip color picker 
                  [:l :!Creturn_or_enter]
-                 [:m :!Sreturn_or_enter]
+                 [:o :!Sreturn_or_enter]
                  [:n :!Treturn_or_enter]
                  [:i :!Freturn_or_enter]
-                 [:o :!Oreturn_or_enter]]}
+                 [:m :!Oreturn_or_enter]]}
         {:des "gkey (actions)"
          :rules [:g-mode
                  [:semicolon :!Cgrave_accent_and_tilde] ; Switch between active windows  (go down)
@@ -648,11 +648,12 @@
                  [:4 :!TO4] ; Show Annotate
                  [:spacebar :!TO7] ; New Kap recording
                  [:q :!CO5] ; Start/stop ScreenFlow recording
+                 [:tab [:km "New ScreenFlow recording (options)"]]
                  [:f [:km "Open Focus Trello"]]
                  [:w [:km "Open Learn Trello"]]
+                 [:g [:km "Open In Control Trello"]]
                  [:d [:km "Open Videos Trello"]]
                  [:p [:km "Open Possessions Trello"]]
-                 [:comma [:km "Open TV Series Trello"]]
                  [:o [:km "Open Books Trello"]]
                  [:h [:km "Open Research Papers Trello"]]
                  [:u [:km "Open Courses Trello"]]

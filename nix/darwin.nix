@@ -44,7 +44,10 @@
       #pkgs.yarn
       #pkgs.clog-cli
       #pkgs.loc
+
+      # ocaml
       #pkgs.ocamlPackages.merlin
+      pkgs.ocamlPackages.utop
 
       # python
       pkgs.python3
