@@ -485,8 +485,11 @@
                  [:l [:km "open: Discord"]]]}
         {:des "vkey (media)"
          :rules [:v-mode
-                 [:a :!CO9] ; Connect/disconnect AirPods
+                 [:e :!CO9] ; Connect/disconnect AirPods
                  [:j :mute]
+                 [:a [:km "Clone repo to ~/src/clones and open with VS Code"]]
+                 [:s [:km "Clone repo to ~/src/clones"]]
+                 [:d [:km "Clone repo to ~/src/clones and open with Sublime Text"]]
                  [:period [:km "Noizio change"]]
                  [:comma [:km "Noizio pick audio device"]]
                  [:semicolon :!TS0] ; Turn on/off Noizio
@@ -601,9 +604,6 @@
                  [:h :!CTOx] ; Little Snitch
                  [:e [:km "Add blog to Reeder"]]
                  ;[:n :!STh] ; Record macro
-                 [:period [:km "Clone repo to ~/src/clones"]]
-                 [:comma [:km "Clone repo to ~/src/clones and open with Sublime Text"]]
-                 [:semicolon [:km "Clone repo to ~/src/clones and open with VS Code"]]
                  [:j [:km "Go to test macro"]]
                  [:k [:km "Test"]]
                  [:m [:km "Make global macro"]]
@@ -662,10 +662,11 @@
                  [:d [:km "Open Videos Trello"]]
                  [:p [:km "Open Possessions Trello"]]
                  [:o [:km "Open Books Trello"]]
-                 [:g [:km "Open Research Papers Trello"]]
+                 [:h [:km "Open Research Papers Trello"]]
                  [:u [:km "Open Courses Trello"]]
                  [:n [:km "Open 2Do Clean"]]
                  [:k [:km "Open 2Do Today"]]
+                 [:g [:km "Open 2Do LA"]]
                  [:period [:km "Open 2Do All"]]
                  [:m [:km "Open 2Do Starred"]]
                  [:i [:km "Open 2Do Fix"]]
