@@ -170,7 +170,7 @@
                  [:period [:km "open: Chrome Canary"]]
                  [:comma [:km "open: Safari Technology Preview"]]
                  [:i [:km "open: Xcode"]]
-                 [:v [:km "open: Spotify"]]
+                 [:c [:km "open: Spotify"]]
                  [:caps_lock [:km "open: Finder"]]
                  [:semicolon [:km "open: Tower"]]
                  [:b [:km "open: BetterTouchTool"]]
@@ -180,8 +180,8 @@
                  [:h [:km "open: Paw"]]
                  [:d [:km "open: MindNode"]]
                  [:p [:km "open: Postico"]]
-                 [:c [:km "open: Sketch"]]
-                 [:m [:km "open: Figma"]]
+                 [:m [:km "open: Sketch"]]
+                 [:v [:km "open: Figma"]]
                  [:g [:km "open: SnippetsLab"]]
                  [:f [:km "open: 2Do"]]
                  [:j [:km "open: iTerm"]]
@@ -566,6 +566,7 @@
          :rules [:c-mode
                  [:j [:km "test: JS"]]
                  [:n [:km "test: TS"]]
+                 [:a [:km "test: Rust"]]
                  [:semicolon [:km "test: Go"]]
                  [:o [:km "test: OCaml"]]
                  [:h [:km "test: Haskell"]]
@@ -639,11 +640,9 @@
                  [:r [:km "w: Arxiv"]]
                  [:a [:km "w: Google"]]
                  [:e [:km "w: Medium"]]
-                 [:u [:km "w: Confluence"]]
                  [:j [:km "w: YouTube"]]
-                 [:i [:km "w: Jira"]]
                  [:o [:km "w: Observable"]]
-                 [:f [:km "w: Bitbucket"]] ; TODO: switch to GitHub (pulls) when it works
+                 ;[:f [:km "w: GitHub (pulls)"]] ; TODO: make it work
                  [:l [:km "w: CodeSandbox"]]
                  [:g [:km "w: regex101"]]
                  [:semicolon [:km "w: Stack Overflow"]]]}
