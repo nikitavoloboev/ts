@@ -160,9 +160,8 @@
   },
   "explorer.confirmDelete": false,
   // python
-  // TODO: update to p3 & nix?
-  "python.pythonPath": "/run/current-system/sw/bin/python",
-  // TODO: maybe there is better?
+  "python.pythonPath": "/run/current-system/sw/bin/python3",
+  // TODO: maybe there is better? It also doesn't work
   "python.formatting.provider": "autopep8",
   "python.linting.pylintEnabled": false,
   "python.linting.flake8Enabled": true,

@@ -467,7 +467,6 @@
                  [:s [:km "Dismiss notifications"]]]}
         {:des "zkey (chat)"
          :rules [:z-mode
-                 [:spacebar :!COS0] ; Make Typinator snippet from selection
                  [:j [:km "New tweet"]]
                  [:n [:km "New tweet with current URL"]]
                  [:v [:km "open: Tweetbot"]]
@@ -486,14 +485,11 @@
                  [:l [:km "open: Discord"]]]}
         {:des "vkey (media)"
          :rules [:v-mode
-                 [:e :!CO9] ; Connect/disconnect AirPods
+                 [:a :!CO9] ; Connect/disconnect AirPods
                  [:j :mute]
                  [:period [:km "Noizio change"]]
                  [:comma [:km "Noizio pick audio device"]]
                  [:semicolon :!TS0] ; Turn on/off Noizio
-                 [:a [:km "Clone repo to ~/src/clones"]]
-                 [:s [:km "Clone repo to ~/src/clones and open with VS Code"]]
-                 [:d [:km "Clone repo to ~/src/clones and open with Sublime Text"]]
                  [:i :display_brightness_decrement]
                  [:o :display_brightness_increment]
                  [:h :vk_consumer_previous]
@@ -599,15 +595,19 @@
                  ;[:a [:p :r :i :n :t :!S9 :!S0 :left_arrow]]]} ; -> print()
         {:des "tilkey (actions + words)"
          :rules [:tilde-mode
+                 [:spacebar :!COS0] ; Make Typinator snippet from selection
+                 [:c :!COS9] ; Make Typinator snippet from clipboard
                  [:h :!CTOx] ; Little Snitch
-                 [:n :!COS9] ; Make Typinator snippet from clipboard
                  [:e [:km "Add blog to Reeder"]]
                  ;[:n :!STh] ; Record macro
+                 [:period [:km "Clone repo to ~/src/clones"]]
+                 [:comma [:km "Clone repo to ~/src/clones and open with Sublime Text"]]
+                 [:semicolon [:km "Clone repo to ~/src/clones and open with VS Code"]]
                  [:j [:km "Go to test macro"]]
-                 [:k [:km "Make global macro"]]
+                 [:k [:km "Test"]]
+                 [:m [:km "Make global macro"]]
                  [:l [:km "New SnippetsLab snippet"]]
-                 [:semicolon [:km "Test"]]
-                 [:m [:km "Paste active todo"]]
+                 [:n [:km "Paste active todo"]]
                  [:r [:alfred "restart wifi" "nikivi.wifi.tools"]]
                  [:w [:alfred "toggle wifi" "nikivi.wifi.tools"]]
                  [:i [:km "Commit build to learn"]]
@@ -632,7 +632,8 @@
         {:des "spacekey (top sites)"
          :rules [:spacebar-mode
                  [:k [:km "w: GitHub"]]
-                 [:n [:km "w: GitHub notifications"]]
+                 [:n [:km "w: GitHub (notifications)"]]
+                 [:m [:km "w: GitHub (issues)"]]
                  [:w [:km "w: AWS"]]
                  [:r [:km "w: Arxiv"]]
                  [:a [:km "w: Google"]]
