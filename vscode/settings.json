@@ -7,9 +7,9 @@
   "breadcrumbs.enabled": true,
   // editor
   "editor.renderLineHighlight": "line",
-  // "editor.codeActionsOnSave": {
-  //   "source.organizeImports": true
-  // },
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true
+  },
   "editor.hideCursorInOverviewRuler": true,
   "editor.scrollBeyondLastLine": false,
   "editor.lineHeight": 26,
@@ -36,7 +36,7 @@
   "workbench.settings.enableNaturalLanguageSearch": false,
   "workbench.colorTheme": "Monokai Night",
   // window
-  "window.zoomLevel": -1,
+  "window.zoomLevel": 0,
   "window.restoreWindows": "all",
   "window.newWindowDimensions": "maximized",
   // debug
@@ -79,7 +79,8 @@
   // code runner
   "code-runner.clearPreviousOutput": true,
   "code-runner.executorMap": {
-    "python": "python3"
+    "python": "python3",
+    "typescript": "ts-node --transpile-only"
   },
   // prettier
   "editor.formatOnSave": true,
