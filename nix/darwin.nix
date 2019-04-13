@@ -37,13 +37,6 @@
       pkgs.cmake
       pkgs.yarn
       pkgs.screenfetch
-      #pkgs.dhall TODO: fix
-      #pkgs.leiningen
-      #pkgs.bat # TODO: fix on darwin. tries to build for long time & fails
-      #pkgs.nodejs-10_x
-      #pkgs.yarn
-      #pkgs.clog-cli
-      #pkgs.loc
 
       # ocaml
       #pkgs.ocamlPackages.merlin
@@ -58,6 +51,16 @@
 
       # haskell
       pkgs.haskellPackages.Agda
+      pkgs.cabal-install
+      
+      # TODO: fix so build on darwin
+      #pkgs.cachix
+      #pkgs.dhall
+      #pkgs.bat
+      #pkgs.yarn
+      #pkgs.clog-cli
+      #pkgs.loc
+
     ];
 
 

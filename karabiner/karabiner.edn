@@ -180,9 +180,9 @@
                  [:h [:km "open: Paw"]]
                  [:d [:km "open: MindNode"]]
                  [:p [:km "open: Postico"]]
-                 [:m [:km "open: Sketch"]]
-                 [:v [:km "open: Figma"]]
-                 [:g [:km "open: SnippetsLab"]]
+                 [:v [:km "open: Sketch"]]
+                 [:m [:km "open: Figma"]]
+                 [:g [:km "open: SnippetsLab"]]v
                  [:f [:km "open: 2Do"]]
                  [:j [:km "open: iTerm"]]
                  [:n [:km "open: Sublime Text"]]
@@ -566,10 +566,10 @@
          :rules [:c-mode
                  [:j [:km "test: JS"]]
                  [:n [:km "test: TS"]]
-                 [:a [:km "test: Rust"]]
+                 [:o [:km "test: Rust"]]
                  [:semicolon [:km "test: Go"]]
-                 [:o [:km "test: OCaml"]]
-                 [:h [:km "test: Haskell"]]
+                 [:i [:km "test: OCaml"]]
+                 [:period [:km "test: Haskell"]]
                  [:m [:km "test: Python"]]
                  [:k [:km "edit: Build to learn server"]]
                  [:l [:km "proj: Build to learn"]]]}
