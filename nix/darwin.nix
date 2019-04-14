@@ -53,7 +53,7 @@
       pkgs.haskellPackages.Agda
       pkgs.cabal-install
       
-      # TODO: fix so build on darwin
+      # # TODO: fix build for darwin
       #pkgs.cachix
       #pkgs.dhall
       #pkgs.bat

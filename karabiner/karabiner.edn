@@ -182,7 +182,7 @@
                  [:p [:km "open: Postico"]]
                  [:v [:km "open: Sketch"]]
                  [:m [:km "open: Figma"]]
-                 [:g [:km "open: SnippetsLab"]]v
+                 [:g [:km "open: SnippetsLab"]]
                  [:f [:km "open: 2Do"]]
                  [:j [:km "open: iTerm"]]
                  [:n [:km "open: Sublime Text"]]
