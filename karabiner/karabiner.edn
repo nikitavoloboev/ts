@@ -564,10 +564,11 @@
                  [:j [:km "test: JS"]]
                  [:n [:km "test: TS"]]
                  [:o [:km "test: Rust"]]
-                 [:semicolon [:km "test: Go"]]
+                 [:m [:km "test: Go"]]
                  [:i [:km "test: OCaml"]]
-                 [:period [:km "test: Haskell"]]
-                 [:m [:km "test: Python"]]
+                 [:comma [:km "test: Haskell"]]
+                 [:period [:km "test: Python"]]
+                 [:semicolon [:km "proj: LA"]]
                  [:k [:km "edit: Build to learn server"]]
                  [:l [:km "proj: Build to learn"]]]}
         {:des "tkey (websites)"
