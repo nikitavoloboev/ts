@@ -31,7 +31,6 @@
              :b-mode {:key :b}
              :n-mode {:key :n}
              :m-mode {:key :m}
-             :tab-mode {:key :tab}
              :spacebar-mode {:key :spacebar}
              :tilde-mode {:key :grave_accent_and_tilde}
              :jsdot-mode {:key :period}
@@ -101,8 +100,10 @@
                  [:k [:km "proj: Knowledge"]]
                  [:i [:km "edit: Zsh functions"]]
                  [:j [:km "edit: Aliases"]]]}
-        {:des "4key (alfred)"
+        {:des "4key (alfred + palettes)"
          :rules [:4-mode
+                 [:k :!SOTf] ; App specific
+                 [:l :!SOTr] ; Personal
                  [:i [:alfred "search ios tabs" "net.deanishe.alfred.safari"]]]}
         {:des "swap : and ;"
          :rules [[:#Psemicolon :!Ssemicolon]
@@ -326,10 +327,6 @@
          :rules [:p-mode
                  [:e [:!Sd :o :n :e]] ; -> Done
                  [:a [:!St :h :a :n :k :s]]]} ; -> Thanks 
-        {:des "tabkey (palettes + alfred)"
-         :rules [:tab-mode
-                 [:k :!SOTf] ; App specific
-                 [:l :!SOTr]]} ; Personal
         {:des "akey (ctrl)"
          :rules [:a-mode
                  [:spacebar :!CT9] ; Search selection on Google
