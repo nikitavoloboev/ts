@@ -180,9 +180,9 @@
                  [:h [:km "open: Paw"]]
                  [:d [:km "open: MindNode"]]
                  [:p [:km "open: Postico"]]
-                 [:m [:km "open: Sketch"]]
+                 [:m [:km "open: Figma"]]
                  [:e [:km "open: Fantastical"]]
-                 [:v [:km "open: Figma"]]
+                 [:v [:km "open: Sketch"]]
                  [:g [:km "open: SnippetsLab"]]
                  [:f [:km "open: 2Do"]]
                  [:j [:km "open: iTerm"]]
@@ -397,8 +397,8 @@
                  [:semicolon [:km "Tasks from apps -> TODO"]]]}
         {:des "dkey (mouse)"
          :rules [:d-mode
-                 [:j {:mkey {:vwheel 100}}] ; Scroll down
-                 [:k {:mkey {:vwheel -100}}] ; Scroll up
+                 [:j {:mkey {:vwheel 60}}] ; Scroll down
+                 [:k {:mkey {:vwheel -60}}] ; Scroll up
                  [:a :!CT6] ; Smart zoom
 			     [:spacebar [:km "Copy and activate previous app"]]
                  [:h [:km "Select line and google"]]
