@@ -175,13 +175,13 @@
                  [:caps_lock [:km "open: Finder"]]
                  [:semicolon [:km "open: Tower"]]
                  [:b [:km "open: BetterTouchTool"]]
-                 [:e [:km "open: Fantastical"]]
                  [:a :!OSC1] ; Open Dash 
                  [:r :!CTOSt] ; Open Trello
                  [:h [:km "open: Paw"]]
                  [:d [:km "open: MindNode"]]
                  [:p [:km "open: Postico"]]
                  [:m [:km "open: Sketch"]]
+                 [:e [:km "open: Fantastical"]]
                  [:v [:km "open: Figma"]]
                  [:g [:km "open: SnippetsLab"]]
                  [:f [:km "open: 2Do"]]
@@ -446,7 +446,8 @@
          :rules [:g-mode
                  [:spacebar :!CT8] ; Search selection in Dictionary (wiki)
                  [:semicolon :!Cgrave_accent_and_tilde] ; Switch between active windows  (go down)
-                 [:i [:km "New Fantastical event"]]
+                 [:j [:km "New Fantastical event"]]
+                 [:i [:km "New Fantastical event (from now)"]]
                  [:o [:km "Search events"]]
                  [:w :!CSgrave_accent_and_tilde] ; Switch between active windows (go up)
                  [:q :!CO0] ; Show Dropzone dropdown
@@ -454,9 +455,7 @@
                  [:d :!COd] ; Show/hide dock
                  [:k :!COSf] ; Maximize window
                  [:n :!CTOg] ; Turn on/off notifications
-                 [:u :!CTO2] ; Full screen app
-                 [:j :!COslash] ; Show/hide notification centre
-                 ;[:m :!CO6] ; Maximize window to next monitor
+                 [:m :!COslash] ; Show/hide notification centre
                  [:a [:km "Go to KM group of current app"]]
                  [:caps_lock [:km "Go to KM group of current app from picklist"]]
                  [:l :!CSOd] ; Move window right
