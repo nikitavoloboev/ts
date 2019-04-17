@@ -21,6 +21,7 @@
       pkgs.direnv
       pkgs.wget
       pkgs.exa
+      pkgs.jq
       pkgs.fzf
       pkgs.httpie
       pkgs.hugo

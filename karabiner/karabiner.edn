@@ -165,15 +165,15 @@
                  [:0 :!CS0]]}
         {:des "wkey (apps)"
          :rules [:w-mode
-                 [:spacebar :!CSO7] ; Search selection with Google Lucky search
+                 [:spacebar :!CT7] ; Start Google search with selection 
                  [:k [:km "open: Safari"]]
                  [:t [:km "open: Activity Monitor"]]
                  [:period [:km "open: Chrome Canary"]]
                  [:comma [:km "open: Safari Technology Preview"]]
-                 [:i [:km "open: Xcode"]]
+                 [:semicolon [:km "open: Tower"]]
                  [:c [:km "open: Spotify"]]
                  [:caps_lock [:km "open: Finder"]]
-                 [:semicolon [:km "open: Tower"]]
+                 [:i [:km "open: Xcode"]]
                  [:b [:km "open: BetterTouchTool"]]
                  [:a :!OSC1] ; Open Dash 
                  [:r :!CTOSt] ; Open Trello
@@ -191,9 +191,9 @@
                  [:o [:km "open: Keyboard Maestro"]]]}
         {:des "ekey (cmd)"
          :rules [:e-mode
+                 [:spacebar :!CSO7] ; Search selection with Google Lucky search
                  [:open_bracket :!Copen_bracket]
                  [:close_bracket :!Cclose_bracket]
-                 [:spacebar :!CT7] ; Start Google search with selection 
                  [:semicolon :!Csemicolon]
                  [:quote :!Cquote]
                  [:comma :!Ccomma]
@@ -466,8 +466,8 @@
                  [:j [:km "New tweet"]]
                  [:n [:km "New tweet with current URL"]]
                  [:v [:km "open: Tweetbot"]]
-                 [:b [:km "open: Whalebird"]]
                  [:f [:km "open: Spark"]]
+                 [:w [:km "open: Contacts"]]
                  [:i [:km "New Spark email"]]
                  [:g [:alfred "search contacts" "nikivi.search.content"]]
                  [:h [:km "Create new contact"]]
