@@ -603,9 +603,10 @@
                  [:e [:km "Add blog to Reeder"]]
                  ;[:n :!STh] ; Record macro
                  [:j [:km "Go to test macro"]]
+                 [:m [:km "Search current safari tab in wiki"]]
                  [:k [:km "Test"]]
-                 [:m [:km "Make global macro"]]
-                 [:l [:km "New SnippetsLab snippet"]]
+                 [:l [:km "Make global macro"]]
+                 [:semicolon [:km "New SnippetsLab snippet"]]
                  [:n [:km "Paste active todo"]]
                  [:r [:alfred "restart wifi" "nikivi.wifi.tools"]]
                  [:w [:alfred "toggle wifi" "nikivi.wifi.tools"]]
@@ -653,7 +654,7 @@
                  [:q :!CO5] ; Start/stop ScreenFlow recording
                  [:tab [:km "New ScreenFlow recording (options)"]]
                  [:f [:km "Open Focus Trello"]]
-                 [:w [:km "Open Learn Trello"]]
+                 [:l [:km "Open Learn Trello"]]
                  [:s [:km "Open Music Trello"]]
                  [:d [:km "Open Videos Trello"]]
                  [:p [:km "Open Possessions Trello"]]
@@ -668,11 +669,10 @@
                  [:i [:km "Open 2Do Fix"]]
                  [:y [:km "Open 2Do Try"]]
                  [:a [:km "Open 2Do Ask"]]
-                 [:v [:km "Open Ideas Trello"]]
+                 [:w [:km "Open Ideas Trello"]]
                  [:e [:km "Open 2Do Read"]]
                  [:c [:km "Open 2Do Check"]]
                  [:t [:km "Open 2Do Tools"]]
                  [:r [:km "Open 2Do PR"]]
                  [:semicolon [:km "todo: clean"]]
-                 [:j [:km "todo: empty"]]
-                 [:l [:km "todo: learn"]]]}]}
+                 [:j [:km "todo: empty"]]]}]}
