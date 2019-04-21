@@ -170,19 +170,19 @@
                  [:t [:km "open: Activity Monitor"]]
                  [:period [:km "open: Chrome Canary"]]
                  [:comma [:km "open: Safari Technology Preview"]]
-                 [:semicolon [:km "open: Tower"]]
-                 [:c [:km "open: Spotify"]]
+                 [:v [:km "open: Spotify"]]
                  [:caps_lock [:km "open: Finder"]]
-                 [:i [:km "open: Xcode"]]
+                 [:semicolon [:km "open: Xcode"]]
+                 [:i [:km "open: Tower"]]
                  [:b [:km "open: BetterTouchTool"]]
                  [:a :!OSC1] ; Open Dash 
                  [:r :!CTOSt] ; Open Trello
-                 [:h [:km "open: Paw"]]
+                 [:c [:km "open: Paw"]]
                  [:d [:km "open: MindNode"]]
                  [:p [:km "open: Postico"]]
                  [:m [:km "open: Figma"]]
                  [:e [:km "open: Fantastical"]]
-                 [:v [:km "open: Sketch"]]
+                 [:h [:km "open: Sketch"]]
                  [:g [:km "open: SnippetsLab"]]
                  [:f [:km "open: 2Do"]]
                  [:j [:km "open: iTerm"]]
@@ -426,10 +426,8 @@
                  [:w :!CTO4] ; Alfred file action
                  [:j [:km "Open 1st iTerm tab"]]
                  [:h [:km "Make markdown link from selection {link}"]]
-                 [:q [:km "Lowercase selected text"]]
                  [:p :!CTOc] ; Sleep
                  [:open_bracket :!CT5] ; Turn display on/off 
-                 [:tab [:km "Uppercase selected text"]]
                  [:slash [:km "edit: Darwin Nix"]]
                  [:comma  [:km "Add safari link to selected markdown text"]]
                  [:k :return_or_enter]
@@ -437,6 +435,7 @@
                  [:1 [:km "Uppercase selected text"]]
                  [:2 :!COclose_bracket] ; PixelSnap
                  [:3 :!CTOp] ; Sip color picker 
+                 [:q [:km "Lowercase selected text"]]
                  [:l :!Creturn_or_enter]
                  [:o :!Sreturn_or_enter]
                  [:n :!Treturn_or_enter]
@@ -569,6 +568,7 @@
                  [:period [:km "test: Python"]]
                  [:semicolon [:km "proj: LA"]]
                  [:k [:km "edit: Build to learn server"]]
+                 [:spacebar [:alfred "search build to learn" "nikivi.private.directories"]]
                  [:l [:km "proj: Build to learn"]]]}
         {:des "tkey (websites)"
          :rules [:t-mode
