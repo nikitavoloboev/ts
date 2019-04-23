@@ -173,17 +173,17 @@
                  [:comma [:km "open: Safari Technology Preview"]]
                  [:v [:km "open: Spotify"]]
                  [:caps_lock [:km "open: Finder"]]
-                 [:semicolon [:km "open: Xcode"]]
-                 [:i [:km "open: Tower"]]
+                 [:i [:km "open: Xcode"]]
+                 [:semicolon [:km "open: Tower"]]
                  [:b [:km "open: BetterTouchTool"]]
                  [:a :!OSC1] ; Open Dash 
                  [:r :!CTOSt] ; Open Trello
-                 [:c [:km "open: Paw"]]
+                 [:h [:km "open: Paw"]]
                  [:d [:km "open: MindNode"]]
                  [:p [:km "open: Postico"]]
                  [:m [:km "open: Figma"]]
                  [:e [:km "open: Fantastical"]]
-                 [:h [:km "open: Sketch"]]
+                 [:c [:km "open: Sketch"]]
                  [:g [:km "open: SnippetsLab"]]
                  [:f [:km "open: 2Do"]]
                  [:j [:km "open: iTerm"]]
@@ -455,19 +455,19 @@
                  [:d :!COd] ; Show/hide dock
                  [:k :!COSf] ; Maximize window
                  [:n :!CTOg] ; Turn on/off notifications
-                 [:s :!COslash] ; Show/hide notification centre
+                 [:m :!COslash] ; Show/hide notification centre
                  [:a [:km "Go to KM group of current app"]]
                  [:caps_lock [:km "Go to KM group of current app from picklist"]]
                  [:l :!CSOd] ; Move window right
                  [:h :!CSOa] ; Move window left
-                 [:m [:km "Dismiss notifications"]]]}
+                 [:s [:km "Dismiss notifications"]]]}
         {:des "zkey (chat)"
          :rules [:z-mode
                  [:j [:km "New tweet"]]
                  [:n [:km "New tweet with current URL"]]
                  [:v [:km "open: Tweetbot"]]
                  [:f [:km "open: Spark"]]
-                 [:w [:km "open: Contacts"]]
+                 [:c [:km "open: Contacts"]]
                  [:i [:km "New Spark email"]]
                  [:g [:alfred "search contacts" "nikivi.search.content"]]
                  [:h [:km "Create new contact"]]
@@ -477,6 +477,7 @@
                  [:k [:km "open: Telegram"]]
                  [:e [:km "open: Telegram"]]
                  [:m [:km "open: Textual"]]
+                 [:w [:km "open: Textual"]]
                  [:o [:km "open: Zoom"]]
                  [:l [:km "open: Discord"]]]}
         {:des "vkey (media)"

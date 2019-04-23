@@ -255,7 +255,7 @@
     "when": "editorTextFocus"
   },
   {
-    "key": "ctrl+n",
+    "key": "ctrl+m",
     "command": "extension.dash.all",
     "when": "editorTextFocus"
   },
