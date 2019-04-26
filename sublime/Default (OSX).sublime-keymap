@@ -23,7 +23,8 @@
   },
 
   { "keys": ["j", "j"], "command": "six_press_key", "args": {"key": "<Esc>"}, "context": [{"key": "six_is_in_insert_mode"}]},
- { "keys": [" ", "a"], "command": "six_press_key", "args": {"key": [":", "w", "q", "<CR>"], "is_interactive": false }, "context": [{ "key": "six_is_in_command_mode" }, {"key": "six_is_accepting_input", "operand": false }]},
+  // TODO: make space + e, do w + q (save & quit), then switch to previous app (like Safari)
+  // { "keys": [" ", "e"], "command": "six_press_key", "args": {"key": [":", "w", "q", "<CR>"], "is_interactive": false }, "context": [{ "key": "six_is_in_command_mode" }, {"key": "six_is_accepting_input", "operand": false }]},
   {
     "keys": [" ", "q"],
     "command": "close",

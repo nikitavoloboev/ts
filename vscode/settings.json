@@ -7,6 +7,7 @@
   "breadcrumbs.enabled": true,
   // editor
   "editor.renderLineHighlight": "line",
+  "editor.gotoLocation.multiple": "goto",
   "editor.codeActionsOnSave": {
     "source.organizeImports": true
   },
@@ -36,7 +37,7 @@
   "workbench.settings.enableNaturalLanguageSearch": false,
   "workbench.colorTheme": "Monokai Night",
   // window
-  "window.zoomLevel": -1,
+  "window.zoomLevel": 0,
   "window.restoreWindows": "all",
   "window.newWindowDimensions": "maximized",
   // debug

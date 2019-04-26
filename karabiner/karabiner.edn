@@ -169,11 +169,11 @@
                  [:spacebar :!CT7] ; Start Google search with selection 
                  [:k [:km "open: Safari"]]
                  [:t [:km "open: Activity Monitor"]]
-                 [:period [:km "open: Chrome Canary"]]
+                 [:i [:km "open: Chrome Canary"]]
                  [:comma [:km "open: Safari Technology Preview"]]
                  [:v [:km "open: Spotify"]]
                  [:caps_lock [:km "open: Finder"]]
-                 [:i [:km "open: Xcode"]]
+                 [:period [:km "open: Xcode"]]
                  [:semicolon [:km "open: Tower"]]
                  [:b [:km "open: BetterTouchTool"]]
                  [:a :!OSC1] ; Open Dash 
@@ -477,7 +477,6 @@
                  [:k [:km "open: Telegram"]]
                  [:e [:km "open: Telegram"]]
                  [:m [:km "open: Textual"]]
-                 [:w [:km "open: Textual"]]
                  [:o [:km "open: Zoom"]]
                  [:l [:km "open: Discord"]]]}
         {:des "vkey (media)"
