@@ -5,6 +5,30 @@ b() {
   git push
 }
 
+e() {
+  if [ $# -eq 0 ]; then
+    code .
+  else
+    code "${1:-.}"
+  fi
+}
+
+s() {
+  if [ $# -eq 0 ]; then
+    subl .
+  else
+    subl "${1:-.}"
+  fi
+}
+
+w() {
+  if [ $# -eq 0 ]; then
+    nvim .
+  else
+    nvim "${1:-.}"
+  fi
+}
+
 # Delete branches that have been squashed and merged into master (https://github.com/not-an-aardvark/git-delete-squashed)
 gdelsquashed() {
   git checkout -q master && git for-each-ref refs/heads/ "--format=%(refname:short)" | while read branch; do mergeBase=$(git merge-base master $branch) && [[ $(git cherry master $(git commit-tree $(git rev-parse $branch^{tree}) -p $mergeBase -m _)) == "-"* ]] && git branch -D $branch; done

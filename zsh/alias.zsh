@@ -22,8 +22,6 @@ alias aet='subl CONTRIBUTING.md'
 alias crypto='curl rate.sx' # Get crypto prices
 alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> public key copied to pasteboard'"
 alias lc='tokei'
-alias rw='open -a "Marked 2" README.md'
-alias mr='open -a "Marked 2"'
 alias _='sudo'
 alias ae='subl README.md' # Edit readme file
 alias yi="python -i"
@@ -37,11 +35,7 @@ alias mc='md-to-alfred'
 alias pd='pandoc'
 alias yt='yotube-dl'
 alias r='rg'
-alias e='nvim'
-alias s='subl'
-alias ss='subl .'
 alias alf='alfred'
-alias ta='touch readme.md'
 alias d='cd'
 alias alert="tput bel" # Bell when the program is finished. i.e. npm install && alert
 # TODO: fk alias to run last cmd as sudo instantly
@@ -52,7 +46,6 @@ alias ka='echo'
 alias rl='curl'
 alias how='howdoi'
 alias ua='unalias'
-alias sudo='sudo '
 alias m='mkdir'
 alias jj='killall tmux'
 alias mm='tldr'
@@ -200,27 +193,13 @@ alias ba="bash"
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
-alias .....="cd ../../../.."
 
 alias cpu='top -o cpu'   # CPU
 alias mem='top -o rsize' # Memory
 
-# macOS
-alias bb='pbcopy'
-
-# Text editors
-alias zr='open -a Preview'
-
 # Apps
 alias can="open -a Google\ Chrome\ Canary"
 alias saf="open -a Safari"
-
-# Code
-alias e='code "${1:-.}"'
-alias ee='code .'
-
-# Vim
-alias w='nvim .' # Current dir
 
 # Edit configs
 alias ew='nvim ~/.dotfiles/nvim/init.vim' # nvimrc

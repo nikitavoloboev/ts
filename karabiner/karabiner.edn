@@ -100,6 +100,7 @@
                  [:m [:km "wiki: Month"]]
                  [:k [:km "proj: Knowledge"]]
                  [:i [:km "edit: Zsh functions"]]
+                 [:r [:km "edit: Darwin Nix"]]
                  [:j [:km "edit: Aliases"]]]}
         {:des "4key (alfred + palettes)"
          :rules [:4-mode
@@ -429,7 +430,6 @@
                  [:h [:km "Make markdown link from selection {link}"]]
                  [:p :!CTOc] ; Sleep
                  [:open_bracket :!CT5] ; Turn display on/off 
-                 [:slash [:km "edit: Darwin Nix"]]
                  [:comma  [:km "Add safari link to selected markdown text"]]
                  [:k :return_or_enter]
                  [:z :!Ospacebar] ; Switch language (Russian <-> English)
