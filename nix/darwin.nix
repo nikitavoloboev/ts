@@ -22,7 +22,6 @@
       pkgs.wget
       pkgs.exa
       pkgs.jq
-      pkgs.httpie
       pkgs.fzf
       pkgs.httpie
       pkgs.hugo

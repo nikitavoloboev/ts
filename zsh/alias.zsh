@@ -209,27 +209,18 @@ alias mem='top -o rsize' # Memory
 alias bb='pbcopy'
 
 # Text editors
-alias xx='open -a Xcode'
-alias x.='open -a Xcode .'
-#alias ae='open -a MacDown readme.md'
-alias we='code'
-alias ww='code .'
-# alias ar="open -a Marked\ 2"
 alias zr='open -a Preview'
 
-# Web
+# Apps
 alias can="open -a Google\ Chrome\ Canary"
 alias saf="open -a Safari"
 
-# Other
-alias pdf='open -a PDF\ Expert'
-alias love="/Applications/love.app/Contents/MacOS/love"
+# Code
+alias e='code "${1:-.}"'
+alias ee='code .'
 
 # Vim
-alias ee='nvim .' # Current dir
-alias ei='nvim index.js'
-alias egi='nvim .gitignore' # TODO: make it zsh func, go to root and then run it
-alias ej='nvim package.json'
+alias w='nvim .' # Current dir
 
 # Edit configs
 alias ew='nvim ~/.dotfiles/nvim/init.vim' # nvimrc
@@ -238,7 +229,7 @@ alias ek='nvim ~/.dotfiles/karabiner/karabiner.edn'
 alias ez='nvim ~/.zshrc'
 
 # cd places
-alias dw='cd ~/Documents/'
+alias doc='cd ~/Documents/'
 alias ds='cd ~/.ssh'
 alias dk='cd ~/Dropbox/Write/knowledge'
 alias dn='cd ~/src/clones'
