@@ -322,7 +322,7 @@
                  [:f [:alfred "search repos" "net.deanishe.alfred-git-repos"]]
                  [:s [:alfred "search clones" "com.vitorgalvao.alfred.directories"]]
                  [:d [:alfred "search desktop" "com.vitorgalvao.alfred.directories"]]
-                 [:j [:alfred "search km macros" "iansinnott.keyboardmaestro"]]
+                 [:j [:alfred "run" "iansinnott.keyboardmaestro"]]
                  [:x [:alfred "search workflows" "org.jeef.workflowdirectory"]]
                  [:k [:alfred "search menu bar" "com.tedwise.menubarsearch"]]]}
         {:des "pkey (words/phrases)"
@@ -438,10 +438,10 @@
                  [:3 :!CTOp] ; Sip color picker 
                  [:q [:km "Lowercase selected text"]]
                  [:l :!Creturn_or_enter]
-                 [:o :!Sreturn_or_enter]
-                 [:n :!Treturn_or_enter]
-                 [:i :!Freturn_or_enter]
-                 [:m :!Oreturn_or_enter]]}
+                 [:m :!Sreturn_or_enter]
+                 [:i :!Treturn_or_enter]
+                 [:n :!Freturn_or_enter]
+                 [:o :!Oreturn_or_enter]]}
         {:des "gkey (actions)"
          :rules [:g-mode
                  [:spacebar :!CT8] ; Search selection in Dictionary (wiki)
