@@ -91,6 +91,7 @@
         {:des "3key (open files + projects)"
          :rules [:3-mode
                  [:l [:km "wiki: Rules"]]
+                 [:t [:km "wiki: Talk notes"]]
                  [:semicolon [:km "wiki: Processes"]]
                  [:g [:km "edit: Git config"]]
                  [:period [:km "edit: Private notes"]]
@@ -169,8 +170,8 @@
          :rules [:w-mode
                  [:spacebar :!CT7] ; Start Google search with selection 
                  [:k [:km "open: Safari"]]
-                 [:t [:km "open: Activity Monitor"]]
                  [:i [:km "open: Chrome Canary"]]
+                 [:t [:km "open: Activity Monitor"]]
                  [:comma [:km "open: Safari Technology Preview"]]
                  [:v [:km "open: Spotify"]]
                  [:caps_lock [:km "open: Finder"]]

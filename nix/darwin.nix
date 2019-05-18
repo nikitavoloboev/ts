@@ -24,7 +24,7 @@
       pkgs.jq
       pkgs.fzf
       pkgs.httpie
-      pkgs.hugo
+      # pkgs.hugo # TODO: update
       pkgs.texlive.combined.scheme-full
       pkgs.nix
       pkgs.clojure
@@ -53,7 +53,7 @@
       # haskell
       pkgs.haskellPackages.Agda
       pkgs.cabal-install
-      
+
       # TODO: fix build for darwin
       #pkgs.cachix
       #pkgs.dhall
@@ -92,5 +92,5 @@
   # Can cause instability in builds if more than 1
   nix.buildCores = 1;
 
-  # TODO: create ~/.hushlogin file to supress login msg on new terminal sessions 
+  # TODO: create ~/.hushlogin file to supress login msg on new terminal sessions
 }
