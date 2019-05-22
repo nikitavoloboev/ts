@@ -182,11 +182,10 @@
                  [:a :!OSC1] ; Open Dash 
                  [:r :!CTOSt] ; Open Trello
                  [:h [:km "open: Paw"]]
-                 [:d [:km "open: MindNode"]]
                  [:p [:km "open: Postico"]]
-                 [:c [:km "open: Figma"]]
+                 [:m [:km "open: Figma"]]
                  [:e [:km "open: Fantastical"]]
-                 [:m [:km "open: Sketch"]]
+                 [:d [:km "open: Sketch"]]
                  [:g [:km "open: SnippetsLab"]]
                  [:f [:km "open: 2Do"]]
                  [:j [:km "open: iTerm"]]
@@ -404,7 +403,8 @@
          :rules [:d-mode
                  [:j {:mkey {:vwheel 60}}] ; Scroll down
                  [:k {:mkey {:vwheel -60}}] ; Scroll up
-                 [:a :!CT6] ; Smart zoom
+                 [:s :!CT6] ; Smart zoom
+                 [:f :!CTf] ; Full screen
 			     [:spacebar [:km "Copy and activate previous app"]]
                  [:h [:km "Select line and google"]]
                  [:i :!Ckeypad_hyphen] ; Zoom out
@@ -415,15 +415,15 @@
                  [:u [:km "Google Lucky selected word"]]
                  [:semicolon [:km "Google selected word"]]
                  [:m [:km "Google clipboard"]]
-                 [:b {:pkey :button3}] ; Middle click
-                 [:z {:pkey :button2}] ; Right click
                  [:v {:pkey :button1}] ; Left click
+                 [:b {:pkey :button3}] ; Middle click
+                 [:a {:pkey :button2}] ; Right click
                  [:comma :!TO9] ; Show Launchpad
                  [:period :!CTO3]]} ; Mission control
         {:des "fkey (essential)"
          :rules [:f-mode
                  [:e :!CO8] ; Alfred clipboard history search
-                 [:semicolon [:km "open: TaskPaper"]]
+                 [:semicolon [:km "open: MindNode"]]
                  [:a [:alfred "new task" "nikivi.todo.task"]]
                  [:s :!COp] ; Make HasteBin link from selection
                  [:period [:km "edit: Karabiner"]]
