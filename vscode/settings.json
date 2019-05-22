@@ -167,8 +167,6 @@
   "python.linting.pylintEnabled": false,
   "python.linting.flake8Enabled": true,
   "python.linting.enabled": false,
-  // latex
-  "latex-workshop.message.update.show": false,
   // TODO: maybe not need?
   // typescript
   "typescript.check.npmIsInstalled": false,
@@ -195,5 +193,8 @@
   },
   // extensions
   "extensions.ignoreRecommendations": true,
-  "extensions.showRecommendationsOnlyOnDemand": true
+  "extensions.showRecommendationsOnlyOnDemand": true,
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }

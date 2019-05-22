@@ -65,6 +65,7 @@
                  [:b :!Sb]
                  [:n :!Sn]
                  [:m :!Sm]
+                 [:caps_lock :!CTO9] ; Search Typinator
                  [:grave_accent_and_tilde [:!Sgrave_accent_and_tilde]] ; -> ~
                  [:1 :!T1]
                  [:2 :!T2]
@@ -380,8 +381,9 @@
                  [:e :tab]
                  [:r :!Stab]
                  [:i :!CTperiod] ; Contexts search active windows
-                 [:o :!CTO9]
-                 [:a :!Cc]
+                 [:o :!COS0] ; Make Typinator snippet from selection
+                 [:p :!COS9] ; Make Typinator snippet from clipboard
+                 [:a :!Cc] ; Copy
                  [:v :left_shift]
                  [:quote [:!Cleft_arrow :!CSright_arrow]] ; Highlight current line 
                  [:w [:!Oleft_arrow :!OSright_arrow]] ; Highlight word
@@ -422,22 +424,22 @@
          :rules [:f-mode
                  [:e :!CO8] ; Alfred clipboard history search
                  [:semicolon [:km "open: TaskPaper"]]
-                 [:s :!COp] ; Make HasteBin link from selection
                  [:a [:alfred "new task" "nikivi.todo.task"]]
+                 [:s :!COp] ; Make HasteBin link from selection
                  [:period [:km "edit: Karabiner"]]
                  [:spacebar [:km "edit: Last tab in iTerm"]]
                  [:w :!CTO4] ; Alfred file action
                  [:j [:km "Open 1st iTerm tab"]]
                  [:h [:km "Make markdown link from selection {link}"]]
                  [:p :!CTOc] ; Sleep
+                 [:z :!Ospacebar] ; Switch language (Russian <-> English)
                  [:open_bracket :!CT5] ; Turn display on/off 
                  [:comma  [:km "Add safari link to selected markdown text"]]
                  [:k :return_or_enter]
-                 [:z :!Ospacebar] ; Switch language (Russian <-> English)
-                 [:1 [:km "Uppercase selected text"]]
-                 [:2 :!COclose_bracket] ; PixelSnap
-                 [:3 :!CTOp] ; Sip color picker 
-                 [:q [:km "Lowercase selected text"]]
+                 [:caps_lock :!COclose_bracket] ; PixelSnap
+                 [:q :!CTOp] ; Sip color picker 
+                 [:1 [:km "Lowercase selected text"]]
+                 [:2 [:km "Uppercase selected text"]]
                  [:l :!Creturn_or_enter]
                  [:m :!Sreturn_or_enter]
                  [:i :!Treturn_or_enter]
@@ -573,8 +575,8 @@
                  [:period [:km "test: Python"]]
                  [:semicolon [:km "proj: LA"]]
                  [:k [:km "edit: Build to learn server"]]
-                 [:spacebar [:alfred "search build to learn" "nikivi.private.directories"]]
-                 [:l [:km "proj: Build to learn"]]]}
+                 [:l [:alfred "search build to learn" "nikivi.private.directories"]]
+                 [:spacebar [:km "proj: Build to learn"]]]}
         {:des "tkey (websites)"
          :rules [:t-mode
                  [:l [:km "w: Repl"]]
@@ -602,8 +604,6 @@
                  ;[:a [:p :r :i :n :t :!S9 :!S0 :left_arrow]]]} ; -> print()
         {:des "tilkey (actions + words)"
          :rules [:tilde-mode
-                 [:spacebar :!COS0] ; Make Typinator snippet from selection
-                 [:c :!COS9] ; Make Typinator snippet from clipboard
                  [:h :!CTOx] ; Little Snitch
                  [:e [:km "Add blog to Reeder"]]
                  ;[:n :!STh] ; Record macro
@@ -671,7 +671,7 @@
                  [:g [:km "Open 2Do LA"]]
                  [:m [:km "Open 2Do Watch"]]
                  [:semicolon [:km "Open 2Do Starred"]]
-                 [:period [:km "Open 2Do All Search"]]
+                 [:period [:km "Search 2Do All"]]
                  [:i [:km "Open 2Do Fix"]]
                  [:a [:km "Open 2Do Ask"]]
                  [:w [:km "Open Ideas Trello"]]
