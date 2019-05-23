@@ -403,7 +403,7 @@
          :rules [:d-mode
                  [:j {:mkey {:vwheel 60}}] ; Scroll down
                  [:k {:mkey {:vwheel -60}}] ; Scroll up
-                 [:s :!CT6] ; Smart zoom
+                 [:a :!CT6] ; Smart zoom
                  [:f :!CTf] ; Full screen
 			     [:spacebar [:km "Copy and activate previous app"]]
                  [:h [:km "Select line and google"]]
@@ -417,7 +417,7 @@
                  [:m [:km "Google clipboard"]]
                  [:v {:pkey :button1}] ; Left click
                  [:b {:pkey :button3}] ; Middle click
-                 [:a {:pkey :button2}] ; Right click
+                 [:z {:pkey :button2}] ; Right click
                  [:comma :!TO9] ; Show Launchpad
                  [:period :!CTO3]]} ; Mission control
         {:des "fkey (essential)"
@@ -673,6 +673,7 @@
                  [:semicolon [:km "Open 2Do Starred"]]
                  [:period [:km "Search 2Do All"]]
                  [:i [:km "Open 2Do Fix"]]
+                 [:t [:km "Open 2Do Later"]]
                  [:a [:km "Open 2Do Ask"]]
                  [:w [:km "Open Ideas Trello"]]
                  [:e [:km "Open 2Do Read"]]
