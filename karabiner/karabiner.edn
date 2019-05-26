@@ -437,9 +437,9 @@
                  [:comma  [:km "Add safari link to selected markdown text"]]
                  [:k :return_or_enter]
                  [:caps_lock :!COclose_bracket] ; PixelSnap
-                 [:q :!CTOp] ; Sip color picker 
                  [:1 [:km "Lowercase selected text"]]
                  [:2 [:km "Uppercase selected text"]]
+                 [:3 :!CTOp] ; Sip color picker 
                  [:l :!Creturn_or_enter]
                  [:m :!Sreturn_or_enter]
                  [:i :!Treturn_or_enter]
@@ -639,13 +639,15 @@
          :rules [:spacebar-mode
                  [:k [:km "w: GitHub"]]
                  [:n [:km "w: GitHub (notifications)"]]
-                 [:m [:km "w: GitHub (issues)"]]
+                 [:u [:km "w: GitHub (issues)"]]
+                 [:o [:km "w: GitHub (assigned issues)"]]
+                 [:i [:km "w: GitHub (assigned prs)"]]
                  [:w [:km "w: AWS"]]
                  [:r [:km "w: Arxiv"]]
                  [:a [:km "w: Google"]]
                  [:e [:km "w: Medium"]]
                  [:j [:km "w: YouTube"]]
-                 [:o [:km "w: Observable"]]
+                 [:s [:km "w: Observable"]]
                  ;[:f [:km "w: GitHub (pulls)"]] ; TODO: make it work
                  [:l [:km "w: CodeSandbox"]]
                  [:g [:km "w: regex101"]]
