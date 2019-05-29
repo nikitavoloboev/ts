@@ -404,8 +404,8 @@
                  [:j {:mkey {:vwheel 60}}] ; Scroll down
                  [:k {:mkey {:vwheel -60}}] ; Scroll up
                  [:a :!CT6] ; Smart zoom
-                 [:s :!CTf] ; Full screen
-			     [:f [:km "Add app to full screen split"]]
+                 [:f :!CTf] ; Full screen
+			     [:s [:km "Add app to full screen split"]]
 			     [:spacebar [:km "Copy and activate previous app"]]
                  [:h [:km "Select line and google"]]
                  [:i :!Ckeypad_hyphen] ; Zoom out
