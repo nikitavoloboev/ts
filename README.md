@@ -1,6 +1,6 @@
 # My configuration files for macOS [![Thanks](http://bit.ly/saythankss)](https://patreon.com/nikitavoloboev)
 
-> Zsh, Karabiner, VS Code, Sublime, Neovim, Nix, Hammerspoon
+> Zsh, Karabiner, VS Code, Sublime, Neovim, Nix
 
 ![](https://i.imgur.com/uKsu94o.png)
 
@@ -16,7 +16,6 @@ You can also see my top used applications, Safari extensions and Alfred workflow
 - [Neovim](#neovim)
 - [VS Code](#vs-code)
 - [Sublime Text](#sublime-text)
-- [Hammerspoon](#hammerspoon)
 - [Zsh](#zsh)
   - [Aliases and functions](#aliases-and-functions)
 - [FZF](#fzf)
@@ -71,10 +70,6 @@ Configs I use for it can be seen [here](https://github.com/nikitavoloboev/dotfil
 I use it primarily to edit markdown files like [my wiki](https://wiki.nikitavoloboev.xyz/other/wiki-workflow). I also edit config files and open large and small files for quick edits.
 
 I use a [few plugins](https://wiki.nikitavoloboev.xyz/text-editors/sublime-text/sublime-text-plugins) together with [Ayu theme](https://github.com/dempfi/ayu).
-
-## Hammerspoon
-
-I don't use [Hammerspoon](http://www.hammerspoon.org/) as extensively however I am looking into implementing more of its features into my workflow.
 
 ## Zsh
 
