@@ -92,6 +92,7 @@
         {:des "3key (open files + projects)"
          :rules [:3-mode
                  [:l [:km "wiki: Rules"]]
+                 [:m [:km "wiki: Summary"]]
                  [:t [:km "wiki: Talk notes"]]
                  [:semicolon [:km "wiki: Processes"]]
                  [:g [:km "edit: Git config"]]
@@ -99,7 +100,7 @@
                  [:u [:km "Search current safari url in wiki"]]
                  [:o [:km "edit: Projects"]]
                  [:n [:km "edit: Now"]]
-                 [:m [:km "wiki: Month"]]
+                 [:h [:km "wiki: Month"]]
                  [:k [:km "proj: Knowledge"]]
                  [:i [:km "edit: Zsh functions"]]
                  [:r [:km "edit: Darwin Nix"]]
