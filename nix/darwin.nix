@@ -34,7 +34,7 @@
       pkgs.tree
       pkgs.kubectl
       pkgs.cloc
-      pkgs.minikube # TODO: update
+      # pkgs.minikube # TODO: update
       pkgs.cmake
       pkgs.yarn
       pkgs.screenfetch

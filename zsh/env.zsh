@@ -12,13 +12,10 @@ export PATH="$PATH:$GOPATH/bin" # Go
 
 export PATH=$PATH:./node_modules/.bin
 
-# TODO: remove?
+# TODO: remove? ask on nix irc or nix darwin
 . "$HOME/.nix-profile/etc/profile.d/hm-session-vars.sh"
 
 eval "$(hub alias -s)"
-
-# node.js ver. manager (https://github.com/Schniz/fnm)
-eval `fnm env`
 
 # TODO: change my pure prompt if I am in direnv env
 # look at the existing prompt and use below function as it returns needed info

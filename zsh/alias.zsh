@@ -140,6 +140,7 @@ alias ir='npm run'
 alias ire='npm remove'
 alias is='npm start'
 alias dev='npm run dev'
+alias igl='npm list -g --depth 0'
 
 # Go
 alias o='go'
