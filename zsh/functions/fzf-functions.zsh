@@ -1,8 +1,3 @@
-# Pipe command to fzf. f <cmd>
-f(){
-  "$@" | fzf
-}
-
 unalias z 2> /dev/null # Unbind z
 # z command + fzf
 z() {

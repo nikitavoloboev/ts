@@ -36,7 +36,7 @@
       pkgs.cloc
       # pkgs.minikube # TODO: update
       pkgs.cmake
-      pkgs.yarn
+      # pkgs.yarn
       pkgs.screenfetch
 
       # ocaml

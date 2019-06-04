@@ -162,20 +162,12 @@
     "when": "editorTextFocus"
   },
   {
-    "key": "shift+cmd+n",
-    "command": "newFile.createNewFile"
-  },
-  {
     "key": "ctrl+j",
     "command": "workbench.action.previousEditor"
   },
   {
     "key": "ctrl+k",
     "command": "workbench.action.nextEditor"
-  },
-  {
-    "key": "shift+cmd+g",
-    "command": "extension.copyGitHubLinkToClipboard"
   },
   {
     "key": "ctrl+b",
@@ -197,11 +189,6 @@
     "key": "ctrl+r",
     "command": "-workbench.action.quickOpenNavigateNextInRecentFilesPicker",
     "when": "inQuickOpen && inRecentFilesPicker"
-  },
-  {
-    "key": "ctrl+r",
-    "command": "-extension.vim_ctrl+r",
-    "when": "editorTextFocus && vim.active && vim.use<C-r> && !inDebugRepl"
   },
   {
     "key": "ctrl+w",
@@ -242,26 +229,6 @@
   {
     "key": "alt+cmd+l",
     "command": "-bookmarks.jumpToNext",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "ctrl+h",
-    "command": "-extension.dash.specific",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "ctrl+shift+h",
-    "command": "-extension.dash.emptySyntax",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "ctrl+m",
-    "command": "extension.dash.all",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "ctrl+alt+h",
-    "command": "-extension.dash.all",
     "when": "editorTextFocus"
   },
   {
@@ -357,11 +324,6 @@
     "key": "cmd+.",
     "command": "-editor.action.quickFix",
     "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "cmd+m",
-    "command": "-markdown.extension.editing.toggleMath",
-    "when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
   },
   {
     "key": "shift+cmd+'",

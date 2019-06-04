@@ -384,7 +384,7 @@
                  [:p :!COS9] ; Make Typinator snippet from clipboard
                  [:a :!Cc] ; Copy
                  [:v :left_shift]
-                 [:u :!COp] ; Make HasteBin link from selection
+                 [:t :!COp] ; Make HasteBin link from selection
                  [:quote [:!Cleft_arrow :!CSright_arrow]] ; Highlight current line 
                  [:w [:!Oleft_arrow :!OSright_arrow]] ; Highlight word
                  [:d :delete_or_backspace]
@@ -428,6 +428,7 @@
                  [:semicolon [:km "open: MindNode"]]
                  [:a [:alfred "new task" "nikivi.todo.task"]]
                  [:period [:km "edit: Karabiner"]]
+                 [:s [:km "edit: clones"]]
                  [:w :!CTO4] ; Alfred file action
                  [:j [:km "Open 1st iTerm tab"]]
                  [:h [:km "Make markdown link from selection {link}"]]
@@ -569,14 +570,13 @@
                  [:grave_accent_and_tilde [:alfred "search dash" "com.nikivi.own.dash" "tldr: "]]]}
         {:des "ckey (test)"
          :rules [:c-mode
-                 [:semicolon [:km "test: JS"]]
+                 [:j [:km "test: JS"]]
                  [:n [:km "test: TS"]]
                  [:o [:km "test: Rust"]]
                  [:m [:km "test: Go"]]
                  [:i [:km "test: OCaml"]]
                  [:comma [:km "test: Haskell"]]
                  [:period [:km "test: Python"]]
-                 [:j [:km "edit: clones"]]
                  [:k [:km "edit: Build to learn server"]]
                  [:l [:alfred "search build to learn" "nikivi.private.directories"]]
                  [:spacebar [:km "proj: Build to learn"]]]}
@@ -673,7 +673,8 @@
                  [:k [:km "Open 2Do Today"]]
                  [:t [:km "Open 2Do Tomorrow"]]
                  [:g [:km "Open 2Do Life"]]
-                 [:a [:km "Open 2Do LA"]]
+                 [:quote [:km "Open 2Do LA"]]
+                 [:slash [:km "Open 2Do Gyana"]]
                  [:h [:km "Open 2Do Watch"]]
                  [:b [:km "Open 2Do Blog"]]
                  [:y [:km "Open 2Do Buy"]]
