@@ -32,6 +32,7 @@
              :m-mode {:key :m}
              :spacebar-mode {:key :spacebar}
              :tilde-mode {:key :grave_accent_and_tilde}
+             :comma-mode {:key :comma}
              :jsdot-mode {:key :period}
              ;:godot-mode {:key :period}
              ;:pydot-mode {:key :period}
@@ -65,6 +66,8 @@
                  [:n :!Sn]
                  [:m :!Sm]
                  [:caps_lock :!CTO9] ; Search Typinator
+                 [:left_gui [:d :o :n :e]] ; -> done
+                 [:tab [:t :h :a :n :k :s]] ; -> thanks 
                  [:grave_accent_and_tilde [:!Sgrave_accent_and_tilde]] ; -> ~
                  [:1 :!T1]
                  [:2 :!T2]
@@ -573,26 +576,18 @@
                  [:k [:km "edit: Build to learn server"]]
                  [:l [:alfred "search build to learn" "nikivi.private.directories"]]
                  [:spacebar [:km "proj: Build to learn"]]]}
-        {:des "tkey (websites)"
+        {:des "tkey (words)"
          :rules [:t-mode
-                 [:l [:km "w: Repl"]]
-                 [:o [:km "w: Dropbox"]]
-                 [:h [:km "w: Twitch"]]
-                 [:i [:km "w: IFTTT"]]
-                 [:o [:km "w: Google Drive"]]
-                 [:z [:km "w: MDN"]]
-                 [:period [:km "w: Netlify"]]
-                 [:k [:km "w: Kaggle"]]
-                 [:w [:km "w: WakaTime"]]
-                 [:n [:km "w: NPM"]]
-                 [:spacebar :!COSr]]} ; Google Translate selected text
+                 [:d [:d :o :n :e]] ; -> done
+                 [:a [:t :h :a :n :k :s]]]} ; -> thanks 
          {:des "jskey"
           :rules [:jsdot-mode
-                  [:q [:d :o :n :e]] ; -> done
-                  [:caps_lock [:t :h :a :n :k :s]] ; -> thanks 
                   [:spacebar [:km "VSCode/XCode/Sublime comment with TODO"]]
-                  [:left_gui [:!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> TODO:
-                  [:d [:!Sa :spacebar :slash :slash :spacebar :!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> // TODO:
+                  [:left_gui [:!Sa :spacebar :slash :slash :spacebar :!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> // TODO:
+                  [:grave_accent_and_tilde [:!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> TODO:
+
+                  ; JS
+                  [:d [:!Sopen_bracket :c :o :n :s :o :l :e :period :l :o :g :!S9 :!S0 :!Sclose_bracket :left_arrow :left_arrow]] ; -> {console.log()}
                   [:s [:equal_sign :!Speriod :spacebar]] ; -> =>
                   [:e [:r :e :t :u :r :n :spacebar]] ; -> return
                   [:r [:r :e :t :u :r :n :spacebar :!Sopen_bracket :!Sclose_bracket :left_arrow :return_or_enter]] ; -> return {}
@@ -653,6 +648,19 @@
                  [:l [:km "w: CodeSandbox"]]
                  [:g [:km "w: regex101"]]
                  [:semicolon [:km "w: Stack Overflow"]]]}
+        {:des "commakey (websites)"
+         :rules [:comma-mode
+                 [:r [:km "w: Repl"]]
+                 [:o [:km "w: Dropbox"]]
+                 [:j [:km "w: Twitch"]]
+                 [:i [:km "w: IFTTT"]]
+                 [:o [:km "w: Google Drive"]]
+                 [:z [:km "w: MDN"]]
+                 [:period [:km "w: Netlify"]]
+                 [:k [:km "w: Kaggle"]]
+                 [:w [:km "w: WakaTime"]]
+                 [:n [:km "w: NPM"]]
+                 [:spacebar :!COSr]]} ; Google Translate selected text
         {:des "capskey (todo + trello)"
          :rules [:caps-mode
                  [:1 :!TO1] ; Save picture of screen to Desktop
