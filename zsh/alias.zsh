@@ -102,6 +102,7 @@ alias ws='workflow-install -s workflow' # Symlink `source` directory
 
 # Docker
 alias c='docker'
+alias cs='docker ps'
 # alias cr='docker rm'
 # alias cc='docker compose'
 # alias cg='docker logs'

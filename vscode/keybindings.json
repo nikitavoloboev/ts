@@ -170,7 +170,7 @@
     "command": "workbench.action.nextEditor"
   },
   {
-    "key": "ctrl+b",
+    "key": "ctrl+o",
     "command": "bookmarks.toggle"
   },
   {
@@ -189,11 +189,6 @@
     "key": "ctrl+r",
     "command": "-workbench.action.quickOpenNavigateNextInRecentFilesPicker",
     "when": "inQuickOpen && inRecentFilesPicker"
-  },
-  {
-    "key": "ctrl+w",
-    "command": "editor.action.previewDeclaration",
-    "when": "editorHasDefinitionProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
   },
   {
     "key": "alt+f12",
@@ -222,7 +217,7 @@
     "command": "-workbench.view.explorer"
   },
   {
-    "key": "ctrl+v",
+    "key": "ctrl+w",
     "command": "bookmarks.jumpToNext",
     "when": "editorTextFocus"
   },
@@ -278,7 +273,7 @@
     "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
   },
   {
-    "key": "ctrl+.",
+    "key": "ctrl+m",
     "command": "references-view.find",
     "when": "editorHasReferenceProvider"
   },
@@ -330,11 +325,6 @@
     "command": "toggleVim"
   },
   {
-    "key": "ctrl+n",
-    "command": "editor.action.triggerSuggest",
-    "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
-  },
-  {
     "key": "ctrl+space",
     "command": "-editor.action.triggerSuggest",
     "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
@@ -352,5 +342,22 @@
     "key": "ctrl+o",
     "command": "workbench.action.quickOpenSelectNext",
     "when": "inQuickOpen"
+  },
+  {
+    "key": "ctrl+w",
+    "command": "-workbench.action.switchWindow"
+  },
+  {
+    "key": "ctrl+q",
+    "command": "-workbench.action.quickOpenView"
+  },
+  {
+    "key": "alt+f12",
+    "command": "-editor.action.peekDefinition",
+    "when": "editorHasDefinitionProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
+  },
+  {
+    "key": "ctrl+m",
+    "command": "bookmarks.listFromAllFiles"
   }
 ]

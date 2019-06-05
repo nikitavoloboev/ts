@@ -18,7 +18,6 @@
              :t-mode {:key :t}
              :i-mode {:key :i}
              :o-mode {:key :o}
-             :p-mode {:key :p}
              :a-mode {:key :a}
              :s-mode {:key :s}
              :d-mode {:key :d}
@@ -326,10 +325,6 @@
                  [:j [:alfred "run" "iansinnott.keyboardmaestro"]]
                  [:x [:alfred "search workflows" "org.jeef.workflowdirectory"]]
                  [:k [:alfred "search menu bar" "com.tedwise.menubarsearch"]]]}
-        {:des "pkey (words/phrases)"
-         :rules [:p-mode
-                 [:e [:!Sd :o :n :e]] ; -> Done
-                 [:a [:!St :h :a :n :k :s]]]} ; -> Thanks 
         {:des "akey (ctrl)"
          :rules [:a-mode
                  [:spacebar :!CT9] ; Search selection on Google
@@ -595,9 +590,13 @@
                  [:spacebar :!COSr]]} ; Google Translate selected text
          {:des "jskey"
           :rules [:jsdot-mode
+                  [:q [:d :o :n :e]] ; -> done
+                  [:caps_lock [:t :h :a :n :k :s]] ; -> thanks 
                   [:s [:equal_sign :!Speriod :spacebar]] ; -> =>
                   [:e [:r :e :t :u :r :n :spacebar]] ; -> return
                   [:r [:r :e :t :u :r :n :spacebar :!Sopen_bracket :!Sclose_bracket :left_arrow :return_or_enter]] ; -> return {}
+                  [:q [:j :a :v :s :c :r :i :p :t :spacebar]] ; -> javascript
+                  [:w [:t :y :p :e :s :c :r :i :p :t :spacebar]] ; -> typescript 
                   [:a [:c :o :n :s :o :l :e :period :l :o :g :!S9 :!S0 :left_arrow]]]} ; -> console.log()
         ; {:des "gokey"
         ;  :rules[:godot-mode
@@ -605,7 +604,7 @@
         ;{:des "pykey"
           ;:rules[:pydot-mode
                  ;[:a [:p :r :i :n :t :!S9 :!S0 :left_arrow]]]} ; -> print()
-        {:des "tilkey (actions + words)"
+        {:des "tilkey (actions)"
          :rules [:tilde-mode
                  [:h :!CTOx] ; Little Snitch
                  [:e [:km "Add blog to Reeder"]]
