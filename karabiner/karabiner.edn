@@ -72,6 +72,20 @@
                  [:4 :!T4]
                  [:5 :!T5]
                  [:6 :!T6]]}
+        {:des "swap : and ;"
+         :rules [[:#Psemicolon :!Ssemicolon]
+                 [:!Ssemicolon :semicolon]]}
+        {:des "right cmd -> Alfred"
+         :rules [[:right_command :right_command nil {:alone :!CTOSspacebar}]]}
+        ;{:des "right shift -> Pair Program (Karabiner/VSCodeVim off)"
+        ; :rules [[:right_shift :right_shift nil {:alone [:km "Pair Program (Karabiner/VSCodeVim on/off)"]}]]}
+        {:des "jsim"
+         :rules [[[:j :k] [:alfred "search google" "net.deanishe.alfred-searchio"]]
+                 [[:j :semicolon] [:alfred "search tabs" "net.deanishe.alfred.safari"]]
+                 [[:j :l] :!CTOSspacebar]]} ; Alfred
+        {:des "ksim"
+         :rules [[[:k :l] [:alfred "search dash" "com.nikivi.own.dash"]]
+                 [[:k :m] [:alfred "search youtube" "net.deanishe.alfred-searchio"]]]}
         {:des "1key (open curated lists)"
          :rules [:1-mode
                  [:r [:km "edit: Web Searches"]]
@@ -109,20 +123,6 @@
                  [:k :!SOTf] ; App specific
                  [:l :!SOTr] ; Personal
                  [:i [:alfred "search ios tabs" "net.deanishe.alfred.safari"]]]}
-        {:des "swap : and ;"
-         :rules [[:#Psemicolon :!Ssemicolon]
-                 [:!Ssemicolon :semicolon]]}
-        {:des "right cmd -> Alfred"
-         :rules [[:right_command :right_command nil {:alone :!CTOSspacebar}]]}
-        ;{:des "right shift -> Pair Program (Karabiner/VSCodeVim off)"
-        ; :rules [[:right_shift :right_shift nil {:alone [:km "Pair Program (Karabiner/VSCodeVim on/off)"]}]]}
-        {:des "jsim"
-         :rules [[[:j :k] [:alfred "search google" "net.deanishe.alfred-searchio"]]
-                 [[:j :semicolon] [:alfred "search tabs" "net.deanishe.alfred.safari"]]
-                 [[:j :l] :!CTOSspacebar]]} ; Alfred
-        {:des "ksim"
-         :rules [[[:k :l] [:alfred "search dash" "com.nikivi.own.dash"]]
-                 [[:k :m] [:alfred "search youtube" "net.deanishe.alfred-searchio"]]]}
         {:des "qkey (cmd + shift)"
          :rules [:q-mode
                  [:open_bracket :!CSopen_bracket]
@@ -269,8 +269,6 @@
                  [:r :!Squote]
                  [:d :backslash]
                  [:x :!Sbackslash]
-                 [:left_command [:slash :slash :spacebar :!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> // TODO:
-                 [:b [:!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> TODO:
                  [:l [:hyphen :!Speriod :spacebar]] ; -> arrow (->)
                  [:grave_accent_and_tilde [:slash :slash :spacebar]] ; -> //
                  [:caps_lock [:km "Match symbols"]]
@@ -592,6 +590,9 @@
           :rules [:jsdot-mode
                   [:q [:d :o :n :e]] ; -> done
                   [:caps_lock [:t :h :a :n :k :s]] ; -> thanks 
+                  [:spacebar [:km "VSCode/XCode/Sublime comment with TODO"]]
+                  [:left_gui [:!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> TODO:
+                  [:d [:!Sa :spacebar :slash :slash :spacebar :!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> // TODO:
                   [:s [:equal_sign :!Speriod :spacebar]] ; -> =>
                   [:e [:r :e :t :u :r :n :spacebar]] ; -> return
                   [:r [:r :e :t :u :r :n :spacebar :!Sopen_bracket :!Sclose_bracket :left_arrow :return_or_enter]] ; -> return {}
@@ -638,7 +639,7 @@
         {:des "spacekey (top sites)"
          :rules [:spacebar-mode
                  [:k [:km "w: GitHub"]]
-                 [:n [:km "w: GitHub (notifications)"]]
+                 [:i [:km "w: GitHub (notifications)"]]
                  [:u [:km "w: GitHub (issues)"]]
                  [:o [:km "w: GitHub (assigned issues)"]]
                  [:i [:km "w: GitHub (assigned prs)"]]
