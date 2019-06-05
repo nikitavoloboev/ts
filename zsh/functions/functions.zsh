@@ -1,8 +1,5 @@
 # Temp
 b() {
-  git add LICENSE
-  git commit -m 'license: update'
-  git push
 }
 
 e() {
@@ -68,11 +65,6 @@ un(){
 uz(){
   antibody bundle <~/.dotfiles/zsh/plugins.txt >~/.zsh_plugins.sh
   antibody update
-}
-
-# Pipe command to clipboard. l <cmd>
-l(){
-  "$@" | pbcopy
 }
 
 # npm install. npm install <cmd>

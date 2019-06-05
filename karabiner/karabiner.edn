@@ -67,7 +67,7 @@
                  [:m :!Sm]
                  [:caps_lock :!CTO9] ; Search Typinator
                  [:left_gui [:d :o :n :e]] ; -> done
-                 [:tab [:t :h :a :n :k :s]] ; -> thanks 
+                 [:tab [:t :h :a :n :k :s]] ; -> thanks
                  [:grave_accent_and_tilde [:!Sgrave_accent_and_tilde]] ; -> ~
                  [:1 :!T1]
                  [:2 :!T2]
@@ -80,8 +80,8 @@
                  [:!Ssemicolon :semicolon]]}
         {:des "right cmd -> Alfred"
          :rules [[:right_command :right_command nil {:alone :!CTOSspacebar}]]}
-        ;{:des "right shift -> Pair Program (Karabiner/VSCodeVim off)"
-        ; :rules [[:right_shift :right_shift nil {:alone [:km "Pair Program (Karabiner/VSCodeVim on/off)"]}]]}
+        {:des "right shift -> Pair Program (Karabiner/VSCodeVim off)"
+         :rules [[:right_shift :right_shift nil {:alone [:km "Pair Program (Karabiner/VSCodeVim on/off)"]}]]}
         {:des "jsim"
          :rules [[[:j :k] [:alfred "search google" "net.deanishe.alfred-searchio"]]
                  [[:j :semicolon] [:alfred "search tabs" "net.deanishe.alfred.safari"]]
@@ -172,7 +172,7 @@
                  [:0 :!CS0]]}
         {:des "wkey (apps)"
          :rules [:w-mode
-                 [:spacebar :!CT7] ; Start Google search with selection 
+                 [:spacebar :!CT7] ; Start Google search with selection
                  [:k [:km "open: Safari"]]
                  [:i [:km "open: Chrome Canary"]]
                  [:t [:km "open: Activity Monitor"]]
@@ -182,7 +182,7 @@
                  [:period [:km "open: Xcode"]]
                  [:semicolon [:km "open: Tower"]]
                  [:b [:km "open: BetterTouchTool"]]
-                 [:a :!OSC1] ; Open Dash 
+                 [:a :!OSC1] ; Open Dash
                  [:r :!CTOSt] ; Open Trello
                  [:h [:km "open: Paw"]]
                  [:p [:km "open: Postico"]]
@@ -381,7 +381,7 @@
                  [:a :!Cc] ; Copy
                  [:v :left_shift]
                  [:t :!COp] ; Make HasteBin link from selection
-                 [:quote [:!Cleft_arrow :!CSright_arrow]] ; Highlight current line 
+                 [:quote [:!Cleft_arrow :!CSright_arrow]] ; Highlight current line
                  [:w [:!Oleft_arrow :!OSright_arrow]] ; Highlight word
                  [:d :delete_or_backspace]
                  [:f :return_or_enter]
@@ -402,8 +402,8 @@
                  [:k {:mkey {:vwheel -60}}] ; Scroll up
                  [:a :!CT6] ; Smart zoom
                  [:f :!CTf] ; Full screen
-			     [:s [:km "Add app to full screen split"]]
-			     [:spacebar [:km "Copy and activate previous app"]]
+                 [:s [:km "Add app to full screen split"]]
+                 [:spacebar [:km "Copy and activate previous app"]]
                  [:h [:km "Select line and google"]]
                  [:i :!Ckeypad_hyphen] ; Zoom out
                  [:o :!Ckeypad_plus] ; Zoom in
@@ -431,13 +431,13 @@
                  [:spacebar [:km "edit: Last tab in iTerm"]]
                  [:p :!CTOc] ; Sleep
                  [:z :!Ospacebar] ; Switch language (Russian <-> English)
-                 [:open_bracket :!CT5] ; Turn display on/off 
+                 [:open_bracket :!CT5] ; Turn display on/off
                  [:comma  [:km "Add safari link to selected markdown text"]]
                  [:k :return_or_enter]
                  [:caps_lock :!COclose_bracket] ; PixelSnap
                  [:1 [:km "Lowercase selected text"]]
                  [:2 [:km "Uppercase selected text"]]
-                 [:3 :!CTOp] ; Sip color picker 
+                 [:3 :!CTOp] ; Sip color picker
                  [:l :!Creturn_or_enter]
                  [:m :!Sreturn_or_enter]
                  [:i :!Treturn_or_enter]
@@ -545,7 +545,7 @@
         {:des "mkey (dash)"
          :rules [:m-mode
                  [:spacebar [:alfred "search dash profiles" "nikivi.dash.profiles"]]
-                 [:caps_lock [:alfred "search dash" "com.nikivi.own.dash" "man: "]] 
+                 [:caps_lock [:alfred "search dash" "com.nikivi.own.dash" "man: "]]
                  [:c [:alfred "search dash" "com.nikivi.own.dash" "css: "]]
                  [:t [:alfred "search dash" "com.nikivi.own.dash" "python: "]]
                  [:f [:alfred "search dash" "com.nikivi.own.dash" "go: "]]
@@ -579,12 +579,12 @@
         {:des "tkey (words)"
          :rules [:t-mode
                  [:d [:d :o :n :e]] ; -> done
-                 [:a [:t :h :a :n :k :s]]]} ; -> thanks 
+                 [:a [:t :h :a :n :k :s]]]} ; -> thanks
          {:des "jskey"
           :rules [:jsdot-mode
-                  [:spacebar [:km "VSCode/XCode/Sublime comment with TODO"]]
-                  [:left_gui [:!Sa :spacebar :slash :slash :spacebar :!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> // TODO:
-                  [:grave_accent_and_tilde [:!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> TODO:
+                  [:caps_lock [:km "VSCode/XCode/Sublime comment with TODO"]]
+                  [:grave_accent_and_tilde [:!Sa :spacebar :slash :slash :spacebar :!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> // TODO:
+                  [:tab [:!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> TODO:
 
                   ; JS
                   [:d [:!Sopen_bracket :c :o :n :s :o :l :e :period :l :o :g :!S9 :!S0 :!Sclose_bracket :left_arrow :left_arrow]] ; -> {console.log()}
@@ -592,7 +592,7 @@
                   [:e [:r :e :t :u :r :n :spacebar]] ; -> return
                   [:r [:r :e :t :u :r :n :spacebar :!Sopen_bracket :!Sclose_bracket :left_arrow :return_or_enter]] ; -> return {}
                   [:q [:j :a :v :s :c :r :i :p :t :spacebar]] ; -> javascript
-                  [:w [:t :y :p :e :s :c :r :i :p :t :spacebar]] ; -> typescript 
+                  [:w [:t :y :p :e :s :c :r :i :p :t :spacebar]] ; -> typescript
                   [:a [:c :o :n :s :o :l :e :period :l :o :g :!S9 :!S0 :left_arrow]]]} ; -> console.log()
         ; {:des "gokey"
         ;  :rules[:godot-mode
