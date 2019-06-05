@@ -32,7 +32,6 @@
              :m-mode {:key :m}
              :spacebar-mode {:key :spacebar}
              :tilde-mode {:key :grave_accent_and_tilde}
-             :comma-mode {:key :comma}
              :jsdot-mode {:key :period}
              ;:godot-mode {:key :period}
              ;:pydot-mode {:key :period}
@@ -66,8 +65,6 @@
                  [:n :!Sn]
                  [:m :!Sm]
                  [:caps_lock :!CTO9] ; Search Typinator
-                 [:left_gui [:d :o :n :e]] ; -> done
-                 [:tab [:t :h :a :n :k :s]] ; -> thanks
                  [:grave_accent_and_tilde [:!Sgrave_accent_and_tilde]] ; -> ~
                  [:1 :!T1]
                  [:2 :!T2]
@@ -576,21 +573,20 @@
                  [:k [:km "edit: Build to learn server"]]
                  [:l [:alfred "search build to learn" "nikivi.private.directories"]]
                  [:spacebar [:km "proj: Build to learn"]]]}
-        {:des "tkey (words)"
-         :rules [:t-mode
-                 [:d [:d :o :n :e]] ; -> done
-                 [:a [:t :h :a :n :k :s]]]} ; -> thanks
          {:des "jskey"
           :rules [:jsdot-mode
-                  [:caps_lock [:km "VSCode/XCode/Sublime comment with TODO"]]
-                  [:grave_accent_and_tilde [:!Sa :spacebar :slash :slash :spacebar :!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> // TODO:
-                  [:tab [:!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> TODO:
+                  [:spacebar [:km "VSCode/XCode/Sublime comment on top of line with TODO"]]
+                  [:caps_lock [:!Sa :spacebar :slash :slash :spacebar :!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> // TODO: (on same line)
+                  [:d [:!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> TODO:
+                  [:f [:!Cf :!St :!So :!Sd :!So :!Ssemicolon :return_or_enter]] ; -> search TODO: in file
+                  [:g [:!CSf :!St :!So :!Sd :!So :!Ssemicolon :return_or_enter]] ; -> search TODO: globally
+                  [:e [:t :h :a :n :k :s]] ; -> thanks
 
                   ; JS
                   [:d [:!Sopen_bracket :c :o :n :s :o :l :e :period :l :o :g :!S9 :!S0 :!Sclose_bracket :left_arrow :left_arrow]] ; -> {console.log()}
                   [:s [:equal_sign :!Speriod :spacebar]] ; -> =>
-                  [:e [:r :e :t :u :r :n :spacebar]] ; -> return
-                  [:r [:r :e :t :u :r :n :spacebar :!Sopen_bracket :!Sclose_bracket :left_arrow :return_or_enter]] ; -> return {}
+                  [:r [:r :e :t :u :r :n :spacebar]] ; -> return
+                  [:t [:r :e :t :u :r :n :spacebar :!Sopen_bracket :!Sclose_bracket :left_arrow :return_or_enter]] ; -> return {}
                   [:q [:j :a :v :s :c :r :i :p :t :spacebar]] ; -> javascript
                   [:w [:t :y :p :e :s :c :r :i :p :t :spacebar]] ; -> typescript
                   [:a [:c :o :n :s :o :l :e :period :l :o :g :!S9 :!S0 :left_arrow]]]} ; -> console.log()
@@ -648,8 +644,8 @@
                  [:l [:km "w: CodeSandbox"]]
                  [:g [:km "w: regex101"]]
                  [:semicolon [:km "w: Stack Overflow"]]]}
-        {:des "commakey (websites)"
-         :rules [:comma-mode
+        {:des "tkey (websites)"
+         :rules [:t-mode
                  [:r [:km "w: Repl"]]
                  [:o [:km "w: Dropbox"]]
                  [:j [:km "w: Twitch"]]
