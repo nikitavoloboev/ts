@@ -634,6 +634,7 @@
                  [:u [:km "w: GitHub (issues)"]]
                  [:o [:km "w: GitHub (assigned issues)"]]
                  [:i [:km "w: GitHub (assigned prs)"]]
+                 [:n [:km "w: GitLab"]]
                  [:w [:km "w: AWS"]]
                  [:r [:km "w: Arxiv"]]
                  [:a [:km "w: Google"]]
@@ -642,7 +643,7 @@
                  [:s [:km "w: Observable"]]
                  ;[:f [:km "w: GitHub (pulls)"]] ; TODO: make it work
                  [:l [:km "w: CodeSandbox"]]
-                 [:g [:km "w: regex101"]]
+                 [:period [:km "w: regex101"]]
                  [:semicolon [:km "w: Stack Overflow"]]]}
         {:des "tkey (websites)"
          :rules [:t-mode
