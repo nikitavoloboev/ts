@@ -2,6 +2,13 @@
 b() {
 }
 
+# install global npm packages to custom dir
+# ig() {
+#   cd $HOME/bin
+#   npm install --save $@
+#   cd -
+# }
+
 e() {
   if [ $# -eq 0 ]; then
     code .
