@@ -298,6 +298,7 @@
                  [:4 :!C4]
                  [:5 :!C5]
                  [:6 :!C6]
+                 [:i [:alfred "search tty sessions" "net.isometry.alfred.tty"]]
                  [:n [:alfred "search lists" "nikivi.learn.anything"]]
                  [:m [:alfred "search lists" "nikivi.awesome.lists"]]
                  [:z [:alfred "search blog" "nikivi.private.directories"]]
@@ -312,8 +313,6 @@
                  [:r [:km "2Do with current url as note (pr)"]]
                  [:q [:alfred "search downloads" "recentdownloads.ddjfreedom"]]
                  [:t [:km "2Do with current url as note (read)"]]
-                 [:y [:km "2Do with current url as note (tools)"]]
-                 [:i [:km "2Do with current url as note (fix)"]]
                  [:tab [:km "2Do with current url as note (check)"]]
                  [:h [:km "2Do with current url as note (watch)"]]
                  [:a [:alfred "search files" "nikivi.manage.notes"]]
@@ -522,7 +521,6 @@
                  [:4 :!O4]
                  [:5 :!O5]
                  [:6 :!O6]
-                 [:q [:alfred "search tty sessions" "net.isometry.alfred.tty"]]
                  [:c [:alfred "search wiki" "nikivi.mind"]]
                  [:tab [:alfred "search stack" "net.deanishe.alfred-stackoverflow"]]
                  [:v [:alfred "ssh" "net.deanishe.alfred-ssh"]]
@@ -577,7 +575,7 @@
                  [:spacebar [:km "proj: Build to learn"]]]}
          {:des "jskey"
           :rules [:jsdot-mode
-                  [:spacebar [:t :h :a :n :k :s]] ; -> thanks
+                  [:spacebar [:!St :h :a :n :k :s :period]] ; -> Thanks.
                   [:w [:km "VSCode/XCode/Sublime comment on top of line"]]
                   [:e [:km "VSCode/XCode/Sublime comment on top of line with TODO"]]
                   [:r [:!Sa :spacebar :slash :slash :spacebar :!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> // TODO: (on same line)
@@ -586,9 +584,12 @@
                   [:caps_lock [:!CSf :!St :!So :!Sd :!So :!Ssemicolon :return_or_enter]] ; -> search TODO: globally
 
                   ; JS
-                  [:z [:!Sopen_bracket :c :o :n :s :o :l :e :period :l :o :g :!S9 :!S0 :!Sclose_bracket :left_arrow :left_arrow]] ; -> {console.log()}
-                  [:c [:j :a :v :a :s :c :r :i :p :t :spacebar]] ; -> javascript
+                  [:grave_accent_and_tilde [:!Sopen_bracket :c :o :n :s :o :l :e :period :l :o :g :!S9 :!S0 :!Sclose_bracket :left_arrow :left_arrow]] ; -> {console.log()}
+                  [:z [:i :m :p :o :r :t :spacebar]] ; -> import
+                  [:c [:e :x :p :o :r :t :spacebar]] ; -> export
+                  [:b [:j :a :v :a :s :c :r :i :p :t :spacebar]] ; -> javascript
                   [:v [:t :y :p :e :s :c :r :i :p :t :spacebar]] ; -> typescript
+                  [:f [:km "= {}"]]
                   [:d [:r :e :t :u :r :n :spacebar]] ; -> return
                   [:s [:equal_sign :!Speriod :spacebar]] ; -> =>
                   [:a [:c :o :n :s :o :l :e :period :l :o :g :!S9 :!S0 :left_arrow]]]} ; -> console.log()
