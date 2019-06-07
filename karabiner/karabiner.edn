@@ -110,7 +110,7 @@
                  [:spacebar [:km "edit: Private notes"]]
                  [:semicolon [:km "wiki: Processes"]]
                  [:g [:km "edit: Git config"]]
-                 [:period [:km "edit: Gyana"]]
+                 [:period [:km "edit: Private Gyana"]]
                  [:u [:km "Search current safari url in wiki"]]
                  [:o [:km "edit: Projects"]]
                  [:n [:km "edit: Now"]]
@@ -577,20 +577,20 @@
                  [:spacebar [:km "proj: Build to learn"]]]}
          {:des "jskey"
           :rules [:jsdot-mode
-                  [:spacebar [:km "VSCode/XCode/Sublime comment on top of line with TODO"]]
-                  [:caps_lock [:!Sa :spacebar :slash :slash :spacebar :!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> // TODO: (on same line)
-                  [:d [:!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> TODO:
-                  [:f [:!Cf :!St :!So :!Sd :!So :!Ssemicolon :return_or_enter]] ; -> search TODO: in file
-                  [:g [:!CSf :!St :!So :!Sd :!So :!Ssemicolon :return_or_enter]] ; -> search TODO: globally
-                  [:e [:t :h :a :n :k :s]] ; -> thanks
+                  [:spacebar [:t :h :a :n :k :s]] ; -> thanks
+                  [:w [:km "VSCode/XCode/Sublime comment on top of line"]]
+                  [:e [:km "VSCode/XCode/Sublime comment on top of line with TODO"]]
+                  [:r [:!Sa :spacebar :slash :slash :spacebar :!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> // TODO: (on same line)
+                  [:q [:!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> TODO:
+                  [:tab [:!Cf :!St :!So :!Sd :!So :!Ssemicolon :return_or_enter]] ; -> search TODO: in file
+                  [:caps_lock [:!CSf :!St :!So :!Sd :!So :!Ssemicolon :return_or_enter]] ; -> search TODO: globally
 
                   ; JS
-                  [:d [:!Sopen_bracket :c :o :n :s :o :l :e :period :l :o :g :!S9 :!S0 :!Sclose_bracket :left_arrow :left_arrow]] ; -> {console.log()}
+                  [:z [:!Sopen_bracket :c :o :n :s :o :l :e :period :l :o :g :!S9 :!S0 :!Sclose_bracket :left_arrow :left_arrow]] ; -> {console.log()}
+                  [:c [:j :a :v :a :s :c :r :i :p :t :spacebar]] ; -> javascript
+                  [:v [:t :y :p :e :s :c :r :i :p :t :spacebar]] ; -> typescript
+                  [:d [:r :e :t :u :r :n :spacebar]] ; -> return
                   [:s [:equal_sign :!Speriod :spacebar]] ; -> =>
-                  [:r [:r :e :t :u :r :n :spacebar]] ; -> return
-                  [:t [:r :e :t :u :r :n :spacebar :!Sopen_bracket :!Sclose_bracket :left_arrow :return_or_enter]] ; -> return {}
-                  [:q [:j :a :v :s :c :r :i :p :t :spacebar]] ; -> javascript
-                  [:w [:t :y :p :e :s :c :r :i :p :t :spacebar]] ; -> typescript
                   [:a [:c :o :n :s :o :l :e :period :l :o :g :!S9 :!S0 :left_arrow]]]} ; -> console.log()
         ; {:des "gokey"
         ;  :rules[:godot-mode

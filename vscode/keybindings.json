@@ -170,7 +170,7 @@
     "command": "workbench.action.nextEditor"
   },
   {
-    "key": "ctrl+o",
+    "key": "ctrl+v",
     "command": "bookmarks.toggle"
   },
   {
@@ -357,7 +357,7 @@
     "when": "editorHasDefinitionProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
   },
   {
-    "key": "ctrl+m",
+    "key": "ctrl+b",
     "command": "bookmarks.listFromAllFiles"
   }
 ]
