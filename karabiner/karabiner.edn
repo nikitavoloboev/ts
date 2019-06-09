@@ -248,6 +248,7 @@
                  [:h [:km "open: Photos"]]
                  [:semicolon [:km "open: Final Cut Pro"]]
                  [:l [:km "open: ScreenFlow"]]
+                 [:s [:km "open: Soulver"]]
                  [:period [:km "open: Affinity Photo"]]
                  [:b [:km "open: OBS"]]
                  [:comma [:km "open: Arq"]]
@@ -652,6 +653,7 @@
          :rules [:t-mode
                  [:r [:km "w: Repl"]]
                  [:o [:km "w: Dropbox"]]
+                 [:a [:km "w: Amazon"]]
                  [:j [:km "w: Twitch"]]
                  [:i [:km "w: IFTTT"]]
                  [:o [:km "w: Google Drive"]]
