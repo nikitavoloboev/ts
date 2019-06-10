@@ -128,6 +128,7 @@
                  [:i [:alfred "search ios tabs" "net.deanishe.alfred.safari"]]]}
         {:des "qkey (cmd + shift)"
          :rules [:q-mode
+                 [:spacebar :!CTq] ; Search selection in Web Searches
                  [:open_bracket :!CSopen_bracket]
                  [:close_bracket :!CSclose_bracket]
                  [:semicolon :!CSsemicolon]
@@ -175,11 +176,11 @@
                  [:spacebar :!CT7] ; Start Google search with selection
                  [:k [:km "open: Safari"]]
                  [:t [:km "open: Activity Monitor"]]
-                 [:i [:km "open: Chrome Canary"]]
+                 [:period [:km "open: Chrome Canary"]]
                  [:comma [:km "open: Safari Technology Preview"]]
                  [:v [:km "open: Spotify"]]
                  [:caps_lock [:km "open: Finder"]]
-                 [:period [:km "open: Xcode"]]
+                 [:i [:km "open: Xcode"]]
                  [:semicolon [:km "open: Tower"]]
                  [:b [:km "open: BetterTouchTool"]]
                  [:a :!OSC1] ; Open Dash
@@ -242,7 +243,7 @@
                  [:0 :!C0]]}
         {:des "rkey (apps)"
          :rules [:r-mode
-                 [:spacebar :!CTq] ; Search selection in Web Searches
+                 [:spacebar [:km "Google Searchio selected word"]]
                  [:m [:km "open: Marked"]]
                  [:q [:km "open: IINA"]]
                  [:caps_lock [:km "open: Preview"]]
@@ -409,7 +410,6 @@
                  [:o :!Ckeypad_plus] ; Zoom in
                  [:n [:km "Open URL in clipboard in Safari"]]
                  [:g [:km "Centre mouse to active app"]]
-                 [:l [:km "Google Searchio selected word"]]
                  [:u [:km "Google Lucky selected word"]]
                  [:semicolon [:km "Google selected word"]]
                  [:m [:km "Google clipboard"]]
@@ -580,9 +580,8 @@
           :rules [:jsdot-mode
                   [:spacebar [:!St :h :a :n :k :s :period]] ; -> Thanks.
                   [:w [:km "VSCode/XCode/Sublime comment on top of line"]]
-                  [:e [:km "VSCode/XCode/Sublime comment on top of line with TODO"]]
+                  [:e [:!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> TODO:
                   [:r [:!Sa :spacebar :slash :slash :spacebar :!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> // TODO: (on same line)
-                  [:q [:!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> TODO:
                   [:caps_lock [:!Cf :!St :!So :!Sd :!So :!Ssemicolon :return_or_enter]] ; -> search TODO: in file
                   [:grave_accent_and_tilde [:!CSf :!St :!So :!Sd :!So :!Ssemicolon :return_or_enter]] ; -> search TODO: globally
 

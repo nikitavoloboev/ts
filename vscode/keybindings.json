@@ -416,5 +416,9 @@
     "key": "shift+alt+f8",
     "command": "-editor.action.marker.prev",
     "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+.",
+    "command": "workbench.view.extension.todo"
   }
 ]
