@@ -77,6 +77,8 @@
                  [:!Ssemicolon :semicolon]]}
         {:des "right cmd -> Alfred"
          :rules [[:right_command :right_command nil {:alone :!CTOSspacebar}]]}
+        {:des "left cmd -> cmd+tab"
+         :rules [[:left_command :left_command nil {:alone :!Ctab}]]}
         {:des "right shift -> Pair Program (Karabiner/VSCodeVim off)"
          :rules [[:right_shift :right_shift nil {:alone [:km "Pair Program (Karabiner/VSCodeVim on/off)"]}]]}
         {:des "jsim"
@@ -172,8 +174,8 @@
          :rules [:w-mode
                  [:spacebar :!CT7] ; Start Google search with selection
                  [:k [:km "open: Safari"]]
-                 [:i [:km "open: Chrome Canary"]]
                  [:t [:km "open: Activity Monitor"]]
+                 [:i [:km "open: Chrome Canary"]]
                  [:comma [:km "open: Safari Technology Preview"]]
                  [:v [:km "open: Spotify"]]
                  [:caps_lock [:km "open: Finder"]]
@@ -581,12 +583,12 @@
                   [:e [:km "VSCode/XCode/Sublime comment on top of line with TODO"]]
                   [:r [:!Sa :spacebar :slash :slash :spacebar :!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> // TODO: (on same line)
                   [:q [:!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> TODO:
-                  [:tab [:!Cf :!St :!So :!Sd :!So :!Ssemicolon :return_or_enter]] ; -> search TODO: in file
-                  [:caps_lock [:!CSf :!St :!So :!Sd :!So :!Ssemicolon :return_or_enter]] ; -> search TODO: globally
+                  [:caps_lock [:!Cf :!St :!So :!Sd :!So :!Ssemicolon :return_or_enter]] ; -> search TODO: in file
+                  [:grave_accent_and_tilde [:!CSf :!St :!So :!Sd :!So :!Ssemicolon :return_or_enter]] ; -> search TODO: globally
 
                   ; JS
-                  [:grave_accent_and_tilde [:!Sopen_bracket :c :o :n :s :o :l :e :period :l :o :g :!S9 :!S0 :!Sclose_bracket :left_arrow :left_arrow]] ; -> {console.log()}
                   [:z [:i :m :p :o :r :t :spacebar]] ; -> import
+                  [:x [:!Sopen_bracket :c :o :n :s :o :l :e :period :l :o :g :!S9 :!S0 :!Sclose_bracket :left_arrow :left_arrow]] ; -> {console.log()}
                   [:c [:e :x :p :o :r :t :spacebar]] ; -> export
                   [:b [:j :a :v :a :s :c :r :i :p :t :spacebar]] ; -> javascript
                   [:v [:t :y :p :e :s :c :r :i :p :t :spacebar]] ; -> typescript
@@ -681,7 +683,6 @@
                  [:u [:km "Open Courses Trello"]]
                  [:n [:km "Open 2Do Clean"]]
                  [:k [:km "Open 2Do Today"]]
-                 [:t [:km "Open 2Do Tomorrow"]]
                  [:g [:km "Open 2Do Life"]]
                  [:quote [:km "Open 2Do LA"]]
                  [:slash [:km "Open 2Do Gyana"]]
@@ -689,13 +690,14 @@
                  [:b [:km "Open 2Do Blog"]]
                  [:y [:km "Open 2Do Buy"]]
                  [:d [:km "Open 2Do Find"]]
-                 [:comma [:km "Open 2Do Talk"]]
+                 [:t [:km "Open 2Do Talk"]]
+                 [:i [:km "Open 2Do Fix"]]
+                 [:m [:km "Open 2Do Later"]]
                  [:semicolon [:km "Open 2Do Starred"]]
+                 [:comma [:km "Open 2Do Tomorrow"]]
                  [:period [:km "Search 2Do"]]
                  [:open_bracket [:km "w: Goodreads (currently reading)"]]
                  [:close_bracket [:km "w: Goodreads (next)"]]
-                 [:i [:km "Open 2Do Fix"]]
-                 [:m [:km "Open 2Do Later"]]
                  [:w [:km "Open Ideas Trello"]]
                  [:e [:km "Open 2Do Read"]]
                  [:c [:km "Open 2Do Check"]]
