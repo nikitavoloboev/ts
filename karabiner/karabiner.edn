@@ -469,11 +469,11 @@
                  [:v [:km "open: Tweetbot"]]
                  [:f [:km "open: Spark"]]
                  [:c [:km "open: Contacts"]]
-                 [:d [:km "New Spark email"]]
+                 [:i [:km "New Spark email"]]
                  [:g [:alfred "search contacts" "nikivi.search.content"]]
                  [:h [:km "Create new contact"]]
-                 [:i [:km "open: FaceTime"]]
-                 [:period [:km "open: Caprine"]]
+                 [:period [:km "open: FaceTime"]]
+                 [:comma [:km "open: Caprine"]]
                  [:semicolon [:km "open: Slack"]]
                  [:k [:km "open: Telegram"]]
                  [:e [:km "open: Telegram"]]
@@ -571,10 +571,11 @@
                  [:o [:km "test: Rust"]]
                  [:m [:km "test: Go"]]
                  [:i [:km "test: OCaml"]]
+                 [:k [:km "edit: Build to learn server"]]
+                 [:l [:km "proj: Build to learn"]]
+                 [:semicolon [:alfred "search build to learn" "nikivi.private.directories"]]
                  [:comma [:km "test: Haskell"]]
                  [:period [:km "test: Python"]]
-                 [:k [:km "edit: Build to learn server"]]
-                 [:l [:alfred "search build to learn" "nikivi.private.directories"]]
                  [:spacebar [:km "proj: Build to learn"]]]}
          {:des "jskey"
           :rules [:jsdot-mode
