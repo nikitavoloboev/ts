@@ -176,11 +176,11 @@
                  [:spacebar :!CT7] ; Start Google search with selection
                  [:k [:km "open: Safari"]]
                  [:t [:km "open: Activity Monitor"]]
-                 [:period [:km "open: Chrome Canary"]]
+                 [:i [:km "open: Chrome Canary"]]
                  [:comma [:km "open: Safari Technology Preview"]]
                  [:v [:km "open: Spotify"]]
                  [:caps_lock [:km "open: Finder"]]
-                 [:i [:km "open: Xcode"]]
+                 [:period [:km "open: Xcode"]]
                  [:semicolon [:km "open: Tower"]]
                  [:b [:km "open: BetterTouchTool"]]
                  [:a :!OSC1] ; Open Dash
@@ -578,23 +578,23 @@
                  [:spacebar [:km "proj: Build to learn"]]]}
          {:des "jskey"
           :rules [:jsdot-mode
-                  [:spacebar [:!St :h :a :n :k :s :period]] ; -> Thanks.
-                  [:w [:km "VSCode/XCode/Sublime comment on top of line"]]
-                  [:e [:!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> TODO:
-                  [:r [:!Sa :spacebar :slash :slash :spacebar :!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> // TODO: (on same line)
-                  [:caps_lock [:!Cf :!St :!So :!Sd :!So :!Ssemicolon :return_or_enter]] ; -> search TODO: in file
-                  [:grave_accent_and_tilde [:!CSf :!St :!So :!Sd :!So :!Ssemicolon :return_or_enter]] ; -> search TODO: globally
-
-                  ; JS
+                  [:grave_accent_and_tilde [:!Sopen_bracket :c :o :n :s :o :l :e :period :l :o :g :!S9 :!S0 :!Sclose_bracket :left_arrow :left_arrow]] ; -> {console.log()}
                   [:z [:i :m :p :o :r :t :spacebar]] ; -> import
-                  [:x [:!Sopen_bracket :c :o :n :s :o :l :e :period :l :o :g :!S9 :!S0 :!Sclose_bracket :left_arrow :left_arrow]] ; -> {console.log()}
-                  [:c [:e :x :p :o :r :t :spacebar]] ; -> export
-                  [:b [:j :a :v :a :s :c :r :i :p :t :spacebar]] ; -> javascript
+                  [:x [:e :x :p :o :r :t :spacebar]] ; -> export
+                  [:c [:j :a :v :a :s :c :r :i :p :t :spacebar]] ; -> javascript
                   [:v [:t :y :p :e :s :c :r :i :p :t :spacebar]] ; -> typescript
                   [:f [:km "= {}"]]
                   [:d [:r :e :t :u :r :n :spacebar]] ; -> return
                   [:s [:equal_sign :!Speriod :spacebar]] ; -> =>
-                  [:a [:c :o :n :s :o :l :e :period :l :o :g :!S9 :!S0 :left_arrow]]]} ; -> console.log()
+                  [:a [:c :o :n :s :o :l :e :period :l :o :g :!S9 :!S0 :left_arrow]] ; -> console.log()
+
+                  ; Code Helpers
+                  [:spacebar [:!St :h :a :n :k :s :period]] ; -> Thanks.
+                  [:w [:km "VSCode/XCode/Sublime comment on top of line"]]
+                  [:e [:!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> TODO:
+                  [:r [:!Sa :spacebar :slash :slash :spacebar :!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> // TODO: (on same line)
+                  [:tab [:!CSf :!St :!So :!Sd :!So :!Ssemicolon :return_or_enter]] ; -> search TODO: globally
+                  [:caps_lock [:!Cf :!St :!So :!Sd :!So :!Ssemicolon :return_or_enter]]]} ; -> search TODO: in file
         ; {:des "gokey"
         ;  :rules[:godot-mode
         ;         [:a [:g :o :l :a :n :g :spacebar]]]} ; -> golang
