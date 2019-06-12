@@ -579,11 +579,10 @@
                  [:spacebar [:km "proj: Build to learn"]]]}
          {:des "jskey"
           :rules [:jsdot-mode
-                  [:grave_accent_and_tilde [:!Sopen_bracket :c :o :n :s :o :l :e :period :l :o :g :!S9 :!S0 :!Sclose_bracket :left_arrow :left_arrow]] ; -> {console.log()}
-                  [:z [:i :m :p :o :r :t :spacebar]] ; -> import
-                  [:x [:e :x :p :o :r :t :spacebar]] ; -> export
-                  [:c [:j :a :v :a :s :c :r :i :p :t :spacebar]] ; -> javascript
                   [:v [:t :y :p :e :s :c :r :i :p :t :spacebar]] ; -> typescript
+                  [:c [:j :a :v :a :s :c :r :i :p :t :spacebar]] ; -> javascript
+                  [:x [:e :x :p :o :r :t :spacebar]] ; -> export
+                  [:z [:!Cf :c :o :n :s :o :l :e :period :l :o :g :!S9 :return_or_enter]] ; -> search console.log( in file
                   [:f [:km "= {}"]]
                   [:d [:r :e :t :u :r :n :spacebar]] ; -> return
                   [:s [:equal_sign :!Speriod :spacebar]] ; -> =>
