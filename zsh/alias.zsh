@@ -127,22 +127,26 @@ alias kp='kubectl port-forward'
 #alias kbcontexts='kubectl config view -o jsonpath='{.contexts[*].name}'' # List kubernetes contexts
 
 # Node
-alias nd='node'
-alias ndi='node install'
-alias n.='node .'
+alias no='node'
 
 # NPM
 alias it='npm init'
 alias ig='npm install -g'
-alias iir='npm install && npm run dev'
 alias iis='npm install && npm start'
-alias in='npm init'
 alias ia='npm add'
 alias ir='npm run'
 alias ire='npm remove'
 alias is='npm start'
 alias dev='npm run dev'
 alias igl='npm list -g --depth 0'
+
+# Yarn
+alias y='yarn'
+alias ya='yarn add'
+alias yr='yarn run'
+alias yre='npm remove'
+alias ys='yarn start'
+alias ydev='yarn run dev'
 
 # Go
 alias o='go'

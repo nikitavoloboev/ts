@@ -98,9 +98,9 @@
                  [:l [:km "list: command line tools"]]]}
         {:des "2key (move)"
          :rules [:2-mode
-                 [:j :!Cdown_arrow]
-                 [:quote :!Odown_arrow]
                  [:semicolon :!Oup_arrow]
+                 [:quote :!Odown_arrow]
+                 [:j :!Cdown_arrow]
                  [:k :!Cup_arrow]
                  [:l :!Cright_arrow]
                  [:h :!Cleft_arrow]]}

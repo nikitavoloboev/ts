@@ -1,8 +1,5 @@
 # Temp
 b() {
-  git add .github
-  git commit -m "add sponsor"
-  git push
 }
 
 # install global npm packages to custom dir
