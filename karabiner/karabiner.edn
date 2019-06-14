@@ -174,19 +174,19 @@
         {:des "wkey (apps)"
          :rules [:w-mode
                  [:spacebar :!CT7] ; Start Google search with selection
+                 [:t [:km "open: Spotify"]]
                  [:k [:km "open: Safari"]]
-                 [:t [:km "open: Activity Monitor"]]
+                 [:d [:km "open: Activity Monitor"]]
                  [:i [:km "open: Chrome Canary"]]
                  [:u [:km "open: Safari Technology Preview"]]
-                 [:c [:km "open: Spotify"]]
                  [:caps_lock [:km "open: Finder"]]
                  [:m [:km "open: Xcode"]]
                  [:semicolon [:km "open: Tower"]]
                  [:b [:km "open: BetterTouchTool"]]
                  [:a :!OSC1] ; Open Dash
                  [:r :!CTOSt] ; Open Trello
-                 [:d [:km "open: Paw"]]
-                 [:h [:km "open: Postico"]]
+                 [:h [:km "open: Paw"]]
+                 [:c [:km "open: Postico"]]
                  [:g [:km "open: Figma"]]
                  [:e [:km "open: Fantastical"]]
                  [:v [:km "open: Sketch"]]
@@ -244,25 +244,22 @@
         {:des "rkey (apps)"
          :rules [:r-mode
                  [:spacebar [:km "Google Searchio selected word"]]
-                 [:m [:km "open: Marked"]]
                  [:q [:km "open: IINA"]]
                  [:caps_lock [:km "open: Preview"]]
                  [:o :!CO7] ; Open Typinator
                  [:h [:km "open: Photos"]]
                  [:semicolon [:km "open: Final Cut Pro"]]
+                 [:period [:km "open: Soulver"]]
                  [:l [:km "open: ScreenFlow"]]
-                 [:s [:km "open: Soulver"]]
-                 [:period [:km "open: Affinity Photo"]]
-                 [:b [:km "open: OBS"]]
+                 [:p [:km "open: Affinity Photo"]]
+                 [:m [:km "open: OBS"]]
                  [:comma [:km "open: Arq"]]
                  [:tab [:km "open: Transmission"]]
-                 [:p [:km "open: Paprika Recipe Manager"]]
                  [:y [:km "Edit keyboard shortcuts"]]
                  [:a [:km "open: Alfred Preferences"]]
                  [:u [:km "open: Flume"]]
                  [:i [:km "open: Pixave"]]
                  [:e [:km "open: Reeder"]]
-                 [:v [:km "open: Deliveries"]]
                  [:j [:km "open: Dictionary"]]
                  [:k [:km "open: PDF Expert"]]
                  [:w [:km "open: 1Password"]]
