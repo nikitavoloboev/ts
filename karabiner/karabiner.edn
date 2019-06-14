@@ -178,7 +178,7 @@
                  [:t [:km "open: Activity Monitor"]]
                  [:i [:km "open: Chrome Canary"]]
                  [:u [:km "open: Safari Technology Preview"]]
-                 [:v [:km "open: Spotify"]]
+                 [:c [:km "open: Spotify"]]
                  [:caps_lock [:km "open: Finder"]]
                  [:m [:km "open: Xcode"]]
                  [:semicolon [:km "open: Tower"]]
@@ -186,10 +186,10 @@
                  [:a :!OSC1] ; Open Dash
                  [:r :!CTOSt] ; Open Trello
                  [:d [:km "open: Paw"]]
-                 [:c [:km "open: Postico"]]
+                 [:h [:km "open: Postico"]]
                  [:g [:km "open: Figma"]]
                  [:e [:km "open: Fantastical"]]
-                 [:h [:km "open: Sketch"]]
+                 [:v [:km "open: Sketch"]]
                  [:period [:km "open: SnippetsLab"]]
                  [:f [:km "open: 2Do"]]
                  [:j [:km "open: iTerm"]]
@@ -416,7 +416,7 @@
                  [:v {:pkey :button1}] ; Left click
                  [:b {:pkey :button3}] ; Middle click
                  [:z {:pkey :button2}] ; Right click
-                 [:comma :!TO9] ; Show Launchpad
+                 [:comma :!TO8] ; Show Launchpad
                  [:period :!CTO3]]} ; Mission control
         {:des "fkey (essential)"
          :rules [:f-mode
@@ -434,9 +434,9 @@
                  [:open_bracket :!CT5] ; Turn display on/off
                  [:comma  [:km "Add safari link to selected markdown text"]]
                  [:k :return_or_enter]
-                 [:caps_lock :!COclose_bracket] ; PixelSnap
-                 [:1 [:km "Lowercase selected text"]]
-                 [:2 [:km "Uppercase selected text"]]
+                 [:q [:km "Lowercase selected text"]]
+                 [:1 [:km "Uppercase selected text"]]
+                 [:2 :!COclose_bracket] ; PixelSnap
                  [:3 :!CTOp] ; Sip color picker
                  [:l :!Creturn_or_enter]
                  [:m :!Sreturn_or_enter]
@@ -665,10 +665,12 @@
                  [:spacebar :!COSr]]} ; Google Translate selected text
         {:des "capskey (todo + trello)"
          :rules [:caps-mode
-                 [:1 :!TO1] ; Save picture of screen to Desktop
-                 [:2 :!TO2] ; Imgur screenshot
-                 [:3 :!TO3] ; Annotate screenshot
+                 [:1 [:alfred "Screenshot -> Imgur" "com.vitorgalvao.alfred.webscreenshot"]]
+                 [:2 :!TO2] ; Screenshot -> Clipboard
+                 [:3 :!TO3] ; Screenshot -> Annotate 
                  [:4 :!TO4] ; Show Annotate
+                 [:9 :!TO9] ; Picture of screen -> Clipboard
+                 [:0 :!TO0] ; Picture of screen -> ~/Desktop
                  [:spacebar :!TO7] ; New Kap recording
                  [:tab [:km "New ScreenFlow recording (options)"]]
                  [:q :!CO5] ; Start/stop ScreenFlow recording
