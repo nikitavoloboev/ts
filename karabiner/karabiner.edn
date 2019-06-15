@@ -96,8 +96,9 @@
                  [:p [:km "list: podcasts"]]
                  [:n [:km "list: events"]]
                  [:l [:km "list: command line tools"]]]}
-        {:des "2key (move)"
+        {:des "2key (move + alfred)"
          :rules [:2-mode
+                 [:o [:alfred "soulver" "app.soulver.alfredworkflow"]]
                  [:semicolon :!Oup_arrow]
                  [:quote :!Odown_arrow]
                  [:j :!Cdown_arrow]
@@ -583,7 +584,7 @@
                   [:d [:r :e :t :u :r :n :spacebar]] ; -> return
                   [:s [:equal_sign :!Speriod :spacebar]] ; -> =>
                   [:a [:c :o :n :s :o :l :e :period :l :o :g :!S9 :!S0 :left_arrow]] ; -> console.log()
-                  [:grave_accent_and_tilde [:!Cf :c :o :n :s :o :l :e :period :l :o :g :!S9 :return_or_enter]] ; -> search console.log( in file
+                  [:left_gui [:!Cf :c :o :n :s :o :l :e :period :l :o :g :!S9 :return_or_enter]] ; -> search console.log( in file
 
                   ; Code Helpers
                   [:spacebar [:!St :h :a :n :k :s :period]] ; -> Thanks.
@@ -681,6 +682,7 @@
                  [:n [:km "Open 2Do Clean"]]
                  [:k [:km "Open 2Do Today"]]
                  [:g [:km "Open 2Do Life"]]
+                 [:comma [:km "Open 2Do Macro"]]
                  [:quote [:km "Open 2Do LA"]]
                  [:slash [:km "Open 2Do Gyana"]]
                  [:h [:km "Open 2Do Watch"]]
@@ -691,7 +693,6 @@
                  [:i [:km "Open 2Do Fix"]]
                  [:m [:km "Open 2Do Later"]]
                  [:semicolon [:km "Open 2Do Starred"]]
-                 [:comma [:km "Open 2Do Tomorrow"]]
                  [:period [:km "Search 2Do"]]
                  [:open_bracket [:km "w: Goodreads (currently reading)"]]
                  [:close_bracket [:km "w: Goodreads (next)"]]
