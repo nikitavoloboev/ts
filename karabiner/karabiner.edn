@@ -306,8 +306,8 @@
                  [:z [:alfred "search blog" "nikivi.private.directories"]]
                  [:w :!CObackslash] ; 1Password search
                  [:caps_lock [:alfred "search folders" "nikivi.search.folders"]]
-                 [:g [:alfred "search PDFs" "nikivi.search.files"]]
-                 [:spacebar :!TCclose_bracket] ; Search SnippetsLab library with assistant
+                 [:spacebar [:alfred "search PDFs" "nikivi.search.files"]]
+                 [:g :!TCclose_bracket] ; Search SnippetsLab library with assistant
                  [:grave_accent_and_tilde [:alfred "search processes" "com.vitorgalvao.alfred.processcontrol"]]
                  [:e [:km "Make 2Do task"]]
                  [:b [:km "Make 2Do task with Safari title as name + note as current URL"]]
@@ -564,16 +564,17 @@
                  [:grave_accent_and_tilde [:alfred "search dash" "com.nikivi.own.dash" "tldr: "]]]}
         {:des "ckey (test)"
          :rules [:c-mode
+                 [:u [:km "test: Rust"]]
+                 [:i [:km "test: Python"]]
+                 [:o [:km "test: Go"]]
+                 [:n [:km "test: TS"]]
+                 [:m [:km "test: OCaml"]]
                  [:h [:km "test: Haskell"]]
-                 [:i [:km "test: TS"]]
-                 [:m [:km "test: Rust"]]
-                 [:n [:km "test: Go"]]
                  [:j [:km "test: JS"]]
-                 [:o [:km "test: OCaml"]]
                  [:k [:km "edit: Build to learn server"]]
                  [:l [:km "proj: Build to learn"]]
                  [:semicolon [:alfred "search build to learn" "nikivi.private.directories"]]
-                 [:period [:km "test: Python"]]]}
+                 [:period [:km "New SnippetsLab snippet"]]]}
          {:des "jskey"
           :rules [:jsdot-mode
                   [:v [:t :y :p :e :s :c :r :i :p :t :spacebar]] ; -> typescript
@@ -584,7 +585,7 @@
                   [:d [:r :e :t :u :r :n :spacebar]] ; -> return
                   [:s [:equal_sign :!Speriod :spacebar]] ; -> =>
                   [:a [:c :o :n :s :o :l :e :period :l :o :g :!S9 :!S0 :left_arrow]] ; -> console.log()
-                  [:left_gui [:!Cf :c :o :n :s :o :l :e :period :l :o :g :!S9 :return_or_enter]] ; -> search console.log( in file
+                  [:grave_accent_and_tilde [:!Cf :c :o :n :s :o :l :e :period :l :o :g :!S9 :return_or_enter]] ; -> search console.log( in file
 
                   ; Code Helpers
                   [:spacebar [:!St :h :a :n :k :s :period]] ; -> Thanks.
@@ -603,12 +604,11 @@
          :rules [:tilde-mode
                  [:h :!CTOx] ; Little Snitch
                  [:e [:km "Add blog to Reeder"]]
-                 ;[:n :!STh] ; Record macro
+                 [:n :!STh] ; Record macro
                  [:j [:km "Go to test macro"]]
                  [:k [:km "Test"]]
                  [:l [:km "Make global macro"]]
-                 [:semicolon [:km "New SnippetsLab snippet"]]
-                 [:n [:km "Paste active todo"]]
+                 [:period [:km "Paste active todo"]]
                  [:r [:alfred "restart wifi" "nikivi.wifi.tools"]]
                  [:w [:alfred "toggle wifi" "nikivi.wifi.tools"]]
                  [:i [:km "Commit build to learn"]]
