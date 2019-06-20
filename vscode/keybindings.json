@@ -33,7 +33,7 @@
     "command": "workbench.action.quickOpen"
   },
   {
-    "key": "ctrl+t",
+    "key": "ctrl+r",
     "command": "workbench.view.explorer"
   },
   {
@@ -169,7 +169,7 @@
     "command": "bookmarks.toggle"
   },
   {
-    "key": "ctrl+r",
+    "key": "ctrl+t",
     "command": "workbench.action.toggleSidebarVisibility"
   },
   {
@@ -418,7 +418,25 @@
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+o",
+    "key": "ctrl+,",
     "command": "workbench.view.extension.todo"
+  },
+  {
+    "key": "ctrl+o",
+    "command": "workbench.action.gotoSymbol"
+  },
+  {
+    "key": "shift+cmd+o",
+    "command": "-workbench.action.gotoSymbol"
+  },
+  {
+    "key": "ctrl+h",
+    "command": "extension.search",
+    "when": "!terminalFocus"
+  },
+  {
+    "key": "cmd+k cmd+n",
+    "command": "-extension.search",
+    "when": "!terminalFocus"
   }
 ]
