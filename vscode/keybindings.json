@@ -430,7 +430,7 @@
     "command": "-workbench.action.gotoSymbol"
   },
   {
-    "key": "ctrl+h",
+    "key": "cmd+.",
     "command": "extension.search",
     "when": "!terminalFocus"
   },

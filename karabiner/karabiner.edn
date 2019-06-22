@@ -79,6 +79,11 @@
          :rules [[:right_command :right_command nil {:alone :!CTOSspacebar}]]}
         {:des "left cmd -> cmd+tab"
          :rules [[:left_command :left_command nil {:alone :!Ctab}]]}
+        {:des "arrows -> media control"
+         :rules [[:right_arrow :vk_consumer_next]
+                [:left_arrow :vk_consumer_previous]
+                [:down_arrow :vk_consumer_play]
+                [:up_arrow :vk_consumer_play]]}
         {:des "right shift -> Pair Program (Karabiner/VSCodeVim off)"
          :rules [[:right_shift :right_shift nil {:alone [:km "Pair Program (Karabiner/VSCodeVim on/off)"]}]]}
         {:des "jsim"
@@ -175,7 +180,7 @@
         {:des "wkey (apps)"
          :rules [:w-mode
                  [:spacebar [:km "Google Searchio selected word"]]
-                 [:t [:km "open: Spotify"]]
+                 [:c [:km "open: Spotify"]]
                  [:k [:km "open: Safari"]]
                  [:d [:km "open: Activity Monitor"]]
                  [:i [:km "open: Chrome Canary"]]
@@ -187,7 +192,7 @@
                  [:a :!OSC1] ; Open Dash
                  [:r :!CTOSt] ; Open Trello
                  [:h [:km "open: Paw"]]
-                 [:c [:km "open: Postico"]]
+                 [:t [:km "open: Postico"]]
                  [:g [:km "open: Figma"]]
                  [:e [:km "open: Fantastical"]]
                  [:v [:km "open: Sketch"]]
@@ -250,17 +255,17 @@
                  [:o :!CO7] ; Open Typinator
                  [:h [:km "open: Photos"]]
                  [:semicolon [:km "open: Final Cut Pro"]]
-                 [:period [:km "open: Soulver"]]
-                 [:l [:km "open: ScreenFlow"]]
+                 [:u [:km "open: Soulver"]]
+                 [:period [:km "open: ScreenFlow"]]
+                 [:slash [:km "open: Flume"]]
                  [:p [:km "open: Affinity Photo"]]
                  [:m [:km "open: OBS"]]
                  [:comma [:km "open: Arq"]]
                  [:tab [:km "open: Transmission"]]
                  [:y [:km "Edit keyboard shortcuts"]]
                  [:a [:km "open: Alfred Preferences"]]
-                 [:u [:km "open: Flume"]]
                  [:i [:km "open: Pixave"]]
-                 [:e [:km "open: Reeder"]]
+                 [:l [:km "open: Reeder"]]
                  [:j [:km "open: Dictionary"]]
                  [:k [:km "open: PDF Expert"]]
                  [:w [:km "open: 1Password"]]
@@ -697,7 +702,6 @@
                  [:open_bracket [:km "w: Goodreads (currently reading)"]]
                  [:close_bracket [:km "w: Goodreads (next)"]]
                  [:w [:km "Open Ideas Trello"]]
-                 [:e [:km "Open 2Do Read"]]
                  [:c [:km "Open 2Do Check"]]
                  [:o [:km "Open 2Do Tools"]]
                  [:r [:km "Open 2Do PR"]]
