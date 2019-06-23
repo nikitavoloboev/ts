@@ -35,6 +35,7 @@
              :jsdot-mode {:key :period}
              ;:godot-mode {:key :period}
              ;:pydot-mode {:key :period}
+             :tab-mode {:key :tab}
              :caps-mode {:key :caps_lock}}
  :main [{:des "colonkey (shift)"
          :rules [:semicolon-mode
@@ -127,11 +128,10 @@
                  [:i [:km "edit: Zsh functions"]]
                  [:r [:km "edit: Darwin Nix"]]
                  [:j [:km "edit: Aliases"]]]}
-        {:des "4key (alfred + palettes)"
+        {:des "4key (palettes)"
          :rules [:4-mode
                  [:k :!SOTf] ; App specific
-                 [:l :!SOTr] ; Personal
-                 [:i [:alfred "search ios tabs" "net.deanishe.alfred.safari"]]]}
+                 [:l :!SOTr]]} ; Personal
         {:des "qkey (cmd + shift)"
          :rules [:q-mode
                  [:spacebar :!CT7] ; Start Google search with selection
@@ -254,10 +254,10 @@
                  [:caps_lock [:km "open: Preview"]]
                  [:o :!CO7] ; Open Typinator
                  [:h [:km "open: Photos"]]
-                 [:semicolon [:km "open: Final Cut Pro"]]
-                 [:u [:km "open: Soulver"]]
-                 [:period [:km "open: ScreenFlow"]]
-                 [:slash [:km "open: Flume"]]
+                 [:semicolon [:km "open: ScreenFlow"]]
+                 [:period [:km "open: Final Cut Pro"]]
+                 [:e [:km "open: Soulver"]]
+                 [:u [:km "open: Flume"]]
                  [:p [:km "open: Affinity Photo"]]
                  [:m [:km "open: OBS"]]
                  [:comma [:km "open: Arq"]]
@@ -319,9 +319,8 @@
                  [:v [:km "Make 2Do task with note as current URL"]]
                  [:r [:km "2Do with current url as note (pr)"]]
                  [:q [:alfred "search downloads" "recentdownloads.ddjfreedom"]]
-                 [:t [:km "2Do with current url as note (read)"]]
                  [:tab [:km "2Do with current url as note (check)"]]
-                 [:h [:km "2Do with current url as note (watch)"]]
+                 [:t [:km "2Do with current url as note (watch)"]]
                  [:a [:alfred "search files" "nikivi.manage.notes"]]
                  [:c [:alfred "search emoji" "com.github.jsumners.alfred-emoji"]]
                  [:f [:alfred "search repos" "net.deanishe.alfred-git-repos"]]
@@ -666,6 +665,10 @@
                  [:w [:km "w: WakaTime"]]
                  [:n [:km "w: NPM"]]
                  [:spacebar :!COSr]]} ; Google Translate selected text
+        {:des "tabkey (alfred)"
+         :rules [:tab-mode
+                 [:i [:alfred "search ios tabs" "net.deanishe.alfred.safari"]]
+                 [:r [:alfred "search alfred" "nikivi.utilities" "?"]]]}
         {:des "capskey (todo + trello)"
          :rules [:caps-mode
                  [:1 [:alfred "Screenshot -> Imgur" "com.vitorgalvao.alfred.webscreenshot"]]
@@ -675,8 +678,8 @@
                  [:9 :!TO9] ; Picture of screen -> Clipboard
                  [:0 :!TO0] ; Picture of screen -> ~/Desktop
                  [:spacebar :!TO7] ; New Kap recording
-                 [:tab [:km "New ScreenFlow recording (options)"]]
-                 [:q :!CO5] ; Start/stop ScreenFlow recording
+                 [:q [:km "New ScreenFlow recording (options)"]]
+                 [:w :!CO5] ; Start/stop ScreenFlow recording
                  [:f [:km "Open Focus Trello"]]
                  [:l [:km "Open Learn Trello"]]
                  [:z [:km "Open Music Trello"]]
@@ -701,7 +704,7 @@
                  [:period [:km "Search 2Do"]]
                  [:open_bracket [:km "w: Goodreads (currently reading)"]]
                  [:close_bracket [:km "w: Goodreads (next)"]]
-                 [:w [:km "Open Ideas Trello"]]
+                 [:e [:km "Open Ideas Trello"]]
                  [:c [:km "Open 2Do Check"]]
                  [:o [:km "Open 2Do Tools"]]
                  [:r [:km "Open 2Do PR"]]
