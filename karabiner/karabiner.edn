@@ -134,7 +134,7 @@
                  [:l :!SOTr]]} ; Personal
         {:des "qkey (cmd + shift)"
          :rules [:q-mode
-                 [:spacebar :!CT7] ; Start Google search with selection
+                 [:spacebar [:km "Google Searchio selected word"]]
                  [:open_bracket :!CSopen_bracket]
                  [:close_bracket :!CSclose_bracket]
                  [:semicolon :!CSsemicolon]
@@ -179,8 +179,8 @@
                  [:0 :!CS0]]}
         {:des "wkey (apps)"
          :rules [:w-mode
-                 [:spacebar [:km "Google Searchio selected word"]]
-                 [:c [:km "open: Spotify"]]
+                 [:spacebar :!CT7] ; Start Google search with selection
+                 [:v [:km "open: Spotify"]]
                  [:k [:km "open: Safari"]]
                  [:d [:km "open: Activity Monitor"]]
                  [:i [:km "open: Chrome Canary"]]
@@ -195,7 +195,7 @@
                  [:t [:km "open: Postico"]]
                  [:g [:km "open: Figma"]]
                  [:e [:km "open: Fantastical"]]
-                 [:v [:km "open: Sketch"]]
+                 [:c [:km "open: Sketch"]]
                  [:period [:km "open: SnippetsLab"]]
                  [:f [:km "open: 2Do"]]
                  [:j [:km "open: iTerm"]]
