@@ -159,9 +159,9 @@
       "source.organizeImports": true
     }
   },
-  "gopls": {
-    "usePlaceholders": true // add parameter placeholders when completing a function
-  },
+  // "gopls": {
+  //   "usePlaceholders": true // add parameter placeholders when completing a function
+  // },
   "files.eol": "\n", // formatting only supports LF line endings
   "go.liveErrors": {
     "enabled": true,

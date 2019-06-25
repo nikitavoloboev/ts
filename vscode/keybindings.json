@@ -169,10 +169,6 @@
     "command": "bookmarks.toggle"
   },
   {
-    "key": "ctrl+t",
-    "command": "workbench.action.toggleSidebarVisibility"
-  },
-  {
     "key": "cmd+b",
     "command": "-workbench.action.toggleSidebarVisibility"
   },
@@ -430,13 +426,12 @@
     "command": "-workbench.action.gotoSymbol"
   },
   {
-    "key": "cmd+.",
-    "command": "extension.search",
-    "when": "!terminalFocus"
-  },
-  {
     "key": "cmd+k cmd+n",
     "command": "-extension.search",
     "when": "!terminalFocus"
+  },
+  {
+    "key": "cmd+0",
+    "command": "-workbench.action.focusSideBar"
   }
 ]

@@ -80,11 +80,6 @@
          :rules [[:right_command :right_command nil {:alone :!CTOSspacebar}]]}
         {:des "left cmd -> cmd+tab"
          :rules [[:left_command :left_command nil {:alone :!Ctab}]]}
-        {:des "arrows -> media control"
-         :rules [[:right_arrow :vk_consumer_next]
-                [:left_arrow :vk_consumer_previous]
-                [:down_arrow :vk_consumer_play]
-                [:up_arrow :vk_consumer_play]]}
         {:des "right shift -> Pair Program (Karabiner/VSCodeVim off)"
          :rules [[:right_shift :right_shift nil {:alone [:km "Pair Program (Karabiner/VSCodeVim on/off)"]}]]}
         {:des "jsim"
@@ -116,10 +111,11 @@
                  [:l [:km "wiki: Rules"]]
                  [:m [:km "wiki: Summary"]]
                  [:t [:km "wiki: Talk notes"]]
-                 [:spacebar [:km "edit: Private notes"]]
+                 [:period [:km "edit: Private notes"]]
                  [:semicolon [:km "wiki: Processes"]]
                  [:g [:km "edit: Git config"]]
-                 [:period [:km "edit: Private Gyana"]]
+                 [:comma [:km "edit: Private LA"]]
+                 [:slash [:km "edit: Private Gyana"]]
                  [:u [:km "Search current safari url in wiki"]]
                  [:o [:km "edit: Projects"]]
                  [:n [:km "edit: Now"]]
@@ -476,11 +472,11 @@
                  [:g [:alfred "search contacts" "nikivi.search.content"]]
                  [:h [:km "Create new contact"]]
                  [:comma [:km "open: FaceTime"]]
-                 ;[:m [:km "open: Caprine"]] ; TODO: replace with native app when it comes out
+                 ;[:i [:km "open: Caprine"]] ; TODO: replace with native app when it comes out
                  [:semicolon [:km "open: Slack"]]
                  [:k [:km "open: Telegram"]]
                  [:e [:km "open: Telegram"]]
-                 [:i [:km "open: Textual"]]
+                 [:m [:km "open: Textual"]]
                  [:o [:km "open: Zoom"]]
                  [:l [:km "open: Discord"]]]}
         {:des "vkey (media)"
@@ -593,8 +589,9 @@
 
                   ; Code Helpers
                   [:spacebar [:!St :h :a :n :k :s :period]] ; -> Thanks.
+                  [:q [:!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> TODO:
                   [:w [:km "VSCode/XCode/Sublime comment on top of line"]]
-                  [:e [:!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> TODO:
+                  [:e [:km "VSCode/XCode/Sublime comment on top of line with TODO"]]
                   [:r [:!Sa :spacebar :slash :slash :spacebar :!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> // TODO: (on same line)
                   [:tab [:!CSf :!St :!So :!Sd :!So :!Ssemicolon :return_or_enter]] ; -> search TODO: globally
                   [:caps_lock [:!Cf :!St :!So :!Sd :!So :!Ssemicolon :return_or_enter]]]} ; -> search TODO: in file
@@ -689,15 +686,15 @@
                  [:u [:km "Open Courses Trello"]]
                  [:n [:km "Open 2Do Clean"]]
                  [:k [:km "Open 2Do Today"]]
+                 [:quote [:km "Open 2Do LA"]]
                  [:g [:km "Open 2Do Life"]]
                  [:comma [:km "Open 2Do Macro"]]
-                 [:quote [:km "Open 2Do LA"]]
                  [:slash [:km "Open 2Do Gyana"]]
                  [:h [:km "Open 2Do Watch"]]
                  [:b [:km "Open 2Do Blog"]]
                  [:y [:km "Open 2Do Buy"]]
                  [:d [:km "Open 2Do Find"]]
-                 [:t [:km "Open 2Do Talk"]]
+                 [:t [:km "Open 2Do Ask"]]
                  [:i [:km "Open 2Do Fix"]]
                  [:m [:km "Open 2Do Later"]]
                  [:semicolon [:km "Open 2Do Starred"]]
