@@ -116,7 +116,7 @@
                  [:g [:km "edit: Git config"]]
                  [:comma [:km "edit: Private LA"]]
                  [:slash [:km "edit: Private Gyana"]]
-                 [:j [:km "Search current safari url in wiki"]]
+                 [:l [:km "Search current safari url in wiki"]]
                  [:t [:km "edit: Projects"]]
                  [:n [:km "edit: Now"]]
                  [:h [:km "wiki: Month"]]
@@ -124,7 +124,7 @@
                  [:o [:km "proj: Dotfiles"]]
                  [:i [:km "edit: Zsh functions"]]
                  [:r [:km "edit: Darwin Nix"]]
-                 [:l [:km "edit: Aliases"]]]}
+                 [:j [:km "edit: Aliases"]]]}
         {:des "4key (palettes)"
          :rules [:4-mode
                  [:k :!SOTf] ; App specific
@@ -201,7 +201,7 @@
                  [:o [:km "open: Keyboard Maestro"]]]}
         {:des "ekey (cmd)"
          :rules [:e-mode
-                 [:spacebar :!CSO7] ; Search selection with Google Lucky search
+                 [:spacebar :!CSO7] ; Selection -> Google Lucky search
                  ;[:spacebar [:km "Google selected word"]]
                  [:open_bracket :!Copen_bracket]
                  [:close_bracket :!Cclose_bracket]
@@ -329,7 +329,7 @@
                  [:k [:alfred "search menu bar" "com.tedwise.menubarsearch"]]]}
         {:des "akey (ctrl)"
          :rules [:a-mode
-                 [:spacebar :!CT9] ; Search selection on Google
+                 [:spacebar :!CT9] ; Selection -> Google
                  [:open_bracket :!Topen_bracket]
                  [:close_bracket :!Tclose_bracket]
                  [:semicolon :!Tsemicolon]
@@ -400,7 +400,7 @@
                  [:semicolon [:km "Tasks from apps -> TODO"]]]}
         {:des "dkey (mouse)"
          :rules [:d-mode
-                 [:spacebar :!CTq] ; Search selection in Web Searches
+                 [:spacebar :!CTq] ; Selection -> Web Searches
                  [:j {:mkey {:vwheel 60}}] ; Scroll down
                  [:k {:mkey {:vwheel -60}}] ; Scroll up
                  [:a :!CT6] ; Smart zoom
@@ -449,7 +449,7 @@
                  [:o :!Oreturn_or_enter]]}
         {:des "gkey (actions)"
          :rules [:g-mode
-                 [:spacebar :!CT8] ; Search selection in Dictionary (wiki)
+                 [:spacebar :!CT8] ; Selection -> Dictionary (wiki)
                  [:semicolon :!Cgrave_accent_and_tilde] ; Switch between active windows  (go down)
                  [:j [:km "New Fantastical event"]]
                  [:i [:km "New Fantastical event (from now)"]]
