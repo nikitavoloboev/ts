@@ -116,7 +116,7 @@
                  [:g [:km "edit: Git config"]]
                  [:comma [:km "edit: Private LA"]]
                  [:slash [:km "edit: Private Gyana"]]
-                 [:l [:km "Search current safari url in wiki"]]
+                 [:j [:km "Search current safari url in wiki"]]
                  [:t [:km "edit: Projects"]]
                  [:n [:km "edit: Now"]]
                  [:h [:km "wiki: Month"]]
@@ -124,13 +124,14 @@
                  [:o [:km "proj: Dotfiles"]]
                  [:i [:km "edit: Zsh functions"]]
                  [:r [:km "edit: Darwin Nix"]]
-                 [:j [:km "edit: Aliases"]]]}
+                 [:l [:km "edit: Aliases"]]]}
         {:des "4key (palettes)"
          :rules [:4-mode
                  [:k :!SOTf] ; App specific
                  [:l :!SOTr]]} ; Personal
         {:des "qkey (cmd + shift)"
          :rules [:q-mode
+                 [:spacebar :!CSOe] ; Selection -> YouTube search
                  [:open_bracket :!CSopen_bracket]
                  [:close_bracket :!CSclose_bracket]
                  [:semicolon :!CSsemicolon]
@@ -246,7 +247,7 @@
                  [:0 :!C0]]}
         {:des "rkey (apps)"
          :rules [:r-mode
-                 [:spacebar [:km "Copy and activate previous app"]]
+                 [:spacebar :!COSx] ; Selection -> Reddit
                  [:q [:km "open: IINA"]]
                  [:caps_lock [:km "open: Preview"]]
                  [:o :!CO7] ; Open Typinator
@@ -399,12 +400,13 @@
                  [:semicolon [:km "Tasks from apps -> TODO"]]]}
         {:des "dkey (mouse)"
          :rules [:d-mode
+                 [:spacebar :!CTq] ; Search selection in Web Searches
                  [:j {:mkey {:vwheel 60}}] ; Scroll down
                  [:k {:mkey {:vwheel -60}}] ; Scroll up
                  [:a :!CT6] ; Smart zoom
-                 [:f :!CTf] ; Full screen
+                 [:f [:km "Copy and activate previous app"]]
+                 ;[:f :!CTf] ; Full screen
                  ;[:s [:km "Add app to full screen split"]]
-                 [:spacebar :!CTq] ; Search selection in Web Searches
                  [:semicolon [:km "Google Searchio selected word"]]
                  [:m [:km "Select line and google"]]
                  [:i :!Ckeypad_hyphen] ; Zoom out
@@ -466,10 +468,10 @@
                  [:s [:km "Dismiss notifications"]]]}
         {:des "zkey (chat)"
          :rules [:z-mode
+                 [:period [:km "Search Tweetbot"]]
                  [:j [:km "New tweet"]]
                  [:n [:km "New tweet with current URL"]]
                  [:v [:km "open: Tweetbot"]]
-                 [:period [:km "Search Tweetbot"]]
                  [:f [:km "open: Spark"]]
                  [:c [:km "open: Contacts"]]
                  [:d [:km "New Spark email"]]
@@ -485,7 +487,9 @@
                  [:l [:km "open: Discord"]]]}
         {:des "vkey (media)"
          :rules [:v-mode
+                 [:spacebar :!CSOv] ; Selection -> Google Images
                  [:e :!CO9] ; Connect/disconnect AirPods
+                 [:r [:km "Repeat Spotify song"]]
                  [:u :!COS6] ; Toggle Night Shift on/off.
                  [:j :mute]
                  [:a [:km "Clone repo to ~/src/clones and open with VS Code"]]
@@ -504,6 +508,7 @@
                  [:m :volume_increment]]}
         {:des "bkey (break)"
          :rules [:b-mode
+                 [:spacebar :!TOSs] ; Selection -> DuckDuckGo
                  [:period [:km "Break 5 min"]]
                  [:comma [:km "Break 10 min"]]
                  [:h [:alfred "search hn" "com.vitorgalvao.alfred.hackerboard"]]
@@ -569,6 +574,7 @@
                  [:grave_accent_and_tilde [:alfred "search dash" "com.nikivi.own.dash" "tldr: "]]]}
         {:des "ckey (test)"
          :rules [:c-mode
+                 [:spacebar :!CSOy] ; Selection -> Stack Overflow
                  [:u [:km "test: Rust"]]
                  [:i [:km "test: Python"]]
                  [:o [:km "test: Go"]]
@@ -608,6 +614,7 @@
                  ;[:a [:p :r :i :n :t :!S9 :!S0 :left_arrow]]]} ; -> print()
         {:des "tilkey (actions)"
          :rules [:tilde-mode
+                 [:spacebar :!COSn] ; Selection -> GitHub
                  [:h :!CTOx] ; Little Snitch
                  [:e [:km "Add blog to Reeder"]]
                  [:n :!STh] ; Record macro
@@ -622,11 +629,10 @@
         {:des "xkey (spotify)"
          :rules [:x-mode
                  [:o [:km "Share current song on Twitter"]]
-                 [:i [:km "Repeat Spotify song"]]
                  [:h [:km "Play Top song"]]
                  [:p [:km "Paste current Spotify song link"]]
                  [:l [:alfred "spot_mini" "com.vdesabou.spotify.mini.player"]]
-                 [:v [:alfred "show_alfred_playlist" "com.vdesabou.spotify.mini.player"]]
+                 [:i [:alfred "show_alfred_playlist" "com.vdesabou.spotify.mini.player"]]
                  [:j [:alfred "song_radio" "com.vdesabou.spotify.mini.player"]]
                  [:u [:alfred "artist_radio" "com.vdesabou.spotify.mini.player"]]
                  [:k [:alfred "show_current_track" "com.vdesabou.spotify.mini.player"]]
@@ -655,6 +661,7 @@
                  [:s [:km "w: Stack Overflow"]]]}
         {:des "tkey (websites)"
          :rules [:t-mode
+                 [:spacebar :!COSr]]} ; Selection -> Google Translate
                  [:r [:km "w: Repl"]]
                  [:o [:km "w: Dropbox"]]
                  [:a [:km "w: Amazon"]]
@@ -666,7 +673,6 @@
                  [:k [:km "w: Kaggle"]]
                  [:w [:km "w: WakaTime"]]
                  [:n [:km "w: NPM"]]
-                 [:spacebar :!COSr]]} ; Google Translate selected text
         {:des "tabkey (alfred)"
          :rules [:tab-mode
                  [:i [:alfred "search ios tabs" "net.deanishe.alfred.safari"]]
