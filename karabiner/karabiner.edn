@@ -108,19 +108,20 @@
                  [:h :!Cleft_arrow]]}
         {:des "3key (open files + projects)"
          :rules [:3-mode
-                 [:l [:km "wiki: Rules"]]
+                 [:semicolon [:km "wiki: Rules"]]
                  [:m [:km "wiki: Summary"]]
-                 [:t [:km "wiki: Talk notes"]]
+                 [:u [:km "wiki: Talk notes"]]
                  [:period [:km "edit: Private notes"]]
-                 [:semicolon [:km "wiki: Processes"]]
+                 [:p [:km "wiki: Processes"]]
                  [:g [:km "edit: Git config"]]
                  [:comma [:km "edit: Private LA"]]
                  [:slash [:km "edit: Private Gyana"]]
-                 [:u [:km "Search current safari url in wiki"]]
-                 [:o [:km "edit: Projects"]]
+                 [:l [:km "Search current safari url in wiki"]]
+                 [:t [:km "edit: Projects"]]
                  [:n [:km "edit: Now"]]
                  [:h [:km "wiki: Month"]]
                  [:k [:km "proj: Knowledge"]]
+                 [:o [:km "proj: Dotfiles"]]
                  [:i [:km "edit: Zsh functions"]]
                  [:r [:km "edit: Darwin Nix"]]
                  [:j [:km "edit: Aliases"]]]}
