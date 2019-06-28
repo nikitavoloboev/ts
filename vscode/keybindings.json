@@ -429,5 +429,13 @@
     "key": "cmd+k cmd+n",
     "command": "-extension.search",
     "when": "!terminalFocus"
+  },
+  {
+    "key": "cmd+0",
+    "command": "-workbench.action.focusSideBar"
+  },
+  {
+    "key": "ctrl+t",
+    "command": "workbench.action.toggleSidebarVisibility"
   }
 ]

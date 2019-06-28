@@ -408,13 +408,13 @@
                  ;[:f :!CTf] ; Full screen
                  ;[:s [:km "Add app to full screen split"]]
                  [:semicolon [:km "Google Searchio selected word"]]
-                 [:m [:km "Select line and google"]]
+                 [:l [:km "Select line and google"]]
                  [:i :!Ckeypad_hyphen] ; Zoom out
                  [:o :!Ckeypad_plus] ; Zoom in
                  [:n [:km "Open URL in clipboard in Safari"]]
                  [:g [:km "Centre mouse to active app"]]
                  [:u [:km "Google Lucky selected word"]]
-                 [:l [:km "Google clipboard"]]
+                 [:m [:km "Google clipboard"]]
                  [:v {:pkey :button1}] ; Left click
                  [:b {:pkey :button3}] ; Middle click
                  [:z {:pkey :button2}] ; Right click
