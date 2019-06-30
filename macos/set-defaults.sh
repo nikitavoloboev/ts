@@ -11,7 +11,7 @@ fi
 
 set +e
 
-# https://www.howtogeek.com/267463/how-to-enable-key-repeating-in-macos. 
+# https://www.howtogeek.com/267463/how-to-enable-key-repeating-in-macos.
 defaults write -g ApplePressAndHoldEnabled -bool false
 echo 'Fast key repeat. Requires restart.'
 
@@ -24,5 +24,8 @@ echo 'Sped up dialogue boxes'
 
 defaults write org.m0k.transmission WarningDonate -bool false
 echo 'Hide Transmission app donate message'
+
+defaults write -g WebAutomaticTextReplacementEnabled -bool false
+echo 'Disable macOS/iOS text expansion'
 
 echo 'Some commands here require restart! Please do that for them to take effect.'

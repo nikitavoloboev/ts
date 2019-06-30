@@ -99,6 +99,7 @@
                  [:l [:km "list: command line tools"]]]}
         {:des "2key (move + alfred)"
          :rules [:2-mode
+                 [:spacebar :!COSu] ; Selection -> HN
                  [:o [:alfred "soulver" "app.soulver.alfredworkflow"]]
                  [:semicolon :!Oup_arrow]
                  [:quote :!Odown_arrow]
@@ -125,13 +126,16 @@
                  [:i [:km "edit: Zsh functions"]]
                  [:r [:km "edit: Darwin Nix"]]
                  [:j [:km "edit: Aliases"]]]}
-        {:des "4key (palettes)"
+        {:des "4key (palettes + URL searches)"
          :rules [:4-mode
+                 [:i :!COSo] ; Safari URL -> Twitter
+                 [:h :!COSo] ; Safari URL -> HN
+                 [:t :!CSOp] ; Selection -> Reddit
                  [:k :!SOTf] ; App specific
                  [:l :!SOTr]]} ; Personal
         {:des "qkey (cmd + shift)"
          :rules [:q-mode
-                 [:spacebar :!CSOe] ; Selection -> YouTube search
+                 [:spacebar :!CSOe] ; Selection -> YouTube
                  [:open_bracket :!CSopen_bracket]
                  [:close_bracket :!CSclose_bracket]
                  [:semicolon :!CSsemicolon]
@@ -201,7 +205,7 @@
                  [:o [:km "open: Keyboard Maestro"]]]}
         {:des "ekey (cmd)"
          :rules [:e-mode
-                 [:spacebar :!CSO7] ; Selection -> Google Lucky search
+                 [:spacebar :!CSO7] ; Selection -> Google Lucky
                  ;[:spacebar [:km "Google selected word"]]
                  [:open_bracket :!Copen_bracket]
                  [:close_bracket :!Cclose_bracket]
@@ -469,6 +473,7 @@
         {:des "zkey (chat)"
          :rules [:z-mode
                  [:period [:km "Search Tweetbot"]]
+                 [:spacebar :!CSOz] ; Selection -> Twitter
                  [:j [:km "New tweet"]]
                  [:n [:km "New tweet with current URL"]]
                  [:v [:km "open: Tweetbot"]]
