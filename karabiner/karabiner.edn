@@ -314,7 +314,6 @@
                  [:w :!CObackslash] ; 1Password search
                  [:caps_lock [:alfred "search folders" "nikivi.search.folders"]]
                  [:spacebar [:alfred "search PDFs" "nikivi.search.files"]]
-                 [:g :!TCclose_bracket] ; Search SnippetsLab library with assistant
                  [:grave_accent_and_tilde [:alfred "search processes" "com.vitorgalvao.alfred.processcontrol"]]
                  [:e [:km "Make 2Do task"]]
                  [:b [:km "Make 2Do task with Safari title as name + note as current URL"]]
@@ -381,8 +380,7 @@
                  [:e :tab]
                  [:r :!Stab]
                  [:i :!CTperiod] ; Contexts search active windows
-                 [:u :!COS8] ; Selection -> Typinator snippet
-                 [:o :!COS0] ; Selectio -> Typinator snippet
+                 ;[:o :!COS0] ; Selection -> Typinator snippet
                  [:p :!COS9] ; Clipboard -> Typinator snippet
                  [:a :!Cc] ; Copy
                  [:v :left_shift]
@@ -400,8 +398,10 @@
                  [:##b :!Cleft_arrow]
                  [:n :!Cv] ; Paste
                  [:##m :!Cright_arrow]
-                 [:period [:km "Selected text -> TODO"]]
-                 [:semicolon [:km "Tasks from apps -> TODO"]]]}
+                 [:open_bracket [:km "Selected text -> TODO"]]
+                 [:semicolon [:km "Tasks from apps -> TODO"]]
+                 [:period :!TCclose_bracket] ; Search SnippetsLab library with assistant
+                 [:o :!CTO9]]} ; Search Typinator
         {:des "dkey (mouse)"
          :rules [:d-mode
                  [:spacebar :!CTq] ; Selection -> Web Searches
@@ -502,8 +502,8 @@
                  [:d [:km "Clone repo to ~/src/clones and open with Sublime Text"]]
                  [:comma [:km "Noizio change"]]
                  [:slash [:km "Noizio pick audio device"]]
-                 [:period :!TS0] ; Turn on/off Noizio
-                 [:semicolon [:km "Play/pause Spotify"]]
+                 [:semicolon :!TS0] ; Turn on/off Noizio
+                 [:period [:km "Play/pause Spotify"]]
                  [:i :display_brightness_decrement]
                  [:o :display_brightness_increment]
                  [:h :vk_consumer_previous]
