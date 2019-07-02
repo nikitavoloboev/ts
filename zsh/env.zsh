@@ -9,6 +9,7 @@ export PATH=$PATH:~/.dotfiles/bin # Scripts & utilities
 export PATH=$PATH:~/.cargo/bin # Rust
 export GOPATH="$(go env GOPATH)" # Go
 export PATH="$PATH:$GOPATH/bin" # Go
+export PATH=~/anaconda3/bin:$PATH # Anaconda
 
 export PATH=$PATH:./node_modules/.bin
 

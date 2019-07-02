@@ -8,6 +8,7 @@
       # tools
       pkgs.git
       pkgs.idris
+      # pkgs.conda TODO:
       pkgs.gitAndTools.hub
       pkgs.neovim
       pkgs.vim

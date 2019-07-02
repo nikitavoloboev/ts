@@ -381,12 +381,12 @@
                  [:e :tab]
                  [:r :!Stab]
                  [:i :!CTperiod] ; Contexts search active windows
-                 [:u :!COS8] ; Make Typinator snippet from selection
-                 [:o :!COS0] ; Make Typinator snippet from selection
-                 [:p :!COS9] ; Make Typinator snippet from clipboard
+                 [:u :!COS8] ; Selection -> Typinator snippet
+                 [:o :!COS0] ; Selectio -> Typinator snippet
+                 [:p :!COS9] ; Clipboard -> Typinator snippet
                  [:a :!Cc] ; Copy
                  [:v :left_shift]
-                 [:t :!COp] ; Make HasteBin link from selection
+                 [:t :!COp] ; Selection -> HasteBin link
                  [:quote [:!Cleft_arrow :!CSright_arrow]] ; Highlight current line
                  [:w [:!Oleft_arrow :!OSright_arrow]] ; Highlight word
                  [:d :delete_or_backspace]
@@ -494,9 +494,9 @@
          :rules [:v-mode
                  [:spacebar :!CSOv] ; Selection -> Google Images
                  [:e :!CO9] ; Connect/disconnect AirPods
-                 [:r [:km "Repeat Spotify song"]]
                  [:u :!COS6] ; Toggle Night Shift on/off.
                  [:j :mute]
+                 [:r [:km "Repeat Spotify song"]]
                  [:a [:km "Clone repo to ~/src/clones and open with VS Code"]]
                  [:s [:km "Clone repo to ~/src/clones"]]
                  [:d [:km "Clone repo to ~/src/clones and open with Sublime Text"]]
@@ -588,8 +588,8 @@
                  [:h [:km "test: Haskell"]]
                  [:j [:km "test: JS"]]
                  [:k [:km "edit: Build to learn server"]]
-                 [:l [:km "proj: Build to learn"]]
-                 [:semicolon [:alfred "search build to learn" "nikivi.private.directories"]]
+                 [:l [:alfred "search build to learn" "nikivi.private.directories"]]
+                 [:semicolon [:km "proj: Build to learn"]]
                  [:period [:km "New SnippetsLab snippet"]]]}
          {:des "jskey"
           :rules [:jsdot-mode
