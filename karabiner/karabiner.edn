@@ -65,7 +65,6 @@
                  [:b :!Sb]
                  [:n :!Sn]
                  [:m :!Sm]
-                 [:caps_lock :!CTO9] ; Search Typinator
                  [:grave_accent_and_tilde [:!Sgrave_accent_and_tilde]] ; -> ~
                  [:1 :!T1]
                  [:2 :!T2]
@@ -409,8 +408,6 @@
                  [:k {:mkey {:vwheel -60}}] ; Scroll up
                  [:a :!CT6] ; Smart zoom
                  [:f [:km "Copy and activate previous app"]]
-                 ;[:f :!CTf] ; Full screen
-                 ;[:s [:km "Add app to full screen split"]]
                  [:semicolon [:km "Google Searchio selected word"]]
                  [:l [:km "Select line and google"]]
                  [:i :!Ckeypad_hyphen] ; Zoom out
@@ -496,9 +493,9 @@
                  [:e :!CO9] ; Connect/disconnect AirPods
                  [:u :!COS6] ; Toggle Night Shift on/off.
                  [:j :mute]
-                 [:r [:km "Repeat Spotify song"]]
                  [:a [:km "Clone repo to ~/src/clones and open with VS Code"]]
                  [:s [:km "Clone repo to ~/src/clones"]]
+                 [:r [:km "Repeat Spotify song"]]
                  [:d [:km "Clone repo to ~/src/clones and open with Sublime Text"]]
                  [:comma [:km "Noizio change"]]
                  [:slash [:km "Noizio pick audio device"]]

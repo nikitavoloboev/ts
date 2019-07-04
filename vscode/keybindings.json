@@ -208,11 +208,6 @@
     "command": "-workbench.view.explorer"
   },
   {
-    "key": "ctrl+w",
-    "command": "bookmarks.jumpToNext",
-    "when": "editorTextFocus"
-  },
-  {
     "key": "alt+cmd+l",
     "command": "-bookmarks.jumpToNext",
     "when": "editorTextFocus"
@@ -264,7 +259,7 @@
     "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
   },
   {
-    "key": "ctrl+.",
+    "key": "ctrl+,",
     "command": "references-view.find",
     "when": "editorHasReferenceProvider"
   },
@@ -384,11 +379,6 @@
     "command": "-workbench.action.moveEditorRightInGroup"
   },
   {
-    "key": "ctrl+c",
-    "command": "bookmarks.jumpToPrevious",
-    "when": "editorTextFocus"
-  },
-  {
     "key": "alt+cmd+j",
     "command": "-bookmarks.jumpToPrevious",
     "when": "editorTextFocus"
@@ -414,10 +404,6 @@
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+,",
-    "command": "workbench.view.extension.todo"
-  },
-  {
     "key": "ctrl+o",
     "command": "workbench.action.gotoSymbol"
   },
@@ -437,5 +423,13 @@
   {
     "key": "ctrl+t",
     "command": "workbench.action.toggleSidebarVisibility"
+  },
+  {
+    "key": "ctrl+.",
+    "command": "bookmarks.list"
+  },
+  {
+    "key": "ctrl+d",
+    "command": "bookmarks.clear"
   }
 ]
