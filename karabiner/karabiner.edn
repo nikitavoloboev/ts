@@ -108,11 +108,11 @@
                  [:h :!Cleft_arrow]]}
         {:des "3key (open files + projects)"
          :rules [:3-mode
-                 [:semicolon [:km "wiki: Rules"]]
+                 [:j [:km "wiki: Rules"]]
+                 [:k [:km "wiki: Processes"]]
                  [:m [:km "wiki: Summary"]]
                  [:u [:km "wiki: Talk notes"]]
                  [:period [:km "edit: Private notes"]]
-                 [:p [:km "wiki: Processes"]]
                  [:g [:km "edit: Git config"]]
                  [:comma [:km "edit: Private LA"]]
                  [:slash [:km "edit: Private Gyana"]]
@@ -120,11 +120,11 @@
                  [:t [:km "edit: Projects"]]
                  [:n [:km "edit: Now"]]
                  [:h [:km "wiki: Month"]]
-                 [:k [:km "proj: Knowledge"]]
-                 [:o [:km "proj: Dotfiles"]]
+                 [:semicolon [:km "proj: Knowledge"]]
+                 [:f [:km "proj: Dotfiles"]]
                  [:i [:km "edit: Zsh functions"]]
                  [:r [:km "edit: Darwin Nix"]]
-                 [:j [:km "edit: Aliases"]]]}
+                 [:o [:km "edit: Aliases"]]]}
         {:des "4key (palettes + URL searches)"
          :rules [:4-mode
                  [:i :!COSo] ; Safari URL -> Twitter
@@ -379,8 +379,8 @@
                  [:e :tab]
                  [:r :!Stab]
                  [:i :!CTperiod] ; Contexts search active windows
-                 ;[:o :!COS0] ; Selection -> Typinator snippet
-                 [:p :!COS9] ; Clipboard -> Typinator snippet
+                 [:p :!COS0] ; Selection -> Typinator snippet
+                 ;[:p :!COS9] ; Clipboard -> Typinator snippet
                  [:a :!Cc] ; Copy
                  [:v :left_shift]
                  [:t :!COp] ; Selection -> HasteBin link
@@ -512,15 +512,14 @@
          :rules [:b-mode
                  [:spacebar :!TOSs] ; Selection -> DuckDuckGo
                  [:period [:km "Break 5 min"]]
-                 [:comma [:km "Break 10 min"]]
                  [:h [:alfred "search hn" "com.vitorgalvao.alfred.hackerboard"]]
                  [:semicolon [:km "w: GitHub (trending)"]]
-                 [:s [:km "w: Reddit Saved"]]
+                 [:a [:km "w: Reddit Saved"]]
                  [:d [:km "w: Medium (network)"]]
                  [:l [:km "w: Lobsters"]]
                  [:p [:km "w: Product Hunt"]]
                  [:o [:km "w: Lobsters (new)"]]
-                 [:a [:km "w: Swift forum"]]
+                 [:s [:km "w: Swift forum"]]
                  [:i [:km "w: Hacker News (new)"]]
                  [:n [:km "w: Alfred forum"]]
                  [:m [:km "w: KM forum"]]
@@ -601,7 +600,8 @@
                   [:grave_accent_and_tilde [:!Cf :c :o :n :s :o :l :e :period :l :o :g :!S9 :return_or_enter]] ; -> search console.log( in file
 
                   ; Code Helpers
-                  [:spacebar [:!St :h :a :n :k :s :period]] ; -> Thanks.
+                  ; TODO: make spacebar change between language modes
+                  [:t [:!St :h :a :n :k :spacebar :y :o :u :period]] ; -> Thank you.
                   [:q [:!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> TODO:
                   [:w [:km "VSCode/XCode/Sublime comment on top of line"]]
                   [:e [:km "VSCode/XCode/Sublime comment on top of line with TODO"]]

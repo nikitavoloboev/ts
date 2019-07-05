@@ -33,7 +33,7 @@
     "command": "workbench.action.quickOpen"
   },
   {
-    "key": "ctrl+r",
+    "key": "ctrl+t",
     "command": "workbench.view.explorer"
   },
   {
@@ -259,7 +259,7 @@
     "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
   },
   {
-    "key": "ctrl+,",
+    "key": "ctrl+d",
     "command": "references-view.find",
     "when": "editorHasReferenceProvider"
   },
@@ -343,7 +343,7 @@
     "when": "editorHasDefinitionProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
   },
   {
-    "key": "ctrl+d",
+    "key": "ctrl+,",
     "command": "bookmarks.listFromAllFiles"
   },
   {
@@ -421,15 +421,11 @@
     "command": "-workbench.action.focusSideBar"
   },
   {
-    "key": "ctrl+t",
+    "key": "ctrl+r",
     "command": "workbench.action.toggleSidebarVisibility"
   },
   {
     "key": "ctrl+.",
     "command": "bookmarks.list"
-  },
-  {
-    "key": "ctrl+d",
-    "command": "bookmarks.clear"
   }
 ]
