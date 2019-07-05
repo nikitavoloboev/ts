@@ -664,7 +664,7 @@
                  [:s [:km "w: Stack Overflow"]]]}
         {:des "tkey (websites)"
          :rules [:t-mode
-                 [:spacebar :!COSr]]} ; Selection -> Google Translate
+                 [:spacebar :!COSr] ; Selection -> Google Translate
                  [:r [:km "w: Repl"]]
                  [:o [:km "w: Dropbox"]]
                  [:a [:km "w: Amazon"]]
@@ -675,7 +675,7 @@
                  [:period [:km "w: Netlify"]]
                  [:k [:km "w: Kaggle"]]
                  [:w [:km "w: WakaTime"]]
-                 [:n [:km "w: NPM"]]
+                 [:n [:km "w: NPM"]]]}
         {:des "tabkey (alfred)"
          :rules [:tab-mode
                  [:i [:alfred "search ios tabs" "net.deanishe.alfred.safari"]]
