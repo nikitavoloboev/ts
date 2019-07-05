@@ -499,8 +499,8 @@
                  [:d [:km "Clone repo to ~/src/clones and open with Sublime Text"]]
                  [:comma [:km "Noizio change"]]
                  [:slash [:km "Noizio pick audio device"]]
-                 [:semicolon :!TS0] ; Turn on/off Noizio
-                 [:period [:km "Play/pause Spotify"]]
+                 [:period :!TS0] ; Turn on/off Noizio
+                 [:semicolon [:km "Play/pause Spotify"]]
                  [:i :display_brightness_decrement]
                  [:o :display_brightness_increment]
                  [:h :vk_consumer_previous]
@@ -589,23 +589,23 @@
                  [:period [:km "New SnippetsLab snippet"]]]}
          {:des "jskey"
           :rules [:jsdot-mode
-                  [:v [:t :y :p :e :s :c :r :i :p :t :spacebar]] ; -> typescript
-                  [:c [:j :a :v :a :s :c :r :i :p :t :spacebar]] ; -> javascript
-                  [:x [:e :x :p :o :r :t :spacebar]] ; -> export
                   [:z [:spacebar :c :l :a :s :s :!Sn :a :m :e :equal_sign :!Squote :!Squote :left_arrow]] ; -> className="" 
-                  [:f [:km "= {}"]]
-                  [:d [:r :e :t :u :r :n :spacebar]] ; -> return
-                  [:s [:equal_sign :!Speriod :spacebar]] ; -> =>
+                  [:x [:e :x :p :o :r :t :spacebar]] ; -> export
+                  [:c [:j :a :v :a :s :c :r :i :p :t :spacebar]] ; -> javascript
+                  [:v [:t :y :p :e :s :c :r :i :p :t :spacebar]] ; -> typescript
                   [:a [:c :o :n :s :o :l :e :period :l :o :g :!S9 :!S0 :left_arrow]] ; -> console.log()
-                  [:grave_accent_and_tilde [:!Cf :c :o :n :s :o :l :e :period :l :o :g :!S9 :return_or_enter]] ; -> search console.log( in file
+                  [:s [:equal_sign :!Speriod :spacebar]] ; -> =>
+                  [:d [:r :e :t :u :r :n :spacebar]] ; -> return
+                  [:f [:!Cf :c :o :n :s :o :l :e :period :l :o :g :!S9 :return_or_enter]] ; -> search console.log( in file
+                  [:g [:km "= {}"]]
 
                   ; Code Helpers
                   ; TODO: make spacebar change between language modes
-                  [:t [:!St :h :a :n :k :spacebar :y :o :u :period]] ; -> Thank you.
                   [:q [:!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> TODO:
                   [:w [:km "VSCode/XCode/Sublime comment on top of line"]]
                   [:e [:km "VSCode/XCode/Sublime comment on top of line with TODO"]]
                   [:r [:!Sa :spacebar :slash :slash :spacebar :!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> // TODO: (on same line)
+                  [:t [:!St :h :a :n :k :spacebar :y :o :u :period]] ; -> Thank you.
                   [:tab [:!CSf :!St :!So :!Sd :!So :!Ssemicolon :return_or_enter]] ; -> search TODO: globally
                   [:caps_lock [:!Cf :!St :!So :!Sd :!So :!Ssemicolon :return_or_enter]]]} ; -> search TODO: in file
         ; {:des "gokey"
