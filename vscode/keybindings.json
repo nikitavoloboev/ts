@@ -435,5 +435,9 @@
   {
     "key": "ctrl+d",
     "command": "workbench.action.focusSideBar"
+  },
+  {
+    "key": "ctrl+h",
+    "command": "workbench.files.action.focusFilesExplorer"
   }
 ]

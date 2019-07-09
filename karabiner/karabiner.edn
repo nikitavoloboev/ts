@@ -597,17 +597,17 @@
                   [:s [:equal_sign :!Speriod :spacebar]] ; -> =>
                   [:d [:r :e :t :u :r :n :spacebar]] ; -> return
                   [:f [:!Cf :c :o :n :s :o :l :e :period :l :o :g :!S9 :return_or_enter]] ; -> search console.log( in file
-                  [:g [:km "= {}"]]
+                  ;[:g [:km "= {}"]]
 
                   ; Code Helpers
                   ; TODO: make spacebar change between language modes
+                  [:spacebar [:!St :h :a :n :k :s :period]] ; -> Thanks.
                   [:q [:!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> TODO:
                   [:w [:km "VSCode/XCode/Sublime comment on top of line"]]
                   [:e [:km "VSCode/XCode/Sublime comment on top of line with TODO"]]
                   [:r [:!Sa :spacebar :slash :slash :spacebar :!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> // TODO: (on same line)
-                  [:t [:!St :h :a :n :k :spacebar :y :o :u :period]] ; -> Thank you.
-                  [:tab [:!CSf :!St :!So :!Sd :!So :!Ssemicolon :return_or_enter]] ; -> search TODO: globally
-                  [:caps_lock [:!Cf :!St :!So :!Sd :!So :!Ssemicolon :return_or_enter]]]} ; -> search TODO: in file
+                  [:caps_lock [:!Cf :!St :!So :!Sd :!So :!Ssemicolon :return_or_enter]] ; -> search TODO: in file
+                  [:tab [:!CSf :!St :!So :!Sd :!So :!Ssemicolon :return_or_enter]]]} ; -> search TODO: globally
         ; {:des "gokey"
         ;  :rules[:godot-mode
         ;         [:a [:g :o :l :a :n :g :spacebar]]]} ; -> golang
@@ -631,7 +631,7 @@
         {:des "xkey (spotify)"
          :rules [:x-mode
                  [:o [:km "Share current song on Twitter"]]
-                 [:h [:km "Play Top song"]]
+                 [:h [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:7agPIlFzTpgKnqyxUVt7aM"]]
                  [:p [:km "Paste current Spotify song link"]]
                  [:l [:alfred "spot_mini" "com.vdesabou.spotify.mini.player"]]
                  [:i [:alfred "show_alfred_playlist" "com.vdesabou.spotify.mini.player"]]
@@ -668,11 +668,11 @@
                  [:r [:km "w: Repl"]]
                  [:o [:km "w: Dropbox"]]
                  [:a [:km "w: Amazon"]]
-                 [:j [:km "w: Twitch"]]
-                 [:i [:km "w: IFTTT"]]
-                 [:o [:km "w: Google Drive"]]
+                 [:h [:km "w: Twitch"]]
+                 [:period [:km "w: IFTTT"]]
+                 [:i [:km "w: Google Drive"]]
                  [:z [:km "w: MDN"]]
-                 [:period [:km "w: Netlify"]]
+                 [:semicolon [:km "w: Netlify"]]
                  [:k [:km "w: Kaggle"]]
                  [:w [:km "w: WakaTime"]]
                  [:n [:km "w: NPM"]]]}
