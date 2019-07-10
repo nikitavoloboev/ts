@@ -496,7 +496,7 @@
                  [:s [:km "Clone repo to ~/src/clones"]]
                  [:r [:km "Repeat Spotify song"]]
                  [:d [:km "Clone repo to ~/src/clones and open with Sublime Text"]]
-                 [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:1IHfg8YnF8Xi0FJDmU462p"]]
+                 [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:0c0ZVPQPNOfoW16dSa891N"]]
                  ;[:period :!TS0] ; Turn on/off Noizio
                  ;[:comma [:km "Noizio change"]]
                  ;[:slash [:km "Noizio pick audio device"]]
@@ -576,11 +576,12 @@
         {:des "ckey (test)"
          :rules [:c-mode
                  [:spacebar :!CSOy] ; Selection -> Stack Overflow
-                 [:u [:km "test: Rust"]]
+                 [:m [:km "test: Rust"]]
+                 ;[:m [:km "test: Swift"]]
                  [:i [:km "test: Python"]]
                  [:o [:km "test: Go"]]
                  [:n [:km "test: TS"]]
-                 [:m [:km "test: OCaml"]]
+                 ;[:m [:km "test: OCaml"]]
                  [:h [:km "test: Haskell"]]
                  [:j [:km "test: JS"]]
                  [:k [:km "edit: Build to learn server"]]
@@ -665,7 +666,6 @@
          :rules [:t-mode
                  [:spacebar :!COSr] ; Selection -> Google Translate
                  [:r [:km "w: Repl"]]
-                 [:i [:km "w: Tinder"]]
                  [:o [:km "w: Dropbox"]]
                  [:a [:km "w: Amazon"]]
                  [:h [:km "w: Twitch"]]
