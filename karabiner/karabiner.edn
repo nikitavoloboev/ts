@@ -205,7 +205,6 @@
         {:des "ekey (cmd)"
          :rules [:e-mode
                  [:spacebar :!CSO7] ; Selection -> Google Lucky
-                 ;[:spacebar [:km "Google selected word"]]
                  [:open_bracket :!Copen_bracket]
                  [:close_bracket :!Cclose_bracket]
                  [:semicolon :!Csemicolon]
@@ -327,7 +326,7 @@
                  [:s [:alfred "search clones" "com.vitorgalvao.alfred.directories"]]
                  [:d [:alfred "search desktop" "com.vitorgalvao.alfred.directories"]]
                  [:j [:alfred "run" "iansinnott.keyboardmaestro"]]
-                 [:x [:alfred "search workflows" "org.jeef.workflowdirectory"]]
+                 [:g [:alfred "search alfred" "nikivi.utilities" "?"]]
                  [:k [:alfred "search menu bar" "com.tedwise.menubarsearch"]]]}
         {:des "akey (ctrl)"
          :rules [:a-mode
@@ -397,9 +396,10 @@
                  [:##b :!Cleft_arrow]
                  [:n :!Cv] ; Paste
                  [:##m :!Cright_arrow]
+                 [:comma :!COS8] ; Selection -> SnippetsLab
+                 [:period :!TCclose_bracket] ; Search SnippetsLab library with assistant
                  [:open_bracket [:km "Selected text -> TODO"]]
                  [:semicolon [:km "Tasks from apps -> TODO"]]
-                 [:period :!TCclose_bracket] ; Search SnippetsLab library with assistant
                  [:o :!CTO9]]} ; Search Typinator
         {:des "dkey (mouse)"
          :rules [:d-mode
@@ -410,6 +410,7 @@
                  [:f [:km "Copy and activate previous app"]]
                  [:semicolon [:km "Google Searchio selected word"]]
                  [:l [:km "Select line and google"]]
+                 [:h [:km "Google selected word"]]
                  [:i :!Ckeypad_hyphen] ; Zoom out
                  [:o :!Ckeypad_plus] ; Zoom in
                  [:n [:km "Open URL in clipboard in Safari"]]
@@ -452,7 +453,6 @@
          :rules [:g-mode
                  [:spacebar :!CT8] ; Selection -> Dictionary (wiki)
                  [:semicolon :!Cgrave_accent_and_tilde] ; Switch between active windows  (go down)
-                 [:i [:km "New Fantastical event (from now)"]]
                  [:j [:km "Search events"]]
                  [:w :!CSgrave_accent_and_tilde] ; Switch between active windows (go up)
                  [:q :!CO0] ; Show Dropzone dropdown
@@ -496,7 +496,7 @@
                  [:s [:km "Clone repo to ~/src/clones"]]
                  [:r [:km "Repeat Spotify song"]]
                  [:d [:km "Clone repo to ~/src/clones and open with Sublime Text"]]
-                 [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:7agPIlFzTpgKnqyxUVt7aM"]]
+                 [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:1IHfg8YnF8Xi0FJDmU462p"]]
                  ;[:period :!TS0] ; Turn on/off Noizio
                  ;[:comma [:km "Noizio change"]]
                  ;[:slash [:km "Noizio pick audio device"]]
@@ -665,6 +665,7 @@
          :rules [:t-mode
                  [:spacebar :!COSr] ; Selection -> Google Translate
                  [:r [:km "w: Repl"]]
+                 [:i [:km "w: Tinder"]]
                  [:o [:km "w: Dropbox"]]
                  [:a [:km "w: Amazon"]]
                  [:h [:km "w: Twitch"]]
@@ -677,8 +678,7 @@
                  [:n [:km "w: NPM"]]]}
         {:des "tabkey (alfred)"
          :rules [:tab-mode
-                 [:i [:alfred "search ios tabs" "net.deanishe.alfred.safari"]]
-                 [:r [:alfred "search alfred" "nikivi.utilities" "?"]]]}
+                 [:i [:alfred "search ios tabs" "net.deanishe.alfred.safari"]]]}
         {:des "capskey (todo + trello)"
          :rules [:caps-mode
                  [:1 [:alfred "Screenshot -> Imgur" "com.vitorgalvao.alfred.webscreenshot"]]
