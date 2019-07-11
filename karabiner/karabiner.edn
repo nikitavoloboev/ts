@@ -308,25 +308,25 @@
                  [:i [:alfred "search tty sessions" "net.isometry.alfred.tty"]]
                  [:n [:alfred "search lists" "nikivi.learn.anything"]]
                  [:m [:alfred "search lists" "nikivi.awesome.lists"]]
-                 [:z [:alfred "search blog" "nikivi.private.directories"]]
+                 [:g [:alfred "search blog" "nikivi.private.directories"]]
                  [:w :!CObackslash] ; 1Password search
                  [:caps_lock [:alfred "search folders" "nikivi.search.folders"]]
                  [:spacebar [:alfred "search PDFs" "nikivi.search.files"]]
                  [:grave_accent_and_tilde [:alfred "search processes" "com.vitorgalvao.alfred.processcontrol"]]
                  [:e [:km "Make 2Do task"]]
                  [:b [:km "Make 2Do task with Safari title as name + note as current URL"]]
-                 [:v [:km "Make 2Do task with note as current URL"]]
+                 [:t [:km "Make 2Do task with note as current URL"]]
                  [:r [:km "2Do with current url as note (pr)"]]
                  [:q [:alfred "search downloads" "recentdownloads.ddjfreedom"]]
                  [:tab [:km "2Do with current url as note (check)"]]
-                 [:t [:km "2Do with current url as note (watch)"]]
+                 [:h [:km "2Do with current url as note (watch)"]]
                  [:a [:alfred "search files" "nikivi.manage.notes"]]
                  [:c [:alfred "search emoji" "com.github.jsumners.alfred-emoji"]]
                  [:f [:alfred "search repos" "net.deanishe.alfred-git-repos"]]
                  [:s [:alfred "search clones" "com.vitorgalvao.alfred.directories"]]
                  [:d [:alfred "search desktop" "com.vitorgalvao.alfred.directories"]]
                  [:j [:alfred "run" "iansinnott.keyboardmaestro"]]
-                 [:g [:alfred "search alfred" "nikivi.utilities" "?"]]
+                 [:v [:alfred "search alfred" "nikivi.utilities" "?"]]
                  [:k [:alfred "search menu bar" "com.tedwise.menubarsearch"]]]}
         {:des "akey (ctrl)"
          :rules [:a-mode
@@ -496,7 +496,7 @@
                  [:s [:km "Clone repo to ~/src/clones"]]
                  [:r [:km "Repeat Spotify song"]]
                  [:d [:km "Clone repo to ~/src/clones and open with Sublime Text"]]
-                 [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:0c0ZVPQPNOfoW16dSa891N"]]
+                 [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:6Irt9GvjTLQQDDgb3vqU0y"]]
                  ;[:period :!TS0] ; Turn on/off Noizio
                  ;[:comma [:km "Noizio change"]]
                  ;[:slash [:km "Noizio pick audio device"]]
