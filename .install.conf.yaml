@@ -19,10 +19,13 @@
     #- npm config set prefix '~/.npm-global'
     # TODO: Automate filling in the list
     # TODO: Install go tools
-    #- go get -u github.com/m3ng9i/ran
-    # TODO: Install rust
+    # - go get -u github.com/m3ng9i/ran
+    # TODO: Install rust tools
     # TODO: Install npm global tools
-    #- npm install -g @fabiospampinato/bump
+    # - npm install -g @fabiospampinato/bump
+    # TODO: install vs code extensions
+    # - code --list-extensions
+
 
 # Symlink files
 - link:

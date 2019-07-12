@@ -254,9 +254,9 @@
                  [:caps_lock [:km "open: Preview"]]
                  [:o :!CO7] ; Open Typinator
                  [:h [:km "open: Photos"]]
-                 [:semicolon [:km "open: ScreenFlow"]]
+                 ;[:semicolon [:km "open: ScreenFlow"]]
                  [:period [:km "open: Final Cut Pro"]]
-                 [:e [:km "open: Soulver"]]
+                 [:semicolon [:km "open: Soulver"]]
                  [:u [:km "open: Flume"]]
                  [:p [:km "open: Affinity Photo"]]
                  [:m [:km "open: OBS"]]
@@ -278,7 +278,8 @@
                  [:d :backslash]
                  [:x :!Sbackslash]
                  [:l [:hyphen :!Speriod :spacebar]] ; -> arrow (->)
-                 [:grave_accent_and_tilde [:slash :slash :spacebar]] ; -> //
+                 [:b [:slash :slash :spacebar]] ; -> //
+                 [:grave_accent_and_tilde :!Sgrave_accent_and_tilde] ; -> //
                  [:caps_lock [:km "Match symbols"]]
                  [:e :!S3]
                  [:1 :!S1]
@@ -468,14 +469,13 @@
                  [:s [:km "Dismiss notifications"]]]}
         {:des "zkey (chat)"
          :rules [:z-mode
-                 [:period [:km "Search Tweetbot"]]
                  [:spacebar :!CSOz] ; Selection -> Twitter
-                 [:j [:km "New tweet"]]
-                 [:n [:km "New tweet with current URL"]]
-                 [:v [:km "open: Tweetbot"]]
+                 [:n [:km "New tweet"]]
+                 [:b [:km "New tweet with current URL"]]
+                 [:j [:km "open: Tweetbot"]]
                  [:f [:km "open: Spark"]]
                  [:c [:km "open: Contacts"]]
-                 [:d [:km "New Spark email"]]
+                 [:v [:km "New Spark email"]]
                  [:g [:alfred "search contacts" "nikivi.search.content"]]
                  [:h [:km "Create new contact"]]
                  [:comma [:km "open: FaceTime"]]
@@ -496,7 +496,7 @@
                  [:s [:km "Clone repo to ~/src/clones"]]
                  [:r [:km "Repeat Spotify song"]]
                  [:d [:km "Clone repo to ~/src/clones and open with Sublime Text"]]
-                 [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:6Irt9GvjTLQQDDgb3vqU0y"]]
+                 [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:35cVcLbaHZ9kdent5eYPZA"]] ; Focus
                  ;[:period :!TS0] ; Turn on/off Noizio
                  ;[:comma [:km "Noizio change"]]
                  ;[:slash [:km "Noizio pick audio device"]]
@@ -514,17 +514,17 @@
                  [:period [:km "Break 5 min"]]
                  [:h [:alfred "search hn" "com.vitorgalvao.alfred.hackerboard"]]
                  [:semicolon [:km "w: GitHub (trending)"]]
-                 [:a [:km "w: Reddit Saved"]]
-                 [:d [:km "w: Medium (network)"]]
+                 [:d [:km "w: Reddit Saved"]]
+                 [:comma [:km "w: Medium (network)"]]
                  [:l [:km "w: Lobsters"]]
                  [:p [:km "w: Product Hunt"]]
                  [:o [:km "w: Lobsters (new)"]]
                  [:s [:km "w: Swift forum"]]
                  [:i [:km "w: Hacker News (new)"]]
-                 [:n [:km "w: Alfred forum"]]
+                 [:a [:km "w: Alfred forum"]]
                  [:m [:km "w: KM forum"]]
                  [:k [:km "w: GitHub (front page)"]]
-                 [:u [:km "w: HckrNews"]]
+                 [:n [:km "w: HckrNews"]]
                  [:j [:km "w: Hacker News"]]]}
         {:des "nkey (alfred)"
          :rules [:n-mode
@@ -535,8 +535,9 @@
                  [:5 :!O5]
                  [:6 :!O6]
                  [:c [:alfred "search wiki" "nikivi.mind"]]
+                 [:v [:alfred "search twitter" "nikivi.search.the.web"]]
                  [:tab [:alfred "search stack" "net.deanishe.alfred-stackoverflow"]]
-                 [:v [:alfred "ssh" "net.deanishe.alfred-ssh"]]
+                 [:q [:alfred "ssh" "net.deanishe.alfred-ssh"]]
                  [:e [:alfred "search subs" "net.deanishe.alfred-reddit"]]
                  [:b [:alfred "search bookmarks" "net.deanishe.alfred.safari"]]
                  [:r [:alfred "search reddit" "nikivi.search.the.web"]]

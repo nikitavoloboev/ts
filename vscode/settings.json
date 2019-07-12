@@ -28,7 +28,6 @@
   "editor.cursorStyle": "line",
   // workbench
   "workbench.list.horizontalScrolling": true,
-  "workbench.statusBar.feedback.visible": false,
   "workbench.fontAliasing": "antialiased",
   "workbench.activityBar.visible": false,
   "workbench.startupEditor": "none",
@@ -37,7 +36,7 @@
   "workbench.settings.enableNaturalLanguageSearch": false,
   "workbench.colorTheme": "Monokai Night",
   // window
-  "window.zoomLevel": -1,
+  "window.zoomLevel": -2,
   "window.restoreWindows": "all",
   "window.newWindowDimensions": "maximized",
   // debug
@@ -52,6 +51,8 @@
   // search
   "search.smartCase": true,
   "search.exclude": {
+    "**/node_modules": true,
+    "**/.git": true,
     "dist": true,
     "out": true,
     "coverage": true
@@ -66,7 +67,7 @@
     "**/.DS_Store": true,
     "**/package-lock.json": true,
     "vendor": true,
-    "**/node_modules": true,
+    // "**/node_modules": true,
     "**/npm-debug.log": true,
     "**/dist": true,
     "**/*.bs.js": true
@@ -195,7 +196,6 @@
   "git.ignoreMissingGitWarning": true,
   // gitlens
   "gitlens.codeLens.enabled": false,
-  "gitlens.settings.mode": "advanced",
   "gitlens.keymap": "chorded",
   "gitlens.codeLens.scopes": ["containers", "document"],
   "gitlens.views.fileHistory.enabled": true,

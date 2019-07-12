@@ -9,7 +9,7 @@ b() {
 #   cd -
 # }
 
-e() {
+w() {
   if [ $# -eq 0 ]; then
     code .
   else
@@ -25,7 +25,7 @@ s() {
   fi
 }
 
-w() {
+e() {
   if [ $# -eq 0 ]; then
     nvim .
   else

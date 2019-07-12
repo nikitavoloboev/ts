@@ -384,7 +384,7 @@
     "when": "editorTextFocus"
   },
   {
-    "key": "ctrl+n",
+    "key": "ctrl+w",
     "command": "editor.action.marker.next",
     "when": "editorTextFocus && !editorReadonly"
   },
@@ -439,5 +439,13 @@
   {
     "key": "ctrl+h",
     "command": "workbench.files.action.focusFilesExplorer"
+  },
+  {
+    "key": "shift+cmd+n",
+    "command": "extension.search"
+  },
+  {
+    "key": "shift+cmd+n",
+    "command": "-workbench.action.newWindow"
   }
 ]
