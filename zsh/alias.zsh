@@ -1,6 +1,6 @@
 # Temp
 
-# TODO: clean it & use only what I need
+alias f='open .'
 
 # Nix
 alias n='nix'
@@ -56,7 +56,6 @@ alias dus='du -s'
 alias to='touch'
 alias t='bat'
 alias zo='open'
-alias ff='open .'
 alias ki='kill'
 alias icat='imgcat'
 alias tt='tldr'

@@ -36,7 +36,7 @@
   "workbench.settings.enableNaturalLanguageSearch": false,
   "workbench.colorTheme": "Monokai Night",
   // window
-  "window.zoomLevel": -2,
+  "window.zoomLevel": -1,
   "window.restoreWindows": "all",
   "window.newWindowDimensions": "maximized",
   // debug
@@ -206,7 +206,6 @@
     "suppressUpdateNotice": true
   },
   // extensions
-  "search-node-modules.path": "app/react/node_modules",
   "extensions.ignoreRecommendations": true,
   "extensions.showRecommendationsOnlyOnDemand": true,
   "[jsonc]": {

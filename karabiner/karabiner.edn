@@ -470,12 +470,12 @@
         {:des "zkey (chat)"
          :rules [:z-mode
                  [:spacebar :!CSOz] ; Selection -> Twitter
-                 [:n [:km "New tweet"]]
-                 [:b [:km "New tweet with current URL"]]
-                 [:j [:km "open: Tweetbot"]]
+                 [:j [:km "New tweet"]]
+                 [:n [:km "New tweet with current URL"]]
+                 [:v [:km "open: Tweetbot"]]
                  [:f [:km "open: Spark"]]
                  [:c [:km "open: Contacts"]]
-                 [:v [:km "New Spark email"]]
+                 [:d [:km "New Spark email"]]
                  [:g [:alfred "search contacts" "nikivi.search.content"]]
                  [:h [:km "Create new contact"]]
                  [:comma [:km "open: FaceTime"]]
@@ -578,16 +578,14 @@
          :rules [:c-mode
                  [:spacebar :!CSOy] ; Selection -> Stack Overflow
                  [:m [:km "test: Rust"]]
-                 ;[:m [:km "test: Swift"]]
                  [:i [:km "test: Python"]]
-                 [:o [:km "test: Go"]]
+                 [:semicolon [:km "test: Go"]]
                  [:n [:km "test: TS"]]
-                 ;[:m [:km "test: OCaml"]]
                  [:h [:km "test: Haskell"]]
                  [:j [:km "test: JS"]]
                  [:k [:km "edit: Build to learn server"]]
-                 [:l [:alfred "search build to learn" "nikivi.private.directories"]]
-                 [:semicolon [:km "proj: Build to learn"]]
+                 [:period [:alfred "search build to learn" "nikivi.private.directories"]]
+                 [:l [:km "proj: LA"]]
                  [:period [:km "New SnippetsLab snippet"]]]}
          {:des "jskey"
           :rules [:jsdot-mode
