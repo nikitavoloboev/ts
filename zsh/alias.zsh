@@ -254,7 +254,7 @@ alias gm='git branch -m' # Rename current branch
 alias ger='git checkout -' # Checkout last branch you were on
 alias grl='git reset --hard && git clean -df' # Reset to exact state as last commit
 alias grhf='git checkout HEAD --' # Git reset single file
-alias glo='git log --pretty=oneline --abbrev-commit --graph --decorate'
+alias gf='git log --pretty=oneline --abbrev-commit --graph --decorate'
 alias gpm="git push origin master"
 alias gfk='git fetch && git reset --hard && git clean -dfx' # Reset repo to clean remote state
 alias gsp='git pull --rebase --autostash' # Git stash, pull and apply stash

@@ -577,15 +577,15 @@
         {:des "ckey (test)"
          :rules [:c-mode
                  [:spacebar :!CSOy] ; Selection -> Stack Overflow
-                 [:m [:km "test: Rust"]]
+                 [:o [:km "test: Rust"]]
                  [:i [:km "test: Python"]]
                  [:semicolon [:km "test: Go"]]
                  [:n [:km "test: TS"]]
                  [:h [:km "test: Haskell"]]
                  [:j [:km "test: JS"]]
-                 [:k [:km "edit: Build to learn server"]]
-                 [:period [:alfred "search build to learn" "nikivi.private.directories"]]
+                 [:k [:alfred "search build to learn" "nikivi.private.directories"]]
                  [:l [:km "proj: LA"]]
+                 [:a [:km "proj: Focus"]]
                  [:period [:km "New SnippetsLab snippet"]]]}
          {:des "jskey"
           :rules [:jsdot-mode
