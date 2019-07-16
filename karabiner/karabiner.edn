@@ -287,6 +287,7 @@
                  [:semicolon :semicolon]
                  [:2 :!S2]
                  [:f :hyphen]
+                 [:tab [:!Cright_arrow :return_or_enter :hyphen :spacebar]] ; - 
                  [:s :!Shyphen]
                  [:j :equal_sign]
                  [:w :!S9]
@@ -382,6 +383,7 @@
                  [:p :!COS0] ; Selection -> Typinator snippet
                  ;[:p :!COS9] ; Clipboard -> Typinator snippet
                  [:a :!Cc] ; Copy
+                 [:caps_lock :!Cx] ; Cut
                  [:v :left_shift]
                  [:t :!COp] ; Selection -> HasteBin link
                  [:quote [:!Cleft_arrow :!CSright_arrow]] ; Highlight current line
@@ -496,7 +498,7 @@
                  [:s [:km "Clone repo to ~/src/clones"]]
                  [:r [:km "Repeat Spotify song"]]
                  [:d [:km "Clone repo to ~/src/clones and open with Sublime Text"]]
-                 [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:35cVcLbaHZ9kdent5eYPZA"]] ; Focus
+                 [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:7aS8e5XKVWDcbyn06mF9fz"]] ; Focus
                  ;[:period :!TS0] ; Turn on/off Noizio
                  ;[:comma [:km "Noizio change"]]
                  ;[:slash [:km "Noizio pick audio device"]]
@@ -577,15 +579,15 @@
         {:des "ckey (test)"
          :rules [:c-mode
                  [:spacebar :!CSOy] ; Selection -> Stack Overflow
-                 [:o [:km "test: Rust"]]
+                 [:m [:km "test: Rust"]]
                  [:i [:km "test: Python"]]
-                 [:semicolon [:km "test: Go"]]
+                 [:o [:km "test: Go"]]
                  [:n [:km "test: TS"]]
                  [:h [:km "test: Haskell"]]
                  [:j [:km "test: JS"]]
                  [:k [:alfred "search build to learn" "nikivi.private.directories"]]
                  [:l [:km "proj: LA"]]
-                 [:a [:km "proj: Focus"]]
+                 [:semicolon [:km "proj: Focus"]]
                  [:period [:km "New SnippetsLab snippet"]]]}
          {:des "jskey"
           :rules [:jsdot-mode
@@ -648,11 +650,11 @@
          :rules [:spacebar-mode
                  [:j [:km "w: YouTube"]]
                  [:k [:km "w: GitHub"]]
-                 [:l [:km "w: CodeSandbox"]]
+                 [:o [:km "w: CodeSandbox"]]
                  [:semicolon [:km "w: GitHub (issues)"]]
                  [:period [:km "w: GitHub (prs)"]]
                  [:i [:km "w: GitHub (notifications)"]]
-                 [:n [:km "w: GitLab"]]
+                 [:l [:km "w: GitLab"]]
                  [:w [:km "w: AWS"]]
                  [:r [:km "w: Arxiv"]]
                  [:a [:km "w: Google"]]
@@ -698,15 +700,15 @@
                  [:u [:km "Open Courses Trello"]]
                  [:n [:km "Open 2Do Clean"]]
                  [:k [:km "Open 2Do Today"]]
-                 [:quote [:km "Open 2Do LA"]]
-                 [:g [:km "Open 2Do Life"]]
+                 [:g [:km "Open 2Do LA"]]
+                 [:t [:km "Open 2Do Life"]]
                  [:comma [:km "Open 2Do Macro"]]
                  [:slash [:km "Open 2Do Gyana"]]
                  [:h [:km "Open 2Do Watch"]]
                  [:b [:km "Open 2Do Blog"]]
                  [:y [:km "Open 2Do Buy"]]
                  [:d [:km "Open 2Do Find"]]
-                 [:t [:km "Open 2Do Ask"]]
+                 [:quote [:km "Open 2Do Ask"]]
                  [:i [:km "Open 2Do Fix"]]
                  [:m [:km "Open 2Do Later"]]
                  [:semicolon [:km "Open 2Do Starred"]]

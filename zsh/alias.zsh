@@ -14,7 +14,6 @@ alias nss="nix-shell --run zsh -p"
 alias te='tree'
 alias op='open'
 #alias env='env | fzf'
-alias dnd='do-not-disturb toggle'
 alias cleanup="find . -type f -name '*.DS_Store' -ls -delete" # Recursively delete `.DS_Store` files
 alias g='git' # Wrapper over git
 alias peek='tee >(cat 1>&2)' # Mirror stdout to stderr, useful for seeing data going through a pipe
