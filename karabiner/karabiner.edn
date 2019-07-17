@@ -310,7 +310,7 @@
                  [:i [:alfred "search tty sessions" "net.isometry.alfred.tty"]]
                  [:n [:alfred "search lists" "nikivi.learn.anything"]]
                  [:m [:alfred "search lists" "nikivi.awesome.lists"]]
-                 [:g [:alfred "search blog" "nikivi.private.directories"]]
+                 [:z [:alfred "search blog" "nikivi.private.directories"]]
                  [:w :!CObackslash] ; 1Password search
                  [:caps_lock [:alfred "search folders" "nikivi.search.folders"]]
                  [:spacebar [:alfred "search PDFs" "nikivi.search.files"]]
@@ -579,16 +579,16 @@
         {:des "ckey (test)"
          :rules [:c-mode
                  [:spacebar :!CSOy] ; Selection -> Stack Overflow
-                 [:m [:km "test: Rust"]]
+                 [:o [:km "test: Rust"]]
                  [:i [:km "test: Python"]]
-                 [:o [:km "test: Go"]]
+                 [:k [:km "test: Go"]]
                  [:n [:km "test: TS"]]
                  [:h [:km "test: Haskell"]]
                  [:j [:km "test: JS"]]
-                 [:k [:alfred "search build to learn" "nikivi.private.directories"]]
                  [:l [:km "proj: LA"]]
-                 [:semicolon [:km "proj: Focus"]]
-                 [:period [:km "New SnippetsLab snippet"]]]}
+                 [:m [:km "proj: Main"]]
+                 [:period [:km "New SnippetsLab snippet"]]
+                 [:semicolon [:alfred "search build to learn" "nikivi.private.directories"]]]}
          {:des "jskey"
           :rules [:jsdot-mode
                   [:z [:spacebar :c :l :a :s :s :!Sn :a :m :e :equal_sign :!Squote :!Squote :left_arrow]] ; -> className="" 

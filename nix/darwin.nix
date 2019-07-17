@@ -7,6 +7,7 @@
     [
       # tools
       pkgs.git
+      # pkgs.rustup
       pkgs.idris
       # pkgs.conda TODO:
       pkgs.gitAndTools.hub
@@ -31,14 +32,14 @@
       pkgs.clojure
       pkgs.go
       pkgs.ripgrep
-      pkgs.mitmproxy
+      # pkgs.mitmproxy
       pkgs.tree
       pkgs.kubectl
       pkgs.cloc
       # pkgs.minikube # TODO: update
       pkgs.cmake
       # pkgs.yarn
-      pkgs.screenfetch
+      # pkgs.screenfetch
 
       # ocaml
       #pkgs.ocamlPackages.merlin
