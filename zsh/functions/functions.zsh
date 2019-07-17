@@ -126,12 +126,6 @@ path(){
   echo -e ${PATH//:/\\n}
 }
 
-# Install all node dependencies and run project
-iS(){
-  npm install
-  npm start
-}
-
 # cd to Finder
 cdf() {
     target=`osascript -e 'tell application "Finder" to if (count of Finder windows) > 0 then get POSIX path of (target of front Finder window as text)'`

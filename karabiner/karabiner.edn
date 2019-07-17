@@ -180,6 +180,7 @@
         {:des "wkey (apps)"
          :rules [:w-mode
                  [:spacebar :!CT7] ; Start Google search with selection
+                 [:period [:km "open: Electron"]]
                  [:v [:km "open: Spotify"]]
                  [:k [:km "open: Safari"]]
                  [:d [:km "open: Activity Monitor"]]
@@ -196,7 +197,6 @@
                  [:t [:km "open: Postico"]]
                  [:g [:km "open: Figma"]]
                  [:c [:km "open: Sketch"]]
-                 [:period [:km "open: SnippetsLab"]]
                  [:f [:km "open: 2Do"]]
                  [:j [:km "open: iTerm"]]
                  [:n [:km "open: Sublime Text"]]
@@ -287,7 +287,7 @@
                  [:semicolon :semicolon]
                  [:2 :!S2]
                  [:f :hyphen]
-                 [:tab [:!Cright_arrow :return_or_enter :hyphen :spacebar]] ; - 
+                 ;[:tab [:!Cright_arrow :return_or_enter :hyphen :spacebar]] ; - 
                  [:s :!Shyphen]
                  [:j :equal_sign]
                  [:w :!S9]
@@ -498,7 +498,7 @@
                  [:s [:km "Clone repo to ~/src/clones"]]
                  [:r [:km "Repeat Spotify song"]]
                  [:d [:km "Clone repo to ~/src/clones and open with Sublime Text"]]
-                 [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:7aS8e5XKVWDcbyn06mF9fz"]] ; Focus
+                 [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:3YqZNqNVtYQ41sFTj7hW7n"]] ; Focus
                  ;[:period :!TS0] ; Turn on/off Noizio
                  ;[:comma [:km "Noizio change"]]
                  ;[:slash [:km "Noizio pick audio device"]]
