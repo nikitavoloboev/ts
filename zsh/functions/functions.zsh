@@ -74,21 +74,19 @@ uz(){
   antibody update
 }
 
-# npm install. npm install <cmd>
 i(){
   if [ $# -eq 0 ]; then
-    npm install
+    yarn
   else
-    npm install "$@"
+    yarn add "$@"
   fi
 }
 
-# npm install && npm start. npm <cmd>
 ii(){
   if [ $# -eq 0 ]; then
-    npm install && npm start
+    yarn && yarn start
   else
-    npm "$@"
+    yarn "$@"
   fi
 }
 
