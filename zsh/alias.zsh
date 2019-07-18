@@ -2,6 +2,7 @@
 
 alias f='open .'
 alias bi='brew install'
+alias pb='pbcopy'
 
 # Nix
 alias n='nix'
@@ -139,12 +140,11 @@ alias no='node'
 # alias igl='npm list -g --depth 0'
 
 # Yarn
-alias i='yarn'
 alias ia='yarn add'
 alias ir='yarn run'
-alias ire='npm remove'
+alias ie='npm remove'
 alias is='yarn start'
-alias ie='yarn run dev'
+alias ide='yarn run dev'
 alias ig='yarn global add'
 
 # Go

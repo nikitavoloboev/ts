@@ -213,5 +213,6 @@
   },
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "search-node-modules.path": "app/node_modules"
 }
