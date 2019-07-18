@@ -176,7 +176,7 @@
   },
   "explorer.confirmDelete": false,
   // python
-  "python.pythonPath": "/run/current-system/sw/bin/python3",
+  "python.pythonPath": "/Users/nikivi/anaconda3/bin/python3",
   // TODO: maybe there is better? It also doesn't work
   "python.formatting.provider": "autopep8",
   "python.linting.pylintEnabled": false,

@@ -20,6 +20,6 @@ eval "$(hub alias -s)"
 
 # TODO: change my pure prompt if I am in direnv env
 # look at the existing prompt and use below function as it returns needed info
-has_direnv() { if [[ -n $DIRENV_DIFF ]]; then echo in direnv; else echo not; fi }
+# has_direnv() { if [[ -n $DIRENV_DIFF ]]; then echo in direnv; else echo not; fi }
 
 typeset -U PATH # Remove duplicates in $PATH

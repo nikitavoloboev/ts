@@ -1,6 +1,7 @@
 # Temp
 
 alias f='open .'
+alias bi='brew install'
 
 # Nix
 alias n='nix'
@@ -128,7 +129,6 @@ alias kp='kubectl port-forward'
 alias no='node'
 
 # NPM
-alias ig='npm install -g'
 # alias it='npm init'
 # alias iis='npm install && npm start'
 # alias ia='npm add'
@@ -144,7 +144,8 @@ alias ia='yarn add'
 alias ir='yarn run'
 alias ire='npm remove'
 alias is='yarn start'
-alias dev='yarn run dev'
+alias ie='yarn run dev'
+alias ig='yarn global add'
 
 # Go
 alias o='go'
