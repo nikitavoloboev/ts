@@ -1,7 +1,7 @@
 { config, pkgs, ... }:
 
 {
-  # Global packages. Other packages I use: https://github.com/nikitavoloboev/dotfiles/blob/master/.install.conf.yaml#L17
+  # Global packages. Other packages: https://github.com/nikitavoloboev/dotfiles/blob/master/.install.conf.yaml#L17
   environment.systemPackages =
     [
       pkgs.texlive.combined.scheme-full
