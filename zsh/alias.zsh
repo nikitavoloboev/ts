@@ -141,6 +141,7 @@ alias no='node'
 
 # Yarn
 alias ia='yarn add'
+alias it='yarn test'
 alias ir='yarn run'
 alias ie='npm remove'
 alias is='yarn start'

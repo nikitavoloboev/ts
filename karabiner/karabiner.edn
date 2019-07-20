@@ -180,7 +180,11 @@
         {:des "wkey (apps)"
          :rules [:w-mode
                  [:spacebar :!CT7] ; Start Google search with selection
-                 [:period [:km "open: Electron"]]
+                 [:e [:km "New Fantastical event"]]
+                 [:period [:km "open: Xcode"]]
+                 ;[:m [:km "open: Simulator"]]
+                 [:m [:km "open: Electron"]]
+                 [:comma [:km "open: SnippetsLab"]]
                  [:v [:km "open: Spotify"]]
                  [:k [:km "open: Safari"]]
                  [:d [:km "open: Activity Monitor"]]
@@ -189,8 +193,6 @@
                  [:i [:km "open: Chrome Canary"]]
                  [:u [:km "open: Safari Technology Preview"]]
                  [:caps_lock [:km "open: Finder"]]
-                 [:m [:km "open: Xcode"]]
-                 [:e [:km "New Fantastical event"]]
                  [:semicolon [:km "open: Tower"]]
                  [:b [:km "open: BetterTouchTool"]]
                  [:a :!OSC1] ; Open Dash
@@ -257,7 +259,7 @@
                  [:h [:km "open: Photos"]]
                  ;[:semicolon [:km "open: ScreenFlow"]]
                  [:period [:km "open: Final Cut Pro"]]
-                 [:semicolon [:km "open: Soulver"]]
+                 ;[:semicolon [:km "open: Soulver"]]
                  [:u [:km "open: Flume"]]
                  [:p [:km "open: Affinity Photo"]]
                  [:m [:km "open: OBS"]]
@@ -267,6 +269,7 @@
                  [:a [:km "open: Alfred Preferences"]]
                  [:i [:km "open: Pixave"]]
                  [:l [:km "open: Reeder"]]
+                 [:semicolon [:km "open: Books"]]
                  [:j [:km "open: Dictionary"]]
                  [:k [:km "open: PDF Expert"]]
                  [:w [:km "open: 1Password"]]
@@ -600,6 +603,7 @@
                   [:a [:c :o :n :s :o :l :e :period :l :o :g :!S9 :!S0 :left_arrow]] ; -> console.log()
                   [:s [:equal_sign :!Speriod :spacebar]] ; -> =>
                   [:d [:r :e :t :u :r :n :spacebar]] ; -> return
+                  [:g [:d :e :b :u :g :g :e :r]] ; -> debugger
                   [:f [:!Cf :c :o :n :s :o :l :e :period :l :o :g :!S9 :return_or_enter]] ; -> search console.log( in file
                   ;[:g [:km "= {}"]]
 
