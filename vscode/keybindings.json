@@ -293,7 +293,7 @@
     "when": "editorLangId == 'markdown'"
   },
   {
-    "key": "ctrl+i",
+    "key": "ctrl+v",
     "command": "editor.action.quickFix",
     "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
   },

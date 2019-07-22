@@ -181,10 +181,10 @@
          :rules [:w-mode
                  [:spacebar :!CT7] ; Start Google search with selection
                  [:e [:km "New Fantastical event"]]
-                 [:period [:km "open: Xcode"]]
-                 ;[:m [:km "open: Simulator"]]
-                 [:m [:km "open: Electron"]]
-                 [:comma [:km "open: SnippetsLab"]]
+                 [:m [:km "open: Xcode"]]
+                 ;[:period [:km "open: SnippetsLab"]]
+                 ;[:period [:km "open: Simulator"]]
+                 [:period [:km "open: Electron"]]
                  [:v [:km "open: Spotify"]]
                  [:k [:km "open: Safari"]]
                  [:d [:km "open: Activity Monitor"]]
@@ -258,7 +258,7 @@
                  [:o :!CO7] ; Open Typinator
                  [:h [:km "open: Photos"]]
                  [:e [:km "open: ScreenFlow"]]
-                 [:period [:km "open: Final Cut Pro"]]
+                 ;[:period [:km "open: Final Cut Pro"]]
                  ;[:semicolon [:km "open: Soulver"]]
                  [:u [:km "open: Flume"]]
                  [:p [:km "open: Affinity Photo"]]
@@ -323,7 +323,7 @@
                  [:t [:km "Make 2Do task with note as current URL"]]
                  [:r [:km "2Do with current url as note (pr)"]]
                  [:q [:alfred "search downloads" "recentdownloads.ddjfreedom"]]
-                 [:tab [:km "2Do with current url as note (check)"]]
+                 ;[:tab [:km "2Do with current url as note (check)"]] ; TODO: make it so it adds 'check' tag
                  [:a [:alfred "search files" "nikivi.manage.notes"]]
                  [:c [:alfred "search emoji" "com.github.jsumners.alfred-emoji"]]
                  [:f [:alfred "search repos" "net.deanishe.alfred-git-repos"]]
@@ -499,13 +499,12 @@
                  [:j :mute]
                  [:a [:km "Clone repo to ~/src/clones and open with VS Code"]]
                  [:s [:km "Clone repo to ~/src/clones"]]
+                 ;[:d [:km "Clone repo to ~/src/clones and open with Xcode"]] ; TODO:
+                 ;[:f [:km "Clone repo to ~/src/clones and open with Sublime Text"]]
                  [:r [:km "Repeat Spotify song"]]
-                 [:d [:km "Clone repo to ~/src/clones and open with Sublime Text"]]
-                 [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:3YqZNqNVtYQ41sFTj7hW7n"]] ; Focus
-                 ;[:period :!TS0] ; Turn on/off Noizio
-                 ;[:comma [:km "Noizio change"]]
-                 ;[:slash [:km "Noizio pick audio device"]]
-                 [:semicolon [:km "Play/pause Spotify"]]
+                 [:semicolon :!TS0] ; Turn on/off Noizio
+                 [:period [:km "Play/pause Spotify"]]
+                 [:comma [:km "Noizio pick audio device"]]
                  [:i :display_brightness_decrement]
                  [:o :display_brightness_increment]
                  [:h :vk_consumer_previous]
@@ -563,6 +562,7 @@
                  [:spacebar [:alfred "search dash profiles" "nikivi.dash.profiles"]]
                  [:caps_lock [:alfred "search dash" "com.nikivi.own.dash" "man: "]]
                  [:c [:alfred "search dash" "com.nikivi.own.dash" "css: "]]
+                 [:h [:alfred "search dash" "com.nikivi.own.dash" "lodash: "]]
                  [:t [:alfred "search dash" "com.nikivi.own.dash" "python: "]]
                  [:f [:alfred "search dash" "com.nikivi.own.dash" "go: "]]
                  [:k [:alfred "search dash" "com.nikivi.own.dash" "docker: "]]
@@ -637,6 +637,7 @@
                  [:o [:km "Commit wiki"]]]}
         {:des "xkey (spotify)"
          :rules [:x-mode
+                 [:v [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ERn0U4qZIKC8Dy7RrMMsn"]] ; Play Likes playlist
                  [:o [:km "Share current song on Twitter"]]
                  [:p [:km "Paste current Spotify song link"]]
                  [:l [:alfred "spot_mini" "com.vdesabou.spotify.mini.player"]]
@@ -720,7 +721,7 @@
                  [:open_bracket [:km "w: Goodreads (currently reading)"]]
                  [:close_bracket [:km "w: Goodreads (next)"]]
                  [:e [:km "Open Ideas Trello"]]
-                 [:c [:km "Open 2Do Check"]]
+                 ;[:c [:km "Open 2Do Check"]] ; TODO: alfred workflow or go to Pocket app to see links with 'check' tag
                  [:o [:km "Open 2Do Tools"]]
                  [:r [:km "Open 2Do PR"]]
                  [:j [:km "todo: empty"]]]}]}
