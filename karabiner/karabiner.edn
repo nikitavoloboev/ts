@@ -182,15 +182,13 @@
                  [:spacebar :!CT7] ; Start Google search with selection
                  [:e [:km "New Fantastical event"]]
                  [:m [:km "open: Xcode"]]
-                 ;[:period [:km "open: SnippetsLab"]]
-                 ;[:period [:km "open: Simulator"]]
-                 [:period [:km "open: Electron"]]
-                 [:v [:km "open: Spotify"]]
+                 [:period [:km "open: SnippetsLab"]]
+                 [:c [:km "open: Spotify"]]
                  [:k [:km "open: Safari"]]
                  [:d [:km "open: Activity Monitor"]]
                  ;[:c [:km "open: Console"]]
-                 [:c [:km "open: Sketch"]]
-                 [:i [:km "open: Chrome Canary"]]
+                 ;[:c [:km "open: Sketch"]]
+                 [:i [:km "open: Chrome Canary / Electron"]]
                  [:u [:km "open: Safari Technology Preview"]]
                  [:caps_lock [:km "open: Finder"]]
                  [:semicolon [:km "open: Tower"]]
@@ -199,7 +197,7 @@
                  [:r :!CTOSt] ; Open Trello
                  [:h [:km "open: Paw"]]
                  [:t [:km "open: Postico"]]
-                 [:g [:km "open: Figma"]]
+                 [:v [:km "open: Figma"]]
                  [:f [:km "open: 2Do"]]
                  [:j [:km "open: iTerm"]]
                  [:n [:km "open: Sublime Text"]]
@@ -504,7 +502,7 @@
                  [:r [:km "Repeat Spotify song"]]
                  [:semicolon :!TS0] ; Turn on/off Noizio
                  [:period [:km "Play/pause Spotify"]]
-                 [:comma [:km "Noizio pick audio device"]]
+                 [:comma [:km "Noizio settings"]]
                  [:i :display_brightness_decrement]
                  [:o :display_brightness_increment]
                  [:h :vk_consumer_previous]
@@ -595,24 +593,25 @@
                  [:semicolon [:alfred "search build to learn" "nikivi.private.directories"]]]}
          {:des "jskey"
           :rules [:jsdot-mode
-                  [:z [:spacebar :c :l :a :s :s :!Sn :a :m :e :equal_sign :!Squote :!Squote :left_arrow]] ; -> className="" 
+                  ;[:z [:spacebar :c :l :a :s :s :!Sn :a :m :e :equal_sign :!Squote :!Squote :left_arrow]] ; -> className="" 
                   [:x [:e :x :p :o :r :t :spacebar]] ; -> export
                   [:c [:j :a :v :a :s :c :r :i :p :t :spacebar]] ; -> javascript
                   [:v [:t :y :p :e :s :c :r :i :p :t :spacebar]] ; -> typescript
                   [:a [:c :o :n :s :o :l :e :period :l :o :g :!S9 :!S0 :left_arrow]] ; -> console.log()
                   [:s [:equal_sign :!Speriod :spacebar]] ; -> =>
                   [:d [:r :e :t :u :r :n :spacebar]] ; -> return
-                  [:g [:d :e :b :u :g :g :e :r]] ; -> debugger
                   [:f [:!Cf :c :o :n :s :o :l :e :period :l :o :g :!S9 :return_or_enter]] ; -> search console.log( in file
+                  [:g [:d :e :b :u :g :g :e :r]] ; -> debugger
                   ;[:g [:km "= {}"]]
 
                   ; Code Helpers
-                  ; TODO: make spacebar change between language modes
-                  [:spacebar [:!St :h :a :n :k :s :period]] ; -> Thanks.
+                  ; TODO: make spacebar change between language modes (or another key)
+                  [:spacebar [:!St :h :a :n :k :spacebar :y :o :u :period]] ; -> Thank you.
                   [:q [:!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> TODO:
                   [:w [:km "VSCode/XCode/Sublime comment on top of line"]]
                   [:e [:km "VSCode/XCode/Sublime comment on top of line with TODO"]]
                   [:r [:!Sa :spacebar :slash :slash :spacebar :!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> // TODO: (on same line)
+                  [:t [:t :h :a :n :k :s :spacebar]] ; -> thanks
                   [:caps_lock [:!Cf :!St :!So :!Sd :!So :!Ssemicolon :return_or_enter]] ; -> search TODO: in file
                   [:tab [:!CSf :!St :!So :!Sd :!So :!Ssemicolon :return_or_enter]]]} ; -> search TODO: globally
         ; {:des "gokey"
@@ -637,12 +636,12 @@
                  [:o [:km "Commit wiki"]]]}
         {:des "xkey (spotify)"
          :rules [:x-mode
-                 [:v [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ERn0U4qZIKC8Dy7RrMMsn"]] ; Play Likes playlist
+                 ;[:v [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ERn0U4qZIKC8Dy7RrMMsn"]] ; Play Likes playlist TODO: fix
                  [:o [:km "Share current song on Twitter"]]
                  [:p [:km "Paste current Spotify song link"]]
-                 [:l [:alfred "spot_mini" "com.vdesabou.spotify.mini.player"]]
+                 [:j [:alfred "spot_mini" "com.vdesabou.spotify.mini.player"]]
                  [:i [:alfred "show_alfred_playlist" "com.vdesabou.spotify.mini.player"]]
-                 [:j [:alfred "song_radio" "com.vdesabou.spotify.mini.player"]]
+                 [:l [:alfred "song_radio" "com.vdesabou.spotify.mini.player"]]
                  [:u [:alfred "artist_radio" "com.vdesabou.spotify.mini.player"]]
                  [:k [:alfred "show_current_track" "com.vdesabou.spotify.mini.player"]]
                  [:period [:alfred "youtube_search_current_track" "com.vdesabou.spotify.mini.player"]]
@@ -707,9 +706,9 @@
                  [:n [:km "Open 2Do Clean"]]
                  [:k [:km "Open 2Do Today"]]
                  [:g [:km "Open 2Do LA"]]
+                 [:h [:km "Open 2Do Main"]]
                  [:t [:km "Open 2Do Life"]]
                  [:comma [:km "Open 2Do Macro"]]
-                 [:slash [:km "Open 2Do Gyana"]]
                  [:b [:km "Open 2Do Blog"]]
                  [:y [:km "Open 2Do Buy"]]
                  [:d [:km "Open 2Do Find"]]

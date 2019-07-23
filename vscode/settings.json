@@ -1,10 +1,16 @@
 {
-  // looks
+  // workbench
   "workbench.colorCustomizations": {
     "editor.lineHighlightBackground": "#212121"
   },
-  // breadcrumbs
-  "breadcrumbs.enabled": true,
+  "workbench.list.horizontalScrolling": true,
+  "workbench.fontAliasing": "antialiased",
+  "workbench.activityBar.visible": false,
+  "workbench.startupEditor": "none",
+  "workbench.settings.editor": "json",
+  "workbench.editor.showIcons": false,
+  "workbench.settings.enableNaturalLanguageSearch": false,
+  "workbench.colorTheme": "Monokai Night",
   // editor
   "editor.renderLineHighlight": "line",
   "editor.gotoLocation.multiple": "goto",
@@ -26,26 +32,18 @@
   "editor.cursorBlinking": "solid",
   "editor.lineNumbers": "on",
   "editor.cursorStyle": "line",
-  // workbench
-  "workbench.list.horizontalScrolling": true,
-  "workbench.fontAliasing": "antialiased",
-  "workbench.activityBar.visible": false,
-  "workbench.startupEditor": "none",
-  "workbench.settings.editor": "json",
-  "workbench.editor.showIcons": false,
-  "workbench.settings.enableNaturalLanguageSearch": false,
-  "workbench.colorTheme": "Monokai Night",
   // window
   "window.zoomLevel": -1,
   "window.restoreWindows": "all",
   "window.newWindowDimensions": "maximized",
+  // breadcrumbs
+  "breadcrumbs.enabled": true,
   // debug
   "debug.openDebug": "neverOpen",
   "debug.showInStatusBar": "never",
   "debug.toolBarLocation": "hidden",
   // fonts
   "editor.fontFamily": "Fira Code",
-  "terminal.integrated.fontSize": 13,
   "editor.fontLigatures": true,
   "editor.fontSize": 15,
   // search
@@ -59,6 +57,7 @@
   },
   // terminal
   "terminal.integrated.copyOnSelection": true,
+  "terminal.integrated.fontSize": 13,
   // files
   "files.trimTrailingWhitespace": true,
   "files.insertFinalNewline": true,
@@ -213,6 +212,5 @@
   },
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "search-node-modules.path": "app/react/node_modules"
+  }
 }
