@@ -456,10 +456,10 @@
          :rules [:g-mode
                  [:spacebar :!CT8] ; Selection -> Dictionary (wiki)
                  [:semicolon :!Cgrave_accent_and_tilde] ; Switch between active windows  (go down)
-                 [:j [:km "Search events"]]
                  [:w :!CSgrave_accent_and_tilde] ; Switch between active windows (go up)
                  [:q :!CO0] ; Show Dropzone dropdown
                  [:r :!CT3] ; Search bartender menu items
+                 ;[:j :!CT3] ; TODO: move window to different screen (iPad/monitor)
                  [:d :!COd] ; Show/hide dock
                  [:k :!COSf] ; Maximize window
                  [:n :!CTOg] ; Turn on/off notifications
@@ -606,7 +606,7 @@
 
                   ; Code Helpers
                   ; TODO: make spacebar change between language modes (or another key)
-                  [:spacebar [:!St :h :a :n :k :spacebar :y :o :u :period]] ; -> Thank you.
+                  [:spacebar [:!St :h :a :n :k :spacebar :y :o :u :period :spacebar]] ; -> Thank you. 
                   [:q [:!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> TODO:
                   [:w [:km "VSCode/XCode/Sublime comment on top of line"]]
                   [:e [:km "VSCode/XCode/Sublime comment on top of line with TODO"]]

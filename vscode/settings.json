@@ -4,6 +4,7 @@
     "editor.lineHighlightBackground": "#212121"
   },
   "workbench.list.horizontalScrolling": true,
+  "workbench.panel.defaultLocation": "right",
   "workbench.fontAliasing": "antialiased",
   "workbench.activityBar.visible": false,
   "workbench.startupEditor": "none",
