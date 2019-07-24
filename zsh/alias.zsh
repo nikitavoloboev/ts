@@ -48,7 +48,6 @@ alias rl='curl'
 alias how='howdoi'
 alias ua='unalias'
 alias m='mkdir'
-alias jj='killall tmux'
 alias mm='tldr'
 alias ma='man'
 # alias aw='k -h' TODO: ?
@@ -80,7 +79,6 @@ alias tp='type'
 
 # Dev
 alias ll='ln -s'
-alias jd='jid'
 alias tm='task'
 alias rf='reflex'
 alias ser='serve'
@@ -129,24 +127,14 @@ alias kp='kubectl port-forward'
 # Node
 alias no='node'
 
-# NPM
-# alias it='npm init'
-# alias iis='npm install && npm start'
-# alias ia='npm add'
-# alias ir='npm run'
-# alias ire='npm remove'
-# alias is='npm start'
-# alias dev='npm run dev'
-# alias igl='npm list -g --depth 0'
-
 # Yarn
-alias ia='yarn add'
-alias it='yarn test'
-alias ir='yarn run'
-alias ie='npm remove'
-alias is='yarn start'
-alias ide='yarn run dev'
-alias ig='yarn global add'
+alias ja='yarn add'
+alias jt='yarn test'
+alias jr='yarn run'
+alias je='npm remove'
+alias js='yarn start'
+alias jde='yarn run dev'
+alias jg='yarn global add'
 
 # Go
 alias o='go'

@@ -196,7 +196,8 @@
                  [:a :!OSC1] ; Open Dash
                  [:r :!CTOSt] ; Open Trello
                  [:h [:km "open: Paw"]]
-                 [:t [:km "open: Postico"]]
+                 [:t [:km "open: Notion"]]
+                 ;[:t [:km "open: Postico"]]
                  [:v [:km "open: Figma"]]
                  [:f [:km "open: 2Do"]]
                  [:j [:km "open: iTerm"]]

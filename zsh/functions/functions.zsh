@@ -74,7 +74,7 @@ uz(){
   antibody update
 }
 
-i(){
+j(){
   if [ $# -eq 0 ]; then
     yarn
   else
@@ -82,7 +82,7 @@ i(){
   fi
 }
 
-ii(){
+jj(){
   if [ $# -eq 0 ]; then
     yarn && yarn start
   else
