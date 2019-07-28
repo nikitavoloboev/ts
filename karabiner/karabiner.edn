@@ -695,10 +695,12 @@
                  [:9 :!TO9] ; Picture of screen -> Clipboard
                  [:0 :!TO0] ; Picture of screen -> ~/Desktop
                  [:spacebar :!TO7] ; New Kap recording
-                 [:q [:km "New ScreenFlow recording (options)"]]
-                 [:w :!CO5] ; Start/stop ScreenFlow recording
+                 [:tab [:km "New ScreenFlow recording (options)"]]
+                 [:q :!CO5] ; Start/stop ScreenFlow recording
+                 [:w [:km "Open Learn Trello"]]
+                 [:e [:km "Open Ideas Trello"]]
+                 [:r [:km "Open 2Do PR"]]
                  [:f [:km "Open Focus Trello"]]
-                 [:l [:km "Open Learn Trello"]]
                  [:z [:km "Open Music Trello"]]
                  [:v [:km "Open Videos Trello"]]
                  [:p [:km "Open Possessions Trello"]]
@@ -706,22 +708,20 @@
                  [:u [:km "Open Courses Trello"]]
                  [:n [:km "Open 2Do Clean"]]
                  [:k [:km "Open 2Do Today"]]
-                 [:g [:km "Open 2Do LA"]]
+                 [:m [:km "Open 2Do LA"]]
                  [:h [:km "Open 2Do Main"]]
-                 [:t [:km "Open 2Do Life"]]
+                 [:g [:km "Open 2Do Life"]]
                  [:comma [:km "Open 2Do Macro"]]
                  [:b [:km "Open 2Do Blog"]]
                  [:y [:km "Open 2Do Buy"]]
                  [:d [:km "Open 2Do Find"]]
                  [:quote [:km "Open 2Do Ask"]]
                  [:i [:km "Open 2Do Fix"]]
-                 [:m [:km "Open 2Do Later"]]
+                 [:l [:km "Open 2Do Later"]]
                  [:semicolon [:km "Open 2Do Starred"]]
                  [:period [:km "Search 2Do"]]
                  [:open_bracket [:km "w: Goodreads (currently reading)"]]
                  [:close_bracket [:km "w: Goodreads (next)"]]
-                 [:e [:km "Open Ideas Trello"]]
                  ;[:c [:km "Open 2Do Check"]] ; TODO: alfred workflow or go to Pocket app to see links with 'check' tag
                  [:o [:km "Open 2Do Tools"]]
-                 [:r [:km "Open 2Do PR"]]
                  [:j [:km "todo: empty"]]]}]}
