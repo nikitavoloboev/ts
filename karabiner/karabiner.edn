@@ -260,7 +260,7 @@
                  ;[:period [:km "open: Final Cut Pro"]]
                  ;[:semicolon [:km "open: Soulver"]]
                  [:u [:km "open: Flume"]]
-                 [:p [:km "open: Affinity Photo"]]
+                 ;[:p [:km "open: Affinity Photo"]]
                  [:m [:km "open: OBS"]]
                  [:comma [:km "open: Arq"]]
                  [:tab [:km "open: Transmission"]]
@@ -457,8 +457,8 @@
          :rules [:g-mode
                  [:spacebar :!CT8] ; Selection -> Dictionary (wiki)
                  [:j :!Cgrave_accent_and_tilde] ; Switch between active windows  (go down)
-                 [:s :!CSgrave_accent_and_tilde] ; Switch between active windows (go up)
-                 [:q :!CT3] ; Search bartender menu items
+                 [:r :!CSgrave_accent_and_tilde] ; Switch between active windows (go up)
+                 [:e :!CT3] ; Search bartender menu items
                  [:w :!CO0] ; Show Dropzone dropdown
                  ;[:j :!CT3] ; TODO: move window to different screen (iPad/monitor)
                  [:d :!COd] ; Show/hide dock
@@ -469,7 +469,7 @@
                  [:caps_lock [:km "Go to KM group of current app from picklist"]]
                  [:l :!CSOd] ; Move window right
                  [:h :!CSOa] ; Move window left
-                 [:e [:km "Dismiss notifications"]]]}
+                 [:s [:km "Dismiss notifications"]]]}
         {:des "zkey (chat)"
          :rules [:z-mode
                  [:spacebar :!CSOz] ; Selection -> Twitter
@@ -582,7 +582,7 @@
         {:des "ckey (test)"
          :rules [:c-mode
                  [:spacebar :!CSOy] ; Selection -> Stack Overflow
-                 [:o [:km "test: Rust"]]
+                 [:m [:km "test: Rust"]]
                  [:i [:km "test: Python"]]
                  [:k [:km "test: Go"]]
                  [:n [:km "test: TS"]]
@@ -593,7 +593,7 @@
                  [:semicolon [:alfred "search build to learn" "nikivi.private.directories"]]]}
          {:des "jskey"
           :rules [:jsdot-mode
-                  ;[:z [:spacebar :c :l :a :s :s :!Sn :a :m :e :equal_sign :!Squote :!Squote :left_arrow]] ; -> className="" 
+                  ;[:z [:spacebar :s :t :y :l :e :equal_sign :!Sbracket_left :!Sbracket_left :!Sbracket_right :!Sbracket_right :left_arrow :left_arrow]] ; -> style={{}}
                   [:x [:e :x :p :o :r :t :spacebar]] ; -> export
                   [:c [:j :a :v :a :s :c :r :i :p :t :spacebar]] ; -> javascript
                   [:v [:t :y :p :e :s :c :r :i :p :t :spacebar]] ; -> typescript
@@ -628,6 +628,7 @@
                  [:n :!STh] ; Record macro
                  [:j [:km "Go to test macro"]]
                  [:k [:km "Test"]]
+                 ;[:f [:km "Test"]]
                  [:l [:km "Make global macro"]]
                  [:semicolon [:km "Paste active todo"]]
                  [:r [:alfred "restart wifi" "nikivi.wifi.tools"]]
