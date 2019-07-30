@@ -1,5 +1,5 @@
 {
-  // workbench
+  // Workbench
   "workbench.colorCustomizations": {
     "editor.lineHighlightBackground": "#212121"
   },
@@ -12,7 +12,7 @@
   "workbench.editor.showIcons": false,
   "workbench.settings.enableNaturalLanguageSearch": false,
   "workbench.colorTheme": "Monokai Night",
-  // editor
+  // Editor
   "editor.renderLineHighlight": "line",
   "editor.gotoLocation.multiple": "goto",
   "editor.codeActionsOnSave": {
@@ -33,21 +33,22 @@
   "editor.cursorBlinking": "solid",
   "editor.lineNumbers": "on",
   "editor.cursorStyle": "line",
-  // window
+  // Window
   "window.zoomLevel": -1,
   "window.restoreWindows": "all",
   "window.newWindowDimensions": "maximized",
-  // breadcrumbs
+  // Breadcrumbs
   "breadcrumbs.enabled": true,
-  // debug
+  // Debug
   "debug.openDebug": "neverOpen",
   "debug.showInStatusBar": "never",
   "debug.toolBarLocation": "hidden",
-  // fonts
+  // Fonts
   "editor.fontFamily": "Fira Code",
   "editor.fontLigatures": true,
   "editor.fontSize": 15,
-  // search
+  // Search
+  "search.quickOpen.includeHistory": false,
   "search.smartCase": true,
   "search.exclude": {
     "**/node_modules": true,
@@ -56,10 +57,10 @@
     "out": true,
     "coverage": true
   },
-  // terminal
+  // Terminal
   "terminal.integrated.copyOnSelection": true,
   "terminal.integrated.fontSize": 13,
-  // files
+  // Files
   "files.trimTrailingWhitespace": true,
   "files.insertFinalNewline": true,
   "files.exclude": {
@@ -72,30 +73,30 @@
     "**/dist": true,
     "**/*.bs.js": true
   },
-  // explorer
+  // Explorer
   "explorer.openEditors.visible": 0,
   "explorer.confirmDragAndDrop": false,
   "explorer.decorations.badges": false,
-  // python
+  // Python
   "python.linting.pylintArgs": ["--errors-only"],
-  // code runner
+  // Code runner
   "code-runner.clearPreviousOutput": true,
   "code-runner.executorMap": {
     "python": "python3",
     "typescript": "ts-node --transpile-only"
   },
-  // prettier
+  // Prettier
   "editor.formatOnSave": true,
-  // code runner
+  // Code runner
   "code-runner.runInTerminal": false,
-  // vim
+  // Vim
   "vim.leader": " ",
   "vim.debug.silent": true,
   "vim.cursorStylePerMode.normal": "underline",
   "vim.useSystemClipboard": true,
   "vim.easymotion": true,
   "vim.easymotionMarkerBackgroundColor": "red",
-  // space map
+  // Space map
   "vim.normalModeKeyBindings": [
     {
       "before": ["<leader>", "w"],
@@ -148,7 +149,7 @@
       "after": ["y", "$"]
     }
   ],
-  // go
+  // Go
   "go.useLanguageServer": true,
   "go.languageServerExperimentalFeatures": {
     "diagnostics": true // for build and vet errors as you type
@@ -170,12 +171,12 @@
   },
   "go.lintTool": "golint",
   "go.lintOnSave": "package",
-  // files
+  // Files
   "files.associations": {
     "*.toml": "toml"
   },
   "explorer.confirmDelete": false,
-  // python
+  // Python
   "python.pythonPath": "/Users/nikivi/anaconda3/bin/python3",
   // TODO: maybe there is better? It also doesn't work
   "python.formatting.provider": "autopep8",
@@ -183,18 +184,18 @@
   "python.linting.flake8Enabled": true,
   "python.linting.enabled": false,
   // TODO: maybe not need?
-  // typescript
+  // TypeScript
   "typescript.check.npmIsInstalled": false,
   "typescript.updateImportsOnFileMove.enabled": "never",
-  // javascript
+  // JavaScript
   "javascript.updateImportsOnFileMove.enabled": "never",
-  // git
+  // Git
   "git.autofetch": true,
   "git.confirmSync": false,
   "git.ignoreLimitWarning": true,
   "git.enableSmartCommit": true,
   "git.ignoreMissingGitWarning": true,
-  // gitlens
+  // GitLens
   "gitlens.codeLens.enabled": false,
   "gitlens.keymap": "chorded",
   "gitlens.codeLens.scopes": ["containers", "document"],
@@ -205,7 +206,7 @@
     "suppressShowKeyBindingsNotice": true,
     "suppressUpdateNotice": true
   },
-  // extensions
+  // Extensions
   "extensions.ignoreRecommendations": true,
   "extensions.showRecommendationsOnlyOnDemand": true,
   "[jsonc]": {

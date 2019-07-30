@@ -135,6 +135,7 @@ alias je='npm remove'
 alias js='yarn start'
 alias jde='yarn run dev'
 alias jg='yarn global add'
+alias jd='yarn add --dev'
 
 # Go
 alias o='go'
