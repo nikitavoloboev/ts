@@ -188,6 +188,7 @@
                  [:d [:km "open: Activity Monitor"]]
                  ;[:c [:km "open: Console"]]
                  ;[:c [:km "open: Sketch"]]
+                 ;[:t [:km "open: Notion"]]
                  [:i [:km "open: Chrome Canary / Electron"]]
                  [:u [:km "open: Safari Technology Preview"]]
                  [:caps_lock [:km "open: Finder"]]
@@ -196,8 +197,7 @@
                  [:a :!OSC1] ; Open Dash
                  [:r :!CTOSt] ; Open Trello
                  [:h [:km "open: Paw"]]
-                 [:t [:km "open: Notion"]]
-                 ;[:t [:km "open: Postico"]]
+                 [:t [:km "open: Postico"]]
                  [:v [:km "open: Figma"]]
                  [:f [:km "open: 2Do"]]
                  [:j [:km "open: iTerm"]]
@@ -314,7 +314,6 @@
                  [:n [:alfred "search lists" "nikivi.learn.anything"]]
                  [:z [:alfred "search blog" "nikivi.private.directories"]]
                  [:w :!CObackslash] ; 1Password search
-                 [:d [:alfred "search folders" "nikivi.search.folders"]]
                  [:grave_accent_and_tilde [:alfred "search processes" "com.vitorgalvao.alfred.processcontrol"]]
                  [:e [:km "Make 2Do task"]]
                  [:b [:km "Make 2Do task with Safari title as name + note as current URL"]]
@@ -327,6 +326,7 @@
                  [:f [:alfred "search repos" "net.deanishe.alfred-git-repos"]]
                  [:s [:alfred "search clones" "com.vitorgalvao.alfred.directories"]]
                  [:spacebar [:alfred "search PDFs" "nikivi.search.files"]]
+                 [:d [:alfred "search folders" "nikivi.search.folders"]]
                  [:caps_lock [:alfred "search desktop" "com.vitorgalvao.alfred.directories"]]
                  [:j [:alfred "run" "iansinnott.keyboardmaestro"]]
                  [:g [:alfred "search alfred" "nikivi.utilities" "?"]]
@@ -607,11 +607,12 @@
                   ; Code Helpers
                   ; TODO: make spacebar change between language modes (or another key)
                   [:spacebar [:!St :h :a :n :k :spacebar :y :o :u :period :spacebar]] ; -> Thank you. 
-                  [:q [:!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> TODO:
                   [:w [:km "VSCode/XCode/Sublime comment on top of line"]]
-                  [:e [:km "VSCode/XCode/Sublime comment on top of line with TODO"]]
-                  [:r [:!Sa :spacebar :slash :slash :spacebar :!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> // TODO: (on same line)
+                  [:e [:!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> TODO:
                   [:t [:t :h :a :n :k :s :spacebar]] ; -> thanks
+                  ;[:r [:!Sn :!So :!St :!Se :!Ssemicolon :spacebar]] ; -> NOTE: 
+                  ;[:q [:km "VSCode/XCode/Sublime comment on top of line with TODO"]]
+                  ;[:r [:!Sa :spacebar :slash :slash :spacebar :!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> // TODO: (on same line)
                   [:caps_lock [:!Cf :!St :!So :!Sd :!So :!Ssemicolon :return_or_enter]] ; -> search TODO: in file
                   [:tab [:!CSf :!St :!So :!Sd :!So :!Ssemicolon :return_or_enter]]]} ; -> search TODO: globally
         ; {:des "gokey"
