@@ -186,9 +186,10 @@
                  [:c [:km "open: Spotify"]]
                  [:k [:km "open: Safari"]]
                  [:d [:km "open: Activity Monitor"]]
+                 ;[:t [:km "open: Notion"]]
                  ;[:c [:km "open: Console"]]
                  ;[:c [:km "open: Sketch"]]
-                 ;[:t [:km "open: Notion"]]
+                 [:t [:km "open: Postico"]]
                  [:i [:km "open: Chrome Canary / Electron"]]
                  [:u [:km "open: Safari Technology Preview"]]
                  [:caps_lock [:km "open: Finder"]]
@@ -197,7 +198,6 @@
                  [:a :!OSC1] ; Open Dash
                  [:r :!CTOSt] ; Open Trello
                  [:h [:km "open: Paw"]]
-                 [:t [:km "open: Postico"]]
                  [:v [:km "open: Figma"]]
                  [:f [:km "open: 2Do"]]
                  [:j [:km "open: iTerm"]]
@@ -593,10 +593,10 @@
                  [:semicolon [:alfred "search build to learn" "nikivi.private.directories"]]]}
          {:des "jskey"
           :rules [:jsdot-mode
-                  ;[:z [:spacebar :s :t :y :l :e :equal_sign :!Sbracket_left :!Sbracket_left :!Sbracket_right :!Sbracket_right :left_arrow :left_arrow]] ; -> style={{}}
+                  [:z [:spacebar :s :t :y :l :e :equal_sign :!Sopen_bracket :!Sopen_bracket :!Sclose_bracket :!Sclose_bracket :left_arrow :left_arrow]] ; -> style={{}}
                   [:x [:e :x :p :o :r :t :spacebar]] ; -> export
-                  [:c [:j :a :v :a :s :c :r :i :p :t :spacebar]] ; -> javascript
-                  [:v [:t :y :p :e :s :c :r :i :p :t :spacebar]] ; -> typescript
+                  [:v [:j :a :v :a :s :c :r :i :p :t :spacebar]] ; -> javascript
+                  [:b [:t :y :p :e :s :c :r :i :p :t :spacebar]] ; -> typescript
                   [:a [:c :o :n :s :o :l :e :period :l :o :g :!S9 :!S0 :left_arrow]] ; -> console.log()
                   [:s [:equal_sign :!Speriod :spacebar]] ; -> =>
                   [:d [:r :e :t :u :r :n :spacebar]] ; -> return
@@ -607,11 +607,11 @@
                   ; Code Helpers
                   ; TODO: make spacebar change between language modes (or another key)
                   [:spacebar [:!St :h :a :n :k :spacebar :y :o :u :period :spacebar]] ; -> Thank you. 
+                  [:c [:t :h :a :n :k :s :spacebar]] ; -> thanks
                   [:w [:km "VSCode/XCode/Sublime comment on top of line"]]
                   [:e [:!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> TODO:
-                  [:t [:t :h :a :n :k :s :spacebar]] ; -> thanks
+                  [:r [:km "VSCode/XCode/Sublime comment on top of line with TODO"]]
                   ;[:r [:!Sn :!So :!St :!Se :!Ssemicolon :spacebar]] ; -> NOTE: 
-                  ;[:q [:km "VSCode/XCode/Sublime comment on top of line with TODO"]]
                   ;[:r [:!Sa :spacebar :slash :slash :spacebar :!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> // TODO: (on same line)
                   [:caps_lock [:!Cf :!St :!So :!Sd :!So :!Ssemicolon :return_or_enter]] ; -> search TODO: in file
                   [:tab [:!CSf :!St :!So :!Sd :!So :!Ssemicolon :return_or_enter]]]} ; -> search TODO: globally

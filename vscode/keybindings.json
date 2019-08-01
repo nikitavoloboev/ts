@@ -33,7 +33,7 @@
     "command": "workbench.action.quickOpen"
   },
   {
-    "key": "ctrl+t",
+    "key": "ctrl+r",
     "command": "workbench.view.explorer"
   },
   {
@@ -413,7 +413,7 @@
     "command": "-workbench.action.focusSideBar"
   },
   {
-    "key": "ctrl+r",
+    "key": "ctrl+t",
     "command": "workbench.action.toggleSidebarVisibility"
   },
   {
