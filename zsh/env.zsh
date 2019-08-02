@@ -17,6 +17,7 @@ export PATH=$PATH:./node_modules/.bin
 . "$HOME/.nix-profile/etc/profile.d/hm-session-vars.sh"
 
 eval "$(hub alias -s)"
+eval "$(direnv hook zsh)"
 
 # TODO: change my pure prompt if I am in direnv env
 # look at the existing prompt and use below function as it returns needed info

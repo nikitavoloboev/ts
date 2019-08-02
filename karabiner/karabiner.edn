@@ -310,9 +310,9 @@
                  [:4 :!C4]
                  [:5 :!C5]
                  [:6 :!C6]
-                 [:i [:alfred "search tty sessions" "net.isometry.alfred.tty"]]
+                 [:t [:alfred "search tty sessions" "net.isometry.alfred.tty"]]
                  [:n [:alfred "search lists" "nikivi.learn.anything"]]
-                 [:z [:alfred "search blog" "nikivi.private.directories"]]
+                 [:g [:alfred "search blog" "nikivi.private.directories"]]
                  [:w :!CObackslash] ; 1Password search
                  [:grave_accent_and_tilde [:alfred "search processes" "com.vitorgalvao.alfred.processcontrol"]]
                  [:e [:km "Make 2Do task"]]
@@ -328,9 +328,9 @@
                  [:spacebar [:alfred "search PDFs" "nikivi.search.files"]]
                  [:d [:alfred "search folders" "nikivi.search.folders"]]
                  [:caps_lock [:alfred "search desktop" "com.vitorgalvao.alfred.directories"]]
+                 [:k [:alfred "search alfred" "nikivi.utilities" "?"]]
                  [:j [:alfred "run" "iansinnott.keyboardmaestro"]]
-                 [:g [:alfred "search alfred" "nikivi.utilities" "?"]]
-                 [:k [:alfred "search menu bar" "com.tedwise.menubarsearch"]]]}
+                 [:i [:alfred "search menu bar" "com.tedwise.menubarsearch"]]]}
         {:des "akey (ctrl)"
          :rules [:a-mode
                  [:spacebar :!CT9] ; Selection -> Google
@@ -709,8 +709,8 @@
                  [:u [:km "Open Courses Trello"]]
                  [:n [:km "Open 2Do Clean"]]
                  [:k [:km "Open 2Do Today"]]
-                 [:m [:km "Open 2Do LA"]]
-                 [:h [:km "Open 2Do Main"]]
+                 [:c [:km "Open 2Do LA"]]
+                 [:m [:km "Open 2Do Main"]]
                  [:g [:km "Open 2Do Life"]]
                  [:comma [:km "Open 2Do Macro"]]
                  [:b [:km "Open 2Do Blog"]]
