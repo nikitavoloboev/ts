@@ -254,6 +254,7 @@
                  [:spacebar :!COSx] ; Selection -> Reddit
                  [:q [:km "open: IINA"]]
                  [:caps_lock [:km "open: Preview"]]
+                 [:2 [:km "open: PIA"]]
                  [:o :!CO7] ; Open Typinator
                  [:h [:km "open: Photos"]]
                  [:e [:km "open: ScreenFlow"]]
@@ -328,9 +329,9 @@
                  [:spacebar [:alfred "search PDFs" "nikivi.search.files"]]
                  [:d [:alfred "search folders" "nikivi.search.folders"]]
                  [:caps_lock [:alfred "search desktop" "com.vitorgalvao.alfred.directories"]]
-                 [:k [:alfred "search alfred" "nikivi.utilities" "?"]]
+                 [:i [:alfred "search alfred" "nikivi.utilities" "?"]]
                  [:j [:alfred "run" "iansinnott.keyboardmaestro"]]
-                 [:i [:alfred "search menu bar" "com.tedwise.menubarsearch"]]]}
+                 [:k [:alfred "search menu bar" "com.tedwise.menubarsearch"]]]}
         {:des "akey (ctrl)"
          :rules [:a-mode
                  [:spacebar :!CT9] ; Selection -> Google
@@ -710,10 +711,9 @@
                  [:n [:km "Open 2Do Clean"]]
                  [:k [:km "Open 2Do Today"]]
                  [:c [:km "Open 2Do LA"]]
-                 [:m [:km "Open 2Do Main"]]
-                 [:g [:km "Open 2Do Life"]]
+                 [:g [:km "Open 2Do Work"]]
+                 [:m [:km "Open 2Do Life"]]
                  [:comma [:km "Open 2Do Macro"]]
-                 [:b [:km "Open 2Do Blog"]]
                  [:y [:km "Open 2Do Buy"]]
                  [:d [:km "Open 2Do Find"]]
                  [:quote [:km "Open 2Do Ask"]]
