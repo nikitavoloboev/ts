@@ -563,6 +563,7 @@
                  [:caps_lock [:alfred "search dash" "com.nikivi.own.dash" "man: "]]
                  [:c [:alfred "search dash" "com.nikivi.own.dash" "css: "]]
                  [:h [:alfred "search dash" "com.nikivi.own.dash" "lodash: "]]
+                 [:l [:alfred "search dash" "com.nikivi.own.dash" "electron: "]]
                  [:t [:alfred "search dash" "com.nikivi.own.dash" "python: "]]
                  [:f [:alfred "search dash" "com.nikivi.own.dash" "go: "]]
                  [:k [:alfred "search dash" "com.nikivi.own.dash" "docker: "]]
@@ -609,6 +610,7 @@
                   ; TODO: make spacebar change between language modes (or another key)
                   [:spacebar [:!St :h :a :n :k :spacebar :y :o :u :period :spacebar]] ; -> Thank you. 
                   [:c [:t :h :a :n :k :s :spacebar]] ; -> thanks
+                  ;[:x [:d :o :n :e :spacebar]] ; -> done
                   [:w [:km "VSCode/XCode/Sublime comment on top of line"]]
                   [:e [:!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> TODO:
                   [:r [:km "VSCode/XCode/Sublime comment on top of line with TODO"]]
@@ -640,6 +642,7 @@
         {:des "xkey (spotify)"
          :rules [:x-mode
                  ;[:v [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ERn0U4qZIKC8Dy7RrMMsn"]] ; Play Likes playlist TODO: fix
+                 ;[:v [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ERn0U4qZIKC8Dy7RrMMsn"]] ; Play Focus playlist TODO: fix
                  [:o [:km "Share current song on Twitter"]]
                  [:p [:km "Paste current Spotify song link"]]
                  [:j [:alfred "spot_mini" "com.vdesabou.spotify.mini.player"]]
@@ -703,7 +706,6 @@
                  [:e [:km "Open Ideas Trello"]]
                  [:r [:km "Open 2Do PR"]]
                  [:f [:km "Open Focus Trello"]]
-                 [:z [:km "Open Music Trello"]]
                  [:v [:km "Open Videos Trello"]]
                  [:p [:km "Open Possessions Trello"]]
                  [:s [:km "Open Research Papers Trello"]]
