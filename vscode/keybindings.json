@@ -265,7 +265,7 @@
     "when": "editorHasReferenceProvider"
   },
   {
-    "key": "ctrl+g",
+    "key": "alt+cmd+g",
     "command": "editor.action.revealDefinitionAside",
     "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
   },

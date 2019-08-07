@@ -112,6 +112,7 @@
                  [:k [:km "wiki: Processes"]]
                  [:m [:km "wiki: Summary"]]
                  [:u [:km "wiki: Talk notes"]]
+                 [:h [:km "wiki: Used hotkeys"]]
                  [:period [:km "edit: Private notes"]]
                  [:g [:km "edit: Git config"]]
                  [:comma [:km "edit: Private LA"]]
@@ -119,7 +120,7 @@
                  [:l [:km "Search current safari url in wiki"]]
                  [:t [:km "edit: Projects"]]
                  [:n [:km "edit: Now"]]
-                 [:h [:km "wiki: Month"]]
+                 ;[:h [:km "wiki: Month"]] ; TODO: fix
                  [:semicolon [:km "proj: Knowledge"]]
                  [:f [:km "proj: Dotfiles"]]
                  [:i [:km "edit: Zsh functions"]]
@@ -610,12 +611,13 @@
                   ; TODO: make spacebar change between language modes (or another key)
                   [:spacebar [:!St :h :a :n :k :spacebar :y :o :u :period :spacebar]] ; -> Thank you. 
                   [:c [:t :h :a :n :k :s :spacebar]] ; -> thanks
-                  ;[:x [:d :o :n :e :spacebar]] ; -> done
+                  ;[:j [:d :o :n :e :spacebar]] ; -> done
+                  [:q [:km "VSCode/XCode/Sublime comment on next line"]]
                   [:w [:km "VSCode/XCode/Sublime comment on top of line"]]
                   [:e [:!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> TODO:
                   [:r [:km "VSCode/XCode/Sublime comment on top of line with TODO"]]
-                  ;[:r [:!Sn :!So :!St :!Se :!Ssemicolon :spacebar]] ; -> NOTE: 
-                  ;[:r [:!Sa :spacebar :slash :slash :spacebar :!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> // TODO: (on same line)
+                  ;[:t [:!Sn :!So :!St :!Se :!Ssemicolon :spacebar]] ; -> NOTE: 
+                  ;[:t [:!Sa :spacebar :slash :slash :spacebar :!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> // TODO: (on same line)
                   [:caps_lock [:!Cf :!St :!So :!Sd :!So :!Ssemicolon :return_or_enter]] ; -> search TODO: in file
                   [:tab [:!CSf :!St :!So :!Sd :!So :!Ssemicolon :return_or_enter]]]} ; -> search TODO: globally
         ; {:des "gokey"
@@ -713,8 +715,8 @@
                  [:n [:km "Open 2Do Clean"]]
                  [:k [:km "Open 2Do Today"]]
                  [:c [:km "Open 2Do LA"]]
-                 [:g [:km "Open 2Do Work"]]
-                 [:m [:km "Open 2Do Life"]]
+                 [:m [:km "Open 2Do Work"]]
+                 [:g [:km "Open 2Do Life"]]
                  [:comma [:km "Open 2Do Macro"]]
                  [:y [:km "Open 2Do Buy"]]
                  [:d [:km "Open 2Do Find"]]
