@@ -435,5 +435,10 @@
   {
     "key": "shift+cmd+n",
     "command": "-workbench.action.newWindow"
+  },
+  {
+    "key": "shift+cmd+l",
+    "command": "-editor.action.selectHighlights",
+    "when": "editorFocus"
   }
 ]

@@ -2,7 +2,6 @@
 b() {
 }
 
-
 # install global npm packages to custom dir
 # ig() {
 #   cd $HOME/bin

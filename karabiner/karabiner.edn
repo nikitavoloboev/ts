@@ -314,7 +314,7 @@
                  [:6 :!C6]
                  [:t [:alfred "search tty sessions" "net.isometry.alfred.tty"]]
                  [:n [:alfred "search lists" "nikivi.learn.anything"]]
-                 [:g [:alfred "search blog" "nikivi.private.directories"]]
+                 [:z [:alfred "search blog" "nikivi.private.directories"]]
                  [:w :!CObackslash] ; 1Password search
                  [:grave_accent_and_tilde [:alfred "search processes" "com.vitorgalvao.alfred.processcontrol"]]
                  [:e [:km "Make 2Do task"]]
@@ -520,7 +520,8 @@
                  [:h [:alfred "search hn" "com.vitorgalvao.alfred.hackerboard"]]
                  [:semicolon [:km "w: GitHub (trending)"]]
                  [:d [:km "w: Reddit Saved"]]
-                 [:comma [:km "w: Medium (network)"]]
+                 ;[:comma [:km "w: Medium (network)"]]
+                 [:comma [:km "w: Medium (bookmarks)"]]
                  [:l [:km "w: Lobsters"]]
                  [:p [:km "w: Product Hunt"]]
                  [:o [:km "w: Lobsters (new)"]]
@@ -572,11 +573,11 @@
                  [:v [:alfred "search dash" "com.nikivi.own.dash" "vim: "]]
                  [:d [:alfred "search dash" "com.nikivi.own.dash" "node: "]]
                  [:z [:alfred "search dash" "com.nikivi.own.dash" "html: "]]
-                 [:w [:alfred "search dash" "com.nikivi.own.dash" "swift: "]]
                  [:a [:alfred "search dash" "com.nikivi.own.dash" "apple: "]]
                  [:s [:alfred "search dash" "com.nikivi.own.dash" "js: "]]
+                 [:3 [:alfred "search dash" "com.nikivi.own.dash" "d3: "]]
                  [:b [:alfred "search dash" "com.nikivi.own.dash" "bash: "]]
-                 [:g [:alfred "search dash" "com.nikivi.own.dash" "ts: "]]
+                 [:w [:alfred "search dash" "com.nikivi.own.dash" "ts: "]]
                  [:x [:alfred "search dash" "com.nikivi.own.dash" "haskell: "]]
                  [:e [:alfred "search dash" "com.nikivi.own.dash" "react: "]]
                  [:q [:alfred "search dash" "com.nikivi.own.dash" "c: "]]
@@ -596,7 +597,8 @@
                  [:semicolon [:alfred "search build to learn" "nikivi.private.directories"]]]}
          {:des "jskey"
           :rules [:jsdot-mode
-                  [:z [:spacebar :s :t :y :l :e :equal_sign :!Sopen_bracket :!Sopen_bracket :!Sclose_bracket :!Sclose_bracket :left_arrow :left_arrow]] ; -> style={{}}
+                  ;[:z [:spacebar :s :t :y :l :e :equal_sign :!Sopen_bracket :!Sopen_bracket :!Sclose_bracket :!Sclose_bracket :left_arrow :left_arrow]] ; -> style={{}}
+                  [:z [:spacebar :c :l :a :s :s :!Sn :a :m :e :equal_sign :!Squote :!Squote :left_arrow]] ; -> className=""
                   [:x [:e :x :p :o :r :t :spacebar]] ; -> export
                   [:v [:j :a :v :a :s :c :r :i :p :t :spacebar]] ; -> javascript
                   [:b [:t :y :p :e :s :c :r :i :p :t :spacebar]] ; -> typescript
