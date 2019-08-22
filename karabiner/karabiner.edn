@@ -190,7 +190,8 @@
                  ;[:t [:km "open: Notion"]]
                  ;[:c [:km "open: Console"]]
                  ;[:c [:km "open: Sketch"]]
-                 [:t [:km "open: Postico"]]
+                 ;[:t [:km "open: Postico"]]
+                 [:g [:km "open: nteract"]]
                  [:i [:km "open: Chrome Canary / Electron"]]
                  [:u [:km "open: Safari Technology Preview"]]
                  [:caps_lock [:km "open: Finder"]]
@@ -412,6 +413,8 @@
                  [:spacebar :!CTq] ; Selection -> Web Searches
                  [:j {:mkey {:vwheel 60}}] ; Scroll down
                  [:k {:mkey {:vwheel -60}}] ; Scroll up
+                 ;[:l {:mkey {:vwheel 60}}] ; Scroll right TODO: 
+                 ;[:h {:mkey {:vwheel -60}}] ; Scroll left TODO: 
                  [:a :!CT6] ; Smart zoom
                  [:f [:km "Copy and activate previous app"]]
                  [:semicolon [:km "Google Searchio selected word"]]
@@ -606,7 +609,7 @@
                   [:s [:equal_sign :!Speriod :spacebar]] ; -> =>
                   [:d [:r :e :t :u :r :n :spacebar]] ; -> return
                   [:f [:!Cf :c :o :n :s :o :l :e :period :l :o :g :!S9 :return_or_enter]] ; -> search console.log( in file
-                  [:g [:d :e :b :u :g :g :e :r]] ; -> debugger
+                  [:g [:d :e :b :u :g :g :e :r]] ; -> debugger TODO: add cmd+s && cmd+tab to run after
                   ;[:g [:km "= {}"]]
 
                   ; Code Helpers
@@ -618,7 +621,7 @@
                   [:w [:km "VSCode/XCode/Sublime comment on top of line"]]
                   [:e [:!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> TODO:
                   [:r [:km "VSCode/XCode/Sublime comment on top of line with TODO"]]
-                  ;[:t [:!Sn :!So :!St :!Se :!Ssemicolon :spacebar]] ; -> NOTE: 
+                  [:t [:!Sn :!So :!St :!Se :!Ssemicolon :spacebar]] ; -> NOTE: 
                   ;[:t [:!Sa :spacebar :slash :slash :spacebar :!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> // TODO: (on same line)
                   [:caps_lock [:!Cf :!St :!So :!Sd :!So :!Ssemicolon :return_or_enter]] ; -> search TODO: in file
                   [:tab [:!CSf :!St :!So :!Sd :!So :!Ssemicolon :return_or_enter]]]} ; -> search TODO: globally
