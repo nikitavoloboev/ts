@@ -189,8 +189,8 @@
                  [:d [:km "open: Activity Monitor"]]
                  ;[:c [:km "open: Console"]]
                  ;[:c [:km "open: Sketch"]]
-                 ;[:t [:km "open: Postico"]]
-                 [:t [:km "open: nteract"]]
+                 ;[:t [:km "open: nteract"]]
+                 [:t [:km "open: Postico"]]
                  [:g [:km "open: Notion"]]
                  [:i [:km "open: Chrome Canary / Electron"]]
                  [:u [:km "open: Chrome Canary"]]
@@ -619,12 +619,12 @@
                   [:c [:t :h :a :n :k :s :spacebar]] ; -> thanks
                   [:x [:t :h :x :return_or_enter]] ; -> thx
                   ;[:j [:d :o :n :e :spacebar]] ; -> done
-                  [:q [:km "VSCode/XCode/Sublime comment on next line"]]
+                  [:q [:!Sa :spacebar :slash :slash :spacebar]] ; -> // (on same line)
                   [:w [:km "VSCode/XCode/Sublime comment on top of line"]]
                   [:e [:!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> TODO:
                   [:r [:km "VSCode/XCode/Sublime comment on top of line with TODO"]]
                   [:t [:!Sn :!So :!St :!Se :!Ssemicolon :spacebar]] ; -> NOTE: 
-                  ;[:t [:!Sa :spacebar :slash :slash :spacebar :!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> // TODO: (on same line)
+                  ;[:t [:km "VSCode/XCode/Sublime comment on next line"]]
                   [:caps_lock [:!Cf :!St :!So :!Sd :!So :!Ssemicolon :return_or_enter]] ; -> search TODO: in file
                   [:tab [:!CSf :!St :!So :!Sd :!So :!Ssemicolon :return_or_enter]]]} ; -> search TODO: globally
         ; {:des "gokey"
