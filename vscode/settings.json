@@ -34,7 +34,7 @@
   "editor.lineNumbers": "on",
   "editor.cursorStyle": "line",
   // Window
-  "window.zoomLevel": -1,
+  "window.zoomLevel": -2,
   "window.restoreWindows": "all",
   "window.newWindowDimensions": "maximized",
   // Breadcrumbs
@@ -94,8 +94,6 @@
   "vim.debug.silent": true,
   "vim.cursorStylePerMode.normal": "underline",
   "vim.useSystemClipboard": true,
-  "vim.easymotion": true,
-  "vim.easymotionMarkerBackgroundColor": "red",
   // Space map
   "vim.normalModeKeyBindings": [
     {
@@ -149,6 +147,14 @@
       "after": ["y", "$"]
     }
   ],
+  // Easymotion
+  "vim.easymotion": true,
+  "vim.easymotionMarkerBackgroundColor": "yellow",
+  "vim.easymotionMarkerForegroundColorOneChar": "black",
+  "vim.easymotionMarkerForegroundColorTwoChar": "black",
+  "vim.easymotionMarkerFontSize": "17",
+  "vim.easymotionMarkerHeight": 22,
+  "vim.easymotionMarkerYOffset": 4,
   // Go
   "go.useLanguageServer": true,
   "go.languageServerExperimentalFeatures": {
