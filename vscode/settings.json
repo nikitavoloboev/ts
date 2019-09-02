@@ -147,6 +147,16 @@
       "after": ["y", "$"]
     }
   ],
+  "vim.visualModeKeyBindings": [
+    {
+      "before": ["K"],
+      "after": ["leader", "leader", "k"]
+    },
+    {
+      "before": ["J"],
+      "after": ["leader", "leader", "j"]
+    },
+  ],
   // Easymotion
   "vim.easymotion": true,
   "vim.easymotionMarkerBackgroundColor": "yellow",

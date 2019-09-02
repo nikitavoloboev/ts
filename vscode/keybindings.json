@@ -404,11 +404,6 @@
     "command": "-workbench.action.gotoSymbol"
   },
   {
-    "key": "cmd+k cmd+n",
-    "command": "-extension.search",
-    "when": "!terminalFocus"
-  },
-  {
     "key": "cmd+0",
     "command": "-workbench.action.focusSideBar"
   },
@@ -430,15 +425,19 @@
   },
   {
     "key": "shift+cmd+n",
-    "command": "extension.search"
-  },
-  {
-    "key": "shift+cmd+n",
     "command": "-workbench.action.newWindow"
   },
   {
     "key": "shift+cmd+l",
     "command": "-editor.action.selectHighlights",
     "when": "editorFocus"
+  },
+  {
+    "key": "shift+cmd+l",
+    "command": "explorer.newFile"
+  },
+  {
+    "key": "shift+cmd+n",
+    "command": "fileutils.newFile"
   }
 ]
