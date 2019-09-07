@@ -616,7 +616,7 @@
                   ; Code Helpers
                   ; TODO: make spacebar change between language modes (or another key)
                   [:spacebar [:!St :h :a :n :k :spacebar :y :o :u :period :spacebar]] ; -> Thank you. 
-                  [:c [:!St :h :a :n :k :s :period :spacebar]] ; -> Thanks.
+                  [:c [:!St :h :a :n :k :s :spacebar]] ; -> Thanks
                   [:x [:t :h :x :return_or_enter]] ; -> thx
                   ;[:j [:d :o :n :e :spacebar]] ; -> done
                   [:q [:!Sa :spacebar :slash :slash :spacebar]] ; -> // (on same line)
