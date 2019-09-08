@@ -34,7 +34,7 @@
   "editor.lineNumbers": "on",
   "editor.cursorStyle": "line",
   // Window
-  "window.zoomLevel": -2,
+  "window.zoomLevel": -1,
   "window.restoreWindows": "all",
   "window.newWindowDimensions": "maximized",
   // Breadcrumbs
@@ -67,6 +67,7 @@
     "**/.git": true,
     "**/.DS_Store": true,
     "**/package-lock.json": true,
+    "**/yarn.lock": true,
     "vendor": true,
     // "**/node_modules": true,
     "**/npm-debug.log": true,
@@ -155,7 +156,7 @@
     {
       "before": ["J"],
       "after": ["leader", "leader", "j"]
-    },
+    }
   ],
   // Easymotion
   "vim.easymotion": true,
@@ -286,5 +287,5 @@
       "name": "Vue Green",
       "value": "#42b883"
     }
-  ],
+  ]
 }

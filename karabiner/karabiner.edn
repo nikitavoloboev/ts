@@ -452,7 +452,7 @@
                  [:k :return_or_enter]
                  [:q [:km "Lowercase selected text"]]
                  [:1 [:km "Uppercase selected text"]]
-                 [:2 :!COclose_bracket] ; PixelSnap
+                 [:2 :!CSO5] ; PixelSnap
                  [:3 :!CTOp] ; Sip color picker
                  [:l :!Creturn_or_enter]
                  [:m :!Sreturn_or_enter]
@@ -546,8 +546,9 @@
                  [:6 :!O6]
                  [:c [:alfred "search wiki" "nikivi.mind"]]
                  [:t [:alfred "search twitter" "nikivi.search.the.web"]]
-                 [:d [:alfred "search lists" "nikivi.awesome.lists"]]
-                 [:tab [:alfred "search stack" "net.deanishe.alfred-stackoverflow"]]
+                 [:tab [:alfred "search lists" "nikivi.awesome.lists"]]
+                 [:d [:alfred "search stack overflow" "net.deanishe.alfred-stackoverflow"]]
+                 [:x [:alfred "search stack" "net.deanishe.alfred-stackoverflow"]]
                  [:q [:alfred "ssh" "net.deanishe.alfred-ssh"]]
                  [:e [:alfred "search subs" "net.deanishe.alfred-reddit"]]
                  [:b [:alfred "search bookmarks" "net.deanishe.alfred.safari"]]
@@ -638,6 +639,7 @@
                  [:e [:km "Add blog to Reeder"]]
                  [:n :!STh] ; Record macro
                  [:j [:km "Go to test macro"]]
+                 [:f [:km "Test"]]
                  [:k [:km "Test"]]
                  ;[:f [:km "Test"]]
                  [:l [:km "Make global macro"]]
