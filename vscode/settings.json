@@ -207,6 +207,7 @@
   "javascript.updateImportsOnFileMove.enabled": "never",
   // Git
   "git.autofetch": true,
+  // "git.enableStatusBarSync": false, // https://github.com/microsoft/vscode/issues/80515
   "git.confirmSync": false,
   "git.ignoreLimitWarning": true,
   "git.enableSmartCommit": true,
