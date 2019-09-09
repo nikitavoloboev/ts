@@ -33,7 +33,7 @@
     "command": "workbench.action.quickOpen"
   },
   {
-    "key": "ctrl+r",
+    "key": "ctrl+t",
     "command": "workbench.view.explorer"
   },
   {
@@ -195,11 +195,6 @@
     "command": "-workbench.action.terminal.toggleTerminal"
   },
   {
-    "key": "ctrl+o",
-    "command": "-lineBreakInsert",
-    "when": "textInputFocus && !editorReadonly"
-  },
-  {
     "key": "shift+cmd+e",
     "command": "-workbench.view.explorer"
   },
@@ -248,11 +243,6 @@
     "key": "enter",
     "command": "-renameFile",
     "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
-  },
-  {
-    "key": "ctrl+v",
-    "command": "references-view.find",
-    "when": "editorHasReferenceProvider"
   },
   {
     "key": "shift+alt+f12",
@@ -316,11 +306,6 @@
     "command": "editor.action.rename"
   },
   {
-    "key": "ctrl+o",
-    "command": "workbench.action.quickOpenSelectNext",
-    "when": "inQuickOpen"
-  },
-  {
     "key": "ctrl+w",
     "command": "-workbench.action.switchWindow"
   },
@@ -371,7 +356,7 @@
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+q",
+    "key": "ctrl+r",
     "command": "editor.action.marker.prev",
     "when": "editorTextFocus && !editorReadonly"
   },
@@ -381,17 +366,12 @@
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+q",
-    "command": "editor.action.marker.prev",
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
     "key": "shift+alt+f8",
     "command": "-editor.action.marker.prev",
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+o",
+    "key": "ctrl+v",
     "command": "workbench.action.gotoSymbol"
   },
   {
@@ -403,7 +383,7 @@
     "command": "-workbench.action.focusSideBar"
   },
   {
-    "key": "ctrl+t",
+    "key": "cmd+shift+t",
     "command": "workbench.action.toggleSidebarVisibility"
   },
   {
