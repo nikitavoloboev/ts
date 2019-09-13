@@ -6,6 +6,7 @@
     [
       pkgs.texlive.combined.scheme-full
       pkgs.nix
+      pkgs.wifi-password
     ];
 
 

@@ -124,7 +124,6 @@
                  [:semicolon [:km "proj: Knowledge"]]
                  [:f [:km "proj: Dotfiles"]]
                  [:i [:km "edit: Zsh functions"]]
-                 [:r [:km "edit: Darwin Nix"]]
                  [:o [:km "edit: Aliases"]]]}
         {:des "4key (palettes + URL searches)"
          :rules [:4-mode
@@ -442,6 +441,7 @@
                  [:caps_lock [:km "Move active todo to MindNode"]]
                  [:a [:alfred "new task" "nikivi.todo.task"]]
                  [:s [:km "edit: clones"]]
+                 [:d [:km "edit: Darwin Nix"]]
                  [:w :!CTO4] ; Alfred file action
                  [:j [:km "Open 1st iTerm tab"]]
                  [:h [:km "Make markdown link from selection {link}"]]
@@ -617,14 +617,14 @@
                   ; Code Helpers
                   ; TODO: make spacebar change between language modes (or another key)
                   [:spacebar [:!St :h :a :n :k :spacebar :y :o :u :period :spacebar]] ; -> Thank you. 
+                  [:2 [:!Sr :e :f :spacebar :!S3]] ; -> Ref #
+                  [:3 [:!Sf :i :x :spacebar :!S3]] ; -> Fix #
                   [:c [:t :h :a :n :k :s :spacebar]] ; -> thanks
-                  [:3 [:!Sc :l :o :s :e :s :spacebar :!S3]] ; -> Closes #
                   [:q [:!Sa :spacebar :slash :slash :spacebar]] ; -> // (on same line)
                   [:w [:km "VSCode/XCode/Sublime comment on top of line"]]
                   [:e [:!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> TODO:
                   [:r [:km "VSCode/XCode/Sublime comment on top of line with TODO"]]
                   [:t [:!Sn :!So :!St :!Se :!Ssemicolon :spacebar]] ; -> NOTE: 
-                  ;[:t [:km "VSCode/XCode/Sublime comment on next line"]]
                   [:caps_lock [:!Cf :!St :!So :!Sd :!So :!Ssemicolon :return_or_enter]] ; -> search TODO: in file
                   [:tab [:!CSf :!St :!So :!Sd :!So :!Ssemicolon :return_or_enter]]]} ; -> search TODO: globally
         ; {:des "gokey"
@@ -669,24 +669,26 @@
                  [:b [:alfred "remove_current_track_from" "com.vdesabou.spotify.mini.player"]]]}
         {:des "spacekey (top sites)"
          :rules [:spacebar-mode
-                 [:w :!S0] ; )
                  [:q :!Sclose_bracket] ; }
+                 [:w :!S0] ; )
                  [:o :close_bracket] ; ]
                  [:period :!Speriod] ; >
                  [:j [:km "w: YouTube"]]
                  [:k [:km "w: GitHub"]]
-                 ;[:o [:km "w: CodeSandbox"]]
                  [:semicolon [:km "w: GitHub (issues)"]]
-                 [:period [:km "w: GitHub (prs)"]]
+                 ;[:period [:km "w: GitHub (prs)"]]
+                 ;[:o [:km "w: CodeSandbox"]]
                  [:i [:km "w: GitHub (notifications)"]]
                  [:l [:km "w: GitLab"]]
-                 ;[:w [:km "w: AWS"]]
+                 ;[:period [:km "w: GitLab Activity"]]
                  [:r [:km "w: Arxiv"]]
                  [:a [:km "w: Google"]]
                  [:m [:km "w: Medium"]]
-                 [:s [:km "w: Observable"]]
+                 ;[:s [:km "w: Observable"]]
+                 [:s [:km "w: AWS"]]
+                 ;[:s [:km "w: GCP"]] TODO: 
                  ;[:f [:km "w: GitHub (pulls)"]] ; TODO: make it work
-                 [:period [:km "w: regex101"]]
+                 ;[:period [:km "w: regex101"]]
                  [:s [:km "w: Stack Overflow"]]]}
         {:des "tkey (websites)"
          :rules [:t-mode
@@ -740,6 +742,5 @@
                  [:period [:km "Search 2Do"]]
                  [:open_bracket [:km "w: Goodreads (currently reading)"]]
                  [:close_bracket [:km "w: Goodreads (next)"]]
-                 ;[:c [:km "Open 2Do Check"]] ; TODO: alfred workflow or go to Pocket app to see links with 'check' tag
                  [:o [:km "Open 2Do Tools"]]
                  [:j [:km "todo: empty"]]]}]}
