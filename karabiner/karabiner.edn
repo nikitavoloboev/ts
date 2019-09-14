@@ -617,6 +617,7 @@
                   ; Code Helpers
                   ; TODO: make spacebar change between language modes (or another key)
                   [:spacebar [:!St :h :a :n :k :spacebar :y :o :u :period :spacebar]] ; -> Thank you. 
+                  [:left_gui [:p :l :e :a :s :e :spacebar]] ; -> please
                   [:2 [:!Sr :e :f :spacebar :!S3]] ; -> Ref #
                   [:3 [:!Sf :i :x :spacebar :!S3]] ; -> Fix #
                   [:c [:t :h :a :n :k :s :spacebar]] ; -> thanks
@@ -729,6 +730,7 @@
                  [:z [:km "Open 🐶🐱 Trello"]]
                  [:n [:km "Open 2Do Clean"]]
                  [:k [:km "Open 2Do Today"]]
+                 [:h [:km "Open 2Do Other"]]
                  [:c [:km "Open 2Do LA"]]
                  [:m [:km "Open 2Do Work"]]
                  [:g [:km "Open 2Do Life"]]
