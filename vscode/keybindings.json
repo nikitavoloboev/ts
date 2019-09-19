@@ -356,7 +356,7 @@
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+r",
+    "key": "ctrl+c",
     "command": "editor.action.marker.prev",
     "when": "editorTextFocus && !editorReadonly"
   },
@@ -381,10 +381,6 @@
   {
     "key": "cmd+0",
     "command": "-workbench.action.focusSideBar"
-  },
-  {
-    "key": "cmd+shift+t",
-    "command": "workbench.action.toggleSidebarVisibility"
   },
   {
     "key": "ctrl+shift+-",
@@ -416,7 +412,7 @@
     "command": "fileutils.newFile"
   },
   {
-    "key": "ctrl+c",
+    "key": "cmd+shift+t",
     "command": "gitlens.openCommitInRemote",
     "when": "editorFocus"
   }

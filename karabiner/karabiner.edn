@@ -204,6 +204,7 @@
                  [:f [:km "open: 2Do"]]
                  [:j [:km "open: iTerm"]]
                  [:n [:km "open: Sublime Text"]]
+                 ;[:n [:km "open: Sublime Merge"]]
                  [:l [:km "open: VS Code"]]
                  [:o [:km "open: Keyboard Maestro"]]]}
         {:des "ekey (cmd)"
@@ -313,7 +314,7 @@
                  [:4 :!C4]
                  [:5 :!C5]
                  [:6 :!C6]
-                 [:t [:alfred "search tty sessions" "net.isometry.alfred.tty"]]
+                 [:t [:alfred "search tty sessions" "net.isometry.alfred.tty"]] ; TODO: replace with pocket
                  [:n [:alfred "search lists" "nikivi.learn.anything"]]
                  [:z [:alfred "search blog" "nikivi.private.directories"]]
                  [:w :!CObackslash] ; 1Password search
@@ -569,8 +570,8 @@
                  [:spacebar [:alfred "search dash profiles" "nikivi.dash.profiles"]]
                  [:caps_lock [:alfred "search dash" "com.nikivi.own.dash" "man: "]]
                  [:c [:alfred "search dash" "com.nikivi.own.dash" "css: "]]
-                 [:h [:alfred "search dash" "com.nikivi.own.dash" "lodash: "]]
-                 [:l [:alfred "search dash" "com.nikivi.own.dash" "electron: "]]
+                 [:l [:alfred "search dash" "com.nikivi.own.dash" "lodash: "]]
+                 [:n [:alfred "search dash" "com.nikivi.own.dash" "electron: "]]
                  [:t [:alfred "search dash" "com.nikivi.own.dash" "python: "]]
                  [:f [:alfred "search dash" "com.nikivi.own.dash" "go: "]]
                  [:k [:alfred "search dash" "com.nikivi.own.dash" "docker: "]]
@@ -604,7 +605,7 @@
           :rules [:jsdot-mode
                   ;[:z [:spacebar :s :t :y :l :e :equal_sign :!Sopen_bracket :!Sopen_bracket :!Sclose_bracket :!Sclose_bracket :left_arrow :left_arrow]] ; -> style={{}}
                   [:z [:spacebar :c :l :a :s :s :!Sn :a :m :e :equal_sign :!Squote :!Squote :left_arrow]] ; -> className=""
-                  ;[:x [:e :x :p :o :r :t :spacebar]] ; -> export
+                  [:x [:e :x :p :o :r :t :spacebar]] ; -> export
                   [:v [:j :a :v :a :s :c :r :i :p :t :spacebar]] ; -> javascript
                   [:b [:t :y :p :e :s :c :r :i :p :t :spacebar]] ; -> typescript
                   [:a [:c :o :n :s :o :l :e :period :l :o :g :!S9 :!S0 :left_arrow]] ; -> console.log()
@@ -612,14 +613,14 @@
                   [:d [:r :e :t :u :r :n :spacebar]] ; -> return
                   [:f [:!Cf :c :o :n :s :o :l :e :period :l :o :g :!S9 :return_or_enter]] ; -> search console.log( in file
                   [:g [:d :e :b :u :g :g :e :r]] ; -> debugger TODO: add cmd+s && cmd+tab to run after
-                  ;[:g [:km "= {}"]]
 
                   ; Code Helpers
                   ; TODO: make spacebar change between language modes (or another key)
                   [:spacebar [:!St :h :a :n :k :spacebar :y :o :u :period :spacebar]] ; -> Thank you. 
                   [:left_gui [:p :l :e :a :s :e :spacebar]] ; -> please
                   [:2 [:!Sr :e :f :spacebar :!S3]] ; -> Ref #
-                  [:3 [:!Sf :i :x :spacebar :!S3]] ; -> Fix #
+                  [:3 [:!Sc :l :o :s :e :s :spacebar :!S3]] ; -> Closes #
+                  [:u [:u :p :d :a :t :e :spacebar]] ; -> update
                   [:c [:t :h :a :n :k :s :spacebar]] ; -> thanks
                   [:q [:!Sa :spacebar :slash :slash :spacebar]] ; -> // (on same line)
                   [:w [:km "VSCode/XCode/Sublime comment on top of line"]]
