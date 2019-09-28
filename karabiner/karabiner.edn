@@ -187,7 +187,6 @@
                  [:d [:km "open: Activity Monitor"]]
                  ;[:c [:km "open: Console"]]
                  ;[:c [:km "open: Sketch"]]
-                 ;[:t [:km "open: nteract"]]
                  [:t [:km "open: Postico"]]
                  [:g [:km "open: Notion"]]
                  [:i [:km "open: Chrome Canary / Electron"]]
@@ -204,7 +203,6 @@
                  [:f [:km "open: 2Do"]]
                  [:j [:km "open: iTerm"]]
                  [:n [:km "open: Sublime Text"]]
-                 ;[:n [:km "open: Sublime Merge"]]
                  [:l [:km "open: VS Code"]]
                  [:o [:km "open: Keyboard Maestro"]]]}
         {:des "ekey (cmd)"
@@ -522,7 +520,6 @@
          :rules [:b-mode
                  [:spacebar :!TOSs] ; Selection -> DuckDuckGo
                  [:period [:km "Break 5 min"]]
-                 [:h [:alfred "search hn" "com.vitorgalvao.alfred.hackerboard"]]
                  [:semicolon [:km "w: GitHub (trending)"]]
                  [:d [:km "w: Reddit Saved"]]
                  ;[:comma [:km "w: Medium (network)"]]
@@ -535,6 +532,7 @@
                  [:a [:km "w: Alfred forum"]]
                  [:m [:km "w: KM forum"]]
                  [:k [:km "w: GitHub (front page)"]]
+                 [:h [:alfred "search hn" "com.vitorgalvao.alfred.hackerboard"]]
                  [:n [:km "w: HckrNews"]]
                  [:j [:km "w: Hacker News"]]]}
         {:des "nkey (alfred)"
@@ -638,6 +636,7 @@
         {:des "tilkey (actions)"
          :rules [:tilde-mode
                  [:spacebar :!COSn] ; Selection -> GitHub
+                 [:c :!CTk] ; Turn on/off BTT TouchBar
                  [:h :!CTOx] ; Little Snitch
                  [:e [:km "Add blog to Reeder"]]
                  [:n :!STh] ; Record macro
@@ -649,8 +648,8 @@
                  [:semicolon [:km "Paste active todo"]]
                  [:r [:alfred "restart wifi" "nikivi.wifi.tools"]]
                  [:w [:alfred "toggle wifi" "nikivi.wifi.tools"]]
-                 [:i [:km "Commit build to learn"]]
-                 [:o [:km "Commit wiki"]]]}
+                 ;[:i [:km "Commit build to learn"]]
+                 [:i [:km "Commit wiki"]]]}
         {:des "xkey (spotify)"
          :rules [:x-mode
                  ;[:v [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ERn0U4qZIKC8Dy7RrMMsn"]] ; Play Likes playlist TODO: fix
@@ -696,6 +695,7 @@
          :rules [:t-mode
                  [:spacebar :!COSr] ; Selection -> Google Translate
                  [:r [:km "w: Repl"]]
+                 [:e [:km "w: Stripe"]]
                  [:o [:km "w: Dropbox"]]
                  [:a [:km "w: Amazon"]]
                  [:h [:km "w: Twitch"]]
@@ -712,7 +712,7 @@
         {:des "capskey (todo + trello)"
          :rules [:caps-mode
                  [:1 [:alfred "Screenshot -> Imgur" "com.vitorgalvao.alfred.webscreenshot"]]
-                 [:2 :!TO2] ; Screenshot -> Clipboard
+                 [:2 :!TO2] ; Screenshot -> Clipboard TODO: fix, errors
                  [:3 :!TO3] ; Screenshot -> Annotate 
                  [:4 :!TO4] ; Show Annotate
                  [:9 :!TO9] ; Picture of screen -> Clipboard

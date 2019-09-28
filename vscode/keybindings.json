@@ -168,15 +168,15 @@
     "key": "cmd+b",
     "command": "-workbench.action.toggleSidebarVisibility"
   },
-  {
-    "key": "ctrl+r",
-    "command": "-workbench.action.openRecent"
-  },
-  {
-    "key": "ctrl+r",
-    "command": "-workbench.action.quickOpenNavigateNextInRecentFilesPicker",
-    "when": "inQuickOpen && inRecentFilesPicker"
-  },
+  // {
+  //   "key": "ctrl+r",
+  //   "command": "-workbench.action.openRecent"
+  // },
+  // {
+  //   "key": "ctrl+r",
+  //   "command": "-workbench.action.quickOpenNavigateNextInRecentFilesPicker",
+  //   "when": "inQuickOpen && inRecentFilesPicker"
+  // },
   {
     "key": "alt+f12",
     "command": "-editor.action.previewDeclaration",
@@ -415,5 +415,9 @@
     "key": "cmd+shift+t",
     "command": "gitlens.openCommitInRemote",
     "when": "editorFocus"
-  }
+  },
+  {
+    "key": "ctrl+r",
+    "command": "workbench.action.toggleSidebarVisibility"
+  },
 ]
