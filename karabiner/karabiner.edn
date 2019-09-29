@@ -123,8 +123,8 @@
                  ;[:h [:km "wiki: Month"]] ; TODO: fix
                  [:semicolon [:km "proj: Knowledge"]]
                  [:f [:km "proj: Dotfiles"]]
-                 [:i [:km "edit: Zsh functions"]]
-                 [:o [:km "edit: Aliases"]]]}
+                 [:o [:km "edit: Zsh functions"]]
+                 [:i [:km "edit: Aliases"]]]}
         {:des "4key (palettes + URL searches)"
          :rules [:4-mode
                  [:i :!COSo] ; Safari URL -> Twitter
@@ -506,9 +506,10 @@
                  ;[:d [:km "Clone repo to ~/src/clones and open with Xcode"]] ; TODO:
                  ;[:f [:km "Clone repo to ~/src/clones and open with Sublime Text"]]
                  [:r [:km "Repeat Spotify song"]]
-                 [:semicolon :!TS0] ; Turn on/off Noizio
-                 [:period [:km "Play/pause Spotify"]]
-                 [:comma [:km "Noizio settings"]]
+                 [:semicolon [:km "Play/pause Spotify"]]
+                 [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:3zy0JafsRQJgAMU67hnjYX"]] ; Focus song
+                 ;[:comma :!TS0] ; Turn on/off Noizio
+                 ;[:slash [:km "Noizio settings"]]
                  [:i :display_brightness_decrement]
                  [:o :display_brightness_increment]
                  [:h :vk_consumer_previous]
@@ -679,6 +680,7 @@
                  [:semicolon [:km "w: GitHub (issues)"]]
                  ;[:period [:km "w: GitHub (prs)"]]
                  ;[:o [:km "w: CodeSandbox"]]
+                 [:f [:km "w: Google Docs"]]
                  [:i [:km "w: GitHub (notifications)"]]
                  [:l [:km "w: GitLab"]]
                  ;[:period [:km "w: GitLab Activity"]]
