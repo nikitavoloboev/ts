@@ -6,6 +6,8 @@
     [
       pkgs.texlive.combined.scheme-full
       pkgs.nix
+      pkgs.ripgrep
+      pkgs.haskellPackages.Agda
       pkgs.wifi-password
     ];
 

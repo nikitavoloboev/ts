@@ -440,7 +440,7 @@
                  [:caps_lock [:km "Move active todo to MindNode"]]
                  [:a [:alfred "new task" "nikivi.todo.task"]]
                  [:s [:km "edit: clones"]]
-                 [:d [:km "edit: Darwin Nix"]]
+                 [:slash [:km "edit: Darwin Nix"]]
                  [:w :!CTO4] ; Alfred file action
                  [:j [:km "Open 1st iTerm tab"]]
                  [:h [:km "Make markdown link from selection {link}"]]
@@ -501,13 +501,11 @@
                  [:e :!CO9] ; Connect/disconnect AirPods
                  [:u :!COS6] ; Toggle Night Shift on/off.
                  [:j :mute]
-                 [:a [:km "Clone repo to ~/src/clones and open with VS Code"]]
-                 [:s [:km "Clone repo to ~/src/clones"]]
-                 ;[:d [:km "Clone repo to ~/src/clones and open with Xcode"]] ; TODO:
-                 ;[:f [:km "Clone repo to ~/src/clones and open with Sublime Text"]]
+                 [:a [:km "Go to test macro"]]
+                 [:s [:km "Test"]]
                  [:r [:km "Repeat Spotify song"]]
                  [:semicolon [:km "Play/pause Spotify"]]
-                 [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:3zy0JafsRQJgAMU67hnjYX"]] ; Focus song
+                 [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:3pa9ZRg9V6fSxP1bEfw5GF"]] ; Focus song
                  ;[:comma :!TS0] ; Turn on/off Noizio
                  ;[:slash [:km "Noizio settings"]]
                  [:i :display_brightness_decrement]
@@ -529,7 +527,8 @@
                  [:p [:km "w: Product Hunt"]]
                  [:o [:km "w: Lobsters (new)"]]
                  [:s [:km "w: Swift forum"]]
-                 [:i [:km "w: Hacker News (new)"]]
+                 [:i [:km "w: HN (new)"]]
+                 [:open_bracket [:km "w: HN (show new)"]]
                  [:a [:km "w: Alfred forum"]]
                  [:m [:km "w: KM forum"]]
                  [:k [:km "w: GitHub (front page)"]]
@@ -590,6 +589,9 @@
                  [:grave_accent_and_tilde [:alfred "search dash" "com.nikivi.own.dash" "tldr: "]]]}
         {:des "ckey (test)"
          :rules [:c-mode
+                 [:a [:km "Clone repo to ~/src/clones and open with VS Code"]]
+                 [:s [:km "Clone repo to ~/src/clones"]]
+                 ;[:d [:km "Clone repo to ~/src/clones and open with Xcode"]] ; TODO:
                  [:spacebar :!CSOy] ; Selection -> Stack Overflow
                  [:m [:km "test: Rust"]]
                  [:i [:km "test: Python"]]
@@ -641,9 +643,6 @@
                  [:h :!CTOx] ; Little Snitch
                  [:e [:km "Add blog to Reeder"]]
                  [:n :!STh] ; Record macro
-                 [:j [:km "Go to test macro"]]
-                 [:f [:km "Test"]]
-                 [:k [:km "Test"]]
                  ;[:f [:km "Test"]]
                  [:l [:km "Make global macro"]]
                  [:semicolon [:km "Paste active todo"]]
@@ -655,6 +654,7 @@
          :rules [:x-mode
                  ;[:v [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ERn0U4qZIKC8Dy7RrMMsn"]] ; Play Likes playlist TODO: fix
                  ;[:v [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ERn0U4qZIKC8Dy7RrMMsn"]] ; Play Focus playlist TODO: fix
+                 ;[:v [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ERn0U4qZIKC8Dy7RrMMsn"]] ; Play Discover Weekly playlist TODO: fix
                  [:o [:km "Share current song on Twitter"]]
                  [:p [:km "Paste current Spotify song link"]]
                  [:j [:alfred "spot_mini" "com.vdesabou.spotify.mini.player"]]
@@ -680,12 +680,12 @@
                  [:semicolon [:km "w: GitHub (issues)"]]
                  ;[:period [:km "w: GitHub (prs)"]]
                  ;[:o [:km "w: CodeSandbox"]]
-                 [:f [:km "w: Google Docs"]]
+                 [:a [:km "w: Google Docs"]]
                  [:i [:km "w: GitHub (notifications)"]]
                  [:l [:km "w: GitLab"]]
                  ;[:period [:km "w: GitLab Activity"]]
                  [:r [:km "w: Arxiv"]]
-                 [:a [:km "w: Google"]]
+                 ;[:a [:km "w: Google"]]
                  [:m [:km "w: Medium"]]
                  ;[:s [:km "w: Observable"]]
                  [:s [:km "w: AWS"]]
@@ -714,7 +714,7 @@
         {:des "capskey (todo + trello)"
          :rules [:caps-mode
                  [:1 [:alfred "Screenshot -> Imgur" "com.vitorgalvao.alfred.webscreenshot"]]
-                 [:2 :!TO2] ; Screenshot -> Clipboard TODO: fix, errors
+                 [:2 :!TO2] ; Screenshot -> Clipboard
                  [:3 :!TO3] ; Screenshot -> Annotate 
                  [:4 :!TO4] ; Show Annotate
                  [:9 :!TO9] ; Picture of screen -> Clipboard

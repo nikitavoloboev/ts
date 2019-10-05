@@ -1,18 +1,20 @@
 # Temp
 
-alias f='open .'
-alias bi='brew install'
-alias pb='pbcopy'
-
 # Nix
 alias n='nix'
 alias nr='nix repl'
+alias R='darwin-rebuild switch'
 
 # Nix shell
 alias ns="nix-shell --run zsh"
 alias nss="nix-shell --run zsh -p"
 
+# Brew
+alias bi='brew install'
+
 # General
+alias f='open .'
+alias pb='pbcopy'
 alias te='tree'
 alias op='open'
 #alias env='env | fzf'
