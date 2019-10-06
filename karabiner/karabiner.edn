@@ -91,11 +91,12 @@
         {:des "1key (open curated lists)"
          :rules [:1-mode
                  [:r [:km "edit: Web Searches"]]
-                 [:k [:km "list: alfred workflows"]]
-                 [:o [:km "list: blogs"]]
-                 [:p [:km "list: podcasts"]]
-                 [:n [:km "list: events"]]
-                 [:l [:km "list: command line tools"]]]}
+                 [:k [:km "list: Alfred workflows"]]
+                 [:o [:km "list: Blogs"]]
+                 [:p [:km "list: Podcasts"]]
+                 [:n [:km "list: Events"]]
+                 [:t [:km "list: Newsletters"]]
+                 [:l [:km "list: Command line tools"]]]}
         {:des "2key (move + alfred)"
          :rules [:2-mode
                  [:spacebar :!COSu] ; Selection -> HN
@@ -523,8 +524,9 @@
                  [:d [:km "w: Reddit Saved"]]
                  ;[:comma [:km "w: Medium (network)"]]
                  [:comma [:km "w: Medium (bookmarks)"]]
+                 [:p [:km "w: Pinboard"]]
                  [:l [:km "w: Lobsters"]]
-                 [:p [:km "w: Product Hunt"]]
+                 [:u [:km "w: Product Hunt"]]
                  [:o [:km "w: Lobsters (new)"]]
                  [:s [:km "w: Swift forum"]]
                  [:i [:km "w: HN (new)"]]
