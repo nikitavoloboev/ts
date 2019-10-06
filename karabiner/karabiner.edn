@@ -505,7 +505,7 @@
                  [:s [:km "Test"]]
                  [:r [:km "Repeat Spotify song"]]
                  [:semicolon [:km "Play/pause Spotify"]]
-                 [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:3pa9ZRg9V6fSxP1bEfw5GF"]] ; Focus song
+                 [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:6oiwm0xIfVRKookXoFlc4b"]] ; Focus song
                  ;[:comma :!TS0] ; Turn on/off Noizio
                  ;[:slash [:km "Noizio settings"]]
                  [:i :display_brightness_decrement]
@@ -534,7 +534,7 @@
                  [:k [:km "w: GitHub (front page)"]]
                  [:h [:alfred "search hn" "com.vitorgalvao.alfred.hackerboard"]]
                  [:n [:km "w: HckrNews"]]
-                 [:j [:km "w: Hacker News"]]]}
+                 [:j [:km "w: HN"]]]}
         {:des "nkey (alfred)"
          :rules [:n-mode
                  [:1 :!O1]
@@ -620,7 +620,7 @@
                   [:spacebar [:!St :h :a :n :k :spacebar :y :o :u :period :spacebar]] ; -> Thank you. 
                   [:left_gui [:p :l :e :a :s :e :spacebar]] ; -> please
                   [:2 [:!Sr :e :f :spacebar :!S3]] ; -> Ref #
-                  [:3 [:!Sc :l :o :s :e :s :spacebar :!S3]] ; -> Closes #
+                  [:3 [:!Sf :i :x :e :s :spacebar :!S3]] ; -> Fixes #
                   [:u [:u :p :d :a :t :e :spacebar]] ; -> update
                   [:c [:t :h :a :n :k :s :spacebar]] ; -> thanks
                   [:q [:!Sa :spacebar :slash :slash :spacebar]] ; -> // (on same line)
