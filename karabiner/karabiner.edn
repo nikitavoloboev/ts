@@ -117,7 +117,6 @@
                  [:period [:km "edit: Private notes"]]
                  [:g [:km "edit: Git config"]]
                  [:comma [:km "edit: Private LA"]]
-                 [:slash [:km "edit: Private Gyana"]]
                  [:l [:km "Search current safari url in wiki"]]
                  [:t [:km "edit: Projects"]]
                  [:n [:km "edit: Now"]]
@@ -622,7 +621,7 @@
                   [:spacebar [:!St :h :a :n :k :spacebar :y :o :u :period :spacebar]] ; -> Thank you. 
                   [:left_gui [:p :l :e :a :s :e :spacebar]] ; -> please
                   [:2 [:!Sr :e :f :spacebar :!S3]] ; -> Ref #
-                  [:3 [:!Sf :i :x :e :s :spacebar :!S3]] ; -> Fixes #
+                  [:3 [:!Sc :l :o :s :e :s :spacebar :!S3]] ; -> Closes #
                   [:u [:u :p :d :a :t :e :spacebar]] ; -> update
                   [:c [:t :h :a :n :k :s :spacebar]] ; -> thanks
                   [:q [:!Sa :spacebar :slash :slash :spacebar]] ; -> // (on same line)
