@@ -78,7 +78,7 @@ j(){
   if [ $# -eq 0 ]; then
     yarn
   else
-    yarn add "$@"
+    yarn "$@"
   fi
 }
 
