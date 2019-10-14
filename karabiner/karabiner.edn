@@ -504,9 +504,10 @@
                  [:s [:km "Test"]]
                  [:r [:km "Repeat Spotify song"]]
                  [:semicolon [:km "Play/pause Spotify"]]
-                 [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:6oiwm0xIfVRKookXoFlc4b"]] ; Focus song
-                 ;[:comma :!TS0] ; Turn on/off Noizio
-                 ;[:slash [:km "Noizio settings"]]
+                 ;[:quote [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:3pa9ZRg9V6fSxP1bEfw5GF"]] ; TODO: Play Likes playlist on shuffle
+                 [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:6oiwm0xIfVRKookXoFlc4b"]] ; Focus song
+                 [:period :!TS0] ; Turn on/off Noizio
+                 [:comma [:km "Noizio settings"]]
                  [:i :display_brightness_decrement]
                  [:o :display_brightness_increment]
                  [:h :vk_consumer_previous]
@@ -683,7 +684,7 @@
                  ;[:o [:km "w: CodeSandbox"]]
                  [:a [:km "w: Google Docs"]]
                  [:i [:km "w: GitHub (notifications)"]]
-                 [:l [:km "w: GitLab"]]
+                 ;[:l [:km "w: GitLab"]]
                  ;[:period [:km "w: GitLab Activity"]]
                  [:r [:km "w: Arxiv"]]
                  ;[:a [:km "w: Google"]]
@@ -729,13 +730,13 @@
                  [:f [:km "Open Focus Trello"]]
                  [:v [:km "Open Videos Trello"]]
                  [:p [:km "Open Possessions Trello"]]
-                 [:s [:km "Open Research Papers Trello"]]
+                 [:c [:km "Open Research Papers Trello"]]
                  [:u [:km "Open Courses Trello"]]
                  [:z [:km "Open 🐶🐱 Trello"]]
                  [:n [:km "Open 2Do Clean"]]
                  [:k [:km "Open 2Do Today"]]
-                 [:h [:km "Open 2Do Other"]]
-                 [:c [:km "Open 2Do LA"]]
+                 [:slash [:km "Open 2Do Other"]] ; TODO: remove once its empty
+                 [:h [:km "Open 2Do LA"]]
                  [:m [:km "Open 2Do Work"]]
                  [:g [:km "Open 2Do Life"]]
                  [:comma [:km "Open 2Do Macro"]]
