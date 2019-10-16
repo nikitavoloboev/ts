@@ -505,7 +505,7 @@
                  [:r [:km "Repeat Spotify song"]]
                  [:semicolon [:km "Play/pause Spotify"]]
                  ;[:quote [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:3pa9ZRg9V6fSxP1bEfw5GF"]] ; TODO: Play Likes playlist on shuffle
-                 [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:38rMZCtAPuRgOuV3pyFDmF"]] ; Focus song
+                 [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:6oiwm0xIfVRKookXoFlc4b"]] ; Focus song
                  [:period :!TS0] ; Turn on/off Noizio
                  [:comma [:km "Noizio settings"]]
                  [:i :display_brightness_decrement]
@@ -625,7 +625,7 @@
                   [:2 [:!Sr :e :f :spacebar :!S3]] ; -> Ref #
                   [:3 [:!Sc :l :o :s :e :s :spacebar :!S3]] ; -> Closes #
                   [:u [:u :p :d :a :t :e :spacebar]] ; -> update
-                  [:c [:t :h :a :n :k :s :spacebar]] ; -> thanks
+                  [:c [:!St :h :a :n :k :s :spacebar]] ; -> Thanks
                   [:q [:!Sa :spacebar :slash :slash :spacebar]] ; -> // (on same line)
                   [:w [:km "VSCode/XCode/Sublime comment on top of line"]]
                   [:e [:!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> TODO:
