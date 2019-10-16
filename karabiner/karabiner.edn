@@ -505,7 +505,7 @@
                  [:r [:km "Repeat Spotify song"]]
                  [:semicolon [:km "Play/pause Spotify"]]
                  ;[:quote [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:3pa9ZRg9V6fSxP1bEfw5GF"]] ; TODO: Play Likes playlist on shuffle
-                 [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:6oiwm0xIfVRKookXoFlc4b"]] ; Focus song
+                 [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:38rMZCtAPuRgOuV3pyFDmF"]] ; Focus song
                  [:period :!TS0] ; Turn on/off Noizio
                  [:comma [:km "Noizio settings"]]
                  [:i :display_brightness_decrement]
@@ -524,13 +524,14 @@
                  ;[:comma [:km "w: Medium (network)"]]
                  [:comma [:km "w: Medium (bookmarks)"]]
                  [:p [:km "w: Pinboard"]]
+                 [:u [:km "w: YouTube (subs)"]]
                  [:l [:km "w: Lobsters"]]
                  [:o [:km "w: Lobsters (new)"]]
                  [:0 [:km "w: Lobsters (comments)"]]
-                 [:u [:km "w: Product Hunt"]]
                  [:s [:km "w: Swift forum"]]
                  [:i [:km "w: HN (new)"]]
-                 [:open_bracket [:km "w: HN (show new)"]]
+                 [:open_bracket [:km "w: Product Hunt"]]
+                 [:close_bracket [:km "w: HN (show new)"]]
                  [:a [:km "w: Alfred forum"]]
                  [:m [:km "w: KM forum"]]
                  [:k [:km "w: GitHub (front page)"]]
