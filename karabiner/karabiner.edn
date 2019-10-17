@@ -132,6 +132,9 @@
                  [:t :!CSOp] ; Selection -> Reddit
                  [:k :!SOTf] ; App specific
                  [:l :!SOTr]]} ; Personal
+        {:des "tabkey (alfred)"
+         :rules [:tab-mode
+                 [:i [:alfred "search ios tabs" "net.deanishe.alfred.safari"]]]}
         {:des "qkey (cmd + shift)"
          :rules [:q-mode
                  [:spacebar :!CSOe] ; Selection -> YouTube
@@ -274,6 +277,21 @@
                  [:k [:km "open: PDF Expert"]]
                  [:w [:km "open: 1Password"]]
                  [:n [:km "open: Timing"]]]}
+        {:des "tkey (websites)"
+         :rules [:t-mode
+                 [:spacebar :!COSr] ; Selection -> Google Translate
+                 [:r [:km "w: Repl"]]
+                 [:e [:km "w: Stripe"]]
+                 [:o [:km "w: Dropbox"]]
+                 [:a [:km "w: Amazon"]]
+                 [:h [:km "w: Twitch"]]
+                 [:period [:km "w: IFTTT"]]
+                 [:j [:km "w: Google Drive"]]
+                 [:z [:km "w: MDN"]]
+                 [:semicolon [:km "w: Netlify"]]
+                 [:k [:km "w: Kaggle"]]
+                 [:w [:km "w: WakaTime"]]
+                 [:n [:km "w: NPM"]]]}
         {:des "ikey (symbols)"
          :rules [:i-mode
                  [:q :!Sopen_bracket]
@@ -332,6 +350,44 @@
                  [:i [:alfred "search alfred" "nikivi.utilities" "?"]]
                  [:j [:alfred "run" "iansinnott.keyboardmaestro"]]
                  [:k [:alfred "search menu bar" "com.tedwise.menubarsearch"]]]}
+        {:des "capskey (todo + trello)"
+         :rules [:caps-mode
+                 [:1 [:alfred "Screenshot -> Imgur" "com.vitorgalvao.alfred.webscreenshot"]]
+                 [:2 :!TO2] ; Screenshot -> Clipboard
+                 [:3 :!TO3] ; Screenshot -> Annotate 
+                 [:4 :!TO4] ; Show Annotate
+                 [:9 :!TO9] ; Picture of screen -> Clipboard
+                 [:0 :!TO0] ; Picture of screen -> ~/Desktop
+                 [:spacebar :!TO7] ; New Kap recording
+                 [:tab [:km "New ScreenFlow recording (options)"]]
+                 [:q :!CO5] ; Start/stop ScreenFlow recording
+                 [:w [:km "Open Learn Trello"]]
+                 [:e [:km "Open Ideas Trello"]]
+                 [:r [:km "Open 2Do PR"]]
+                 [:f [:km "Open Focus Trello"]]
+                 [:v [:km "Open Videos Trello"]]
+                 [:p [:km "Open Possessions Trello"]]
+                 [:c [:km "Open Research Papers Trello"]]
+                 [:u [:km "Open Courses Trello"]]
+                 [:z [:km "Open 🐶🐱 Trello"]]
+                 [:n [:km "Open 2Do Clean"]]
+                 [:k [:km "Open 2Do Today"]]
+                 [:slash [:km "Open 2Do Other"]] ; TODO: remove once its empty
+                 [:h [:km "Open 2Do LA"]]
+                 [:m [:km "Open 2Do Work"]]
+                 [:g [:km "Open 2Do Life"]]
+                 [:comma [:km "Open 2Do Macro"]]
+                 [:y [:km "Open 2Do Buy"]]
+                 [:d [:km "Open 2Do Find"]]
+                 [:quote [:km "Open 2Do Ask"]]
+                 [:i [:km "Open 2Do Fix"]]
+                 [:l [:km "Open 2Do Later"]]
+                 [:semicolon [:km "Open 2Do Starred"]]
+                 [:period [:km "Search 2Do"]]
+                 [:open_bracket [:km "w: Goodreads (currently reading)"]]
+                 [:close_bracket [:km "w: Goodreads (next)"]]
+                 [:o [:km "Open 2Do Tools"]]
+                 [:j [:km "Clear TODO"]]]}
         {:des "akey (ctrl)"
          :rules [:a-mode
                  [:spacebar :!CT9] ; Selection -> Google
@@ -474,6 +530,20 @@
                  [:l :!CSOd] ; Move window right
                  [:h :!CSOa] ; Move window left
                  [:s [:km "Dismiss notifications"]]]}
+        {:des "tilkey (actions)"
+         :rules [:tilde-mode
+                 [:spacebar :!COSn] ; Selection -> GitHub
+                 [:c :!CTk] ; Turn on/off BTT TouchBar
+                 [:h :!CTOx] ; Little Snitch
+                 [:e [:km "Add blog to Reeder"]]
+                 [:n :!STh] ; Record macro
+                 ;[:f [:km "Test"]]
+                 [:l [:km "Make global macro"]]
+                 [:semicolon [:km "Paste active todo"]]
+                 [:r [:alfred "restart wifi" "nikivi.wifi.tools"]]
+                 [:w [:alfred "toggle wifi" "nikivi.wifi.tools"]]
+                 ;[:i [:km "Commit build to learn"]]
+                 [:i [:km "Commit wiki"]]]}
         {:des "zkey (chat)"
          :rules [:z-mode
                  [:spacebar :!CSOz] ; Selection -> Twitter
@@ -494,6 +564,40 @@
                  [:m [:km "open: Textual"]]
                  [:o [:km "open: Zoom"]]
                  [:l [:km "open: Discord"]]]}
+        {:des "xkey (spotify)"
+         :rules [:x-mode
+                 ;[:v [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ERn0U4qZIKC8Dy7RrMMsn"]] ; Play Likes playlist TODO: fix
+                 ;[:v [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ERn0U4qZIKC8Dy7RrMMsn"]] ; Play Focus playlist TODO: fix
+                 ;[:v [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ERn0U4qZIKC8Dy7RrMMsn"]] ; Play Discover Weekly playlist TODO: fix
+                 [:o [:km "Share current song on Twitter"]]
+                 [:p [:km "Paste current Spotify song link"]]
+                 [:j [:alfred "spot_mini" "com.vdesabou.spotify.mini.player"]]
+                 [:i [:alfred "show_alfred_playlist" "com.vdesabou.spotify.mini.player"]]
+                 [:l [:alfred "song_radio" "com.vdesabou.spotify.mini.player"]]
+                 [:u [:alfred "artist_radio" "com.vdesabou.spotify.mini.player"]]
+                 [:k [:alfred "show_current_track" "com.vdesabou.spotify.mini.player"]]
+                 [:period [:alfred "youtube_search_current_track" "com.vdesabou.spotify.mini.player"]]
+                 [:comma [:alfred "reddit_search_current_track" "com.vdesabou.spotify.mini.player"]]
+                 [:m [:alfred "add_current_track_to" "com.vdesabou.spotify.mini.player"]]
+                 [:quote [:alfred "add_current_track_to" "com.vdesabou.spotify.mini.player" "spotify:playlist:2N82DnDsPGMnpJhN8sVFJu"]] ; Add song to Bliss playlist
+                 [:n [:alfred "show_playlists" "com.vdesabou.spotify.mini.player"]]
+                 [:semicolon [:alfred "add_current_track_to_alfred_playlist_or_your_music" "com.vdesabou.spotify.mini.player"]]
+                 [:b [:alfred "remove_current_track_from" "com.vdesabou.spotify.mini.player"]]]}
+        {:des "ckey (test)"
+         :rules [:c-mode
+                 [:a [:km "Clone repo to ~/src/clones and open with VS Code"]]
+                 [:s [:km "Clone repo to ~/src/clones"]]
+                 ;[:d [:km "Clone repo to ~/src/clones and open with Xcode"]] ; TODO:
+                 [:spacebar :!CSOy] ; Selection -> Stack Overflow
+                 [:m [:km "test: Rust"]]
+                 [:i [:km "test: Python"]]
+                 [:k [:km "test: Go"]]
+                 [:n [:km "test: TS"]]
+                 [:h [:km "test: Haskell"]]
+                 [:j [:km "test: JS"]]
+                 [:l [:km "proj: LA"]]
+                 [:period [:km "New SnippetsLab snippet"]]
+                 [:semicolon [:alfred "search build to learn" "nikivi.private.directories"]]]}
         {:des "vkey (media)"
          :rules [:v-mode
                  [:spacebar :!CSOv] ; Selection -> Google Images
@@ -505,7 +609,7 @@
                  [:r [:km "Repeat Spotify song"]]
                  [:semicolon [:km "Play/pause Spotify"]]
                  ;[:quote [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:3pa9ZRg9V6fSxP1bEfw5GF"]] ; TODO: Play Likes playlist on shuffle
-                 [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:6oiwm0xIfVRKookXoFlc4b"]] ; Focus song
+                 [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:3liSRhhPH2ah13oOKrjtTv"]] ; Focus song
                  [:period :!TS0] ; Turn on/off Noizio
                  [:comma [:km "Noizio settings"]]
                  [:i :display_brightness_decrement]
@@ -590,22 +694,7 @@
                  [:q [:alfred "search dash" "com.nikivi.own.dash" "c: "]]
                  [:o [:alfred "search dash" "com.nikivi.own.dash" "godoc: "]]
                  [:grave_accent_and_tilde [:alfred "search dash" "com.nikivi.own.dash" "tldr: "]]]}
-        {:des "ckey (test)"
-         :rules [:c-mode
-                 [:a [:km "Clone repo to ~/src/clones and open with VS Code"]]
-                 [:s [:km "Clone repo to ~/src/clones"]]
-                 ;[:d [:km "Clone repo to ~/src/clones and open with Xcode"]] ; TODO:
-                 [:spacebar :!CSOy] ; Selection -> Stack Overflow
-                 [:m [:km "test: Rust"]]
-                 [:i [:km "test: Python"]]
-                 [:k [:km "test: Go"]]
-                 [:n [:km "test: TS"]]
-                 [:h [:km "test: Haskell"]]
-                 [:j [:km "test: JS"]]
-                 [:l [:km "proj: LA"]]
-                 [:period [:km "New SnippetsLab snippet"]]
-                 [:semicolon [:alfred "search build to learn" "nikivi.private.directories"]]]}
-         {:des "jskey"
+         {:des "jsdot"
           :rules [:jsdot-mode
                   ;[:z [:spacebar :s :t :y :l :e :equal_sign :!Sopen_bracket :!Sopen_bracket :!Sclose_bracket :!Sclose_bracket :left_arrow :left_arrow]] ; -> style={{}}
                   [:z [:spacebar :c :l :a :s :s :!Sn :a :m :e :equal_sign :!Squote :!Squote :left_arrow]] ; -> className=""
@@ -633,45 +722,12 @@
                   [:t [:!Sn :!So :!St :!Se :!Ssemicolon :spacebar]] ; -> NOTE: 
                   [:caps_lock [:!Cf :!St :!So :!Sd :!So :!Ssemicolon :return_or_enter]] ; -> search TODO: in file
                   [:tab [:!CSf :!St :!So :!Sd :!So :!Ssemicolon :return_or_enter]]]} ; -> search TODO: globally
-        ; {:des "gokey"
+        ; {:des "godot"
         ;  :rules[:godot-mode
         ;         [:a [:g :o :l :a :n :g :spacebar]]]} ; -> golang
-        ;{:des "pykey"
+        ;{:des "pydot"
           ;:rules[:pydot-mode
                  ;[:a [:p :r :i :n :t :!S9 :!S0 :left_arrow]]]} ; -> print()
-        {:des "tilkey (actions)"
-         :rules [:tilde-mode
-                 [:spacebar :!COSn] ; Selection -> GitHub
-                 [:c :!CTk] ; Turn on/off BTT TouchBar
-                 [:h :!CTOx] ; Little Snitch
-                 [:e [:km "Add blog to Reeder"]]
-                 [:n :!STh] ; Record macro
-                 ;[:f [:km "Test"]]
-                 [:l [:km "Make global macro"]]
-                 [:semicolon [:km "Paste active todo"]]
-                 [:r [:alfred "restart wifi" "nikivi.wifi.tools"]]
-                 [:w [:alfred "toggle wifi" "nikivi.wifi.tools"]]
-                 ;[:i [:km "Commit build to learn"]]
-                 [:i [:km "Commit wiki"]]]}
-        {:des "xkey (spotify)"
-         :rules [:x-mode
-                 ;[:v [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ERn0U4qZIKC8Dy7RrMMsn"]] ; Play Likes playlist TODO: fix
-                 ;[:v [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ERn0U4qZIKC8Dy7RrMMsn"]] ; Play Focus playlist TODO: fix
-                 ;[:v [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ERn0U4qZIKC8Dy7RrMMsn"]] ; Play Discover Weekly playlist TODO: fix
-                 [:o [:km "Share current song on Twitter"]]
-                 [:p [:km "Paste current Spotify song link"]]
-                 [:j [:alfred "spot_mini" "com.vdesabou.spotify.mini.player"]]
-                 [:i [:alfred "show_alfred_playlist" "com.vdesabou.spotify.mini.player"]]
-                 [:l [:alfred "song_radio" "com.vdesabou.spotify.mini.player"]]
-                 [:u [:alfred "artist_radio" "com.vdesabou.spotify.mini.player"]]
-                 [:k [:alfred "show_current_track" "com.vdesabou.spotify.mini.player"]]
-                 [:period [:alfred "youtube_search_current_track" "com.vdesabou.spotify.mini.player"]]
-                 [:comma [:alfred "reddit_search_current_track" "com.vdesabou.spotify.mini.player"]]
-                 [:m [:alfred "add_current_track_to" "com.vdesabou.spotify.mini.player"]]
-                 [:quote [:alfred "add_current_track_to" "com.vdesabou.spotify.mini.player" "spotify:playlist:2N82DnDsPGMnpJhN8sVFJu"]] ; Add song to Bliss playlist
-                 [:n [:alfred "show_playlists" "com.vdesabou.spotify.mini.player"]]
-                 [:semicolon [:alfred "add_current_track_to_alfred_playlist_or_your_music" "com.vdesabou.spotify.mini.player"]]
-                 [:b [:alfred "remove_current_track_from" "com.vdesabou.spotify.mini.player"]]]}
         {:des "spacekey (top sites)"
          :rules [:spacebar-mode
                  [:q :!Sclose_bracket] ; }
@@ -695,60 +751,4 @@
                  ;[:s [:km "w: GCP"]] TODO: 
                  ;[:f [:km "w: GitHub (pulls)"]] ; TODO: make it work
                  ;[:period [:km "w: regex101"]]
-                 [:s [:km "w: Stack Overflow"]]]}
-        {:des "tkey (websites)"
-         :rules [:t-mode
-                 [:spacebar :!COSr] ; Selection -> Google Translate
-                 [:r [:km "w: Repl"]]
-                 [:e [:km "w: Stripe"]]
-                 [:o [:km "w: Dropbox"]]
-                 [:a [:km "w: Amazon"]]
-                 [:h [:km "w: Twitch"]]
-                 [:period [:km "w: IFTTT"]]
-                 [:j [:km "w: Google Drive"]]
-                 [:z [:km "w: MDN"]]
-                 [:semicolon [:km "w: Netlify"]]
-                 [:k [:km "w: Kaggle"]]
-                 [:w [:km "w: WakaTime"]]
-                 [:n [:km "w: NPM"]]]}
-        {:des "tabkey (alfred)"
-         :rules [:tab-mode
-                 [:i [:alfred "search ios tabs" "net.deanishe.alfred.safari"]]]}
-        {:des "capskey (todo + trello)"
-         :rules [:caps-mode
-                 [:1 [:alfred "Screenshot -> Imgur" "com.vitorgalvao.alfred.webscreenshot"]]
-                 [:2 :!TO2] ; Screenshot -> Clipboard
-                 [:3 :!TO3] ; Screenshot -> Annotate 
-                 [:4 :!TO4] ; Show Annotate
-                 [:9 :!TO9] ; Picture of screen -> Clipboard
-                 [:0 :!TO0] ; Picture of screen -> ~/Desktop
-                 [:spacebar :!TO7] ; New Kap recording
-                 [:tab [:km "New ScreenFlow recording (options)"]]
-                 [:q :!CO5] ; Start/stop ScreenFlow recording
-                 [:w [:km "Open Learn Trello"]]
-                 [:e [:km "Open Ideas Trello"]]
-                 [:r [:km "Open 2Do PR"]]
-                 [:f [:km "Open Focus Trello"]]
-                 [:v [:km "Open Videos Trello"]]
-                 [:p [:km "Open Possessions Trello"]]
-                 [:c [:km "Open Research Papers Trello"]]
-                 [:u [:km "Open Courses Trello"]]
-                 [:z [:km "Open 🐶🐱 Trello"]]
-                 [:n [:km "Open 2Do Clean"]]
-                 [:k [:km "Open 2Do Today"]]
-                 [:slash [:km "Open 2Do Other"]] ; TODO: remove once its empty
-                 [:h [:km "Open 2Do LA"]]
-                 [:m [:km "Open 2Do Work"]]
-                 [:g [:km "Open 2Do Life"]]
-                 [:comma [:km "Open 2Do Macro"]]
-                 [:y [:km "Open 2Do Buy"]]
-                 [:d [:km "Open 2Do Find"]]
-                 [:quote [:km "Open 2Do Ask"]]
-                 [:i [:km "Open 2Do Fix"]]
-                 [:l [:km "Open 2Do Later"]]
-                 [:semicolon [:km "Open 2Do Starred"]]
-                 [:period [:km "Search 2Do"]]
-                 [:open_bracket [:km "w: Goodreads (currently reading)"]]
-                 [:close_bracket [:km "w: Goodreads (next)"]]
-                 [:o [:km "Open 2Do Tools"]]
-                 [:j [:km "todo: empty"]]]}]}
+                 [:s [:km "w: Stack Overflow"]]]}]}
