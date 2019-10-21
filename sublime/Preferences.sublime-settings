@@ -83,7 +83,9 @@
 		"Overviewing",
 		"dev",
 		"homebrew",
-		"autofilled"
+		"autofilled",
+		"overthink",
+		"micronutrient"
 	],
 	"auto_format_on_save": true,
 	"binary_file_patterns":
