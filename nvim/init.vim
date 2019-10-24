@@ -13,16 +13,14 @@ Plug 'itchyny/lightline.vim' " Light and configurable statusline/tabline plugin.
 Plug 'romainl/vim-cool' " Stop matching after search is done.
 Plug 'jiangmiao/auto-pairs' " Insert or delete brackets, parens, quotes in pair.
 Plug 'w0rp/ale' " Asynchronous Lint Engine.
-Plug 'rizzatti/dash.vim' " Search Dash app.
 Plug 'jremmen/vim-ripgrep' " Use RipGrep in Vim and display results in a quickfix list.
 
 " Prettier support
 Plug 'prettier/vim-prettier', {
-  \ 'do': 'npm install',
-  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue'] }
+  \ 'do': 'yarn install',
+  \ 'for': ['javascript', 'typescript', 'json', 'markdown'] }
 
 Plug 'scrooloose/nerdcommenter' " Quick comments.
-Plug 'unblevable/quick-scope' " Highlight f, F jumps.
 Plug 'Shougo/vimproc.vim', {'do' : 'make'} " Interactive command execution.
 Plug 'tpope/vim-repeat' " Enable repeating supported plugin maps.
 Plug 'tpope/vim-surround' " Quoting/parenthesizing made simple.
@@ -43,6 +41,7 @@ Plug 'LnL7/vim-nix', { 'for': 'nix' } " Vim configuration files for Nix.
 call plug#end()
 
 " Options
+set noshowmode " Hide INSERT/VISUAL messages
 set mouse=a " Copy selected text with mouse to system clipboard
 set undofile " Save undos after file closes
 set wildmode=longest:list,full " Complete longest common string, then each full match

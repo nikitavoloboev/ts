@@ -168,9 +168,9 @@ alias rrpdf='rm -rf *.pdf'
 alias sz='exec zsh'
 
 # Hugo
-alias us='hugo server -D'
-alias ut='hugo server -w' # testing
-alias u='hugo'
+alias hu='hugo'
+alias hug='hugo server -D'
+alias huw='hugo server -w' # testing
 
 # Nginx
 alias ngup='sudo nginx'
