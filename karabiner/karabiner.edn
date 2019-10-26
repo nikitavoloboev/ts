@@ -79,8 +79,8 @@
          :rules [[:right_command :right_command nil {:alone :!CTOSspacebar}]]}
         {:des "left cmd -> cmd+tab"
          :rules [[:left_command :left_command nil {:alone :!Ctab}]]}
-        {:des "right shift -> Pair Program (Karabiner/VSCodeVim off)"
-         :rules [[:right_shift :right_shift nil {:alone [:km "Pair Program (Karabiner/VSCodeVim on/off)"]}]]}
+        ;{:des "right shift -> Pair Program (Karabiner/VSCodeVim off)"
+        ; :rules [[:right_shift :right_shift nil {:alone [:km "Pair Program (Karabiner/VSCodeVim on/off)"]}]]}
         {:des "jsim"
          :rules [[[:j :k] [:alfred "search google" "net.deanishe.alfred-searchio"]]
                  [[:j :semicolon] [:alfred "search tabs" "net.deanishe.alfred.safari"]]
@@ -188,10 +188,10 @@
                  [:c [:km "open: Spotify"]]
                  [:k [:km "open: Safari"]]
                  [:d [:km "open: Activity Monitor"]]
-                 ;[:c [:km "open: Console"]]
-                 ;[:c [:km "open: Sketch"]]
+                 ;[:g [:km "open: Console"]]
                  [:t [:km "open: Postico"]]
-                 [:g [:km "open: Notion"]]
+                 ;[:c [:km "open: Sketch"]]
+                 ;[:g [:km "open: Notion"]]
                  [:i [:km "open: Chrome Canary"]]
                  [:period [:km "open: SnippetsLab"]]
                  ;[:u [:km "open: Safari Technology Preview"]]
@@ -370,7 +370,8 @@
                  [:v [:km "Open Videos Trello"]]
                  [:p [:km "Open Possessions Trello"]]
                  [:c [:km "Open Research Papers Trello"]]
-                 [:u [:km "Open Courses Trello"]]
+                 [:s [:km "Open Work Trello"]]
+                 [:d [:km "Open Courses Trello"]]
                  [:z [:km "Open 🐶🐱 Trello"]]
                  [:r [:km "Open 2Do PR"]]
                  [:j [:km "Clear todo"]]
@@ -380,7 +381,6 @@
                  [:m [:km "Open 2Do Work"]]
                  [:g [:km "Open 2Do Life"]]
                  [:y [:km "Open 2Do Buy"]]
-                 [:d [:km "Open 2Do Find"]]
                  [:i [:km "Open 2Do Fix"]]
                  [:l [:km "Open 2Do Later"]]
                  [:o [:km "Open 2Do Tools"]]
@@ -609,10 +609,10 @@
                  [:a [:km "Go to test macro"]]
                  [:s [:km "Test"]]
                  [:r [:km "Repeat Spotify song"]]
-                 [:semicolon :!TS0] ; Turn on/off Noizio
                  [:period [:km "Play/pause Spotify"]]
                  ;[:quote [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:3pa9ZRg9V6fSxP1bEfw5GF"]] ; TODO: Play Likes playlist on shuffle
                  [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:7buuX5RshJBQuNz3T3grHa"]] ; Focus song
+                 [:semicolon :!TS0] ; Turn on/off Noizio
                  [:comma [:km "Noizio settings"]]
                  [:i :display_brightness_decrement]
                  [:o :display_brightness_increment]
