@@ -19,8 +19,16 @@ export PATH=$PATH:./node_modules/.bin
 eval "$(hub alias -s)"
 eval "$(direnv hook zsh)"
 
-# TODO: change my pure prompt if I am in direnv env
-# look at the existing prompt and use below function as it returns needed info
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# fnm
+eval "$(fnm env --multi)"
+
+if command -v pazi &>/dev/null; then
+  eval "$(pazi init zsh)"
+fi
+
+# TODO: change pure prompt when I am in direnv env. Below func returns needed info
 # has_direnv() { if [[ -n $DIRENV_DIFF ]]; then echo in direnv; else echo not; fi }
 
 typeset -U PATH # Remove duplicates in $PATH

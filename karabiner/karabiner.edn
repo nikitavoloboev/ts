@@ -371,7 +371,7 @@
                  [:p [:km "Open Possessions Trello"]]
                  [:c [:km "Open Research Papers Trello"]]
                  [:s [:km "Open Work Trello"]]
-                 [:d [:km "Open Courses Trello"]]
+                 [:u [:km "Open Courses Trello"]]
                  [:z [:km "Open 🐶🐱 Trello"]]
                  [:r [:km "Open 2Do PR"]]
                  [:j [:km "Clear todo"]]
