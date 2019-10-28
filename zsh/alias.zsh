@@ -13,6 +13,7 @@ alias nss="nix-shell --run zsh -p"
 alias bi='brew install'
 
 # General
+alias wjs='watchexec --exts js'
 alias f='open .'
 alias pb='pbcopy'
 alias te='tree'
