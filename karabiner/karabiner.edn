@@ -612,7 +612,7 @@
                  [:semicolon [:km "Play/pause Spotify"]]
                  [:open_bracket [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:4AVzuW0i3Wz8J7cxBG84Uy"]] ; Focus playlist
                  [:close_bracket [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:3pa9ZRg9V6fSxP1bEfw5GF"]] ; Likes playlist
-                 [:quote [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:7buuX5RshJBQuNz3T3grHa"]] ; Focus song
+                 [:quote [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:7eZ7DmlYsMbiz9z2O8ynpq"]] ; Focus song
                  [:period :!TS0] ; Turn on/off Noizio
                  [:comma [:km "Noizio settings"]]
                  [:i :display_brightness_decrement]
