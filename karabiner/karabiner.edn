@@ -610,7 +610,8 @@
                  [:s [:km "Test"]]
                  [:r [:km "Repeat Spotify song"]]
                  [:semicolon [:km "Play/pause Spotify"]]
-                 ;[:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:3pa9ZRg9V6fSxP1bEfw5GF"]] ; TODO: Play Likes playlist on shuffle
+                 [:open_bracket [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:4AVzuW0i3Wz8J7cxBG84Uy"]] ; Focus playlist
+                 [:close_bracket [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:3pa9ZRg9V6fSxP1bEfw5GF"]] ; Likes playlist
                  [:quote [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:7buuX5RshJBQuNz3T3grHa"]] ; Focus song
                  [:period :!TS0] ; Turn on/off Noizio
                  [:comma [:km "Noizio settings"]]
