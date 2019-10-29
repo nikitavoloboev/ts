@@ -1,8 +1,7 @@
-# Update readme commit
+# Update README
 gz(){
-  # TODO: if 'readme.md' files exists, update it instead
   git add README.md
-  git commit -m "readme: update"
+  git commit -m "readme"
   git push
 }
 

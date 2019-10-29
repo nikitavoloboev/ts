@@ -377,8 +377,8 @@
                  [:j [:km "Clear todo"]]
                  [:n [:km "Open 2Do Clean"]]
                  [:k [:km "Open 2Do Today"]]
-                 [:h [:km "Open 2Do LA"]]
-                 [:m [:km "Open 2Do Work"]]
+                 [:m [:km "Open 2Do LA"]]
+                 [:h [:km "Open 2Do Work"]]
                  [:g [:km "Open 2Do Life"]]
                  [:y [:km "Open 2Do Buy"]]
                  [:i [:km "Open 2Do Fix"]]
@@ -604,11 +604,11 @@
          :rules [:v-mode
                  [:spacebar :!CSOv] ; Selection -> Google Images
                  [:e :!CO9] ; Connect/disconnect AirPods
+                 [:r [:km "Repeat Spotify song"]]
                  [:u :!COS6] ; Toggle Night Shift on/off.
                  [:j :mute]
                  [:a [:km "Go to test macro"]]
                  [:s [:km "Test"]]
-                 [:r [:km "Repeat Spotify song"]]
                  [:semicolon [:km "Play/pause Spotify"]]
                  [:open_bracket [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:4AVzuW0i3Wz8J7cxBG84Uy"]] ; Focus playlist
                  [:close_bracket [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:3pa9ZRg9V6fSxP1bEfw5GF"]] ; Likes playlist
