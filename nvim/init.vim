@@ -5,22 +5,12 @@ endfunction
 
 " Install plugins
 call plug#begin()
-" Looks
-Plug 'nikitavoloboev/vim-monokai-night' " Theme
-Plug 'itchyny/lightline.vim' " Light and configurable statusline/tabline plugin.
-
 " Utility
+Plug 'w0rp/ale' " Asynchronous Lint Engine.
 Plug 'romainl/vim-cool' " Stop matching after search is done.
 Plug 'jiangmiao/auto-pairs' " Insert or delete brackets, parens, quotes in pair.
-Plug 'w0rp/ale' " Asynchronous Lint Engine.
-Plug 'jremmen/vim-ripgrep' " Use RipGrep in Vim and display results in a quickfix list.
-
-" Prettier support
-Plug 'prettier/vim-prettier', {
-  \ 'do': 'yarn install',
-  \ 'for': ['javascript', 'typescript', 'json', 'markdown'] }
-
 Plug 'scrooloose/nerdcommenter' " Quick comments.
+Plug 'jremmen/vim-ripgrep' " Use RipGrep in Vim and display results in a quickfix list.
 Plug 'Shougo/vimproc.vim', {'do' : 'make'} " Interactive command execution.
 Plug 'tpope/vim-repeat' " Enable repeating supported plugin maps.
 Plug 'tpope/vim-surround' " Quoting/parenthesizing made simple.
@@ -31,6 +21,10 @@ Plug 'wakatime/vim-wakatime' " Automatic time tracking.
 Plug 'haya14busa/incsearch.vim' " Improved incremental searching.
 Plug 'easymotion/vim-easymotion' " Vim motions on speed.
 Plug 'thinca/vim-quickrun' " Run commands quickly.
+Plug 'prettier/vim-prettier', {
+  \ 'do': 'yarn install',
+  \ 'for': ['javascript', 'typescript', 'json', 'markdown'] } " Prettier support
+
 
 " Git
 Plug 'tpope/vim-fugitive' " Git wrapper.
@@ -38,6 +32,11 @@ Plug 'mhinz/vim-signify' " Show a diff using Vim its sign column.
 
 " Nix
 Plug 'LnL7/vim-nix', { 'for': 'nix' } " Vim configuration files for Nix.
+
+" Looks
+Plug 'nikitavoloboev/vim-monokai-night' " Theme
+Plug 'itchyny/lightline.vim' " Light and configurable statusline/tabline plugin.
+
 call plug#end()
 
 " Options

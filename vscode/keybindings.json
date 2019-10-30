@@ -371,7 +371,7 @@
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+v",
+    "key": "ctrl+b",
     "command": "workbench.action.gotoSymbol"
   },
   {
@@ -419,5 +419,5 @@
   {
     "key": "ctrl+r",
     "command": "workbench.action.toggleSidebarVisibility"
-  },
+  }
 ]
