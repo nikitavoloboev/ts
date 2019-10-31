@@ -376,14 +376,14 @@
                  [:z [:km "Open 🐶🐱 Trello"]]
                  [:r [:km "Open 2Do PR"]]
                  [:j [:km "Clear todo"]]
-                 [:n [:km "Open 2Do Clean"]]
                  [:k [:km "Open 2Do Today"]]
+                 [:l [:km "Open 2Do Later"]]
+                 [:n [:km "Open 2Do Clean"]]
                  [:m [:km "Open 2Do LA"]]
                  [:h [:km "Open 2Do Work"]]
                  [:g [:km "Open 2Do Life"]]
                  [:y [:km "Open 2Do Buy"]]
                  [:i [:km "Open 2Do Fix"]]
-                 [:l [:km "Open 2Do Later"]]
                  [:o [:km "Open 2Do Tools"]]
                  [:semicolon [:km "Open 2Do Starred"]]
                  [:slash [:km "Open 2Do Other"]] ; TODO: remove once its empty
@@ -613,7 +613,7 @@
                  [:semicolon [:km "Play/pause Spotify"]]
                  [:open_bracket [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ESjwZeTcHOWzY3FYO5zs5"]] ; Focus playlist
                  [:close_bracket [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ERn0U4qZIKC8Dy7RrMMsn"]] ; Likes playlist
-                 [:quote [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:2R5tI365Dx08Zm6WJJaHIY"]] ; Focus song
+                 [:quote [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:1GLnM2xHIG9DdLGESEEA6n"]] ; Focus song
                  [:period :!TS0] ; Turn on/off Noizio
                  [:comma [:km "Noizio settings"]]
                  [:i :display_brightness_decrement]
