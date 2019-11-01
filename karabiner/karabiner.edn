@@ -610,11 +610,10 @@
                  [:j :mute]
                  [:a [:km "Go to test macro"]]
                  [:s [:km "Test"]]
-                 [:semicolon [:km "Play/pause Spotify"]]
-                 [:open_bracket [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ESjwZeTcHOWzY3FYO5zs5"]] ; Focus playlist
-                 [:close_bracket [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ERn0U4qZIKC8Dy7RrMMsn"]] ; Likes playlist
-                 [:quote [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:0aNwdVJmeq9CSCEPsyCvXP"]] ; Focus song
-                 [:period :!TS0] ; Turn on/off Noizio
+                 [:period [:km "Play/pause Spotify"]]
+                 [:open_bracket [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ERn0U4qZIKC8Dy7RrMMsn"]] ; Likes playlist
+                 [:close_bracket [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ESjwZeTcHOWzY3FYO5zs5"]] ; Focus playlist
+                 [:semicolon :!TS0] ; Turn on/off Noizio
                  [:comma [:km "Noizio settings"]]
                  [:i :display_brightness_decrement]
                  [:o :display_brightness_increment]
