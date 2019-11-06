@@ -709,21 +709,21 @@
                  [:q [:alfred "search dash" "com.nikivi.own.dash" "c: "]]
                  [:o [:alfred "search dash" "com.nikivi.own.dash" "godoc: "]]
                  [:grave_accent_and_tilde [:alfred "search dash" "com.nikivi.own.dash" "tldr: "]]]}
-         {:des "dot (shared)"
+         {:des "dotkey (1-4, q-u, caps, tab)"
           :rules [:dot-mode
                   ; TODO: make spacebar change between language modes (or another key)
                   [:spacebar [:!St :h :a :n :k :spacebar :y :o :u :period :spacebar]] ; -> Thank you.
-                  [:left_gui [:p :l :e :a :s :e :spacebar]] ; -> please
+                  [:left_gui [:!St :h :a :n :k :s :spacebar]] ; -> Thanks
                   [:1 [:!Sf :i :x :spacebar :!S3]] ; -> Fix #
                   [:2 [:!Sr :e :f :spacebar :!S3]] ; -> Ref #
                   [:3 [:!Sc :l :o :s :e :s :spacebar :!S3]] ; -> Closes #
-                  [:u [:u :p :d :a :t :e :spacebar]] ; -> update
-                  [:c [:!St :h :a :n :k :s :spacebar]] ; -> Thanks
                   [:q [:!Sa :spacebar :slash :slash :spacebar]] ; -> // (on same line)
                   [:w [:km "VSCode/XCode/Sublime comment on top of line"]]
                   [:e [:!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> TODO:
                   [:r [:km "VSCode/XCode/Sublime comment on top of line with TODO"]]
                   [:t [:!Sn :!So :!St :!Se :!Ssemicolon :spacebar]] ; -> NOTE:
+                  [:y [:p :l :e :a :s :e :spacebar]] ; -> please
+                  [:u [:u :p :d :a :t :e :spacebar]] ; -> update
                   [:caps_lock [:!Cf :!St :!So :!Sd :!So :!Ssemicolon :return_or_enter]] ; -> search TODO: in file
                   [:tab [:!CSf :!St :!So :!Sd :!So :!Ssemicolon :return_or_enter]]]} ; -> search TODO: globally
          {:des "javascript"
