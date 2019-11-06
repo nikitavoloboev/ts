@@ -86,7 +86,11 @@
 		"autofilled",
 		"overthink",
 		"micronutrient",
-		"Timeline"
+		"Timeline",
+		"Clojure",
+		"superfoods",
+		"inbetween",
+		"emoji"
 	],
 	"auto_format_on_save": true,
 	"binary_file_patterns":

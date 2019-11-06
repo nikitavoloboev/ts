@@ -14,6 +14,7 @@ alias bi='brew install'
 
 # General
 alias wjs='watchexec --exts js'
+alias wpy='watchexec --exts py'
 alias f='open .'
 alias pb='pbcopy'
 alias te='tree'

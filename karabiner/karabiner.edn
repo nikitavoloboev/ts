@@ -1,5 +1,15 @@
 {:profiles
- {:JS {:default true
+ {:js {:default true
+         :sim     50
+         :delay   80
+         :alone   120
+         :held    70}}
+ {:py {:default false
+         :sim     50
+         :delay   80
+         :alone   120
+         :held    70}}
+ {:go {:default false
          :sim     50
          :delay   80
          :alone   120
@@ -33,8 +43,8 @@
              :spacebar-mode {:key :spacebar}
              :tilde-mode {:key :grave_accent_and_tilde}
              :jsdot-mode {:key :period}
-             ;:godot-mode {:key :period}
-             ;:pydot-mode {:key :period}
+             :godot-mode {:key :period}
+             :pydot-mode {:key :period}
              :tab-mode {:key :tab}
              :caps-mode {:key :caps_lock}}
  :main [{:des "colonkey (shift)"
@@ -311,7 +321,7 @@
                  [:semicolon :semicolon]
                  [:2 :!S2]
                  [:f :hyphen]
-                 ;[:tab [:!Cright_arrow :return_or_enter :hyphen :spacebar]] ; - 
+                 ;[:tab [:!Cright_arrow :return_or_enter :hyphen :spacebar]] ; -
                  [:s :!Shyphen]
                  [:j :equal_sign]
                  [:w :!S9]
@@ -358,7 +368,7 @@
          :rules [:caps-mode
                  [:1 [:alfred "Screenshot -> Imgur" "com.vitorgalvao.alfred.webscreenshot"]]
                  [:2 :!TO2] ; Screenshot -> Clipboard
-                 [:3 :!TO3] ; Screenshot -> Annotate 
+                 [:3 :!TO3] ; Screenshot -> Annotate
                  [:4 :!TO4] ; Show Annotate
                  [:9 :!TO9] ; Picture of screen -> Clipboard
                  [:0 :!TO0] ; Picture of screen -> ~/Desktop
@@ -471,8 +481,8 @@
                  [:spacebar :!CTq] ; Selection -> Web Searches
                  [:j {:mkey {:vwheel 60}}] ; Scroll down
                  [:k {:mkey {:vwheel -60}}] ; Scroll up
-                 ;[:l {:mkey {:vwheel 60}}] ; Scroll right TODO: 
-                 ;[:h {:mkey {:vwheel -60}}] ; Scroll left TODO: 
+                 ;[:l {:mkey {:vwheel 60}}] ; Scroll right TODO:
+                 ;[:h {:mkey {:vwheel -60}}] ; Scroll left TODO:
                  [:a :!CT6] ; Smart zoom
                  [:f [:km "Copy and activate previous app"]]
                  [:m [:km "Google Searchio selected word"]]
@@ -496,8 +506,8 @@
                  [:semicolon [:km "open: MindNode"]]
                  [:period [:km "edit: Karabiner"]]
                  [:a [:alfred "new todo" "nikivi.todo.task"]]
-                 [:s [:km "Move todo to MindNode"]]
-                 ;[:d [:km "edit: clones"]]
+                 ;[:s [:km "Move todo to MindNode"]]
+                 [:s [:km "edit: clones"]]
                  [:slash [:km "edit: Darwin Nix"]]
                  [:w :!CTO4] ; Alfred file action
                  [:j [:km "Open 1st iTerm tab"]]
@@ -699,7 +709,7 @@
                  [:o [:alfred "search dash" "com.nikivi.own.dash" "godoc: "]]
                  [:grave_accent_and_tilde [:alfred "search dash" "com.nikivi.own.dash" "tldr: "]]]}
          {:des "jsdot"
-          :rules [:jsdot-mode
+          :rules [:js-profile :jsdot-mode
                   ;[:z [:spacebar :s :t :y :l :e :equal_sign :!Sopen_bracket :!Sopen_bracket :!Sclose_bracket :!Sclose_bracket :left_arrow :left_arrow]] ; -> style={{}}
                   [:z [:spacebar :c :l :a :s :s :!Sn :a :m :e :equal_sign :!Squote :!Squote :left_arrow]] ; -> className=""
                   [:x [:e :x :p :o :r :t :spacebar]] ; -> export
@@ -713,7 +723,7 @@
 
                   ; Code Helpers
                   ; TODO: make spacebar change between language modes (or another key)
-                  [:spacebar [:!St :h :a :n :k :spacebar :y :o :u :period :spacebar]] ; -> Thank you. 
+                  [:spacebar [:!St :h :a :n :k :spacebar :y :o :u :period :spacebar]] ; -> Thank you.
                   [:left_gui [:p :l :e :a :s :e :spacebar]] ; -> please
                   [:1 [:!Sf :i :x :spacebar :!S3]] ; -> Fix #
                   [:2 [:!Sr :e :f :spacebar :!S3]] ; -> Ref #
@@ -724,15 +734,15 @@
                   [:w [:km "VSCode/XCode/Sublime comment on top of line"]]
                   [:e [:!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> TODO:
                   [:r [:km "VSCode/XCode/Sublime comment on top of line with TODO"]]
-                  [:t [:!Sn :!So :!St :!Se :!Ssemicolon :spacebar]] ; -> NOTE: 
+                  [:t [:!Sn :!So :!St :!Se :!Ssemicolon :spacebar]] ; -> NOTE:
                   [:caps_lock [:!Cf :!St :!So :!Sd :!So :!Ssemicolon :return_or_enter]] ; -> search TODO: in file
                   [:tab [:!CSf :!St :!So :!Sd :!So :!Ssemicolon :return_or_enter]]]} ; -> search TODO: globally
-        ; {:des "godot"
-        ;  :rules[:godot-mode
-        ;         [:a [:g :o :l :a :n :g :spacebar]]]} ; -> golang
-        ;{:des "pydot"
-          ;:rules[:pydot-mode
-                 ;[:a [:p :r :i :n :t :!S9 :!S0 :left_arrow]]]} ; -> print()
+        {:des "godot"
+         :rules[:go-profile :godot-mode
+                [:a [:g :o :l :a :n :g :spacebar]]]} ; -> golang
+        {:des "pydot"
+          :rules[:py-profile :pydot-mode
+                 [:a [:p :r :i :n :t :!S9 :!S0 :left_arrow]]]} ; -> print()
         {:des "spacekey (top sites)"
          :rules [:spacebar-mode
                  [:q :!Sclose_bracket] ; }
@@ -753,7 +763,7 @@
                  [:m [:km "w: Medium"]]
                  ;[:s [:km "w: Observable"]]
                  [:s [:km "w: AWS"]]
-                 ;[:s [:km "w: GCP"]] TODO: 
+                 ;[:s [:km "w: GCP"]] TODO:
                  ;[:f [:km "w: GitHub (pulls)"]] ; TODO: make it work
                  ;[:period [:km "w: regex101"]]
                  [:s [:km "w: Stack Overflow"]]]}]}
