@@ -4,16 +4,6 @@
          :delay   80
          :alone   120
          :held    70}}
- {:go {:default false
-         :sim     50
-         :delay   80
-         :alone   120
-         :held    70}}
- {:python {:default false
-         :sim     50
-         :delay   80
-         :alone   120
-         :held    70}}
  :templates {:alfred "osascript -e 'tell application \"Alfred 4\" to run trigger \"%s\" in workflow \"%s\" with argument \"%s\"'"
              :km "osascript -e 'tell application \"Keyboard Maestro Engine\" to do script \"%s\"'"}
  :simlayers {:semicolon-mode {:key :semicolon}
@@ -549,7 +539,6 @@
                  [:h :!CTOx] ; Little Snitch
                  [:e [:km "Add blog to Reeder"]]
                  [:n :!STh] ; Record macro
-                 ;[:f [:km "Test"]]
                  [:l [:km "Make global macro"]]
                  [:semicolon [:km "Paste active todo"]]
                  [:r [:alfred "restart wifi" "nikivi.wifi.tools"]]
@@ -591,9 +580,9 @@
                  [:period [:alfred "youtube_search_current_track" "com.vdesabou.spotify.mini.player"]]
                  [:comma [:alfred "reddit_search_current_track" "com.vdesabou.spotify.mini.player"]]
                  [:m [:alfred "add_current_track_to" "com.vdesabou.spotify.mini.player"]]
+                 [:semicolon [:alfred "add_current_track_to_alfred_playlist_or_your_music" "com.vdesabou.spotify.mini.player"]] ; Ass song to Likes playlist
                  [:quote [:alfred "add_current_track_to" "com.vdesabou.spotify.mini.player" "spotify:playlist:2N82DnDsPGMnpJhN8sVFJu"]] ; Add song to Bliss playlist
                  [:n [:alfred "show_playlists" "com.vdesabou.spotify.mini.player"]]
-                 [:semicolon [:alfred "add_current_track_to_alfred_playlist_or_your_music" "com.vdesabou.spotify.mini.player"]]
                  [:b [:alfred "remove_current_track_from" "com.vdesabou.spotify.mini.player"]]]}
         {:des "ckey (test)"
          :rules [:c-mode
@@ -601,13 +590,12 @@
                  [:s [:km "Clone repo to ~/src/clones"]]
                  ;[:d [:km "Clone repo to ~/src/clones and open with Xcode"]] ; TODO:
                  [:spacebar :!CSOy] ; Selection -> Stack Overflow
-                 [:m [:km "test: Rust"]]
-                 [:i [:km "test: Python"]]
-                 [:k [:km "test: Go"]]
-                 [:n [:km "test: TS"]]
                  [:h [:km "test: Haskell"]]
                  [:j [:km "test: JS"]]
-                 [:l [:km "proj: LA"]]
+                 [:k [:km "test: Go"]]
+                 [:l [:km "test: Python"]]
+                 [:n [:km "test: TS"]]
+                 [:m [:km "test: Rust"]]
                  [:period [:km "New SnippetsLab snippet"]]
                  [:semicolon [:alfred "search build to learn" "nikivi.private.directories"]]]}
         {:des "vkey (media)"
@@ -712,6 +700,7 @@
                   ; TODO: make spacebar change between language modes (or another key)
                   [:spacebar [:!St :h :a :n :k :spacebar :y :o :u :period :spacebar]] ; -> Thank you.
                   [:left_gui [:!St :h :a :n :k :s :spacebar]] ; -> Thanks
+                  [:0 ["py-prof" 1]]
                   [:1 [:!Sf :i :x :spacebar :!S3]] ; -> Fix #
                   [:2 [:!Sr :e :f :spacebar :!S3]] ; -> Ref #
                   [:3 [:!Sc :l :o :s :e :s :spacebar :!S3]] ; -> Closes #
@@ -723,13 +712,9 @@
                   [:y [:p :l :e :a :s :e :spacebar]] ; -> please
                   [:u [:u :p :d :a :t :e :spacebar]] ; -> update
                   [:caps_lock [:!Cf :!St :!So :!Sd :!So :!Ssemicolon :return_or_enter]] ; -> search TODO: in file
-                 [:a [:p :r :i :n :t :!S9 :!S0 :left_arrow]] ; -> print()
-                 [:s [:hyphen :!Speriod]] ; -> ->
-                 [:v [:p :y :t :h :o :n :spacebar]] ; -> python
-                 [:d [:r :e :t :u :r :n :spacebar]] ; -> return
                   [:tab [:!CSf :!St :!So :!Sd :!So :!Ssemicolon :return_or_enter]]]} ; -> search TODO: globally
          {:des "jsdot"
-          :rules [:js-profile :dot-mode
+          :rules [:js-prof :dot-mode
                   [:a [:c :o :n :s :o :l :e :period :l :o :g :!S9 :!S0 :left_arrow]] ; -> console.log()
                   [:s [:equal_sign :!Speriod :spacebar]] ; -> =>
                   [:d [:r :e :t :u :r :n :spacebar]] ; -> return
@@ -741,10 +726,10 @@
                   [:b [:t :y :p :e :s :c :r :i :p :t :spacebar]] ; -> typescript
                   [:v [:j :a :v :a :s :c :r :i :p :t :spacebar]]]} ; -> javascript
         {:des "godot"
-         :rules[:go :dot-mode
+         :rules[:go-prof :dot-mode
                 [:v [:g :o :l :a :n :g :spacebar]]]} ; -> golang
         {:des "pydot"
-          :rules[:python :dot-mode
+          :rules[:py-prof :dot-mode
                  [:a [:p :r :i :n :t :!S9 :!S0 :left_arrow]] ; -> print()
                  [:s [:hyphen :!Speriod]] ; -> ->
                  [:d [:r :e :t :u :r :n :spacebar]] ; -> return
