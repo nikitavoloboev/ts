@@ -90,7 +90,9 @@
 		"Clojure",
 		"superfoods",
 		"inbetween",
-		"emoji"
+		"emoji",
+		"reimplement",
+		"paywall"
 	],
 	"auto_format_on_save": true,
 	"binary_file_patterns":

@@ -288,5 +288,6 @@
       "name": "Vue Green",
       "value": "#42b883"
     }
-  ]
+  ],
+  "terminal.integrated.inheritEnv": false
 }
