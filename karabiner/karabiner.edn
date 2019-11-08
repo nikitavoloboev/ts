@@ -534,6 +534,7 @@
                  [:s [:km "Dismiss notifications"]]]}
         {:des "tilkey (actions)"
          :rules [:tilde-mode
+                 [:0 ["in-python" 1] ["in-go" 0] ["in-js" 0]]
                  [:spacebar :!COSn] ; Selection -> GitHub
                  [:c :!CTk] ; Turn on/off BTT TouchBar
                  [:h :!CTOx] ; Little Snitch
@@ -700,7 +701,6 @@
                   ; TODO: make spacebar change between language modes (or another key)
                   [:spacebar [:!St :h :a :n :k :spacebar :y :o :u :period :spacebar]] ; -> Thank you.
                   [:left_gui [:!St :h :a :n :k :s :spacebar]] ; -> Thanks
-                  [:0 ["py-prof" 1]]
                   [:1 [:!Sf :i :x :spacebar :!S3]] ; -> Fix #
                   [:2 [:!Sr :e :f :spacebar :!S3]] ; -> Ref #
                   [:3 [:!Sc :l :o :s :e :s :spacebar :!S3]] ; -> Closes #
@@ -714,7 +714,7 @@
                   [:caps_lock [:!Cf :!St :!So :!Sd :!So :!Ssemicolon :return_or_enter]] ; -> search TODO: in file
                   [:tab [:!CSf :!St :!So :!Sd :!So :!Ssemicolon :return_or_enter]]]} ; -> search TODO: globally
          {:des "jsdot"
-          :rules [:js-prof :dot-mode
+          :rules [:in-js :dot-mode
                   [:a [:c :o :n :s :o :l :e :period :l :o :g :!S9 :!S0 :left_arrow]] ; -> console.log()
                   [:s [:equal_sign :!Speriod :spacebar]] ; -> =>
                   [:d [:r :e :t :u :r :n :spacebar]] ; -> return
@@ -726,10 +726,10 @@
                   [:b [:t :y :p :e :s :c :r :i :p :t :spacebar]] ; -> typescript
                   [:v [:j :a :v :a :s :c :r :i :p :t :spacebar]]]} ; -> javascript
         {:des "godot"
-         :rules[:go-prof :dot-mode
+         :rules[:in-go :dot-mode
                 [:v [:g :o :l :a :n :g :spacebar]]]} ; -> golang
         {:des "pydot"
-          :rules[:py-prof :dot-mode
+          :rules[:in-python :dot-mode
                  [:a [:p :r :i :n :t :!S9 :!S0 :left_arrow]] ; -> print()
                  [:s [:hyphen :!Speriod]] ; -> ->
                  [:d [:r :e :t :u :r :n :spacebar]] ; -> return
