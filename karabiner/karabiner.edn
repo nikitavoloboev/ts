@@ -716,8 +716,8 @@
                   [:caps_lock [:!Cf :!St :!So :!Sd :!So :!Ssemicolon :return_or_enter]] ; -> search TODO: in file
                   [:tab [:!CSf :!St :!So :!Sd :!So :!Ssemicolon :return_or_enter]]]} ; -> search TODO: globally
          {:des "jsdot"
-          :rules [:in-js :dot-mode
-                  [:a [:c :o :n :s :o :l :e :period :l :o :g :!S9 :!S0 :left_arrow]] ; -> console.log()
+          :rules [:dot-mode
+                  [:a [:c :o :n :s :o :l :e :period :l :o :g :!S9 :!S0 :left_arrow] ["in-js" 1]] ; -> console.log()
                   [:s [:equal_sign :!Speriod :spacebar]] ; -> =>
                   [:d [:r :e :t :u :r :n :spacebar]] ; -> return
                   [:f [:!Cf :c :o :n :s :o :l :e :period :l :o :g :!S9 :return_or_enter]] ; -> search console.log( in file
@@ -732,7 +732,7 @@
                 [:v [:g :o :l :a :n :g :spacebar]]]} ; -> golang
         {:des "pydot"
           :rules[:in-python :dot-mode
-                 [:a [:p :r :i :n :t :!S9 :!S0 :left_arrow]] ; -> print()
+                 [:a [:p :r :i :n :t :!S9 :!S0 :left_arrow] ["in-python" 1]] ; -> print()
                  [:s [:hyphen :!Speriod]] ; -> ->
                  [:d [:r :e :t :u :r :n :spacebar]] ; -> return
                  [:v [:p :y :t :h :o :n :spacebar]]]} ; -> python
