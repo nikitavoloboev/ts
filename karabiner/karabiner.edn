@@ -535,7 +535,7 @@
                  [:l :!CSOd] ; Move window right
                  [:h :!CSOa] ; Move window left
                  [:s [:km "Dismiss notifications"]]]}
-        {:des "tilkey (actions)"
+        {:des "tilkey (actions + language switches)"
          :rules [:tilde-mode
                  [:j [["in-python" 0] ["in-go" 0] ["in-js" 1]]] ; JS
                  [:k [["in-python" 0] ["in-go" 1] ["in-js" 0]]] ; Go
@@ -732,7 +732,7 @@
                   [:v [:j :a :v :a :s :c :r :i :p :t :spacebar]]]} ; -> javascript
         {:des "godot"
          :rules[:godot-mode
-                [:a [:f :m :t :period :!Sp :i :n :t :l :n :!S9 :!S0 :left_arrow]] ; -> fmt.Println()
+                [:a [:f :m :t :period :!Sp :r :i :n :t :l :n :!S9 :!S0 :left_arrow]] ; -> fmt.Println()
                 [:v [:g :o :l :a :n :g :spacebar]]]} ; -> golang
         {:des "pydot"
           :rules[:pydot-mode
