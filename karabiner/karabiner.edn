@@ -33,6 +33,9 @@
              :spacebar-mode {:key :spacebar}
              :tilde-mode {:key :grave_accent_and_tilde}
              :dot-mode {:key :period}
+             :jsdot-mode {:key :period :condi ["in-js" 1]}
+             :godot-mode {:key :period :condi ["in-go" 1]}
+             :pydot-mode {:key :period :condi ["in-python" 1]}
              :tab-mode {:key :tab}
              :caps-mode {:key :caps_lock}}
  :main [{:des "colonkey (shift)"
@@ -716,8 +719,8 @@
                   [:caps_lock [:!Cf :!St :!So :!Sd :!So :!Ssemicolon :return_or_enter]] ; -> search TODO: in file
                   [:tab [:!CSf :!St :!So :!Sd :!So :!Ssemicolon :return_or_enter]]]} ; -> search TODO: globally
          {:des "jsdot"
-          :rules [:dot-mode
-                  [:a [:c :o :n :s :o :l :e :period :l :o :g :!S9 :!S0 :left_arrow] ["in-js" 1]] ; -> console.log()
+          :rules [:jsdot-mode
+                  [:a [:c :o :n :s :o :l :e :period :l :o :g :!S9 :!S0 :left_arrow]] ; -> console.log()
                   [:s [:equal_sign :!Speriod :spacebar]] ; -> =>
                   [:d [:r :e :t :u :r :n :spacebar]] ; -> return
                   [:f [:!Cf :c :o :n :s :o :l :e :period :l :o :g :!S9 :return_or_enter]] ; -> search console.log( in file
@@ -728,11 +731,11 @@
                   [:b [:t :y :p :e :s :c :r :i :p :t :spacebar]] ; -> typescript
                   [:v [:j :a :v :a :s :c :r :i :p :t :spacebar]]]} ; -> javascript
         {:des "godot"
-         :rules[:in-go :dot-mode
+         :rules[:godot-mode
                 [:v [:g :o :l :a :n :g :spacebar]]]} ; -> golang
         {:des "pydot"
-          :rules[:in-python :dot-mode
-                 [:a [:p :r :i :n :t :!S9 :!S0 :left_arrow] ["in-python" 1]] ; -> print()
+          :rules[:pydot-mode
+                 [:a [:p :r :i :n :t :!S9 :!S0 :left_arrow]] ; -> print()
                  [:s [:hyphen :!Speriod]] ; -> ->
                  [:d [:r :e :t :u :r :n :spacebar]] ; -> return
                  [:v [:p :y :t :h :o :n :spacebar]]]} ; -> python
