@@ -89,15 +89,11 @@
         {:des "ksim"
          :rules [[[:k :l] [:alfred "search dash" "com.nikivi.own.dash"]]
                  [[:k :m] [:alfred "search youtube" "net.deanishe.alfred-searchio"]]]}
-        {:des "1key (open curated lists)"
+        {:des "1key (URL searches)"
          :rules [:1-mode
-                 [:r [:km "edit: Web Searches"]]
-                 [:k [:km "list: Alfred workflows"]]
-                 [:o [:km "list: Blogs"]]
-                 [:p [:km "list: Podcasts"]]
-                 [:n [:km "list: Events"]]
-                 [:t [:km "list: Newsletters"]]
-                 [:l [:km "list: Command line tools"]]]}
+                 [:i :!COSo] ; Safari URL -> Twitter
+                 [:h :!COSo] ; Safari URL -> HN
+                 [:t :!CSOp]]} ; Selection -> Reddit
         {:des "2key (move + alfred)"
          :rules [:2-mode
                  [:spacebar :!COSu] ; Selection -> HN
@@ -110,6 +106,9 @@
                  [:h :!Cleft_arrow]]}
         {:des "3key (open files + projects)"
          :rules [:3-mode
+                 [:r [:km "Reflect"]]
+                 ;[:k [:km "Reflect (7 days)"]]
+                 ;[:l [:km "Reflect (30 days)"]]]}
                  [:j [:km "wiki: Rules"]]
                  [:k [:km "wiki: Processes"]]
                  [:m [:km "wiki: Summary"]]
@@ -125,18 +124,19 @@
                  [:f [:km "proj: Dotfiles"]]
                  [:o [:km "edit: Zsh functions"]]
                  [:i [:km "edit: Aliases"]]]}
-        {:des "4key (palettes + URL searches)"
+        {:des "4key (open curated lists)"
          :rules [:4-mode
-                 [:i :!COSo] ; Safari URL -> Twitter
-                 [:h :!COSo] ; Safari URL -> HN
-                 [:t :!CSOp] ; Selection -> Reddit
-                 [:k :!SOTf] ; App specific
-                 [:l :!SOTr]]} ; Personal
-        {:des "tabkey (alfred)"
+                 [:r [:km "edit: Web Searches"]]
+                 [:k [:km "list: Alfred workflows"]]
+                 [:o [:km "list: Blogs"]]
+                 [:p [:km "list: Podcasts"]]
+                 [:n [:km "list: Events"]]
+                 [:t [:km "list: Newsletters"]]
+                 [:l [:km "list: Command line tools"]]]}
+        {:des "tabkey (palettes)"
          :rules [:tab-mode
-                 [:j [:km "Reflect"]]
-                 [:k [:km "Reflect (7 days)"]]
-                 [:l [:km "Reflect (30 days)"]]]}
+                 [:l :!SOTf] ; App specific
+                 [:j :!SOTr]]} ; Personal
         {:des "qkey (cmd + shift)"
          :rules [:q-mode
                  [:spacebar :!CSOe] ; Selection -> YouTube
