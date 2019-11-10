@@ -33,9 +33,10 @@
              :spacebar-mode {:key :spacebar}
              :tilde-mode {:key :grave_accent_and_tilde}
              :dot-mode {:key :period}
-             :jsdot-mode {:key :period :condi ["in-js" 1]}
-             :godot-mode {:key :period :condi ["in-go" 1]}
-             :pydot-mode {:key :period :condi ["in-python" 1]}
+             :js-mode {:key :period :condi ["in-js" 1]}
+             :go-mode {:key :period :condi ["in-go" 1]}
+             :py-mode {:key :period :condi ["in-python" 1]}
+             :elixir-mode {:key :period :condi ["in-elixir" 1]}
              :tab-mode {:key :tab}
              :caps-mode {:key :caps_lock}}
  :main [{:des "colonkey (shift)"
@@ -537,9 +538,10 @@
                  [:s [:km "Dismiss notifications"]]]}
         {:des "tilkey (actions + language switches)"
          :rules [:tilde-mode
-                 [:j [["in-python" 0] ["in-go" 0] ["in-js" 1]]] ; JS
-                 [:k [["in-python" 0] ["in-go" 1] ["in-js" 0]]] ; Go
-                 [:l [["in-python" 1] ["in-go" 0] ["in-js" 0]]] ; Python
+                 [:0 [["in-python" 0] ["in-go" 0] ["in-js" 0] ["in-elixir" 1]]] ; Elixir
+                 [:j [["in-python" 0] ["in-go" 0] ["in-js" 1] ["in-elixir" 0]]] ; JS
+                 [:k [["in-python" 0] ["in-go" 1] ["in-js" 0] ["in-elixir" 0]]] ; Go
+                 [:l [["in-python" 1] ["in-go" 0] ["in-js" 0] ["in-elixir" 0]]] ; Python
                  [:spacebar :!COSn] ; Selection -> GitHub
                  [:c :!CTk] ; Turn on/off BTT TouchBar
                  [:h :!CTOx] ; Little Snitch
@@ -720,7 +722,7 @@
                   [:caps_lock [:!Cf :!St :!So :!Sd :!So :!Ssemicolon :return_or_enter]] ; -> search TODO: in file
                   [:tab [:!CSf :!St :!So :!Sd :!So :!Ssemicolon :return_or_enter]]]} ; -> search TODO: globally
          {:des "jsdot"
-          :rules [:jsdot-mode
+          :rules [:js-mode
                   [:a [:c :o :n :s :o :l :e :period :l :o :g :!S9 :!S0 :left_arrow]] ; -> console.log()
                   [:s [:equal_sign :!Speriod :spacebar]] ; -> =>
                   [:d [:r :e :t :u :r :n :spacebar]] ; -> return
@@ -732,15 +734,19 @@
                   [:b [:t :y :p :e :s :c :r :i :p :t :spacebar]] ; -> typescript
                   [:v [:j :a :v :a :s :c :r :i :p :t :spacebar]]]} ; -> javascript
         {:des "godot"
-         :rules[:godot-mode
+         :rules[:go-mode
                 [:a [:f :m :t :period :!Sp :r :i :n :t :l :n :!S9 :!S0 :left_arrow]] ; -> fmt.Println()
                 [:v [:g :o :l :a :n :g :spacebar]]]} ; -> golang
         {:des "pydot"
-          :rules[:pydot-mode
+          :rules[:py-mode
                  [:a [:p :r :i :n :t :!S9 :!S0 :left_arrow]] ; -> print()
                  [:s [:hyphen :!Speriod]] ; -> ->
                  [:d [:r :e :t :u :r :n :spacebar]] ; -> return
                  [:v [:p :y :t :h :o :n :spacebar]]]} ; -> python
+        {:des "elixdot"
+          :rules[:elixir-mode
+                 [:a [:!Si :!So :period :p :u :t :s :!S9 :!S0 :left_arrow]] ; -> IO.puts()
+                 [:v [:e :l :i :x :i :r :spacebar]]]} ; -> elixir
         {:des "spacekey (top sites)"
          :rules [:spacebar-mode
                  [:q :!Sclose_bracket] ; }
