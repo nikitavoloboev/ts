@@ -135,6 +135,7 @@
                  [:l [:km "list: Command line tools"]]]}
         {:des "tabkey (palettes)"
          :rules [:tab-mode
+                 [:o :!SOTw] ; Replies
                  [:l :!SOTf] ; App specific
                  [:j :!SOTr]]} ; Personal
         {:des "qkey (cmd + shift)"
@@ -335,8 +336,7 @@
                  [:6 :!C6]
                  [:t [:alfred "search tty sessions" "net.isometry.alfred.tty"]] ; TODO: replace with pocket
                  [:n [:alfred "search lists" "nikivi.learn.anything"]]
-                 ;[:z [:alfred "search blog" "nikivi.private.directories"]] ; TODO: search my published articles + fragments (once I move off Medium)
-                 ;[:z [:alfred "search blog" "nikivi.private.directories"]] ; TODO: workflow to input a name of fragment, it creates file and link to it in SUMMARY
+                 [:z [:alfred "search blog" "nikivi.private.directories"]] ; TODO: search fragments + published or input name to create fragment 
                  [:x [:alfred "search workflows" "org.jeef.workflowdirectory"]]
                  [:w :!CObackslash] ; 1Password search
                  [:grave_accent_and_tilde [:alfred "search processes" "com.vitorgalvao.alfred.processcontrol"]]
@@ -659,6 +659,7 @@
                  [:6 :!O6]
                  [:d [:alfred "search stack overflow" "net.deanishe.alfred-stackoverflow"]]
                  [:v [:alfred "search github" "nikivi.search.the.web"]]
+                 ;[:v [:alfred "search pinboard" "nikivi.search.the.web"]] ; TODO: topics/search/more?
                  [:w [:alfred "search twitter" "nikivi.search.the.web"]]
                  [:c [:alfred "search wiki" "nikivi.mind"]]
                  [:tab [:alfred "search lists" "nikivi.awesome.lists"]]
