@@ -5,7 +5,9 @@
          :alone   120
          :held    70}}
  :templates {:alfred "osascript -e 'tell application \"Alfred 4\" to run trigger \"%s\" in workflow \"%s\" with argument \"%s\"'"
-             :km "osascript -e 'tell application \"Keyboard Maestro Engine\" to do script \"%s\"'"}
+             :km "osascript -e 'tell application \"Keyboard Maestro Engine\" to do script \"%s\"'"
+             :open "open \"%s\""
+             }
  :simlayers {:semicolon-mode {:key :semicolon}
              :2-mode {:key :2}
              :3-mode {:key :3}
@@ -36,6 +38,7 @@
              :go-mode {:key :period :condi ["in-go" 1]}
              :py-mode {:key :period :condi ["in-python" 1]}
              :elixir-mode {:key :period :condi ["in-elixir" 1]}
+             :rust-mode {:key :period :condi ["in-rust" 1]}
              :tab-mode {:key :tab}
              :caps-mode {:key :caps_lock}}
  :main [{:des "colonkey (shift)"
@@ -533,10 +536,11 @@
                  [:s [:km "Dismiss notifications"]]]}
         {:des "tilkey (actions + language switches)"
          :rules [:tilde-mode
-                 [:0 [["in-python" 0] ["in-go" 0] ["in-js" 0] ["in-elixir" 1]]] ; Elixir
-                 [:j [["in-python" 0] ["in-go" 0] ["in-js" 1] ["in-elixir" 0]]] ; JS
-                 [:k [["in-python" 0] ["in-go" 1] ["in-js" 0] ["in-elixir" 0]]] ; Go
-                 [:l [["in-python" 1] ["in-go" 0] ["in-js" 0] ["in-elixir" 0]]] ; Python
+                 [:9 [[:open "dash://.rust:"] ["in-python" 0] ["in-go" 0] ["in-js" 0] ["in-elixir" 0] ["in-rust" 1]]] ; Rust
+                 [:0 [[:open "dash://.elixir:"] ["in-python" 0] ["in-go" 0] ["in-js" 0] ["in-elixir" 1] ["in-rust" 0]]] ; Elixir
+                 [:j [[:open "dash://.js:"] ["in-python" 0] ["in-go" 0] ["in-js" 1] ["in-elixir" 0] ["in-rust" 0]]] ; JS
+                 [:k [[:open "dash://.go:"] ["in-python" 0] ["in-go" 1] ["in-js" 0] ["in-elixir" 0] ["in-rust" 0]]] ; Go
+                 [:l [[:open "dash://.python:"] ["in-python" 1] ["in-go" 0] ["in-js" 0] ["in-elixir" 0] ["in-rust" 0]]] ; Python
                  [:spacebar :!COSn] ; Selection -> GitHub
                  [:c :!CTk] ; Turn on/off BTT TouchBar
                  [:h :!CTOx] ; Little Snitch
@@ -593,6 +597,7 @@
                  [:s [:km "Clone repo to ~/src/clones"]]
                  ;[:d [:km "Clone repo to ~/src/clones and open with Xcode"]] ; TODO:
                  [:spacebar :!CSOy] ; Selection -> Stack Overflow
+                 [:0 [:km "test: Elixir"]]
                  [:h [:km "test: Haskell"]]
                  [:j [:km "test: JS"]]
                  [:k [:km "test: Go"]]
@@ -742,6 +747,10 @@
           :rules[:elixir-mode
                  [:a [:!Si :!So :period :p :u :t :s :!S9 :!S0 :left_arrow]] ; -> IO.puts()
                  [:v [:e :l :i :x :i :r :spacebar]]]} ; -> elixir
+        {:des "rustdot"
+          :rules[:rust-mode
+                 [:a [:p :r :i :n :t :l :n :!S1 :!S9 :!S0 :left_arrow]] ; -> println!()
+                 [:v [:r :u :s :t :spacebar]]]} ; -> rust
         {:des "spacekey (top sites)"
          :rules [:spacebar-mode
                  [:q :!Sclose_bracket] ; }
