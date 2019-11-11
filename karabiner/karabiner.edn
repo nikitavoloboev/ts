@@ -7,7 +7,6 @@
  :templates {:alfred "osascript -e 'tell application \"Alfred 4\" to run trigger \"%s\" in workflow \"%s\" with argument \"%s\"'"
              :km "osascript -e 'tell application \"Keyboard Maestro Engine\" to do script \"%s\"'"}
  :simlayers {:semicolon-mode {:key :semicolon}
-             :1-mode {:key :1}
              :2-mode {:key :2}
              :3-mode {:key :3}
              :4-mode {:key :4}
@@ -90,11 +89,6 @@
         {:des "ksim"
          :rules [[[:k :l] [:alfred "search dash" "com.nikivi.own.dash"]]
                  [[:k :m] [:alfred "search youtube" "net.deanishe.alfred-searchio"]]]}
-        {:des "1key (URL searches)"
-         :rules [:1-mode
-                 [:i :!COSo] ; Safari URL -> Twitter
-                 [:h :!COSo] ; Safari URL -> HN
-                 [:t :!CSOp]]} ; Selection -> Reddit
         {:des "2key (move + alfred)"
          :rules [:2-mode
                  [:spacebar :!COSu] ; Selection -> HN
@@ -107,9 +101,8 @@
                  [:h :!Cleft_arrow]]}
         {:des "3key (open files + projects)"
          :rules [:3-mode
+                 [:spacebar :!CSOp] ; Selection -> Reddit
                  [:r [:km "Reflect"]]
-                 ;[:k [:km "Reflect (7 days)"]]
-                 ;[:l [:km "Reflect (30 days)"]]]}
                  [:j [:km "wiki: Rules"]]
                  [:k [:km "wiki: Processes"]]
                  [:m [:km "wiki: Summary"]]
@@ -282,9 +275,11 @@
                  [:k [:km "open: PDF Expert"]]
                  [:w [:km "open: 1Password"]]
                  [:n [:km "open: Timing"]]]}
-        {:des "tkey (websites)"
+        {:des "tkey (websites + URL searches)"
          :rules [:t-mode
                  [:spacebar :!COSr] ; Selection -> Google Translate
+                 [:h :!COSo] ; Safari URL -> HN
+                 [:j :!COSo] ; Safari URL -> Twitter
                  [:r [:km "w: Repl"]]
                  [:e [:km "w: Stripe"]]
                  [:o [:km "w: Dropbox"]]
@@ -662,15 +657,15 @@
                  [:d [:alfred "search stack overflow" "net.deanishe.alfred-stackoverflow"]]
                  [:v [:alfred "search github" "nikivi.search.the.web"]]
                  ;[:v [:alfred "search pinboard" "nikivi.search.the.web"]] ; TODO: topics/search/more?
-                 [:w [:alfred "search twitter" "nikivi.search.the.web"]]
+                 [:t [:alfred "search twitter" "nikivi.search.the.web"]]
                  [:c [:alfred "search wiki" "nikivi.mind"]]
                  [:tab [:alfred "search lists" "nikivi.awesome.lists"]]
                  [:x [:alfred "search stack" "net.deanishe.alfred-stackoverflow"]]
-                 [:t [:alfred "ssh" "net.deanishe.alfred-ssh"]]
+                 [:q [:alfred "ssh" "net.deanishe.alfred-ssh"]]
                  [:e [:alfred "search subs" "net.deanishe.alfred-reddit"]]
                  [:b [:alfred "search bookmarks" "net.deanishe.alfred.safari"]]
                  [:r [:alfred "search reddit" "nikivi.search.the.web"]]
-                 [:q [:alfred "search hn" "nikivi.search.the.web"]]
+                 [:w [:alfred "search hn" "nikivi.search.the.web"]]
                  [:spacebar [:alfred "search history" "net.deanishe.alfred.safari"]]
                  [:d [:alfred "search packages" "com.sindresorhus.npms"]]
                  [:z [:alfred "search lobsters" "nikivi.search.the.web"]]

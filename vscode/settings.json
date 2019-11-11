@@ -34,7 +34,7 @@
   "editor.lineNumbers": "on",
   "editor.cursorStyle": "line",
   // Window
-  "window.zoomLevel": -1,
+  "window.zoomLevel": 0,
   "window.restoreWindows": "all",
   "window.newWindowDimensions": "maximized",
   // Breadcrumbs
@@ -179,10 +179,10 @@
       "source.organizeImports": true
     }
   },
-  // "gopls": {
-  //   "usePlaceholders": true // add parameter placeholders when completing a function
-  // },
-  "files.eol": "\n", // formatting only supports LF line endings
+  "gopls": {
+    "usePlaceholders": true,
+    "completeUnimported": true
+  },
   "go.liveErrors": {
     "enabled": true,
     "delay": 500
@@ -289,5 +289,6 @@
       "value": "#42b883"
     }
   ],
-  "terminal.integrated.inheritEnv": false
+  "terminal.integrated.inheritEnv": false,
+  "files.eol": "\n", // formatting only supports LF line endings
 }
