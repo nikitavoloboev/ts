@@ -284,6 +284,7 @@
                  [:h :!COSo] ; Safari URL -> HN
                  [:j :!COSo] ; Safari URL -> Twitter
                  [:r [:km "w: Repl"]]
+                 [:n [:km "w: Tachyons"]]
                  [:e [:km "w: Stripe"]]
                  [:o [:km "w: Dropbox"]]
                  [:l [:km "w: Leetcode"]]
@@ -295,7 +296,7 @@
                  [:semicolon [:km "w: Netlify"]]
                  [:k [:km "w: Kaggle"]]
                  [:w [:km "w: WakaTime"]]
-                 [:n [:km "w: NPM"]]]}
+                 [:p [:km "w: NPM"]]]}
         {:des "ikey (symbols)"
          :rules [:i-mode
                  [:q :!Sopen_bracket]
@@ -492,7 +493,7 @@
                  [:period :!CTO3]]} ; Mission control
         {:des "fkey (essential)"
          :rules [:f-mode
-                 [:spacebar [:km "edit: Last tab in iTerm"]]
+                 [:spacebar [:km "edit: Last iTerm tab"]]
                  [:e :!CO8] ; Alfred clipboard history search
                  [:semicolon [:km "open: MindNode"]]
                  [:period [:km "edit: Karabiner"]]
@@ -501,7 +502,7 @@
                  [:s [:km "edit: clones"]]
                  [:slash [:km "edit: Darwin Nix"]]
                  [:w :!CTO4] ; Alfred file action
-                 [:j [:km "Open 1st iTerm tab"]]
+                 [:j [:km "edit: 1st iTerm tab"]]
                  [:h [:km "Make markdown link from selection {link}"]]
                  [:p :!CTOc] ; Sleep
                  [:z :!Ospacebar] ; Switch language (Russian <-> English)
@@ -538,7 +539,7 @@
          :rules [:tilde-mode
                  [:9 [[:open "dash://.rust:"] ["in-python" 0] ["in-go" 0] ["in-js" 0] ["in-elixir" 0] ["in-rust" 1]]] ; Rust
                  [:0 [[:open "dash://.elixir:"] ["in-python" 0] ["in-go" 0] ["in-js" 0] ["in-elixir" 1] ["in-rust" 0]]] ; Elixir
-                 [:j [[:open "dash://.js:"] ["in-python" 0] ["in-go" 0] ["in-js" 1] ["in-elixir" 0] ["in-rust" 0]]] ; JS
+                 [:j [[:open "dash://.jsts:"] ["in-python" 0] ["in-go" 0] ["in-js" 1] ["in-elixir" 0] ["in-rust" 0]]] ; JS
                  [:k [[:open "dash://.go:"] ["in-python" 0] ["in-go" 1] ["in-js" 0] ["in-elixir" 0] ["in-rust" 0]]] ; Go
                  [:l [[:open "dash://.python:"] ["in-python" 1] ["in-go" 0] ["in-js" 0] ["in-elixir" 0] ["in-rust" 0]]] ; Python
                  [:spacebar :!COSn] ; Selection -> GitHub
