@@ -19,8 +19,6 @@ export PATH=$PATH:./node_modules/.bin
 eval "$(hub alias -s)"
 eval "$(direnv hook zsh)"
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
 # fnm
 eval "$(fnm env --multi)"
 

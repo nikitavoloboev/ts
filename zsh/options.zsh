@@ -27,6 +27,4 @@ setopt auto_cd # Auto change to a dir without typing cd
 
 # export DIRENV_LOG_FORMAT= # Remove logs from direnv
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh # FZF fuzzy search
-
 if [ $commands[kubectl] ]; then source <(kubectl completion zsh); fi
