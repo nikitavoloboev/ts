@@ -191,7 +191,7 @@
                  ;[:g [:km "open: Console"]]
                  [:t [:km "open: Postico"]]
                  ;[:c [:km "open: Sketch"]]
-                 ;[:g [:km "open: Notion"]]
+                 [:g [:km "open: Notion"]]
                  [:i [:km "open: Chrome Canary"]]
                  [:period [:km "open: SnippetsLab"]]
                  ;[:u [:km "open: Safari Technology Preview"]]
@@ -616,10 +616,10 @@
                  [:j :mute]
                  [:a [:km "Go to test macro"]]
                  [:s [:km "Test"]]
-                 [:period [:km "Play/pause Spotify"]]
+                 [:semicolon :!TS0] ; Turn on/off Noizio
                  [:open_bracket [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ERn0U4qZIKC8Dy7RrMMsn"]] ; Likes playlist
                  [:close_bracket [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ESjwZeTcHOWzY3FYO5zs5"]] ; Focus playlist
-                 [:semicolon :!TS0] ; Turn on/off Noizio
+                 [:period [:km "Play/pause Spotify"]]
                  [:comma [:km "Noizio settings"]]
                  [:i :display_brightness_decrement]
                  [:o :display_brightness_increment]
@@ -688,22 +688,16 @@
                  [:c [:alfred "search dash" "com.nikivi.own.dash" "css: "]]
                  [:l [:alfred "search dash" "com.nikivi.own.dash" "lodash: "]]
                  [:n [:alfred "search dash" "com.nikivi.own.dash" "electron: "]]
-                 [:t [:alfred "search dash" "com.nikivi.own.dash" "python: "]]
-                 [:f [:alfred "search dash" "com.nikivi.own.dash" "go: "]]
                  [:k [:alfred "search dash" "com.nikivi.own.dash" "docker: "]]
-                 [:r [:alfred "search dash" "com.nikivi.own.dash" "rust: "]]
                  [:v [:alfred "search dash" "com.nikivi.own.dash" "vim: "]]
                  [:d [:alfred "search dash" "com.nikivi.own.dash" "node: "]]
-                 [:z [:alfred "search dash" "com.nikivi.own.dash" "html: "]]
+                 [:e [:alfred "search dash" "com.nikivi.own.dash" "html: "]]
                  [:a [:alfred "search dash" "com.nikivi.own.dash" "apple: "]]
-                 [:s [:alfred "search dash" "com.nikivi.own.dash" "js: "]]
                  [:3 [:alfred "search dash" "com.nikivi.own.dash" "d3: "]]
                  [:b [:alfred "search dash" "com.nikivi.own.dash" "bash: "]]
-                 [:w [:alfred "search dash" "com.nikivi.own.dash" "ts: "]]
-                 [:x [:alfred "search dash" "com.nikivi.own.dash" "haskell: "]]
-                 [:e [:alfred "search dash" "com.nikivi.own.dash" "react: "]]
-                 [:q [:alfred "search dash" "com.nikivi.own.dash" "c: "]]
-                 [:o [:alfred "search dash" "com.nikivi.own.dash" "godoc: "]]
+                 [:t [:alfred "search dash" "com.nikivi.own.dash" "ts: "]]
+                 [:r [:alfred "search dash" "com.nikivi.own.dash" "react: "]]
+                 [:g [:alfred "search dash" "com.nikivi.own.dash" "godoc: "]]
                  [:grave_accent_and_tilde [:alfred "search dash" "com.nikivi.own.dash" "tldr: "]]]}
          {:des "dotkey (1-3, q-u, caps, tab)"
           :rules [:dot-mode
@@ -729,7 +723,7 @@
                   [:f [:!Cf :c :o :n :s :o :l :e :period :l :o :g :!S9 :return_or_enter]] ; -> search console.log( in file
                   [:g [:d :e :b :u :g :g :e :r]] ; -> debugger TODO: add cmd+s && cmd+tab to run after
                   [:z [:spacebar :c :l :a :s :s :!Sn :a :m :e :equal_sign :!Squote :!Squote :left_arrow]] ; -> className=""
-                  ;[:x [:e :x :p :o :r :t :spacebar]] ; -> export
+                  [:x [:t :a :c :h :y :o :n :s :spacebar]] ; -> tachyons
                   [:c [:spacebar :s :t :y :l :e :equal_sign :!Sopen_bracket :!Sopen_bracket :!Sclose_bracket :!Sclose_bracket :left_arrow :left_arrow]] ; -> style={{}}
                   [:b [:t :y :p :e :s :c :r :i :p :t :spacebar]] ; -> typescript
                   [:v [:j :a :v :a :s :c :r :i :p :t :spacebar]]]} ; -> javascript
