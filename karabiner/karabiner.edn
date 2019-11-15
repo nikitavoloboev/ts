@@ -39,7 +39,6 @@
              :py-mode {:key :period :condi ["in-python" 1]}
              :elixir-mode {:key :period :condi ["in-elixir" 1]}
              :rust-mode {:key :period :condi ["in-rust" 1]}
-             :tab-mode {:key :tab}
              :caps-mode {:key :caps_lock}}
  :main [{:des "colonkey (shift)"
          :rules [:semicolon-mode
@@ -130,11 +129,6 @@
                  [:n [:km "list: Events"]]
                  [:t [:km "list: Newsletters"]]
                  [:l [:km "list: Command line tools"]]]}
-        {:des "tabkey (palettes)"
-         :rules [:tab-mode
-                 [:o :!SOTw] ; Replies
-                 [:l :!SOTf] ; App specific
-                 [:j :!SOTr]]} ; Personal
         {:des "qkey (cmd + shift)"
          :rules [:q-mode
                  [:spacebar :!CSOe] ; Selection -> YouTube
@@ -278,23 +272,26 @@
                  [:k [:km "open: PDF Expert"]]
                  [:w [:km "open: 1Password"]]
                  [:n [:km "open: Timing"]]]}
-        {:des "tkey (websites + URL searches)"
+        {:des "tkey (palettes + websites)"
          :rules [:t-mode
                  [:spacebar :!COSr] ; Selection -> Google Translate
-                 [:h :!COSo] ; Safari URL -> HN
-                 [:j :!COSo] ; Safari URL -> Twitter
+                 [:j :!SOTw] ; Replies
+                 [:k :!SOTf] ; App specific
+                 [:l :!SOTr] ; Personal
+                 ;[:h :!COSo] ; Safari URL -> HN
+                 ;[:j :!COSo] ; Safari URL -> Twitter
                  [:r [:km "w: Repl"]]
                  [:n [:km "w: Tachyons"]]
                  [:e [:km "w: Stripe"]]
                  [:o [:km "w: Dropbox"]]
-                 [:l [:km "w: Leetcode"]]
+                 ;[:l [:km "w: Leetcode"]]
                  [:a [:km "w: Amazon"]]
                  [:h [:km "w: Twitch"]]
                  [:period [:km "w: IFTTT"]]
-                 [:j [:km "w: Google Drive"]]
+                 ;[:j [:km "w: Google Drive"]]
                  [:z [:km "w: MDN"]]
                  [:semicolon [:km "w: Netlify"]]
-                 [:k [:km "w: Kaggle"]]
+                 ;[:k [:km "w: Kaggle"]]
                  [:w [:km "w: WakaTime"]]
                  [:p [:km "w: NPM"]]]}
         {:des "ikey (symbols)"
