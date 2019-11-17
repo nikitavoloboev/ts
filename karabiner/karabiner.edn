@@ -572,9 +572,6 @@
                  [:l [:km "open: Discord"]]]}
         {:des "xkey (spotify)"
          :rules [:x-mode
-                 ;[:v [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ERn0U4qZIKC8Dy7RrMMsn"]] ; Play Likes playlist TODO: fix
-                 ;[:v [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ERn0U4qZIKC8Dy7RrMMsn"]] ; Play Focus playlist TODO: fix
-                 ;[:v [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ERn0U4qZIKC8Dy7RrMMsn"]] ; Play Discover Weekly playlist TODO: fix
                  [:o [:km "Share current song on Twitter"]]
                  ;[:p [:km "Paste current Spotify song link"]]
                  [:j [:alfred "spot_mini" "com.vdesabou.spotify.mini.player"]]
