@@ -1,9 +1,6 @@
 {
   // Workbench
   "workbench.colorTheme": "Monokai Night",
-  "workbench.colorCustomizations": {
-    "editor.lineHighlightBackground": "#212121"
-  },
   "workbench.list.horizontalScrolling": true,
   "workbench.panel.defaultLocation": "right",
   "workbench.fontAliasing": "antialiased",
