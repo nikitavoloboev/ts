@@ -168,15 +168,6 @@
     "key": "cmd+b",
     "command": "-workbench.action.toggleSidebarVisibility"
   },
-  // {
-  //   "key": "ctrl+r",
-  //   "command": "-workbench.action.openRecent"
-  // },
-  // {
-  //   "key": "ctrl+r",
-  //   "command": "-workbench.action.quickOpenNavigateNextInRecentFilesPicker",
-  //   "when": "inQuickOpen && inRecentFilesPicker"
-  // },
   {
     "key": "alt+f12",
     "command": "-editor.action.previewDeclaration",
@@ -371,7 +362,7 @@
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+b",
+    "key": "ctrl+v",
     "command": "workbench.action.gotoSymbol"
   },
   {
