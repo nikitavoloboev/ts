@@ -50,7 +50,7 @@ set undofile " Save undos after file closes
 set wildmode=longest:list,full " Complete longest common string, then each full match
 set updatetime=250 " If this many milliseconds nothing is typed the swap file will be written to disk
 set visualbell " Turn off the audio bell (no beeps)
-set clipboard^=unnamed  " Make yanking copy to clipboard
+set clipboard^=unnamed  " Make copy work with system clipboard
 set gdefault " Always do global substitutions
 set title " Set terminal title
 set whichwrap+=<,>,[,]
@@ -107,7 +107,6 @@ set showmatch
 set tabstop=4 " Default indentation is 4 spaces long and uses tabs, not spaces
 set matchtime=2
 set termguicolors " Enable true colors support
-let python_highlight_all = 1
 
 set completeopt+=menu,menuone " Completion
 
@@ -159,7 +158,7 @@ nmap <Leader>q    :q<CR>
 nmap <Leader>w :w<CR>
 
 " Space y
-" Yank whole file
+" Copy whole file
 nnoremap <Leader>y :%y<CR>
 
 " Space i
@@ -187,7 +186,7 @@ au FocusLost * :wa " Auto save everything
 " Search and replace
 xnoremap gs y:%s/<C-r>"//g<Left><Left>
 
-" Yank a line with Y.
+" Copy line
 nnoremap Y y$
 
 " Other
