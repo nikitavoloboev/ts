@@ -287,5 +287,6 @@
     }
   ],
   "terminal.integrated.inheritEnv": false,
-  "files.eol": "\n", // formatting only supports LF line endings
+  "files.eol": "\n",
+  "workbench.statusBar.visible": false, // formatting only supports LF line endings
 }

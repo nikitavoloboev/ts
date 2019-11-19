@@ -35,11 +35,15 @@ Plug 'LnL7/vim-nix', { 'for': 'nix' } " Vim configuration files for Nix.
 
 " Looks
 Plug 'nikitavoloboev/vim-monokai-night' " Theme
-Plug 'itchyny/lightline.vim' " Light and configurable statusline/tabline plugin.
 
 call plug#end()
 
 " Options
+set noshowmode
+set noruler
+set laststatus=0
+set noshowcmd
+set cmdheight=1
 set noshowmode " Hide INSERT/VISUAL messages
 set mouse=a " Copy selected text with mouse to system clipboard
 set undofile " Save undos after file closes
