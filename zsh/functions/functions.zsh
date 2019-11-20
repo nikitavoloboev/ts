@@ -261,12 +261,6 @@ fix() {
     exec zsh
 }
 
-# wa <dir> - Go to do <dir> directory and open it with VS Code.
-wa() {
-    cd "$1"
-    code .
-}
-
 # TODO: Find for anybar.
 # anybar() {
 #     echo -n "red" | nc -4u -w0 localhost 1738
