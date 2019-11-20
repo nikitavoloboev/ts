@@ -10,7 +10,7 @@
   "workbench.editor.showIcons": false,
   "workbench.settings.enableNaturalLanguageSearch": false,
   // Editor
-  "editor.renderLineHighlight": "line",
+  "editor.renderLineHighlight": "gutter",
   "editor.gotoLocation.multiple": "goto",
   "editor.codeActionsOnSave": {
     "source.organizeImports": true
