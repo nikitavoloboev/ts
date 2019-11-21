@@ -462,9 +462,9 @@
                  [:n :!Cv] ; Paste
                  [:##m :!Cright_arrow]
                  [:comma :!COS8] ; Selection -> SnippetsLab
-                 [:period :!TCclose_bracket] ; Search SnippetsLab library with assistant
+                 [:semicolon :!TCclose_bracket] ; Search SnippetsLab library with assistant
                  [:open_bracket [:km "Selected text -> TODO"]]
-                 [:semicolon [:km "Tasks from apps -> TODO"]]
+                 [:period [:km "Tasks from apps -> TODO"]]
                  [:o :!CTO9]]} ; Search Typinator
         {:des "dkey (mouse)"
          :rules [:d-mode
@@ -617,7 +617,8 @@
                  [:p [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ERn0U4qZIKC8Dy7RrMMsn"]] ; Likes playlist
                  [:open_bracket [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:2N82DnDsPGMnpJhN8sVFJu"]] ; Bliss playlist
                  [:close_bracket [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:37i9dQZEVXcMHpP6EcIqNe"]] ; Discover Weekly playlist
-                 [:quote [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ESjwZeTcHOWzY3FYO5zs5"]] ; Focus playlist
+                 [:quote [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:1ub1iKyjoEjbQOuJyF8Kg7"]] ; Focus song
+                 [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ESjwZeTcHOWzY3FYO5zs5"]] ; Focus playlist
                  [:period [:km "Play/pause Spotify"]]
                  [:comma [:km "Noizio settings"]]
                  [:i :display_brightness_decrement]
