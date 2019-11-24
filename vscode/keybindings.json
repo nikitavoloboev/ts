@@ -251,10 +251,6 @@
     "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
   },
   {
-    "key": "ctrl+g",
-    "command": "-workbench.action.gotoLine"
-  },
-  {
     "key": "ctrl+alt+j",
     "command": "-code-runner.runByLanguage"
   },

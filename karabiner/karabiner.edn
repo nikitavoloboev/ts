@@ -106,7 +106,7 @@
          :rules [:3-mode
                  [:spacebar :!CSOp] ; Selection -> Reddit
                  [:j [:km "wiki: Rules"]]
-                 [:k [:km "Reflect"]]
+                 [:r [:km "Reflect"]]
                  [:l [:km "Search current safari url in wiki"]]
                  ;[:k [:km "wiki: Processes"]]
                  [:m [:km "wiki: Summary"]]
@@ -184,7 +184,7 @@
                  [:k [:km "open: Safari"]]
                  [:d [:km "open: Activity Monitor"]]
                  ;[:g [:km "open: Console"]]
-                 [:t [:km "open: Postico"]]
+                 ;[:t [:km "open: Postico"]]
                  ;[:c [:km "open: Sketch"]]
                  ;[:g [:km "open: Notion"]]
                  [:i [:km "open: Chrome Canary"]]
@@ -195,7 +195,7 @@
                  [:b [:km "open: BetterTouchTool"]]
                  [:a :!OSC1] ; Open Dash
                  [:r :!CTOSt] ; Open Trello
-                 [:h [:km "open: Paw"]]
+                 [:t [:km "open: Paw"]]
                  [:v [:km "open: Figma"]]
                  [:f [:km "open: 2Do"]]
                  [:j [:km "open: iTerm"]]
@@ -617,7 +617,7 @@
                  [:p [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ERn0U4qZIKC8Dy7RrMMsn"]] ; Likes playlist
                  [:open_bracket [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:2N82DnDsPGMnpJhN8sVFJu"]] ; Bliss playlist
                  [:close_bracket [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:37i9dQZEVXcMHpP6EcIqNe"]] ; Discover Weekly playlist
-                 [:quote [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:3JV9KTvErBJzQi9Wcr7ouR"]] ; Focus song
+                 [:quote [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:2ApyFf1tYw7BJgzBEokxma"]] ; Focus song
                  [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ESjwZeTcHOWzY3FYO5zs5"]] ; Focus playlist
                  [:period [:km "Play/pause Spotify"]]
                  [:comma [:km "Noizio settings"]]
