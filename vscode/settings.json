@@ -1,4 +1,18 @@
 {
+  // Files
+  "files.exclude": {
+    "**/.git": true,
+    "**/.next": true,
+    "**/.DS_Store": true,
+    "**/package-lock.json": true,
+    "**/yarn.lock": true,
+    "vendor": true,
+    "**/npm-debug.log": true,
+    "**/dist": true,
+    "**/*.bs.js": true
+  },
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
   // Workbench
   "workbench.colorTheme": "Monokai Night",
   "workbench.list.horizontalScrolling": true,
@@ -9,6 +23,7 @@
   "workbench.settings.editor": "json",
   "workbench.editor.showIcons": false,
   "workbench.settings.enableNaturalLanguageSearch": false,
+  "workbench.statusBar.visible": false, // formatting only supports LF line endings
   // Editor
   "editor.renderLineHighlight": "gutter",
   "editor.gotoLocation.multiple": "goto",
@@ -31,7 +46,7 @@
   "editor.lineNumbers": "on",
   "editor.cursorStyle": "line",
   // Window
-  "window.zoomLevel": 1,
+  "window.zoomLevel": 0,
   "window.restoreWindows": "all",
   "window.newWindowDimensions": "maximized",
   // Breadcrumbs
@@ -57,20 +72,6 @@
   // Terminal
   "terminal.integrated.copyOnSelection": true,
   "terminal.integrated.fontSize": 13,
-  // Files
-  "files.trimTrailingWhitespace": true,
-  "files.insertFinalNewline": true,
-  "files.exclude": {
-    "**/.git": true,
-    "**/.DS_Store": true,
-    "**/package-lock.json": true,
-    "**/yarn.lock": true,
-    "vendor": true,
-    // "**/node_modules": true,
-    "**/npm-debug.log": true,
-    "**/dist": true,
-    "**/*.bs.js": true
-  },
   // Explorer
   "explorer.openEditors.visible": 0,
   "explorer.confirmDragAndDrop": false,
@@ -205,7 +206,6 @@
   "javascript.updateImportsOnFileMove.enabled": "never",
   // Git
   "git.autofetch": true,
-  // "git.enableStatusBarSync": false, // https://github.com/microsoft/vscode/issues/80515
   "git.confirmSync": false,
   "git.ignoreLimitWarning": true,
   "git.enableSmartCommit": true,
@@ -287,6 +287,5 @@
     }
   ],
   "terminal.integrated.inheritEnv": false,
-  "files.eol": "\n",
-  "workbench.statusBar.visible": false, // formatting only supports LF line endings
+  "files.eol": "\n"
 }
