@@ -473,7 +473,6 @@
                  ;[:l {:mkey {:vwheel 60}}] ; Scroll right TODO:
                  ;[:h {:mkey {:vwheel -60}}] ; Scroll left TODO:
                  [:a :!CT6] ; Smart zoom
-                 [:f [:!Cc :!Ctab]] ; Copy & activate previous app
                  [:m [:km "Google Searchio selected word"]]
                  ;[:n [:km "Select line and google"]]
                  [:semicolon [:km "Google selected word"]]
@@ -506,6 +505,7 @@
                  [:open_bracket :!CT5] ; Turn display on/off
                  [:comma  [:km "Add safari link to selected markdown text"]]
                  [:k :return_or_enter]
+                 [:r [:!Cc :!Ctab]] ; Copy & activate previous app
                  [:q [:km "Lowercase selected text"]]
                  [:1 [:km "Uppercase selected text"]]
                  [:2 :!CSO5] ; PixelSnap
