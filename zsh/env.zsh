@@ -19,9 +19,6 @@ export PATH=$PATH:./node_modules/.bin
 eval "$(hub alias -s)"
 eval "$(direnv hook zsh)"
 
-# fnm
-eval "$(fnm env --multi)"
-
 if command -v pazi &>/dev/null; then
   eval "$(pazi init zsh)"
 fi

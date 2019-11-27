@@ -10,3 +10,5 @@ source ~/.dotfiles/zsh/bindings.zsh
 source ~/.dotfiles/zsh/alias.zsh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# fnm
+eval "$(fnm env --multi)"
