@@ -13,6 +13,7 @@
   },
   "files.trimTrailingWhitespace": true,
   "files.insertFinalNewline": true,
+  "files.eol": "\n",
   // Workbench
   "workbench.colorTheme": "Monokai Night",
   "workbench.list.horizontalScrolling": true,
@@ -72,6 +73,7 @@
   // Terminal
   "terminal.integrated.copyOnSelection": true,
   "terminal.integrated.fontSize": 13,
+  "terminal.integrated.inheritEnv": false,
   // Explorer
   "explorer.openEditors.visible": 0,
   "explorer.confirmDragAndDrop": false,
@@ -198,12 +200,12 @@
   "python.linting.pylintEnabled": false,
   "python.linting.flake8Enabled": true,
   "python.linting.enabled": false,
-  // TODO: maybe not need?
   // TypeScript
   "typescript.check.npmIsInstalled": false,
   "typescript.updateImportsOnFileMove.enabled": "never",
   // JavaScript
   "javascript.updateImportsOnFileMove.enabled": "never",
+  "eslint.packageManager":"yarn",
   // Git
   "git.autofetch": true,
   "git.confirmSync": false,
@@ -286,6 +288,4 @@
       "value": "#42b883"
     }
   ],
-  "terminal.integrated.inheritEnv": false,
-  "files.eol": "\n"
 }
