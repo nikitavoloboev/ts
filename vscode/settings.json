@@ -1,6 +1,7 @@
 {
   // Files
   "files.exclude": {
+    "node_modules/": true,
     "**/.git": true,
     "**/.next": true,
     "**/.DS_Store": true,
@@ -76,6 +77,7 @@
   "terminal.integrated.inheritEnv": false,
   // Explorer
   "explorer.openEditors.visible": 0,
+  "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "explorer.decorations.badges": false,
   // Python
@@ -193,7 +195,6 @@
   "files.associations": {
     "*.toml": "toml"
   },
-  "explorer.confirmDelete": false,
   // Python
   "python.pythonPath": "/Users/nikivi/anaconda3/bin/python3",
   "python.formatting.provider": "black",
