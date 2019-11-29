@@ -550,7 +550,7 @@
                  [:r [:alfred "restart wifi" "nikivi.wifi.tools"]]
                  [:w [:alfred "toggle wifi" "nikivi.wifi.tools"]]
                  ;[:i [:km "Commit build to learn"]]
-                 [:i [:km "Commit wiki"]]]}
+                 [:v [:km "Commit wiki"]]]}
         {:des "zkey (chat)"
          :rules [:z-mode
                  [:spacebar :!CSOz] ; Selection -> Twitter
@@ -686,7 +686,7 @@
                  [:spacebar [:alfred "search dash profiles" "nikivi.dash.profiles"]]
                  [:caps_lock [:alfred "search dash" "com.nikivi.own.dash" "man: "]]
                  [:c [:alfred "search dash" "com.nikivi.own.dash" "css: "]]
-                 [:l [:alfred "search dash" "com.nikivi.own.dash" "lodash: "]]
+                 [:s [:alfred "search dash" "com.nikivi.own.dash" "lodash: "]]
                  [:n [:alfred "search dash" "com.nikivi.own.dash" "electron: "]]
                  [:k [:alfred "search dash" "com.nikivi.own.dash" "docker: "]]
                  [:v [:alfred "search dash" "com.nikivi.own.dash" "vim: "]]
