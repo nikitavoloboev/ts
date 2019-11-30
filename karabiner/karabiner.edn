@@ -187,7 +187,7 @@
                  ;[:c [:km "open: Sketch"]]
                  ;[:g [:km "open: Notion"]]
                  ;[:u [:km "open: Firefox Nightly"]]
-                 [:u [:km "open: Safari Technology Preview"]]
+                 ;[:u [:km "open: Safari Technology Preview"]]
                  [:p [:km "open: Postico"]]
                  [:u [:km "open: Chrome Canary"]]
                  [:i [:km "open: Polypane"]]
