@@ -182,7 +182,7 @@
                  [:m [:km "open: Xcode"]]
                  [:c [:km "open: Spotify"]]
                  [:k [:km "open: Safari"]]
-                 [:t [:km "open: Activity Monitor"]]
+                 [:d [:km "open: Activity Monitor"]]
                  ;[:g [:km "open: Console"]]
                  ;[:c [:km "open: Sketch"]]
                  ;[:g [:km "open: Notion"]]
@@ -197,7 +197,7 @@
                  [:b [:km "open: BetterTouchTool"]]
                  [:a :!OSC1] ; Open Dash
                  [:r :!CTOSt] ; Open Trello
-                 [:period [:km "open: Paw"]]
+                 [:t [:km "open: Paw"]]
                  [:v [:km "open: Figma"]]
                  [:f [:km "open: 2Do"]]
                  [:j [:km "open: iTerm"]]
