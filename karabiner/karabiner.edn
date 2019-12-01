@@ -496,6 +496,7 @@
                  [:semicolon [:km "open: MindNode"]]
                  [:period [:km "edit: Karabiner"]]
                  [:a [:alfred "new todo" "nikivi.todo.task"]]
+                 [:d [:km "New MindNode node"]]
                  ;[:s [:km "Move todo to MindNode"]]
                  [:s [:km "edit: clones"]]
                  [:slash [:km "edit: Darwin Nix"]]
@@ -619,7 +620,7 @@
                  [:p [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ERn0U4qZIKC8Dy7RrMMsn"]] ; Likes playlist
                  [:open_bracket [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:2N82DnDsPGMnpJhN8sVFJu"]] ; Bliss playlist
                  [:close_bracket [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:37i9dQZEVXcMHpP6EcIqNe"]] ; Discover Weekly playlist
-                 [:quote [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:7agPIlFzTpgKnqyxUVt7aM"]] ; Focus song
+                 [:quote [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:51jSirAIeWBDxfkL85RMlD"]] ; Focus song
                  [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ESjwZeTcHOWzY3FYO5zs5"]] ; Focus playlist
                  [:period [:km "Play/pause Spotify"]]
                  [:comma [:km "Noizio settings"]]
