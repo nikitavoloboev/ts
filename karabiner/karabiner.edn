@@ -552,8 +552,8 @@
                  [:semicolon [:km "Paste active todo"]]
                  [:r [:alfred "restart wifi" "nikivi.wifi.tools"]]
                  [:w [:alfred "toggle wifi" "nikivi.wifi.tools"]]
-                 ;[:i [:km "Commit build to learn"]]
-                 [:v [:km "Commit wiki"]]]}
+                 [:b [:km "Commit build to learn"]]
+                 [:v [:km "Commit knowledge"]]]}
         {:des "zkey (chat)"
          :rules [:z-mode
                  [:spacebar :!CSOz] ; Selection -> Twitter
