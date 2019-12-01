@@ -108,7 +108,8 @@
 		"kickstarters",
 		"username",
 		"bioinformatics",
-		"geospatial"
+		"geospatial",
+		"Hyperlink"
 	],
 	"auto_format_on_save": true,
 	"binary_file_patterns":

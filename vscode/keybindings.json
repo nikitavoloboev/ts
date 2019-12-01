@@ -297,10 +297,6 @@
     "command": "-workbench.action.switchWindow"
   },
   {
-    "key": "ctrl+q",
-    "command": "-workbench.action.quickOpenView"
-  },
-  {
     "key": "alt+f12",
     "command": "-editor.action.peekDefinition",
     "when": "editorHasDefinitionProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
@@ -343,7 +339,7 @@
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+c",
+    "key": "ctrl+q",
     "command": "editor.action.marker.prev",
     "when": "editorTextFocus && !editorReadonly"
   },
