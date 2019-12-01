@@ -48,7 +48,7 @@
   "editor.lineNumbers": "on",
   "editor.cursorStyle": "line",
   // Window
-  "window.zoomLevel": 1,
+  "window.zoomLevel": 0,
   "window.restoreWindows": "all",
   "window.newWindowDimensions": "maximized",
   // Breadcrumbs
