@@ -544,16 +544,17 @@
                  [:k [[:open "dash://.go:"] ["in-python" 0] ["in-go" 1] ["in-js" 0] ["in-elixir" 0] ["in-rust" 0] ["in-swift" 0]]] ; Go
                  [:l [[:open "dash://.python:"] ["in-python" 1] ["in-go" 0] ["in-js" 0] ["in-elixir" 0] ["in-rust" 0] ["in-swift" 0]]] ; Python
                  [:spacebar :!COSn] ; Selection -> GitHub
-                 [:f :!CTk] ; Turn on/off BTT TouchBar
                  [:h :!CTOx] ; Little Snitch
-                 [:e [:km "Add blog to Reeder"]]
+                 ;[:e [:km "Add blog to Reeder"]]
                  ;[:n :!STh] ; Record macro
                  ;[:l [:km "Make global macro"]]
                  [:semicolon [:km "Paste active todo"]]
-                 [:r [:alfred "restart wifi" "nikivi.wifi.tools"]]
                  [:w [:alfred "toggle wifi" "nikivi.wifi.tools"]]
-                 [:d [:km "Commit build to learn"]]
-                 [:c [:km "Commit dotfiles"]]
+                 [:e :!CTk] ; Turn on/off BTT TouchBar
+                 [:r [:alfred "restart wifi" "nikivi.wifi.tools"]]
+                 [:f [:km "Commit home"]]
+                 [:c [:km "Commit build to learn"]]
+                 [:d [:km "Commit dotfiles"]]
                  [:v [:km "Commit knowledge"]]]}
         {:des "zkey (chat)"
          :rules [:z-mode
