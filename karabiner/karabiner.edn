@@ -189,14 +189,15 @@
                  ;[:u [:km "open: Firefox Nightly"]]
                  [:u [:km "open: Safari Technology Preview"]]
                  [:i [:km "open: Chrome Canary"]]
-                 [:p [:km "open: Postico"]]
+                 [:t [:km "open: Postico"]]
+                 [:p [:km "open: Postgres"]]
                  [:g [:km "open: SnippetsLab"]]
                  [:caps_lock [:km "open: Finder"]]
                  [:semicolon [:km "open: Tower"]]
                  [:b [:km "open: BetterTouchTool"]]
                  [:a :!OSC1] ; Open Dash
                  [:r :!CTOSt] ; Open Trello
-                 [:t [:km "open: Paw"]]
+                 [:period [:km "open: Paw"]]
                  [:v [:km "open: Figma"]]
                  [:f [:km "open: 2Do"]]
                  [:j [:km "open: iTerm"]]
