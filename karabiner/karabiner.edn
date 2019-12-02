@@ -621,7 +621,7 @@
                  [:p [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ERn0U4qZIKC8Dy7RrMMsn"]] ; Likes playlist
                  [:open_bracket [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:2N82DnDsPGMnpJhN8sVFJu"]] ; Bliss playlist
                  [:close_bracket [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:37i9dQZEVXcMHpP6EcIqNe"]] ; Discover Weekly playlist
-                 [:quote [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:1IHfg8YnF8Xi0FJDmU462p"]] ; Focus song
+                 [:quote [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:17wwTCZ6BAMA9z8SdaJnvQ"]] ; Focus song
                  [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ESjwZeTcHOWzY3FYO5zs5"]] ; Focus playlist
                  [:period [:km "Play/pause Spotify"]]
                  [:comma [:km "Noizio settings"]]
@@ -726,8 +726,7 @@
                   [:d [:r :e :t :u :r :n :spacebar]] ; -> return
                   [:f [:!Cf :c :o :n :s :o :l :e :period :l :o :g :!S9 :return_or_enter]] ; -> search console.log( in file
                   [:g [:right_arrow :spacebar :equal_sign :!Speriod :spacebar :!Sopen_bracket :return_or_enter]] ; -> => {}
-                  [:j [:right_arrow :equal_sign]] ; -> =
-                  [:k [:right_arrow :!Sopen_bracket :return_or_enter]] ; -> {
+                  [:j [:right_arrow :spacebar :equal_sign :spacebar]] ; -> =
                   [:z [:spacebar :c :l :a :s :s :!Sn :a :m :e :equal_sign :!Squote :!Squote :left_arrow]] ; -> className=""
                   [:x [:t :a :c :h :y :o :n :s :spacebar]] ; -> tachyons
                   [:c [:spacebar :s :t :y :l :e :equal_sign :!Sopen_bracket :!Sopen_bracket :!Sclose_bracket :!Sclose_bracket :left_arrow :left_arrow]] ; -> style={{}}
