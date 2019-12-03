@@ -27,6 +27,7 @@
   "workbench.settings.enableNaturalLanguageSearch": false,
   "workbench.statusBar.visible": false, // formatting only supports LF line endings
   // Editor
+  "editor.formatOnSave": true,
   "editor.renderLineHighlight": "gutter",
   "editor.gotoLocation.multiple": "goto",
   "editor.codeActionsOnSave": {
@@ -48,7 +49,7 @@
   "editor.lineNumbers": "on",
   "editor.cursorStyle": "line",
   // Window
-  "window.zoomLevel": -1,
+  "window.zoomLevel": 0,
   "window.restoreWindows": "all",
   "window.newWindowDimensions": "maximized",
   // Breadcrumbs
@@ -88,8 +89,6 @@
     "python": "python3",
     "typescript": "ts-node --transpile-only"
   },
-  // Prettier
-  "editor.formatOnSave": true,
   // Code runner
   "code-runner.runInTerminal": false,
   // Vim
