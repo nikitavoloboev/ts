@@ -740,7 +740,7 @@
                  [:a [:p :r :i :n :t :!S9 :!S0 :left_arrow]] ; -> print()
                  [:s [:hyphen :!Speriod]] ; -> ->
                  [:d [:r :e :t :u :r :n :spacebar]] ; -> return
-                 [:grave_accent_and_tilde [:p :r :i :n :t :!S9 :quote :hyphen :hyphen :hyphen :!Cright_arrow :caps_lock :o]] ; -> print('---')
+                 [:grave_accent_and_tilde [:p :r :i :n :t :!S9 :quote :hyphen :hyphen :hyphen :!Cright_arrow :caps_lock]] ; -> print('---')
                  [:v [:p :y :t :h :o :n :spacebar]]]} ; -> python
         {:des "swiftdot"
          :rules[:swift-mode
