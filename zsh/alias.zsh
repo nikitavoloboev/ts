@@ -13,11 +13,12 @@ alias nss="nix-shell --run zsh -p"
 alias bi='brew install'
 
 # General
-alias wa='watchexec'
-alias we='watchexec --exts'
-alias wjs='watchexec --exts js node'
-alias wru='watchexec --exts rs rustc'
-alias wpy='watchexec --exts py python3'
+# alias wa='watchexec'
+alias wa='watchexec --exts'
+alias ww='watchexec --exts go go run'
+alias we='watchexec --exts py python3'
+alias wj='watchexec --exts js node'
+alias wr='watchexec --exts rs rustc'
 alias wtex='watchexec --exts .tex'
 alias f='open .'
 alias pb='pbcopy'
