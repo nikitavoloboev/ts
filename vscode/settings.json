@@ -53,7 +53,7 @@
   "window.restoreWindows": "all",
   "window.newWindowDimensions": "maximized",
   // Breadcrumbs
-  "breadcrumbs.filePath":"off",
+  "breadcrumbs.filePath": "off",
   // Debug
   "debug.openDebug": "neverOpen",
   "debug.showInStatusBar": "never",
@@ -205,7 +205,7 @@
   "typescript.updateImportsOnFileMove.enabled": "never",
   // JavaScript
   "javascript.updateImportsOnFileMove.enabled": "never",
-  "eslint.packageManager":"yarn",
+  "eslint.packageManager": "yarn",
   // Git
   "git.autofetch": true,
   "git.confirmSync": false,
@@ -287,5 +287,5 @@
       "name": "Vue Green",
       "value": "#42b883"
     }
-  ],
+  ]
 }
