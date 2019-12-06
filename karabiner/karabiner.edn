@@ -707,9 +707,9 @@
           :rules [:dot-mode
                   [:spacebar [:!St :h :a :n :k :spacebar :y :o :u :period :spacebar]] ; -> Thank you.
                   [:left_gui [:!St :h :a :n :k :s :spacebar]] ; -> Thanks
-                  [:1 [:!Sf :i :x :spacebar :!S3]] ; -> Fix #
+                  [:1 [:!Sc :l :o :s :e :s :spacebar :!S3]] ; -> Closes #
                   [:2 [:!Sr :e :f :spacebar :!S3]] ; -> Ref #
-                  [:3 [:!Sc :l :o :s :e :s :spacebar :!S3]] ; -> Closes #
+                  [:3 [:!Sf :i :x :spacebar :!S3]] ; -> Fix #
                   [:q [:!Sa :spacebar :slash :slash :spacebar]] ; -> // (on same line)
                   [:w [:km "VSCode/XCode/Sublime comment on top of line"]]
                   [:e [:!St :!So :!Sd :!So :!Ssemicolon :spacebar]] ; -> TODO:
