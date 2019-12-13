@@ -57,7 +57,7 @@
   },
   {
     "key": "ctrl+1",
-    "command": "-workbench.action.openEditorAtIndex1"
+    "command": "workbench.action.openEditorAtIndex1"
   },
   {
     "key": "cmd+2",
@@ -65,7 +65,7 @@
   },
   {
     "key": "ctrl+2",
-    "command": "-workbench.action.openEditorAtIndex2"
+    "command": "workbench.action.openEditorAtIndex2"
   },
   {
     "key": "cmd+3",
@@ -73,7 +73,7 @@
   },
   {
     "key": "ctrl+3",
-    "command": "-workbench.action.openEditorAtIndex3"
+    "command": "workbench.action.openEditorAtIndex3"
   },
   {
     "key": "cmd+4",
@@ -209,6 +209,16 @@
     "key": "ctrl+j",
     "command": "-editor.action.joinLines",
     "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+s",
+    "command": "workbench.action.terminal.focus",
+    "when": "!terminalFocus"
+  },
+  {
+    "key": "ctrl+s",
+    "command": "workbench.action.focusFirstEditorGroup",
+    "when": "terminalFocus"
   },
   {
     "key": "cmd+o",
