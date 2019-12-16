@@ -29,7 +29,7 @@
   // Editor
   "editor.formatOnSave": true,
   "editor.renderLineHighlight": "gutter",
-  "editor.gotoLocation.multiple": "goto",
+  // "editor.gotoLocation.multiple": "goto",
   "editor.codeActionsOnSave": {
     "source.organizeImports": true
   },

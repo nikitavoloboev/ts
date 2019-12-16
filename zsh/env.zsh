@@ -26,8 +26,6 @@ fi
 # TODO: change pure prompt when I am in direnv env. Below func returns needed info
 # has_direnv() { if [[ -n $DIRENV_DIFF ]]; then echo in direnv; else echo not; fi }
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
 # fnm
 eval "$(fnm env --multi)"
 
