@@ -211,12 +211,12 @@
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+s",
+    "key": "ctrl+d",
     "command": "workbench.action.terminal.focus",
     "when": "!terminalFocus"
   },
   {
-    "key": "ctrl+s",
+    "key": "ctrl+d",
     "command": "workbench.action.focusFirstEditorGroup",
     "when": "terminalFocus"
   },
@@ -380,7 +380,7 @@
     "command": "-workbench.action.navigateForward"
   },
   {
-    "key": "ctrl+d",
+    "key": "ctrl+s",
     "command": "workbench.action.focusSideBar"
   },
   {
