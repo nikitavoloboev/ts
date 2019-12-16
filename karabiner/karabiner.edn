@@ -578,7 +578,7 @@
         {:des "xkey (spotify)"
          :rules [:x-mode
                  [:o [:km "Share current song on Twitter"]]
-                 ;[:p [:km "Paste current Spotify song link"]]
+                 [:p [:km "Paste current Spotify song link"]]
                  [:j [:alfred "spot_mini" "com.vdesabou.spotify.mini.player"]]
                  [:i [:alfred "show_alfred_playlist" "com.vdesabou.spotify.mini.player"]]
                  [:l [:alfred "song_radio" "com.vdesabou.spotify.mini.player"]]
@@ -622,7 +622,7 @@
                  [:open_bracket [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:2N82DnDsPGMnpJhN8sVFJu"]] ; Bliss playlist
                  [:close_bracket [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:37i9dQZEVXcMHpP6EcIqNe"]] ; Discover Weekly playlist
                  [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ESjwZeTcHOWzY3FYO5zs5"]] ; Focus playlist
-                 [:quote [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:09avYIjuNDUB0RnBx2qLvo"]] ; Focus song
+                 [:quote [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:3dJXvBddoH1AGLpKvmbYDA"]] ; Focus song
                  [:period [:km "Play/pause Spotify"]]
                  [:comma [:km "Noizio settings"]]
                  [:i :display_brightness_decrement]
