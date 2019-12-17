@@ -90,7 +90,7 @@
                  [[:j :semicolon] [:alfred "search tabs" "net.deanishe.alfred.safari"]]
                  [[:j :l] :!CTOSspacebar]]} ; Alfred
         {:des "ksim"
-         :rules [[[:k :l] [:alfred "search dash" "com.nikivi.own.dash"]]
+         :rules [[[:k :l] [:alfred "search dash" "com.kapeli.dash.workflow"]]
                  [[:k :m] [:alfred "search youtube" "net.deanishe.alfred-searchio"]]]}
         {:des "2key (move + alfred)"
          :rules [:2-mode
@@ -337,7 +337,7 @@
                  [:6 :!C6]
                  [:t [:alfred "search tty sessions" "net.isometry.alfred.tty"]] ; TODO: replace with pocket
                  [:n [:alfred "search lists" "nikivi.learn.anything"]]
-                 [:z [:alfred "search blog" "nikivi.private.directories"]] ; TODO: search fragments + published or input name to create fragment 
+                 [:z [:alfred "search blog" "nikivi.private.directories"]] ; TODO: search fragments + published or input name to create fragment
                  [:x [:alfred "search workflows" "org.jeef.workflowdirectory"]]
                  [:w :!CObackslash] ; 1Password search
                  [:grave_accent_and_tilde [:alfred "search processes" "com.vitorgalvao.alfred.processcontrol"]]
@@ -687,22 +687,21 @@
                  [:grave_accent_and_tilde [:alfred "search learn anything" "nikivi.learn.anything"]]]}
         {:des "mkey (dash)"
          :rules [:m-mode
-                 [:spacebar [:alfred "search dash profiles" "nikivi.dash.profiles"]]
-                 [:caps_lock [:alfred "search dash" "com.nikivi.own.dash" "man: "]]
-                 [:c [:alfred "search dash" "com.nikivi.own.dash" "css: "]]
-                 [:s [:alfred "search dash" "com.nikivi.own.dash" "lodash: "]]
-                 [:n [:alfred "search dash" "com.nikivi.own.dash" "electron: "]]
-                 [:k [:alfred "search dash" "com.nikivi.own.dash" "docker: "]]
-                 [:v [:alfred "search dash" "com.nikivi.own.dash" "vim: "]]
-                 [:d [:alfred "search dash" "com.nikivi.own.dash" "node: "]]
-                 [:e [:alfred "search dash" "com.nikivi.own.dash" "html: "]]
-                 [:a [:alfred "search dash" "com.nikivi.own.dash" "apple: "]]
-                 [:3 [:alfred "search dash" "com.nikivi.own.dash" "d3: "]]
-                 [:b [:alfred "search dash" "com.nikivi.own.dash" "bash: "]]
-                 [:t [:alfred "search dash" "com.nikivi.own.dash" "ts: "]]
-                 [:r [:alfred "search dash" "com.nikivi.own.dash" "react: "]]
-                 [:g [:alfred "search dash" "com.nikivi.own.dash" "godoc: "]]
-                 [:grave_accent_and_tilde [:alfred "search dash" "com.nikivi.own.dash" "tldr: "]]]}
+                 [:caps_lock [:alfred "search alfred" "com.kapeli.dash.workflow" "man: "]]
+                 [:c [:alfred "search alfred" "nikivi.utilities" "css "]]
+                 [:s [:alfred "search alfred" "nikivi.utilities" "lodash "]]
+                 [:n [:alfred "search alfred" "nikivi.utilities" "electron "]]
+                 [:k [:alfred "search alfred" "nikivi.utilities" "docker "]]
+                 [:v [:alfred "search alfred" "nikivi.utilities" "vim "]]
+                 [:d [:alfred "search alfred" "nikivi.utilities" "node "]]
+                 [:e [:alfred "search alfred" "nikivi.utilities" "html "]]
+                 [:a [:alfred "search alfred" "nikivi.utilities" "apple "]]
+                 [:3 [:alfred "search alfred" "nikivi.utilities" "d3 "]]
+                 [:b [:alfred "search alfred" "nikivi.utilities" "bash "]]
+                 [:t [:alfred "search alfred" "nikivi.utilities" "ts "]]
+                 [:r [:alfred "search alfred" "nikivi.utilities" "react "]]
+                 [:g [:alfred "search alfred" "nikivi.utilities" "godoc "]]
+                 [:grave_accent_and_tilde [:alfred "search alfred" "com.kapeli.dash.workflow" "tldr: "]]]}
          {:des "dotkey (1-3, q-u, caps, tab)"
           :rules [:dot-mode
                   [:spacebar [:!St :h :a :n :k :spacebar :y :o :u :period :spacebar]] ; -> Thank you.
