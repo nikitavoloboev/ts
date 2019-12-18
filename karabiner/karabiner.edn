@@ -326,6 +326,7 @@
                  [:c :!S7]
                  [:3 :!Sequal_sign]
                  [:5 :!S5]
+                 [:open_bracket :!Sclose_bracket]
                  [:v :!Scomma]]}
         {:des "okey (alfred)"
          :rules [:o-mode
@@ -589,8 +590,8 @@
                  [:open_bracket [:alfred "add_current_track_to_alfred_playlist_or_your_music" "com.vdesabou.spotify.mini.player"]] ; Add song to Likes playlist
                  [:close_bracket [:alfred "add_current_track_to" "com.vdesabou.spotify.mini.player" "spotify:playlist:2N82DnDsPGMnpJhN8sVFJu"]] ; Add song to Bliss playlist
                  [:p [:alfred "add_current_track_to" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ESjwZeTcHOWzY3FYO5zs5"]] ; Add song to Focus playlist
-                 [:n [:alfred "show_playlists" "com.vdesabou.spotify.mini.player"]]
-                 [:b [:alfred "remove_current_track_from" "com.vdesabou.spotify.mini.player"]]]}
+                 [:b [:alfred "show_playlists" "com.vdesabou.spotify.mini.player"]]
+                 [:n [:alfred "remove_current_track_from" "com.vdesabou.spotify.mini.player"]]]}
         {:des "ckey (test)"
          :rules [:c-mode
                  [:a [:km "Clone repo to ~/src/clones and open with VS Code"]]
@@ -706,7 +707,7 @@
           :rules [:dot-mode
                   [:spacebar [:!St :h :a :n :k :spacebar :y :o :u :period :spacebar]] ; -> Thank you.
                   [:left_gui [:!St :h :a :n :k :s :spacebar]] ; -> Thanks
-                  [:1 [:!Sc :l :o :s :e :s :spacebar :!S3]] ; -> Closes #
+                  [:1 [:!Sc :l :o :s :e :spacebar :!S3]] ; -> Close #
                   [:2 [:!Sr :e :f :spacebar :!S3]] ; -> Ref #
                   [:3 [:!Sf :i :x :spacebar :!S3]] ; -> Fix #
                   [:q [:!Sa :spacebar :slash :slash :spacebar]] ; -> // (on same line)
@@ -724,6 +725,8 @@
                   [:s [:equal_sign :!Speriod :spacebar]] ; -> =>
                   [:d [:r :e :t :u :r :n :spacebar]] ; -> return
                   [:f [:!Cf :c :o :n :s :o :l :e :period :l :o :g :!S9 :return_or_enter]] ; -> search console.log( in file
+                  [:j [:right_arrow :spacebar :equal_sign :spacebar]] ; -> = 
+                  [:k [:right_arrow :spacebar :!Sopen_bracket :return_or_enter]] ; -> {  }
                   [:g [:right_arrow :spacebar :equal_sign :!Speriod :spacebar :!Sopen_bracket :return_or_enter]] ; -> => {}
                   [:z [:spacebar :c :l :a :s :s :!Sn :a :m :e :equal_sign :!Squote :!Squote :left_arrow]] ; -> className=""
                   [:x [:t :a :c :h :y :o :n :s :spacebar]] ; -> tachyons
