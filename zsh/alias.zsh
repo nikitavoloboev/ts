@@ -13,9 +13,9 @@ alias nss="nix-shell --run zsh -p"
 alias bi='brew install'
 
 # General
-# alias wa='watchexec'
 alias wa='watchexec --exts'
 alias wg='watchexec --exts go go run'
+alias wgr'watchexec --restart --exts go go run'
 alias wt='watchexec --exts py python3'
 alias wn='watchexec --exts js node'
 alias wtex='watchexec --exts .tex'
@@ -23,7 +23,6 @@ alias f='open .'
 alias pb='pbcopy'
 alias te='tree'
 alias op='open'
-#alias env='env | fzf'
 alias cleanup="find . -type f -name '*.DS_Store' -ls -delete" # Recursively delete `.DS_Store` files
 alias g='git' # Wrapper over git
 alias peek='tee >(cat 1>&2)' # Mirror stdout to stderr, useful for seeing data going through a pipe
@@ -35,7 +34,6 @@ alias aet='subl CONTRIBUTING.md'
 alias yi="python -i"
 alias le='less -r'
 alias wifi='wifi-password -q'
-# alias du='du -sh * | sort'
 alias eo='echo'
 alias es='elasticsearch'
 alias mc='md-to-alfred'
@@ -54,7 +52,6 @@ alias ua='unalias'
 alias m='mkdir'
 alias mm='tldr'
 alias ma='man'
-# alias aw='k -h' TODO: ?
 alias rec='asciinema rec'
 alias dus='du -s'
 alias to='touch'
@@ -69,17 +66,12 @@ alias screen='screenfetch'
 alias ad='open .'
 alias mx='chmod +x'
 alias rr='rm -rf'
-# alias a='ls -FG'
 alias a='exa'
 alias aa='exa -la' # See hidden files
-# alias wg='wget -r --no-parent'
 alias v='mv'
 alias os='osascript'
 alias lt='ls -lart'
-# alias aa='ls -lahFG'
-# alias aa='exa -lahF'
 alias tp='type'
-# alias gr='goreleaser'
 
 # Dev
 alias ll='ln -s'
@@ -88,9 +80,6 @@ alias rf='reflex'
 alias ser='serve'
 alias cra='npx create-react-app'
 alias lic='legit'
-
-# App
-#alias to.='gittower .' # Open current dir in Tower
 
 # Python
 alias p='python3'
@@ -106,14 +95,6 @@ alias ws='workflow-install -s workflow' # Symlink `source` directory
 alias c='docker'
 alias cs='docker ps'
 alias cu='docker-compose up'
-# alias cr='docker rm'
-# alias cc='docker compose'
-# alias cg='docker logs'
-# alias cgt='docker logs --tail 100'
-# alias cs='docker ps'
-# alias csq='docker ps -q'
-# alias csa='docker ps -a'
-# alias ck='docker kill'
 
 # Kubernetes
 alias k='kubectl'
@@ -126,7 +107,6 @@ alias ks='kubectl get pods'
 alias kd='kubectl delete pods'
 alias ksw='kubectl get pods -o=wide -w'
 alias kp='kubectl port-forward'
-#alias kbcontexts='kubectl config view -o jsonpath='{.contexts[*].name}'' # List kubernetes contexts
 
 # Node
 alias no='node'
@@ -213,21 +193,14 @@ alias doc='cd ~/Documents/'
 alias dn='cd ~/src/clones'
 alias ds='cd ~/.ssh'
 alias dk='cd ~/Dropbox/Write/knowledge'
-alias dg='cd ~/go/src/github.com/nikitavoloboev'
 alias dl='cd ~/src/build-to-learn'
 alias da='cd ~/src/'
-alias dla='cd ~/src/orgs/learn-anything'
 alias dz='cd ~/.dotfiles'
 alias de='cd ~/Desktop'
 alias dq='cd ~/Downloads'
 alias dls='cd ~/Library/Services'
 alias drp='cd ~/Dropbox'
 alias dbin='cd /usr/local/bin/'
-
-# Xcode
-alias dx='cd ~/src/Xcode'
-alias dxi='cd ~/src/Xcode/iOS'
-alias dxm='cd ~/src/xcode/macOS'
 
 # Config
 alias d..='cd ~/.config'
@@ -259,28 +232,19 @@ alias gb='git checkout -b'
 alias gr='git reset --hard'
 alias grc='git rm --cached'
 alias ggn='git_add_origin_and_origin_push'
-# alias gt='git tag'
 alias g:='git push -u origin master'
-#alias gu='git commit --amend'
 alias ggf='git push -f'
 alias g::='git_remote_add_origin_from_active_link'
-# alias g="git"
 alias gi='git init'
 alias gl='git pull'
 alias gn='git clone'
 alias g.='git add .'
 alias ga='git add'
-# alias gb='git branch'
 alias gg='git push'
-#alias gr='git rm'
-# alias gf='git fetch'
 alias glp='git pull && git push'
 alias grao='git remote add origin'
-#alias gz='git discard'
-#alias gr='git rm --cached -r'
 
-# Undo your last commit, but don't throw away your changes
-alias greset='git reset --soft HEAD^'
+alias greset='git reset --soft HEAD^' # Undo last commit, but don't throw away your changes
 
 # Git Diff
 alias gd='git diff'

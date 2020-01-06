@@ -191,13 +191,13 @@
                  [:i [:km "open: Chrome Canary"]]
                  [:t [:km "open: Postico"]]
                  [:p [:km "open: Postgres"]]
-                 [:g [:km "open: SnippetsLab"]]
+                 [:period [:km "open: SnippetsLab"]]
                  [:caps_lock [:km "open: Finder"]]
                  [:semicolon [:km "open: Tower"]]
                  [:b [:km "open: BetterTouchTool"]]
                  [:a :!OSC1] ; Open Dash
                  [:r :!CTOSt] ; Open Trello
-                 [:period [:km "open: Paw"]]
+                 [:g [:km "open: Paw"]]
                  [:v [:km "open: Figma"]]
                  [:f [:km "open: 2Do"]]
                  [:j [:km "open: iTerm"]]

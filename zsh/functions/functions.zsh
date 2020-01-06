@@ -2,13 +2,6 @@
 b() {
 }
 
-# install global npm packages to custom dir
-# ig() {
-#   cd $HOME/bin
-#   npm install --save $@
-#   cd -
-# }
-
 w() {
   if [ $# -eq 0 ]; then
     code .
@@ -38,10 +31,6 @@ gdelsquashed() {
   git checkout -q master && git for-each-ref refs/heads/ "--format=%(refname:short)" | while read branch; do mergeBase=$(git merge-base master $branch) && [[ $(git cherry master $(git commit-tree $(git rev-parse $branch^{tree}) -p $mergeBase -m _)) == "-"* ]] && git branch -D $branch; done
 }
 
-# kp() {
-#   kubectl port-forward "$@" 5300:5432
-# }
-
 # bin <binary>. Move <binary> to /usr/local/bin (in my PATH).
 bin(){
   mv "$@" /usr/local/bin
@@ -55,12 +44,6 @@ findEmptyDirsAndFiles(){
 convertAllMDFilesToTabs(){
  find . -name '*.md' ! -type d -exec bash -c 'expand -t 4 "$0" > /tmp/e && mv /tmp/e "$0"' {} \;
 }
-
-# TODO:
-# Pass in extension as argument
-# prettierFormat(){
-#   prettier --write "**/*.md"
-# }
 
 # Update nix-darwin configuration
 un(){
@@ -102,17 +85,6 @@ falias() {
 
     eval $CMD
 }
-
-# Open Xcode projects from the command line
-# function co {
-#   proj=$(ls -d *.xcodeproj/ 2>/dev/null)
-
-#   if [ -n "$proj" ]; then
-#     open -a Xcode "$proj"
-#   else
-#     echo "No Xcode project detected."
-#   fi
-# }
 
 # Lowercase every file in current dir
 lowercaseCurrentDir(){
@@ -353,17 +325,6 @@ cw() { printf %s "$PWD" | pbcopy; }
 md() {
   [[ -n "$1" ]] && mkdir -p "$1" && builtin cd "$1"
 }
-
-# da - cd a dir back and exa
-# da <dir> - Change to a directory and list its contents
-# dw() {
-#   if [ $# -eq 0 ]; then
-#     cd ..
-#     exa
-#   else
-#     builtin cd "$argv[-1]" && exa "${(@)argv[1,-2]}"
-#   fi
-# }
 
 # server - Create server of current dir on port 8000 and open it in browser.
 server() {
