@@ -15,7 +15,7 @@ alias bi='brew install'
 # General
 alias wa='watchexec --exts'
 alias wg='watchexec --exts go go run'
-alias wgr'watchexec --restart --exts go go run'
+alias wgr='watchexec --restart --exts go go run'
 alias wt='watchexec --exts py python3'
 alias wn='watchexec --exts js node'
 alias wtex='watchexec --exts .tex'
