@@ -186,8 +186,8 @@
                  ;[:g [:km "open: Console"]]
                  ;[:c [:km "open: Sketch"]]
                  ;[:g [:km "open: Notion"]]
-                 ;[:u [:km "open: Firefox Nightly"]]
-                 [:u [:km "open: Safari Technology Preview"]]
+                 [:y [:km "open: Safari Technology Preview"]]
+                 [:u [:km "open: Firefox Nightly"]]
                  [:i [:km "open: Chrome Canary"]]
                  [:t [:km "open: Postico"]]
                  [:p [:km "open: Postgres"]]
@@ -619,7 +619,6 @@
                  [:s [:km "Test"]]
                  [:d [:km "Make global macro"]]
                  [:semicolon :!TS0] ; Turn on/off Noizio
-                 [:quote [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:63Jo5bfsIPMtf9lVmNK6lJ"]] ; Focus song
                  [:p [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ESjwZeTcHOWzY3FYO5zs5"]] ; Focus playlist
                  [:open_bracket [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ERn0U4qZIKC8Dy7RrMMsn"]] ; Likes playlist
                  [:close_bracket [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:2N82DnDsPGMnpJhN8sVFJu"]] ; Bliss playlist
