@@ -117,7 +117,8 @@
 		"Crypto",
 		"smartphone",
 		"autofill",
-		"todo"
+		"todo",
+		"emojis"
 	],
 	"auto_format_on_save": true,
 	"binary_file_patterns":
