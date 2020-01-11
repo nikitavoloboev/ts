@@ -114,7 +114,10 @@
 		"keybindings",
 		"keybinds",
 		"Postgres",
-		"Crypto"
+		"Crypto",
+		"smartphone",
+		"autofill",
+		"todo"
 	],
 	"auto_format_on_save": true,
 	"binary_file_patterns":
