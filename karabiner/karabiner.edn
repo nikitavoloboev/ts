@@ -738,6 +738,7 @@
                 [:a [:f :m :t :period :!Sp :r :i :n :t :l :n :!S9 :!S0 :left_arrow]] ; -> fmt.Println()
                 [:s [:!Ssemicolon :equal_sign :spacebar]] ; -> := 
                 [:d [:r :e :t :u :r :n :spacebar]] ; -> return
+                [:f [:!Cf :f :m :t :period :p :return_or_enter]] ; -> search fmt.p in file
                 [:g [:!STsemicolon]] ; Selection -> Go Playground
                 [:v [:g :o :l :a :n :g :spacebar]]]} ; -> golang
         {:des "pydot"
