@@ -117,6 +117,7 @@
                  [:t [:km "edit: Projects"]]
                  [:n [:km "edit: Now"]]
                  [:semicolon [:km "proj: Knowledge"]]
+                 [:quote [:km "edit: Darwin Nix"]]
                  [:f [:km "proj: Dotfiles"]]
                  [:o [:km "edit: Zsh functions"]]
                  [:i [:km "edit: Aliases"]]]}
@@ -376,8 +377,7 @@
                  [:a [:km "Open Work Trello"]]
                  [:s [:km "Open LA Trello"]]
                  [:c [:km "Open Courses Trello"]]
-                 [:r [:km "Open 2Do PR"]]
-                 [:j [:km "Clear todo"]]
+                 [:j [:km "Open 2Do PR"]]
                  [:k [:km "Open 2Do Today"]]
                  [:l [:km "Open 2Do Later"]]
                  [:n [:km "Open 2Do Clean"]]
@@ -463,8 +463,8 @@
                  [:##m :!Cright_arrow]
                  [:comma :!COS8] ; Selection -> SnippetsLab
                  [:semicolon :!TCclose_bracket] ; Search SnippetsLab library with assistant
-                 [:open_bracket [:km "Selected text -> TODO"]]
                  [:period [:km "Tasks from apps -> TODO"]]
+                 [:slash [:km "Selected text -> TODO"]]
                  [:o :!CTO9]]} ; Search Typinator
         {:des "dkey (mouse)"
          :rules [:d-mode
@@ -473,7 +473,8 @@
                  [:k {:mkey {:vwheel -60}}] ; Scroll up
                  ;[:l {:mkey {:vwheel 60}}] ; Scroll right TODO:
                  ;[:h {:mkey {:vwheel -60}}] ; Scroll left TODO:
-                 [:a :!CT6] ; Smart zoom
+                 [:f :!CT6] ; Smart zoom
+                 [:a [:!Cc :!Ctab]] ; Copy & activate previous app
                  [:m [:km "Google Searchio selected word"]]
                  ;[:n [:km "Select line and google"]]
                  [:semicolon [:km "Google selected word"]]
@@ -491,15 +492,19 @@
         {:des "fkey (essential)"
          :rules [:f-mode
                  [:spacebar [:km "edit: Last iTerm tab"]]
-                 [:e :!CO8] ; Alfred clipboard history search
-                 [:semicolon [:km "open: MindNode"]]
-                 [:period [:km "edit: Karabiner"]]
-                 [:a [:alfred "new todo" "nikivi.todo.task"]]
-                 [:d [:km "New MindNode node"]]
-                 ;[:s [:km "Move todo to MindNode"]]
-                 [:s [:km "edit: clones"]]
-                 [:slash [:km "edit: Darwin Nix"]]
+                 [:1 [:km "Uppercase selected text"]]
+                 [:2 :!CSO5] ; PixelSnap
+                 [:3 :!CTOp] ; Sip color picker
+                 [:4 [:km "Lowercase selected text"]]
+                 [:q [:km "edit: clones"]]
                  [:w :!CTO4] ; Alfred file action
+                 [:e :!CO8] ; Alfred clipboard history search
+                 [:a [:alfred "new todo" "nikivi.todo.task"]]
+                 [:s [:km "Clear todo"]]
+                 [:d [:km "Move todo to MindNode"]]
+                 [:semicolon [:km "open: MindNode"]]
+                 [:quote [:km "New MindNode node"]]
+                 [:period [:km "edit: Karabiner"]]
                  [:j [:km "edit: 1st iTerm tab"]]
                  [:h [:km "Make markdown link from selection {link}"]]
                  [:p :!CTOc] ; Sleep
@@ -507,11 +512,6 @@
                  [:open_bracket :!CT5] ; Turn display on/off
                  [:comma  [:km "Add safari link to selected markdown text"]]
                  [:k :return_or_enter]
-                 [:r [:!Cc :!Ctab]] ; Copy & activate previous app
-                 [:q [:km "Lowercase selected text"]]
-                 [:1 [:km "Uppercase selected text"]]
-                 [:2 :!CSO5] ; PixelSnap
-                 [:3 :!CTOp] ; Sip color picker
                  [:l :!Creturn_or_enter]
                  [:m :!Sreturn_or_enter]
                  [:i :!Treturn_or_enter]
