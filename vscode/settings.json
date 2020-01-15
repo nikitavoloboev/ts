@@ -59,7 +59,7 @@
   "debug.showInStatusBar": "never",
   "debug.toolBarLocation": "hidden",
   // Fonts
-  "editor.fontFamily": "Fira Code",
+  "editor.fontFamily": "JetBrains Mono",
   "editor.fontLigatures": true,
   "editor.fontSize": 15,
   // Search

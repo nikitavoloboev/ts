@@ -380,7 +380,7 @@
     "command": "-workbench.action.navigateForward"
   },
   {
-    "key": "ctrl+s",
+    "key": "ctrl+c",
     "command": "workbench.action.focusSideBar"
   },
   {
