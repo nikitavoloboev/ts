@@ -300,6 +300,10 @@
                  [:p [:km "w: NPM"]]]}
         {:des "ikey (symbols)"
          :rules [:i-mode
+                 ;[:q :!Sclose_bracket] ; }
+                 ;[:w :!S0] ; )
+                 ;[:o :close_bracket] ; ]
+                 ;[:period :!Speriod] ; >
                  [:q :!Sopen_bracket]
                  [:t :quote]
                  [:r :!Squote]
@@ -496,14 +500,15 @@
                  [:2 :!CSO5] ; PixelSnap
                  [:3 :!CTOp] ; Sip color picker
                  [:4 [:km "Lowercase selected text"]]
-                 [:q [:km "Move todo to MindNode"]]
+                 ;[:q [:km "Move todo to MindNode"]]
                  [:w :!CTO4] ; Alfred file action
                  [:e :!CO8] ; Alfred clipboard history search
                  [:a [:alfred "new todo" "nikivi.todo.task"]]
                  [:s [:km "Clear todo"]]
                  [:d [:km "edit: clones"]]
-                 [:semicolon [:km "open: MindNode"]]
-                 [:quote [:km "New MindNode node"]]
+                 ;[:semicolon [:km "open: MindNode"]]
+                 ;[:quote [:km "New MindNode node"]]
+                 [:semicolon [:km "open: Telegram"]]
                  [:period [:km "edit: Karabiner"]]
                  [:j [:km "edit: 1st iTerm tab"]]
                  [:h [:km "Make markdown link from selection {link}"]]
@@ -557,23 +562,25 @@
         {:des "zkey (chat)"
          :rules [:z-mode
                  [:spacebar :!CSOz] ; Selection -> Twitter
-                 [:j [:km "New tweet"]]
-                 [:n [:km "New tweet with current URL"]]
-                 [:v [:km "open: Tweetbot"]]
-                 [:f [:km "open: Spark"]]
-                 [:c [:km "open: Contacts"]]
-                 [:d [:km "New Spark email"]]
-                 [:g [:alfred "search contacts" "nikivi.search.content"]]
-                 [:h [:km "Create new contact"]]
-                 [:comma [:km "open: FaceTime"]]
-                 [:period [:km "Search Tweetbot"]]
-                 ;[:i [:km "open: Caprine"]] ; TODO: replace with native app when it comes out
-                 [:semicolon [:km "open: Slack"]]
-                 [:k [:km "open: Telegram"]]
-                 [:e [:km "open: Telegram"]]
-                 [:m [:km "open: Textual"]]
-                 [:o [:km "open: Zoom"]]
-                 [:l [:km "open: Discord"]]]}
+                 [:j [:km "w: YouTube"]]
+                 [:k [:km "w: GitHub"]]
+                 [:semicolon [:km "w: GitHub (issues)"]]
+                 [:r [:km "w: Spectrum"]]
+                 ;[:period [:km "w: GitHub (prs)"]]
+                 ;[:o [:km "w: CodeSandbox"]]
+                 [:a [:km "w: Google Docs"]]
+                 [:i [:km "w: GitHub (notifications)"]]
+                 ;[:l [:km "w: GitLab"]]
+                 ;[:period [:km "w: GitLab Activity"]]
+                 ;[:r [:km "w: Arxiv"]]
+                 ;[:a [:km "w: Google"]]
+                 [:m [:km "w: Medium"]]
+                 ;[:s [:km "w: Observable"]]
+                 [:s [:km "w: AWS"]]
+                 ;[:s [:km "w: GCP"]] TODO:
+                 ;[:f [:km "w: GitHub (pulls)"]] ; TODO: make it work
+                 ;[:period [:km "w: regex101"]]
+                 [:s [:km "w: Stack Overflow"]]]}
         {:des "xkey (spotify)"
          :rules [:x-mode
                  [:o [:km "Share current song on Twitter"]]
@@ -760,28 +767,22 @@
           :rules[:elixir-mode
                  [:a [:!Si :!So :period :p :u :t :s :!S9 :!S0 :left_arrow]] ; -> IO.puts()
                  [:v [:e :l :i :x :i :r :spacebar]]]} ; -> elixir
-        {:des "spacekey (top sites)"
+        {:des "spacekey (chat)"
          :rules [:spacebar-mode
-                 [:q :!Sclose_bracket] ; }
-                 [:w :!S0] ; )
-                 [:o :close_bracket] ; ]
-                 [:period :!Speriod] ; >
-                 [:j [:km "w: YouTube"]]
-                 [:k [:km "w: GitHub"]]
-                 [:semicolon [:km "w: GitHub (issues)"]]
-                 [:r [:km "w: Spectrum"]]
-                 ;[:period [:km "w: GitHub (prs)"]]
-                 ;[:o [:km "w: CodeSandbox"]]
-                 [:a [:km "w: Google Docs"]]
-                 [:i [:km "w: GitHub (notifications)"]]
-                 ;[:l [:km "w: GitLab"]]
-                 ;[:period [:km "w: GitLab Activity"]]
-                 ;[:r [:km "w: Arxiv"]]
-                 ;[:a [:km "w: Google"]]
-                 [:m [:km "w: Medium"]]
-                 ;[:s [:km "w: Observable"]]
-                 [:s [:km "w: AWS"]]
-                 ;[:s [:km "w: GCP"]] TODO:
-                 ;[:f [:km "w: GitHub (pulls)"]] ; TODO: make it work
-                 ;[:period [:km "w: regex101"]]
-                 [:s [:km "w: Stack Overflow"]]]}]}
+                 [:j [:km "New tweet"]]
+                 [:n [:km "New tweet with current URL"]]
+                 [:v [:km "open: Tweetbot"]]
+                 [:f [:km "open: Spark"]]
+                 [:c [:km "open: Contacts"]]
+                 [:d [:km "New Spark email"]]
+                 [:g [:alfred "search contacts" "nikivi.search.content"]]
+                 [:h [:km "Create new contact"]]
+                 [:comma [:km "open: FaceTime"]]
+                 [:period [:km "Search Tweetbot"]]
+                 [:semicolon [:km "open: Slack"]]
+                 ;[:i [:km "open: Caprine"]] ; TODO: replace with native app when it comes out
+                 [:semicolon [:km "open: Slack"]]
+                 [:m [:km "open: Textual"]]
+                 [:o [:km "open: Zoom"]]
+                 [:l [:km "open: Discord"]]]}
+]}
