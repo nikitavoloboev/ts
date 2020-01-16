@@ -769,19 +769,19 @@
                  [:v [:e :l :i :x :i :r :spacebar]]]} ; -> elixir
         {:des "spacekey (chat)"
          :rules [:spacebar-mode
+                 [:e [:alfred "search contacts" "nikivi.search.content"]]
                  [:i [:km "New tweet with current URL"]]
+                 [:o [:km "open: Zoom"]]
                  [:j [:km "New tweet"]]
                  [:k [:km "open: Telegram"]]
                  [:f [:km "open: Spark"]]
                  [:c [:km "open: Contacts"]]
                  [:d [:km "New Spark email"]]
-                 [:g [:alfred "search contacts" "nikivi.search.content"]]
                  [:h [:km "Create new contact"]]
-                 [:comma [:km "open: FaceTime"]]
+                 [:a [:km "open: Textual"]]
+                 [:s [:km "open: FaceTime"]]
                  [:period [:km "Search Tweetbot"]]
                  [:semicolon [:km "open: Slack"]]
                  ;[:i [:km "open: Caprine"]] ; TODO: replace with native app when it comes out
-                 [:a [:km "open: Textual"]]
-                 [:o [:km "open: Zoom"]]
                  [:l [:km "open: Discord"]]]}
 ]}
