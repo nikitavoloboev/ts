@@ -496,12 +496,12 @@
                  [:2 :!CSO5] ; PixelSnap
                  [:3 :!CTOp] ; Sip color picker
                  [:4 [:km "Lowercase selected text"]]
-                 [:q [:km "edit: clones"]]
+                 [:q [:km "Move todo to MindNode"]]
                  [:w :!CTO4] ; Alfred file action
                  [:e :!CO8] ; Alfred clipboard history search
                  [:a [:alfred "new todo" "nikivi.todo.task"]]
                  [:s [:km "Clear todo"]]
-                 [:d [:km "Move todo to MindNode"]]
+                 [:d [:km "edit: clones"]]
                  [:semicolon [:km "open: MindNode"]]
                  [:quote [:km "New MindNode node"]]
                  [:period [:km "edit: Karabiner"]]
@@ -622,7 +622,7 @@
                  [:0 [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:37i9dQZEVXcMHpP6EcIqNe"]] ; Discover Weekly playlist
                  [:open_bracket [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ERn0U4qZIKC8Dy7RrMMsn"]] ; Likes playlist
                  [:close_bracket [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:2N82DnDsPGMnpJhN8sVFJu"]] ; Bliss playlist
-                 [:quote [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:1uIjVysHAMBXEr8Arx7tfT"]] ; Focus song
+                 [:quote [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:0sPKC0bVN2nQzPGZ4csHh9"]] ; Focus song
                  [:slash [:km "Play/pause Noizio/Spotify"]]
                  [:period [:km "Play/pause Spotify"]]
                  [:comma [:km "Noizio settings"]]

@@ -95,6 +95,8 @@ alias ws='workflow-install -s workflow' # Symlink `source` directory
 alias c='docker'
 alias cs='docker ps'
 alias cu='docker-compose up'
+alias ca='docker container ls'
+alias cas='docker stop $(docker ps -a -q)' # Stop running all containers
 
 # Kubernetes
 alias k='kubectl'
