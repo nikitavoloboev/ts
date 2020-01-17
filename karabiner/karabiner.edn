@@ -590,7 +590,7 @@
                  [:period [:alfred "youtube_search_current_track" "com.vdesabou.spotify.mini.player"]]
                  [:comma [:alfred "reddit_search_current_track" "com.vdesabou.spotify.mini.player"]]
                  [:m [:alfred "add_current_track_to" "com.vdesabou.spotify.mini.player"]]
-                 [:open_bracket [:alfred "add_current_track_to_alfred_playlist_or_your_music" "com.vdesabou.spotify.mini.player"]] ; Add song to Likes playlist
+                 [:semicolon [:alfred "add_current_track_to_alfred_playlist_or_your_music" "com.vdesabou.spotify.mini.player"]] ; Add song to Likes playlist
                  [:close_bracket [:alfred "add_current_track_to" "com.vdesabou.spotify.mini.player" "spotify:playlist:2N82DnDsPGMnpJhN8sVFJu"]] ; Add song to Bliss playlist
                  [:p [:alfred "add_current_track_to" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ESjwZeTcHOWzY3FYO5zs5"]] ; Add song to Focus playlist
                  [:b [:alfred "show_playlists" "com.vdesabou.spotify.mini.player"]]
@@ -626,7 +626,7 @@
                  [:0 [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:37i9dQZEVXcMHpP6EcIqNe"]] ; Discover Weekly playlist
                  [:open_bracket [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ERn0U4qZIKC8Dy7RrMMsn"]] ; Likes playlist
                  [:close_bracket [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:2N82DnDsPGMnpJhN8sVFJu"]] ; Bliss playlist
-                 [:quote [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:0sPKC0bVN2nQzPGZ4csHh9"]] ; Focus song
+                 [:quote [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:1vyMyU9wWoMqtX3sNjTveK"]] ; Focus song
                  [:slash [:km "Play/pause Noizio/Spotify"]]
                  [:period [:km "Play/pause Spotify"]]
                  [:comma [:km "Noizio settings"]]
