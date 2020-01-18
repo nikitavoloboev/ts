@@ -561,7 +561,7 @@
         {:des "zkey (chat)"
          :rules [:z-mode
                  [:spacebar :!CSOz] ; Selection -> Twitter
-                 [:n [:km "New tweet with current URL"]]
+                 [:i [:km "New tweet with current URL"]]
                  [:o [:km "open: Zoom"]]
                  [:j [:km "New tweet"]]
                  [:k [:km "open: Telegram"]]

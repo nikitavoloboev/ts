@@ -15,7 +15,7 @@ alias bi='brew install'
 # Watch files & run cmds
 alias wa='watchexec --exts'
 alias wg='watchexec --exts go go run .'
-alias wgg='cd ~/src/build-to-learn/go && watchexec --restart --exts go go run .'
+alias wG='cd ~/src/build-to-learn/go && watchexec --restart --exts go go run .'
 alias wgr='watchexec --restart --exts go go run'
 alias wt='watchexec --exts py python3'
 alias wn='watchexec --exts js node'
@@ -176,7 +176,7 @@ alias net="ping ya.ru | grep -E --only-match --color=never '[0-9\.]+ ms'"       
 alias history-stat="history 0 | awk '{print \$2}' | sort | uniq -c | sort -n -r | head"
 alias ba="bash"
 
-# easier navigation
+# Easier navigation
 alias .="cd -" # Go back to previous dir
 alias ..="cd .."
 alias ...="cd ../.."
