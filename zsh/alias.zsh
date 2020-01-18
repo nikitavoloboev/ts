@@ -12,13 +12,17 @@ alias nss="nix-shell --run zsh -p"
 # Brew
 alias bi='brew install'
 
-# General
+# Watch files & run cmds
 alias wa='watchexec --exts'
-alias wg='watchexec --exts go go run'
+alias wg='watchexec --exts go go run .'
+alias wgg='cd ~/src/build-to-learn/go && watchexec --restart --exts go go run .'
 alias wgr='watchexec --restart --exts go go run'
 alias wt='watchexec --exts py python3'
 alias wn='watchexec --exts js node'
 alias wtex='watchexec --exts .tex'
+# alias w.='watchexec --restart --exts go go run .'
+
+# General
 alias f='open .'
 alias pb='pbcopy'
 alias te='tree'
@@ -173,6 +177,7 @@ alias history-stat="history 0 | awk '{print \$2}' | sort | uniq -c | sort -n -r 
 alias ba="bash"
 
 # easier navigation
+alias .="cd -" # Go back to previous dir
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."

@@ -118,7 +118,8 @@
 		"smartphone",
 		"autofill",
 		"todo",
-		"emojis"
+		"emojis",
+		"cmds"
 	],
 	"auto_format_on_save": true,
 	"binary_file_patterns":
