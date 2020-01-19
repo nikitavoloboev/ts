@@ -14,12 +14,12 @@ alias bi='brew install'
 
 # Watch files & run cmds
 alias wa='watchexec --exts'
-alias wg='echo -- && watchexec --exts go go run .'
-alias wG='cd ~/src/build-to-learn/go && echo -- && watchexec --restart --exts go go run .'
-alias wgr='echo -- && watchexec --restart --exts go go run'
-alias wt='echo -- && watchexec --exts py python3'
-alias wn='echo -- && watchexec --exts js node'
-alias wtex='echo -- && watchexec --exts .tex'
+alias wg='watchexec --exts go "echo -- && go run ."'
+alias wG='cd ~/src/build-to-learn/go && watchexec --restart --exts "go echo -- && go run ."'
+alias wgr='watchexec --restart --exts go "echo -- && go run"'
+alias wt='watchexec --exts py "echo -- && python3"'
+alias wn='watchexec --exts js "echo -- && node"'
+alias wtex='watchexec --exts "echo -- && .tex"'
 
 # General
 alias f='open .'
