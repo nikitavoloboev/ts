@@ -626,7 +626,7 @@
                  [:0 [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:37i9dQZEVXcMHpP6EcIqNe"]] ; Discover Weekly playlist
                  [:open_bracket [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ERn0U4qZIKC8Dy7RrMMsn"]] ; Likes playlist
                  [:close_bracket [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:2N82DnDsPGMnpJhN8sVFJu"]] ; Bliss playlist
-                 [:quote [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:1vyMyU9wWoMqtX3sNjTveK"]] ; Focus song
+                 [:quote [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:1hW0VwYPGPzkz2CIXVIY78"]] ; Focus song
                  [:slash [:km "Play/pause Noizio/Spotify"]]
                  [:period [:km "Play/pause Spotify"]]
                  [:comma [:km "Noizio settings"]]
