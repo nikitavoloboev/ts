@@ -744,7 +744,7 @@
                 [:d [:r :e :t :u :r :n :spacebar]] ; -> return
                 [:f [:!Cf :f :m :t :period :p :return_or_enter]] ; -> search fmt.p in file
                 [:g [:!STsemicolon]] ; Selection -> Go Playground
-                [:b [:f :m :t :period :!Sp :r :i :n :t :l :n :!S9 :!S0 :left_arrow :!Squote :hyphen :hyphen]] ; -> fmt.Println()
+                [:b [:f :m :t :period :!Sp :r :i :n :t :l :n :!S9 :!S0 :left_arrow :!Squote :hyphen :hyphen]] ; -> fmt.Println("--")
                 [:v [:g :o :l :a :n :g :spacebar]]]} ; -> golang
         {:des "pydot"
           :rules[:py-mode
