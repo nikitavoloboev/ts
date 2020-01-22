@@ -743,7 +743,8 @@
                 [:d [:r :e :t :u :r :n :spacebar]] ; -> return
                 [:f [:!Cf :f :m :t :period :p :return_or_enter]] ; -> search fmt.p in file
                 [:g [:i :f :spacebar :e :r :r :spacebar :!S1 :equal_sign :spacebar :n :i :l :spacebar :!Sopen_bracket :return_or_enter]] ; -> if err != nil {}
-                [:z [:f :m :t :period :!Sp :r :i :n :t :l :n :!S9 :!S0 :left_arrow :!Squote :hyphen :hyphen]] ; -> fmt.Println("--")
+                [:z [:l :o :g :period :!Sp :r :i :n :t :l :n :!S9 :!S0 :left_arrow]] ; -> log.Println()
+                [:x [:f :m :t :period :!Sp :r :i :n :t :l :n :!S9 :!S0 :left_arrow :!Squote :hyphen :hyphen]] ; -> fmt.Println("--")
                 [:c [:!STsemicolon]] ; Selection -> Go Playground
                 [:b [:l :o :g :period :!Sf :a :t :a :l :!S9 :e :r :r :!S0]] ; -> log.Fatal(err)
                 [:v [:g :o :l :a :n :g :spacebar]]]} ; -> golang

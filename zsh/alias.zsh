@@ -15,6 +15,7 @@ alias bi='brew install'
 # Watch files & run cmds
 alias wa='watchexec --exts'
 alias wg='watchexec --exts go "echo -- && go run ."'
+alias wf='watchexec --exts go "alfred build"'
 alias wG='cd ~/src/build-to-learn/go && watchexec --restart --exts "go echo -- && go run ."'
 alias wgr='watchexec --restart --exts go "echo -- && go run"'
 alias wt='watchexec --exts py "echo -- && python3"'
@@ -89,7 +90,6 @@ alias p='python3'
 alias p2='python2'
 
 # Alfred
-alias wf='alfred build'
 alias wfl='alfred link'
 alias wfa='alfred pack -o ~/Desktop'
 alias ws='workflow-install -s workflow' # Symlink `source` directory
