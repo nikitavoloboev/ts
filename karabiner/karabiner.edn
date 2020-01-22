@@ -557,7 +557,7 @@
                  [:f [:km "Commit home"]]
                  [:c [:km "Commit build to learn"]]
                  [:d [:km "Commit dotfiles"]]
-                 [:v [:km "Commit knowledge"]]]}
+                 [:v [:km "Commit wiki"]]]}
         {:des "zkey (chat)"
          :rules [:z-mode
                  [:spacebar :!CSOz] ; Selection -> Twitter
@@ -588,11 +588,11 @@
                  [:u [:alfred "artist_radio" "com.vdesabou.spotify.mini.player"]]
                  [:k [:alfred "show_current_track" "com.vdesabou.spotify.mini.player"]]
                  [:period [:alfred "youtube_search_current_track" "com.vdesabou.spotify.mini.player"]]
-                 [:comma [:alfred "reddit_search_current_track" "com.vdesabou.spotify.mini.player"]]
+                 [:slash [:alfred "reddit_search_current_track" "com.vdesabou.spotify.mini.player"]]
+                 [:comma [:alfred "add_current_track_to" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ESjwZeTcHOWzY3FYO5zs5"]] ; Add song to Focus playlist
                  [:m [:alfred "add_current_track_to" "com.vdesabou.spotify.mini.player"]]
                  [:semicolon [:alfred "add_current_track_to_alfred_playlist_or_your_music" "com.vdesabou.spotify.mini.player"]] ; Add song to Likes playlist
                  [:close_bracket [:alfred "add_current_track_to" "com.vdesabou.spotify.mini.player" "spotify:playlist:2N82DnDsPGMnpJhN8sVFJu"]] ; Add song to Bliss playlist
-                 [:p [:alfred "add_current_track_to" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ESjwZeTcHOWzY3FYO5zs5"]] ; Add song to Focus playlist
                  [:b [:alfred "show_playlists" "com.vdesabou.spotify.mini.player"]]
                  [:n [:alfred "remove_current_track_from" "com.vdesabou.spotify.mini.player"]]]}
         {:des "ckey (test)"
@@ -622,14 +622,13 @@
                  [:s [:km "Test"]]
                  [:d [:km "Make global macro"]]
                  [:semicolon :!TS0] ; Turn on/off Noizio
-                 [:p [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ESjwZeTcHOWzY3FYO5zs5"]] ; Focus playlist
+                 [:comma [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ESjwZeTcHOWzY3FYO5zs5"]] ; Focus playlist
                  [:0 [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:37i9dQZEVXcMHpP6EcIqNe"]] ; Discover Weekly playlist
                  [:open_bracket [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ERn0U4qZIKC8Dy7RrMMsn"]] ; Likes playlist
                  [:close_bracket [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:2N82DnDsPGMnpJhN8sVFJu"]] ; Bliss playlist
                  [:quote [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:1r8kRDtkDZPhHvP0dwaYDd"]] ; Focus song
-                 [:slash [:km "Play/pause Noizio/Spotify"]]
                  [:period [:km "Play/pause Spotify"]]
-                 [:comma [:km "Noizio settings"]]
+                 [:slash [:km "Noizio settings"]]
                  [:i :display_brightness_decrement]
                  [:o :display_brightness_increment]
                  [:h :vk_consumer_previous]

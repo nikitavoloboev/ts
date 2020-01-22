@@ -209,9 +209,9 @@ alias drp='cd ~/Dropbox'
 alias dbin='cd /usr/local/bin/'
 
 # Config
-alias d..='cd ~/.config'
-alias db='cd ~/.dotfiles/bin'
-alias dh='cd ~/.hammerspoon'
+alias db='cd /usr/local/bin'
+alias dB='cd ~/.dotfiles/bin'
+alias d.='cd ~/.config'
 
 # Utilities
 alias ungit="find . -name '.git' -exec rm -rf {} \;" # Remove git from a project
