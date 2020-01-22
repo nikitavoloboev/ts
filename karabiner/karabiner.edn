@@ -626,7 +626,7 @@
                  [:0 [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:37i9dQZEVXcMHpP6EcIqNe"]] ; Discover Weekly playlist
                  [:open_bracket [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ERn0U4qZIKC8Dy7RrMMsn"]] ; Likes playlist
                  [:close_bracket [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:2N82DnDsPGMnpJhN8sVFJu"]] ; Bliss playlist
-                 [:quote [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:1hW0VwYPGPzkz2CIXVIY78"]] ; Focus song
+                 [:quote [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:1r8kRDtkDZPhHvP0dwaYDd"]] ; Focus song
                  [:slash [:km "Play/pause Noizio/Spotify"]]
                  [:period [:km "Play/pause Spotify"]]
                  [:comma [:km "Noizio settings"]]
@@ -743,9 +743,10 @@
                 [:s [:!Ssemicolon :equal_sign :spacebar]] ; -> := 
                 [:d [:r :e :t :u :r :n :spacebar]] ; -> return
                 [:f [:!Cf :f :m :t :period :p :return_or_enter]] ; -> search fmt.p in file
-                [:g [:!STsemicolon]] ; Selection -> Go Playground
-                [:c [:i :f :spacebar :e :r :r :spacebar :!S1 :equal_sign :spacebar :n :i :l :spacebar :!Sopen_bracket :return_or_enter]] ; -> if err != nil {}
-                [:b [:f :m :t :period :!Sp :r :i :n :t :l :n :!S9 :!S0 :left_arrow :!Squote :hyphen :hyphen]] ; -> fmt.Println("--")
+                [:g [:i :f :spacebar :e :r :r :spacebar :!S1 :equal_sign :spacebar :n :i :l :spacebar :!Sopen_bracket :return_or_enter]] ; -> if err != nil {}
+                [:z [:f :m :t :period :!Sp :r :i :n :t :l :n :!S9 :!S0 :left_arrow :!Squote :hyphen :hyphen]] ; -> fmt.Println("--")
+                [:c [:!STsemicolon]] ; Selection -> Go Playground
+                [:b [:l :o :g :period :!Sf :a :t :a :l :!S9 :e :r :r :!S0]] ; -> log.Fatal(err)
                 [:v [:g :o :l :a :n :g :spacebar]]]} ; -> golang
         {:des "pydot"
           :rules[:py-mode
