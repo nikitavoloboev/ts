@@ -529,7 +529,7 @@
                  [:e :!CT3] ; Search bartender menu items
                  [:w :!CO0] ; Show Dropzone dropdown
                  ;[:j :!CT3] ; TODO: move window to different screen (iPad/monitor)
-                 [:d :!COd] ; Show/hide dock
+                 ;[:d :!COd] ; Show/hide dock
                  [:k :!COSf] ; Maximize window
                  [:n :!CTOg] ; Turn on/off notifications
                  [:m :!COslash] ; Show/hide notification centre
