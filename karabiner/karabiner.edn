@@ -506,6 +506,7 @@
                  [:a [:alfred "new todo" "nikivi.todo.task"]]
                  [:s [:km "Clear todo"]]
                  [:d [:km "edit: clones"]]
+                 ;[:semicolon :!CTOi] ; Tester
                  ;[:semicolon [:km "open: MindNode"]]
                  ;[:quote [:km "New MindNode node"]]
                  [:period [:km "edit: Karabiner"]]
@@ -673,13 +674,14 @@
                  ;[:v [:alfred "search pinboard" "nikivi.search.the.web"]] ; TODO: topics/search/more?
                  [:t [:alfred "search twitter" "nikivi.search.the.web"]]
                  [:c [:alfred "search wiki" "nikivi.mind"]]
+                 [:v [:alfred "search links" "nikivi.mind"]]
+                 [:h [:alfred "search hn" "nikivi.search.the.web"]]
                  [:tab [:alfred "search lists" "nikivi.awesome.lists"]]
                  [:x [:alfred "search stack" "net.deanishe.alfred-stackoverflow"]]
                  [:q [:alfred "ssh" "net.deanishe.alfred-ssh"]]
                  [:e [:alfred "search subs" "net.deanishe.alfred-reddit"]]
                  [:b [:alfred "search bookmarks" "net.deanishe.alfred.safari"]]
                  [:r [:alfred "search reddit" "nikivi.search.the.web"]]
-                 [:v [:alfred "search hn" "nikivi.search.the.web"]]
                  [:spacebar [:alfred "search history" "net.deanishe.alfred.safari"]]
                  [:d [:alfred "search packages" "com.sindresorhus.npms"]]
                  [:z [:alfred "search lobsters" "nikivi.search.the.web"]]
@@ -767,7 +769,7 @@
           :rules[:elixir-mode
                  [:a [:!Si :!So :period :p :u :t :s :!S9 :!S0 :left_arrow]] ; -> IO.puts()
                  [:v [:e :l :i :x :i :r :spacebar]]]} ; -> elixir
-        {:des "spacekey (chat)"
+        {:des "spacekey (websites)"
          :rules [:spacebar-mode
                  [:j [:km "w: YouTube"]]
                  [:k [:km "w: GitHub"]]

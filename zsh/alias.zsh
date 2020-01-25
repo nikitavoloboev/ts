@@ -128,6 +128,7 @@ alias jd='yarn add --dev'
 
 # Go
 alias o='go'
+alias oi='go mod init github.com/nikitavoloboev/' # TODO: grab current dir and use it as name
 alias org='richgo'
 alias og.='go get ./...' # go get all packages for current project
 alias ot='playgo'
