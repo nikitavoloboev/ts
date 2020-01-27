@@ -478,8 +478,8 @@
                  [:k {:mkey {:vwheel -60}}] ; Scroll up
                  ;[:l {:mkey {:vwheel 60}}] ; Scroll right TODO:
                  ;[:h {:mkey {:vwheel -60}}] ; Scroll left TODO:
-                 [:f :!CT6] ; Smart zoom
                  [:a [:!Cc :!Ctab]] ; Copy & activate previous app
+                 [:f :!CT6] ; Smart zoom
                  [:m [:km "Google Searchio selected word"]]
                  ;[:n [:km "Select line and google"]]
                  [:semicolon [:km "Google selected word"]]
@@ -496,7 +496,6 @@
                  [:period :!CTO3]]} ; Mission control
         {:des "fkey (essential)"
          :rules [:f-mode
-                 [:spacebar [:km "edit: 2nd iTerm tab"]]
                  [:1 [:km "Uppercase selected text"]]
                  [:2 :!CSO5] ; PixelSnap
                  [:3 :!CTOp] ; Sip color picker
@@ -504,9 +503,10 @@
                  [:w :!CTO4] ; Alfred file action
                  [:e :!CO8] ; Alfred clipboard history search
                  [:a [:km "open: MindNode"]]
-                 [:s [:km "New MindNode node"]]
+                 [:s [:km "edit: 2nd iTerm tab"]]
+                 [:d [:km "New MindNode node"]]
                  [:j [:km "edit: 1st iTerm tab"]]
-                 [:period [:km "edit: Last iTerm tab"]]
+                 ;[:period [:km "edit: Last iTerm tab"]]
                  [:semicolon [:km "edit: Karabiner"]]
                  ;[:q [:km "Move todo to MindNode"]]
                  ;[:a [:alfred "new todo" "nikivi.todo.task"]]
@@ -526,10 +526,13 @@
         {:des "gkey (actions)"
          :rules [:g-mode
                  [:spacebar :!CT8] ; Selection -> Dictionary (wiki)
+                 [:w [:km "Go to test macro"]]
+                 [:e [:km "Test"]]
+                 [:d [:km "Make global macro"]]
                  [:j :!Cgrave_accent_and_tilde] ; Switch between active windows  (go down)
                  [:r :!CSgrave_accent_and_tilde] ; Switch between active windows (go up)
                  [:e :!CT3] ; Search bartender menu items
-                 [:w :!CO0] ; Show Dropzone dropdown
+                 [:q :!CO0] ; Show Dropzone dropdown
                  ;[:j :!CT3] ; TODO: move window to different screen (iPad/monitor)
                  ;[:d :!COd] ; Show/hide dock
                  [:k :!COSf] ; Maximize window
@@ -620,15 +623,12 @@
                  [:r [:km "Repeat Spotify song"]]
                  [:u :!COS6] ; Toggle Night Shift on/off.
                  [:j :mute]
-                 [:a [:km "Go to test macro"]]
-                 [:d [:km "Test"]]
-                 [:z [:km "Make global macro"]]
                  [:semicolon :!TS0] ; Turn on/off Noizio
                  [:comma [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ESjwZeTcHOWzY3FYO5zs5"]] ; Focus playlist
-                 [:0 [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:37i9dQZEVXcMHpP6EcIqNe"]] ; Discover Weekly playlist
+                 [:quote [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:37i9dQZEVXcMHpP6EcIqNe"]] ; Discover Weekly playlist
                  [:open_bracket [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ERn0U4qZIKC8Dy7RrMMsn"]] ; Likes playlist
                  [:close_bracket [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:2N82DnDsPGMnpJhN8sVFJu"]] ; Bliss playlist
-                 [:quote [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:1r8kRDtkDZPhHvP0dwaYDd"]] ; Focus song
+                 [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:1r8kRDtkDZPhHvP0dwaYDd"]] ; Focus song
                  [:s [:km "Play/pause Spotify"]]
                  [:slash [:km "Noizio settings"]]
                  [:i :display_brightness_decrement]
