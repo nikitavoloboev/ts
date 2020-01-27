@@ -526,11 +526,11 @@
         {:des "gkey (actions)"
          :rules [:g-mode
                  [:spacebar :!CT8] ; Selection -> Dictionary (wiki)
-                 [:w [:km "Go to test macro"]]
                  [:e [:km "Test"]]
+                 [:r [:km "Go to test macro"]]
                  [:d [:km "Make global macro"]]
                  [:j :!Cgrave_accent_and_tilde] ; Switch between active windows  (go down)
-                 [:r :!CSgrave_accent_and_tilde] ; Switch between active windows (go up)
+                 [:w :!CSgrave_accent_and_tilde] ; Switch between active windows (go up)
                  [:e :!CT3] ; Search bartender menu items
                  [:q :!CO0] ; Show Dropzone dropdown
                  ;[:j :!CT3] ; TODO: move window to different screen (iPad/monitor)
