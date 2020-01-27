@@ -501,17 +501,17 @@
                  [:2 :!CSO5] ; PixelSnap
                  [:3 :!CTOp] ; Sip color picker
                  [:4 [:km "Lowercase selected text"]]
-                 ;[:q [:km "Move todo to MindNode"]]
                  [:w :!CTO4] ; Alfred file action
                  [:e :!CO8] ; Alfred clipboard history search
-                 [:a [:alfred "new todo" "nikivi.todo.task"]]
-                 [:s [:km "Clear todo"]]
-                 [:d [:km "edit: clones"]]
-                 ;[:semicolon :!CTOi] ; Tester
-                 ;[:semicolon [:km "open: MindNode"]]
-                 ;[:quote [:km "New MindNode node"]]
-                 [:period [:km "edit: Karabiner"]]
                  [:j [:km "edit: 1st iTerm tab"]]
+                 [:s [:km "edit: 2nd iTerm tab"]]
+                 [:a [:km "open: MindNode"]]
+                 [:semicolon [:km "edit: Karabiner"]]
+                 ;[:q [:km "Move todo to MindNode"]]
+                 ;[:a [:alfred "new todo" "nikivi.todo.task"]]
+                 ;[:s [:km "Clear todo"]]
+                 ;[:semicolon :!CTOi] ; Tester
+                 ;[:quote [:km "New MindNode node"]]
                  [:h [:km "Make markdown link from selection {link}"]]
                  [:p :!CTOc] ; Sleep
                  [:z :!Ospacebar] ; Switch language (Russian <-> English)

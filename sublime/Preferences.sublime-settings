@@ -122,7 +122,8 @@
 		"cmds",
 		"Exercism",
 		"Rekki",
-		"postgres"
+		"postgres",
+		"admin"
 	],
 	"auto_format_on_save": true,
 	"binary_file_patterns":
