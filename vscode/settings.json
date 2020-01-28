@@ -170,6 +170,7 @@
   "vim.easymotionMarkerYOffset": 4,
   // Go
   "go.useLanguageServer": true,
+  "go.useCodeSnippetsOnFunctionSuggest": false,
   "go.languageServerExperimentalFeatures": {
     "diagnostics": true // for build and vet errors as you type
   },

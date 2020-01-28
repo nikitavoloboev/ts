@@ -778,6 +778,7 @@
                  [:r [:km "w: Spectrum"]]
                  ;[:period [:km "w: GitHub (prs)"]]
                  ;[:o [:km "w: CodeSandbox"]]
+                 [:o [:km "w: GoDoc"]]
                  [:a [:km "w: Google Docs"]]
                  [:i [:km "w: GitHub (notifications)"]]
                  ;[:l [:km "w: GitLab"]]
