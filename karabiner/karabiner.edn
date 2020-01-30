@@ -83,8 +83,8 @@
          :rules [[:right_command :right_command nil {:alone :!CTOSspacebar}]]}
         {:des "left cmd -> cmd+tab"
          :rules [[:left_command :left_command nil {:alone :!Ctab}]]}
-        ;{:des "right shift -> Pair Program (Karabiner/VSCodeVim off)"
-        ; :rules [[:right_shift :right_shift nil {:alone [:km "Pair Program (Karabiner/VSCodeVim on/off)"]}]]}
+        {:des "left opt -> Pair Program (Karabiner/VSCodeVim on/off)"
+         :rules [[:left_alt :left_alt nil {:alone [:km "Pair Program (Karabiner/VSCodeVim on/off)"]}]]}
         {:des "jsim"
          :rules [[[:j :k] [:alfred "search google" "net.deanishe.alfred-searchio"]]
                  [[:j :semicolon] [:alfred "search tabs" "net.deanishe.alfred.safari"]]
