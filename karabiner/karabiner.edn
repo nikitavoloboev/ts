@@ -592,12 +592,12 @@
                  [:l [:alfred "song_radio" "com.vdesabou.spotify.mini.player"]]
                  [:u [:alfred "artist_radio" "com.vdesabou.spotify.mini.player"]]
                  [:k [:alfred "show_current_track" "com.vdesabou.spotify.mini.player"]]
-                 [:period [:alfred "youtube_search_current_track" "com.vdesabou.spotify.mini.player"]]
+                 [:comma [:alfred "youtube_search_current_track" "com.vdesabou.spotify.mini.player"]]
                  [:slash [:alfred "reddit_search_current_track" "com.vdesabou.spotify.mini.player"]]
-                 [:quote [:alfred "add_current_track_to" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ESjwZeTcHOWzY3FYO5zs5"]] ; Add song to Focus playlist
                  [:m [:alfred "add_current_track_to" "com.vdesabou.spotify.mini.player"]]
+                 [:period [:alfred "add_current_track_to" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ESjwZeTcHOWzY3FYO5zs5"]] ; Add song to Focus playlist
                  [:semicolon [:alfred "add_current_track_to_alfred_playlist_or_your_music" "com.vdesabou.spotify.mini.player"]] ; Add song to Likes playlist
-                 [:close_bracket [:alfred "add_current_track_to" "com.vdesabou.spotify.mini.player" "spotify:playlist:2N82DnDsPGMnpJhN8sVFJu"]] ; Add song to Bliss playlist
+                 [:quote [:alfred "add_current_track_to" "com.vdesabou.spotify.mini.player" "spotify:playlist:2N82DnDsPGMnpJhN8sVFJu"]] ; Add song to Bliss playlist
                  [:b [:alfred "show_playlists" "com.vdesabou.spotify.mini.player"]]
                  [:n [:alfred "remove_current_track_from" "com.vdesabou.spotify.mini.player"]]]}
         {:des "ckey (test)"
