@@ -447,7 +447,7 @@
                  [:e :tab]
                  [:r :!Stab]
                  [:i :!CTperiod] ; Contexts search active windows
-                 [:p :!COS0] ; Selection -> Typinator snippet
+                 [:period :!COS0] ; Selection -> Typinator snippet
                  ;[:p :!COS9] ; Clipboard -> Typinator snippet
                  [:a :!Cc] ; Copy
                  [:caps_lock :!Cx] ; Cut
@@ -467,10 +467,10 @@
                  [:n :!Cv] ; Paste
                  [:##m :!Cright_arrow]
                  [:comma :!COS8] ; Selection -> SnippetsLab
-                 [:semicolon :!TCclose_bracket] ; Search SnippetsLab library with assistant
+                 ;[:semicolon :!TCclose_bracket] ; Search SnippetsLab library with assistant
                  ;[:period [:km "Tasks from apps -> TODO"]]
                  ;[:slash [:km "Selected text -> TODO"]]
-                 [:o :!CTO9]]} ; Search Typinator
+                 [:semicolon :!CTO9]]} ; Search Typinator
         {:des "dkey (mouse)"
          :rules [:d-mode
                  [:spacebar :!CTq] ; Selection -> Web Searches
