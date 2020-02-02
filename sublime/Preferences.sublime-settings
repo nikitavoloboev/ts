@@ -124,7 +124,8 @@
 		"Rekki",
 		"postgres",
 		"admin",
-		"Redis"
+		"Redis",
+		"cli"
 	],
 	"auto_format_on_save": true,
 	"binary_file_patterns":

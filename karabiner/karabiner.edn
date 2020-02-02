@@ -477,12 +477,11 @@
                  [:spacebar :!CTq] ; Selection -> Web Searches
                  [:j {:mkey {:vwheel 60}}] ; Scroll down
                  [:k {:mkey {:vwheel -60}}] ; Scroll up
-                 ;[:l {:mkey {:vwheel 60}}] ; Scroll right TODO:
-                 ;[:h {:mkey {:vwheel -60}}] ; Scroll left TODO:
                  [:a [:!Cc :!Ctab]] ; Copy & activate previous app
                  [:f :!CT6] ; Smart zoom
+                 [:h :!CTOb] ; Switch to Desktop 2
                  [:m [:km "Google Searchio selected word"]]
-                 ;[:n [:km "Select line and google"]]
+                 [:quote [:km "Select line and google"]]
                  [:semicolon [:km "Google selected word"]]
                  [:i :!Ckeypad_hyphen] ; Zoom out
                  [:o :!Ckeypad_plus] ; Zoom in
