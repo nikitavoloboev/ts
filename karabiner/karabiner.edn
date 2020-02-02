@@ -479,8 +479,8 @@
                  [:k {:mkey {:vwheel -60}}] ; Scroll up
                  [:a [:!Cc :!Ctab]] ; Copy & activate previous app
                  [:f :!CT6] ; Smart zoom
-                 [:h :!CTOb] ; Switch to Desktop 2
-                 [:m [:km "Google Searchio selected word"]]
+                 [:m :!CTOb] ; Switch to Desktop 2
+                 [:w [:km "Google Searchio selected word"]]
                  [:quote [:km "Select line and google"]]
                  [:semicolon [:km "Google selected word"]]
                  [:i :!Ckeypad_hyphen] ; Zoom out
@@ -736,7 +736,7 @@
                   [:k [:right_arrow :spacebar :!Sopen_bracket :return_or_enter]] ; -> {  }
                   [:g [:right_arrow :spacebar :equal_sign :!Speriod :spacebar :!Sopen_bracket :return_or_enter]] ; -> => {}
                   [:z [:spacebar :c :l :a :s :s :!Sn :a :m :e :equal_sign :!Squote :!Squote :left_arrow]] ; -> className=""
-                  [:x [:t :a :c :h :y :o :n :s :spacebar]] ; -> tachyons
+                  ;[:x [:t :a :c :h :y :o :n :s :spacebar]] ; -> tachyons
                   [:c [:spacebar :s :t :y :l :e :equal_sign :!Sopen_bracket :!Sopen_bracket :!Sclose_bracket :!Sclose_bracket :left_arrow :left_arrow]] ; -> style={{}}
                   [:b [:t :y :p :e :s :c :r :i :p :t :spacebar]] ; -> typescript
                   [:v [:j :a :v :a :s :c :r :i :p :t :spacebar]]]} ; -> javascript
