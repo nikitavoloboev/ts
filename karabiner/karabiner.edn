@@ -83,8 +83,8 @@
          :rules [[:right_command :right_command nil {:alone :!CTOSspacebar}]]}
         {:des "left cmd -> cmd+tab"
          :rules [[:left_command :left_command nil {:alone :!Ctab}]]}
-        {:des "left shift -> Pair Program (Karabiner on/off)"
-         :rules [[:left_shift :left_shift nil {:alone [:km "Pair Program (Karabiner on/off)"]}]]}
+        {:des "right shift -> Pair Program (Karabiner on/off)"
+         :rules [[:right_shift :right_shift nil {:alone [:km "Pair Program (Karabiner on/off)"]}]]}
         {:des "jsim"
          :rules [[[:j :k] [:alfred "search google" "net.deanishe.alfred-searchio"]]
                  [[:j :semicolon] [:alfred "search tabs" "net.deanishe.alfred.safari"]]
@@ -196,7 +196,9 @@
                  [:semicolon [:km "open: Tower"]]
                  [:b [:km "open: BetterTouchTool"]]
                  [:a :!OSC1] ; Open Dash
-                 [:r :!CTOSt] ; Open Trello
+                 ;[:r :!CTOSt] ; Open Trello TODO: fix as it's faster
+                 [:r [:km "open: Trello"]]
+                 [:g [:km "open: Paw"]]
                  [:g [:km "open: Paw"]]
                  [:v [:km "open: Figma"]]
                  [:f [:km "open: 2Do"]]
@@ -731,7 +733,7 @@
                   [:s [:equal_sign :!Speriod :spacebar]] ; -> =>
                   [:d [:r :e :t :u :r :n :spacebar]] ; -> return
                   [:f [:!Cf :c :o :n :s :o :l :e :period :l :o :g :!S9 :return_or_enter]] ; -> search console.log( in file
-                  [:j [:right_arrow :spacebar :equal_sign :spacebar]] ; -> = 
+                  [:j [:right_arrow :spacebar :equal_sign :spacebar]] ; -> =
                   [:k [:right_arrow :spacebar :!Sopen_bracket :return_or_enter]] ; -> {  }
                   [:g [:right_arrow :spacebar :equal_sign :!Speriod :spacebar :!Sopen_bracket :return_or_enter]] ; -> => {}
                   [:z [:spacebar :c :l :a :s :s :!Sn :a :m :e :equal_sign :!Squote :!Squote :left_arrow]] ; -> className=""
@@ -742,10 +744,11 @@
         {:des "godot"
          :rules[:go-mode
                 [:a [:f :m :t :period :!Sp :r :i :n :t :l :n :!S9 :!S0 :left_arrow]] ; -> fmt.Println()
-                [:s [:!Ssemicolon :equal_sign :spacebar]] ; -> := 
+                [:s [:!Ssemicolon :equal_sign :spacebar]] ; -> :=
                 [:d [:r :e :t :u :r :n :spacebar]] ; -> return
                 [:f [:!Cf :f :m :t :period :p :return_or_enter]] ; -> search fmt.p in file
                 [:g [:i :f :spacebar :e :r :r :spacebar :!S1 :equal_sign :spacebar :n :i :l :spacebar :!Sopen_bracket :return_or_enter]] ; -> if err != nil {}
+                [:j [:grave_accent_and_tilde :j :s :o :n :!Ssemicolon :!Squote :!Squote :grave_accent_and_tilde :left_arrow :left_arrow]] ; -> `json:""`
                 [:z [:l :o :g :period :!Sp :r :i :n :t :l :n :!S9 :!S0 :left_arrow]] ; -> log.Println()
                 [:x [:f :m :t :period :!Sp :r :i :n :t :l :n :!S9 :!S0 :left_arrow :!Squote :hyphen :hyphen]] ; -> fmt.Println("--")
                 [:c [:!STsemicolon]] ; Selection -> Go Playground
