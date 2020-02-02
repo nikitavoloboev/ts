@@ -145,11 +145,11 @@ gwe() {
 }
 
 # Commit all changes with `update`
-ggs() {
-    git add .
-    git commit -m 'update'
-    git push
-}
+# ggs() {
+#     git add .
+#     git commit -m 'update'
+#     git push
+# }
 
 # Write quick commit message. gc <commit-msg>
 gc() {

@@ -219,6 +219,7 @@ alias ungit="find . -name '.git' -exec rm -rf {} \;" # Remove git from a project
 alias gto='gittower'
 
 # Git
+alias ggs='gitupdate .' # Commit all with file name changes as commit msg
 alias gj='open `git config remote.origin.url`'
 alias gm='git branch -m' # Rename current branch
 alias ger='git checkout -' # Checkout last branch you were on
