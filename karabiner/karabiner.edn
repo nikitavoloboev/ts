@@ -593,6 +593,7 @@
                  [:u [:alfred "artist_radio" "com.vdesabou.spotify.mini.player"]]
                  [:k [:alfred "show_current_track" "com.vdesabou.spotify.mini.player"]]
                  [:comma [:alfred "youtube_search_current_track" "com.vdesabou.spotify.mini.player"]]
+                 [:open_bracket [:alfred "twitter_search_current_track" "com.vdesabou.spotify.mini.player"]]
                  [:slash [:alfred "reddit_search_current_track" "com.vdesabou.spotify.mini.player"]]
                  [:m [:alfred "add_current_track_to" "com.vdesabou.spotify.mini.player"]]
                  [:period [:alfred "add_current_track_to" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ESjwZeTcHOWzY3FYO5zs5"]] ; Add song to Focus playlist
