@@ -49,7 +49,7 @@
   "editor.lineNumbers": "on",
   "editor.cursorStyle": "line",
   // Window
-  "window.zoomLevel": -1,
+  "window.zoomLevel": 0,
   "window.restoreWindows": "all",
   "window.newWindowDimensions": "maximized",
   // Breadcrumbs
@@ -74,7 +74,7 @@
   },
   // Terminal
   "terminal.integrated.copyOnSelection": true,
-  "terminal.integrated.fontSize": 13,
+  "terminal.integrated.fontSize": 15,
   "terminal.integrated.inheritEnv": false,
   // Explorer
   "explorer.openEditors.visible": 0,

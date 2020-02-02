@@ -34,12 +34,12 @@
              :spacebar-mode {:key :spacebar}
              :tilde-mode {:key :grave_accent_and_tilde}
              :dot-mode {:key :period}
-             :js-mode {:key :period :condi ["in-js" 1]}
              :go-mode {:key :period :condi ["in-go" 1]}
+             :js-mode {:key :period :condi ["in-js" 1]}
              :swift-mode {:key :period :condi ["in-swift" 1]}
+             :rust-mode {:key :period :condi ["in-rust" 1]}
              :py-mode {:key :period :condi ["in-python" 1]}
              :elixir-mode {:key :period :condi ["in-elixir" 1]}
-             :rust-mode {:key :period :condi ["in-rust" 1]}
              :caps-mode {:key :caps_lock}}
  :main [{:des "colonkey (shift)"
          :rules [:semicolon-mode
@@ -178,7 +178,6 @@
                  [:0 :!CS0]]}
         {:des "wkey (apps)"
          :rules [:w-mode
-                 [:spacebar :!CT7] ; Start Google search with selection
                  [:e [:km "open: Fantastical"]]
                  [:m [:km "open: Xcode"]]
                  [:c [:km "open: Spotify"]]
@@ -189,10 +188,10 @@
                  ;[:g [:km "open: Notion"]]
                  [:y [:km "open: Safari Technology Preview"]]
                  [:u [:km "open: Firefox Nightly"]]
-                 [:i [:km "open: Chrome Canary"]]
+                 [:spacebar [:km "open: Chrome Canary"]]
                  [:t [:km "open: Postico"]]
                  [:p [:km "open: Postgres"]]
-                 [:period [:km "open: SnippetsLab"]]
+                 ;[:period [:km "open: SnippetsLab"]]
                  [:caps_lock [:km "open: Finder"]]
                  [:semicolon [:km "open: Tower"]]
                  [:b [:km "open: BetterTouchTool"]]
@@ -496,6 +495,7 @@
                  [:period :!CTO3]]} ; Mission control
         {:des "fkey (essential)"
          :rules [:f-mode
+                 [:spacebar :!CT7] ; Start Google search with selection
                  [:1 [:km "Uppercase selected text"]]
                  [:2 :!CSO5] ; PixelSnap
                  [:3 :!CTOp] ; Sip color picker
