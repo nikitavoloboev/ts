@@ -39,7 +39,6 @@
   "editor.occurrencesHighlight": false,
   "editor.multiCursorModifier": "alt",
   "editor.overviewRulerBorder": false,
-  "editor.overviewRulerLanes": 0,
   "editor.renderIndentGuides": true,
   "editor.folding": false,
   "editor.snippetSuggestions": "top",
@@ -52,6 +51,7 @@
   "window.zoomLevel": -1,
   "window.restoreWindows": "all",
   "window.newWindowDimensions": "maximized",
+  "window.title": "${rootName}${separator}${activeEditorMedium}${separator}${dirty}",
   // Breadcrumbs
   "breadcrumbs.filePath": "off",
   // Debug
