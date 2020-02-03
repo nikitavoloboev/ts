@@ -186,8 +186,11 @@
                  ;[:g [:km "open: Console"]]
                  ;[:c [:km "open: Sketch"]]
                  ;[:g [:km "open: Notion"]]
-                 [:u [:km "open: Safari Technology Preview"]]
-                 [:i [:km "open: Firefox Nightly"]]
+                 [:period [:km "open: Simulator"]]
+                 [:comma [:km "open: Instruments"]]
+                 [:h [:km "open: React Native Debugger"]]
+                 [:y [:km "open: Safari Technology Preview"]]
+                 [:u [:km "open: Firefox Nightly"]]
                  [:spacebar [:km "open: Chrome Canary"]]
                  [:t [:km "open: Postico"]]
                  [:p [:km "open: Postgres"]]
@@ -198,7 +201,6 @@
                  [:a :!OSC1] ; Open Dash
                  ;[:r :!CTOSt] ; Open Trello TODO: fix as it's faster
                  [:r [:km "open: Trello"]]
-                 [:g [:km "open: Paw"]]
                  [:g [:km "open: Paw"]]
                  [:v [:km "open: Figma"]]
                  [:f [:km "open: 2Do"]]

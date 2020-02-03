@@ -206,6 +206,7 @@
   "typescript.updateImportsOnFileMove.enabled": "never",
   // JavaScript
   "javascript.updateImportsOnFileMove.enabled": "never",
+  "javascript.validate.enable": false,
   "eslint.packageManager": "yarn",
   // Git
   "git.autofetch": true,

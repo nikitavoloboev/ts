@@ -99,7 +99,8 @@ alias c='docker'
 alias cs='docker ps'
 alias cu='docker-compose up'
 alias ca='docker container ls'
-alias cas='docker stop $(docker ps -a -q)' # Stop running all containers
+# alias cas='docker stop $(docker ps -a -q)' # Stop running all containers
+alias cas='docker rm -f $(docker ps -q)' # Stop all running containers
 
 # Kubernetes
 alias k='kubectl'
