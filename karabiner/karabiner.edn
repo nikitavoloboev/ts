@@ -185,7 +185,7 @@
                  [:d [:km "open: Activity Monitor"]]
                  ;[:g [:km "open: Console"]]
                  ;[:c [:km "open: Sketch"]]
-                 ;[:g [:km "open: Notion"]]
+                 [:i [:km "open: Notion"]]
                  [:period [:km "open: Simulator"]]
                  [:comma [:km "open: Instruments"]]
                  [:h [:km "open: React Native Debugger"]]
