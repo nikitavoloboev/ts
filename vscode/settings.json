@@ -29,7 +29,6 @@
   // Editor
   "editor.formatOnSave": true,
   "editor.renderLineHighlight": "gutter",
-  // "editor.gotoLocation.multiple": "goto",
   "editor.codeActionsOnSave": {
     "source.organizeImports": true
   },
@@ -47,21 +46,19 @@
   "editor.cursorBlinking": "solid",
   "editor.lineNumbers": "on",
   "editor.cursorStyle": "line",
+  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 15,
   // Window
   "window.zoomLevel": -1,
   "window.restoreWindows": "all",
   "window.newWindowDimensions": "maximized",
-  "window.title": "${rootName}${separator}${activeEditorMedium}${separator}${dirty}",
   // Breadcrumbs
-  "breadcrumbs.filePath": "off",
+  "breadcrumbs.filePath":"on",
   // Debug
   "debug.openDebug": "neverOpen",
   "debug.showInStatusBar": "never",
   "debug.toolBarLocation": "hidden",
-  // Fonts
-  "editor.fontFamily": "JetBrains Mono",
-  "editor.fontLigatures": true,
-  "editor.fontSize": 15,
   // Search
   "search.quickOpen.includeHistory": false,
   "search.smartCase": true,
@@ -207,6 +204,7 @@
   // JavaScript
   "javascript.updateImportsOnFileMove.enabled": "never",
   "javascript.validate.enable": false,
+  // ESLint
   "eslint.packageManager": "yarn",
   // Git
   "git.autofetch": true,
@@ -220,6 +218,7 @@
   "gitlens.codeLens.scopes": ["containers", "document"],
   "gitlens.views.fileHistory.enabled": true,
   "gitlens.views.lineHistory.enabled": true,
+  "gitlens.currentLine.format": "${message}",
   "gitlens.advanced.messages": {
     "suppressCommitNotFoundWarning": true,
     "suppressFileNotUnderSourceControlWarning": true,
@@ -235,7 +234,6 @@
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "gitlens.currentLine.format": "${message}",
   "peacock.favoriteColors": [
     {
       "name": "Angular Red",
