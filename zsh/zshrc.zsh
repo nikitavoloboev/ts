@@ -9,3 +9,6 @@ source ~/.dotfiles/zsh/alias.zsh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+
+
+# . '/Users/nikivi/Library/Application Support/zrs/z.sh'
