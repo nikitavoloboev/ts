@@ -36,7 +36,7 @@
   "editor.scrollBeyondLastLine": false,
   "editor.lineHeight": 26,
   "editor.occurrencesHighlight": false,
-  "editor.multiCursorModifier": "alt",
+  "editor.multiCursorModifier": "ctrlCmd",
   "editor.overviewRulerBorder": false,
   "editor.renderIndentGuides": true,
   "editor.folding": false,
@@ -50,7 +50,7 @@
   "editor.fontLigatures": true,
   "editor.fontSize": 15,
   // Window
-  "window.zoomLevel": -3,
+  "window.zoomLevel": -2,
   "window.restoreWindows": "all",
   "window.newWindowDimensions": "maximized",
   // Breadcrumbs
