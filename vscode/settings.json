@@ -50,7 +50,7 @@
   "editor.fontLigatures": true,
   "editor.fontSize": 15,
   // Window
-  "window.zoomLevel": 0,
+  "window.zoomLevel": -3,
   "window.restoreWindows": "all",
   "window.newWindowDimensions": "maximized",
   // Breadcrumbs

@@ -381,12 +381,13 @@
                  [:w [:km "Open Papers Trello"]]
                  [:a [:km "Open Work Trello"]]
                  [:s [:km "Open LA Trello"]]
-                 [:c [:km "Open Courses Trello"]]
+                 [:u [:km "Open Courses Trello"]]
                  [:j [:km "Open 2Do Today"]]
-                 [:k [:km "Open 2Do PR"]]
+                 [:k [:km "Open 2Do GitHub"]]
                  [:l [:km "Open 2Do Later"]]
                  [:n [:km "Open 2Do Clean"]]
                  [:g [:km "Open 2Do Life"]]
+                 [:r [:km "Open 2Do Work"]]
                  [:y [:km "Open 2Do Buy"]]
                  [:i [:km "Open 2Do Fix"]]
                  [:m [:km "Open 2Do Macro"]]
@@ -395,8 +396,8 @@
                  [:slash [:km "Open 2Do Other"]] ; TODO: remove once its empty
                  [:quote [:km "Open 2Do Ask"]]
                  [:period [:km "Search 2Do"]]
-                 [:open_bracket [:km "w: Goodreads (currently reading)"]]
-                 [:close_bracket [:km "w: Goodreads (next)"]]]}
+                 [:c [:km "w: Goodreads (currently reading)"]]
+                 [:v [:km "w: Goodreads (next)"]]]}
         {:des "akey (ctrl)"
          :rules [:a-mode
                  [:spacebar :!CT9] ; Selection -> Google
@@ -623,7 +624,7 @@
                  [:semicolon :!TS0] ; Turn on/off Noizio
                  [:comma [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:37i9dQZEVXcMHpP6EcIqNe"]] ; Discover Weekly playlist
                  [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ESjwZeTcHOWzY3FYO5zs5"]] ; Focus playlist
-                 [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:2qIy3168IBCiThtr9JM4nM"]] ; Focus song
+                 [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:4yQQuyjdUzVQozJrlJRnBM"]] ; Focus song
                  [:quote [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ERn0U4qZIKC8Dy7RrMMsn"]] ; Likes playlist
                  [:open_bracket [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:2N82DnDsPGMnpJhN8sVFJu"]] ; Bliss playlist
                  [:s [:km "Play/pause Spotify"]]
