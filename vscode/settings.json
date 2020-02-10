@@ -36,7 +36,6 @@
   "editor.scrollBeyondLastLine": false,
   "editor.lineHeight": 26,
   "editor.occurrencesHighlight": false,
-  "editor.multiCursorModifier": "ctrlCmd",
   "editor.overviewRulerBorder": false,
   "editor.renderIndentGuides": true,
   "editor.folding": false,
