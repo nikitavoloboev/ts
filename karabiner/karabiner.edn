@@ -112,8 +112,7 @@
                  [:m [:km "wiki: Summary"]]
                  [:u [:km "wiki: Talk notes"]]
                  [:h [:km "wiki: Used hotkeys"]]
-                 [:k [:km "edit: Private rekki"]]
-                 [:period [:km "edit: Private notes"]]
+                 [:k [:km "edit: Private notes"]]
                  [:g [:km "edit: Git config"]]
                  [:t [:km "edit: Projects"]]
                  [:n [:km "edit: Now"]]
@@ -380,7 +379,7 @@
                  [:p [:km "Open Possessions Trello"]]
                  [:w [:km "Open Papers Trello"]]
                  [:a [:km "Open Work Trello"]]
-                 [:s [:km "Open LA Trello"]]
+                 [:h [:km "Open LA Trello"]]
                  [:u [:km "Open Courses Trello"]]
                  [:j [:km "Open 2Do Today"]]
                  [:k [:km "Open 2Do GitHub"]]
@@ -475,15 +474,12 @@
                  [:j {:mkey {:vwheel 60}}] ; Scroll down
                  [:k {:mkey {:vwheel -60}}] ; Scroll up
                  [:a [:!Cc :!Ctab]] ; Copy & activate previous app
-                 [:f :!CT6] ; Smart zoom
-                 ;[:m :!CTOb] ; Switch to Desktop 2
                  [:w [:km "Google Searchio selected word"]]
                  [:quote [:km "Select line and google"]]
                  [:semicolon [:km "Google selected word"]]
                  [:i :!Ckeypad_hyphen] ; Zoom out
                  [:o :!Ckeypad_plus] ; Zoom in
                  [:n [:km "Open URL in clipboard in Safari"]]
-                 [:g [:km "Centre mouse to active app"]]
                  [:u [:km "Google Lucky selected word"]]
                  [:l [:km "Google clipboard"]]
                  [:v {:pkey :button1}] ; Left click
@@ -498,11 +494,13 @@
                  [:2 :!CSO5] ; PixelSnap
                  [:3 :!CTOp] ; Sip color picker
                  [:4 [:km "Lowercase selected text"]]
-                 [:w :!CTO4] ; Alfred file action
+                 [:a :!CTO4] ; Alfred file action
+                 [:w [:km "Centre mouse to active app"]]
                  [:e :!CO8] ; Alfred clipboard history search
-                 [:a [:km "open: MindNode"]]
+                 ;[:q [:km "open: MindNode"]]
+                 ;[:d [:km "New MindNode node"]]
+                 [:q :!COSs] ; Move window between different screen & maximize
                  [:s [:km "edit: 2nd iTerm tab"]]
-                 [:d [:km "New MindNode node"]]
                  [:j [:km "edit: 1st iTerm tab"]]
                  ;[:period [:km "edit: Last iTerm tab"]]
                  [:semicolon [:km "edit: Karabiner"]]
@@ -531,8 +529,6 @@
                  [:w :!CSgrave_accent_and_tilde] ; Switch between active windows (go up)
                  [:e :!CT3] ; Search bartender menu items
                  [:q :!CO0] ; Show Dropzone dropdown
-                 ;[:j :!CT3] ; TODO: move window to different screen (iPad/monitor)
-                 ;[:d :!COd] ; Show/hide dock
                  [:k :!COSf] ; Maximize window
                  [:n :!CTOg] ; Turn on/off notifications
                  [:m :!COslash] ; Show/hide notification centre
@@ -589,11 +585,11 @@
                  [:l [:alfred "song_radio" "com.vdesabou.spotify.mini.player"]]
                  [:u [:alfred "artist_radio" "com.vdesabou.spotify.mini.player"]]
                  [:k [:alfred "show_current_track" "com.vdesabou.spotify.mini.player"]]
-                 [:comma [:alfred "youtube_search_current_track" "com.vdesabou.spotify.mini.player"]]
+                 [:period [:alfred "youtube_search_current_track" "com.vdesabou.spotify.mini.player"]]
                  [:open_bracket [:alfred "twitter_search_current_track" "com.vdesabou.spotify.mini.player"]]
-                 [:slash [:alfred "reddit_search_current_track" "com.vdesabou.spotify.mini.player"]]
+                 [:comma [:alfred "reddit_search_current_track" "com.vdesabou.spotify.mini.player"]]
                  [:m [:alfred "add_current_track_to" "com.vdesabou.spotify.mini.player"]]
-                 [:period [:alfred "add_current_track_to" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ESjwZeTcHOWzY3FYO5zs5"]] ; Add song to Focus playlist
+                 [:slash [:alfred "add_current_track_to" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ESjwZeTcHOWzY3FYO5zs5"]] ; Add song to Focus playlist
                  [:semicolon [:alfred "add_current_track_to_alfred_playlist_or_your_music" "com.vdesabou.spotify.mini.player"]] ; Add song to Likes playlist
                  [:quote [:alfred "add_current_track_to" "com.vdesabou.spotify.mini.player" "spotify:playlist:2N82DnDsPGMnpJhN8sVFJu"]] ; Add song to Bliss playlist
                  [:b [:alfred "show_playlists" "com.vdesabou.spotify.mini.player"]]
@@ -623,8 +619,8 @@
                  [:j :mute]
                  [:semicolon :!TS0] ; Turn on/off Noizio
                  [:comma [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:37i9dQZEVXcMHpP6EcIqNe"]] ; Discover Weekly playlist
-                 [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ESjwZeTcHOWzY3FYO5zs5"]] ; Focus playlist
-                 [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:789F4dyWpNj2BziV700jDm"]] ; Focus song
+                 [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ESjwZeTcHOWzY3FYO5zs5"]] ; Focus playlist
+                 [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:6oiwm0xIfVRKookXoFlc4b"]] ; Focus song
                  [:quote [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ERn0U4qZIKC8Dy7RrMMsn"]] ; Likes playlist
                  [:open_bracket [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:2N82DnDsPGMnpJhN8sVFJu"]] ; Bliss playlist
                  [:s [:km "Play/pause Spotify"]]
