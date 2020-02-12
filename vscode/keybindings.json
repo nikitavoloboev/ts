@@ -280,11 +280,6 @@
     "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
   },
   {
-    "key": "cmd+.",
-    "command": "-editor.action.quickFix",
-    "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
-  },
-  {
     "key": "shift+cmd+'",
     "command": "toggleVim"
   },
@@ -301,10 +296,6 @@
   {
     "key": "ctrl+m",
     "command": "editor.action.rename"
-  },
-  {
-    "key": "ctrl+w",
-    "command": "-workbench.action.switchWindow"
   },
   {
     "key": "alt+f12",
@@ -427,5 +418,13 @@
     "key": "alt+escape",
     "command": "-editor.action.triggerSuggest",
     "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
-  }
+  },
+  {
+    "key": "ctrl+l",
+    "command": "workbench.action.showAllEditors"
+  },
+  {
+    "key": "cmd+j",
+    "command": "workbench.action.togglePanel"
+  },
 ]

@@ -183,8 +183,7 @@
                  [:k [:km "open: Safari"]]
                  [:d [:km "open: Activity Monitor"]]
                  [:i [:km "open: Notion"]]
-                 [:period [:km "open: Simulator"]]
-                 [:comma [:km "open: Instruments"]]
+                 [:period [:km "open: Instruments"]]
                  [:h [:km "open: React Native Debugger"]]
                  [:y [:km "open: Safari Technology Preview"]]
                  [:u [:km "open: Firefox Nightly"]]
@@ -379,7 +378,7 @@
                  [:p [:km "Open Possessions Trello"]]
                  [:w [:km "Open Papers Trello"]]
                  [:a [:km "Open Work Trello"]]
-                 [:h [:km "Open LA Trello"]]
+                 [:s [:km "Open LA Trello"]]
                  [:u [:km "Open Courses Trello"]]
                  [:j [:km "Open 2Do Today"]]
                  [:k [:km "Open 2Do GitHub"]]
@@ -451,7 +450,7 @@
                  [:a :!Cc] ; Copy
                  [:u :!Cx] ; Cut
                  [:v :left_shift]
-                 ;[:o :!COp] ; Selection -> HasteBin link
+                 [:o :!COp] ; Selection -> HasteBin link
                  [:quote [:!Cleft_arrow :!CSright_arrow]] ; Highlight current line
                  [:w [:!Oleft_arrow :!OSright_arrow]] ; Highlight word
                  [:d :delete_or_backspace]
@@ -499,10 +498,10 @@
                  [:e :!CO8] ; Alfred clipboard history search
                  ;[:q [:km "open: MindNode"]]
                  ;[:d [:km "New MindNode node"]]
-                 [:q :!COSs] ; Move window between different screen & maximize
                  [:s [:km "edit: 2nd iTerm tab"]]
                  [:j [:km "edit: 1st iTerm tab"]]
                  ;[:period [:km "edit: Last iTerm tab"]]
+                 [:q :!CSgrave_accent_and_tilde] ; Switch between active windows (go up)
                  [:semicolon [:km "edit: Karabiner"]]
                  ;[:q [:km "Move todo to MindNode"]]
                  ;[:a [:alfred "new todo" "nikivi.todo.task"]]
@@ -526,13 +525,13 @@
                  [:r [:km "Go to test macro"]]
                  [:d [:km "Make global macro"]]
                  [:j :!Cgrave_accent_and_tilde] ; Switch between active windows  (go down)
-                 [:w :!CSgrave_accent_and_tilde] ; Switch between active windows (go up)
                  [:e :!CT3] ; Search bartender menu items
                  [:q :!CO0] ; Show Dropzone dropdown
                  [:k :!COSf] ; Maximize window
                  [:n :!CTOg] ; Turn on/off notifications
                  [:m :!COslash] ; Show/hide notification centre
                  [:a [:km "Go to KM group of current app"]]
+                 [:semicolon :!COSs] ; Move window between different screen & maximize
                  [:caps_lock [:km "Go to KM group of current app from picklist"]]
                  [:l :!CSOd] ; Move window right
                  [:h :!CSOa] ; Move window left
@@ -614,17 +613,17 @@
          :rules [:v-mode
                  [:spacebar :!CSOv] ; Selection -> Google Images
                  [:e :!CO9] ; Connect/disconnect AirPods
-                 [:a [:km "Repeat Spotify song"]]
                  [:u :!COS6] ; Toggle Night Shift on/off.
                  [:j :mute]
+                 [:a [:km "Repeat Spotify song"]]
+                 [:s [:km "Play/pause Spotify"]]
+                 [:d [:km "Noizio settings"]]
                  [:semicolon :!TS0] ; Turn on/off Noizio
                  [:comma [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:37i9dQZEVXcMHpP6EcIqNe"]] ; Discover Weekly playlist
                  [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ESjwZeTcHOWzY3FYO5zs5"]] ; Focus playlist
                  [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:6oiwm0xIfVRKookXoFlc4b"]] ; Focus song
                  [:quote [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ERn0U4qZIKC8Dy7RrMMsn"]] ; Likes playlist
                  [:open_bracket [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:2N82DnDsPGMnpJhN8sVFJu"]] ; Bliss playlist
-                 [:s [:km "Play/pause Spotify"]]
-                 [:d [:km "Noizio settings"]]
                  [:i :display_brightness_decrement]
                  [:o :display_brightness_increment]
                  [:h :vk_consumer_previous]

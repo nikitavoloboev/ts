@@ -34,6 +34,11 @@ fah() {
   dir=$(find ${1:-.} -type d 2> /dev/null | fzf +m) && cd "$dir"
 }
 
+# mage commands to run
+l() {
+  mage | tail -n +2 | fzf | while read -r cmd _; do if [ "$cmd" ]; then mage "$cmd"; fi; done
+}
+
 # fbr - checkout git branch (including remote branches), sorted by most recent commit, limit 30 last branches
 fb() {
   local branches branch
