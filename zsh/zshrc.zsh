@@ -9,14 +9,4 @@ source ~/.dotfiles/zsh/alias.zsh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-
-
 # . '/Users/nikivi/Library/Application Support/zrs/z.sh'
-
-
-# tabtab source for serverless package
-# uninstall by removing these lines or running `tabtab uninstall serverless`
-[[ -f /Users/nikivi/src/orgs/rekki/unity/node_modules/tabtab/.completions/serverless.zsh ]] && . /Users/nikivi/src/orgs/rekki/unity/node_modules/tabtab/.completions/serverless.zsh
-# tabtab source for sls package
-# uninstall by removing these lines or running `tabtab uninstall sls`
-[[ -f /Users/nikivi/src/orgs/rekki/unity/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/nikivi/src/orgs/rekki/unity/node_modules/tabtab/.completions/sls.zsh
