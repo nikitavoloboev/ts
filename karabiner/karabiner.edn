@@ -181,22 +181,22 @@
                  [:m [:km "open: Xcode"]]
                  [:c [:km "open: Spotify"]]
                  [:k [:km "open: Safari"]]
-                 [:d [:km "open: Activity Monitor"]]
+                 [:t [:km "open: Activity Monitor"]]
                  [:i [:km "open: Notion"]]
-                 [:period [:km "open: Instruments"]]
+                 [:comma [:km "open: Instruments"]]
                  [:h [:km "open: React Native Debugger"]]
                  [:y [:km "open: Safari Technology Preview"]]
                  [:u [:km "open: Firefox Nightly"]]
                  [:spacebar [:km "open: Chrome Canary / Simulator"]]
-                 [:t [:km "open: Postico"]]
+                 [:g [:km "open: Postico"]]
                  [:p [:km "open: Postgres"]]
                  [:caps_lock [:km "open: Finder"]]
                  [:semicolon [:km "open: Tower"]]
                  [:b [:km "open: BetterTouchTool"]]
                  [:a :!OSC1] ; Open Dash
-                 [:open_bracket [:km "open: Console"]]
+                 [:period [:km "open: Console"]]
                  [:r [:km "open: Trello"]]
-                 [:g [:km "open: Paw"]]
+                 [:d [:km "open: Paw"]]
                  [:v [:km "open: Figma"]]
                  [:f [:km "open: 2Do"]]
                  [:j [:km "open: iTerm"]]
@@ -377,7 +377,6 @@
                  [:d [:km "Open Videos Trello"]]
                  [:p [:km "Open Possessions Trello"]]
                  [:w [:km "Open Papers Trello"]]
-                 [:a [:km "Open Work Trello"]]
                  [:s [:km "Open LA Trello"]]
                  [:u [:km "Open Courses Trello"]]
                  [:j [:km "Open 2Do Today"]]
@@ -385,7 +384,7 @@
                  [:l [:km "Open 2Do Later"]]
                  [:n [:km "Open 2Do Clean"]]
                  [:g [:km "Open 2Do Life"]]
-                 [:r [:km "Open 2Do Work"]]
+                 [:m [:km "Open 2Do Work"]]
                  [:y [:km "Open 2Do Buy"]]
                  [:i [:km "Open 2Do Fix"]]
                  [:m [:km "Open 2Do Macro"]]
@@ -615,9 +614,10 @@
                  [:e :!CO9] ; Connect/disconnect AirPods
                  [:u :!COS6] ; Toggle Night Shift on/off.
                  [:j :mute]
-                 [:a [:km "Repeat Spotify song"]]
+                 [:w [:km "Repeat Spotify song"]]
                  [:s [:km "Play/pause Spotify"]]
                  [:d [:km "Noizio settings"]]
+                 [:a :!TS0] ; Turn on/off Noizio
                  [:semicolon :!TS0] ; Turn on/off Noizio
                  [:comma [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:37i9dQZEVXcMHpP6EcIqNe"]] ; Discover Weekly playlist
                  [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ESjwZeTcHOWzY3FYO5zs5"]] ; Focus playlist

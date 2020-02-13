@@ -294,7 +294,7 @@
     "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+m",
+    "key": "ctrl+n",
     "command": "editor.action.rename"
   },
   {
