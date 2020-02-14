@@ -10,3 +10,7 @@ source ~/.dotfiles/zsh/alias.zsh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # . '/Users/nikivi/Library/Application Support/zrs/z.sh'
+
+# XXX: short circuit tabtab completion auto installation
+# tabtab source for serverless package
+# tabtab source for sls package
