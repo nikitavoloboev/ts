@@ -1,3 +1,13 @@
+# mage commands to run
+f() {
+  if [ $# -eq 0 ]; then
+    mage | tail -n +2 | fzf | while read -r cmd _; do if [ "$cmd" ]; then mage "$cmd"; fi; done
+  else
+    # TODO: resort to run `make` if no magefile.go is found?
+    mage "${1:-.}"
+  fi
+}
+
 # unalias z 2> /dev/null # Unbind z
 # z command + fzf
 # z() {
@@ -32,11 +42,6 @@ fa() {
 fah() {
   local dir
   dir=$(find ${1:-.} -type d 2> /dev/null | fzf +m) && cd "$dir"
-}
-
-# mage commands to run
-l() {
-  mage | tail -n +2 | fzf | while read -r cmd _; do if [ "$cmd" ]; then mage "$cmd"; fi; done
 }
 
 # fbr - checkout git branch (including remote branches), sorted by most recent commit, limit 30 last branches
