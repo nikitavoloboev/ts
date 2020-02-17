@@ -108,7 +108,8 @@
                  [:j [:km "wiki: Rules"]]
                  [:r [:km "Reflect"]]
                  [:l [:km "Search current safari url in wiki"]]
-                 ;[:k [:km "wiki: Processes"]]
+                 [:period [:km "wiki: Processes"]]
+                 [:comma [:km "wiki: My workflow"]]
                  [:m [:km "wiki: Summary"]]
                  [:u [:km "wiki: Talk notes"]]
                  [:h [:km "wiki: Used hotkeys"]]
@@ -377,20 +378,19 @@
                  [:d [:km "Open Videos Trello"]]
                  [:p [:km "Open Possessions Trello"]]
                  [:w [:km "Open Papers Trello"]]
-                 [:s [:km "Open LA Trello"]]
+                 [:h [:km "Open LA Trello"]]
                  [:u [:km "Open Courses Trello"]]
                  [:j [:km "Open 2Do Today"]]
                  [:k [:km "Open 2Do GitHub"]]
                  [:l [:km "Open 2Do Later"]]
                  [:n [:km "Open 2Do Clean"]]
                  [:g [:km "Open 2Do Life"]]
-                 [:m [:km "Open 2Do Work"]]
+                 [:o [:km "Open 2Do Work"]]
                  [:y [:km "Open 2Do Buy"]]
                  [:i [:km "Open 2Do Fix"]]
-                 [:m [:km "Open 2Do Macro"]]
-                 [:o [:km "Open 2Do Tools"]]
+                 [:m [:km "Open 2Do Tools"]]
                  [:semicolon [:km "Open 2Do Starred"]]
-                 [:slash [:km "Open 2Do Other"]] ; TODO: remove once its empty
+                 [:comma [:km "Open 2Do Other"]] ; TODO: remove once its empty
                  [:quote [:km "Open 2Do Ask"]]
                  [:period [:km "Search 2Do"]]
                  [:c [:km "w: Goodreads (currently reading)"]]
@@ -602,7 +602,7 @@
                  [:i [:km "test: Jupyter"]]
                  [:n [:km "test: TS"]]
                  [:m [:km "test: Rust"]]
-                 [:period [:km "New SnippetsLab snippet"]]
+                 ;[:period [:km "New SnippetsLab snippet"]]
                  [:semicolon [:alfred "search build to learn" "nikivi.private.directories"]]]}
         {:des "vkey (media)"
          :rules [:v-mode

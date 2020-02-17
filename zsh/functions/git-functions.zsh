@@ -84,7 +84,7 @@ gri(){
 # Update contributing file commit
 gzo(){
   git add CONTRIBUTING.md
-  git commit -m "contrib: update"
+  git commit -m "contributing"
   git push
 }
 

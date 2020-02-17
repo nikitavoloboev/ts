@@ -263,3 +263,5 @@ alias gdn='git diff --name-only'
 alias gs='git status --short'
 alias gss='git show --word-diff=color' # See changes made
 
+# Mage
+alias fs='mage start'
