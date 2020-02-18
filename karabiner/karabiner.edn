@@ -184,21 +184,20 @@
                  [:k [:km "open: Safari"]]
                  [:t [:km "open: Activity Monitor"]]
                  [:i [:km "open: Notion"]]
-                 [:comma [:km "open: Instruments"]]
-                 [:h [:km "open: React Native Debugger"]]
+                 [:t [:km "open: Instruments"]]
+                 [:g [:km "open: React Native Debugger"]] ; TODO: use flipper
                  [:y [:km "open: Safari Technology Preview"]]
                  [:u [:km "open: Firefox Nightly"]]
                  [:spacebar [:km "open: Chrome Canary / Simulator"]]
-                 [:g [:km "open: Postico"]]
+                 [:v [:km "open: Postico"]]
                  [:p [:km "open: Postgres"]]
                  [:caps_lock [:km "open: Finder"]]
                  [:semicolon [:km "open: Tower"]]
                  [:b [:km "open: BetterTouchTool"]]
                  [:a :!OSC1] ; Open Dash
-                 [:period [:km "open: Console"]]
+                 [:h [:km "open: Console"]]
                  [:r [:km "open: Trello"]]
                  [:d [:km "open: Paw"]]
-                 [:v [:km "open: Figma"]]
                  [:f [:km "open: 2Do"]]
                  [:j [:km "open: iTerm"]]
                  [:n [:km "open: Sublime Text"]]
@@ -340,22 +339,20 @@
                  [:4 :!C4]
                  [:5 :!C5]
                  [:6 :!C6]
-                 [:t [:alfred "search tty sessions" "net.isometry.alfred.tty"]] ; TODO: replace with pocket
+                 ;[:t [:alfred "search tty sessions" "net.isometry.alfred.tty"]] ; TODO: replace with pocket
                  [:n [:alfred "search lists" "nikivi.learn.anything"]]
-                 [:z [:alfred "search blog" "nikivi.private.directories"]] ; TODO: search fragments + published or input name to create fragment
+                 [:s [:alfred "search code" "nikivi.manage.notes"]]
                  [:x [:alfred "search workflows" "org.jeef.workflowdirectory"]]
                  [:w :!CObackslash] ; 1Password search
                  [:grave_accent_and_tilde [:alfred "search processes" "com.vitorgalvao.alfred.processcontrol"]]
                  [:e [:km "Make 2Do task"]]
-                 [:b [:km "Make 2Do task with Safari title as name + note as current URL"]]
-                 [:v [:km "Make 2Do task with note as current URL"]]
-                 [:r [:km "2Do with current url as note (pr)"]]
+                 [:r [:km "Make 2Do task with note as current URL"]]
+                 [:t [:km "Make 2Do task with Safari title as name + note as current URL"]]
+                 [:b [:km "2Do with current url as note (github)"]]
                  [:q [:alfred "search downloads" "recentdownloads.ddjfreedom"]]
-                 ;[:tab [:km "2Do with current url as note (check)"]] ; TODO: make it so it adds 'check' tag
-                 [:a [:alfred "search files" "nikivi.manage.notes"]]
-                 [:c [:alfred "search emoji" "com.github.jsumners.alfred-emoji"]]
+                 [:a [:alfred "search files" "nikivi.manage.notes"]] ; TODO: add blog, drafts
                  [:f [:alfred "search repos" "net.deanishe.alfred-git-repos"]]
-                 [:s [:alfred "search clones" "com.vitorgalvao.alfred.directories"]]
+                 [:v [:alfred "search clones" "com.vitorgalvao.alfred.directories"]]
                  [:spacebar [:alfred "search PDFs" "nikivi.search.files"]]
                  [:d [:alfred "search folders" "nikivi.search.folders"]]
                  [:caps_lock [:alfred "search desktop" "com.vitorgalvao.alfred.directories"]]
@@ -378,7 +375,7 @@
                  [:d [:km "Open Videos Trello"]]
                  [:p [:km "Open Possessions Trello"]]
                  [:w [:km "Open Papers Trello"]]
-                 [:h [:km "Open LA Trello"]]
+                 [:s [:km "Open LA Trello"]]
                  [:u [:km "Open Courses Trello"]]
                  [:j [:km "Open 2Do Today"]]
                  [:k [:km "Open 2Do GitHub"]]
@@ -450,6 +447,7 @@
                  [:u :!Cx] ; Cut
                  [:v :left_shift]
                  ;[:o :!COp] ; Selection -> HasteBin link
+                 [:o [:alfred "search emoji" "com.github.jsumners.alfred-emoji"]]
                  [:quote [:!Cleft_arrow :!CSright_arrow]] ; Highlight current line
                  [:w [:!Oleft_arrow :!OSright_arrow]] ; Highlight word
                  [:d :delete_or_backspace]
@@ -491,17 +489,16 @@
                  [:2 :!CSO5] ; PixelSnap
                  [:3 :!CTOp] ; Sip color picker
                  [:4 [:km "Lowercase selected text"]]
-                 [:a :!CTO4] ; Alfred file action
+                 [:q :!CTO4] ; Alfred file action
                  [:w [:km "Centre mouse to active app"]]
                  [:e :!CO8] ; Alfred clipboard history search
-                 ;[:q [:km "open: MindNode"]]
-                 ;[:d [:km "New MindNode node"]]
                  [:s [:km "edit: 2nd iTerm tab"]]
                  [:j [:km "edit: 1st iTerm tab"]]
-                 [:q :!CSgrave_accent_and_tilde] ; Switch between active windows (go up)
                  [:semicolon [:km "edit: Karabiner"]]
-                 ;[:q [:km "Move todo to MindNode"]]
+                 ;[:a [:km "open: MindNode"]]
+                 [:a [:km "open: Figma"]]
                  ;[:semicolon :!CTOi] ; Tester
+                 ;[:q :!CSgrave_accent_and_tilde] ; Switch between active windows (go up)
                  [:h [:km "Make markdown link from selection {link}"]]
                  [:p :!CTOc] ; Sleep
                  [:z :!Ospacebar] ; Switch language (Russian <-> English)
