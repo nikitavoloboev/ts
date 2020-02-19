@@ -1,28 +1,7 @@
-# Temp
-
-# Nix
-alias n='nix'
-alias nr='nix repl'
-alias R='darwin-rebuild switch'
-
-# Nix shell
-alias ns="nix-shell --run zsh"
-alias nss="nix-shell --run zsh -p"
-
-# Brew
-alias bi='brew install'
-
-# Watch files & run cmds
-alias wa='watchexec --exts'
-alias wg='watchexec --exts go "echo -- && go run ."'
-alias wf='watchexec --exts go "alfred build"'
-alias wG='cd ~/src/build-to-learn/go && watchexec --exts go "echo -- && go run ."'
-alias wgr='watchexec --restart --exts go "echo -- && go run ."'
-alias wt='watchexec --exts py "echo -- && python3"'
-alias wn='watchexec --exts js "echo -- && node"'
-alias wtex='watchexec --exts "echo -- && .tex"'
-
 # General
+alias t1="tree -L 1 -I 'node_modules|cache|test_*'"
+alias t2="tree -L 2 -I 'node_modules|cache|test_*'"
+alias t3="tree -L 3 -I 'node_modules|cache|test_*'"
 alias ff='open .'
 alias pb='pbcopy'
 alias te='tree'
@@ -75,6 +54,28 @@ alias v='mv'
 alias os='osascript'
 alias lt='ls -lart'
 alias tp='type'
+
+# Nix
+alias n='nix'
+alias nr='nix repl'
+alias R='darwin-rebuild switch'
+
+# Nix shell
+alias ns="nix-shell --run zsh"
+alias nss="nix-shell --run zsh -p"
+
+# Brew
+alias bi='brew install'
+
+# Watch files & run cmds
+alias wa='watchexec --exts'
+alias wg='watchexec --exts go "echo -- && go run ."'
+alias wf='watchexec --exts go "alfred build"'
+alias wG='cd ~/src/build-to-learn/go && watchexec --exts go "echo -- && go run ."'
+alias wgr='watchexec --restart --exts go "echo -- && go run ."'
+alias wt='watchexec --exts py "echo -- && python3"'
+alias wn='watchexec --exts js "echo -- && node"'
+alias wtex='watchexec --exts "echo -- && .tex"'
 
 # Dev
 alias ll='ln -s'

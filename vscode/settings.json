@@ -1,4 +1,26 @@
 {
+  // Editor
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true
+  },
+  "editor.formatOnSave": true,
+  "editor.renderLineHighlight": "gutter",
+  "editor.hideCursorInOverviewRuler": true,
+  "editor.scrollBeyondLastLine": false,
+  "editor.lineHeight": 26,
+  "editor.occurrencesHighlight": false,
+  "editor.overviewRulerBorder": false,
+  "editor.renderIndentGuides": true,
+  "editor.folding": false,
+  "editor.snippetSuggestions": "top",
+  "editor.lightbulb.enabled": false,
+  "editor.minimap.enabled": false,
+  "editor.cursorBlinking": "solid",
+  "editor.lineNumbers": "on",
+  "editor.cursorStyle": "line",
+  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 15,
   // Files
   "files.exclude": {
     "node_modules/": true,
@@ -26,30 +48,8 @@
   "workbench.editor.showIcons": false,
   "workbench.settings.enableNaturalLanguageSearch": false,
   "workbench.statusBar.visible": false, // formatting only supports LF line endings
-  // Editor
-  "editor.formatOnSave": true,
-  "editor.renderLineHighlight": "gutter",
-  // "editor.codeActionsOnSave": {
-  //   "source.organizeImports": true
-  // },
-  "editor.hideCursorInOverviewRuler": true,
-  "editor.scrollBeyondLastLine": false,
-  "editor.lineHeight": 26,
-  "editor.occurrencesHighlight": false,
-  "editor.overviewRulerBorder": false,
-  "editor.renderIndentGuides": true,
-  "editor.folding": false,
-  "editor.snippetSuggestions": "top",
-  "editor.lightbulb.enabled": false,
-  "editor.minimap.enabled": false,
-  "editor.cursorBlinking": "solid",
-  "editor.lineNumbers": "on",
-  "editor.cursorStyle": "line",
-  "editor.fontFamily": "JetBrains Mono",
-  "editor.fontLigatures": true,
-  "editor.fontSize": 15,
   // Window
-  "window.zoomLevel": -1,
+  "window.zoomLevel": 0,
   "window.restoreWindows": "all",
   "window.newWindowDimensions": "maximized",
   // Breadcrumbs

@@ -184,20 +184,20 @@
                  [:k [:km "open: Safari"]]
                  [:t [:km "open: Activity Monitor"]]
                  [:i [:km "open: Notion"]]
-                 [:t [:km "open: Instruments"]]
-                 [:g [:km "open: React Native Debugger"]] ; TODO: use flipper
+                 [:period [:km "open: Instruments"]]
+                 [:h [:km "open: React Native Debugger"]] ; TODO: use flipper
                  [:y [:km "open: Safari Technology Preview"]]
                  [:u [:km "open: Firefox Nightly"]]
                  [:spacebar [:km "open: Chrome Canary / Simulator"]]
-                 [:v [:km "open: Postico"]]
+                 [:g [:km "open: Postico"]]
                  [:p [:km "open: Postgres"]]
                  [:caps_lock [:km "open: Finder"]]
                  [:semicolon [:km "open: Tower"]]
                  [:b [:km "open: BetterTouchTool"]]
                  [:a :!OSC1] ; Open Dash
-                 [:h [:km "open: Console"]]
+                 [:quote [:km "open: Console"]]
                  [:r [:km "open: Trello"]]
-                 [:d [:km "open: Paw"]]
+                 [:v [:km "open: Paw"]]
                  [:f [:km "open: 2Do"]]
                  [:j [:km "open: iTerm"]]
                  [:n [:km "open: Sublime Text"]]
@@ -252,16 +252,14 @@
          :rules [:r-mode
                  [:spacebar :!COSx] ; Selection -> Reddit
                  [:q [:km "open: IINA"]]
+                 [:w [:km "open: 1Password"]]
+                 [:e [:km "open: ScreenFlow"]]
                  [:caps_lock [:km "open: Preview"]]
-                 ;[:caps_lock [:km "open: Keynote"]]
                  [:2 [:km "open: PIA"]]
                  [:o :!CO7] ; Open Typinator
                  [:h [:km "open: Photos"]]
-                 [:e [:km "open: ScreenFlow"]]
-                 ;[:period [:km "open: Final Cut Pro"]]
-                 ;[:semicolon [:km "open: Soulver"]]
+                 [:semicolon [:km "open: Final Cut Pro"]]
                  [:u [:km "open: Flume"]]
-                 ;[:p [:km "open: Affinity Photo"]]
                  [:m [:km "open: OBS"]]
                  [:comma [:km "open: Arq"]]
                  [:tab [:km "open: Transmission"]]
@@ -269,10 +267,9 @@
                  [:a [:km "open: Alfred Preferences"]]
                  [:i [:km "open: Pixave"]]
                  [:l [:km "open: Reeder"]]
-                 [:semicolon [:km "open: Books"]]
+                 [:period [:km "open: Books"]]
                  [:j [:km "open: Dictionary"]]
                  [:k [:km "open: PDF Expert"]]
-                 [:w [:km "open: 1Password"]]
                  [:n [:km "open: Timing"]]]}
         {:des "tkey (palettes + websites)"
          :rules [:t-mode
@@ -348,7 +345,8 @@
                  [:e [:km "Make 2Do task"]]
                  [:r [:km "Make 2Do task with note as current URL"]]
                  [:t [:km "Make 2Do task with Safari title as name + note as current URL"]]
-                 [:b [:km "2Do with current url as note (github)"]]
+                 [:g [:km "2Do with current url as note (github)"]]
+                 [:b [:km "Add 2Do with current url as note (github)"]]
                  [:q [:alfred "search downloads" "recentdownloads.ddjfreedom"]]
                  [:a [:alfred "search files" "nikivi.manage.notes"]] ; TODO: add blog, drafts
                  [:f [:alfred "search repos" "net.deanishe.alfred-git-repos"]]
@@ -495,7 +493,6 @@
                  [:s [:km "edit: 2nd iTerm tab"]]
                  [:j [:km "edit: 1st iTerm tab"]]
                  [:semicolon [:km "edit: Karabiner"]]
-                 ;[:a [:km "open: MindNode"]]
                  [:a [:km "open: Figma"]]
                  ;[:semicolon :!CTOi] ; Tester
                  ;[:q :!CSgrave_accent_and_tilde] ; Switch between active windows (go up)
@@ -613,8 +610,7 @@
                  [:a :!TS0] ; Turn on/off Noizio
                  [:semicolon :!TS0] ; Turn on/off Noizio
                  [:comma [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:37i9dQZEVXcMHpP6EcIqNe"]] ; Discover Weekly playlist
-                 [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ESjwZeTcHOWzY3FYO5zs5"]] ; Focus playlist
-                 [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:3lzNXqI9jnQ6ZacKNcRFX4"]] ; Focus song
+                 [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ESjwZeTcHOWzY3FYO5zs5"]] ; Focus playlist
                  [:quote [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ERn0U4qZIKC8Dy7RrMMsn"]] ; Likes playlist
                  [:open_bracket [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:2N82DnDsPGMnpJhN8sVFJu"]] ; Bliss playlist
                  [:i :display_brightness_decrement]
@@ -676,7 +672,6 @@
                  [:s [:alfred "search websites" "nikivi.web.searches"]]
                  [:f [:alfred "search repos" "me.lachlan.githubjump"]]
                  [:g [:alfred "search godoc" "nikivi.search.the.web"]]
-                 [:caps_lock [:alfred "search mindnode" "nikivi.search.files"]]
                  [:grave_accent_and_tilde [:alfred "search learn anything" "nikivi.learn.anything"]]]}
         {:des "mkey (dash)"
          :rules [:m-mode
