@@ -195,9 +195,9 @@
                  [:semicolon [:km "open: Tower"]]
                  [:b [:km "open: BetterTouchTool"]]
                  [:a :!OSC1] ; Open Dash
-                 [:quote [:km "open: Console"]]
+                 [:v [:km "open: Console"]]
                  [:r [:km "open: Trello"]]
-                 [:v [:km "open: Paw"]]
+                 [:d [:km "open: Paw"]]
                  [:f [:km "open: 2Do"]]
                  [:j [:km "open: iTerm"]]
                  [:n [:km "open: Sublime Text"]]
@@ -263,7 +263,7 @@
                  [:m [:km "open: OBS"]]
                  [:comma [:km "open: Arq"]]
                  [:tab [:km "open: Transmission"]]
-                 [:y [:km "Edit keyboard shortcuts"]]
+                 [:b [:km "Edit keyboard shortcuts"]]
                  [:a [:km "open: Alfred Preferences"]]
                  [:i [:km "open: Pixave"]]
                  [:l [:km "open: Reeder"]]
@@ -336,6 +336,7 @@
                  [:4 :!C4]
                  [:5 :!C5]
                  [:6 :!C6]
+                 [:c [:alfred "search emoji" "com.github.jsumners.alfred-emoji"]]
                  ;[:t [:alfred "search tty sessions" "net.isometry.alfred.tty"]] ; TODO: replace with pocket
                  [:n [:alfred "search lists" "nikivi.learn.anything"]]
                  [:s [:alfred "search code" "nikivi.manage.notes"]]
@@ -444,8 +445,8 @@
                  [:a :!Cc] ; Copy
                  [:u :!Cx] ; Cut
                  [:v :left_shift]
+                 [:o :!CTOm] ; Vimac Scroll
                  ;[:o :!COp] ; Selection -> HasteBin link
-                 [:o [:alfred "search emoji" "com.github.jsumners.alfred-emoji"]]
                  [:quote [:!Cleft_arrow :!CSright_arrow]] ; Highlight current line
                  [:w [:!Oleft_arrow :!OSright_arrow]] ; Highlight word
                  [:d :delete_or_backspace]
@@ -493,8 +494,9 @@
                  [:s [:km "edit: 2nd iTerm tab"]]
                  [:j [:km "edit: 1st iTerm tab"]]
                  [:semicolon [:km "edit: Karabiner"]]
+                 [:period :!CTOn] ; Vimac Hinting
                  [:a [:km "open: Figma"]]
-                 ;[:semicolon :!CTOi] ; Tester
+                 ;[:period :!CTOi] ; Tester
                  ;[:q :!CSgrave_accent_and_tilde] ; Switch between active windows (go up)
                  [:h [:km "Make markdown link from selection {link}"]]
                  [:p :!CTOc] ; Sleep
@@ -535,9 +537,7 @@
                  [:l [[:open "dash://.python:"] ["in-python" 1] ["in-go" 0] ["in-js" 0] ["in-elixir" 0] ["in-rust" 0] ["in-swift" 0]]] ; Python
                  [:spacebar :!COSn] ; Selection -> GitHub
                  [:h :!CTOx] ; Little Snitch
-                 ;[:e [:km "Add blog to Reeder"]]
                  ;[:n :!STh] ; Record macro
-                 [:semicolon [:km "Paste active todo"]]
                  [:w [:alfred "toggle wifi" "nikivi.wifi.tools"]]
                  [:e :!CTk] ; Turn on/off BTT TouchBar
                  [:r [:alfred "restart wifi" "nikivi.wifi.tools"]]
