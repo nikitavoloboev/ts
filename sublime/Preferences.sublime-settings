@@ -157,7 +157,7 @@
 	"color_scheme": "Packages/ayu/ayu-dark.sublime-color-scheme",
 	"dictionary": "Packages/Language - English/en_US.dic",
 	"font_face": "Fira Code",
-	"font_size": 14,
+	"font_size": 10,
 	"ignored_packages":
 	[
 		"Vintage"

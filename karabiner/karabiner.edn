@@ -179,26 +179,26 @@
         {:des "wkey (apps)"
          :rules [:w-mode
                  [:e [:km "open: Fantastical"]]
+                 [:r [:km "open: Trello"]]
+                 [:t [:km "open: Activity Monitor"]]
+                 [:a :!OSC1] ; Open Dash
+                 [:d [:km "open: Paw"]]
+                 [:f [:km "open: 2Do"]]
                  [:m [:km "open: Xcode"]]
                  [:c [:km "open: Spotify"]]
                  [:k [:km "open: Safari"]]
-                 [:t [:km "open: Activity Monitor"]]
                  [:i [:km "open: Notion"]]
                  [:period [:km "open: Instruments"]]
                  [:h [:km "open: React Native Debugger"]] ; TODO: use flipper
                  [:y [:km "open: Safari Technology Preview"]]
                  [:u [:km "open: Firefox Nightly"]]
                  [:spacebar [:km "open: Chrome Canary / Simulator"]]
-                 [:g [:km "open: Postico"]]
+                 [:v [:km "open: Postico"]]
                  [:p [:km "open: Postgres"]]
                  [:caps_lock [:km "open: Finder"]]
                  [:semicolon [:km "open: Tower"]]
                  [:b [:km "open: BetterTouchTool"]]
-                 [:a :!OSC1] ; Open Dash
-                 [:v [:km "open: Console"]]
-                 [:r [:km "open: Trello"]]
-                 [:d [:km "open: Paw"]]
-                 [:f [:km "open: 2Do"]]
+                 [:g [:km "open: Console"]]
                  [:j [:km "open: iTerm"]]
                  [:n [:km "open: Sublime Text"]]
                  [:l [:km "open: VS Code"]]
@@ -441,13 +441,10 @@
                  [:e :tab]
                  [:r :!Stab]
                  [:i :!CTperiod] ; Contexts search active windows
-                 [:period :!COS0] ; Selection -> Typinator snippet
                  [:a :!Cc] ; Copy
                  [:u :!Cx] ; Cut
                  [:v :left_shift]
-                 [:o :!CTOm] ; Vimac Scroll
                  ;[:o :!COp] ; Selection -> HasteBin link
-                 [:quote [:!Cleft_arrow :!CSright_arrow]] ; Highlight current line
                  [:w [:!Oleft_arrow :!OSright_arrow]] ; Highlight word
                  [:d :delete_or_backspace]
                  [:f :return_or_enter]
@@ -460,7 +457,8 @@
                  [:##b :!Cleft_arrow]
                  [:n :!Cv] ; Paste
                  [:##m :!Cright_arrow]
-                 ;[:semicolon :!TCclose_bracket] ; Search SnippetsLab library with assistant
+                 [:period :!COS0] ; Selection -> Typinator snippet
+                 [:quote [:!Cleft_arrow :!CSright_arrow]] ; Highlight current line
                  [:semicolon :!CTO9]]} ; Search Typinator
         {:des "dkey (mouse)"
          :rules [:d-mode
@@ -494,7 +492,6 @@
                  [:s [:km "edit: 2nd iTerm tab"]]
                  [:j [:km "edit: 1st iTerm tab"]]
                  [:semicolon [:km "edit: Karabiner"]]
-                 [:period :!CTOn] ; Vimac Hinting
                  [:a [:km "open: Figma"]]
                  ;[:period :!CTOi] ; Tester
                  ;[:q :!CSgrave_accent_and_tilde] ; Switch between active windows (go up)
@@ -522,7 +519,7 @@
                  [:n :!CTOg] ; Turn on/off notifications
                  [:m :!COslash] ; Show/hide notification centre
                  [:a [:km "Go to KM group of current app"]]
-                 [:semicolon :!COSs] ; Move window between different screen & maximize
+                 [:semicolon :!COSs] ; Move window between different screen & maximize (iPad)
                  [:caps_lock [:km "Go to KM group of current app from picklist"]]
                  [:l :!CSOd] ; Move window right
                  [:h :!CSOa] ; Move window left
