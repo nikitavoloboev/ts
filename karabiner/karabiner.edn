@@ -593,7 +593,6 @@
                  [:i [:km "test: Jupyter"]]
                  [:n [:km "test: TS"]]
                  [:m [:km "test: Rust"]]
-                 ;[:period [:km "New SnippetsLab snippet"]]
                  [:semicolon [:alfred "search build to learn" "nikivi.private.directories"]]]}
         {:des "vkey (media)"
          :rules [:v-mode
@@ -602,14 +601,16 @@
                  [:u :!COS6] ; Toggle Night Shift on/off.
                  [:j :mute]
                  [:w [:km "Repeat Spotify song"]]
+                 [:a :!TS0] ; Turn on/off Noizio
                  [:s [:km "Play/pause Spotify"]]
                  [:d [:km "Noizio settings"]]
-                 [:a :!TS0] ; Turn on/off Noizio
                  [:semicolon :!TS0] ; Turn on/off Noizio
                  [:comma [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:37i9dQZEVXcMHpP6EcIqNe"]] ; Discover Weekly playlist
                  [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ESjwZeTcHOWzY3FYO5zs5"]] ; Focus playlist
                  [:quote [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ERn0U4qZIKC8Dy7RrMMsn"]] ; Likes playlist
                  [:open_bracket [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:2N82DnDsPGMnpJhN8sVFJu"]] ; Bliss playlist
+                 [:grave_accent_and_tilde :illumination_decrement]
+                 [:z :illumination_increment]
                  [:i :display_brightness_decrement]
                  [:o :display_brightness_increment]
                  [:h :vk_consumer_previous]
