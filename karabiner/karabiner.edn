@@ -444,9 +444,9 @@
                  [:r :!Stab]
                  [:i :!CTperiod] ; Contexts search active windows
                  [:a :!Cc] ; Copy
-                 [:u :!Cx] ; Cut
+                 [:o :!Cx] ; Cut
                  [:v :left_shift]
-                 ;[:o :!COp] ; Selection -> HasteBin link
+                 [:u :!COp] ; Selection -> HasteBin link
                  [:w [:!Oleft_arrow :!OSright_arrow]] ; Highlight word
                  [:d :delete_or_backspace]
                  [:f :return_or_enter]
@@ -459,6 +459,8 @@
                  [:##b :!Cleft_arrow]
                  [:n :!Cv] ; Paste
                  [:##m :!Cright_arrow]
+                 [:open_bracket [:km "Lowercase selected text"]]
+                 [:close_bracket [:km "Uppercase selected text"]]
                  [:period :!COS0] ; Selection -> Typinator snippet
                  [:quote [:!Cleft_arrow :!CSright_arrow]] ; Highlight current line
                  [:semicolon :!CTO9]]} ; Search Typinator
@@ -473,6 +475,7 @@
                  [:semicolon [:km "Google selected word"]]
                  [:i :!Ckeypad_hyphen] ; Zoom out
                  [:o :!Ckeypad_plus] ; Zoom in
+                 [:f :!CTOp] ; Sip color picker
                  [:n [:km "Open URL in clipboard in Safari"]]
                  [:u [:km "Google Lucky selected word"]]
                  [:l [:km "Google clipboard"]]
@@ -484,10 +487,7 @@
         {:des "fkey (essential)"
          :rules [:f-mode
                  [:spacebar :!CT7] ; Start Google search with selection
-                 [:1 [:km "Uppercase selected text"]]
-                 [:2 :!CSO5] ; PixelSnap
-                 [:3 :!CTOp] ; Sip color picker
-                 [:4 [:km "Lowercase selected text"]]
+                 [:caps_lock :!CSO5] ; PixelSnap
                  [:q :!CTO4] ; Alfred file action
                  [:e :!CO8] ; Alfred clipboard history search
                  [:d [:km "Centre mouse to active app"]]
@@ -760,6 +760,8 @@
                  [:e :!TO3] ; Screenshot -> Annotate
                  [:r [:alfred "Screenshot -> Imgur" "com.vitorgalvao.alfred.webscreenshot"]]
                  [:a :!CO5] ; Start/stop ScreenFlow recording
+                 ;[:s :!CO5] ; TODO: Configure ScreenFlow recording
+                 ;[:d :!CO5] ; TODO: Pause/unpause ScreenFlow recording
                  ;[:f :!CO5] ; TODO: Start/stop ScreenFlow partial screen recording
                  [:j [:km "w: YouTube"]]
                  [:k [:km "w: GitHub"]]
@@ -767,14 +769,14 @@
                  [:semicolon [:km "w: GitHub (notifications)"]]
                  [:quote [:km "w: GitHub (issues)"]]
                  [:slash [:km "w: GitHub (prs)"]]
-                 [:s [:km "w: Google Docs"]]
-                 [:d [:km "w: Google Slides"]]
-                 [:i [:km "w: CodeSandbox"]]
+                 [:i [:km "w: Google Docs"]]
+                 [:u [:km "w: Beautiful.ai"]]
+                 [:n [:km "w: CodeSandbox"]]
                  [:o [:km "w: GoDoc"]]
                  [:m [:km "w: Metabase"]]
                  [:period [:km "w: GitLab Rekki"]]
                  [:g [:km "w: Google"]]
-                 [:n [:km "w: AWS"]]
-                 [:m [:km "w: GCP"]]
-                 [:f [:km "w: Stack Overflow"]]]}
+                 [:h [:km "w: AWS"]]
+                 [:g [:km "w: GCP"]]
+                 [:t [:km "w: Stack Overflow"]]]}
 ]}
