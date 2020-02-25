@@ -128,7 +128,8 @@
 		"cli",
 		"Ethereum",
 		"inbox",
-		"referenceable"
+		"referenceable",
+		"todos"
 	],
 	"auto_format_on_save": true,
 	"binary_file_patterns":

@@ -108,19 +108,18 @@
                  [:j [:km "wiki: Rules"]]
                  [:r [:km "Reflect"]]
                  [:l [:km "Search current safari url in wiki"]]
-                 [:period [:km "wiki: Processes"]]
-                 [:h [:km "wiki: My workflow"]]
+                 [:i [:km "wiki: Processes"]]
+                 [:o [:km "wiki: My workflow"]]
                  [:m [:km "wiki: Summary"]]
+                 [:n [:km "wiki: Notes"]]
                  [:u [:km "wiki: Used hotkeys"]]
                  [:k [:km "edit: Private notes"]]
                  [:g [:km "edit: Git config"]]
                  [:t [:km "edit: Projects"]]
-                 [:n [:km "edit: Now"]]
-                 [:semicolon [:km "proj: Knowledge"]]
-                 [:quote [:km "edit: Darwin Nix"]]
                  [:f [:km "proj: Dotfiles"]]
-                 [:o [:km "edit: Zsh functions"]]
-                 [:i [:km "edit: Aliases"]]]}
+                 [:period [:km "edit: Now"]]
+                 [:quote [:km "edit: Darwin Nix"]]
+                 [:semicolon [:km "proj: Knowledge"]]]}
         {:des "4key (open curated lists)"
          :rules [:4-mode
                  [:r [:km "edit: Web Searches"]]
@@ -581,18 +580,18 @@
                  [:quote [:alfred "add_current_track_to" "com.vdesabou.spotify.mini.player" "spotify:playlist:2N82DnDsPGMnpJhN8sVFJu"]] ; Add song to Bliss playlist
                  [:b [:alfred "show_playlists" "com.vdesabou.spotify.mini.player"]]
                  [:n [:alfred "remove_current_track_from" "com.vdesabou.spotify.mini.player"]]]}
-        {:des "ckey (test)"
+        {:des "ckey (test + dots)"
          :rules [:c-mode
                  [:a [:km "Clone repo to ~/src/clones and open with VS Code"]]
                  [:s [:km "Clone repo to ~/src/clones"]]
                  ;[:d [:km "Clone repo to ~/src/clones and open with Xcode"]] ; TODO:
                  [:spacebar :!CSOy] ; Selection -> Stack Overflow
-                 [:0 [:km "test: Elixir"]]
-                 [:h [:km "test: Haskell"]]
+                 [:i [:km "edit: Aliases"]]
+                 [:o [:km "edit: Zsh functions"]]
                  [:j [:km "test: JS"]]
                  [:k [:km "test: Go"]]
                  [:l [:km "test: Python"]]
-                 ;[:i [:km "test: Jupyter"]]
+                 [:period [:km "test: Jupyter"]]
                  [:n [:km "test: TS"]]
                  [:m [:km "test: Rust"]]
                  [:semicolon [:alfred "search build to learn" "nikivi.private.directories"]]]}
