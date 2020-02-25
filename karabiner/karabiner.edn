@@ -198,7 +198,8 @@
                  [:caps_lock [:km "open: Finder"]]
                  [:semicolon [:km "open: Tower"]]
                  [:b [:km "open: BetterTouchTool"]]
-                 [:g [:km "open: Console"]]
+                 ;[:g [:km "open: Console"]]
+                 [:g [:km "open: Sublime Merge"]]
                  [:j [:km "open: iTerm"]]
                  [:n [:km "open: Sublime Text"]]
                  [:l [:km "open: VS Code"]]
@@ -279,8 +280,12 @@
                  [:l :!SOTr] ; Personal
                  ;[:h :!COSo] ; Safari URL -> HN
                  ;[:j :!COSo] ; Safari URL -> Twitter
+                 ;[:u [:km "w: Medium"]]
+                 ;[:b [:km "w: Observable"]]
+                 ;[:i [:km "w: regex101"]]
+                 ;[:h [:km "w: Arxiv"]]
                  [:r [:km "w: Repl"]]
-                 [:n [:km "w: Tachyons"]]
+                 ;[:n [:km "w: Digital Ocean"]]
                  [:m [:km "w: Meetup"]]
                  [:e [:km "w: Stripe"]]
                  [:o [:km "w: Dropbox"]]
@@ -363,24 +368,21 @@
                  [:1 [:alfred "Screenshot -> Imgur" "com.vitorgalvao.alfred.webscreenshot"]]
                  [:2 :!TO2] ; Screenshot -> Clipboard
                  [:3 :!TO3] ; Screenshot -> Annotate
-                 [:4 :!TO4] ; Show Annotate
-                 [:9 :!TO9] ; Picture of screen -> Clipboard
-                 [:0 :!TO0] ; Picture of screen -> ~/Desktop
-                 [:spacebar :!TO7] ; New Kap recording
-                 [:tab [:km "New ScreenFlow recording (options)"]]
-                 [:q :!CO5] ; Start/stop ScreenFlow recording
-                 [:f [:km "Open Ideas Trello"]]
-                 [:e [:km "Open Learn Trello"]]
+                 [:4 :!TO9] ; Picture of screen -> Clipboard
+                 [:5 :!TO0] ; Picture of screen -> ~/Desktop
                  [:d [:km "Open Videos Trello"]]
-                 [:p [:km "Open Possessions Trello"]]
-                 [:w [:km "Open Papers Trello"]]
-                 [:s [:km "Open LA Trello"]]
+                 [:e [:km "Open Learn Trello"]]
+                 [:f [:km "Open Ideas Trello"]]
+                 [:s [:km "Open Possessions Trello"]]
+                 [:a [:km "Open Papers Trello"]]
+                 [:h [:km "Open LA Trello"]]
                  [:u [:km "Open Courses Trello"]]
                  [:j [:km "Open 2Do Today"]]
                  [:k [:km "Open 2Do GitHub"]]
                  [:l [:km "Open 2Do Later"]]
                  [:n [:km "Open 2Do Clean"]]
                  [:g [:km "Open 2Do Life"]]
+                 [:b [:km "Open 2Do Wiki"]]
                  [:o [:km "Open 2Do Work"]]
                  [:y [:km "Open 2Do Buy"]]
                  [:i [:km "Open 2Do Fix"]]
@@ -388,7 +390,7 @@
                  [:semicolon [:km "Open 2Do Starred"]]
                  [:comma [:km "Open 2Do Other"]] ; TODO: remove once its empty
                  [:quote [:km "Open 2Do Ask"]]
-                 [:period [:km "Search 2Do"]]
+                 [:spacebar [:km "Search 2Do"]]
                  [:c [:km "w: Goodreads (currently reading)"]]
                  [:v [:km "w: Goodreads (next)"]]]}
         {:des "akey (ctrl)"
@@ -487,14 +489,14 @@
                  [:3 :!CTOp] ; Sip color picker
                  [:4 [:km "Lowercase selected text"]]
                  [:q :!CTO4] ; Alfred file action
-                 [:w [:km "Centre mouse to active app"]]
                  [:e :!CO8] ; Alfred clipboard history search
-                 [:s [:km "edit: 2nd iTerm tab"]]
+                 [:d [:km "Centre mouse to active app"]]
                  [:j [:km "edit: 1st iTerm tab"]]
                  [:semicolon [:km "edit: Karabiner"]]
                  [:a [:km "open: Figma"]]
+                 [:s [:km "edit: 2nd iTerm tab"]]
+                 [:w [:km "open: MindNode"]]
                  ;[:period :!CTOi] ; Tester
-                 ;[:q :!CSgrave_accent_and_tilde] ; Switch between active windows (go up)
                  [:h [:km "Make markdown link from selection {link}"]]
                  [:p :!CTOc] ; Sleep
                  [:z :!Ospacebar] ; Switch language (Russian <-> English)
@@ -509,12 +511,13 @@
         {:des "gkey (actions)"
          :rules [:g-mode
                  [:spacebar :!CT8] ; Selection -> Dictionary (wiki)
-                 [:e [:km "Test"]]
-                 [:r [:km "Go to test macro"]]
-                 [:d [:km "Make global macro"]]
+                 [:q :!CT3] ; Search bartender menu items
+                 [:w :!CSgrave_accent_and_tilde] ; Switch between active windows (go up)
+                 [:e [:km "Go to test macro"]]
+                 [:r [:km "Test"]]
+                 [:d [:km "Make global macro"]] ; TODO: create global macro from Test (clear test, focus on naming new macro) 
                  [:j :!Cgrave_accent_and_tilde] ; Switch between active windows  (go down)
-                 [:e :!CT3] ; Search bartender menu items
-                 [:q :!CO0] ; Show Dropzone dropdown
+                 [:z :!CO0] ; Show Dropzone dropdown
                  [:k :!COSf] ; Maximize window
                  [:n :!CTOg] ; Turn on/off notifications
                  [:m :!COslash] ; Show/hide notification centre
@@ -590,7 +593,7 @@
                  [:j [:km "test: JS"]]
                  [:k [:km "test: Go"]]
                  [:l [:km "test: Python"]]
-                 [:i [:km "test: Jupyter"]]
+                 ;[:i [:km "test: Jupyter"]]
                  [:n [:km "test: TS"]]
                  [:m [:km "test: Rust"]]
                  [:semicolon [:alfred "search build to learn" "nikivi.private.directories"]]]}
@@ -636,7 +639,7 @@
                  [:close_bracket [:km "w: Indie Hackers"]]
                  [:9 [:km "w: HN (show new)"]]
                  [:0 [:km "w: Lobsters (comments)"]]
-                 [:a [:km "w: Alfred forum"]]
+                 [:a [:km "w: Alfred Forum"]]
                  [:m [:km "w: KM forum"]]
                  [:k [:km "w: GitHub (front page)"]]
                  [:h [:alfred "search hn" "com.vitorgalvao.alfred.hackerboard"]]
@@ -752,24 +755,26 @@
                  [:v [:e :l :i :x :i :r :spacebar]]]} ; -> elixir
         {:des "spacekey (websites)"
          :rules [:spacebar-mode
+                 [:q :!TO4] ; Show Annotate
+                 [:w :!TO2] ; Screenshot -> Clipboard
+                 [:e :!TO3] ; Screenshot -> Annotate
+                 [:r [:alfred "Screenshot -> Imgur" "com.vitorgalvao.alfred.webscreenshot"]]
+                 [:a :!CO5] ; Start/stop ScreenFlow recording
+                 ;[:f :!CO5] ; TODO: Start/stop ScreenFlow partial screen recording
                  [:j [:km "w: YouTube"]]
                  [:k [:km "w: GitHub"]]
-                 [:semicolon [:km "w: GitHub (issues)"]]
-                 [:t [:km "w: Spectrum"]]
-                 [:period [:km "w: GitHub (prs)"]]
-                 [:l [:km "w: CodeSandbox"]]
+                 [:l [:km "w: Clubhouse"]]
+                 [:semicolon [:km "w: GitHub (notifications)"]]
+                 [:quote [:km "w: GitHub (issues)"]]
+                 [:slash [:km "w: GitHub (prs)"]]
+                 [:s [:km "w: Google Docs"]]
+                 [:d [:km "w: Google Slides"]]
+                 [:i [:km "w: CodeSandbox"]]
                  [:o [:km "w: GoDoc"]]
-                 [:f [:km "w: Google Docs"]]
                  [:m [:km "w: Metabase"]]
-                 [:i [:km "w: GitHub (notifications)"]]
-                 [:n [:km "w: GitLab Rekki"]]
-                 [:r [:km "w: Arxiv"]]
-                 [:a [:km "w: Google"]]
-                 [:u [:km "w: Medium"]]
-                 [:h [:km "w: Clubhouse"]]
-                 [:b [:km "w: Observable"]]
-                 [:w [:km "w: AWS"]]
-                 [:g [:km "w: GCP"]]
-                 [:open_bracket [:km "w: regex101"]]
-                 [:s [:km "w: Stack Overflow"]]]}
+                 [:period [:km "w: GitLab Rekki"]]
+                 [:g [:km "w: Google"]]
+                 [:n [:km "w: AWS"]]
+                 [:m [:km "w: GCP"]]
+                 [:f [:km "w: Stack Overflow"]]]}
 ]}
