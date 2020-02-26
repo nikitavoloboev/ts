@@ -340,7 +340,7 @@
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+q",
+    "key": "ctrl+s",
     "command": "editor.action.marker.prev",
     "when": "editorTextFocus && !editorReadonly"
   },
@@ -369,10 +369,6 @@
   {
     "key": "ctrl+shift+-",
     "command": "-workbench.action.navigateForward"
-  },
-  {
-    "key": "ctrl+c",
-    "command": "workbench.action.focusSideBar"
   },
   {
     "key": "ctrl+h",
