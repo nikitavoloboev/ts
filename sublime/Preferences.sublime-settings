@@ -129,7 +129,8 @@
 		"Ethereum",
 		"inbox",
 		"referenceable",
-		"todos"
+		"todos",
+		"Macbook"
 	],
 	"auto_format_on_save": true,
 	"binary_file_patterns":
@@ -160,7 +161,7 @@
 	"color_scheme": "Packages/ayu/ayu-dark.sublime-color-scheme",
 	"dictionary": "Packages/Language - English/en_US.dic",
 	"font_face": "Fira Code",
-	"font_size": 13,
+	"font_size": 11,
 	"ignored_packages":
 	[
 		"Vintage"
