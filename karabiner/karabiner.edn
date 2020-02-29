@@ -367,13 +367,9 @@
                  [:3 :!TO3] ; Screenshot -> Annotate
                  [:4 :!TO9] ; Picture of screen -> Clipboard
                  [:5 :!TO0] ; Picture of screen -> ~/Desktop
-                 [:d [:km "Open Videos Trello"]]
+                 [:w [:km "Open Papers / Courses Trello"]]
                  [:e [:km "Open Learn Trello"]]
                  [:f [:km "Open Ideas Trello"]]
-                 [:p [:km "Open Possessions Trello"]]
-                 [:s [:km "Open Papers Trello"]]
-                 [:h [:km "Open LA Trello"]]
-                 [:u [:km "Open Courses Trello"]]
                  [:j [:km "Open 2Do Today"]]
                  [:k [:km "Open 2Do GitHub"]]
                  [:l [:km "Open 2Do Later"]]
