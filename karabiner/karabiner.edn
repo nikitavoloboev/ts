@@ -370,22 +370,23 @@
                  [:w [:km "Open Papers / Courses Trello"]]
                  [:e [:km "Open Learn Trello"]]
                  [:f [:km "Open Ideas Trello"]]
+                 [:g [:km "Open 🐱🐶 Trello"]]
                  [:j [:km "Open 2Do Today"]]
                  [:k [:km "Open 2Do GitHub"]]
                  [:l [:km "Open 2Do Later"]]
                  [:n [:km "Open 2Do Clean"]]
-                 [:g [:km "Open 2Do Life"]]
-                 [:b [:km "Open 2Do Wiki"]]
+                 [:d [:km "Open 2Do Life"]]
+                 [:h [:km "Open 2Do Wiki"]]
+                 [:s [:km "Open 2Do Family"]]
                  [:o [:km "Open 2Do Work"]]
-                 [:y [:km "Open 2Do Buy"]]
+                 [:u [:km "Open 2Do Buy"]]
                  [:i [:km "Open 2Do Fix"]]
                  [:m [:km "Open 2Do Tools"]]
                  [:semicolon [:km "Open 2Do Starred"]]
-                 [:comma [:km "Open 2Do Other"]] ; TODO: remove once its empty
-                 [:quote [:km "Open 2Do Ask"]]
-                 [:spacebar [:km "Search 2Do"]]
-                 [:c [:km "w: Goodreads (currently reading)"]]
-                 [:v [:km "w: Goodreads (next)"]]]}
+                 [:quote [:km "Open 2Do Other"]] ; TODO: remove once its empty
+                 [:period [:km "Search 2Do"]]
+                 [:v [:km "w: Goodreads (currently reading)"]]
+                 [:c [:km "w: Goodreads (next)"]]]}
         {:des "akey (ctrl)"
          :rules [:a-mode
                  [:spacebar :!CT9] ; Selection -> Google
