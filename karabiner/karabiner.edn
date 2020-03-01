@@ -376,14 +376,15 @@
                  [:l [:km "Open 2Do Later"]]
                  [:n [:km "Open 2Do Clean"]]
                  [:d [:km "Open 2Do Life"]]
+                 [:s [:km "Open 2Do Love"]]
                  [:h [:km "Open 2Do Wiki"]]
-                 [:s [:km "Open 2Do Family"]]
                  [:o [:km "Open 2Do Work"]]
                  [:u [:km "Open 2Do Buy"]]
                  [:i [:km "Open 2Do Fix"]]
                  [:m [:km "Open 2Do Tools"]]
                  [:semicolon [:km "Open 2Do Starred"]]
                  [:quote [:km "Open 2Do Other"]] ; TODO: remove once its empty
+                 ;[:quote [:km "Open 2Do All"]] ; TODO: open 2Do All (sort by priority)
                  [:period [:km "Search 2Do"]]
                  [:v [:km "w: Goodreads (currently reading)"]]
                  [:c [:km "w: Goodreads (next)"]]]}
@@ -618,7 +619,6 @@
         {:des "bkey (break)"
          :rules [:b-mode
                  [:spacebar :!TOSs] ; Selection -> DuckDuckGo
-                 [:period [:km "Break 5 min"]]
                  [:semicolon [:km "w: GitHub (trending)"]]
                  [:d [:km "w: Reddit Saved"]]
                  [:w [:km "w: Medium (network)"]]
@@ -629,17 +629,17 @@
                  [:l [:km "w: Lobsters"]]
                  [:s [:km "w: Swift forum"]]
                  [:i [:km "w: HN (new)"]]
-                 [:p [:km "w: Product Hunt"]]
+                 [:n [:km "w: Product Hunt"]]
                  [:u [:km "w: Lobsters (new)"]]
                  [:open_bracket [:km "w: HN (comments)"]]
                  [:close_bracket [:km "w: Lobsters (comments)"]]
                  [:f [:km "w: KM forum"]]
-                 [:9 [:km "w: Product Hunt (new)"]]
+                 [:p [:km "w: Product Hunt (new)"]]
                  [:0 [:km "w: HN (show new)"]]
                  [:a [:km "w: Alfred Forum"]]
                  [:k [:km "w: GitHub (front page)"]]
                  [:h [:alfred "search hn" "com.vitorgalvao.alfred.hackerboard"]]
-                 [:n [:km "w: HckrNews"]]
+                 [:period [:km "w: HckrNews"]]
                  [:j [:km "w: HN"]]]}
         {:des "nkey (alfred)"
          :rules [:n-mode
