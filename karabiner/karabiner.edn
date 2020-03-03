@@ -12,6 +12,7 @@
              :2-mode {:key :2}
              :3-mode {:key :3}
              :4-mode {:key :4}
+             :tab-mode {:key :tab}
              :q-mode {:key :q}
              :w-mode {:key :w}
              :e-mode {:key :e}
@@ -83,6 +84,8 @@
          :rules [[:right_command :right_command nil {:alone :!CTOSspacebar}]]}
         {:des "left cmd -> cmd+tab"
          :rules [[:left_command :left_command nil {:alone :!Ctab}]]}
+        {:des "right opt -> ChromeCanary/Simulator"
+         :rules [[:right_alt :right_alt nil {:alone [:km "open: Chrome Canary / Simulator (no save)"]}]]}
         {:des "§ -> Karabiner/VSCodeVim on/off"
          :rules [[:non_us_backslash [:km "Karabiner/VSCodeVim on/off"]]]}
         {:des "jsim"
@@ -118,7 +121,7 @@
                  [:t [:km "edit: Projects"]]
                  [:f [:km "proj: Dotfiles"]]
                  [:period [:km "edit: Now"]]
-                 [:quote [:km "edit: Darwin Nix"]]
+                 [:quote [:km "proj: LA Docs"]]
                  [:semicolon [:km "proj: Knowledge"]]]}
         {:des "4key (open curated lists)"
          :rules [:4-mode
@@ -129,6 +132,11 @@
                  [:n [:km "list: Events"]]
                  [:t [:km "list: Newsletters"]]
                  [:l [:km "list: Command line tools"]]]}
+        {:des "tabkey (palettes)"
+         :rules [:tab-mode
+                 [:j :!SOTw] ; Replies
+                 [:k :!SOTf] ; App specific
+                 [:l :!SOTr]]} ; Personal
         {:des "qkey (cmd + shift)"
          :rules [:q-mode
                  [:spacebar :!CSOe] ; Selection -> YouTube
@@ -267,35 +275,32 @@
                  [:l [:km "open: Reeder"]]
                  [:period [:km "open: Books"]]
                  [:j [:km "open: Dictionary"]]
-                 [:k [:km "open: PDF Expert"]]
-                 [:n [:km "open: Timing"]]]}
+                 [:k [:km "open: PDF Expert"]]]}
         {:des "tkey (palettes + websites)"
          :rules [:t-mode
                  [:spacebar :!COSr] ; Selection -> Google Translate
-                 [:j :!SOTw] ; Replies
-                 [:k :!SOTf] ; App specific
-                 [:l :!SOTr] ; Personal
-                 ;[:h :!COSo] ; Safari URL -> HN
-                 ;[:j :!COSo] ; Safari URL -> Twitter
-                 ;[:u [:km "w: Medium"]]
-                 ;[:b [:km "w: Observable"]]
-                 ;[:i [:km "w: regex101"]]
-                 ;[:h [:km "w: Arxiv"]]
+                 [:j :!COSo] ; Safari URL -> Twitter
+                 ;[:k :!COSo] ; Safari URL -> HN
+                 ;[:l :!COSo] ; Safari URL -> Lobsters
+                 ;[:j :!COSo] ; Safari URL -> Google
+                 [:u [:km "w: Medium"]]
+                 [:b [:km "w: Observable"]]
+                 [:0 [:km "w: regex101"]]
+                 [:i [:km "w: Arxiv"]]
                  [:r [:km "w: Repl"]]
-                 ;[:n [:km "w: Digital Ocean"]]
+                 [:n [:km "w: Digital Ocean"]]
                  [:m [:km "w: Meetup"]]
                  [:e [:km "w: Stripe"]]
-                 [:o [:km "w: Dropbox"]]
-                 ;[:l [:km "w: Leetcode"]]
+                 [:o [:km "w: Stack Overflow"]]
+                 [:p [:km "w: Dropbox"]]
                  [:a [:km "w: Amazon"]]
                  [:h [:km "w: Twitch"]]
                  [:period [:km "w: IFTTT"]]
-                 ;[:j [:km "w: Google Drive"]]
+                 [:comma [:km "w: Google Drive"]]
                  [:z [:km "w: MDN"]]
                  [:semicolon [:km "w: Netlify"]]
-                 ;[:k [:km "w: Kaggle"]]
-                 [:w [:km "w: WakaTime"]]
-                 [:p [:km "w: NPM"]]]}
+                 [:e [:km "w: Kaggle"]]
+                 [:n [:km "w: NPM"]]]}
         {:des "ikey (symbols)"
          :rules [:i-mode
                  ;[:q :!Sclose_bracket] ; }
@@ -375,19 +380,19 @@
                  [:k [:km "Open 2Do GitHub"]]
                  [:l [:km "Open 2Do Later"]]
                  [:n [:km "Open 2Do Clean"]]
-                 [:d [:km "Open 2Do Life"]]
-                 [:s [:km "Open 2Do Love"]]
-                 [:h [:km "Open 2Do Wiki"]]
-                 [:o [:km "Open 2Do Work"]]
+                 [:s [:km "Open 2Do Life"]]
+                 [:a [:km "Open 2Do Love"]]
+                 [:m [:km "Open 2Do Wiki"]]
+                 [:d [:km "Open 2Do Work"]]
                  [:u [:km "Open 2Do Buy"]]
                  [:i [:km "Open 2Do Fix"]]
-                 [:m [:km "Open 2Do Tools"]]
+                 [:o [:km "Open 2Do Tools"]]
                  [:semicolon [:km "Open 2Do Starred"]]
                  [:quote [:km "Open 2Do Other"]] ; TODO: remove once its empty
                  ;[:quote [:km "Open 2Do All"]] ; TODO: open 2Do All (sort by priority)
                  [:period [:km "Search 2Do"]]
-                 [:v [:km "w: Goodreads (currently reading)"]]
-                 [:c [:km "w: Goodreads (next)"]]]}
+                 [:c [:km "w: Goodreads (currently reading)"]]
+                 [:v [:km "w: Goodreads (next)"]]]}
         {:des "akey (ctrl)"
          :rules [:a-mode
                  [:spacebar :!CT9] ; Selection -> Google
@@ -470,6 +475,7 @@
                  [:semicolon [:km "Google selected word"]]
                  [:i :!Ckeypad_hyphen] ; Zoom out
                  [:o :!Ckeypad_plus] ; Zoom in
+                 [:f [:km "Centre mouse to active app"]]
                  [:n [:km "Open URL in clipboard in Safari"]]
                  [:u [:km "Google Lucky selected word"]]
                  [:l [:km "Google clipboard"]]
@@ -481,18 +487,17 @@
         {:des "fkey (essential)"
          :rules [:f-mode
                  [:spacebar :!CTq] ; Selection -> Web Searches
-                 [:caps_lock :!CSO5] ; PixelSnap
-                 [:q :!CTO4] ; Alfred file action
-                 [:e :!CO8] ; Alfred clipboard history search
+                 [:2 :!CSO5] ; PixelSnap
                  [:3 :!CTOp] ; Sip color picker
-                 ;[:d [:km "Centre mouse to active app"]]
+                 [:e :!CO8] ; Alfred clipboard history search
                  [:j [:km "edit: 1st iTerm tab"]]
                  [:semicolon [:km "edit: Karabiner"]]
+                 [:period :!CTO4] ; Alfred file action
                  [:a [:km "open: Figma"]]
                  [:s [:km "edit: 2nd iTerm tab"]]
+                 [:q [:km "open: Chrome Canary / Simulator (no save)"]]
                  [:w [:km "open: Chrome Canary / Simulator"]]
-                 [:d [:km "open: MindNode"]]
-                 [:period :!CTOi] ; Tester
+                 ;[:period :!CTOi] ; Tester
                  [:h [:km "Make markdown link from selection {link}"]]
                  [:p :!CTOc] ; Sleep
                  [:z :!Ospacebar] ; Switch language (Russian <-> English)
@@ -583,6 +588,7 @@
                  [:s [:km "Clone repo to ~/src/clones"]]
                  ;[:d [:km "Clone repo to ~/src/clones and open with Xcode"]] ; TODO:
                  [:spacebar :!CSOy] ; Selection -> Stack Overflow
+                 ;[:quote [:km "edit: Darwin Nix"]]
                  [:i [:km "edit: Aliases"]]
                  [:o [:km "edit: Zsh functions"]]
                  [:j [:km "test: JS"]]
@@ -763,18 +769,17 @@
                  ;[:f :!CO5] ; TODO: Start/stop ScreenFlow partial screen recording
                  [:j [:km "w: YouTube"]]
                  [:k [:km "w: GitHub"]]
-                 [:l [:km "w: Clubhouse"]]
+                 [:h [:km "w: Clubhouse"]]
                  [:i [:km "w: Google Docs"]]
                  [:u [:km "w: Beautiful.ai"]]
-                 [:n [:km "w: CodeSandbox"]]
+                 [:m [:km "w: CodeSandbox"]]
                  [:o [:km "w: GoDoc"]]
-                 [:m [:km "w: Metabase"]]
+                 [:b [:km "w: Metabase"]]
                  ;[:g [:km "w: Google"]]
-                 [:h [:km "w: AWS"]]
+                 [:n [:km "w: AWS"]]
                  [:g [:km "w: GCP"]]
-                 [:z [:km "w: Stack Overflow"]]
-                 [:quote [:km "w: GitHub (issues)"]]
-                 [:slash [:km "w: GitHub (prs)"]]
-                 [:period [:km "w: GitLab Rekki"]]
+                 [:quote [:km "w: GitHub (issue)"]]
+                 [:period [:km "w: GitHub (pr)"]]
+                 [:l [:km "w: GitLab Rekki"]] ; TODO: include GitHub (pr)
                  [:semicolon [:km "w: GitHub (notifications)"]]]}
 ]}

@@ -130,7 +130,8 @@
 		"inbox",
 		"referenceable",
 		"todos",
-		"Macbook"
+		"Macbook",
+		"uni"
 	],
 	"auto_format_on_save": true,
 	"binary_file_patterns":
@@ -161,7 +162,7 @@
 	"color_scheme": "Packages/ayu/ayu-dark.sublime-color-scheme",
 	"dictionary": "Packages/Language - English/en_US.dic",
 	"font_face": "Fira Code",
-	"font_size": 11,
+	"font_size": 10,
 	"ignored_packages":
 	[
 		"Vintage"

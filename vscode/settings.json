@@ -286,15 +286,5 @@
       "value": "#42b883"
     }
   ],
-  "workbench.colorTheme": "Monokai Night",
-//   "workbench.colorCustomizations": {
-//     "[Monokai Night]": {
-//       // "sideBar.background": "#347890"
-//     },
-//     "editor.tokenColorCustomizations": {
-//       "[Monokai Night]": {
-//         "Comments": "#259977"
-//     }
-//   }
-// }
+  "workbench.colorTheme": "Dracula Pro",
 }
