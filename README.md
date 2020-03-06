@@ -10,8 +10,8 @@ You can also see my top used applications, Safari extensions and Alfred workflow
 
 ##### Contents
 
-- [Install](#install)
-  - [Clean install everything](#clean-install-everything)
+- [Clean install](#clean-install)
+- [Setup & sync dotfiles](#setup-&-sync-dotfiles)
 - [Karabiner](#karabiner)
 - [Neovim](#neovim)
 - [VS Code](#vs-code)
@@ -22,26 +22,19 @@ You can also see my top used applications, Safari extensions and Alfred workflow
 - [Interesting dotfiles](#interesting-dotfiles)
 - [Contributing](#contributing)
 
-## Install
+## Clean install
 
-I use [Nix](https://nixos.org/nix/) with [Nix Darwin](https://github.com/LnL7/nix-darwin) to manage my system configuration. Nix is a declarative language and you can read through [my configuration file](https://github.com/nikitavoloboev/dotfiles/blob/master/nix/darwin.nix) to see what settings it applies and what programs it installs.
-
-Assuming you have Nix & Nix Darwin installed and this dotfiles repo cloned to `~/.dotfiles`, you should first run `/run/current-system/sw/bin/darwin-rebuild switch -I darwin-config=$HOME/.dotfiles/nix/darwin.nix`. This lets Nix Darwin know that the configuration file it should read is placed inside `~/.dotfiles/darwin.nix`.
-
-You can then run `darwin-rebuild switch` to apply my configuration on your system.
-
-I also use [Dotbot](https://github.com/anishathalye/dotbot) to apply appropriate symlinks so that I can keep the original files in this one dotfiles dir. Look [here](https://github.com/nikitavoloboev/dotfiles/blob/master/.install.conf.yaml#L1) for what exactly it will do. Place this cloned dotfiles repo in `~/.dotfiles/` and run `./install` inside it.
-
-### Clean install everything
-
-1. Boot fresh macOS copy.
+1. Boot latest macOS version. Make sure username is the name you want the home folder to be (by default its first name & last name).
 2. Go through [preferences](https://imgur.com/a/KoVAxFQ) & set everything up.
-3. Download & install apps from [my macOS](https://github.com/nikitavoloboev/my-mac-os).
-4. Download dotfiles & set everything up (instructions above).
-5. Download [Alfred workflows](https://github.com/learn-anything/alfred-workflows#readme).
-6. Download [KM macros](https://wiki.nikitavoloboev.xyz/macos/macos-apps/keyboard-maestro/km-macros).
+3. Download & install [apps I use](https://github.com/nikitavoloboev/my-mac-os).
+4. Clone dotfiles & [set everything up](#install).
+5. Sync settings for apps I use.
 
-I describe my custom configuration I use below. It is heavily tailored to my own workflow so it is best you take ideas from it rather than copying the entire config.
+The setup & apps/tools I use is heavily tailored to my own workflow so it is best you take ideas from it rather than copy entire config.
+
+## Setup & sync dotfiles
+
+I use [Dotbot](https://github.com/anishathalye/dotbot) to apply appropriate symlinks so that I can keep the original files in this one dotfiles dir. Look [here](https://github.com/nikitavoloboev/dotfiles/blob/master/.install.conf.yaml#L1) for what exactly it will do. Place this cloned dotfiles repo in `~/.dotfiles/` and run `./install` inside it.
 
 ## Karabiner
 
