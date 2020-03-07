@@ -1,28 +1,10 @@
 #!/usr/bin/env bash
-# Bootstrap dotfiles configuration.
-
+# Install necessary tools to run mage setup
 set -e
 
-# install brew
-# /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+# install brew (https://brew.sh)
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+brew install go  # https://github.com/golang/go
+go get -u github.com/magefile/mage # https://github.com/magefile/mage
 
-# install go (for mage) 
-# brew install go
-
-# install mage (https://github.com/magefile/mage)
-# TODO: why need to do this. why not just go get .. (ask on slack)
-# TODO: need to setup gopath 1st?
-# git clone https://github.com/magefile/mage
-# cd mage
-# go run bootstrap.go
- 
-CONFIG=".install.conf.yaml"
-DOTBOT_DIR="vendor/dotbot"
-
-DOTBOT_BIN="bin/dotbot"
-BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-
-cd "${BASEDIR}"
-git submodule update --init --recursive "${DOTBOT_DIR}"
-
-"${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" -c "${CONFIG}" "${@}"
+# mage setup
