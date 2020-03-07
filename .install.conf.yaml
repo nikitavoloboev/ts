@@ -26,7 +26,6 @@
     # TODO: install vs code extensions
     # - code --list-extensions
 
-
 # Symlink files
 - link:
     # Zsh
@@ -35,8 +34,6 @@
     # Git
     ~/.gitconfig: git/gitconfig
     ~/.gitignore_global: git/gitignore_global
-    # Hammerspoon
-    ~/.hammerspoon: hammerspoon
     # Sublime Text
     "~/Library/Application Support/Sublime Text 3/Packages/User": sublime
     # Neovim
@@ -44,5 +41,3 @@
     # VS Code
     ~/Library/Application Support/Code/User/settings.json: vscode/settings.json
     ~/Library/Application Support/Code/User/keybindings.json: vscode/keybindings.json
-    # IDEA
-    ~/.ideavimrc: idea/ideavimrc
