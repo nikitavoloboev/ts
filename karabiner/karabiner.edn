@@ -515,7 +515,7 @@
                  [:w :!CSgrave_accent_and_tilde] ; Switch between active windows (go up)
                  [:e [:km "Go to test macro"]]
                  [:r [:km "Test"]]
-                 [:d [:km "Make global macro"]] ; TODO: create global macro from Test (clear test, focus on naming new macro) 
+                 [:d [:km "Make global macro"]] ; TODO: create global macro from Test (clear test, focus on naming new macro)
                  [:j :!Cgrave_accent_and_tilde] ; Switch between active windows  (go down)
                  [:z :!CO0] ; Show Dropzone dropdown
                  [:k :!COSf] ; Maximize window
@@ -682,7 +682,6 @@
                  [:caps_lock [:alfred "search alfred" "nikivi.utilities" "man "]]
                  [:c [:alfred "search alfred" "nikivi.utilities" "css "]]
                  [:s [:alfred "search alfred" "nikivi.utilities" "lodash "]]
-                 [:n [:alfred "search alfred" "nikivi.utilities" "electron "]]
                  [:k [:alfred "search alfred" "nikivi.utilities" "docker "]]
                  [:v [:alfred "search alfred" "nikivi.utilities" "vim "]]
                  [:d [:alfred "search alfred" "nikivi.utilities" "node "]]

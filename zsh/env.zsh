@@ -1,4 +1,4 @@
-# Setting and editing of env variables.
+# ENV vars
 
 # Vars
 export EDITOR='nvim'
@@ -8,25 +8,13 @@ export SUDO_EDITOR='nvim'
 export PATH=$PATH:~/.dotfiles/bin # Scripts & utilities
 export PATH=$PATH:~/.cargo/bin # Rust
 export GOPATH="$(go env GOPATH)" # Go
-export PATH="$GOPATH/bin:$PATH" # Go
-export PATH=~/anaconda3/bin:$PATH # Anaconda
+export PATH="$PATH:$GOPATH/bin" # Go
+# export PATH=$PATH:~/anaconda3/bin # Anaconda
+# export PATH=$PATH:./node_modules/.bin
 
-export PATH=$PATH:./node_modules/.bin
-
-# TODO: remove? ask on nix irc or nix darwin
-# . "$HOME/.nix-profile/etc/profile.d/hm-session-vars.sh"
-
-eval "$(hub alias -s)"
-eval "$(direnv hook zsh)"
-
-# if command -v pazi &>/dev/null; then
-#   eval "$(pazi init zsh)"
-# fi
-
-# TODO: change pure prompt when I am in direnv env. Below func returns needed info
-# has_direnv() { if [[ -n $DIRENV_DIFF ]]; then echo in direnv; else echo not; fi }
+# eval "$(direnv hook zsh)"
 
 # fnm
-eval "$(fnm env --multi)"
+# eval "$(fnm env --multi)"
 
 typeset -U PATH # Remove duplicates in $PATH

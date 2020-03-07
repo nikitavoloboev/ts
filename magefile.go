@@ -2,6 +2,11 @@
 
 package main
 
+import (
+	"log"
+	"os"
+)
+
 // Setup macOS. Install apps, tools, link dotfiles.
 func Setup() {
 	installApps()
@@ -11,7 +16,22 @@ func Setup() {
 
 // Link dotfiles.
 func Link() {
-	deleteFile("")
+	home, err := os.UserHomeDir()
+	if err != nil {
+		log.Fatal(err)
+	}
+	home = home + "/"
+	dots := home + ".dotfiles/"
+	// map original file location -> location in dotfiles
+	links := make(map[string]string)
+	links[home+".zshrc"] = dots + "zsh/zshrc.zsh"
+	for origLoc, dotLoc := range links {
+		os.Remove(origLoc)
+		err := os.Symlink(dotLoc, origLoc)
+		if err != nil {
+			log.Fatal(err)
+		}
+	}
 }
 
 func installApps() {
