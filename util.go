@@ -1,3 +1,0 @@
-// +build mage
-
-package main

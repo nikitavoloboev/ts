@@ -1,7 +1,5 @@
 // +build mage
 
-package main
-
 import (
 	"log"
 	"os"
@@ -9,8 +7,8 @@ import (
 
 // Setup macOS. Install apps, tools, link dotfiles.
 func Setup() {
-	installApps()
-	installCLI()
+	// installApps()
+	// installCLI()
 	Link()
 }
 
@@ -22,9 +20,26 @@ func Link() {
 	}
 	home = home + "/"
 	dots := home + ".dotfiles/"
-	// map original file location -> location in dotfiles
-	links := make(map[string]string)
+	links := make(map[string]string) // original file location -> location in dotfiles
+
+	// Zsh
 	links[home+".zshrc"] = dots + "zsh/zshrc.zsh"
+	// links[home+".zprofile"] = dots + "zsh/zprofile.zsh"
+
+	// Git
+	links[home+".gitconfig"] = dots + "git/gitconfig"
+	links[home+".gitignore_global"] = dots + "git/gitignore_global"
+
+	// Sublime Text
+	// links[home+"Library/Application Support/Sublime Text 3/Packages/User"] = dots + "sublime"
+
+	// Neovim
+	// links[home+".config/nvim"] = dots + "nvim"
+
+	// VS Code
+	// links[home+"Library/Application Support/Code/User/settings.json"] = dots + "vscode/settings.json"
+	// links[home+"Library/Application Support/Code/User/keybindings.json"] = dots + "vscode/keybindings.json"
+
 	for origLoc, dotLoc := range links {
 		os.Remove(origLoc)
 		err := os.Symlink(dotLoc, origLoc)
@@ -54,7 +69,9 @@ func installCLI() {
 }
 
 func brewInstall() {
-	// TODO: install with brew
+	// cmds := []string{"neovim"}
+	// for _, app := range cmds {
+	// }
 }
 
 func goInstall() {
@@ -64,6 +81,9 @@ func goInstall() {
 func rustInstall() {
 	// TODO: install with cargo/brew?
 }
+
+// func zshSetup() {
+// }
 
 // TODO: add cmd with https://github.com/r-darwish/topgrade?
 // TODO: combile mage into binary to use globally

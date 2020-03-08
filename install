@@ -2,8 +2,7 @@
 # Install necessary tools to run mage setup
 set -e
 
-# install brew (https://brew.sh)
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)" # https://brew.sh
 brew install go  # https://github.com/golang/go
 go get -u github.com/magefile/mage # https://github.com/magefile/mage
 
