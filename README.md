@@ -28,7 +28,7 @@ You can also see my top used applications, Safari extensions and Alfred workflow
 2. Go through [preferences](https://imgur.com/a/KoVAxFQ) & set everything up.
 3. Download & install [apps I use](https://github.com/nikitavoloboev/my-mac-os).
 4. Clone dotfiles & [set everything up](#setup--sync-dotfiles).
-5. Sync settings for apps I use.
+5. [Sync settings](https://github.com/zenangst/Syncalicious) for apps I use.
 
 The setup & apps/tools I use is heavily tailored to my own workflow so it is best you take ideas from it rather than copy entire config.
 
