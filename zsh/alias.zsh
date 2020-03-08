@@ -9,7 +9,7 @@ alias pb='pbcopy'
 alias te='tree'
 alias op='open'
 alias cleanup="find . -type f -name '*.DS_Store' -ls -delete" # Recursively delete `.DS_Store` files
-alias g='git' # Wrapper over git
+# alias g='git' # Wrapper over git
 alias peek='tee >(cat 1>&2)' # Mirror stdout to stderr, useful for seeing data going through a pipe
 alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo 'public key copied to pasteboard'"
 alias lc='tokei'
@@ -180,7 +180,7 @@ alias history-stat="history 0 | awk '{print \$2}' | sort | uniq -c | sort -n -r 
 alias ba="bash"
 
 # Easier navigation
-alias .="cd -" # Go back to previous dir
+# alias .="cd -" # Go back to previous dir
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
@@ -222,7 +222,6 @@ alias ungit="find . -name '.git' -exec rm -rf {} \;" # Remove git from a project
 alias gto='gittower'
 
 # Git
-alias ggs='gitupdate .' # Commit all with file name changes as commit msg
 alias gj='open `git config remote.origin.url`'
 alias gm='git branch -m' # Rename current branch
 alias ger='git checkout -' # Checkout last branch you were on

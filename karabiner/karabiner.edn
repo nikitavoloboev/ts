@@ -768,7 +768,7 @@
                  ;[:d :!CO5] ; TODO: Pause/unpause ScreenFlow recording
                  ;[:f :!CO5] ; TODO: Start/stop ScreenFlow partial screen recording
                  [:j [:km "w: YouTube"]]
-                 [:k [:km "w: GitHub"]]
+                ;  [:k [:km "w: GitHub"]]
                  [:h [:km "w: Clubhouse"]]
                  [:i [:km "w: Google Docs"]]
                  [:u [:km "w: Beautiful.ai"]]

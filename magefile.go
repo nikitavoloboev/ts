@@ -80,15 +80,26 @@ func InstallCLI() {
 func brewInstall() {
 	cmds := []string{"neovim", "starship"}
 	cmdTaps := []string{"getantibody/tap/antibody"}
-	// for _, app := range cmds {
-	// }
-	for _, app := range cmdTaps {
+
+	for _, app := range cmds {
 		// check if cmd is installed. don't install it if it is
-		path, err := exec.LookPath(app)
+		_, err := exec.LookPath(app)
 		if err != nil {
 			continue
 		}
-		err := sh.RunV("brew", "install", app)
+		err = sh.RunV("brew", "install", app)
+		if err != nil {
+			log.Fatal(err)
+		}
+	}
+
+	for _, app := range cmdTaps {
+		// check if cmd is installed. don't install it if it is
+		_, err := exec.LookPath(app)
+		if err != nil {
+			continue
+		}
+		err = sh.RunV("brew", "install", app)
 		if err != nil {
 			log.Fatal(err)
 		}
@@ -107,8 +118,22 @@ func rustInstall() {
 	// TODO: install with cargo/brew?
 }
 
-// func zshSetup() {
-// }
+func ZshSetup() {
+	home, err := os.UserHomeDir()
+	if err != nil {
+		log.Fatal(err)
+	}
+	// hide annoying `Last login ` msg on shell startup
+	os.Create(home + "/.hushlogin")
+}
+
+func Defaults() {
+	// TODO: move running of default set cmds from macos/set-defaults.sh
+	// TODO: check that its running in macos
+	// TODO: run cmds
+}
 
 // TODO: add cmd with https://github.com/r-darwish/topgrade?
 // TODO: combile mage into binary to use globally
+// TODO: cleanup dead symlinks as part of Link
+// - clean: ["~", "~/.config"] had this in dotbot
