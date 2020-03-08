@@ -1,4 +1,5 @@
 # General
+# TODO: review & cleanup non used
 alias ip='ipconfig getifaddr en0 | pbcopy' # Copy IP address
 alias t1="tree -L 1 -I 'node_modules|cache|test_*'"
 alias t2="tree -L 2 -I 'node_modules|cache|test_*'"

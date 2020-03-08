@@ -5,6 +5,7 @@ package main
 import (
 	"log"
 	"os"
+	"os/exec"
 
 	"github.com/magefile/mage/sh"
 )
@@ -71,23 +72,35 @@ func caskInstall(app string) {
 
 // Install CLI tools I use.
 func InstallCLI() {
-	// brewInstall()
-	goInstall()
+	brewInstall()
+	// goInstall()
 	// rustInstall()
 }
 
 func brewInstall() {
-	// cmds := []string{"neovim"}
+	cmds := []string{"neovim", "starship"}
+	cmdTaps := []string{"getantibody/tap/antibody"}
 	// for _, app := range cmds {
 	// }
+	for _, app := range cmdTaps {
+		// check if cmd is installed. don't install it if it is
+		path, err := exec.LookPath(app)
+		if err != nil {
+			continue
+		}
+		err := sh.RunV("brew", "install", app)
+		if err != nil {
+			log.Fatal(err)
+		}
+	}
 }
 
 func goInstall() {
 	// TODO: install with go
-	err := sh.RunV("ls")
-	if err != nil {
-		log.Fatal(err)
-	}
+	// err := sh.RunV("go", "get")
+	// if err != nil {
+	// 	log.Fatal(err)
+	// }
 }
 
 func rustInstall() {
