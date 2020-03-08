@@ -71,13 +71,13 @@ func caskInstall(app string) {
 
 // Install CLI tools I use.
 func InstallCLI() {
-	brewInstall() // must be run 1st as it installs things like rust compiler (cargo)
+	brewInstall() // must be run 1st as it installs deps for rust (rustup)
 	// goInstall()
 	// rustInstall()
 }
 
 func brewInstall() {
-	cmds := []string{"neovim", "starship", "exa", "diff-so-fancy", "rustup"}
+	cmds := []string{"neovim", "starship", "exa", "diff-so-fancy", "rustup", "openssl"}
 	cmdTaps := []string{"getantibody/tap/antibody"}
 
 	for _, app := range cmds {
