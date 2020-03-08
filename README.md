@@ -11,7 +11,7 @@ You can also see my top used applications, Safari extensions and Alfred workflow
 ##### Contents
 
 - [Clean install](#clean-install)
-  - [Setup & sync dotfiles](#setup-&-sync-dotfiles)
+  - [Setup & sync dotfiles](#setup--sync-dotfiles)
 - [Karabiner](#karabiner)
 - [Neovim](#neovim)
 - [VS Code](#vs-code)
@@ -27,7 +27,7 @@ You can also see my top used applications, Safari extensions and Alfred workflow
 1. Boot latest macOS version. Make sure username is the name you want the home folder to be (by default its first name & last name).
 2. Go through [preferences](https://imgur.com/a/KoVAxFQ) & set everything up.
 3. Download & install [apps I use](https://github.com/nikitavoloboev/my-mac-os).
-4. Clone dotfiles & [set everything up](#setup-&-sync-dotfiles).
+4. Clone dotfiles & [set everything up](setup--sync-dotfiles).
 5. Sync settings for apps I use.
 
 The setup & apps/tools I use is heavily tailored to my own workflow so it is best you take ideas from it rather than copy entire config.
