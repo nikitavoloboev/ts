@@ -118,6 +118,15 @@ func rustInstall() {
 	// TODO: install with cargo/brew?
 }
 
+func yarnInstall() {
+	// TODO: install with yarn
+}
+
+func vscodeExtensionInstall() {
+	// code --list-extensions = all exts
+	// maybe can sync folder or config
+}
+
 func ZshSetup() {
 	home, err := os.UserHomeDir()
 	if err != nil {
