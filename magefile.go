@@ -114,7 +114,7 @@ func goInstall() {
 }
 
 func rustInstall() {
-	cmds := []string{"git-trim"}
+	cmds := []string{"git-trim", "zoxide"}
 	// TODO: check if rust is installed (cargo is in path)
 	// TODO: if not, run rustup-init (https://formulae.brew.sh/formula/rustup-init)
 }
@@ -135,6 +135,10 @@ func ZshSetup() {
 	}
 	// hide annoying `Last login ` msg on shell startup
 	os.Create(home + "/.hushlogin")
+}
+
+func zshPluginsInstall() {
+
 }
 
 func Defaults() {

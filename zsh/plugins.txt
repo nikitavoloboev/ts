@@ -1,11 +1,14 @@
-# Plugins I use: https://wiki.nikitavoloboev.xyz/unix/shell/zsh/zsh-plugins.html
+# Zsh plugins: https://wiki.nikitavoloboev.xyz/unix/shell/zsh/zsh-plugins.html
+# TODO: move to magefile
 
-mafredri/zsh-async
-Tarrasch/zsh-bd
 zsh-users/zsh-completions
 zsh-users/zsh-autosuggestions branch:develop
-junegunn/fzf
-sindresorhus/pure
 zsh-users/zsh-history-substring-search
 zsh-users/zsh-syntax-highlighting
-spwhitt/nix-zsh-completions
+ajeetdsouza/zoxide
+#junegunn/fzf
+
+#mafredri/zsh-async
+#sindresorhus/pure
+#spwhitt/nix-zsh-completions
+#Tarrasch/zsh-bd
