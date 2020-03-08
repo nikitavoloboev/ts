@@ -34,7 +34,15 @@ The setup & apps/tools I use is heavily tailored to my own workflow so it is bes
 
 ### Setup & sync dotfiles
 
-I use [Dotbot](https://github.com/anishathalye/dotbot) to apply appropriate symlinks so that I can keep the original files in this one dotfiles dir. Look [here](https://github.com/nikitavoloboev/dotfiles/blob/master/.install.conf.yaml#L1) for what exactly it will do. Place this cloned dotfiles repo in `~/.dotfiles/` and run `./install` inside it.
+Take a look at [install](install) shell script. It will install [brew](https://brew.sh), [go](https://go.dev) & [mage](https://github.com/magefile/mage).
+
+Run it with `./install`. As part of the script it will run `mage setup`. Take a look at the [magefile.go](magefile.go) `Setup` function to see what it will do.
+
+You can also run `mage` alone to see what commands you can run with descriptions of them.
+
+In short, it will create appropriate symlinks pointing at files in `~/.dotfiles`. This is an assumption of where the dotfiles repo is placed.
+
+It will also install CLI tools & apps.
 
 ## Karabiner
 

@@ -5,6 +5,8 @@ package main
 import (
 	"log"
 	"os"
+
+	"github.com/magefile/mage/sh"
 )
 
 // Setup macOS. Install apps, tools, link dotfiles.
@@ -16,6 +18,8 @@ func Setup() {
 
 // Link dotfiles.
 func Link() {
+	// TODO: check that user has `~/.dotfiles` repo. Quit otherwise.
+
 	home, err := os.UserHomeDir()
 	if err != nil {
 		log.Fatal(err)
@@ -31,6 +35,8 @@ func Link() {
 	// Git
 	links[home+".gitconfig"] = dots + "git/gitconfig"
 	links[home+".gitignore_global"] = dots + "git/gitignore_global"
+
+	links[home+".config/karabiner.edn"] = dots + "karabiner/karabiner.edn"
 
 	// Sublime Text
 	// links[home+"Library/Application Support/Sublime Text 3/Packages/User"] = dots + "sublime"
@@ -64,10 +70,10 @@ func caskInstall(app string) {
 }
 
 // Install CLI tools I use.
-func installCLI() {
-	brewInstall()
+func InstallCLI() {
+	// brewInstall()
 	goInstall()
-	rustInstall()
+	// rustInstall()
 }
 
 func brewInstall() {
@@ -78,6 +84,10 @@ func brewInstall() {
 
 func goInstall() {
 	// TODO: install with go
+	err := sh.RunV("ls")
+	if err != nil {
+		log.Fatal(err)
+	}
 }
 
 func rustInstall() {

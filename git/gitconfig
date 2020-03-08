@@ -63,8 +63,6 @@
 	pager = diff-so-fancy | less --tabs=4 -RFX
 [github]
     user = nikitavoloboev
-# [commit]
-# 	gpgsign = true
 [gpg]
 	program = /usr/local/MacGPG2/bin/gpg2
 [http "https://gopkg.in"]
