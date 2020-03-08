@@ -5,7 +5,6 @@ package main
 import (
 	"log"
 	"os"
-	"os/exec"
 
 	"github.com/magefile/mage/sh"
 )
@@ -78,31 +77,31 @@ func InstallCLI() {
 }
 
 func brewInstall() {
-	cmds := []string{"neovim", "starship"}
+	cmds := []string{"neovim", "starship", "exa"}
 	cmdTaps := []string{"getantibody/tap/antibody"}
 
 	for _, app := range cmds {
-		// check if cmd is installed. don't install it if it is
-		_, err := exec.LookPath(app)
+		// check if cmd is installed
+		err := sh.Run("brew", "list", app)
 		if err != nil {
+			// install it if it doesn't exist
+			err = sh.RunV("brew", "install", app)
 			continue
 		}
-		err = sh.RunV("brew", "install", app)
-		if err != nil {
-			log.Fatal(err)
-		}
+		// skip to next cmd
+		continue
 	}
 
 	for _, app := range cmdTaps {
-		// check if cmd is installed. don't install it if it is
-		_, err := exec.LookPath(app)
+		// check if cmd is installed
+		err := sh.Run("brew", "list", app)
 		if err != nil {
+			// install it if it doesn't exist
+			err = sh.RunV("brew", "install", app)
 			continue
 		}
-		err = sh.RunV("brew", "install", app)
-		if err != nil {
-			log.Fatal(err)
-		}
+		// skip to next cmd
+		continue
 	}
 }
 
