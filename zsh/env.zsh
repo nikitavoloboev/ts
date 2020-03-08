@@ -19,4 +19,4 @@ eval "$(starship init zsh)" # Zsh prompt (https://github.com/starship/starship)
 # fnm
 # eval "$(fnm env --multi)"
 
-# typeset -U PATH # Remove duplicates in $PATH
+typeset -U PATH # Remove duplicates in $PATH

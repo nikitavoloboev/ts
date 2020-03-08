@@ -5,9 +5,9 @@ zsh-users/zsh-completions
 zsh-users/zsh-autosuggestions branch:develop
 zsh-users/zsh-history-substring-search
 zsh-users/zsh-syntax-highlighting
-ajeetdsouza/zoxide
 #junegunn/fzf
 
+#ajeetdsouza/zoxide
 #mafredri/zsh-async
 #sindresorhus/pure
 #spwhitt/nix-zsh-completions

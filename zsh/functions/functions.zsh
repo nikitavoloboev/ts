@@ -1,6 +1,6 @@
 # Temp
-b() {
-}
+# .() {
+# }
 
 w() {
   if [ $# -eq 0 ]; then
@@ -27,6 +27,7 @@ e() {
 }
 
 # Delete branches that have been squashed and merged into master (https://github.com/not-an-aardvark/git-delete-squashed)
+# TODO: git-trim may replace this
 gdelsquashed() {
   git checkout -q master && git for-each-ref refs/heads/ "--format=%(refname:short)" | while read branch; do mergeBase=$(git merge-base master $branch) && [[ $(git cherry master $(git commit-tree $(git rev-parse $branch^{tree}) -p $mergeBase -m _)) == "-"* ]] && git branch -D $branch; done
 }
@@ -51,7 +52,7 @@ un(){
   __ETC_ZSHENV_SOURCED= exec zsh
 }
 
-# Update Zsh plugins
+# Update Zsh plugins. TODO: move to magefile
 uz(){
   antibody bundle <~/.dotfiles/zsh/plugins.txt >~/.zsh_plugins.sh
   antibody update
