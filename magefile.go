@@ -71,13 +71,13 @@ func caskInstall(app string) {
 
 // Install CLI tools I use.
 func InstallCLI() {
-	brewInstall()
+	brewInstall() // must be run 1st as it installs things like rust compiler (cargo)
 	// goInstall()
 	// rustInstall()
 }
 
 func brewInstall() {
-	cmds := []string{"neovim", "starship", "exa"}
+	cmds := []string{"neovim", "starship", "exa", "diff-so-fancy", "rustup"}
 	cmdTaps := []string{"getantibody/tap/antibody"}
 
 	for _, app := range cmds {
@@ -114,7 +114,9 @@ func goInstall() {
 }
 
 func rustInstall() {
-	// TODO: install with cargo/brew?
+	cmds := []string{"git-trim"}
+	// TODO: check if rust is installed (cargo is in path)
+	// TODO: if not, run rustup-init (https://formulae.brew.sh/formula/rustup-init)
 }
 
 func yarnInstall() {
@@ -139,6 +141,24 @@ func Defaults() {
 	// TODO: move running of default set cmds from macos/set-defaults.sh
 	// TODO: check that its running in macos
 	// TODO: run cmds
+}
+
+// Install provided commands with a package manager.
+func installCMDS(cmds []string, packageManager string) {
+	// TODO: have a way to run cmd in go by giving it a full string
+	// so can then do sh.Run(packageManager + cmd)
+
+	// for _, app := range cmds {
+	// 	// check if cmd is installed
+	// 	err := sh.Run("brew", "list", app)
+	// 	if err != nil {
+	// 		// install it if it doesn't exist
+	// 		err = sh.RunV("brew", "install", app)
+	// 		continue
+	// 	}
+	// 	// skip to next cmd
+	// 	continue
+	// }
 }
 
 // TODO: add cmd with https://github.com/r-darwish/topgrade?
