@@ -16,3 +16,5 @@ source ~/.dotfiles/zsh/alias.zsh
 # tabtab source for sls package
 # uninstall by removing these lines or running `tabtab uninstall sls`
 # [[ -f /Users/nikivi/src/orgs/rekki/unity/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/nikivi/src/orgs/rekki/unity/node_modules/tabtab/.completions/sls.zsh
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

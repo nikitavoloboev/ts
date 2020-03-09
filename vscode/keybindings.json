@@ -198,6 +198,10 @@
     "command": "-workbench.action.moveEditorToNextGroup"
   },
   {
+    "key": "ctrl+c",
+    "command": "workbench.action.editor.nextChange"
+  },
+  {
     "key": "cmd+i",
     "command": "workbench.action.moveEditorToPreviousGroup"
   },
@@ -422,5 +426,5 @@
   {
     "key": "cmd+j",
     "command": "workbench.action.togglePanel"
-  },
+  }
 ]

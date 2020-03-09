@@ -37,6 +37,7 @@
   "files.trimTrailingWhitespace": true,
   "files.insertFinalNewline": true,
   "files.eol": "\n",
+  // Workbench
   "workbench.list.horizontalScrolling": true,
   "workbench.panel.defaultLocation": "right",
   "workbench.fontAliasing": "antialiased",
@@ -47,11 +48,11 @@
   "workbench.settings.enableNaturalLanguageSearch": false,
   "workbench.statusBar.visible": false, // formatting only supports LF line endings
   // Window
-  "window.zoomLevel": -1,
+  "window.zoomLevel": -2,
   "window.restoreWindows": "all",
   "window.newWindowDimensions": "maximized",
   // Breadcrumbs
-  "breadcrumbs.filePath":"on",
+  "breadcrumbs.filePath": "on",
   // Debug
   "debug.openDebug": "neverOpen",
   "debug.showInStatusBar": "never",
@@ -78,13 +79,13 @@
   // Python
   "python.linting.pylintArgs": ["--errors-only"],
   // Code runner
-  "code-runner.clearPreviousOutput": true,
-  "code-runner.executorMap": {
-    "python": "python3",
-    "typescript": "ts-node --transpile-only"
-  },
+  // "code-runner.clearPreviousOutput": true,
+  // "code-runner.executorMap": {
+  //   "python": "python3",
+  //   "typescript": "ts-node --transpile-only"
+  // },
   // Code runner
-  "code-runner.runInTerminal": false,
+  // "code-runner.runInTerminal": false,
   // Vim
   "vim.leader": " ",
   "vim.debug.silent": true,
@@ -178,7 +179,7 @@
   "gopls": {
     "usePlaceholders": true,
     "completeUnimported": true,
-    "buildFlags": ["-tags", "mage"],
+    "buildFlags": ["-tags", "mage"]
   },
   "go.liveErrors": {
     "enabled": true,
@@ -191,11 +192,11 @@
     "*.toml": "toml"
   },
   // Python
-  "python.pythonPath": "/Users/nikivi/anaconda3/bin/python3",
-  "python.formatting.provider": "black",
-  "python.linting.pylintEnabled": false,
-  "python.linting.flake8Enabled": true,
-  "python.linting.enabled": false,
+  // "python.pythonPath": "/Users/nikivi/anaconda3/bin/python3",
+  // "python.formatting.provider": "black",
+  // "python.linting.pylintEnabled": false,
+  // "python.linting.flake8Enabled": true,
+  // "python.linting.enabled": false,
   // TypeScript
   "typescript.check.npmIsInstalled": false,
   "typescript.updateImportsOnFileMove.enabled": "never",
@@ -232,59 +233,8 @@
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "peacock.favoriteColors": [
-    {
-      "name": "Angular Red",
-      "value": "#b52e31"
-    },
-    {
-      "name": "Auth0 Orange",
-      "value": "#eb5424"
-    },
-    {
-      "name": "Azure Blue",
-      "value": "#007fff"
-    },
-    {
-      "name": "C# Purple",
-      "value": "#68217A"
-    },
-    {
-      "name": "Gatsby Purple",
-      "value": "#639"
-    },
-    {
-      "name": "Go Cyan",
-      "value": "#5dc9e2"
-    },
-    {
-      "name": "Java Blue-Gray",
-      "value": "#557c9b"
-    },
-    {
-      "name": "JavaScript Yellow",
-      "value": "#f9e64f"
-    },
-    {
-      "name": "Mandalorian Blue",
-      "value": "#1857a4"
-    },
-    {
-      "name": "Node Green",
-      "value": "#215732"
-    },
-    {
-      "name": "React Blue",
-      "value": "#00b3e6"
-    },
-    {
-      "name": "Something Different",
-      "value": "#832561"
-    },
-    {
-      "name": "Vue Green",
-      "value": "#42b883"
-    }
-  ],
   "workbench.colorTheme": "Dracula Pro",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }

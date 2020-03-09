@@ -36,17 +36,19 @@ func Link() {
 	links[home+".gitconfig"] = dots + "git/gitconfig"
 	links[home+".gitignore_global"] = dots + "git/gitignore_global"
 
+	// Karabiner
 	links[home+".config/karabiner.edn"] = dots + "karabiner/karabiner.edn"
 
 	// Sublime Text
+	// TODO: only link files in dots. rest stays as is (cache etc)
 	// links[home+"Library/Application Support/Sublime Text 3/Packages/User"] = dots + "sublime"
 
 	// Neovim
-	// links[home+".config/nvim"] = dots + "nvim"
+	links[home+".config/nvim/init.vim"] = dots + "nvim/init.vim"
 
 	// VS Code
-	// links[home+"Library/Application Support/Code/User/settings.json"] = dots + "vscode/settings.json"
-	// links[home+"Library/Application Support/Code/User/keybindings.json"] = dots + "vscode/keybindings.json"
+	links[home+"Library/Application Support/Code - Insiders/User/settings.json"] = dots + "vscode/settings.json"
+	links[home+"Library/Application Support/Code - Insiders/User/keybindings.json"] = dots + "vscode/keybindings.json"
 
 	for origLoc, dotLoc := range links {
 		os.Remove(origLoc)
@@ -82,7 +84,8 @@ func InstallCLI() {
 }
 
 func brewInstall() {
-	cmds := []string{"neovim", "starship", "exa", "diff-so-fancy", "rustup", "openssl", "fzf", "watchman"}
+	cmds := []string{"neovim", "starship", "exa", "diff-so-fancy", "rustup", "openssl", "fzf", "watchman", "kubectl", "awscli"}
+
 	cmdTaps := []string{"getantibody/tap/antibody"}
 
 	for _, app := range cmds {
@@ -148,6 +151,14 @@ func ZshSetup() {
 }
 
 func zshPluginsInstall() {
+
+}
+
+func VimSetup() {
+	// check that ~/.config/nvim exist
+	// TODO: cd to ~/.config/nvim & run
+	// https://github.com/junegunn/vim-plug#neovim
+	// curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 }
 
