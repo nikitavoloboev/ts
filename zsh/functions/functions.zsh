@@ -4,9 +4,9 @@
 
 w() {
   if [ $# -eq 0 ]; then
-    code .
+    code-insiders .
   else
-    code "${1:-.}"
+    code-insiders "${1:-.}"
   fi
 }
 

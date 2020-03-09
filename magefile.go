@@ -59,17 +59,22 @@ func Link() {
 
 func installApps() {
 	// TODO: for apps not part of brew cask, offer to open URLs for download pages of apps
-	apps := []string{"vscode-insiders", "iterm"}
-	for _, app := range apps {
-		caskInstall(app)
-	}
 }
 
-func caskInstall(app string) {
-	// brew cask install <app>
+func caskInstall() {
+	// TODO: check if app is installed
+	// apps := []string{"vscode-insiders", "iterm", "react-native-debugger"}
+	// for _, app := range apps {
+	// 	// brew cask install <app>
+	// }
 }
 
-// Install CLI tools I use.
+func masInstall() {
+	// TODO: check if app is installed
+	// mas install .. (https://github.com/mas-cli/mas)
+}
+
+// Install CLI tools.
 func InstallCLI() {
 	brewInstall() // must be run 1st as it installs deps for rust (rustup)
 	// goInstall()
@@ -77,7 +82,7 @@ func InstallCLI() {
 }
 
 func brewInstall() {
-	cmds := []string{"neovim", "starship", "exa", "diff-so-fancy", "rustup", "openssl"}
+	cmds := []string{"neovim", "starship", "exa", "diff-so-fancy", "rustup", "openssl", "fzf", "watchman"}
 	cmdTaps := []string{"getantibody/tap/antibody"}
 
 	for _, app := range cmds {
@@ -113,19 +118,24 @@ func goInstall() {
 	// }
 }
 
+// TODO: replace with nix ideally because compiling rust from source is pain..
+// TODO: should just get precompiled binaries
 func rustInstall() {
-	// cmds := []string{"git-trim", "zoxide"}
+	// cmds := []string{"git-trim", "zoxide", "loc"}
 	// TODO: check if rust is installed (cargo is in path)
 	// TODO: if not, run rustup-init (https://formulae.brew.sh/formula/rustup-init)
 }
 
 func yarnInstall() {
-	// TODO: install with yarn
+	// cmds := []string{"prettier"}
+	// TODO: yarn global add ..
 }
 
 func vscodeExtensionInstall() {
+	// extensions := []string{"go", "vscodevim"}
 	// code --list-extensions = all exts
 	// maybe can sync folder or config
+	// TODO: code-ext install .. (or alt cmd)
 }
 
 func ZshSetup() {
@@ -163,6 +173,12 @@ func installCMDS(cmds []string, packageManager string) {
 	// 	// skip to next cmd
 	// 	continue
 	// }
+}
+
+// Update brew/go/rust.
+func CLIUpdate() {
+	// TODO: brew update
+	// cargo update? go get update?
 }
 
 // TODO: add cmd with https://github.com/r-darwish/topgrade?

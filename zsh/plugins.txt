@@ -5,10 +5,10 @@ zsh-users/zsh-completions
 zsh-users/zsh-autosuggestions branch:develop
 zsh-users/zsh-history-substring-search
 zsh-users/zsh-syntax-highlighting
-#junegunn/fzf
+mafredri/zsh-async
+sindresorhus/pure
 
+#junegunn/fzf # TODO: not sure what it's for
 #ajeetdsouza/zoxide
-#mafredri/zsh-async
-#sindresorhus/pure
 #spwhitt/nix-zsh-completions
 #Tarrasch/zsh-bd
