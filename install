@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Install necessary tools to run mage setup
+# Install necessary tools to run mage setup & run setup.
 set -e
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)" # https://brew.sh

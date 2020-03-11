@@ -84,23 +84,11 @@ func InstallCLI() {
 }
 
 func brewInstall() {
-	cmds := []string{"neovim", "starship", "exa", "diff-so-fancy", "rustup", "openssl", "fzf", "watchman", "kubectl", "awscli"}
-
-	cmdTaps := []string{"getantibody/tap/antibody"}
+	cmds := []string{"neovim", "starship", "exa", "diff-so-fancy", "rustup", "openssl", "fzf",
+		"watchman", "kubectl", "awscli", "ripgrep",
+		"getantibody/tap/antibody"}
 
 	for _, app := range cmds {
-		// check if cmd is installed
-		err := sh.Run("brew", "list", app)
-		if err != nil {
-			// install it if it doesn't exist
-			err = sh.RunV("brew", "install", app)
-			continue
-		}
-		// skip to next cmd
-		continue
-	}
-
-	for _, app := range cmdTaps {
 		// check if cmd is installed
 		err := sh.Run("brew", "list", app)
 		if err != nil {
