@@ -708,13 +708,16 @@
                   [:y [:p :l :e :a :s :e :spacebar]] ; -> please
                   [:u [:u :p :d :a :t :e :spacebar]] ; -> update
                   [:caps_lock [:!Cf :!St :!So :!Sd :!So :!Ssemicolon :return_or_enter]] ; -> search TODO: in file
-                  [:tab [:!CSf :!St :!So :!Sd :!So :!Ssemicolon :return_or_enter]]]} ; -> search TODO: globally
+                  [:grave_accent_and_tilde [:!CSf :!St :!So :!Sd :!So :!Ssemicolon :return_or_enter]]]} ; -> search TODO: globally
          {:des "jsdot"
           :rules [:js-mode
+                  [:tab [:km "w: MDN"]]
                   [:a [:c :o :n :s :o :l :e :period :l :o :g :!S9 :!S0 :left_arrow]] ; -> console.log()
+                  ;[:a [:c :o :n :s :o :l :e :period :w :a :r :n :!S9 :!S0 :left_arrow]] ; -> console.warn()
                   [:s [:equal_sign :!Speriod :spacebar]] ; -> =>
                   [:d [:r :e :t :u :r :n :spacebar]] ; -> return
                   [:f [:!Cf :c :o :n :s :o :l :e :period :l :o :g :!S9 :return_or_enter]] ; -> search console.log( in file
+                  ;[:f [:!Cf :c :o :n :s :o :l :e :period :w :a :r :n :!S9 :return_or_enter]] ; -> search console.warn( in file
                   [:j [:right_arrow :spacebar :equal_sign :spacebar]] ; -> =
                   [:k [:right_arrow :spacebar :!Sopen_bracket :return_or_enter]] ; -> {  }
                   [:g [:right_arrow :spacebar :equal_sign :!Speriod :spacebar :!Sopen_bracket :return_or_enter]] ; -> => {}
@@ -726,6 +729,7 @@
                   [:v [:j :a :v :a :s :c :r :i :p :t :spacebar]]]} ; -> javascript
         {:des "godot"
          :rules[:go-mode
+                [:tab [:km "w: GoDoc"]]
                 [:a [:f :m :t :period :!Sp :r :i :n :t :l :n :!S9 :!S0 :left_arrow]] ; -> fmt.Println()
                 [:s [:!Ssemicolon :equal_sign :spacebar]] ; -> :=
                 [:d [:r :e :t :u :r :n :spacebar]] ; -> return
@@ -742,7 +746,6 @@
                  [:a [:p :r :i :n :t :!S9 :!S0 :left_arrow]] ; -> print()
                  [:s [:hyphen :!Speriod]] ; -> ->
                  [:d [:r :e :t :u :r :n :spacebar]] ; -> return
-                 [:grave_accent_and_tilde [:p :r :i :n :t :!S9 :quote :hyphen :hyphen :hyphen :!Cright_arrow :caps_lock]] ; -> print('---')
                  [:v [:p :y :t :h :o :n :spacebar]]]} ; -> python
         {:des "swiftdot"
          :rules[:swift-mode
@@ -769,17 +772,17 @@
                  ;[:f :!CO5] ; TODO: Start/stop ScreenFlow partial screen recording
                  [:j [:km "w: YouTube"]]
                  [:k [:km "w: GitHub"]]
-                 [:h [:km "w: Clubhouse"]]
-                 [:i [:km "w: Google Docs"]]
+                 [:l [:km "w: Clubhouse"]]
+                 ;[:i [:km "w: Google Sheets"]]
+                 [:o [:km "w: Google Docs"]]
                  [:u [:km "w: Beautiful.ai"]]
                  [:m [:km "w: CodeSandbox"]]
-                 [:o [:km "w: GoDoc"]]
                  [:b [:km "w: Metabase"]]
                  ;[:g [:km "w: Google"]]
                  [:n [:km "w: AWS"]]
                  [:g [:km "w: GCP"]]
-                 [:quote [:km "w: GitHub (issue)"]]
-                 [:period [:km "w: GitHub (pr)"]]
-                 [:l [:km "w: GitLab Rekki"]] ; TODO: include GitHub (pr)
-                 [:semicolon [:km "w: GitHub (notifications)"]]]}
+                 ;[:quote [:km "w: GitHub (issue)"]]
+                 ;[:period [:km "w: GitHub (pr)"]]
+                 [:period [:km "w: GitLab Rekki"]] ; TODO: include GitHub (pr)
+                 [:semicolon [:km "w: GitHub (notifications)"]]]} ; TODO: jump between GitHub (issues/prs)
 ]}
