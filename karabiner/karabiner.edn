@@ -283,6 +283,7 @@
                  ;[:k :!COSo] ; Safari URL -> HN
                  ;[:l :!COSo] ; Safari URL -> Lobsters
                  ;[:j :!COSo] ; Safari URL -> Google
+                 ;[:b [:km "w: Metabase"]]
                  [:u [:km "w: Medium"]]
                  [:b [:km "w: Observable"]]
                  [:0 [:km "w: regex101"]]
@@ -773,16 +774,12 @@
                  [:j [:km "w: YouTube"]]
                  [:k [:km "w: GitHub"]]
                  [:l [:km "w: Clubhouse"]]
-                 ;[:i [:km "w: Google Sheets"]]
-                 [:o [:km "w: Google Docs"]]
+                 [:h [:km "w: Google Sheets"]]
+                 [:semicolon [:km "w: Google Docs"]]
                  [:u [:km "w: Beautiful.ai"]]
-                 [:m [:km "w: CodeSandbox"]]
-                 [:b [:km "w: Metabase"]]
-                 ;[:g [:km "w: Google"]]
+                 [:o [:km "w: CodeSandbox"]]
                  [:n [:km "w: AWS"]]
-                 [:g [:km "w: GCP"]]
-                 ;[:quote [:km "w: GitHub (issue)"]]
-                 ;[:period [:km "w: GitHub (pr)"]]
+                 [:m [:km "w: GCP"]]
                  [:period [:km "w: GitLab Rekki"]] ; TODO: include GitHub (pr)
-                 [:semicolon [:km "w: GitHub (notifications)"]]]} ; TODO: jump between GitHub (issues/prs)
+                 [:i [:km "w: GitHub (notifications)"]]]} ; TODO: jump between GitHub (issues/prs)
 ]}

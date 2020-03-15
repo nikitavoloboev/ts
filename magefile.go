@@ -86,7 +86,7 @@ func InstallCLI() {
 func brewInstall() {
 	cmds := []string{"neovim", "starship", "exa", "diff-so-fancy", "rustup", "openssl", "fzf",
 		"watchman", "kubectl", "awscli", "ripgrep",
-		"getantibody/tap/antibody"}
+		"getantibody/tap/antibody", "denisidoro/tools/navi"}
 
 	for _, app := range cmds {
 		// check if cmd is installed
