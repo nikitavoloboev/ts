@@ -189,15 +189,16 @@
                  [:r [:km "open: Trello"]]
                  [:t [:km "open: Activity Monitor"]]
                  [:a :!OSC1] ; Open Dash
-                 [:d [:km "open: Paw"]]
+                 [:g [:km "open: Paw"]]
                  [:f [:km "open: 2Do"]]
                  [:m [:km "open: Xcode"]]
                  [:c [:km "open: Spotify"]]
                  [:k [:km "open: Safari"]]
-                 [:g [:km "open: Notion"]]
+                 ;[:g [:km "open: Notion"]]
                  [:u [:km "open: Instruments"]]
                  [:y [:km "open: Safari Technology Preview"]]
-                 [:i [:km "open: Firefox Nightly"]]
+                 ;[:i [:km "open: Firefox Nightly"]]
+                 [:i [:km "open: Chrome Canary"]]
                  [:v [:km "open: Postico"]]
                  [:p [:km "open: Postgres"]]
                  [:caps_lock [:km "open: Finder"]]
@@ -476,7 +477,6 @@
                  [:semicolon [:km "Google selected word"]]
                  [:i :!Ckeypad_hyphen] ; Zoom out
                  [:o :!Ckeypad_plus] ; Zoom in
-                 [:f [:km "Centre mouse to active app"]]
                  [:n [:km "Open URL in clipboard in Safari"]]
                  [:u [:km "Google Lucky selected word"]]
                  [:l [:km "Google clipboard"]]
@@ -488,15 +488,18 @@
         {:des "fkey (essential)"
          :rules [:f-mode
                  [:spacebar :!CTq] ; Selection -> Web Searches
-                 [:2 :!CSO5] ; PixelSnap
+                 ;[:2 :!CTOp] ; TODO: View Sip
                  [:3 :!CTOp] ; Sip color picker
                  [:e :!CO8] ; Alfred clipboard history search
+                 ;[:caps_lock :!CSO5] ; PixelSnap
                  [:j [:km "edit: 1st iTerm tab"]]
                  [:semicolon [:km "edit: Karabiner"]]
                  [:period :!CTO4] ; Alfred file action
                  [:a [:km "open: Figma"]]
                  [:s [:km "edit: 2nd iTerm tab"]]
-                 [:q [:km "open: Chrome Canary / Simulator (no save)"]]
+                 [:caps_lock [:km "Figma Think"]]
+                 ;[:q [:km "open: Chrome Canary / Simulator (with save)"]]
+                 [:q [:km "Centre mouse to active app"]]
                  [:w [:km "open: Chrome Canary / Simulator"]]
                  ;[:period :!CTOi] ; Tester
                  [:h [:km "Make markdown link from selection {link}"]]
@@ -610,7 +613,7 @@
                  [:d [:km "Noizio settings"]]
                  [:semicolon :!TS0] ; Turn on/off Noizio
                  [:w [:km "Repeat Spotify song"]]
-                 [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:7Lr8COjL4FEcRKGKkU1be2"]] ; Focus song
+                 [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:6oiwm0xIfVRKookXoFlc4b"]] ; Focus song
                  [:quote [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ESjwZeTcHOWzY3FYO5zs5"]] ; Focus playlist
                  [:comma [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:37i9dQZEVXcMHpP6EcIqNe"]] ; Discover Weekly playlist
                  [:open_bracket [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ERn0U4qZIKC8Dy7RrMMsn"]] ; Likes playlist

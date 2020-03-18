@@ -85,8 +85,10 @@ func InstallCLI() {
 
 func brewInstall() {
 	cmds := []string{"neovim", "starship", "exa", "diff-so-fancy", "rustup", "openssl", "fzf",
-		"watchman", "kubectl", "awscli", "ripgrep",
+		"watchman", "kubectl", "awscli", "ripgrep", "vault",
 		"getantibody/tap/antibody", "denisidoro/tools/navi"}
+	// brew tap bvaisvil/zenith & brew install zenith TODO: do brew taps first. then do cmds
+	// don't actually use zenith. untap & delete
 
 	for _, app := range cmds {
 		// check if cmd is installed
@@ -103,6 +105,7 @@ func brewInstall() {
 
 func goInstall() {
 	// TODO: install with go
+	// cmds := []string{"R4yGM/netscanner"}
 	// err := sh.RunV("go", "get")
 	// if err != nil {
 	// 	log.Fatal(err)
