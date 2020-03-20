@@ -488,8 +488,8 @@
         {:des "fkey (essential)"
          :rules [:f-mode
                  [:spacebar :!CTq] ; Selection -> Web Searches
-                 ;[:2 :!CTOp] ; TODO: View Sip
-                 [:3 :!CTOp] ; Sip color picker
+                 [:d :!CTOp] ; Sip color picker
+                 ;[:3 :!CTOp] ; TODO: View Sip
                  [:e :!CO8] ; Alfred clipboard history search
                  ;[:caps_lock :!CSO5] ; PixelSnap
                  [:j [:km "edit: 1st iTerm tab"]]
