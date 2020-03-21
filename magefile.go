@@ -83,9 +83,12 @@ func InstallCLI() {
 	// rustInstall()
 }
 
+// TODO: maybe good to setup Brewfile (for casks at least), hook into mage
+// example file: https://github.com/skibitsky/dotfiles/blob/master/macos/Brewfile
+
 func brewInstall() {
 	cmds := []string{"neovim", "starship", "exa", "diff-so-fancy", "rustup", "openssl", "fzf",
-		"watchman", "kubectl", "awscli", "ripgrep", "vault",
+		"watchman", "kubectl", "awscli", "ripgrep", "vault", "tree", "node",
 		"getantibody/tap/antibody", "denisidoro/tools/navi"}
 	// brew tap bvaisvil/zenith & brew install zenith TODO: do brew taps first. then do cmds
 	// don't actually use zenith. untap & delete
