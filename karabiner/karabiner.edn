@@ -119,7 +119,6 @@
                  [:k [:km "edit: Private notes"]]
                  [:g [:km "edit: Git config"]]
                  [:t [:km "edit: Projects"]]
-                 [:period [:km "proj: Dotfiles"]]
                  [:comma [:km "edit: Now"]]
                  [:quote [:km "proj: LA Docs"]]
                  [:semicolon [:km "proj: Knowledge"]]]}
@@ -382,10 +381,10 @@
                  [:k [:km "Open 2Do GitHub"]]
                  [:l [:km "Open 2Do Later"]]
                  [:n [:km "Open 2Do Clean"]]
-                 [:s [:km "Open 2Do Life"]]
+                 [:i [:km "Open 2Do Life"]]
                  [:a [:km "Open 2Do Love"]]
-                 [:m [:km "Open 2Do Wiki"]]
-                 [:d [:km "Open 2Do Work"]]
+                 [:s [:km "Open 2Do Wiki"]]
+                 [:m [:km "Open 2Do Work"]]
                  [:u [:km "Open 2Do Buy"]]
                  [:i [:km "Open 2Do Fix"]]
                  [:o [:km "Open 2Do Tools"]]
@@ -588,9 +587,8 @@
                  [:n [:alfred "remove_current_track_from" "com.vdesabou.spotify.mini.player"]]]}
         {:des "ckey (test + dots)"
          :rules [:c-mode
-                 [:a [:km "Clone repo to ~/src/clones and open with VS Code"]]
-                 [:s [:km "Clone repo to ~/src/clones"]]
-                 ;[:d [:km "Clone repo to ~/src/clones and open with Xcode"]] ; TODO:
+                 [:a [:km "Clone repo to ~/src/clones"]]
+                 ;[:s [:km "Clone repo to ~/src/clones and open with Xcode"]] ; TODO:
                  [:spacebar :!CSOy] ; Selection -> Stack Overflow
                  ;[:quote [:km "edit: Darwin Nix"]]
                  [:i [:km "edit: Aliases"]]
@@ -598,10 +596,12 @@
                  [:j [:km "test: JS"]]
                  [:k [:km "test: Go"]]
                  [:l [:km "test: Python"]]
-                 [:period [:km "test: Jupyter"]]
+                 ;[:period [:km "test: Jupyter"]]
                  [:n [:km "test: TS"]]
                  [:m [:km "test: Rust"]]
-                 [:semicolon [:alfred "search build to learn" "nikivi.private.directories"]]]}
+                 [:period [:km "proj: Dotfiles"]]
+                 [:semicolon [:km "Clone repo to ~/src/clones and open with VS Code"]]
+                 [:u [:alfred "search build to learn" "nikivi.private.directories"]]]}
         {:des "vkey (media)"
          :rules [:v-mode
                  [:spacebar :!CSOv] ; Selection -> Google Images
@@ -783,6 +783,6 @@
                  [:o [:km "w: CodeSandbox"]]
                  [:n [:km "w: AWS"]]
                  [:m [:km "w: GCP"]]
-                 [:period [:km "w: GitLab Rekki"]] ; TODO: include GitHub (pr)
+                 [:period [:km "w: GitHub PR"]] ; TODO:
                  [:i [:km "w: GitHub (notifications)"]]]} ; TODO: jump between GitHub (issues/prs)
 ]}

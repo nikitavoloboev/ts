@@ -65,7 +65,7 @@ func installApps() {
 
 func caskInstall() {
 	// TODO: check if app is installed
-	// apps := []string{"vscode-insiders", "iterm", "react-native-debugger"}
+	// apps := []string{"vscode-insiders", "iterm", "mactex"}
 	// for _, app := range apps {
 	// 	// brew cask install <app>
 	// }
