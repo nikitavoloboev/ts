@@ -44,6 +44,11 @@
              :caps-mode {:key :caps_lock}}
  :main [{:des "colonkey (shift)"
          :rules [:semicolon-mode
+                 [:1 :!T1]
+                 [:2 :!T2]
+                 [:3 :!T3]
+                 [:4 :!T4]
+                 [:5 :!T5]
                  [:q :!Sq]
                  [:w :!Sw]
                  [:e :!Se]
@@ -63,20 +68,14 @@
                  [:j :!Sj]
                  [:k :!Sk]
                  [:l :!Sl]
+                 [:grave_accent_and_tilde [:!Sgrave_accent_and_tilde]] ; -> ~
                  [:z :!Sz]
                  [:x :!Sx]
                  [:c :!Sc]
                  [:v :!Sv]
                  [:b :!Sb]
                  [:n :!Sn]
-                 [:m :!Sm]
-                 [:grave_accent_and_tilde [:!Sgrave_accent_and_tilde]] ; -> ~
-                 [:1 :!T1]
-                 [:2 :!T2]
-                 [:3 :!T3]
-                 [:4 :!T4]
-                 [:5 :!T5]
-                 [:6 :!T6]]}
+                 [:m :!Sm]]}
         {:des "swap : and ;"
          :rules [[:#Psemicolon :!Ssemicolon]
                  [:!Ssemicolon :semicolon]]}
@@ -85,7 +84,7 @@
         {:des "left cmd -> cmd+tab"
          :rules [[:left_command :left_command nil {:alone :!Ctab}]]}
         {:des "right opt -> ChromeCanary/Simulator"
-         :rules [[:right_alt :right_alt nil {:alone [:km "open: Chrome Canary / Simulator (no save)"]}]]}
+         :rules [[:right_alt :right_alt nil {:alone [:km "open: Chrome Canary / Simulator"]}]]}
         {:des "§ -> Karabiner/VSCodeVim on/off"
          :rules [[:non_us_backslash [:km "Karabiner/VSCodeVim on/off"]]]}
         {:des "jsim"
@@ -97,40 +96,40 @@
                  [[:k :m] [:alfred "search youtube" "net.deanishe.alfred-searchio"]]]}
         {:des "2key (move + alfred)"
          :rules [:2-mode
-                 [:spacebar :!COSu] ; Selection -> HN
                  [:o [:alfred "soulver" "app.soulver.alfredworkflow"]]
-                 [:semicolon :!Oup_arrow]
-                 [:quote :!Odown_arrow]
                  [:j :!Cdown_arrow]
                  [:k :!Cup_arrow]
                  [:l :!Cright_arrow]
-                 [:h :!Cleft_arrow]]}
+                 [:h :!Cleft_arrow]
+                 [:semicolon :!Oup_arrow]
+                 [:quote :!Odown_arrow]
+                 [:spacebar :!COSu]]} ; Selection -> HN
         {:des "3key (open files + projects)"
          :rules [:3-mode
-                 [:spacebar :!CSOp] ; Selection -> Reddit
-                 [:j [:km "wiki: Rules"]]
                  [:r [:km "Reflect"]]
-                 [:l [:km "Search current safari url in wiki"]]
+                 [:t [:km "edit: Projects"]]
+                 [:u [:km "wiki: Used hotkeys"]]
                  [:i [:km "wiki: Processes"]]
                  [:o [:km "wiki: My workflow"]]
-                 [:m [:km "wiki: Summary"]]
-                 [:n [:km "wiki: Notes"]]
-                 [:u [:km "wiki: Used hotkeys"]]
-                 [:k [:km "edit: Private notes"]]
                  [:g [:km "edit: Git config"]]
-                 [:t [:km "edit: Projects"]]
-                 [:comma [:km "edit: Now"]]
+                 [:j [:km "wiki: Rules"]]
+                 [:k [:km "edit: Private notes"]]
+                 [:l [:km "Search current safari url in wiki"]]
+                 [:semicolon [:km "proj: Knowledge"]]
                  [:quote [:km "proj: LA Docs"]]
-                 [:semicolon [:km "proj: Knowledge"]]]}
+                 [:n [:km "wiki: Notes"]]
+                 [:m [:km "wiki: Summary"]]
+                 [:comma [:km "edit: Now"]]
+                 [:spacebar :!CSOp]]} ; Selection -> Reddit
         {:des "4key (open curated lists)"
          :rules [:4-mode
                  [:r [:km "edit: Web Searches"]]
-                 [:k [:km "list: Alfred workflows"]]
+                 [:t [:km "list: Newsletters"]]
                  [:o [:km "list: Blogs"]]
                  [:p [:km "list: Podcasts"]]
-                 [:n [:km "list: Events"]]
-                 [:t [:km "list: Newsletters"]]
-                 [:l [:km "list: Command line tools"]]]}
+                 [:k [:km "list: Alfred workflows"]]
+                 [:l [:km "list: Command line tools"]]
+                 [:n [:km "list: Events"]]]}
         {:des "tabkey (palettes)"
          :rules [:tab-mode
                  [:j :!SOTw] ; Replies
@@ -138,41 +137,6 @@
                  [:l :!SOTr]]} ; Personal
         {:des "qkey (cmd + shift)"
          :rules [:q-mode
-                 [:spacebar :!CSOe] ; Selection -> YouTube
-                 [:open_bracket :!CSopen_bracket]
-                 [:close_bracket :!CSclose_bracket]
-                 [:semicolon :!CSsemicolon]
-                 [:quote :!CSquote]
-                 [:comma :!CScomma]
-                 [:period :!CSperiod]
-                 [:slash :!CSslash]
-                 [:a :!CSa]
-                 [:b :!CSb]
-                 [:c :!CSc]
-                 [:d :!CSd]
-                 [:e :!CSe]
-                 [:f :!CSf]
-                 [:g :!CSg]
-                 [:h :!CSh]
-                 [:i :!CSi]
-                 [:j :!CSj]
-                 [:k :!CSk]
-                 [:l :!CSl]
-                 [:m :!CSm]
-                 [:n :!CSn]
-                 [:o :!CSo]
-                 [:p :!CSp]
-                 [:r :!CSr]
-                 [:s :!CSs]
-                 [:t :!CSt]
-                 [:u :!CSu]
-                 [:v :!CSv]
-                 [:w :!CSw]
-                 [:x :!CSx]
-                 [:y :!CSy]
-                 [:z :!CSz]
-                 [:1 :!CS1]
-                 [:2 :!CS2]
                  [:3 :!CS3]
                  [:4 :!CS4]
                  [:5 :!CS5]
@@ -180,35 +144,67 @@
                  [:7 :!CS7]
                  [:8 :!CS8]
                  [:9 :!CS9]
-                 [:0 :!CS0]]}
+                 [:0 :!CS0]
+                 [:w :!CSw]
+                 [:e :!CSe]
+                 [:r :!CSr]
+                 [:t :!CSt]
+                 [:y :!CSy]
+                 [:u :!CSu]
+                 [:i :!CSi]
+                 [:o :!CSo]
+                 [:p :!CSp]
+                 [:open_bracket :!CSopen_bracket]
+                 [:close_bracket :!CSclose_bracket]
+                 [:a :!CSa]
+                 [:s :!CSs]
+                 [:d :!CSd]
+                 [:f :!CSf]
+                 [:g :!CSg]
+                 [:h :!CSh]
+                 [:j :!CSj]
+                 [:k :!CSk]
+                 [:l :!CSl]
+                 [:semicolon :!CSsemicolon]
+                 [:quote :!CSquote]
+                 [:z :!CSz]
+                 [:x :!CSx]
+                 [:c :!CSc]
+                 [:v :!CSv]
+                 [:b :!CSb]
+                 [:n :!CSn]
+                 [:m :!CSm]
+                 [:comma :!CScomma]
+                 [:period :!CSperiod]
+                 [:slash :!CSslash]
+                 [:spacebar :!CSOe]]} ; Selection -> YouTube
         {:des "wkey (apps)"
          :rules [:w-mode
-                 [:spacebar :!CT7] ; Start Google search with selection
                  [:e [:km "open: Fantastical"]]
                  [:r [:km "open: Trello"]]
                  [:t [:km "open: Activity Monitor"]]
-                 [:a :!OSC1] ; Open Dash
-                 [:g [:km "open: Paw"]]
-                 [:f [:km "open: 2Do"]]
-                 [:m [:km "open: Xcode"]]
-                 [:c [:km "open: Spotify"]]
-                 [:k [:km "open: Safari"]]
-                 ;[:g [:km "open: Notion"]]
-                 [:u [:km "open: Instruments"]]
                  [:y [:km "open: Safari Technology Preview"]]
-                 ;[:i [:km "open: Firefox Nightly"]]
+                 [:u [:km "open: Instruments"]]
                  [:i [:km "open: Chrome Canary"]]
-                 [:v [:km "open: Postico"]]
+                 [:o [:km "open: Keyboard Maestro"]]
                  [:p [:km "open: Postgres"]]
                  [:caps_lock [:km "open: Finder"]]
-                 [:semicolon [:km "open: Tower"]]
-                 [:b [:km "open: BetterTouchTool"]]
+                 [:a :!OSC1] ; Open Dash
+                 [:d [:km "open: Paw"]]
+                 [:f [:km "open: 2Do"]]
+                 [:g [:km "open: Notion"]]
                  [:h [:km "open: Console"]]
-                 [:period [:km "open: Sublime Merge"]]
                  [:j [:km "open: iTerm"]]
-                 [:n [:km "open: Sublime Text"]]
+                 [:k [:km "open: Safari"]]
                  [:l [:km "open: VS Code"]]
-                 [:o [:km "open: Keyboard Maestro"]]]}
+                 [:semicolon [:km "open: Tower"]]
+                 [:c [:km "open: Spotify"]]
+                 [:v [:km "open: Postico"]]
+                 [:b [:km "open: BetterTouchTool"]]
+                 [:n [:km "open: Sublime Text"]]
+                 [:m [:km "open: Xcode"]]
+                 [:period [:km "open: Sublime Merge"]]
+                 [:spacebar :!CT7]]} ; Start Google search with selection
         {:des "ekey (cmd)"
          :rules [:e-mode
                  [:spacebar :!CSO7] ; Selection -> Google Lucky
@@ -570,21 +566,21 @@
                  [:l [:km "open: Discord"]]]}
         {:des "xkey (spotify)"
          :rules [:x-mode
-                 [:o [:km "Paste current Spotify song link"]]
+                 [:i [:alfred "artist_radio" "com.vdesabou.spotify.mini.player"]]
+                 [:o [:alfred "show_alfred_playlist" "com.vdesabou.spotify.mini.player"]]
+                 [:p [:km "Paste current Spotify song link"]]
                  [:j [:alfred "spot_mini" "com.vdesabou.spotify.mini.player"]]
-                 [:i [:alfred "show_alfred_playlist" "com.vdesabou.spotify.mini.player"]]
                  [:l [:alfred "song_radio" "com.vdesabou.spotify.mini.player"]]
-                 [:u [:alfred "artist_radio" "com.vdesabou.spotify.mini.player"]]
                  [:k [:alfred "show_current_track" "com.vdesabou.spotify.mini.player"]]
-                 [:period [:alfred "youtube_search_current_track" "com.vdesabou.spotify.mini.player"]]
+                 [:comma [:alfred "youtube_search_current_track" "com.vdesabou.spotify.mini.player"]]
                  [:open_bracket [:alfred "twitter_search_current_track" "com.vdesabou.spotify.mini.player"]]
                  [:comma [:alfred "reddit_search_current_track" "com.vdesabou.spotify.mini.player"]]
-                 [:m [:alfred "add_current_track_to" "com.vdesabou.spotify.mini.player"]]
-                 [:quote [:alfred "add_current_track_to" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ESjwZeTcHOWzY3FYO5zs5"]] ; Add song to Focus playlist
+                 [:n [:alfred "add_current_track_to" "com.vdesabou.spotify.mini.player"]]
                  [:semicolon [:alfred "add_current_track_to_alfred_playlist_or_your_music" "com.vdesabou.spotify.mini.player"]] ; Add song to Likes playlist
+                 [:quote [:alfred "add_current_track_to" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ESjwZeTcHOWzY3FYO5zs5"]] ; Add song to Focus playlist
                  [:slash [:alfred "add_current_track_to" "com.vdesabou.spotify.mini.player" "spotify:playlist:2N82DnDsPGMnpJhN8sVFJu"]] ; Add song to Bliss playlist
                  [:b [:alfred "show_playlists" "com.vdesabou.spotify.mini.player"]]
-                 [:n [:alfred "remove_current_track_from" "com.vdesabou.spotify.mini.player"]]]}
+                 [:m [:alfred "remove_current_track_from" "com.vdesabou.spotify.mini.player"]]]}
         {:des "ckey (test + dots)"
          :rules [:c-mode
                  [:a [:km "Clone repo to ~/src/clones"]]
@@ -611,9 +607,9 @@
                  [:a :!TS0] ; Turn on/off Noizio
                  [:s [:km "Play/pause Spotify"]]
                  [:d [:km "Noizio settings"]]
-                 [:semicolon :!TS0] ; Turn on/off Noizio
                  [:w [:km "Repeat Spotify song"]]
-                 [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:3oRuCzqdduzZ2CBhAtv8zO"]] ; Focus song
+                 [:semicolon :!TS0] ; Turn on/off Noizio
+                 [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:0c9F5KhA8jLzThRuMl4Efh"]] ; Focus song
                  [:quote [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ESjwZeTcHOWzY3FYO5zs5"]] ; Focus playlist
                  [:comma [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:37i9dQZEVXcMHpP6EcIqNe"]] ; Discover Weekly playlist
                  [:open_bracket [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ERn0U4qZIKC8Dy7RrMMsn"]] ; Likes playlist
@@ -776,7 +772,6 @@
                  ;[:f :!CO5] ; TODO: Start/stop ScreenFlow partial screen recording
                  [:j [:km "w: YouTube"]]
                  [:k [:km "w: GitHub"]]
-                 [:l [:km "w: Clubhouse"]]
                  [:h [:km "w: Google Sheets"]]
                  [:semicolon [:km "w: Google Docs"]]
                  [:u [:km "w: Beautiful.ai"]]
