@@ -756,6 +756,7 @@
                  [:h [:km "w: Google Sheets"]]
                  [:j [:km "w: YouTube"]]
                  [:k [:km "w: GitHub"]]
+                 [:l [:km "w: Excalidraw"]]
                  [:semicolon [:km "w: Google Docs"]]
                  [:n [:km "w: AWS"]]
                  [:m [:km "w: GCP"]]
