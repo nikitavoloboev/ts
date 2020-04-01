@@ -8,7 +8,7 @@
              :km "osascript -e 'tell application \"Keyboard Maestro Engine\" to do script \"%s\"'"
              :open "open \"%s\""
              }
- :simlayers {:semicolon-mode {:key :semicolon}
+ :simlayers {
              :2-mode {:key :2}
              :3-mode {:key :3}
              :4-mode {:key :4}
@@ -20,11 +20,14 @@
              :t-mode {:key :t}
              :i-mode {:key :i}
              :o-mode {:key :o}
+             :caps-mode {:key :caps_lock}
              :a-mode {:key :a}
              :s-mode {:key :s}
              :d-mode {:key :d}
              :f-mode {:key :f}
              :g-mode {:key :g}
+             :semicolon-mode {:key :semicolon}
+             :tilde-mode {:key :grave_accent_and_tilde}
              :z-mode {:key :z}
              :x-mode {:key :x}
              :c-mode {:key :c}
@@ -32,16 +35,15 @@
              :b-mode {:key :b}
              :n-mode {:key :n}
              :m-mode {:key :m}
-             :spacebar-mode {:key :spacebar}
-             :tilde-mode {:key :grave_accent_and_tilde}
              :dot-mode {:key :period}
+             :spacebar-mode {:key :spacebar}
              :go-mode {:key :period :condi ["in-go" 1]}
              :js-mode {:key :period :condi ["in-js" 1]}
              :swift-mode {:key :period :condi ["in-swift" 1]}
              :rust-mode {:key :period :condi ["in-rust" 1]}
              :py-mode {:key :period :condi ["in-python" 1]}
              :elixir-mode {:key :period :condi ["in-elixir" 1]}
-             :caps-mode {:key :caps_lock}}
+             }
  :main [{:des "colonkey (shift)"
          :rules [:semicolon-mode
                  [:1 :!T1]
