@@ -258,7 +258,6 @@
                  [:tab [:km "open: Transmission"]]
                  [:q [:km "open: IINA"]]
                  [:w [:km "open: 1Password"]]
-                 [:e [:km "open: ScreenFlow"]]
                  [:u [:km "open: Flume"]]
                  [:i [:km "open: Pixave"]]
                  [:o :!CO7] ; Open Typinator
@@ -268,11 +267,12 @@
                  [:j [:km "open: Dictionary"]]
                  [:k [:km "open: PDF Expert"]]
                  [:l [:km "open: Reeder"]]
-                 [:semicolon [:km "open: Final Cut Pro"]]
+                 [:semicolon [:km "open: Books"]]
                  [:b [:km "Edit keyboard shortcuts"]]
+                 [:n [:km "open: ScreenFlow"]]
                  [:m [:km "open: OBS"]]
                  [:comma [:km "open: Arq"]]
-                 [:period [:km "open: Books"]]
+                 [:period [:km "open: Final Cut Pro"]]
                  [:spacebar :!COSx]]} ; Selection -> Reddit
         {:des "tkey (palettes + websites)"
          :rules [:t-mode
@@ -531,6 +531,7 @@
          :rules [:z-mode
                  [:e [:km "open: Telegram"]]
                  [:o [:km "open: Zoom"]]
+                 [:i [:km "open: WhatsApp"]]
                  [:p [:km "open: FaceTime"]]
                  [:d [:km "New Spark email"]]
                  [:f [:km "open: Spark"]]
