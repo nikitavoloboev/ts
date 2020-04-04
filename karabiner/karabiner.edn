@@ -516,12 +516,13 @@
                  [:w [:alfred "toggle wifi" "nikivi.wifi.tools"]]
                  [:e :!CTk] ; Turn on/off BTT TouchBar
                  [:r [:alfred "restart wifi" "nikivi.wifi.tools"]]
-                 [:f [:km "Commit home"]]
+                 [:d [:km "Commit dotfiles"]]
+                 [:f [:km "Commit build to learn"]]
+                 [:h [:km "Commit home"]]
                  [:j [[:open "dash://.jsts:"] ["in-python" 0] ["in-go" 0] ["in-js" 1] ["in-elixir" 0] ["in-rust" 0] ["in-swift" 0]]] ; JS
                  [:k [[:open "dash://.go:"] ["in-python" 0] ["in-go" 1] ["in-js" 0] ["in-elixir" 0] ["in-rust" 0] ["in-swift" 0]]] ; Go
                  [:l [[:open "dash://.python:"] ["in-python" 1] ["in-go" 0] ["in-js" 0] ["in-elixir" 0] ["in-rust" 0] ["in-swift" 0]]] ; Python
-                 [:c [:km "Commit build to learn"]]
-                 [:d [:km "Commit dotfiles"]]
+                 [:c [:km "Commit code"]]
                  [:v [:km "Commit wiki"]]
                  [:n [[:open "dash://.rust:"] ["in-python" 0] ["in-go" 0] ["in-js" 0] ["in-elixir" 0] ["in-rust" 1] ["in-swift" 0]]] ; Rust
                  ;[:n :!STh] ; Record macro
@@ -581,21 +582,22 @@
                  [:spacebar :!CSOy]]} ; Selection -> Stack Overflow
         {:des "vkey (media)"
          :rules [:v-mode
-                 [:w [:km "Repeat Spotify song"]]
-                 [:e :!CO9] ; Connect/disconnect AirPods
                  [:u :!COS6] ; Toggle Night Shift on/off.
                  [:i :display_brightness_decrement]
                  [:o :display_brightness_increment]
                  [:open_bracket [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ERn0U4qZIKC8Dy7RrMMsn"]] ; Likes playlist
                  [:close_bracket [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:2N82DnDsPGMnpJhN8sVFJu"]] ; Bliss playlist
-                 [:a :!TS0] ; Turn on/off Noizio
+                 ;[:a :!TS0] ; Turn on/off Noizio
+                 [:a [:km "Repeat Spotify song"]]
                  [:s [:km "Play/pause Spotify"]]
-                 [:d [:km "Noizio settings"]]
+                 [:d :!CO9] ; Connect/disconnect AirPods
+                 ;[:d [:km "Noizio settings"]]
                  [:h :vk_consumer_previous]
                  [:j :mute]
                  [:k :vk_consumer_play]
                  [:l :vk_consumer_next]
-                 [:semicolon :!TS0] ; Turn on/off Noizio
+                 [:semicolon [:km "Play/pause Spotify"]]
+                 ;[:semicolon :!TS0] ; Turn on/off Noizio
                  [:quote [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ESjwZeTcHOWzY3FYO5zs5"]] ; Focus playlist
                  [:grave_accent_and_tilde :illumination_decrement]
                  [:z :illumination_increment]
@@ -745,7 +747,7 @@
                  [:q :!TO4] ; Show Annotate
                  [:w :!TO3] ; Screenshot -> Annotate
                  [:e :!TO2] ; Screenshot -> Clipboard
-                 [:r [:alfred "Screenshot -> Imgur" "com.vitorgalvao.alfred.webscreenshot"]]
+                 [:r :!TOCp] ; Screenshot -> Imgur
                  [:t :!CS4] ; Screenshot -> ~/Desktop
                  [:u [:km "w: Beautiful.ai"]]
                  [:i [:km "w: GitHub (notifications)"]] ; TODO: jump between GitHub (issues/prs)
