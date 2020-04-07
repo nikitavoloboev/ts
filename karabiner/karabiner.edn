@@ -524,9 +524,9 @@
                  [:l [[:open "dash://.python:"] ["in-python" 1] ["in-go" 0] ["in-js" 0] ["in-elixir" 0] ["in-rust" 0] ["in-swift" 0]]] ; Python
                  [:c [:km "Commit code"]]
                  [:v [:km "Commit wiki"]]
-                 [:n [[:open "dash://.rust:"] ["in-python" 0] ["in-go" 0] ["in-js" 0] ["in-elixir" 0] ["in-rust" 1] ["in-swift" 0]]] ; Rust
+                 ;[:n [[:open "dash://.rust:"] ["in-python" 0] ["in-go" 0] ["in-js" 0] ["in-elixir" 0] ["in-rust" 1] ["in-swift" 0]]] ; Rust
                  ;[:n :!STh] ; Record macro
-                 [:m [[:open "dash://.swift:"] ["in-python" 0] ["in-go" 0] ["in-js" 0] ["in-elixir" 0] ["in-rust" 0] ["in-swift" 1]]] ; Swift
+                 ;[:m [[:open "dash://.swift:"] ["in-python" 0] ["in-go" 0] ["in-js" 0] ["in-elixir" 0] ["in-rust" 0] ["in-swift" 1]]] ; Swift
                  [:spacebar :!COSn]]} ; Selection -> GitHub
         {:des "zkey (chat)"
          :rules [:z-mode
@@ -553,13 +553,14 @@
                  [:o [:km "Paste current Spotify song link"]]
                  [:open_bracket [:alfred "twitter_search_current_track" "com.vdesabou.spotify.mini.player"]]
                  [:close_bracket [:alfred "add_current_track_to" "com.vdesabou.spotify.mini.player" "spotify:playlist:2N82DnDsPGMnpJhN8sVFJu"]] ; Add song to Bliss playlist
-                 [:j [:alfred "spot_mini" "com.vdesabou.spotify.mini.player"]]
+                 [:j [:alfred "show_alfred_playlist" "com.vdesabou.spotify.mini.player"]]
                  [:k [:alfred "show_current_track" "com.vdesabou.spotify.mini.player"]]
                  [:semicolon [:alfred "add_current_track_to_alfred_playlist_or_your_music" "com.vdesabou.spotify.mini.player"]] ; Add song to Likes playlist
                  [:quote [:alfred "add_current_track_to" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ESjwZeTcHOWzY3FYO5zs5"]] ; Add song to Focus playlist
                  [:n [:alfred "add_current_track_to" "com.vdesabou.spotify.mini.player"]]
                  [:m [:alfred "remove_current_track_from" "com.vdesabou.spotify.mini.player"]]
                  ;[:comma [:alfred "youtube_search_current_track" "com.vdesabou.spotify.mini.player"]] ; TODO: twitter search
+                 [:comma [:alfred "show_search_online" "com.vdesabou.spotify.mini.player"]] ; TODO: split up further into binds for direct searches of tracks/artists/all
                  [:period [:alfred "youtube_search_current_track" "com.vdesabou.spotify.mini.player"]]
                  [:slash [:alfred "reddit_search_current_track" "com.vdesabou.spotify.mini.player"]]]}
         {:des "ckey (test + dots)"
@@ -578,25 +579,21 @@
                  [:spacebar :!CSOy]]} ; Selection -> Stack Overflow
         {:des "vkey (media)"
          :rules [:v-mode
-                 [:w :illumination_decrement]
-                 [:e :illumination_increment]
+                 [:q :illumination_decrement]
+                 [:w :illumination_increment]
                  ;[:u :!COS6] ; Toggle Night Shift on/off.
                  [:i :display_brightness_decrement]
                  [:o :display_brightness_increment]
                  [:open_bracket [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ERn0U4qZIKC8Dy7RrMMsn"]] ; Likes playlist
                  [:close_bracket [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:2N82DnDsPGMnpJhN8sVFJu"]] ; Bliss playlist
-                 ;[:a :!TS0] ; Turn on/off Noizio
-                 ;[:a [:km "Repeat Spotify song"]]
-                 [:a [:alfred "show_alfred_playlist" "com.vdesabou.spotify.mini.player"]]
+                 [:a [:km "Repeat Spotify song"]] ; TODO: do in background
                  [:s [:km "Play/pause Spotify"]]
                  [:d :!CO9] ; Connect/disconnect AirPods
-                 ;[:d [:km "Noizio settings"]]
                  [:h :vk_consumer_previous]
                  [:j :mute]
                  [:k :vk_consumer_play]
                  [:l :vk_consumer_next]
-                 [:semicolon [:km "Play/pause Spotify"]]
-                 ;[:semicolon :!TS0] ; Turn on/off Noizio
+                 [:semicolon [:alfred "spot_mini" "com.vdesabou.spotify.mini.player"]]
                  [:quote [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ESjwZeTcHOWzY3FYO5zs5"]] ; Focus playlist
                  [:grave_accent_and_tilde [:alfred "artist_radio" "com.vdesabou.spotify.mini.player"]]
                  [:z [:alfred "song_radio" "com.vdesabou.spotify.mini.player"]]
@@ -604,7 +601,7 @@
                  [:n :volume_decrement]
                  [:m :volume_increment]
                  [:comma [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:37i9dQZEVXcMHpP6EcIqNe"]] ; Discover Weekly playlist
-                 [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:1LjaunC39SgsMZEln8EpDj"]] ; Focus song
+                 [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:0L2Q17joitlk1BxqKbbUyM"]] ; Focus song
                  [:spacebar :!CSOv]]} ; Selection -> Google Images
         {:des "bkey (break)"
          :rules [:b-mode
@@ -627,9 +624,9 @@
                  [:k [:km "w: GitHub (front page)"]]
                  [:l [:km "w: Lobsters"]]
                  [:semicolon [:km "w: GitHub (trending)"]]
-                 [:n [:km "w: Product Hunt"]]
-                 [:m [:km "w: YouTube (subs)"]]
-                 [:period [:km "w: HckrNews"]]
+                 [:n [:km "w: HckrNews"]]
+                 [:m [:km "w: Product Hunt"]]
+                 [:period [:km "w: YouTube (subs)"]]
                  [:spacebar :!TOSs]]} ; Selection -> DuckDuckGo
         {:des "nkey (alfred)"
          :rules [:n-mode
