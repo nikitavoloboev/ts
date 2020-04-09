@@ -601,7 +601,7 @@
                  [:n :volume_decrement]
                  [:m :volume_increment]
                  [:comma [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:37i9dQZEVXcMHpP6EcIqNe"]] ; Discover Weekly playlist
-                 [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:0L2Q17joitlk1BxqKbbUyM"]] ; Focus song
+                 [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:3OhZdTcwr8eho3iol2YqMy"]] ; Rain
                  [:spacebar :!CSOv]]} ; Selection -> Google Images
         {:des "bkey (break)"
          :rules [:b-mode
@@ -619,13 +619,13 @@
                  [:d [:km "w: Lobsters (comments)"]]
                  [:f [:km "w: Swift forum"]]
                  [:h [:alfred "search hn" "com.vitorgalvao.alfred.hackerboard"]]
-                 [:j [:km "w: HN"]]
+                 [:j [:km "w: HckrNews"]]
                  [:k [:km "w: GitHub (front page)"]]
                  [:l [:km "w: Lobsters"]]
                  [:semicolon [:km "w: HN (new)"]]
                  [:quote [:km "w: Lobsters (new)"]]
                  [:period [:km "w: GitHub (trending)"]]
-                 [:n [:km "w: HckrNews"]]
+                 [:n [:km "w: HN"]]
                  [:m [:km "w: Product Hunt"]]
                  [:period [:km "w: YouTube (subs)"]]
                  [:spacebar :!TOSs]]} ; Selection -> DuckDuckGo
