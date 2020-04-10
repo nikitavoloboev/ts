@@ -601,7 +601,8 @@
                  [:n :volume_decrement]
                  [:m :volume_increment]
                  [:comma [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:37i9dQZEVXcMHpP6EcIqNe"]] ; Discover Weekly playlist
-                 [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:3OhZdTcwr8eho3iol2YqMy"]] ; Rain
+                 [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:2AI8gjczczIGkUxospO0MF"]] ; Rain
+                 [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:346d2tSxhrRUpL4bp4xn2b"]] ; Nils
                  [:spacebar :!CSOv]]} ; Selection -> Google Images
         {:des "bkey (break)"
          :rules [:b-mode
