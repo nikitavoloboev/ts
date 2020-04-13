@@ -602,7 +602,7 @@
                  [:m :volume_increment]
                  [:comma [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:37i9dQZEVXcMHpP6EcIqNe"]] ; Discover Weekly playlist
                  [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:2AI8gjczczIGkUxospO0MF"]] ; Rain
-                 [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:346d2tSxhrRUpL4bp4xn2b"]] ; Nils
+                 [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:2Lz05EyIZQS2PjwUtCn4Om"]] ; Nils
                  [:spacebar :!CSOv]]} ; Selection -> Google Images
         {:des "bkey (break)"
          :rules [:b-mode
@@ -625,9 +625,9 @@
                  [:l [:km "w: Lobsters"]]
                  [:semicolon [:km "w: HN (new)"]]
                  [:quote [:km "w: Lobsters (new)"]]
-                 [:period [:km "w: GitHub (trending)"]]
                  [:n [:km "w: HN"]]
                  [:m [:km "w: Product Hunt"]]
+                 ;[:period [:km "w: GitHub (trending)"]]
                  [:period [:km "w: YouTube (subs)"]]
                  [:spacebar :!TOSs]]} ; Selection -> DuckDuckGo
         {:des "nkey (alfred)"
