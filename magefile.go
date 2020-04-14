@@ -118,7 +118,15 @@ func goInstall() {
 // TODO: replace with nix ideally because compiling rust from source is pain..
 // TODO: should just get precompiled binaries
 func rustInstall() {
-	// cmds := []string{"git-trim", "zoxide", "loc"}
+	cmds := []string{"git-trim", "zoxide", "loc", "kickstart"}
+	for _, app := range cmds {
+		err := sh.RunV("brew", "install", app)
+		if err != nil {
+			log.Fatal(err)
+		}
+		// skip to next cmd
+		continue
+	}
 	// TODO: check if rust is installed (cargo is in path)
 	// TODO: if not, run rustup-init (https://formulae.brew.sh/formula/rustup-init)
 }
