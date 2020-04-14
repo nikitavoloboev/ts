@@ -199,12 +199,12 @@
                  [:j [:km "open: iTerm"]]
                  [:k [:km "open: Safari"]]
                  [:l [:km "open: VS Code"]]
-                 [:semicolon [:km "open: Xcode"]]
+                 [:semicolon [:km "open: Tower"]]
                  [:c [:km "open: Spotify"]]
                  [:v [:km "open: Notion"]]
                  [:b [:km "open: BetterTouchTool"]]
                  [:n [:km "open: Sublime Text"]]
-                 [:m [:km "open: Tower"]]
+                 [:m [:km "open: Xcode"]]
                  [:period [:km "open: Console"]]
                  [:spacebar :!CT7]]} ; Start Google search with selection
         {:des "ekey (cmd)"
@@ -564,17 +564,17 @@
                  [:slash [:alfred "reddit_search_current_track" "com.vdesabou.spotify.mini.player"]]]}
         {:des "ckey (test + dots)"
          :rules [:c-mode
-                 [:u [:alfred "search build to learn" "nikivi.private.directories"]]
                  [:i [:km "edit: Aliases"]]
                  [:o [:km "edit: Zsh functions"]]
-                 [:a [:km "Clone repo to ~/src/clones"]]
+                 [:a [:km "Clone repo to ~/src/clones and open with VS Code"]]
+                 [:s [:km "Clone repo to ~/src/clones"]]
                  [:j [:km "test: JS"]]
                  [:k [:km "test: Go"]]
                  [:l [:km "test: Python"]]
+                 [:semicolon [:km "proj: Dotfiles"]]
                  [:n [:km "test: TS"]]
                  [:m [:km "test: Rust"]]
-                 [:period [:km "proj: Dotfiles"]]
-                 [:semicolon [:km "Clone repo to ~/src/clones and open with VS Code"]]
+                 [:period [:alfred "search build to learn" "nikivi.private.directories"]]
                  [:spacebar :!CSOy]]} ; Selection -> Stack Overflow
         {:des "vkey (media)"
          :rules [:v-mode
