@@ -122,6 +122,7 @@
                  [:n [:km "wiki: Notes"]]
                  [:m [:km "wiki: Summary"]]
                  [:comma [:km "edit: Now"]]
+                 [:period [:km "wiki: Goals"]]
                  [:spacebar :!CSOp]]} ; Selection -> Reddit
         {:des "4key (open curated lists)"
          :rules [:4-mode
@@ -194,18 +195,17 @@
                  [:a :!OSC1] ; Open Dash
                  [:d [:km "open: Paw"]]
                  [:f [:km "open: 2Do"]]
-                 [:g [:km "open: Notion"]]
-                 [:h [:km "open: Console"]]
+                 [:g [:km "open: Postico"]]
                  [:j [:km "open: iTerm"]]
                  [:k [:km "open: Safari"]]
                  [:l [:km "open: VS Code"]]
-                 [:semicolon [:km "open: Tower"]]
+                 [:semicolon [:km "open: Xcode"]]
                  [:c [:km "open: Spotify"]]
-                 [:v [:km "open: Postico"]]
+                 [:v [:km "open: Notion"]]
                  [:b [:km "open: BetterTouchTool"]]
                  [:n [:km "open: Sublime Text"]]
-                 [:m [:km "open: Xcode"]]
-                 [:period [:km "open: Sublime Merge"]]
+                 [:m [:km "open: Tower"]]
+                 [:period [:km "open: Console"]]
                  [:spacebar :!CT7]]} ; Start Google search with selection
         {:des "ekey (cmd)"
          :rules [:e-mode
@@ -368,7 +368,6 @@
                  [:a [:km "Open 2Do Love"]]
                  [:s [:km "Open 2Do Wiki"]]
                  [:f [:km "Open Ideas Trello"]]
-                 [:g [:km "Open 🐱🐶 Trello"]]
                  [:j [:km "Open 2Do Today"]]
                  [:k [:km "Open 2Do GitHub"]]
                  [:l [:km "Open 2Do Later"]]
