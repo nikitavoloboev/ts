@@ -187,6 +187,7 @@
                  [:r [:km "open: Trello"]]
                  [:t [:km "open: Activity Monitor"]]
                  [:u [:km "open: Instruments"]]
+                 [:i [:km "open: Alfred Preferences"]]
                  [:o [:km "open: Keyboard Maestro"]]
                  [:p [:km "open: Postgres"]]
                  [:caps_lock [:km "open: Finder"]]
@@ -253,14 +254,12 @@
                  [:spacebar :!CSO7]]} ; Selection -> Google Lucky
         {:des "rkey (apps)"
          :rules [:r-mode
-                 [:2 [:km "open: PIA"]]
-                 [:tab [:km "open: Transmission"]]
-                 [:q [:km "open: IINA"]]
+                 [:q [:km "open: Transmission"]]
                  [:w [:km "open: 1Password"]]
-                 [:u [:km "open: Flume"]]
+                 [:e [:km "open: Preview"]]
+                 ;[:u [:km "open: Flume"]]
                  [:o :!CO7] ; Open Typinator
-                 [:caps_lock [:km "open: Preview"]]
-                 [:a [:km "open: Alfred Preferences"]]
+                 [:a [:km "open: IINA"]]
                  [:h [:km "open: Photos"]]
                  [:j [:km "open: Dictionary"]]
                  [:k [:km "open: PDF Expert"]]
@@ -470,7 +469,7 @@
                  ;[:3 :!CTOp] ; TODO: View Sip
                  [:q [:km "Centre mouse to active app"]]
                  ;[:w [:km "open: Simulator / Xcode"]]
-                 [:w [:km "open: Chrome Canary / VS Code"]]
+                 [:w [:km "open: Chrome Canary  / VS Code"]]
                  [:e :!CO8] ; Alfred clipboard history search
                  [:i :!Treturn_or_enter]
                  [:o :!Oreturn_or_enter]
