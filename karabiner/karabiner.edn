@@ -572,6 +572,7 @@
                  [:k [:km "test: Go"]]
                  [:l [:km "test: Python"]]
                  [:semicolon [:km "proj: Dotfiles"]]
+                 [:quote [:km "proj: LA"]]
                  [:n [:km "test: TS"]]
                  [:m [:km "test: Rust"]]
                  [:period [:alfred "search build to learn" "nikivi.private.directories"]]
