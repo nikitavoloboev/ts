@@ -186,9 +186,7 @@
                  [:e [:km "open: Fantastical"]]
                  [:r [:km "open: Trello"]]
                  [:t [:km "open: Activity Monitor"]]
-                 [:y [:km "open: Safari Technology Preview"]]
                  [:u [:km "open: Instruments"]]
-                 [:i [:km "open: Chrome Canary"]]
                  [:o [:km "open: Keyboard Maestro"]]
                  [:p [:km "open: Postgres"]]
                  [:caps_lock [:km "open: Finder"]]
@@ -196,6 +194,7 @@
                  [:d [:km "open: Paw"]]
                  [:f [:km "open: 2Do"]]
                  [:g [:km "open: Postico"]]
+                 [:h [:km "open: Safari Technology Preview"]]
                  [:j [:km "open: iTerm"]]
                  [:k [:km "open: Safari"]]
                  [:l [:km "open: VS Code"]]
@@ -259,7 +258,6 @@
                  [:q [:km "open: IINA"]]
                  [:w [:km "open: 1Password"]]
                  [:u [:km "open: Flume"]]
-                 [:i [:km "open: Pixave"]]
                  [:o :!CO7] ; Open Typinator
                  [:caps_lock [:km "open: Preview"]]
                  [:a [:km "open: Alfred Preferences"]]
@@ -471,13 +469,14 @@
          :rules [:f-mode
                  ;[:3 :!CTOp] ; TODO: View Sip
                  [:q [:km "Centre mouse to active app"]]
-                 [:w [:km "open: Chrome Canary / Simulator"]]
+                 ;[:w [:km "open: Simulator / Xcode"]]
+                 [:w [:km "open: Chrome Canary / VS Code"]]
                  [:e :!CO8] ; Alfred clipboard history search
                  [:i :!Treturn_or_enter]
                  [:o :!Oreturn_or_enter]
                  [:p :!CTOc] ; Sleep
                  [:open_bracket :!CT5] ; Turn display on/off
-                 [:caps_lock [:km "Figma Think"]]
+                 [:caps_lock [:km "open: Pixave"]]
                  [:a [:km "open: Figma"]]
                  [:s [:km "edit: 2nd iTerm tab"]]
                  [:d :!CTOp] ; Sip color picker
