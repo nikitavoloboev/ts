@@ -187,7 +187,6 @@
                  [:r [:km "open: Trello"]]
                  [:t [:km "open: Activity Monitor"]]
                  [:u [:km "open: Instruments"]]
-                 [:i [:km "open: Alfred Preferences"]]
                  [:o [:km "open: Keyboard Maestro"]]
                  [:p [:km "open: Postgres"]]
                  [:caps_lock [:km "open: Finder"]]
@@ -254,13 +253,13 @@
                  [:spacebar :!CSO7]]} ; Selection -> Google Lucky
         {:des "rkey (apps)"
          :rules [:r-mode
-                 [:q [:km "open: Transmission"]]
+                 [:tab [:km "open: Transmission"]]
+                 [:q [:km "open: IINA"]]
                  [:w [:km "open: 1Password"]]
-                 [:e [:km "open: Preview"]]
                  ;[:u [:km "open: Flume"]]
                  [:o :!CO7] ; Open Typinator
-                 [:a [:km "open: IINA"]]
-                 [:h [:km "open: Photos"]]
+                 [:caps_lock [:km "open: Preview"]]
+                 [:a [:km "open: Alfred Preferences"]]
                  [:j [:km "open: Dictionary"]]
                  [:k [:km "open: PDF Expert"]]
                  [:l [:km "open: Reeder"]]
@@ -467,7 +466,7 @@
         {:des "fkey (essential)"
          :rules [:f-mode
                  ;[:3 :!CTOp] ; TODO: View Sip
-                 [:q [:km "Centre mouse to active app"]]
+                 [:q [:km "open: Photos"]]
                  ;[:w [:km "open: Simulator / Xcode"]]
                  [:w [:km "open: Chrome Canary  / VS Code"]]
                  [:e :!CO8] ; Alfred clipboard history search
@@ -475,10 +474,10 @@
                  [:o :!Oreturn_or_enter]
                  [:p :!CTOc] ; Sleep
                  [:open_bracket :!CT5] ; Turn display on/off
-                 [:caps_lock [:km "open: Pixave"]]
+                 [:caps_lock :!CTOu] ; Sip color picker
                  [:a [:km "open: Figma"]]
                  [:s [:km "edit: 2nd iTerm tab"]]
-                 [:d :!CTOp] ; Sip color picker
+                 [:d [:km "Centre mouse to active app"]]
                  [:h [:km "Make markdown link from selection {link}"]]
                  [:j [:km "edit: 1st iTerm tab"]]
                  [:k :return_or_enter]
