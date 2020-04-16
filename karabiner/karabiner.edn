@@ -599,7 +599,7 @@
                  [:m :volume_increment]
                  [:comma [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:37i9dQZEVXcMHpP6EcIqNe"]] ; Discover Weekly playlist
                  [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:2AI8gjczczIGkUxospO0MF"]] ; Rain
-                 [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:2Lz05EyIZQS2PjwUtCn4Om"]] ; Nils
+                 [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:6ggxMbfhZ5NNLghTUMdz3a"]] ; Focus
                  [:spacebar :!CSOv]]} ; Selection -> Google Images
         {:des "bkey (break)"
          :rules [:b-mode
@@ -740,18 +740,18 @@
                  [:v [:e :l :i :x :i :r :spacebar]]]} ; -> elixir
         {:des "spacekey (websites)"
          :rules [:spacebar-mode
-                 [:q :!TO4] ; Show Annotate
-                 [:w :!TO3] ; Screenshot -> Annotate
+                 [:w :!TO3] ; Screenshot -> CleanShot
                  [:e :!TO2] ; Screenshot -> Clipboard
                  [:r :!TOCp] ; Screenshot -> Imgur
                  [:t :!CS4] ; Screenshot -> ~/Desktop
                  [:u [:km "w: Beautiful.ai"]]
                  [:i [:km "w: GitHub (notifications)"]] ; TODO: jump between GitHub (issues/prs)
                  [:o [:km "w: CodeSandbox"]]
-                 [:a :!CO5] ; Start/stop ScreenFlow recording
-                 ;[:s :!CO5] ; TODO: Configure ScreenFlow recording
-                 ;[:d :!CO5] ; TODO: Pause/unpause ScreenFlow recording
-                 ;[:f :!CO5] ; TODO: Start/stop ScreenFlow partial screen recording
+                 [:a [:km "open: CleanShot"]]
+                 [:s :!CO5] ; TODO: Pause/unpause ScreenFlow recording
+                 [:d :!CO5] ; TODO: Configure ScreenFlow recording
+                 [:f :!CO5] ; Start/stop ScreenFlow recording
+                 [:g :!CO5] ; TODO: Start/stop ScreenFlow partial screen recording
                  [:h [:km "w: Google Sheets"]]
                  [:j [:km "w: YouTube"]]
                  [:k [:km "w: GitHub"]]
