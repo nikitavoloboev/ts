@@ -161,7 +161,6 @@ func VimSetup() {
 	// TODO: cd to ~/.config/nvim & run
 	// https://github.com/junegunn/vim-plug#neovim
 	// curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-
 }
 
 func Defaults() {

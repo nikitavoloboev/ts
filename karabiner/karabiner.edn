@@ -256,6 +256,7 @@
                  [:tab [:km "open: Transmission"]]
                  [:q [:km "open: IINA"]]
                  [:w [:km "open: 1Password"]]
+                 [:e [:km "open: Feedback Assistant"]]
                  ;[:u [:km "open: Flume"]]
                  [:o :!CO7] ; Open Typinator
                  [:caps_lock [:km "open: Preview"]]
@@ -453,8 +454,8 @@
                  [:a [:!Cc :!Ctab]] ; Copy & activate previous app
                  [:j {:mkey {:vwheel 60}}] ; Scroll down
                  [:k {:mkey {:vwheel -60}}] ; Scroll up
-                 [:l [:km "Google clipboard"]]
-                 [:semicolon [:km "Google selected word"]]
+                 [:l [:km "Google selected word"]]
+                 [:semicolon [:km "Google clipboard"]]
                  [:quote [:km "Select line and google"]]
                  [:z {:pkey :button2}] ; Right click
                  [:v {:pkey :button1}] ; Left click
@@ -569,7 +570,8 @@
                  [:k [:km "test: Go"]]
                  [:l [:km "test: Python"]]
                  [:semicolon [:km "proj: Dotfiles"]]
-                 [:quote [:km "proj: LA"]]
+                 [:quote [:km "edit: Dotfiles Magefile"]]
+                 ;[:quote [:km "proj: LA"]]
                  [:n [:km "test: TS"]]
                  [:m [:km "test: Rust"]]
                  [:period [:alfred "search build to learn" "nikivi.private.directories"]]
@@ -599,7 +601,7 @@
                  [:m :volume_increment]
                  [:comma [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:37i9dQZEVXcMHpP6EcIqNe"]] ; Discover Weekly playlist
                  [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:2AI8gjczczIGkUxospO0MF"]] ; Rain
-                 [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:6ggxMbfhZ5NNLghTUMdz3a"]] ; Focus
+                 [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:2Lz05EyIZQS2PjwUtCn4Om"]] ; Focus
                  [:spacebar :!CSOv]]} ; Selection -> Google Images
         {:des "bkey (break)"
          :rules [:b-mode
