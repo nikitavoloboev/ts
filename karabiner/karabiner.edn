@@ -87,8 +87,8 @@
          :rules [[:left_command :left_command nil {:alone :!Ctab}]]}
         {:des "right opt -> ChromeCanary/Simulator"
          :rules [[:right_alt :right_alt nil {:alone [:km "open: Chrome Canary / Simulator"]}]]}
-        {:des "§ -> Karabiner/VSCodeVim on/off"
-         :rules [[:non_us_backslash [:km "Karabiner/VSCodeVim on/off"]]]}
+        ;{:des "§ -> Karabiner/VSCodeVim on/off"
+        ; :rules [[:non_us_backslash [:km "Karabiner/VSCodeVim on/off"]]]}
         {:des "jsim"
          :rules [[[:j :k] [:alfred "search google" "net.deanishe.alfred-searchio"]]
                  [[:j :semicolon] [:alfred "search tabs" "net.deanishe.alfred.safari"]]
@@ -256,7 +256,7 @@
                  [:tab [:km "open: Transmission"]]
                  [:q [:km "open: IINA"]]
                  [:w [:km "open: 1Password"]]
-                 [:e [:km "open: Feedback Assistant"]]
+                 ;[:e [:km "open: Feedback Assistant"]]
                  ;[:u [:km "open: Flume"]]
                  [:o :!CO7] ; Open Typinator
                  [:caps_lock [:km "open: Preview"]]
@@ -742,6 +742,7 @@
                  [:v [:e :l :i :x :i :r :spacebar]]]} ; -> elixir
         {:des "spacekey (websites)"
          :rules [:spacebar-mode
+                 [:q [:km "open: CleanShot"]]
                  [:w :!TO3] ; Screenshot -> CleanShot
                  [:e :!TO2] ; Screenshot -> Clipboard
                  [:r :!TOCp] ; Screenshot -> Imgur
@@ -749,11 +750,10 @@
                  [:u [:km "w: Beautiful.ai"]]
                  [:i [:km "w: GitHub (notifications)"]] ; TODO: jump between GitHub (issues/prs)
                  [:o [:km "w: CodeSandbox"]]
-                 [:a [:km "open: CleanShot"]]
-                 [:s :!CO5] ; TODO: Pause/unpause ScreenFlow recording
-                 [:d :!CO5] ; TODO: Configure ScreenFlow recording
+                 [:a :!TO4] ; CleanShot recording
+                 ;[:s :!CO5] ; TODO: Pause/unpause ScreenFlow recording
+                 ;[:d :!CO5] ; TODO: Configure ScreenFlow recording
                  [:f :!CO5] ; Start/stop ScreenFlow recording
-                 [:g :!CO5] ; TODO: Start/stop ScreenFlow partial screen recording
                  [:h [:km "w: Google Sheets"]]
                  [:j [:km "w: YouTube"]]
                  [:k [:km "w: GitHub"]]
