@@ -89,6 +89,7 @@ func InstallCLI() {
 func brewInstall() {
 	cmds := []string{"neovim", "starship", "exa", "diff-so-fancy", "rustup", "openssl", "fzf",
 		"watchman", "kubectl", "awscli", "ripgrep", "vault", "tree", "node", "screenfetch", "sk",
+		"ghc", "cabal-install",
 		"getantibody/tap/antibody", "denisidoro/tools/navi"}
 	// brew tap bvaisvil/zenith & brew install zenith TODO: do brew taps first. then do cmds
 	// don't actually use zenith. untap & delete
@@ -134,6 +135,11 @@ func rustInstall() {
 func yarnInstall() {
 	// cmds := []string{"prettier"}
 	// TODO: yarn global add ..
+}
+
+func cabalInstall() {
+	// cmds := []string{"brok"}
+	// TODO: cabal install ..
 }
 
 func vscodeExtensionInstall() {
