@@ -90,7 +90,7 @@ func brewInstall() {
 	cmds := []string{"neovim", "starship", "exa", "diff-so-fancy", "rustup", "openssl", "fzf",
 		"watchman", "kubectl", "awscli", "ripgrep", "vault", "tree", "node", "screenfetch", "sk",
 		"ghc", "cabal-install",
-		"getantibody/tap/antibody", "denisidoro/tools/navi"}
+		"getantibody/tap/antibody", "denisidoro/tools/navi", "agrinman/tap/wormhole", "Schniz/tap/fnm"}
 	// brew tap bvaisvil/zenith & brew install zenith TODO: do brew taps first. then do cmds
 	// don't actually use zenith. untap & delete
 

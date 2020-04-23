@@ -528,8 +528,8 @@
         {:des "zkey (chat)"
          :rules [:z-mode
                  [:e [:km "open: Telegram"]]
-                 [:o [:km "open: Zoom"]]
                  [:i [:km "open: WhatsApp"]]
+                 [:o [:km "open: Zoom"]]
                  [:p [:km "open: FaceTime"]]
                  [:d [:km "New Spark email"]]
                  [:f [:km "open: Spark"]]
@@ -543,7 +543,8 @@
                  [:v [:km "open: Tweetbot"]]
                  [:n [:km "New tweet with current URL"]]
                  [:m [:km "open: Textual"]]
-                 [:period [:km "Search Tweetbot"]]
+                 ;[:period [:km "Search Tweetbot"]]
+                 [:period [:km "w: Twitter Search"]]
                  [:spacebar :!CSOz]]} ; Selection -> Twitter
         {:des "xkey (spotify)"
          :rules [:x-mode
@@ -601,7 +602,7 @@
                  [:m :volume_increment]
                  [:comma [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:37i9dQZEVXcMHpP6EcIqNe"]] ; Discover Weekly playlist
                  [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:2AI8gjczczIGkUxospO0MF"]] ; Rain
-                 [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:5huPJYLNtpeeaGZN3gdAaf"]] ; Focus
+                 [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:7B0ofCHeQu2FoX7P28ZaPp"]] ; Focus
                  [:spacebar :!CSOv]]} ; Selection -> Google Images
         {:des "bkey (break)"
          :rules [:b-mode
