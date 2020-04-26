@@ -85,10 +85,8 @@
          :rules [[:right_command :right_command nil {:alone :!CTOSspacebar}]]}
         {:des "left cmd -> cmd+tab"
          :rules [[:left_command :left_command nil {:alone :!Ctab}]]}
-        {:des "right opt -> ChromeCanary/Simulator"
-         :rules [[:right_alt :right_alt nil {:alone [:km "open: Chrome Canary / Simulator"]}]]}
-        ;{:des "§ -> Karabiner/VSCodeVim on/off"
-        ; :rules [[:non_us_backslash [:km "Karabiner/VSCodeVim on/off"]]]}
+        ;{:des "§ -> Karabiner on/off"
+        ; :rules [[:non_us_backslash [:km "Karabiner on/off"]]]}
         {:des "jsim"
          :rules [[[:j :k] [:alfred "search google" "net.deanishe.alfred-searchio"]]
                  [[:j :semicolon] [:alfred "search tabs" "net.deanishe.alfred.safari"]]
@@ -198,12 +196,12 @@
                  [:j [:km "open: iTerm"]]
                  [:k [:km "open: Safari"]]
                  [:l [:km "open: VS Code"]]
-                 [:semicolon [:km "open: Tower"]]
+                 [:semicolon [:km "open: Xcode"]]
                  [:c [:km "open: Spotify"]]
                  [:v [:km "open: Notion"]]
                  [:b [:km "open: BetterTouchTool"]]
                  [:n [:km "open: Sublime Text"]]
-                 [:m [:km "open: Xcode"]]
+                 [:m [:km "open: Tower"]]
                  [:period [:km "open: Console"]]
                  [:spacebar :!CT7]]} ; Start Google search with selection
         {:des "ekey (cmd)"
@@ -543,7 +541,7 @@
                  [:v [:km "open: Tweetbot"]]
                  [:n [:km "New tweet with current URL"]]
                  [:m [:km "open: Textual"]]
-                 ;[:period [:km "Search Tweetbot"]]
+                 [:comma [:km "Search Tweetbot"]]
                  [:period [:km "w: Twitter Search"]]
                  [:spacebar :!CSOz]]} ; Selection -> Twitter
         {:des "xkey (spotify)"
@@ -602,7 +600,7 @@
                  [:m :volume_increment]
                  [:comma [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:37i9dQZEVXcMHpP6EcIqNe"]] ; Discover Weekly playlist
                  [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:2AI8gjczczIGkUxospO0MF"]] ; Rain
-                 [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:7B0ofCHeQu2FoX7P28ZaPp"]] ; Focus
+                 [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:5IExVHUiRccCWyJ4imu9qD"]] ; Focus
                  [:spacebar :!CSOv]]} ; Selection -> Google Images
         {:des "bkey (break)"
          :rules [:b-mode
@@ -610,7 +608,8 @@
                  [:w [:km "w: Medium (bookmarks)"]]
                  [:e [:km "w: Indie Hackers"]]
                  [:r [:km "w: KM forum"]]
-                 [:i [:km "w: Product Hunt (new)"]]
+                 [:u [:km "w: Product Hunt (new)"]]
+                 [:i [:km "w: Dribble"]]
                  [:o [:km "w: Pinboard"]]
                  [:p [:km "w: HN (show new)"]]
                  [:open_bracket [:km "w: Reddit Saved"]]
