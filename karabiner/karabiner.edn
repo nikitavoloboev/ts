@@ -109,8 +109,10 @@
                  [:r [:km "Reflect"]]
                  [:t [:km "edit: Projects"]]
                  [:u [:km "wiki: Used hotkeys"]]
-                 [:i [:km "wiki: Processes"]]
-                 [:o [:km "wiki: My workflow"]]
+                 [:i [:km "edit: Aliases"]]
+                 [:o [:km "edit: Zsh functions"]]
+                 ;[:i [:km "wiki: Processes"]]
+                 ;[:o [:km "wiki: My workflow"]]
                  [:g [:km "edit: Git config"]]
                  [:j [:km "wiki: Rules"]]
                  [:k [:km "edit: Private notes"]]
@@ -336,8 +338,8 @@
                  [:caps_lock [:alfred "search desktop" "com.vitorgalvao.alfred.directories"]]
                  [:a [:alfred "search files" "nikivi.manage.notes"]] ; TODO: add blog, drafts
                  [:s [:alfred "search code" "nikivi.manage.notes"]]
-                 [:d [:alfred "search folders" "nikivi.search.folders"]]
-                 [:f [:alfred "search repos" "net.deanishe.alfred-git-repos"]]
+                 [:d [:alfred "search repos" "net.deanishe.alfred-git-repos"]]
+                 [:f [:alfred "search folders" "nikivi.search.folders"]]
                  [:g [:km "2Do with current url as note (github)"]]
                  [:j [:alfred "run" "iansinnott.keyboardmaestro"]]
                  [:k [:alfred "search menu bar" "com.tedwise.menubarsearch"]]
@@ -561,8 +563,6 @@
                  [:slash [:alfred "reddit_search_current_track" "com.vdesabou.spotify.mini.player"]]]}
         {:des "ckey (test + dots)"
          :rules [:c-mode
-                 [:i [:km "edit: Aliases"]]
-                 [:o [:km "edit: Zsh functions"]]
                  [:a [:km "Clone repo to ~/src/clones and open with VS Code"]]
                  [:s [:km "Clone repo to ~/src/clones"]]
                  [:j [:km "test: JS"]]
@@ -599,8 +599,8 @@
                  [:n :volume_decrement]
                  [:m :volume_increment]
                  [:comma [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:37i9dQZEVXcMHpP6EcIqNe"]] ; Discover Weekly playlist
-                 [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:2AI8gjczczIGkUxospO0MF"]] ; Rain
-                 [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:5IExVHUiRccCWyJ4imu9qD"]] ; Focus
+                 [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:1TPem2VEEzClhspiIXnx6x"]] ; Brown noise
+                 [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:7LbA9VWwvTHV9kjucCZkHZ"]] ; Focus song
                  [:spacebar :!CSOv]]} ; Selection -> Google Images
         {:des "bkey (break)"
          :rules [:b-mode
@@ -610,6 +610,7 @@
                  [:r [:km "w: KM forum"]]
                  [:u [:km "w: Product Hunt (new)"]]
                  [:i [:km "w: Dribble"]]
+                 ;[:i [:km "w: Behance"]]
                  [:o [:km "w: Pinboard"]]
                  [:p [:km "w: HN (show new)"]]
                  [:open_bracket [:km "w: Reddit Saved"]]
