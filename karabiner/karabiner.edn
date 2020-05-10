@@ -184,13 +184,13 @@
         {:des "wkey (apps)"
          :rules [:w-mode
                  [:e [:km "open: Fantastical"]]
-                 [:r [:km "open: Trello"]]
                  [:t [:km "open: Activity Monitor"]]
                  [:u [:km "open: Instruments"]]
+                 [:i [:km "open: Proxyman"]]
                  [:o [:km "open: Keyboard Maestro"]]
-                 [:p [:km "open: Postgres"]]
+                 ;[:p [:km "open: Postgres"]]
                  [:caps_lock [:km "open: Finder"]]
-                 [:a :!OSC1] ; Open Dash
+                 [:a [:km "open: Notion"]]
                  [:d [:km "open: Paw"]]
                  [:f [:km "open: 2Do"]]
                  [:g [:km "open: Postico"]]
@@ -200,11 +200,11 @@
                  [:l [:km "open: VS Code"]]
                  [:semicolon [:km "open: Xcode"]]
                  [:c [:km "open: Spotify"]]
-                 [:v [:km "open: Notion"]]
+                 [:v :!OSC1] ; Open Dash
                  [:b [:km "open: BetterTouchTool"]]
                  [:n [:km "open: Sublime Text"]]
                  [:m [:km "open: Tower"]]
-                 [:period [:km "open: Console"]]
+                 ;[:period [:km "open: Console"]]
                  [:spacebar :!CT7]]} ; Start Google search with selection
         {:des "ekey (cmd)"
          :rules [:e-mode
@@ -600,7 +600,7 @@
                  [:m :volume_increment]
                  [:comma [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:37i9dQZEVXcMHpP6EcIqNe"]] ; Discover Weekly playlist
                  [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:1TPem2VEEzClhspiIXnx6x"]] ; Brown noise
-                 [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:7LbA9VWwvTHV9kjucCZkHZ"]] ; Focus song
+                 [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:0g14q3zrGDf8GiVH8WnDl8"]] ; Focus song
                  [:spacebar :!CSOv]]} ; Selection -> Google Images
         {:des "bkey (break)"
          :rules [:b-mode
