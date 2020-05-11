@@ -184,23 +184,23 @@
         {:des "wkey (apps)"
          :rules [:w-mode
                  [:e [:km "open: Fantastical"]]
+                 [:r [:km "open: Notion"]]
                  [:t [:km "open: Activity Monitor"]]
                  [:u [:km "open: Instruments"]]
-                 [:i [:km "open: Proxyman"]]
                  [:o [:km "open: Keyboard Maestro"]]
                  ;[:p [:km "open: Postgres"]]
                  [:caps_lock [:km "open: Finder"]]
-                 [:a [:km "open: Notion"]]
+                 [:a :!OSC1] ; Open Dash
                  [:d [:km "open: Paw"]]
                  [:f [:km "open: 2Do"]]
-                 [:g [:km "open: Postico"]]
+                 [:g [:km "open: Proxyman"]]
                  [:h [:km "open: Safari Technology Preview"]]
                  [:j [:km "open: iTerm"]]
                  [:k [:km "open: Safari"]]
                  [:l [:km "open: VS Code"]]
                  [:semicolon [:km "open: Xcode"]]
                  [:c [:km "open: Spotify"]]
-                 [:v :!OSC1] ; Open Dash
+                 [:v [:km "open: Postico"]]
                  [:b [:km "open: BetterTouchTool"]]
                  [:n [:km "open: Sublime Text"]]
                  [:m [:km "open: Tower"]]
