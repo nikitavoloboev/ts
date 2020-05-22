@@ -256,6 +256,7 @@
                  [:tab [:km "open: Transmission"]]
                  [:q [:km "open: IINA"]]
                  [:w [:km "open: 1Password"]]
+                 ;[:w [:km "open: Keynote"]]
                  ;[:e [:km "open: Feedback Assistant"]]
                  ;[:u [:km "open: Flume"]]
                  [:o :!CO7] ; Open Typinator
@@ -349,6 +350,7 @@
                  [:v [:alfred "search clones" "com.vitorgalvao.alfred.directories"]]
                  [:b [:km "Add 2Do with current url as note (github)"]]
                  [:n [:alfred "search lists" "nikivi.learn.anything"]]
+                 [:m [:alfred "search lists" "nikivi.awesome.lists"]]
                  [:spacebar [:alfred "search PDFs" "nikivi.search.files"]]]}
         {:des "capskey (todo + trello)"
          :rules [:caps-mode
@@ -600,7 +602,7 @@
                  [:m :volume_increment]
                  [:comma [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:37i9dQZEVXcMHpP6EcIqNe"]] ; Discover Weekly playlist
                  [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:1TPem2VEEzClhspiIXnx6x"]] ; Brown noise
-                 [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:39tUHDzQ5nlGPtYaA71Y9v"]] ; Focus song
+                 [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:5C3OYgQKCQa2Cz1qINX018"]] ; Focus song
                  [:spacebar :!CSOv]]} ; Selection -> Google Images
         {:des "bkey (break)"
          :rules [:b-mode
@@ -638,7 +640,6 @@
                  [:4 :!O4]
                  [:5 :!O5]
                  [:6 :!O6]
-                 [:tab [:alfred "search lists" "nikivi.awesome.lists"]]
                  [:q [:alfred "search github" "nikivi.search.the.web"]]
                  [:w [:alfred "search twitter" "nikivi.search.the.web"]]
                  [:e [:alfred "search subs" "net.deanishe.alfred-reddit"]]

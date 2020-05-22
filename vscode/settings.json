@@ -77,9 +77,7 @@
   "explorer.confirmDragAndDrop": false,
   "explorer.decorations.badges": false,
   // Python
-  "python.linting.pylintArgs": [
-    "--errors-only"
-  ],
+  "python.linting.pylintArgs": ["--errors-only"],
   // Code runner
   // "code-runner.clearPreviousOutput": true,
   // "code-runner.executorMap": {
@@ -96,10 +94,7 @@
   // Space map
   "vim.normalModeKeyBindings": [
     {
-      "before": [
-        "<leader>",
-        "w"
-      ],
+      "before": ["<leader>", "w"],
       "after": [],
       "commands": [
         {
@@ -109,10 +104,7 @@
       ]
     },
     {
-      "before": [
-        "<leader>",
-        "q"
-      ],
+      "before": ["<leader>", "q"],
       "after": [],
       "commands": [
         {
@@ -122,10 +114,7 @@
       ]
     },
     {
-      "before": [
-        "<leader>",
-        "a"
-      ],
+      "before": ["<leader>", "a"],
       "after": [],
       "commands": [
         {
@@ -139,66 +128,30 @@
       ]
     },
     {
-      "before": [
-        "K"
-      ],
-      "after": [
-        "leader",
-        "leader",
-        "k"
-      ]
+      "before": ["K"],
+      "after": ["leader", "leader", "k"]
     },
     {
-      "before": [
-        "J"
-      ],
-      "after": [
-        "leader",
-        "leader",
-        "j"
-      ]
+      "before": ["J"],
+      "after": ["leader", "leader", "j"]
     },
     {
-      "before": [
-        "<leader>",
-        "i"
-      ],
-      "after": [
-        "y",
-        "i",
-        "\""
-      ]
+      "before": ["<leader>", "i"],
+      "after": ["y", "i", "\""]
     },
     {
-      "before": [
-        "Y"
-      ],
-      "after": [
-        "y",
-        "$"
-      ]
+      "before": ["Y"],
+      "after": ["y", "$"]
     }
   ],
   "vim.visualModeKeyBindings": [
     {
-      "before": [
-        "K"
-      ],
-      "after": [
-        "leader",
-        "leader",
-        "k"
-      ]
+      "before": ["K"],
+      "after": ["leader", "leader", "k"]
     },
     {
-      "before": [
-        "J"
-      ],
-      "after": [
-        "leader",
-        "leader",
-        "j"
-      ]
+      "before": ["J"],
+      "after": ["leader", "leader", "j"]
     }
   ],
   // Easymotion
@@ -226,10 +179,7 @@
   "gopls": {
     "usePlaceholders": true,
     "completeUnimported": true,
-    "buildFlags": [
-      "-tags",
-      "mage"
-    ]
+    "buildFlags": ["-tags", "mage"]
   },
   "go.liveErrors": {
     "enabled": true,
@@ -264,10 +214,7 @@
   // GitLens
   "gitlens.codeLens.enabled": false,
   "gitlens.keymap": "chorded",
-  "gitlens.codeLens.scopes": [
-    "containers",
-    "document"
-  ],
+  "gitlens.codeLens.scopes": ["containers", "document"],
   "gitlens.views.fileHistory.enabled": true,
   "gitlens.views.lineHistory.enabled": true,
   "gitlens.currentLine.format": "${message}",
@@ -280,7 +227,7 @@
   // Extensions
   "extensions.ignoreRecommendations": true,
   "extensions.showRecommendationsOnlyOnDemand": true,
-  "workbench.colorTheme": "Dracula Pro",
+  "workbench.colorTheme": "Monochrome Dark",
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   }
