@@ -426,6 +426,7 @@
                  [:w [:!Oleft_arrow :!OSright_arrow]] ; Highlight word
                  [:e :tab]
                  [:r :!Stab]
+                 [:t :!Sreturn_or_enter]
                  [:u :!COp] ; Selection -> HasteBin link
                  [:i :!CTperiod] ; Contexts search active windows
                  [:o :!Cx] ; Cut
@@ -602,7 +603,7 @@
                  [:m :volume_increment]
                  [:comma [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:37i9dQZEVXcMHpP6EcIqNe"]] ; Discover Weekly playlist
                  [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:1TPem2VEEzClhspiIXnx6x"]] ; Brown noise
-                 [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:5C3OYgQKCQa2Cz1qINX018"]] ; Focus song
+                 [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:0L9ASDcpRIMqIjo5HIa7Bs"]] ; Focus song
                  [:spacebar :!CSOv]]} ; Selection -> Google Images
         {:des "bkey (break)"
          :rules [:b-mode
