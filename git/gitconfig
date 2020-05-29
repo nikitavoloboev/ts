@@ -59,7 +59,7 @@
 [core]
 	editor = nvim
 	excludesfile = ~/.gitignore_global
-	pager = diff-so-fancy | less --tabs=4 -RFX
+    pager = delta --theme='Monokai Extended Light'
 [github]
     user = nikitavoloboev
 [gpg]
