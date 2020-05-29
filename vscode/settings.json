@@ -48,7 +48,7 @@
   "workbench.settings.enableNaturalLanguageSearch": false,
   "workbench.statusBar.visible": false, // formatting only supports LF line endings
   // Window
-  "window.zoomLevel": 1,
+  "window.zoomLevel": 0,
   "window.restoreWindows": "all",
   "window.newWindowDimensions": "maximized",
   // Breadcrumbs
@@ -69,7 +69,7 @@
   },
   // Terminal
   "terminal.integrated.copyOnSelection": true,
-  "terminal.integrated.fontSize": 15,
+  "terminal.integrated.fontSize": 13,
   "terminal.integrated.inheritEnv": false,
   // Explorer
   "explorer.openEditors.visible": 0,
@@ -227,7 +227,7 @@
   // Extensions
   "extensions.ignoreRecommendations": true,
   "extensions.showRecommendationsOnlyOnDemand": true,
-  "workbench.colorTheme": "Monochrome Dark",
+  "workbench.colorTheme": "Github",
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   }

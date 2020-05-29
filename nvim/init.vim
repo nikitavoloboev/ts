@@ -33,7 +33,7 @@ Plug 'mhinz/vim-signify' " Show a diff using Vim its sign column.
 Plug 'LnL7/vim-nix', { 'for': 'nix' } " Vim configuration files for Nix.
 
 " Looks
-Plug 'nikitavoloboev/vim-monokai-night' " Theme
+Plug 'cormacrelf/vim-colors-github' " Theme
 
 call plug#end()
 
@@ -124,7 +124,7 @@ set grepformat^=%f:%l:%c:%m
 set viewoptions=cursor,slash,unix
 
 " Theme
-colorscheme monokai-night
+colorscheme github
 
 " Bufferline
 let g:bufferline_echo = 0

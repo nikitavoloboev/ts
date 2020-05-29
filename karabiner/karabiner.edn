@@ -474,6 +474,7 @@
                  ;[:w [:km "open: Simulator / Xcode"]]
                  [:w [:km "open: Chrome Canary  / VS Code"]]
                  [:e :!CO8] ; Alfred clipboard history search
+                 [:r [:km "Centre mouse to active app"]]
                  [:i :!Treturn_or_enter]
                  [:o :!Oreturn_or_enter]
                  [:p :!CTOc] ; Sleep
@@ -481,7 +482,6 @@
                  [:caps_lock :!CTOu] ; Sip color picker
                  [:a [:km "open: Figma"]]
                  [:s [:km "edit: 2nd iTerm tab"]]
-                 [:d [:km "Centre mouse to active app"]]
                  [:h [:km "Make markdown link from selection {link}"]]
                  [:j [:km "edit: 1st iTerm tab"]]
                  [:k :return_or_enter]
@@ -603,7 +603,7 @@
                  [:m :volume_increment]
                  [:comma [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:37i9dQZEVXcMHpP6EcIqNe"]] ; Discover Weekly playlist
                  [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:1TPem2VEEzClhspiIXnx6x"]] ; Brown noise
-                 [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:0L9ASDcpRIMqIjo5HIa7Bs"]] ; Focus song
+                 [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:3OzyIES7BXi0LsN0VoNMPt"]] ; Focus song
                  [:spacebar :!CSOv]]} ; Selection -> Google Images
         {:des "bkey (break)"
          :rules [:b-mode
