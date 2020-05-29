@@ -5,7 +5,8 @@
 # export SUDO_EDITOR='nvim'
 
 # PATH
-# export PATH=$PATH:~/.dotfiles/bin # Scripts & utilities
+export PATH=$PATH:~/.dotfiles/bin # Scripts & utilities
+export PATH=$PATH:~/.dotfiles/bin/private # Private scripts & utilities
 export PATH=$PATH:~/.cargo/bin # Rust
 export GOPATH="$(go env GOPATH)" # Go
 export PATH="$PATH:$GOPATH/bin" # Go
