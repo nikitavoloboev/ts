@@ -10,19 +10,6 @@ These are the various configuration files I use on macOS. I wrote about how you 
 
 You can also see my top used applications, Safari extensions and Alfred workflows I use [here](https://github.com/nikitavoloboev/my-mac-os) alongside descriptions with how I use the tools.
 
-##### Contents
-
-- [Clean install](#clean-install)
-  - [Setup & sync dotfiles](#setup--sync-dotfiles)
-- [Neovim](#neovim)
-- [VS Code](#vs-code)
-- [Sublime Text](#sublime-text)
-- [Zsh](#zsh)
-  - [Aliases and functions](#aliases-and-functions)
-- [FZF](#fzf)
-- [Interesting dotfiles](#interesting-dotfiles)
-- [Contributing](#contributing)
-
 ## Clean install
 
 1. Boot latest macOS version. Make sure username is the name you want the home folder to be (by default its first name & last name).
