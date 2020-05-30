@@ -2,7 +2,7 @@
 
 > Zsh, Karabiner, VS Code, Sublime, Neovim, Nix
 
-![](https://i.imgur.com/7M8bmTs.jpg)
+![](https://i.imgur.com/7xJ8EuJ.jpg)
 
 > Using [screenfetch](https://github.com/KittyKatt/screenFetch). I don't split my editors like that, usually use each window in full screen, often with iPad as Sidecar for web/app dev.
 
