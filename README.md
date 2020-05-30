@@ -20,7 +20,7 @@ You can also see my top used applications, Safari extensions and Alfred workflow
 
 The setup & apps/tools I use is heavily tailored to my own workflow so it is best you take ideas from it rather than copy entire config.
 
-### Setup & sync dotfiles
+## Setup & sync dotfiles
 
 Take a look at [install](install) shell script. It will install [brew](https://brew.sh), [go](https://go.dev) & [mage](https://github.com/magefile/mage).
 
