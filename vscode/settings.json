@@ -48,7 +48,7 @@
   "workbench.settings.enableNaturalLanguageSearch": false,
   "workbench.statusBar.visible": false, // formatting only supports LF line endings
   // Window
-  "window.zoomLevel": 0,
+  "window.zoomLevel": -1,
   "window.restoreWindows": "all",
   "window.newWindowDimensions": "maximized",
   // Breadcrumbs
@@ -227,7 +227,7 @@
   // Extensions
   "extensions.ignoreRecommendations": true,
   "extensions.showRecommendationsOnlyOnDemand": true,
-  "workbench.colorTheme": "Github",
+  "workbench.colorTheme": "GitHub Dark",
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   }

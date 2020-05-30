@@ -1,5 +1,5 @@
 # mage commands to run
-f() {
+ff() {
   if [ $# -eq 0 ]; then
     mage | tail -n +2 | fzf | while read -r cmd _; do if [ "$cmd" ]; then mage "$cmd"; fi; done
   else

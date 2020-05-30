@@ -59,7 +59,7 @@
 [core]
 	editor = nvim
 	excludesfile = ~/.gitignore_global
-    pager = delta --theme='Monokai Extended Light'
+    pager = delta --theme='ansi-dark'
 [github]
     user = nikitavoloboev
 [gpg]

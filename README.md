@@ -2,6 +2,10 @@
 
 > Zsh, Karabiner, VS Code, Sublime, Neovim, Nix
 
+![](https://i.imgur.com/7M8bmTs.jpg)
+
+> Using [screenfetch](https://github.com/KittyKatt/screenFetch). I don't split my editors like that, usually use each window in full screen, often with iPad as Sidecar for web/app dev.
+
 These are the various configuration files I use on macOS. I wrote about how you can customize your shell experience in an article [here](https://medium.com/@nikitavoloboev/pretty-and-fast-shell-97ea870f2805).
 
 You can also see my top used applications, Safari extensions and Alfred workflows I use [here](https://github.com/nikitavoloboev/my-mac-os).

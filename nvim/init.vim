@@ -33,7 +33,7 @@ Plug 'mhinz/vim-signify' " Show a diff using Vim its sign column.
 Plug 'LnL7/vim-nix', { 'for': 'nix' } " Vim configuration files for Nix.
 
 " Looks
-Plug 'cormacrelf/vim-colors-github' " Theme
+Plug 'ayu-theme/ayu-vim' " Theme
 
 call plug#end()
 
@@ -124,7 +124,8 @@ set grepformat^=%f:%l:%c:%m
 set viewoptions=cursor,slash,unix
 
 " Theme
-colorscheme github
+let ayucolor="mirage"
+colorscheme ayu
 
 " Bufferline
 let g:bufferline_echo = 0
