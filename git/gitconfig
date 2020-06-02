@@ -2,7 +2,7 @@
 	name = Nikita Voloboev
 	email = nikita.voloboev@gmail.com
 [alias]
-    update = add -u .
+    addu = add -u .
 	unstage = reset HEAD
 	untracked = status -u .
 	untracked-at = status -u
@@ -24,7 +24,7 @@
 	rr = reset
   	fm = fetch-merge # fetch and merge
     tree = log --graph --pretty=format:'%C(auto)%h - %s [%an] (%C(blue)%ar)%C(auto)%d'
- bigtree = log --graph --decorate --pretty=format:'%C(auto)%d%n%h %s%+b%n(%G?) %an <%ae> (%C(blue)%ad%C(auto))%n'
+    bigtree = log --graph --decorate --pretty=format:'%C(auto)%d%n%h %s%+b%n(%G?) %an <%ae> (%C(blue)%ad%C(auto))%n'
     hist = log --date=short --pretty=format:'%C(auto)%ad %h (%G?) %s [%an] %d'
     count = shortlog -sn  # give list of who commited to this repo
     open = !open `git config remote.origin.url` # open repo in browser

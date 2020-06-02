@@ -565,18 +565,18 @@
                  [:comma [:alfred "show_search_online" "com.vdesabou.spotify.mini.player"]] ; TODO: split up further into binds for direct searches of tracks/artists/all
                  [:period [:alfred "youtube_search_current_track" "com.vdesabou.spotify.mini.player"]]
                  [:slash [:alfred "reddit_search_current_track" "com.vdesabou.spotify.mini.player"]]]}
-        {:des "ckey (test + dots)"
+        {:des "ckey (run + dots)"
          :rules [:c-mode
                  [:a [:km "Clone repo to ~/src/clones and open with VS Code"]]
                  [:s [:km "Clone repo to ~/src/clones"]]
-                 [:j [:km "test: JS"]]
-                 [:k [:km "test: Go"]]
-                 [:l [:km "test: Python"]]
+                 [:j [:km "run: JS"]]
+                 [:k [:km "run: Go"]]
+                 [:l [:km "run: Python"]]
                  [:semicolon [:km "proj: Dotfiles"]]
                  [:quote [:km "edit: Dotfiles Magefile"]]
                  ;[:quote [:km "proj: LA"]]
-                 [:n [:km "test: TS"]]
-                 [:m [:km "test: Rust"]]
+                 [:n [:km "run: TS"]]
+                 [:m [:km "run: Rust"]]
                  [:period [:alfred "search build to learn" "nikivi.private.directories"]]
                  [:spacebar :!CSOy]]} ; Selection -> Stack Overflow
         {:des "vkey (media)"
@@ -604,7 +604,7 @@
                  [:m :volume_increment]
                  [:comma [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:37i9dQZEVXcMHpP6EcIqNe"]] ; Discover Weekly playlist
                  [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:1TPem2VEEzClhspiIXnx6x"]] ; Brown noise
-                 [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:3OzyIES7BXi0LsN0VoNMPt"]] ; Focus song
+                 [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:0c0LylmsBy925Y30IAl8RD"]] ; Focus song
                  [:spacebar :!CSOv]]} ; Selection -> Google Images
         {:des "bkey (break)"
          :rules [:b-mode
@@ -751,7 +751,8 @@
                  [:e :!TO2] ; Screenshot -> Clipboard
                  [:r :!TOCp] ; Screenshot -> Imgur
                  [:t :!CS4] ; Screenshot -> ~/Desktop
-                 [:u [:km "w: Beautiful.ai"]]
+                 ;[:u [:km "w: Beautiful.ai"]]
+                 [:u [:km "w: Leetcode"]]
                  [:i [:km "w: GitHub (notifications)"]] ; TODO: jump between GitHub (issues/prs)
                  [:o [:km "w: CodeSandbox"]]
                  [:a :!TO4] ; CleanShot recording
