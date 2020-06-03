@@ -604,7 +604,7 @@
                  [:m :volume_increment]
                  [:comma [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:37i9dQZEVXcMHpP6EcIqNe"]] ; Discover Weekly playlist
                  [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:1TPem2VEEzClhspiIXnx6x"]] ; Brown noise
-                 [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:0c0LylmsBy925Y30IAl8RD"]] ; Focus song
+                 [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:3wUYmc0vGveoD4ltYeOdZt"]] ; Focus song
                  [:spacebar :!CSOv]]} ; Selection -> Google Images
         {:des "bkey (break)"
          :rules [:b-mode
@@ -752,8 +752,8 @@
                  [:r :!TOCp] ; Screenshot -> Imgur
                  [:t :!CS4] ; Screenshot -> ~/Desktop
                  ;[:u [:km "w: Beautiful.ai"]]
-                 [:u [:km "w: Leetcode"]]
                  [:i [:km "w: GitHub (notifications)"]] ; TODO: jump between GitHub (issues/prs)
+                 [:u [:km "w: Digital Ocean"]]
                  [:o [:km "w: CodeSandbox"]]
                  [:a :!TO4] ; CleanShot recording
                  ;[:s :!CO5] ; TODO: Pause/unpause ScreenFlow recording
