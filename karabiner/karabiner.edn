@@ -187,13 +187,14 @@
                  [:r [:km "open: Notion"]]
                  [:t [:km "open: Activity Monitor"]]
                  [:u [:km "open: Instruments"]]
+                 [:i [:km "open: Proxyman"]]
                  [:o [:km "open: Keyboard Maestro"]]
                  ;[:p [:km "open: Postgres"]]
                  [:caps_lock [:km "open: Finder"]]
                  [:a :!OSC1] ; Open Dash
                  [:d [:km "open: Paw"]]
                  [:f [:km "open: 2Do"]]
-                 [:g [:km "open: Proxyman"]]
+                 [:g [:km "open: Linear"]]
                  [:h [:km "open: Safari Technology Preview"]]
                  [:j [:km "open: iTerm"]]
                  [:k [:km "open: Safari"]]
@@ -753,7 +754,8 @@
                  [:t :!CS4] ; Screenshot -> ~/Desktop
                  ;[:u [:km "w: Beautiful.ai"]]
                  [:i [:km "w: GitHub (notifications)"]] ; TODO: jump between GitHub (issues/prs)
-                 [:u [:km "w: Digital Ocean"]]
+                 ;[:u [:km "w: Digital Ocean"]]
+                 [:u [:km "w: Heroku"]]
                  [:o [:km "w: CodeSandbox"]]
                  [:a :!TO4] ; CleanShot recording
                  ;[:s :!CO5] ; TODO: Pause/unpause ScreenFlow recording
