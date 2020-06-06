@@ -277,6 +277,7 @@
         {:des "tkey (palettes + websites)"
          :rules [:t-mode
                  [:0 [:km "w: regex101"]]
+                 [:e [:km "w: Facebook"]]
                  [:r [:km "w: Repl"]]
                  [:u [:km "w: Medium"]]
                  [:i [:km "w: Arxiv"]]
@@ -604,8 +605,9 @@
                  [:n :volume_decrement]
                  [:m :volume_increment]
                  [:comma [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:37i9dQZEVXcMHpP6EcIqNe"]] ; Discover Weekly playlist
-                 [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:1TPem2VEEzClhspiIXnx6x"]] ; Brown noise
-                 [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:3wUYmc0vGveoD4ltYeOdZt"]] ; Focus song
+                 [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:7C7DqxIUI68ZXsyvaKPkbG"]] ; Rain
+                 ;[:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:1TPem2VEEzClhspiIXnx6x"]] ; Brown noise
+                 [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:3Lbh8U2HMWa1CD7GK5wEQf"]] ; Focus song
                  [:spacebar :!CSOv]]} ; Selection -> Google Images
         {:des "bkey (break)"
          :rules [:b-mode
