@@ -78,6 +78,7 @@ alias we='watchexec --restart --exts go "echo -- && go run ."'
 alias wt='watchexec --exts py "echo -- && python3"'
 alias wn='watchexec --exts js "echo -- && node"'
 alias wtex='watchexec --exts "echo -- && .tex"'
+alias wo='watchexec --exts go "echo -- && go install"'
 
 # Dev
 alias ll='ln -s'
@@ -130,13 +131,12 @@ alias jg='yarn global add'
 alias jd='yarn add --dev'
 
 # Go
-alias o='go'
+alias o='go install'
 alias oi='go mod init github.com/nikitavoloboev/' # TODO: grab current dir and use it as name
 alias org='richgo'
 alias og.='go get ./...' # go get all packages for current project
 alias ot='playgo'
 alias or='go run'
-alias oo='go install'
 alias ov='go vet'
 alias ogu='go get -u' # use the network to update the named packages and their dependencies
 alias ob='go build'
