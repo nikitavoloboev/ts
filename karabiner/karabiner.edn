@@ -473,11 +473,11 @@
         {:des "fkey (essential)"
          :rules [:f-mode
                  ;[:3 :!CTOp] ; TODO: View Sip
-                 [:q [:km "open: Photos"]]
+                 ;[:q [:km "open: Photos"]]
+                 [:q [:km "Centre mouse to active app"]]
                  ;[:w [:km "open: Simulator / Xcode"]]
                  [:w [:km "open: Chrome Canary  / VS Code"]]
                  [:e :!CO8] ; Alfred clipboard history search
-                 [:r [:km "Centre mouse to active app"]]
                  [:i :!Treturn_or_enter]
                  [:o :!Oreturn_or_enter]
                  [:p :!CTOc] ; Sleep
@@ -607,7 +607,7 @@
                  [:comma [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:37i9dQZEVXcMHpP6EcIqNe"]] ; Discover Weekly playlist
                  [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:7C7DqxIUI68ZXsyvaKPkbG"]] ; Rain
                  ;[:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:1TPem2VEEzClhspiIXnx6x"]] ; Brown noise
-                 [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:3Lbh8U2HMWa1CD7GK5wEQf"]] ; Focus song
+                 [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:6sGcQCbV9B9UO2nKTXdEd9"]] ; Focus song
                  [:spacebar :!CSOv]]} ; Selection -> Google Images
         {:des "bkey (break)"
          :rules [:b-mode
