@@ -122,13 +122,13 @@ alias no='node'
 
 # Yarn
 alias ja='yarn add'
+alias jad='yarn add --dev'
 alias jt='yarn test'
 alias jr='yarn run'
 alias je='yarn remove'
 alias js='yarn start'
-alias jv='yarn run dev'
+alias jd='yarn  dev'
 alias jg='yarn global add'
-alias jd='yarn add --dev'
 
 # Go
 alias o='go install'
