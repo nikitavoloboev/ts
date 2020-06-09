@@ -334,6 +334,7 @@
                  [:5 :!C5]
                  [:6 :!C6]
                  [:q [:alfred "search downloads" "recentdownloads.ddjfreedom"]]
+                 [:tab [:alfred "search tty sessions" "net.isometry.alfred.tty"]]
                  [:w :!CObackslash] ; 1Password search
                  [:e [:km "Make 2Do task"]]
                  [:r [:km "Make 2Do task with note as current URL"]]
