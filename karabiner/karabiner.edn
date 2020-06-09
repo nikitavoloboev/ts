@@ -334,7 +334,6 @@
                  [:5 :!C5]
                  [:6 :!C6]
                  [:q [:alfred "search downloads" "recentdownloads.ddjfreedom"]]
-                 [:tab [:alfred "search tty sessions" "net.isometry.alfred.tty"]]
                  [:w :!CObackslash] ; 1Password search
                  [:e [:km "Make 2Do task"]]
                  [:r [:km "Make 2Do task with note as current URL"]]
@@ -608,7 +607,7 @@
                  [:comma [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:37i9dQZEVXcMHpP6EcIqNe"]] ; Discover Weekly playlist
                  [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:7C7DqxIUI68ZXsyvaKPkbG"]] ; Rain
                  ;[:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:1TPem2VEEzClhspiIXnx6x"]] ; Brown noise
-                 [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:6sGcQCbV9B9UO2nKTXdEd9"]] ; Focus song
+                 [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:2dxwWMqbsclO36DZbbVVOr"]] ; Focus song
                  [:spacebar :!CSOv]]} ; Selection -> Google Images
         {:des "bkey (break)"
          :rules [:b-mode
