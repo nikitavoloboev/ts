@@ -186,22 +186,22 @@
                  [:e [:km "open: Fantastical"]]
                  [:r [:km "open: Notion"]]
                  [:t [:km "open: Activity Monitor"]]
-                 [:u [:km "open: Instruments"]]
-                 [:i [:km "open: Xcode"]]
+                 [:i [:km "open: Instruments"]]
                  [:o [:km "open: Keyboard Maestro"]]
                  [:p [:km "open: Postgres"]]
                  [:caps_lock [:km "open: Finder"]]
                  [:a :!OSC1] ; Open Dash
                  [:d [:km "open: Paw"]]
                  [:f [:km "open: 2Do"]]
-                 [:g [:km "open: Proxyman"]]
-                 [:h [:km "open: Safari Technology Preview"]]
+                 [:g [:km "open: Postico"]]
+                 [:h [:km "open: Proxyman"]]
+                 ;[:h [:km "open: Safari Technology Preview"]]
                  [:j [:km "open: iTerm"]]
                  [:k [:km "open: Safari"]]
                  [:l [:km "open: VS Code"]]
-                 [:semicolon [:km "open: Linear"]]
+                 [:semicolon [:km "open: Xcode"]]
                  [:c [:km "open: Spotify"]]
-                 [:v [:km "open: Postico"]]
+                 [:v [:km "open: Linear"]]
                  [:b [:km "open: BetterTouchTool"]]
                  [:n [:km "open: Sublime Text"]]
                  [:m [:km "open: Sublime Merge"]]
@@ -265,6 +265,7 @@
                  [:a [:km "open: Alfred Preferences"]]
                  [:j [:km "open: Dictionary"]]
                  [:k [:km "open: PDF Expert"]]
+                 ;[:k [:km "open: Developer"]]
                  [:l [:km "open: Reeder"]]
                  [:semicolon [:km "open: Books"]]
                  [:b [:km "Edit keyboard shortcuts"]]
@@ -606,7 +607,7 @@
                  [:comma [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:37i9dQZEVXcMHpP6EcIqNe"]] ; Discover Weekly playlist
                  [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:7C7DqxIUI68ZXsyvaKPkbG"]] ; Rain
                  ;[:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:1TPem2VEEzClhspiIXnx6x"]] ; Brown noise
-                 [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:7wO8OJnelesRerxgqfYc36"]] ; Focus song
+                 [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:7vbCfkJf89i4s745KbELgr"]] ; Focus song
                  ;[:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:1NhDv99nTtRm37rZpoH7Ix"]] ; TODO: set new Focus song (from currently playing)
                  [:spacebar :!CSOv]]} ; Selection -> Google Images
         {:des "bkey (break)"
@@ -755,15 +756,16 @@
                  [:r :!TOCp] ; Screenshot -> Imgur
                  [:t :!CS4] ; Screenshot -> ~/Desktop
                  ;[:u [:km "w: Beautiful.ai"]]
-                 [:i [:km "w: GitHub (notifications)"]] ; TODO: jump between GitHub (issues/prs)
                  ;[:u [:km "w: Digital Ocean"]]
                  [:u [:km "w: Heroku"]]
+                 [:i [:km "w: GitHub (notifications)"]] ; TODO: jump between GitHub (issues/prs)
                  [:o [:km "w: CodeSandbox"]]
                  [:a :!TO4] ; CleanShot recording
                  ;[:s :!CO5] ; TODO: Pause/unpause ScreenFlow recording
                  ;[:d :!CO5] ; TODO: Configure ScreenFlow recording
                  [:f :!CO5] ; Start/stop ScreenFlow recording
-                 [:h [:km "w: Google Sheets"]]
+                 ;[:h [:km "w: Google Sheets"]]
+                 [:h [:km "w: Learn Anything"]]
                  [:j [:km "w: YouTube"]]
                  [:k [:km "w: GitHub"]]
                  [:l [:km "w: Excalidraw"]]

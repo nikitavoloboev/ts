@@ -34,6 +34,10 @@
     "**/dist": true,
     "**/*.bs.js": true
   },
+  "files.associations": {
+    "*.toml": "toml",
+    "*.njk": "html"
+  },
   "files.trimTrailingWhitespace": true,
   "files.insertFinalNewline": true,
   "files.eol": "\n",
@@ -187,10 +191,6 @@
   },
   "go.lintTool": "golint",
   "go.lintOnSave": "package",
-  // Files
-  "files.associations": {
-    "*.toml": "toml"
-  },
   // Python
   // "python.pythonPath": "/Users/nikivi/anaconda3/bin/python3",
   // "python.formatting.provider": "black",
