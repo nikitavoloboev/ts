@@ -106,7 +106,7 @@
                  [:spacebar :!COSu]]} ; Selection -> HN
         {:des "3key (open files + projects)"
          :rules [:3-mode
-                 [:r [:km "Reflect"]]
+                 [:r [:km "Look back"]]
                  [:t [:km "edit: Projects"]]
                  [:u [:km "wiki: Used hotkeys"]]
                  [:i [:km "edit: Aliases"]]
@@ -607,7 +607,7 @@
                  [:comma [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:37i9dQZEVXcMHpP6EcIqNe"]] ; Discover Weekly playlist
                  [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:7C7DqxIUI68ZXsyvaKPkbG"]] ; Rain
                  ;[:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:1TPem2VEEzClhspiIXnx6x"]] ; Brown noise
-                 [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:7vbCfkJf89i4s745KbELgr"]] ; Focus song
+                 [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:0c98X4o6PRxbMjpsOg3tj1"]] ; Focus song
                  ;[:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:1NhDv99nTtRm37rZpoH7Ix"]] ; TODO: set new Focus song (from currently playing)
                  [:spacebar :!CSOv]]} ; Selection -> Google Images
         {:des "bkey (break)"
