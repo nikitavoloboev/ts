@@ -2,7 +2,7 @@
  {:goku {:default true
          :sim     50
          :delay   80
-         :alone   120
+         :alone   100
          :held    70}}
  :templates {:alfred "osascript -e 'tell application \"Alfred 4\" to run trigger \"%s\" in workflow \"%s\" with argument \"%s\"'"
              :km "osascript -e 'tell application \"Keyboard Maestro Engine\" to do script \"%s\"'"
@@ -260,12 +260,12 @@
                  ;[:w [:km "open: Keynote"]]
                  ;[:e [:km "open: Feedback Assistant"]]
                  ;[:u [:km "open: Flume"]]
+                 [:i [:km "open: Developer"]]
                  [:o :!CO7] ; Open Typinator
                  [:caps_lock [:km "open: Preview"]]
                  [:a [:km "open: Alfred Preferences"]]
                  [:j [:km "open: Dictionary"]]
                  [:k [:km "open: PDF Expert"]]
-                 ;[:k [:km "open: Developer"]]
                  [:l [:km "open: Reeder"]]
                  [:semicolon [:km "open: Books"]]
                  [:b [:km "Edit keyboard shortcuts"]]
