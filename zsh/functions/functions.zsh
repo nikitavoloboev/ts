@@ -1,5 +1,14 @@
 # Temp
-.() {
+,() {
+  git mv -f README.md readme
+  git mv -f LICENSE license
+}
+
+# Temp
+,,() {
+  git add .
+  git commit -m 'cleanup'
+  git push
 }
 
 w() {
