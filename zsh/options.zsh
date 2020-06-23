@@ -1,13 +1,8 @@
 # Completions
-# autoload -Uz compinit && compinit
+autoload -Uz compinit; $_
 
 # Matches are case insensitive
 zstyle ':completion:*' matcher-list 'm:{A-Za-z}={a-zA-Z}'
-# zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
-# zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
-# zstyle ':completion:*' matcher-list 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}'
-
-# IFS=$' \n\t'
 
 # History
 HISTSIZE=10000 # Lines of history to keep in memory for current session
@@ -24,4 +19,3 @@ setopt inc_append_history # Immediately append to the history file, not just whe
 setopt extended_glob # Use extended globbing syntax
 setopt auto_cd # Auto change to a dir without typing cd
 
-# if [ $commands[kubectl] ]; then source <(kubectl completion zsh); fi

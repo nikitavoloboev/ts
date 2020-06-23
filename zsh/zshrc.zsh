@@ -1,5 +1,3 @@
-# TODO: speed up source? any faster way?
-
 source ~/.zsh_plugins.sh # Load zsh plugins (using antibody)
 source ~/.dotfiles/zsh/env.zsh
 source ~/.dotfiles/zsh/options.zsh
