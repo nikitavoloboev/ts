@@ -13,7 +13,7 @@ You can see my top used apps, Safari extensions and Alfred workflows [here](http
 1. Boot latest macOS version. Remember that username is the name you want the home folder to be (by default its first name & last name).
 2. Go through [preferences](https://imgur.com/a/KoVAxFQ) & set everything up.
 3. Download & install [apps I use](https://github.com/nikitavoloboev/my-mac-os).
-4. Clone dotfiles & [set everything up](#setup--sync-dotfiles).
+4. Clone dotfiles & sync them.
 5. [Sync settings](https://github.com/zenangst/Syncalicious) for apps I use.
 
 ## Setup & sync dotfiles
