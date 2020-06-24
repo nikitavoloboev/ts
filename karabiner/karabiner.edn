@@ -121,7 +121,7 @@
                  [:quote [:km "proj: LA Docs"]]
                  [:n [:km "wiki: Notes"]]
                  [:m [:km "wiki: Summary"]]
-                 [:comma [:km "edit: Now"]]
+                 [:period [:km "edit: Now"]]
                  [:spacebar :!CSOp]]} ; Selection -> Reddit
         {:des "4key (open curated lists)"
          :rules [:4-mode
@@ -256,7 +256,7 @@
                  [:tab [:km "open: Transmission"]]
                  [:q [:km "open: IINA"]]
                  [:w [:km "open: 1Password"]]
-                 ;[:w [:km "open: Keynote"]]
+                 [:e [:km "open: Keynote"]]
                  ;[:e [:km "open: Feedback Assistant"]]
                  ;[:u [:km "open: Flume"]]
                  [:i [:km "open: Developer"]]
@@ -363,7 +363,6 @@
                  [:5 :!TO0] ; Picture of screen -> ~/Desktop
                  [:w [:open "notion://nikitavoloboev/Papers-Courses-8f00c7c500d5460490a5800c5d5db431"]]
                  [:e [:open "notion://nikitavoloboev/Learn-05c0eac7be904e0da89cd8a3bf7ab509"]]
-                 [:r [:km "Open 2Do LA"]]
                  [:u [:km "Open 2Do Buy"]]
                  [:i [:km "Open 2Do Fix"]]
                  [:o [:km "Open 2Do Tools"]]
@@ -371,6 +370,7 @@
                  [:s [:km "Open 2Do Wiki"]]
                  [:d [:open "notion://nikitavoloboev/Ideas-0b5a4e8a88f34fe29a1f33dad02e5332"]]
                  [:f [:km "wiki: Goals"]]
+                 [:g [:km "Open 2Do LA"]]
                  [:j [:km "Open 2Do Today"]]
                  [:k [:km "Open 2Do GitHub"]]
                  [:l [:km "Open 2Do Later"]]
