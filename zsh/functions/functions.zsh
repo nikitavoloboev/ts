@@ -1,15 +1,17 @@
 # Temp
 ,() {
-  git mv -f README.md readme
-  git mv -f LICENSE license
 }
 
-# Temp
-,,() {
+g,() {
   git add .
-  git commit -m 'cleanup'
+  git commit -m 'clean'
   git push
 }
+
+# search & replace
+# R() {
+#  rg $1 --files-with-matches | xargs sed -i '' 's/$2/bar/g'
+# }
 
 w() {
   if [ $# -eq 0 ]; then
