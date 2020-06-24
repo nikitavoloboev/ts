@@ -122,7 +122,6 @@
                  [:n [:km "wiki: Notes"]]
                  [:m [:km "wiki: Summary"]]
                  [:comma [:km "edit: Now"]]
-                 [:period [:km "wiki: Goals"]]
                  [:spacebar :!CSOp]]} ; Selection -> Reddit
         {:des "4key (open curated lists)"
          :rules [:4-mode
@@ -370,6 +369,7 @@
                  [:a [:km "Open 2Do Love"]]
                  [:s [:km "Open 2Do Wiki"]]
                  [:f [:open "notion://nikitavoloboev/Ideas-0b5a4e8a88f34fe29a1f33dad02e5332"]]
+                 [:g [:km "wiki: Goals"]]
                  [:j [:km "Open 2Do Today"]]
                  [:k [:km "Open 2Do GitHub"]]
                  [:l [:km "Open 2Do Later"]]
@@ -472,7 +472,7 @@
                  [:spacebar :!CT8]]} ; Selection -> Dictionary (wiki)
         {:des "fkey (essential)"
          :rules [:f-mode
-                 ;[:3 :!CTOp] ; TODO: View Sip
+                 [:tab [:km "View Sip"]]
                  ;[:q [:km "open: Photos"]]
                  [:q [:km "Centre mouse to active app"]]
                  ;[:w [:km "open: Simulator / Xcode"]]
