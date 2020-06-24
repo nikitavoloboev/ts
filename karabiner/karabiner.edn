@@ -363,6 +363,7 @@
                  [:5 :!TO0] ; Picture of screen -> ~/Desktop
                  [:w [:open "notion://nikitavoloboev/Papers-Courses-8f00c7c500d5460490a5800c5d5db431"]]
                  [:e [:open "notion://nikitavoloboev/Learn-05c0eac7be904e0da89cd8a3bf7ab509"]]
+                 [:r [:km "Open 2Do LA"]]
                  [:u [:km "Open 2Do Buy"]]
                  [:i [:km "Open 2Do Fix"]]
                  [:o [:km "Open 2Do Tools"]]
