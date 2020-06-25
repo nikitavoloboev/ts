@@ -106,7 +106,6 @@
                  [:spacebar :!COSu]]} ; Selection -> HN
         {:des "3key (open files + projects)"
          :rules [:3-mode
-                 [:r [:km "Look back"]]
                  [:t [:km "edit: Projects"]]
                  [:u [:km "wiki: Used hotkeys"]]
                  [:i [:km "edit: Aliases"]]
@@ -361,14 +360,15 @@
                  [:3 :!TO3] ; Screenshot -> Annotate
                  [:4 :!TO9] ; Picture of screen -> Clipboard
                  [:5 :!TO0] ; Picture of screen -> ~/Desktop
-                 [:w [:open "notion://nikitavoloboev/Papers-Courses-8f00c7c500d5460490a5800c5d5db431"]]
-                 [:e [:open "notion://nikitavoloboev/Learn-05c0eac7be904e0da89cd8a3bf7ab509"]]
+                 [:w [:open "notion://nikitavoloboev/Ideas-0b5a4e8a88f34fe29a1f33dad02e5332"]]
+                 [:e [:km "Look back"]]
+                 [:r [:open "notion://nikitavoloboev/Learn-05c0eac7be904e0da89cd8a3bf7ab509"]]
+                 [:t [:open "notion://nikitavoloboev/Papers-Courses-8f00c7c500d5460490a5800c5d5db431"]]
                  [:u [:km "Open 2Do Buy"]]
                  [:i [:km "Open 2Do Fix"]]
                  [:o [:km "Open 2Do Tools"]]
                  [:a [:km "Open 2Do Love"]]
                  [:s [:km "Open 2Do Wiki"]]
-                 [:d [:open "notion://nikitavoloboev/Ideas-0b5a4e8a88f34fe29a1f33dad02e5332"]]
                  [:f [:km "wiki: Goals"]]
                  [:g [:km "Open 2Do LA"]]
                  [:j [:km "Open 2Do Today"]]
@@ -608,7 +608,7 @@
                  [:comma [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:37i9dQZEVXcMHpP6EcIqNe"]] ; Discover Weekly playlist
                  [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:7C7DqxIUI68ZXsyvaKPkbG"]] ; Rain
                  ;[:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:1TPem2VEEzClhspiIXnx6x"]] ; Brown noise
-                 [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:0Ez0HcZneugrMqIYjlmBFR"]] ; Focus song
+                 [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:61tRxmym72kVDioHji8Red"]] ; Focus song
                  ;[:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:1NhDv99nTtRm37rZpoH7Ix"]] ; TODO: set new Focus song (from currently playing)
                  [:spacebar :!CSOv]]} ; Selection -> Google Images
         {:des "bkey (break)"
