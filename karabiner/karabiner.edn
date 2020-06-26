@@ -360,7 +360,7 @@
                  [:3 :!TO3] ; Screenshot -> Annotate
                  [:4 :!TO9] ; Picture of screen -> Clipboard
                  [:5 :!TO0] ; Picture of screen -> ~/Desktop
-                 [:w [:open "notion://nikitavoloboev/Ideas-0b5a4e8a88f34fe29a1f33dad02e5332"]]
+                 [:w [:km "wiki: Goals"]]
                  [:e [:km "Look back"]]
                  [:r [:open "notion://nikitavoloboev/Learn-05c0eac7be904e0da89cd8a3bf7ab509"]]
                  [:t [:open "notion://nikitavoloboev/Papers-Courses-8f00c7c500d5460490a5800c5d5db431"]]
@@ -369,7 +369,8 @@
                  [:o [:km "Open 2Do Tools"]]
                  [:a [:km "Open 2Do Love"]]
                  [:s [:km "Open 2Do Wiki"]]
-                 [:f [:km "wiki: Goals"]]
+                 [:d [:open "notion://nikitavoloboev/Ideas-0b5a4e8a88f34fe29a1f33dad02e5332"]]
+                 [:f [:km "Search 2Do"]]
                  [:g [:km "Open 2Do LA"]]
                  [:j [:km "Open 2Do Today"]]
                  [:k [:km "Open 2Do GitHub"]]
@@ -379,8 +380,7 @@
                  [:c [:km "w: Goodreads (currently reading)"]]
                  [:v [:km "w: Goodreads (next)"]]
                  [:n [:km "Open 2Do Clean"]]
-                 [:m [:km "Open 2Do Work"]]
-                 [:period [:km "Search 2Do"]]]}
+                 [:m [:km "Open 2Do Work"]]]}
         {:des "akey (ctrl)"
          :rules [:a-mode
                  [:2 :!T2]
