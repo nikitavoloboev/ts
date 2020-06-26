@@ -358,7 +358,6 @@
                  [:3 :!TO3] ; Screenshot -> Annotate
                  [:4 :!TO9] ; Picture of screen -> Clipboard
                  [:5 :!TO0] ; Picture of screen -> ~/Desktop
-                 [:q [:km "Open 2Do LA"]]
                  [:w [:km "wiki: Goals"]]
                  [:e [:km "Look back"]]
                  [:r [:km "wiki: My workflow"]]
@@ -380,7 +379,8 @@
                  [:c [:km "w: Goodreads (currently reading)"]]
                  [:v [:km "w: Goodreads (next)"]]
                  [:n [:km "Open 2Do Clean"]]
-                 [:m [:km "Open 2Do Work"]]]}
+                 [:m [:km "Open 2Do Work"]]
+                 [:period [:km "Open 2Do LA"]]]}
         {:des "akey (ctrl)"
          :rules [:a-mode
                  [:2 :!T2]
