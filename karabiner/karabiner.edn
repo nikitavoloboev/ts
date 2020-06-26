@@ -110,8 +110,6 @@
                  [:u [:km "wiki: Used hotkeys"]]
                  [:i [:km "edit: Aliases"]]
                  [:o [:km "edit: Zsh functions"]]
-                 ;[:i [:km "wiki: Processes"]]
-                 ;[:o [:km "wiki: My workflow"]]
                  [:g [:km "edit: Git config"]]
                  [:j [:km "wiki: Rules"]]
                  [:k [:km "edit: Private notes"]]
@@ -360,10 +358,11 @@
                  [:3 :!TO3] ; Screenshot -> Annotate
                  [:4 :!TO9] ; Picture of screen -> Clipboard
                  [:5 :!TO0] ; Picture of screen -> ~/Desktop
+                 [:q [:km "Open 2Do LA"]]
                  [:w [:km "wiki: Goals"]]
                  [:e [:km "Look back"]]
-                 [:r [:open "notion://nikitavoloboev/Learn-05c0eac7be904e0da89cd8a3bf7ab509"]]
-                 [:t [:open "notion://nikitavoloboev/Papers-Courses-8f00c7c500d5460490a5800c5d5db431"]]
+                 [:r [:km "wiki: My workflow"]]
+                 [:t [:km "wiki: Processes"]]
                  [:u [:km "Open 2Do Buy"]]
                  [:i [:km "Open 2Do Fix"]]
                  [:o [:km "Open 2Do Tools"]]
@@ -371,7 +370,8 @@
                  [:s [:km "Open 2Do Wiki"]]
                  [:d [:open "notion://nikitavoloboev/Ideas-0b5a4e8a88f34fe29a1f33dad02e5332"]]
                  [:f [:km "Search 2Do"]]
-                 [:g [:km "Open 2Do LA"]]
+                 [:g [:open "notion://nikitavoloboev/Learn-05c0eac7be904e0da89cd8a3bf7ab509"]]
+                 [:h [:open "notion://nikitavoloboev/Papers-Courses-8f00c7c500d5460490a5800c5d5db431"]]
                  [:j [:km "Open 2Do Today"]]
                  [:k [:km "Open 2Do GitHub"]]
                  [:l [:km "Open 2Do Later"]]
