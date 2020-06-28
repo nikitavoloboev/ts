@@ -106,9 +106,10 @@
                  [:spacebar :!COSu]]} ; Selection -> HN
         {:des "3key (open files + projects)"
          :rules [:3-mode
-                 [:i [:km "edit: Projects"]]
-                 [:o [:km "wiki: Used hotkeys"]]
-                 [:g [:km "edit: Git config"]]
+                 [:t [:km "edit: Git config"]]
+                 [:i [:km "edit: Likes"]]
+                 [:o [:km "edit: Projects"]]
+                 [:h [:km "wiki: Used hotkeys"]]
                  [:j [:km "edit: Aliases"]]
                  [:k [:km "edit: Zsh functions"]]
                  [:l [:km "Search current safari url in wiki"]]
