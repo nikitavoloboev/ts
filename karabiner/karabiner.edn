@@ -362,6 +362,7 @@
                  [:u [:km "Open 2Do Buy"]]
                  [:i [:km "Open 2Do Fix"]]
                  [:o [:km "Open 2Do Tools"]]
+                 [:p [:km "Open 2Do Repeat"]]
                  [:open_bracket [:km "w: Goodreads (currently reading)"]]
                  [:close_bracket [:km "w: Goodreads (next)"]]
                  [:a [:km "Open 2Do Love"]]
@@ -378,8 +379,8 @@
                  [:c [:km "Look back"]]
                  [:v [:km "edit: Private notes"]]
                  [:n [:km "Open 2Do Clean"]]
-                 [:m [:km "Open 2Do Work"]]
-                 [:period [:km "Open 2Do LA"]]]}
+                 [:m [:km "Open 2Do LA"]]
+                 [:period [:km "Open 2Do Work"]]]}
         {:des "akey (ctrl)"
          :rules [:a-mode
                  [:2 :!T2]
