@@ -106,16 +106,13 @@
                  [:spacebar :!COSu]]} ; Selection -> HN
         {:des "3key (open files + projects)"
          :rules [:3-mode
-                 [:t [:km "edit: Projects"]]
-                 [:u [:km "wiki: Used hotkeys"]]
-                 [:i [:km "edit: Aliases"]]
-                 [:o [:km "edit: Zsh functions"]]
+                 [:i [:km "edit: Projects"]]
+                 [:o [:km "wiki: Used hotkeys"]]
                  [:g [:km "edit: Git config"]]
-                 [:j [:km "wiki: Rules"]]
-                 [:k [:km "wiki: My workflow"]]
-                 [:l [:km "wiki: Processes"]]
+                 [:j [:km "edit: Aliases"]]
+                 [:k [:km "edit: Zsh functions"]]
+                 [:l [:km "Search current safari url in wiki"]]
                  [:semicolon [:km "proj: Knowledge"]]
-                 [:quote [:km "Search current safari url in wiki"]]
                  [:n [:km "wiki: Notes"]]
                  [:m [:km "wiki: Summary"]]
                  [:period [:km "edit: Now"]]
@@ -359,11 +356,14 @@
                  [:4 :!TO9] ; Picture of screen -> Clipboard
                  [:5 :!TO0] ; Picture of screen -> ~/Desktop
                  [:w [:km "wiki: Goals"]]
-                 [:e [:km "Look back"]]
-                 [:r [:km "edit: Private notes"]]
+                 [:e [:km "wiki: Rules"]]
+                 [:r [:km "wiki: My workflow"]]
+                 [:t [:km "wiki: Processes"]]
                  [:u [:km "Open 2Do Buy"]]
                  [:i [:km "Open 2Do Fix"]]
                  [:o [:km "Open 2Do Tools"]]
+                 [:open_bracket [:km "w: Goodreads (currently reading)"]]
+                 [:close_bracket [:km "w: Goodreads (next)"]]
                  [:a [:km "Open 2Do Love"]]
                  [:s [:km "Open 2Do Wiki"]]
                  [:d [:open "notion://nikitavoloboev/Ideas-0b5a4e8a88f34fe29a1f33dad02e5332"]]
@@ -375,8 +375,8 @@
                  [:l [:km "Open 2Do Later"]]
                  [:semicolon [:km "Open 2Do Starred"]]
                  [:quote [:km "Open 2Do Other"]] ; TODO: remove once its empty
-                 [:c [:km "w: Goodreads (currently reading)"]]
-                 [:v [:km "w: Goodreads (next)"]]
+                 [:c [:km "Look back"]]
+                 [:v [:km "edit: Private notes"]]
                  [:n [:km "Open 2Do Clean"]]
                  [:m [:km "Open 2Do Work"]]
                  [:period [:km "Open 2Do LA"]]]}
