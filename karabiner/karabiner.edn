@@ -112,10 +112,10 @@
                  [:o [:km "edit: Zsh functions"]]
                  [:g [:km "edit: Git config"]]
                  [:j [:km "wiki: Rules"]]
-                 [:k [:km "edit: Private notes"]]
-                 [:l [:km "Search current safari url in wiki"]]
+                 [:k [:km "wiki: My workflow"]]
+                 [:l [:km "wiki: Processes"]]
                  [:semicolon [:km "proj: Knowledge"]]
-                 [:quote [:km "proj: LA Docs"]]
+                 [:quote [:km "Search current safari url in wiki"]]
                  [:n [:km "wiki: Notes"]]
                  [:m [:km "wiki: Summary"]]
                  [:period [:km "edit: Now"]]
@@ -360,8 +360,7 @@
                  [:5 :!TO0] ; Picture of screen -> ~/Desktop
                  [:w [:km "wiki: Goals"]]
                  [:e [:km "Look back"]]
-                 [:r [:km "wiki: My workflow"]]
-                 [:t [:km "wiki: Processes"]]
+                 [:r [:km "edit: Private notes"]]
                  [:u [:km "Open 2Do Buy"]]
                  [:i [:km "Open 2Do Fix"]]
                  [:o [:km "Open 2Do Tools"]]
@@ -608,7 +607,7 @@
                  [:comma [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:37i9dQZEVXcMHpP6EcIqNe"]] ; Discover Weekly playlist
                  [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:7C7DqxIUI68ZXsyvaKPkbG"]] ; Rain
                  ;[:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:1TPem2VEEzClhspiIXnx6x"]] ; Brown noise
-                 [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:61tRxmym72kVDioHji8Red"]] ; Focus song
+                 [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:2j8um96EhKDY6UzKROULyu"]] ; Focus song
                  ;[:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:1NhDv99nTtRm37rZpoH7Ix"]] ; TODO: set new Focus song (from currently playing)
                  [:spacebar :!CSOv]]} ; Selection -> Google Images
         {:des "bkey (break)"
