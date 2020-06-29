@@ -522,7 +522,7 @@
                  [:e :!CTk] ; Turn on/off BTT TouchBar
                  [:r [:alfred "restart wifi" "nikivi.wifi.tools"]]
                  [:d [:km "Commit dotfiles"]]
-                 [:f [:km "Commit build to learn"]]
+                 [:f [:km "Commit learning"]]
                  [:h [:km "Commit home"]]
                  [:j [[:open "dash://.jsts:"] ["in-python" 0] ["in-go" 0] ["in-js" 1] ["in-elixir" 0] ["in-rust" 0] ["in-swift" 0]]] ; JS
                  [:k [[:open "dash://.go:"] ["in-python" 0] ["in-go" 1] ["in-js" 0] ["in-elixir" 0] ["in-rust" 0] ["in-swift" 0]]] ; Go
