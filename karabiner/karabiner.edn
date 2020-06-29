@@ -571,7 +571,7 @@
                  [:slash [:alfred "reddit_search_current_track" "com.vdesabou.spotify.mini.player"]]]}
         {:des "ckey (run + dots)"
          :rules [:c-mode
-                 [:u [:km "proj: Build to learn"]]
+                 [:u [:km "proj: Learning"]]
                  [:i [:km "proj: LA"]]
                  [:o [:km "proj: Home"]]
                  [:a [:km "Clone repo to ~/src/clones and open with VS Code"]]
@@ -584,7 +584,7 @@
                  [:quote [:km "edit: Dotfiles Magefile"]]
                  [:n [:km "run: TS"]]
                  [:m [:km "run: Rust"]]
-                 [:period [:alfred "search build to learn" "nikivi.private.directories"]]
+                 [:period [:alfred "search learning" "nikivi.private.directories"]]
                  [:spacebar :!CSOy]]} ; Selection -> Stack Overflow
         {:des "vkey (media)"
          :rules [:v-mode
