@@ -764,7 +764,7 @@
                  ;[:u [:km "w: Digital Ocean"]]
                  [:u [:km "w: Heroku"]]
                  [:i [:km "w: GitHub (notifications)"]] ; TODO: jump between GitHub (issues/prs)
-                 [:o [:km "w: CodeSandbox"]]
+                 [:o [:km "w: Google Docs"]]
                  [:a :!TO4] ; CleanShot recording
                  ;[:s :!CO5] ; TODO: Pause/unpause ScreenFlow recording
                  ;[:d :!CO5] ; TODO: Configure ScreenFlow recording
@@ -773,8 +773,8 @@
                  [:h [:km "w: Learn Anything"]]
                  [:j [:km "w: YouTube"]]
                  [:k [:km "w: GitHub"]]
-                 [:l [:km "w: Excalidraw"]]
-                 [:semicolon [:km "w: Google Docs"]]
+                 [:semicolon [:km "w: Excalidraw"]]
+                 [:l [:km "w: CodeSandbox"]]
                  [:n [:km "w: AWS"]]
                  [:m [:km "w: GCP"]]
                  [:period [:km "w: GitHub PR"]]]} ; TODO:
