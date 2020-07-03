@@ -2,13 +2,11 @@
 
 > Zsh, Karabiner, VS Code, Sublime, Neovim, Nix
 
-![](https://i.imgur.com/li5tXYp.jpg)
+![](https://i.imgur.com/e1Ei3b1.jpg)
 
 > Using [screenfetch](https://github.com/KittyKatt/screenFetch) to get OS details.
 
 I don't actually split editors like that. I code with each window maximized and often use iPad with Sidecar and chrome browser on the side (for web dev).
-
-I prefer to use light themes during the day as it's easier to focus on the text.
 
 You can see my top used apps, Safari extensions and Alfred workflows [here](https://github.com/nikitavoloboev/my-mac-os).
 
