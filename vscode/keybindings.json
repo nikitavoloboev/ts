@@ -1,4 +1,3 @@
-// Place your key bindings in this file to overwrite the defaults
 [
   {
     "key": "cmd+right",
@@ -16,10 +15,6 @@
     "when": "editorFocus && !inDebugRepl && vim.mode == 'Normal Mode'"
   },
   {
-    "key": "alt+cmd+o",
-    "command": "code-runner.run"
-  },
-  {
     "key": "cmd+;",
     "command": "editor.action.commentLine",
     "when": "editorTextFocus && !editorReadonly"
@@ -33,7 +28,7 @@
     "command": "workbench.action.quickOpen"
   },
   {
-    "key": "ctrl+t",
+    "key": "ctrl+r",
     "command": "workbench.view.explorer"
   },
   {
@@ -42,7 +37,7 @@
     "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
   },
   {
-    "key": "ctrl+;",
+    "key": "ctrl+l",
     "command": "editor.action.showHover",
     "when": "editorTextFocus"
   },
@@ -148,10 +143,6 @@
     "command": "-workbench.action.focusThirdEditorGroup"
   },
   {
-    "key": "ctrl+alt+n",
-    "command": "-code-runner.run"
-  },
-  {
     "key": "cmd+i",
     "command": "-expandLineSelection",
     "when": "editorTextFocus"
@@ -176,10 +167,6 @@
   {
     "key": "ctrl+e",
     "command": "workbench.action.navigateBack"
-  },
-  {
-    "key": "ctrl+-",
-    "command": "-workbench.action.navigateBack"
   },
   {
     "key": "ctrl+`",
@@ -215,12 +202,12 @@
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+d",
+    "key": "ctrl+;",
     "command": "workbench.action.terminal.focus",
     "when": "!terminalFocus"
   },
   {
-    "key": "ctrl+d",
+    "key": "ctrl+;",
     "command": "workbench.action.focusFirstEditorGroup",
     "when": "terminalFocus"
   },
@@ -265,13 +252,12 @@
     "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
   },
   {
-    "key": "ctrl+alt+j",
-    "command": "-code-runner.runByLanguage"
+    "key": "cmd+j",
+    "command": "workbench.action.showAllEditors"
   },
   {
     "key": "cmd+m",
-    "command": "markdown.showPreview",
-    "when": "editorLangId == 'markdown'"
+    "command": "workbench.action.quickOpenTerm"
   },
   {
     "key": "shift+cmd+v",
@@ -298,7 +284,7 @@
     "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+n",
+    "key": "ctrl+d",
     "command": "editor.action.rename"
   },
   {
@@ -375,10 +361,6 @@
     "command": "-workbench.action.navigateForward"
   },
   {
-    "key": "ctrl+h",
-    "command": "workbench.files.action.focusFilesExplorer"
-  },
-  {
     "key": "shift+cmd+n",
     "command": "-workbench.action.newWindow"
   },
@@ -392,16 +374,12 @@
     "command": "explorer.newFile"
   },
   {
-    "key": "shift+cmd+n",
-    "command": "fileutils.newFile"
-  },
-  {
     "key": "cmd+shift+t",
     "command": "gitlens.openCommitInRemote",
     "when": "editorFocus"
   },
   {
-    "key": "ctrl+r",
+    "key": "ctrl+t",
     "command": "workbench.action.toggleSidebarVisibility"
   },
   {
@@ -420,11 +398,29 @@
     "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+l",
-    "command": "workbench.action.showAllEditors"
+    "key": "cmd+.",
+    "command": "workbench.action.togglePanel"
   },
   {
-    "key": "cmd+j",
-    "command": "workbench.action.togglePanel"
+    "key": "ctrl+n",
+    "command": "editor.action.codeAction"
+  },
+  {
+    "key": "alt+cmd+c",
+    "command": "copyFilePath"
+  },
+  {
+    "key": "alt+cmd+c",
+    "command": "-copyFilePath",
+    "when": "!editorFocus"
+  },
+  {
+    "key": "shift+alt+cmd+c",
+    "command": "copyRelativeFilePath"
+  },
+  {
+    "key": "shift+alt+cmd+c",
+    "command": "-copyRelativeFilePath",
+    "when": "!editorFocus"
   }
 ]
