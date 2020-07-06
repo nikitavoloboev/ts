@@ -55,7 +55,7 @@
   "window.autoDetectColorScheme": true,
   "workbench.preferredLightColorTheme": "GitHub Light",
   "workbench.preferredDarkColorTheme": "GitHub Dark",
-  "window.zoomLevel": -1,
+  "window.zoomLevel": 0,
   "window.restoreWindows": "all",
   "window.newWindowDimensions": "maximized",
   // Breadcrumbs
@@ -233,7 +233,7 @@
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "workbench.colorTheme": "GitHub Light",
-  "python.insidersChannel": "weekly",
+  "workbench.colorTheme": "GitHub Dark",
+  "python.insidersChannel": "off",
   "python.languageServer": "Pylance"
 }
