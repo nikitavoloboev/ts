@@ -42,6 +42,7 @@
   "files.insertFinalNewline": true,
   "files.eol": "\n",
   // Workbench
+  "workbench.colorTheme": "GitHub Dark",
   "workbench.list.horizontalScrolling": true,
   "workbench.panel.defaultLocation": "right",
   "workbench.fontAliasing": "antialiased",
@@ -85,14 +86,8 @@
   "explorer.decorations.badges": false,
   // Python
   "python.linting.pylintArgs": ["--errors-only"],
-  // Code runner
-  // "code-runner.clearPreviousOutput": true,
-  // "code-runner.executorMap": {
-  //   "python": "python3",
-  //   "typescript": "ts-node --transpile-only"
-  // },
-  // Code runner
-  // "code-runner.runInTerminal": false,
+  "python.insidersChannel": "off",
+  "python.languageServer": "Pylance",
   // Vim
   "vim.leader": " ",
   "vim.debug.silent": true,
@@ -232,8 +227,5 @@
   "extensions.showRecommendationsOnlyOnDemand": true,
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "workbench.colorTheme": "GitHub Dark",
-  "python.insidersChannel": "off",
-  "python.languageServer": "Pylance"
+  }
 }
