@@ -590,7 +590,8 @@
          :rules [:v-mode
                  [:q :illumination_decrement]
                  [:w :illumination_increment]
-                 ;[:u :!COS6] ; Toggle Night Shift on/off.
+                 [:e [:km "Change macOS theme (dark/light)"]]
+                 [:r :!COS6] ; Toggle Night Shift on/off.
                  [:i :display_brightness_decrement]
                  [:o :display_brightness_increment]
                  [:open_bracket [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ERn0U4qZIKC8Dy7RrMMsn"]] ; Likes playlist

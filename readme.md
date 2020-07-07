@@ -4,15 +4,15 @@
 
 ![](https://i.imgur.com/e1Ei3b1.jpg)
 
-> Using [screenfetch](https://github.com/KittyKatt/screenFetch) to get OS details.
+> Dark appearance. Using [screenfetch](https://github.com/KittyKatt/screenFetch) to get OS details.
 
 ![](https://i.imgur.com/li5tXYp.jpg)
 
-> I prefer to use light themes during the day as it's easier to focus on the text. I have macOS switch between the themes between evening & day.
+> Light appearance. I prefer to use dark mode mainly and switch to light theme only when in sunny areas as it makes text more readable.
 
-I don't actually split editors like above. I code with each window maximized. Sometimes I use iPad with Sidecar and chrome browser on the side (for web dev) but mostly use one screen (MacBook).
+I don't actually split editors like above. I code with each window maximized. Sometimes I use iPad with Sidecar and chrome browser on the side (for web dev) but mostly use one 16" MacBook screen.
 
-You can see my top used apps, Safari extensions and Alfred workflows [here](https://github.com/nikitavoloboev/my-mac-os).
+You can see my top used apps, Safari extensions and Alfred workflows [here](https://github.com/nikitavoloboev/my-mac-os). I also explain how I use the apps in detail there.
 
 ## Clean install
 
