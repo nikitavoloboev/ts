@@ -590,7 +590,7 @@
          :rules [:v-mode
                  [:q :illumination_decrement]
                  [:w :illumination_increment]
-                 [:e [:km "Change macOS theme (dark/light)"]]
+                 [:e [:km "Change macOS appearance (dark/light)"]]
                  [:r :!COS6] ; Toggle Night Shift on/off.
                  [:i :display_brightness_decrement]
                  [:o :display_brightness_increment]

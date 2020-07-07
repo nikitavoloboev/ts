@@ -42,7 +42,7 @@
   "files.insertFinalNewline": true,
   "files.eol": "\n",
   // Workbench
-  "workbench.colorTheme": "GitHub Dark",
+  "workbench.colorTheme": "GitHub Light",
   "workbench.list.horizontalScrolling": true,
   "workbench.panel.defaultLocation": "right",
   "workbench.fontAliasing": "antialiased",
