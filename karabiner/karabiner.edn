@@ -611,9 +611,10 @@
                  [:n :volume_decrement]
                  [:m :volume_increment]
                  [:comma [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:37i9dQZEVXcMHpP6EcIqNe"]] ; Discover Weekly playlist
-                 [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:7C7DqxIUI68ZXsyvaKPkbG"]] ; Rain
+                 ;[:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:7C7DqxIUI68ZXsyvaKPkbG"]] ; Rain
                  ;[:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:1TPem2VEEzClhspiIXnx6x"]] ; Brown noise
-                 [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:69fhLMKQOlyzdJKUBmyaNl"]] ; Focus tune
+                 [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:69fhLMKQOlyzdJKUBmyaNl"]] ; Focus tune
+                 [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ESjwZeTcHOWzY3FYO5zs5"]] ; Focus playlist
                  ;[:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:0ysHz03JQlmBoBAwaUBsVX"]] ; Focus song
                  ;[:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:37i9dQZF1DX71VcjjnyaBQ"]] ; Jazz
                  ;[:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:1NhDv99nTtRm37rZpoH7Ix"]] ; TODO: set new Focus song (from currently playing)
