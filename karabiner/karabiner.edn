@@ -615,7 +615,7 @@
                  ;[:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:1TPem2VEEzClhspiIXnx6x"]] ; Brown noise
                  ;[:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:69fhLMKQOlyzdJKUBmyaNl"]] ; Focus tune
                  [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ESjwZeTcHOWzY3FYO5zs5"]] ; Focus playlist
-                 [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:2uEgyXzyJBr5Iuvqc83d4N"]] ; Focus song
+                 [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:5a3frR7WKCWyLROlGbDg46"]] ; Focus song
                  ;[:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:37i9dQZF1DX71VcjjnyaBQ"]] ; Jazz
                  ;[:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:1NhDv99nTtRm37rZpoH7Ix"]] ; TODO: set new Focus song (from currently playing)
                  [:spacebar :!CSOv]]} ; Selection -> Google Images
