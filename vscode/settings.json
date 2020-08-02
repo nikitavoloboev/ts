@@ -56,7 +56,7 @@
   "window.autoDetectColorScheme": true,
   "workbench.preferredLightColorTheme": "GitHub Light",
   "workbench.preferredDarkColorTheme": "GitHub Dark",
-  "window.zoomLevel": 0,
+  "window.zoomLevel": -1,
   "window.restoreWindows": "all",
   "window.newWindowDimensions": "maximized",
   // Breadcrumbs

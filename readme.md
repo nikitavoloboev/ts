@@ -1,14 +1,14 @@
 # My config files for macOS [![Thanks](http://bit.ly/saythankss)](https://github.com/users/nikitavoloboev/sponsorship)
 
+![](https://i.imgur.com/li5tXYp.jpg)
+
+> Light appearance. Prefer to use light themes as it makes text more readable during the day with natural light around.
+
 > Zsh, Karabiner, VS Code, Sublime, Neovim, Nix
 
 ![](https://i.imgur.com/e1Ei3b1.jpg)
 
 > Dark appearance. Using [screenfetch](https://github.com/KittyKatt/screenFetch) to get OS details.
-
-![](https://i.imgur.com/li5tXYp.jpg)
-
-> Light appearance. I prefer to use dark mode mainly and switch to light theme only when in sunny areas as it makes text more readable.
 
 I don't actually split editors like above. I code with each window maximized. Sometimes I use iPad with Sidecar and chrome browser on the side (for web dev) but mostly use one 16" MacBook screen.
 
