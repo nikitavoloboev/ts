@@ -1,10 +1,10 @@
 # My config files for macOS [![Thanks](http://bit.ly/saythankss)](https://github.com/users/nikitavoloboev/sponsorship)
 
+> Zsh, Karabiner, VS Code, Sublime, Neovim, Nix
+
 ![](https://i.imgur.com/li5tXYp.jpg)
 
 > Light appearance. Prefer to use light themes as it makes text more readable during the day with natural light around.
-
-> Zsh, Karabiner, VS Code, Sublime, Neovim, Nix
 
 ![](https://i.imgur.com/e1Ei3b1.jpg)
 
