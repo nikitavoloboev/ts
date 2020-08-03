@@ -42,7 +42,9 @@
   "files.insertFinalNewline": true,
   "files.eol": "\n",
   // Workbench
-  "workbench.colorTheme": "GitHub Dark",
+  "workbench.colorTheme": "GitHub Light",
+  "workbench.preferredLightColorTheme": "GitHub Light",
+  "workbench.preferredDarkColorTheme": "GitHub Dark",
   "workbench.list.horizontalScrolling": true,
   "workbench.panel.defaultLocation": "right",
   "workbench.fontAliasing": "antialiased",
@@ -54,9 +56,7 @@
   "workbench.statusBar.visible": false, // formatting only supports LF line endings
   // Window
   "window.autoDetectColorScheme": true,
-  "workbench.preferredLightColorTheme": "GitHub Light",
-  "workbench.preferredDarkColorTheme": "GitHub Dark",
-  "window.zoomLevel": -1,
+  "window.zoomLevel": 0,
   "window.restoreWindows": "all",
   "window.newWindowDimensions": "maximized",
   // Breadcrumbs
@@ -88,6 +88,11 @@
   "python.linting.pylintArgs": ["--errors-only"],
   "python.insidersChannel": "off",
   "python.languageServer": "Pylance",
+  // "python.pythonPath": "/Users/nikivi/anaconda3/bin/python3",
+  // "python.formatting.provider": "black",
+  // "python.linting.pylintEnabled": false,
+  // "python.linting.flake8Enabled": true,
+  // "python.linting.enabled": false,
   // Vim
   "vim.leader": " ",
   "vim.debug.silent": true,
@@ -162,9 +167,6 @@
   "vim.easymotionKeys": "hklyuiopnm,qwertzxcvbasdgjf:",
   "vim.easymotionMarkerForegroundColorOneChar": "black",
   "vim.easymotionMarkerForegroundColorTwoChar": "black",
-  "vim.easymotionMarkerFontSize": "17",
-  "vim.easymotionMarkerHeight": 22,
-  "vim.easymotionMarkerYOffset": 4,
   // Go
   "go.useLanguageServer": true,
   "go.useCodeSnippetsOnFunctionSuggest": false,
@@ -189,12 +191,6 @@
   },
   "go.lintTool": "golint",
   "go.lintOnSave": "package",
-  // Python
-  // "python.pythonPath": "/Users/nikivi/anaconda3/bin/python3",
-  // "python.formatting.provider": "black",
-  // "python.linting.pylintEnabled": false,
-  // "python.linting.flake8Enabled": true,
-  // "python.linting.enabled": false,
   // TypeScript
   "typescript.check.npmIsInstalled": false,
   "typescript.updateImportsOnFileMove.enabled": "never",

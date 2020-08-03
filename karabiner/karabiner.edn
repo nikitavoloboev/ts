@@ -457,11 +457,11 @@
          :rules [:d-mode
                  [:i :!Ckeypad_hyphen] ; Zoom out
                  [:o :!Ckeypad_plus] ; Zoom in
-                 [:p [:km "Google clipboard"]]
                  [:a [:!Cc :!Ctab]] ; Copy & activate previous app
                  [:j {:mkey {:vwheel 60}}] ; Scroll down
                  [:k {:mkey {:vwheel -60}}] ; Scroll up
-                 [:l [:km "Google selected word"]]
+                 [:l [:km "Google clipboard"]]
+                 ;[:l [:km "Google selected word"]]
                  [:semicolon [:km "Google Searchio selected word"]]
                  [:quote [:km "Select line and google"]]
                  [:z {:pkey :button2}] ; Right click
