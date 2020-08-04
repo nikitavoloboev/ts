@@ -196,3 +196,7 @@ autocmd VimLeave * set guicursor=a:ver25-blinkon25 " Make cursor block when leav
 " Testing
 set signcolumn=yes
 set foldcolumn=0 " Remove sidebar column
+
+" only show active line number
+hi LineNr ctermfg=16 guifg=bg
+

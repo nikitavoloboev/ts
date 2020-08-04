@@ -116,6 +116,7 @@
                  [:semicolon [:km "proj: Knowledge"]]
                  [:n [:km "wiki: Notes"]]
                  [:m [:km "wiki: Summary"]]
+                 ;[:m [:km "edit: GitHub Bio"]] ; TODO: 
                  [:period [:km "edit: Now"]]
                  [:spacebar :!CSOp]]} ; Selection -> Reddit
         {:des "4key (open curated lists)"
@@ -185,9 +186,9 @@
                  [:p [:km "open: Postgres"]]
                  [:caps_lock [:km "open: Finder"]]
                  [:a :!OSC1] ; Open Dash
-                 [:d [:km "open: Paw"]]
+                 [:d [:km "open: Postico"]]
                  [:f [:km "open: 2Do"]]
-                 [:g [:km "open: Postico"]]
+                 [:g [:km "open: Paw"]]
                  [:h [:km "open: Proxyman"]]
                  ;[:h [:km "open: Safari Technology Preview"]]
                  [:j [:km "open: iTerm"]]
@@ -615,7 +616,7 @@
                  ;[:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:1TPem2VEEzClhspiIXnx6x"]] ; Brown noise
                  ;[:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:69fhLMKQOlyzdJKUBmyaNl"]] ; Focus tune
                  [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ESjwZeTcHOWzY3FYO5zs5"]] ; Focus playlist
-                 [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:2KjPs5Tm2gammU8qCRcMLJ"]] ; Focus song
+                 [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:119UQiBAvOjHDpcVkrXpSy"]] ; Focus song
                  ;[:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:37i9dQZF1DX71VcjjnyaBQ"]] ; Jazz
                  ;[:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:1NhDv99nTtRm37rZpoH7Ix"]] ; TODO: set new Focus song (from currently playing)
                  [:spacebar :!CSOv]]} ; Selection -> Google Images
@@ -777,8 +778,9 @@
                  [:h [:km "w: Learn Anything"]]
                  [:j [:km "w: YouTube"]]
                  [:k [:km "w: GitHub"]]
+                 [:l [:km "w: Localhost"]]
+                 ;[:semicolon [:km "w: CodeSandbox"]]
                  [:semicolon [:km "w: Excalidraw"]]
-                 [:l [:km "w: CodeSandbox"]]
                  [:n [:km "w: AWS"]]
                  [:m [:km "w: GCP"]]
                  [:period [:km "w: GitHub PR"]]]} ; TODO:
