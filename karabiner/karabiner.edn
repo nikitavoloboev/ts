@@ -572,12 +572,13 @@
                  [:slash [:alfred "reddit_search_current_track" "com.vdesabou.spotify.mini.player"]]]}
         {:des "ckey (run + dots)"
          :rules [:c-mode
-                 [:u [:km "proj: Learning"]]
-                 [:i [:km "proj: LA"]]
-                 [:o [:km "proj: Home"]]
+                 [:q [:km "proj: Learning"]]
+                 [:w [:km "proj: LA"]]
+                 [:e [:km "proj: Home"]]
                  [:a [:km "Clone repo to ~/src/clones and open with VS Code"]]
                  [:s [:km "Clone repo to ~/src/clones"]]
-                 ;[:d [:km "Clone repo to ~/src/clones and open with VS Code"]] ; TODO: open with Xcode
+                 ;[:d [:km "Clone repo to ~/src/clones and open with Xcode"]] ; TODO:
+                 [:h [:km "run: Bash"]]
                  [:j [:km "run: JS"]]
                  [:k [:km "run: Go"]]
                  [:l [:km "run: Python"]]
@@ -616,7 +617,7 @@
                  ;[:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:1TPem2VEEzClhspiIXnx6x"]] ; Brown noise
                  ;[:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:69fhLMKQOlyzdJKUBmyaNl"]] ; Focus tune
                  [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ESjwZeTcHOWzY3FYO5zs5"]] ; Focus playlist
-                 [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:119UQiBAvOjHDpcVkrXpSy"]] ; Focus song
+                 [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:73J0XZfBhvGgCloBnkXVCP"]] ; Focus song
                  ;[:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:37i9dQZF1DX71VcjjnyaBQ"]] ; Jazz
                  ;[:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:1NhDv99nTtRm37rZpoH7Ix"]] ; TODO: set new Focus song (from currently playing)
                  [:spacebar :!CSOv]]} ; Selection -> Google Images
