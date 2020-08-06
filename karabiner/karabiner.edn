@@ -617,7 +617,7 @@
                  ;[:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:1TPem2VEEzClhspiIXnx6x"]] ; Brown noise
                  ;[:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:69fhLMKQOlyzdJKUBmyaNl"]] ; Focus tune
                  [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ESjwZeTcHOWzY3FYO5zs5"]] ; Focus playlist
-                 [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:73J0XZfBhvGgCloBnkXVCP"]] ; Focus song
+                 [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:2KjPs5Tm2gammU8qCRcMLJ"]] ; Focus song
                  ;[:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:37i9dQZF1DX71VcjjnyaBQ"]] ; Jazz
                  ;[:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:1NhDv99nTtRm37rZpoH7Ix"]] ; TODO: set new Focus song (from currently playing)
                  [:spacebar :!CSOv]]} ; Selection -> Google Images
@@ -688,6 +688,7 @@
                  [:s [:alfred "search alfred" "nikivi.utilities" "lodash "]]
                  [:d [:alfred "search alfred" "nikivi.utilities" "node "]]
                  [:g [:alfred "search alfred" "nikivi.utilities" "godoc "]]
+                 [:o [:alfred "search alfred" "nikivi.utilities" "django "]]
                  [:k [:alfred "search alfred" "nikivi.utilities" "docker "]]
                  [:c [:alfred "search alfred" "nikivi.utilities" "css "]]
                  [:v [:alfred "search alfred" "nikivi.utilities" "vim "]]
