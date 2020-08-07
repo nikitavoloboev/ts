@@ -667,6 +667,7 @@
                  ;[:d [:alfred "search packages" "com.sindresorhus.npms"]]
                  [:f [:alfred "search repos" "me.lachlan.githubjump"]]
                  [:g [:alfred "search godoc" "nikivi.search.the.web"]]
+                 [:o [:alfred "search alfred" "nikivi.utilities" "django "]]
                  [:h [:alfred "search hn" "nikivi.search.the.web"]]
                  [:grave_accent_and_tilde [:alfred "search learn anything" "nikivi.learn.anything"]]
                  [:z [:alfred "search lobsters" "nikivi.search.the.web"]]
