@@ -123,8 +123,8 @@ set grepformat^=%f:%l:%c:%m
 
 set viewoptions=cursor,slash,unix
 
-" Theme
-let ayucolor="light"
+" Theme (mirage, light)
+let ayucolor="mirage"
 colorscheme ayu
 
 " Bufferline
