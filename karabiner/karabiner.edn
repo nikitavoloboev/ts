@@ -357,6 +357,7 @@
                  [:3 :!TO3] ; Screenshot -> Annotate
                  [:4 :!TO9] ; Picture of screen -> Clipboard
                  [:5 :!TO0] ; Picture of screen -> ~/Desktop
+                 [:q [:km "Open 2Do Life"]]
                  [:w [:km "wiki: Goals"]]
                  [:e [:km "wiki: Rules"]]
                  [:r [:km "wiki: My workflow"]]
@@ -367,7 +368,6 @@
                  [:p [:km "Open 2Do Repeat"]]
                  [:open_bracket [:km "w: Goodreads (currently reading)"]]
                  [:close_bracket [:km "w: Goodreads (next)"]]
-                 [:a [:km "Open 2Do Love"]]
                  [:s [:km "Open 2Do Wiki"]]
                  [:d [:open "notion://nikitavoloboev/Ideas-0b5a4e8a88f34fe29a1f33dad02e5332"]]
                  [:f [:km "Search 2Do"]]
@@ -616,7 +616,7 @@
                  ;[:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:1TPem2VEEzClhspiIXnx6x"]] ; Brown noise
                  ;[:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:69fhLMKQOlyzdJKUBmyaNl"]] ; Focus tune
                  [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ESjwZeTcHOWzY3FYO5zs5"]] ; Focus playlist
-                 [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:119UQiBAvOjHDpcVkrXpSy"]] ; Focus song
+                 [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:0cNHuK4DBbUShF7zMxJYNC"]] ; Focus song
                  ;[:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:37i9dQZF1DX71VcjjnyaBQ"]] ; Jazz
                  ;[:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:1NhDv99nTtRm37rZpoH7Ix"]] ; TODO: set new Focus song (from currently playing)
                  [:spacebar :!CSOv]]} ; Selection -> Google Images
