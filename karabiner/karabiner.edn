@@ -201,6 +201,7 @@
                  [:n [:km "open: Sublime Text"]]
                  [:m [:km "open: Sublime Merge"]]
                  ;[:period [:km "open: Console"]]
+                 [:period [:km "open: Cypress"]]
                  [:spacebar :!CT7]]} ; Start Google search with selection
         {:des "ekey (cmd)"
          :rules [:e-mode
