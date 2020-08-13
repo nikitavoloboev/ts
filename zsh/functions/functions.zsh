@@ -21,7 +21,21 @@ w() {
   fi
 }
 
-s() {
+# go to directory of file in clipboard
+W() {
+    # CMD+OPT+C is key bind to copy open file in VSCode
+    osascript -e "tell application \"System Events\" to keystroke \"c\" using command down & option down"
+    f=$(pbpaste)
+    cd "$(dirname "$f")"
+}
+
+# watch & run python test file
+Wp() {
+    W
+    watchexec -w run.py python3 run.py
+}
+
+Wg() {
   if [ $# -eq 0 ]; then
     subl .
   else
