@@ -1,5 +1,9 @@
 # Temp
 ,() {
+  /Users/nikivi/src/learning/python/run.py
+  cd $pbpaste
+  file="$pbpaste"
+  echo "$(dirname "${file}")"
 }
 
 g,() {

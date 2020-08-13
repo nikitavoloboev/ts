@@ -181,7 +181,7 @@
                  [:e [:km "open: Fantastical"]]
                  [:r [:km "open: Notion"]]
                  [:t [:km "open: Activity Monitor"]]
-                 [:i [:km "open: Instruments"]]
+                 ;[:i [:km "open: Instruments"]]
                  [:o [:km "open: Keyboard Maestro"]]
                  [:p [:km "open: Postgres"]]
                  [:caps_lock [:km "open: Finder"]]
@@ -299,9 +299,9 @@
                  [:3 :!Sequal_sign]
                  [:4 :!S8]
                  [:5 :!S5]
-                 [:q :!Sopen_bracket]
+                 [:q :!Sopen_bracket] 
                  [:w :!S9]
-                 [:e :!S3]
+                 [:e :!S3] 
                  [:r :!Squote]
                  [:t :quote]
                  [:o :open_bracket]
@@ -494,6 +494,7 @@
                  [:k :return_or_enter]
                  [:l :!Creturn_or_enter]
                  [:semicolon [:km "edit: Karabiner"]]
+                 [:quote [:km "Goku Run"]]
                  [:z :!Ospacebar] ; Switch language (Russian <-> English)
                  [:n :!Freturn_or_enter]
                  [:m :!Sreturn_or_enter]
@@ -579,6 +580,7 @@
                  [:a [:km "Clone repo to ~/src/clones and open with VS Code"]]
                  [:s [:km "Clone repo to ~/src/clones"]]
                  ;[:d [:km "Clone repo to ~/src/clones and open with VS Code"]] ; TODO: open with Xcode
+                 [:h [:km "run: Bash"]]
                  [:j [:km "run: JS"]]
                  [:k [:km "run: Go"]]
                  [:l [:km "run: Python"]]
@@ -617,7 +619,7 @@
                  ;[:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:1TPem2VEEzClhspiIXnx6x"]] ; Brown noise
                  ;[:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:69fhLMKQOlyzdJKUBmyaNl"]] ; Focus tune
                  [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ESjwZeTcHOWzY3FYO5zs5"]] ; Focus playlist
-                 [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:0cNHuK4DBbUShF7zMxJYNC"]] ; Focus song
+                 [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:6Fvi4W50kum9MfkZF0ypZh"]] ; Focus song
                  ;[:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:37i9dQZF1DX71VcjjnyaBQ"]] ; Jazz
                  ;[:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:1NhDv99nTtRm37rZpoH7Ix"]] ; TODO: set new Focus song (from currently playing)
                  [:spacebar :!CSOv]]} ; Selection -> Google Images
@@ -781,6 +783,9 @@
                  [:j [:km "w: YouTube"]]
                  [:k [:km "w: GitHub"]]
                  [:l [:km "w: Localhost"]]
+                 [:semicolon [:km "w: GitLab"]]
+                 ;[:semicolon [:km "w: Phabricator"]]
+                 ;[:semicolon :semicolon]
                  ;[:semicolon [:km "w: CodeSandbox"]]
                  [:semicolon [:km "w: Excalidraw"]]
                  [:n [:km "w: AWS"]]

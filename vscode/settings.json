@@ -42,7 +42,7 @@
   "files.insertFinalNewline": true,
   "files.eol": "\n",
   // Workbench
-  "workbench.colorTheme": "GitHub Dark",
+  "workbench.colorTheme": "GitHub Light",
   "workbench.preferredLightColorTheme": "GitHub Light",
   "workbench.preferredDarkColorTheme": "GitHub Dark",
   "workbench.list.horizontalScrolling": true,
@@ -60,7 +60,7 @@
   // },
   // Window
   "window.autoDetectColorScheme": true,
-  "window.zoomLevel": -1,
+  "window.zoomLevel": -2,
   "window.restoreWindows": "all",
   "window.newWindowDimensions": "maximized",
   // Breadcrumbs
