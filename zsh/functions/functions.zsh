@@ -31,17 +31,20 @@ W() {
 
 # watch & run python test file
 Wp() {
-    W
+    # CMD+OPT+C is key bind to copy open file in VSCode
+    osascript -e "tell application \"System Events\" to keystroke \"c\" using command down & option down"
+    f=$(pbpaste)
+    cd "$(dirname "$f")"
     watchexec -w run.py python3 run.py
 }
 
-Wg() {
-  if [ $# -eq 0 ]; then
-    subl .
-  else
-    subl "${1:-.}"
-  fi
-}
+# Wg() {
+#   if [ $# -eq 0 ]; then
+#     subl .
+#   else
+#     subl "${1:-.}"
+#   fi
+# }
 
 e() {
   if [ $# -eq 0 ]; then
