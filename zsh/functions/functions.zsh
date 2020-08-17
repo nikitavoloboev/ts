@@ -38,6 +38,15 @@ Wp() {
     watchexec -w run.py python3 run.py
 }
 
+# watch & run js test file
+Wj() {
+    # CMD+OPT+C is key bind to copy open file in VSCode
+    osascript -e "tell application \"System Events\" to keystroke \"c\" using command down & option down"
+    f=$(pbpaste)
+    cd "$(dirname "$f")"
+    watchexec -w run.js node run.js
+}
+
 # Wg() {
 #   if [ $# -eq 0 ]; then
 #     subl .
@@ -45,6 +54,15 @@ Wp() {
 #     subl "${1:-.}"
 #   fi
 # }
+
+
+s() {
+  if [ $# -eq 0 ]; then
+    subl .
+  else
+    subl "${1:-.}"
+  fi
+}
 
 e() {
   if [ $# -eq 0 ]; then
