@@ -10,7 +10,7 @@
 
 > Dark appearance. Using [screenfetch](https://github.com/KittyKatt/screenFetch) to get OS details.
 
-I don't actually split editors like above. I code with each window maximized. Sometimes I use iPad with Sidecar and chrome browser on the side (for web dev) but mostly use one 16" MacBook screen.
+I don't actually split editors like above. I code with each window maximized & switch quickly between windows/apps with Karabiner. Sometimes I use iPad with Sidecar on the side (for web dev) but mostly use one 16" MacBook screen.
 
 You can see my top used apps, Safari extensions and Alfred workflows [here](https://github.com/nikitavoloboev/my-mac-os). I also explain how I use the apps in detail there.
 
