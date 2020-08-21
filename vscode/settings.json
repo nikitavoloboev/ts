@@ -60,7 +60,7 @@
   // },
   // Window
   "window.autoDetectColorScheme": true,
-  "window.zoomLevel": -3,
+  "window.zoomLevel": -2,
   "window.restoreWindows": "all",
   "window.newWindowDimensions": "maximized",
   // Breadcrumbs
@@ -81,7 +81,7 @@
   },
   // Terminal
   "terminal.integrated.copyOnSelection": true,
-  "terminal.integrated.fontSize": 13,
+  "terminal.integrated.fontSize": 14,
   "terminal.integrated.inheritEnv": false,
   // Explorer
   "explorer.openEditors.visible": 0,
