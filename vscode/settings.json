@@ -89,6 +89,7 @@
   "explorer.confirmDragAndDrop": false,
   "explorer.decorations.badges": false,
   // Python
+  "python.showStartPage": false,
   "python.linting.pylintArgs": ["--errors-only"],
   "python.insidersChannel": "off",
   "python.languageServer": "Pylance",
@@ -231,5 +232,12 @@
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "python.showStartPage": false
+  // Highlight
+  "highlight-matching-tag.styles": {
+    "opening": {
+      "name": {
+        "underline": "#368ddc"
+      }
+    }
+  },
 }
