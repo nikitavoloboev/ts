@@ -577,18 +577,19 @@
          :rules [:c-mode
                  [:u [:km "proj: Learning"]]
                  [:i [:km "proj: LA"]]
-                 [:o [:km "proj: Home"]]
+                 [:o [:km "run: Deno"]]
                  [:a [:km "Clone repo to ~/src/clones and open with VS Code"]]
                  [:s [:km "Clone repo to ~/src/clones"]]
                  ;[:d [:km "Clone repo to ~/src/clones and open with VS Code"]] ; TODO: open with Xcode
-                 [:h [:km "run: Bash"]]
-                 [:j [:km "run: JS"]]
+                 [:h [:km "proj: Home"]]
+                 [:j [:km "run: Bash"]]
                  [:k [:km "run: Go"]]
                  [:l [:km "run: Python"]]
                  [:semicolon [:km "proj: Dotfiles"]]
                  [:quote [:km "edit: Dotfiles Magefile"]]
-                 [:n [:km "run: TS"]]
+                 [:n [:km "run: Node"]]
                  [:m [:km "run: Rust"]]
+                 [:comma [:km "run: Swift"]]
                  [:period [:alfred "search learning" "nikivi.private.directories"]]
                  [:spacebar :!CSOy]]} ; Selection -> Stack Overflow
         {:des "vkey (media)"
@@ -769,6 +770,8 @@
                  [:w :!TO3] ; Screenshot -> CleanShot
                  [:e :!TO2] ; Screenshot -> Clipboard
                  [:r :!TOCp] ; Screenshot -> Imgur
+                 ;[:r :!TOCp] ; Screenshot -> Imgur (auth)
+                 ;[:r :!TOCp] ; Screenshot -> ImgBB (temp)
                  [:t :!CS4] ; Screenshot -> ~/Desktop
                  ;[:u [:km "w: Beautiful.ai"]]
                  ;[:u [:km "w: Digital Ocean"]]
