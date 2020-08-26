@@ -81,7 +81,7 @@
   },
   // Terminal
   "terminal.integrated.copyOnSelection": true,
-  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.fontSize": 15,
   "terminal.integrated.inheritEnv": false,
   // Explorer
   "explorer.openEditors.visible": 0,

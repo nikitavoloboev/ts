@@ -24,6 +24,7 @@ func Link() {
 	if err != nil {
 		log.Fatal(err)
 	}
+
 	home = home + "/"
 	dots := home + ".dotfiles/"
 	links := make(map[string]string) // original file location -> location in dotfiles

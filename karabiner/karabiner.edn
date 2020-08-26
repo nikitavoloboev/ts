@@ -438,6 +438,7 @@
                  [:u :!COp] ; Selection -> HasteBin link
                  [:i :!CTperiod] ; Contexts search active windows
                  [:o :!Cx] ; Cut
+                 ;[:open_bracket :!Oleft_arrow]
                  [:open_bracket [:km "Lowercase selected text"]]
                  [:close_bracket [:km "Uppercase selected text"]]
                  [:a :!Cc] ; Copy
@@ -478,8 +479,8 @@
         {:des "fkey (essential)"
          :rules [:f-mode
                  [:tab [:km "View Sip"]]
-                 ;[:q [:km "open: Photos"]]
-                 [:q [:km "Centre mouse to active app"]]
+                 [:q [:km "open: Photos"]]
+                 ;[:q [:km "Centre mouse to active app"]]
                  ;[:w [:km "open: Simulator / Xcode"]]
                  [:w [:km "open: Chrome Canary  / VS Code"]]
                  [:e :!CO8] ; Alfred clipboard history search
@@ -575,23 +576,23 @@
                  [:slash [:alfred "reddit_search_current_track" "com.vdesabou.spotify.mini.player"]]]}
         {:des "ckey (run + dots)"
          :rules [:c-mode
-                 [:u [:km "proj: Learning"]]
-                 [:i [:km "proj: LA"]]
+                 [:tab [:km "proj: Learning"]]
+                 [:w [:km "proj: LA"]]
+                 [:e [:km "proj: Home"]]
+                 [:u [:km "run: Rust"]]
+                 [:i [:km "run: Julia"]] ; TODO: maybe use Pluto.jl notebook
                  [:o [:km "run: Deno"]]
+                 [:caps_lock [:alfred "search learning" "nikivi.private.directories"]]
                  [:a [:km "Clone repo to ~/src/clones and open with VS Code"]]
                  [:s [:km "Clone repo to ~/src/clones"]]
                  ;[:d [:km "Clone repo to ~/src/clones and open with VS Code"]] ; TODO: open with Xcode
-                 [:h [:km "proj: Home"]]
                  [:j [:km "run: Bash"]]
-                 ;[:k [:km "run: Julia"]] ; TODO: maybe use Pluto.jl notebook
                  [:k [:km "run: Go"]]
                  [:l [:km "run: Python"]]
                  [:semicolon [:km "proj: Dotfiles"]]
-                 [:quote [:km "edit: Dotfiles Magefile"]]
                  [:n [:km "run: Node"]]
-                 [:m [:km "run: Rust"]]
-                 [:comma [:km "run: Swift"]]
-                 [:period [:alfred "search learning" "nikivi.private.directories"]]
+                 [:m [:km "run: Swift"]]
+                 [:period [:km "edit: Dotfiles Magefile"]]
                  [:spacebar :!CSOy]]} ; Selection -> Stack Overflow
         {:des "vkey (media)"
          :rules [:v-mode
@@ -768,6 +769,7 @@
                  [:v [:e :l :i :x :i :r :spacebar]]]} ; -> elixir
         {:des "spacekey (websites)"
          :rules [:spacebar-mode
+                 ;[:tab :!CO5] ; TODO: Configure ScreenFlow recording
                  [:q [:km "open: CleanShot"]]
                  [:w :!TO3] ; Screenshot -> CleanShot
                  [:e :!TO2] ; Screenshot -> Clipboard
@@ -775,26 +777,25 @@
                  ;[:r :!TOCp] ; Screenshot -> Imgur (auth)
                  ;[:r :!TOCp] ; Screenshot -> ImgBB (temp)
                  [:t :!CS4] ; Screenshot -> ~/Desktop
-                 ;[:u [:km "w: Beautiful.ai"]]
-                 ;[:u [:km "w: Digital Ocean"]]
-                 [:u [:km "w: Heroku"]]
+                 [:u [:km "w: Digital Ocean"]]
                  [:i [:km "w: GitHub (notifications)"]] ; TODO: jump between GitHub (issues/prs)
                  [:o [:km "w: Google Docs"]]
+                 [:p [:km "w: Google Sheets"]]
+                 [:open_bracket [:km "w: Google Slides"]]
+                 [:close_bracket [:km "w: Beautiful.ai"]]
                  [:caps_lock :!CTOSg] ; Loom recording
                  [:a :!TO4] ; CleanShot recording
                  ;[:s :!CO5] ; TODO: Pause/unpause ScreenFlow recording
-                 ;[:d :!CO5] ; TODO: Configure ScreenFlow recording
                  [:f :!CO5] ; Start/stop ScreenFlow recording
-                 ;[:h [:km "w: Google Sheets"]]
-                 [:h [:km "w: Learn Anything"]]
+                 [:g [:km "w: GCP"]]
+                 [:h [:km "w: AWS"]]
                  [:j [:km "w: YouTube"]]
                  [:k [:km "w: GitHub"]]
                  [:l [:km "w: Localhost"]]
                  [:semicolon [:km "w: GitLab"]]
-                 [:quote [:km "w: Phabricator"]]
                  ;[:semicolon [:km "w: CodeSandbox"]]
-                 [:semicolon [:km "w: Excalidraw"]]
-                 [:n [:km "w: AWS"]]
-                 [:m [:km "w: GCP"]]
-                 [:period [:km "w: GitHub PR"]]]} ; TODO:
+                 [:n [:km "w: Learn Anything"]]
+                 [:m [:km "w: Excalidraw"]]
+                 [:period [:km "w: Phabricator"]]
+                 [:slash [:km "w: GitHub PR"]]]} ; TODO:
 ]}
