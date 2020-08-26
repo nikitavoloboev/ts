@@ -583,6 +583,7 @@
                  ;[:d [:km "Clone repo to ~/src/clones and open with VS Code"]] ; TODO: open with Xcode
                  [:h [:km "proj: Home"]]
                  [:j [:km "run: Bash"]]
+                 ;[:k [:km "run: Julia"]] ; TODO: maybe use Pluto.jl notebook
                  [:k [:km "run: Go"]]
                  [:l [:km "run: Python"]]
                  [:semicolon [:km "proj: Dotfiles"]]
@@ -621,7 +622,8 @@
                  ;[:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:1TPem2VEEzClhspiIXnx6x"]] ; Brown noise
                  ;[:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:69fhLMKQOlyzdJKUBmyaNl"]] ; Focus tune
                  [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ESjwZeTcHOWzY3FYO5zs5"]] ; Focus playlist
-                 [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:5iZJK7w5mgHwOC8Sjs3eaT"]] ; Focus song
+                 [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:6vgr2cK1a1OXF2IQ9FE8yB"]] ; Focus active song
+                 [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:5iZJK7w5mgHwOC8Sjs3eaT"]] ; Focus slow song
                  ;[:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:37i9dQZF1DX71VcjjnyaBQ"]] ; Jazz
                  ;[:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:1NhDv99nTtRm37rZpoH7Ix"]] ; TODO: set new Focus song (from currently playing)
                  [:spacebar :!CSOv]]} ; Selection -> Google Images
