@@ -795,4 +795,9 @@
                  [:m [:km "w: Excalidraw"]]
                  [:period [:km "w: Phabricator"]]
                  [:slash [:km "w: GitHub PR"]]]} ; TODO:
+        ;{:des "3 finger actions" :rules [
+                 ;[:condi ["multitouch_extension_finger_count_total" 3]]
+                 ;[:a [:button1 :!Cv]]
+                 ;[:f :button2] ; 
+                 ;]}
 ]}
