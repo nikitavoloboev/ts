@@ -599,9 +599,10 @@
                  [:q :illumination_decrement]
                  [:w :illumination_increment]
                  [:e [:km "Change macOS appearance (dark/light)"]]
-                 [:r :!COS6] ; Toggle Night Shift on/off.
+                 [:t :!COS6] ; Toggle Night Shift on/off.
                  [:i :display_brightness_decrement]
                  [:o :display_brightness_increment]
+                 [:p [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:37i9dQZEVXcMHpP6EcIqNe"]] ; Discover Weekly playlist
                  [:open_bracket [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ERn0U4qZIKC8Dy7RrMMsn"]] ; Likes playlist
                  [:close_bracket [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:2N82DnDsPGMnpJhN8sVFJu"]] ; Bliss playlist
                  [:a [:km "Repeat Spotify song"]] ; TODO: do in background
@@ -618,14 +619,10 @@
                  [:b [:alfred "show_playlists" "com.vdesabou.spotify.mini.player"]]
                  [:n :volume_decrement]
                  [:m :volume_increment]
-                 [:comma [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:37i9dQZEVXcMHpP6EcIqNe"]] ; Discover Weekly playlist
-                 ;[:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:7C7DqxIUI68ZXsyvaKPkbG"]] ; Rain
-                 ;[:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:1TPem2VEEzClhspiIXnx6x"]] ; Brown noise
-                 ;[:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:69fhLMKQOlyzdJKUBmyaNl"]] ; Focus tune
+                 [:comma [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:7C7DqxIUI68ZXsyvaKPkbG"]] ; Rain
                  [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ESjwZeTcHOWzY3FYO5zs5"]] ; Focus playlist
-                 [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:6vgr2cK1a1OXF2IQ9FE8yB"]] ; Focus active song
-                 [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:5iZJK7w5mgHwOC8Sjs3eaT"]] ; Focus slow song
-                 ;[:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:37i9dQZF1DX71VcjjnyaBQ"]] ; Jazz
+                 [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:3NwJV4QBmyxiHzpysayET6"]] ; Active Focus song
+                 [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:7agPIlFzTpgKnqyxUVt7aM"]] ; Slow Focus song
                  ;[:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:1NhDv99nTtRm37rZpoH7Ix"]] ; TODO: set new Focus song (from currently playing)
                  [:spacebar :!CSOv]]} ; Selection -> Google Images
         {:des "bkey (break)"
