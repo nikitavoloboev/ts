@@ -360,9 +360,9 @@
                  [:4 :!TO9] ; Picture of screen -> Clipboard
                  [:5 :!TO0] ; Picture of screen -> ~/Desktop
                  [:q [:km "Open 2Do Life"]]
-                 [:w [:km "wiki: Goals"]]
-                 [:e [:km "wiki: Rules"]]
-                 [:r [:km "wiki: My workflow"]]
+                 [:w [:km "wiki: My workflow"]]
+                 [:e [:km "edit: Private notes"]]
+                 [:r [:km "wiki: Rules"]]
                  [:t [:km "wiki: Processes"]]
                  [:u [:km "Open 2Do Buy"]]
                  [:i [:km "Open 2Do Fix"]]
@@ -380,8 +380,8 @@
                  [:l [:km "Open 2Do Later"]]
                  [:semicolon [:km "Open 2Do Starred"]]
                  [:quote [:km "Open 2Do Other"]] ; TODO: remove once its empty
-                 [:c [:km "Look back"]]
-                 [:v [:km "edit: Private notes"]]
+                 [:c [:km "wiki: Goals"]]
+                 [:v [:km "Look back"]]
                  [:n [:km "Open 2Do Clean"]]
                  [:m [:km "Open 2Do Work"]]
                  [:period [:km "Open 2Do LA"]]]}
@@ -482,6 +482,7 @@
                  [:q [:km "open: Photos"]]
                  ;[:q [:km "Centre mouse to active app"]]
                  ;[:w [:km "open: Simulator / Xcode"]]
+                 ;[:q [:km "open: MindNode"]]
                  [:w [:km "open: Chrome Canary  / VS Code"]]
                  [:e :!CO8] ; Alfred clipboard history search
                  [:i :!Treturn_or_enter]
@@ -793,11 +794,7 @@
                  ;[:semicolon [:km "w: CodeSandbox"]]
                  [:n [:km "w: Learn Anything"]]
                  [:m [:km "w: Excalidraw"]]
+                 [:comma [:km "w: Diagrams"]]
                  [:period [:km "w: Phabricator"]]
                  [:slash [:km "w: GitHub PR"]]]} ; TODO:
-        ;{:des "3 finger actions" :rules [
-                 ;[:condi ["multitouch_extension_finger_count_total" 3]]
-                 ;[:a [:button1 :!Cv]]
-                 ;[:f :button2] ; 
-                 ;]}
 ]}
