@@ -380,8 +380,8 @@
                  [:l [:km "Open 2Do Later"]]
                  [:semicolon [:km "Open 2Do Starred"]]
                  [:quote [:km "Open 2Do Other"]] ; TODO: remove once its empty
-                 [:c [:km "wiki: Goals"]]
-                 [:v [:km "Look back"]]
+                 [:c [:km "Look back"]]
+                 [:v [:km "wiki: Goals"]]
                  [:n [:km "Open 2Do Clean"]]
                  [:m [:km "Open 2Do Work"]]
                  [:period [:km "Open 2Do LA"]]]}
@@ -583,7 +583,6 @@
                  [:u [:km "run: Rust"]]
                  [:i [:km "run: Julia"]] ; TODO: maybe use Pluto.jl notebook
                  [:o [:km "run: Deno"]]
-                 [:caps_lock [:alfred "search learning" "nikivi.private.directories"]]
                  [:a [:km "Clone repo to ~/src/clones and open with VS Code"]]
                  [:s [:km "Clone repo to ~/src/clones"]]
                  ;[:d [:km "Clone repo to ~/src/clones and open with VS Code"]] ; TODO: open with Xcode
@@ -591,9 +590,10 @@
                  [:k [:km "run: Go"]]
                  [:l [:km "run: Python"]]
                  [:semicolon [:km "proj: Dotfiles"]]
+                 [:quote [:km "edit: Dotfiles Magefile"]]
                  [:n [:km "run: Node"]]
                  [:m [:km "run: Swift"]]
-                 [:period [:km "edit: Dotfiles Magefile"]]
+                 [:period [:alfred "search learning" "nikivi.private.directories"]]
                  [:spacebar :!CSOy]]} ; Selection -> Stack Overflow
         {:des "vkey (media)"
          :rules [:v-mode
