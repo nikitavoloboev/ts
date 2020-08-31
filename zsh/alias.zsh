@@ -100,7 +100,9 @@ alias ws='workflow-install -s workflow' # Symlink `source` directory
 # Docker
 alias c='docker'
 alias cs='docker ps'
-alias cu='docker-compose up'
+alias co='docker-compose'
+alias cou='docker-compose up'
+alias cos='docker-compose ps'
 alias ca='docker container ls'
 alias css='docker stop $(docker ps -a -q)' # Stop running containers
 alias csr='docker rm -f $(docker ps -q)' # Stop & remove running containers
@@ -200,7 +202,7 @@ alias ez='nvim ~/.zshrc'
 
 # cd places
 alias doc='cd ~/Documents/'
-alias dn='cd ~/src/clones'
+alias dn='cd ~/clones'
 alias ds='cd ~/.ssh'
 alias dk='cd ~/Dropbox/Write/knowledge'
 alias dl='cd ~/src/learning'

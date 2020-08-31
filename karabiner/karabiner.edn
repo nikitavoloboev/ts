@@ -106,18 +106,20 @@
                  [:spacebar :!COSu]]} ; Selection -> HN
         {:des "3key (open files + projects)"
          :rules [:3-mode
-                 [:t [:km "edit: Git config"]]
+                 [:r [:km "proj: LA"]]
                  [:i [:km "edit: Likes"]]
                  [:o [:km "edit: Projects"]]
+                 [:t [:km "edit: Git config"]]
                  [:h [:km "wiki: Used hotkeys"]]
                  [:j [:km "edit: Aliases"]]
                  [:k [:km "edit: Zsh functions"]]
                  [:l [:km "Search current safari url in wiki"]]
                  [:semicolon [:km "proj: Knowledge"]]
-                 [:n [:km "wiki: Notes"]]
-                 [:m [:km "wiki: Summary"]]
-                 ;[:m [:km "edit: GitHub Bio"]] ; TODO: 
-                 [:period [:km "edit: Now"]]
+                 [:quote [:km "wiki: Summary"]]
+                 [:n [:km "proj: Dotfiles"]]
+                 [:m [:km "proj: Home"]]
+                 [:comma [:km "edit: Now"]]
+                 [:period [:km "edit: GitHub Bio"]] ; TODO: 
                  [:spacebar :!CSOp]]} ; Selection -> Reddit
         {:des "4key (open curated lists)"
          :rules [:4-mode
@@ -479,11 +481,12 @@
         {:des "fkey (essential)"
          :rules [:f-mode
                  [:tab [:km "View Sip"]]
-                 [:q [:km "open: Photos"]]
+                 ;[:q [:km "open: Photos"]]
                  ;[:q [:km "Centre mouse to active app"]]
                  ;[:w [:km "open: Simulator / Xcode"]]
                  ;[:q [:km "open: MindNode"]]
-                 [:w [:km "open: Chrome Canary  / VS Code"]]
+                 [:w [:km "Save clipboard link"]]
+                 ;[:w [:km "open: Chrome Canary  / VS Code"]]
                  [:e :!CO8] ; Alfred clipboard history search
                  [:i :!Treturn_or_enter]
                  [:o :!Oreturn_or_enter]
@@ -521,7 +524,8 @@
                  [:semicolon :!COSs] ; Move window between different screen & maximize (iPad)
                  [:z :!CO0] ; Show Dropzone dropdown
                  [:n :!CTOg] ; Turn on/off notifications
-                 [:m :!COslash]]} ; Show/hide notification centre
+                 [:m :!COslash] ; Show/hide notification centre
+                 [:period :!COS6]]} ; Toggle Night Shift on/off.
         {:des "tilkey (actions + language switches)"
          :rules [:tilde-mode
                  [:w [:alfred "toggle wifi" "nikivi.wifi.tools"]]
@@ -578,29 +582,25 @@
         {:des "ckey (run + dots)"
          :rules [:c-mode
                  [:tab [:km "proj: Learning"]]
-                 [:w [:km "proj: LA"]]
-                 [:e [:km "proj: Home"]]
                  [:u [:km "run: Rust"]]
                  [:i [:km "run: Julia"]] ; TODO: maybe use Pluto.jl notebook
                  [:o [:km "run: Deno"]]
-                 [:a [:km "Clone repo to ~/src/clones and open with VS Code"]]
-                 [:s [:km "Clone repo to ~/src/clones"]]
+                 [:a [:km "Clone repo to ~/clones and open with VS Code"]]
+                 [:s [:km "Clone repo to ~/clones"]]
                  ;[:d [:km "Clone repo to ~/src/clones and open with VS Code"]] ; TODO: open with Xcode
                  [:j [:km "run: Bash"]]
                  [:k [:km "run: Go"]]
                  [:l [:km "run: Python"]]
-                 [:semicolon [:km "proj: Dotfiles"]]
-                 [:quote [:km "edit: Dotfiles Magefile"]]
+                 [:semicolon [:alfred "search learning" "nikivi.private.directories"]]
                  [:n [:km "run: Node"]]
                  [:m [:km "run: Swift"]]
-                 [:period [:alfred "search learning" "nikivi.private.directories"]]
+                 [:period [:km "edit: Dotfiles Magefile"]]
                  [:spacebar :!CSOy]]} ; Selection -> Stack Overflow
         {:des "vkey (media)"
          :rules [:v-mode
                  [:q :illumination_decrement]
                  [:w :illumination_increment]
                  [:e [:km "Change macOS appearance (dark/light)"]]
-                 [:t :!COS6] ; Toggle Night Shift on/off.
                  [:i :display_brightness_decrement]
                  [:o :display_brightness_increment]
                  [:p [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:37i9dQZEVXcMHpP6EcIqNe"]] ; Discover Weekly playlist
