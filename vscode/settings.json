@@ -7,6 +7,7 @@
   "editor.renderLineHighlight": "gutter",
   "editor.hideCursorInOverviewRuler": true,
   "editor.scrollBeyondLastLine": false,
+  "editor.tabSize": 2,
   "editor.lineHeight": 26,
   "editor.occurrencesHighlight": false,
   "editor.overviewRulerBorder": false,
@@ -16,7 +17,7 @@
   "editor.lightbulb.enabled": false,
   "editor.minimap.enabled": false,
   "editor.cursorBlinking": "solid",
-  "editor.lineNumbers":"off",
+  "editor.lineNumbers": "off",
   "editor.cursorStyle": "line",
   "editor.fontFamily": "JetBrains Mono",
   "editor.fontLigatures": true,
@@ -239,5 +240,5 @@
         "underline": "#368ddc"
       }
     }
-  },
+  }
 }
