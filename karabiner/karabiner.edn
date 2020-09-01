@@ -485,8 +485,8 @@
                  ;[:q [:km "Centre mouse to active app"]]
                  ;[:w [:km "open: Simulator / Xcode"]]
                  ;[:q [:km "open: MindNode"]]
+                 [:q [:km "open: Chrome Canary  / VS Code"]]
                  [:w [:km "Save clipboard link"]]
-                 ;[:w [:km "open: Chrome Canary  / VS Code"]]
                  [:e :!CO8] ; Alfred clipboard history search
                  [:i :!Treturn_or_enter]
                  [:o :!Oreturn_or_enter]

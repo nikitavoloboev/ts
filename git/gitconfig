@@ -89,3 +89,5 @@
 	autoStash = true
 [credential]
 	helper = osxkeychain
+[blame]
+	ignoreRevsFile = .git-blame-ignore-revs
