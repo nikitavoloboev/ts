@@ -485,7 +485,7 @@
                  ;[:q [:km "Centre mouse to active app"]]
                  ;[:w [:km "open: Simulator / Xcode"]]
                  ;[:q [:km "open: MindNode"]]
-                 [:q [:km "open: Chrome Canary  / VS Code"]]
+                 [:q [:km "open: Chrome Canary"]]
                  [:w [:km "Save clipboard link"]]
                  [:e :!CO8] ; Alfred clipboard history search
                  [:i :!Treturn_or_enter]
@@ -495,6 +495,7 @@
                  [:caps_lock :!CTOu] ; Sip color picker
                  [:a [:km "open: Figma"]]
                  [:s [:km "edit: 2nd iTerm tab"]]
+                 [:d [:km "Save clipboard link (top)"]]
                  [:h [:km "Make markdown link from selection {link}"]]
                  [:j [:km "edit: 1st iTerm tab"]]
                  [:k :return_or_enter]
@@ -553,14 +554,14 @@
                  [:f [:km "open: Spark"]]
                  [:g [:alfred "search contacts" "nikivi.search.content"]]
                  [:h [:km "Create new contact"]]
-                 [:j [:km "New tweet"]]
+                 [:j [:km "open: Textual"]]
                  [:k [:km "open: Telegram"]]
                  [:l [:km "open: Discord"]]
                  [:semicolon [:km "open: Slack"]]
                  [:c [:km "open: Contacts"]]
                  [:v [:km "open: Tweetbot"]]
-                 [:n [:km "New tweet with current URL"]]
-                 [:m [:km "open: Textual"]]
+                 [:n [:km "New tweet"]]
+                 [:m [:km "New tweet with current URL"]]
                  [:comma [:km "Search Tweetbot"]]
                  [:period [:km "w: Twitter Search"]]
                  [:spacebar :!CSOz]]} ; Selection -> Twitter
@@ -623,7 +624,7 @@
                  [:comma [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:7C7DqxIUI68ZXsyvaKPkbG"]] ; Rain
                  [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ESjwZeTcHOWzY3FYO5zs5"]] ; Focus playlist
                  [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:3NwJV4QBmyxiHzpysayET6"]] ; Active Focus song
-                 [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:7agPIlFzTpgKnqyxUVt7aM"]] ; Slow Focus song
+                 [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:1nDCD9uIJVy9Eq7lcBiwYW"]] ; Slow Focus song
                  ;[:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:1NhDv99nTtRm37rZpoH7Ix"]] ; TODO: set new Focus song (from currently playing)
                  [:spacebar :!CSOv]]} ; Selection -> Google Images
         {:des "bkey (break)"
