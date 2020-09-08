@@ -621,11 +621,11 @@
                  [:b [:alfred "show_playlists" "com.vdesabou.spotify.mini.player"]]
                  [:n :volume_decrement]
                  [:m :volume_increment]
-                 [:comma [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:7C7DqxIUI68ZXsyvaKPkbG"]] ; Rain
-                 [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ESjwZeTcHOWzY3FYO5zs5"]] ; Focus playlist
-                 [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:1nDCD9uIJVy9Eq7lcBiwYW"]] ; Slow Focus song
-                 [:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:4aY26H8RJQ6zcvovm85GVg"]] ; Active Focus song
+                 ;[:comma [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:7C7DqxIUI68ZXsyvaKPkbG"]] ; Rain
+                 [:comma [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ESjwZeTcHOWzY3FYO5zs5"]] ; Focus playlist
+                 [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:5iZJK7w5mgHwOC8Sjs3eaT"]] ; Slow Focus song
                  ;[:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:1NhDv99nTtRm37rZpoH7Ix"]] ; TODO: set new Focus song (from currently playing)
+                 ;[:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:4aY26H8RJQ6zcvovm85GVg"]] ; Active Focus song
                  [:spacebar :!CSOv]]} ; Selection -> Google Images
         {:des "bkey (break)"
          :rules [:b-mode
