@@ -674,7 +674,6 @@
                  ;[:d [:alfred "search packages" "com.sindresorhus.npms"]]
                  [:f [:alfred "search repos" "me.lachlan.githubjump"]]
                  [:g [:alfred "search godoc" "nikivi.search.the.web"]]
-                 [:o [:alfred "search alfred" "nikivi.utilities" "django "]]
                  [:h [:alfred "search hn" "nikivi.search.the.web"]]
                  [:grave_accent_and_tilde [:alfred "search learn anything" "nikivi.learn.anything"]]
                  [:z [:alfred "search lobsters" "nikivi.search.the.web"]]
@@ -687,19 +686,20 @@
         {:des "mkey (dash)"
          :rules [:m-mode
                  [:3 [:alfred "search alfred" "nikivi.utilities" "d3 "]]
+                 [:q [:alfred "search alfred" "nikivi.utilities" "tldr "]]
+                 [:w [:alfred "search alfred" "nikivi.utilities" "django "]]
                  [:e [:alfred "search alfred" "nikivi.utilities" "html "]]
                  [:r [:alfred "search alfred" "nikivi.utilities" "react "]]
                  [:t [:alfred "search alfred" "nikivi.utilities" "ts "]]
-                 [:caps_lock [:alfred "search alfred" "nikivi.utilities" "man "]]
-                 [:a [:alfred "search alfred" "nikivi.utilities" "apple "]]
+                 [:a [:alfred "search alfred" "nikivi.utilities" "man "]]
+                 ;[:a [:alfred "search alfred" "nikivi.utilities" "apple "]]
                  [:s [:alfred "search alfred" "nikivi.utilities" "lodash "]]
                  [:d [:alfred "search alfred" "nikivi.utilities" "node "]]
+                 [:f [:alfred "search alfred" "nikivi.utilities" "css "]]
                  [:g [:alfred "search alfred" "nikivi.utilities" "godoc "]]
-                 [:k [:alfred "search alfred" "nikivi.utilities" "docker "]]
-                 [:c [:alfred "search alfred" "nikivi.utilities" "css "]]
+                 [:c [:alfred "search alfred" "nikivi.utilities" "docker "]]
                  [:v [:alfred "search alfred" "nikivi.utilities" "vim "]]
-                 [:b [:alfred "search alfred" "nikivi.utilities" "bash "]]
-                 [:grave_accent_and_tilde [:alfred "search alfred" "com.kapeli.dash.workflow" "tldr: "]]]}
+                 [:b [:alfred "search alfred" "nikivi.utilities" "bash "]]]}
          {:des "dotkey (1-3, q-u, caps, tab)"
           :rules [:dot-mode
                   [:1 [:!Sc :l :o :s :e :spacebar :!S3]] ; -> Close #
