@@ -183,27 +183,27 @@
                  [:e [:km "open: Fantastical"]]
                  [:r [:km "open: Notion"]]
                  [:t [:km "open: Activity Monitor"]]
-                 [:u [:km "open: Instruments"]]
-                 [:i [:km "open: Safari Technology Preview"]]
+                 ;[:i [:km "open: Safari Technology Preview"]]
+                 [:i [:km "open: Instruments"]]
                  [:o [:km "open: Keyboard Maestro"]]
                  [:p [:km "open: Postgres"]]
                  [:caps_lock [:km "open: Finder"]]
                  [:a :!OSC1] ; Open Dash
                  [:d [:km "open: Postico"]]
                  [:f [:km "open: 2Do"]]
-                 [:g [:km "open: Paw"]]
-                 [:h [:km "open: Proxyman"]]
+                 ;[:g [:km "open: Linear"]]
                  [:j [:km "open: iTerm"]]
                  [:k [:km "open: Safari"]]
                  [:l [:km "open: VS Code"]]
                  [:semicolon [:km "open: Xcode"]]
                  [:quote [:km "open: Console"]]
                  [:c [:km "open: Spotify"]]
-                 [:v [:km "open: Linear"]]
+                 [:v [:km "open: Paw"]]
                  [:b [:km "open: BetterTouchTool"]]
                  [:n [:km "open: Sublime Text"]]
                  [:m [:km "open: Sublime Merge"]]
-                 [:period [:km "open: Cypress"]]
+                 [:period [:km "open: Proxyman"]]
+                 ;[:period [:km "open: Cypress"]]
                  [:spacebar :!CT7]]} ; Start Google search with selection
         {:des "ekey (cmd)"
          :rules [:e-mode
@@ -535,7 +535,8 @@
                  [:d [:km "Commit dotfiles"]]
                  [:f [:km "Commit learning"]]
                  [:h [:km "Commit home"]]
-                 [:j [[:open "dash://.jsts:"] ["in-python" 0] ["in-go" 0] ["in-js" 1] ["in-elixir" 0] ["in-rust" 0] ["in-swift" 0]]] ; JS
+                 [:j [[:open "dash://.js:"] ["in-python" 0] ["in-go" 0] ["in-js" 1] ["in-elixir" 0] ["in-rust" 0] ["in-swift" 0]]] ; JS
+                 ;[:j [[:open "dash://.jsts:"] ["in-python" 0] ["in-go" 0] ["in-js" 1] ["in-elixir" 0] ["in-rust" 0] ["in-swift" 0]]] ; JS
                  [:k [[:open "dash://.go:"] ["in-python" 0] ["in-go" 1] ["in-js" 0] ["in-elixir" 0] ["in-rust" 0] ["in-swift" 0]]] ; Go
                  [:l [[:open "dash://.python:"] ["in-python" 1] ["in-go" 0] ["in-js" 0] ["in-elixir" 0] ["in-rust" 0] ["in-swift" 0]]] ; Python
                  [:c [:km "Commit code"]]
@@ -559,7 +560,8 @@
                  [:l [:km "open: Discord"]]
                  [:semicolon [:km "open: Slack"]]
                  [:c [:km "open: Contacts"]]
-                 [:v [:km "open: Tweetbot"]]
+                 ;[:v [:km "open: Tweetbot"]]
+                 [:v [:km "open: Twitter"]]
                  [:n [:km "New tweet"]]
                  [:m [:km "New tweet with current URL"]]
                  [:comma [:km "Search Tweetbot"]]
@@ -621,11 +623,9 @@
                  [:b [:alfred "show_playlists" "com.vdesabou.spotify.mini.player"]]
                  [:n :volume_decrement]
                  [:m :volume_increment]
-                 ;[:comma [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:7C7DqxIUI68ZXsyvaKPkbG"]] ; Rain
                  [:comma [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ESjwZeTcHOWzY3FYO5zs5"]] ; Focus playlist
-                 [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:5iZJK7w5mgHwOC8Sjs3eaT"]] ; Slow Focus song
-                 ;[:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:1NhDv99nTtRm37rZpoH7Ix"]] ; TODO: set new Focus song (from currently playing)
-                 ;[:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:4aY26H8RJQ6zcvovm85GVg"]] ; Active Focus song
+                 [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:5iZJK7w5mgHwOC8Sjs3eaT"]] ; Focus song
+                 ;[:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:1NhDv99nTtRm37rZpoH7Ix"]] ; TODO: set Focus song (from currently playing) (km macro)
                  [:spacebar :!CSOv]]} ; Selection -> Google Images
         {:des "bkey (break)"
          :rules [:b-mode
