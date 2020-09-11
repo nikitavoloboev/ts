@@ -130,11 +130,13 @@
                  [:k [:km "list: Alfred workflows"]]
                  [:l [:km "list: Command line tools"]]
                  [:n [:km "list: Events"]]]}
-        {:des "tabkey (palettes)"
+        {:des "tabkey (palettes + websites)"
          :rules [:tab-mode
+                 [:o [:km "w: CodeSandbox"]]
                  [:j :!SOTw] ; Replies
                  [:k :!SOTf] ; App specific
-                 [:l :!SOTr]]} ; Personal
+                 [:l :!SOTr] ; Personal
+                 [:semicolon [:km "w: StackBlitz"]]]}
         {:des "qkey (cmd + shift)"
          :rules [:q-mode
                  [:3 :!CS3]
@@ -301,9 +303,9 @@
                  [:3 :!Sequal_sign]
                  [:4 :!S8]
                  [:5 :!S5]
-                 [:q :!Sopen_bracket] 
+                 [:q :!Sopen_bracket]
                  [:w :!S9]
-                 [:e :!S3] 
+                 [:e :!S3]
                  [:r :!Squote]
                  [:t :quote]
                  [:o :open_bracket] ; [
@@ -623,7 +625,7 @@
                  [:n :volume_decrement]
                  [:m :volume_increment]
                  [:comma [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ESjwZeTcHOWzY3FYO5zs5"]] ; Focus playlist
-                 [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:5iZJK7w5mgHwOC8Sjs3eaT"]] ; Focus song
+                 [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:74UHojEXg3Rv9BK2pXqqxe"]] ; Focus song
                  ;[:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:1NhDv99nTtRm37rZpoH7Ix"]] ; TODO: set Focus song (from currently playing) (km macro)
                  [:spacebar :!CSOv]]} ; Selection -> Google Images
         {:des "bkey (break)"
@@ -791,7 +793,6 @@
                  [:k [:km "w: GitHub"]]
                  [:l [:km "w: Localhost"]]
                  [:semicolon [:km "w: GitLab"]]
-                 ;[:semicolon [:km "w: CodeSandbox"]]
                  [:n [:km "w: Learn Anything"]]
                  [:m [:km "w: Excalidraw"]]
                  [:comma [:km "w: Diagrams"]]
