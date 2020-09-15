@@ -268,3 +268,6 @@ alias gss='git show --word-diff=color' # See changes made
 
 # Mage
 alias fs='mage start'
+
+# Django
+alias dj='./manage'

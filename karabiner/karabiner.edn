@@ -319,7 +319,7 @@
                  [:g :!S4]
                  [:j :equal_sign]
                  [:l [:hyphen :!Speriod :spacebar]] ; -> arrow (->)
-                 [:semicolon :semicolon]
+                 ;[:semicolon :semicolon]
                  [:grave_accent_and_tilde :!Sgrave_accent_and_tilde] ; -> //
                  [:z :!Sslash]
                  [:x :!Sbackslash]
@@ -482,7 +482,9 @@
                  [:spacebar :!CT8]]} ; Selection -> Dictionary (wiki)
         {:des "fkey (essential)"
          :rules [:f-mode
-                 [:tab [:km "View Sip"]]
+                 [:2 [:km "View Sip"]]
+                 [:3 [:km "Go to test macro"]]
+                 [:tab [:km "Test"]]
                  ;[:q [:km "open: Photos"]]
                  ;[:q [:km "Centre mouse to active app"]]
                  ;[:w [:km "open: Simulator / Xcode"]]
@@ -514,8 +516,6 @@
          :rules [:g-mode
                  [:q :!CT3] ; Search bartender menu items
                  [:w :!CSgrave_accent_and_tilde] ; Switch between active windows (go up)
-                 [:e [:km "Go to test macro"]]
-                 [:r [:km "Test"]]
                  [:caps_lock [:km "Go to KM group of current app from picklist"]]
                  [:a [:km "Go to KM group of current app"]]
                  [:s [:km "Dismiss notifications"]]
@@ -610,7 +610,7 @@
                  [:p [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:37i9dQZEVXcMHpP6EcIqNe"]] ; Discover Weekly playlist
                  [:open_bracket [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ERn0U4qZIKC8Dy7RrMMsn"]] ; Likes playlist
                  [:close_bracket [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:2N82DnDsPGMnpJhN8sVFJu"]] ; Bliss playlist
-                 [:a [:km "Repeat Spotify song"]] ; TODO: do in background
+                 ;[:a [:km "Repeat Spotify song"]] ; TODO: do in background
                  [:s [:km "Play/pause Spotify"]]
                  [:d :!CO9] ; Connect/disconnect AirPods
                  [:h :vk_consumer_previous]
@@ -624,7 +624,7 @@
                  [:n :volume_decrement]
                  [:m :volume_increment]
                  [:comma [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:playlist:0ESjwZeTcHOWzY3FYO5zs5"]] ; Focus playlist
-                 [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:3vZ41qZR29470JVWKsdzsV"]] ; Focus song
+                 [:period [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:7B0ofCHeQu2FoX7P28ZaPp"]] ; Focus song
                  ;[:slash [:alfred "play" "com.vdesabou.spotify.mini.player" "spotify:track:1NhDv99nTtRm37rZpoH7Ix"]] ; TODO: set Focus song (from currently playing) (km macro)
                  [:spacebar :!CSOv]]} ; Selection -> Google Images
         {:des "bkey (break)"
@@ -791,10 +791,11 @@
                  [:j [:km "w: YouTube"]]
                  [:k [:km "w: GitHub"]]
                  [:l [:km "w: Localhost"]]
-                 [:semicolon [:km "w: GitLab"]]
-                 [:n [:km "w: Learn Anything"]]
-                 [:m [:km "w: Excalidraw"]]
+                 [:semicolon :semicolon]
+                 ;[:n [:km "w: Learn Anything"]]
+                 [:n [:km "w: Phabricator"]]
+                 [:m [:km "w: GitLab"]]
                  [:comma [:km "w: Diagrams"]]
-                 [:period [:km "w: Phabricator"]]
+                 [:period [:km "w: Excalidraw"]]
                  [:slash [:km "w: GitHub PR"]]]} ; TODO:
 ]}
