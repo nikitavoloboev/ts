@@ -319,7 +319,7 @@
                  [:g :!S4]
                  [:j :equal_sign]
                  [:l [:hyphen :!Speriod :spacebar]] ; -> arrow (->)
-                 ;[:semicolon :semicolon]
+                 [:semicolon :semicolon]
                  [:grave_accent_and_tilde :!Sgrave_accent_and_tilde] ; -> //
                  [:z :!Sslash]
                  [:x :!Sbackslash]
@@ -786,15 +786,14 @@
                  [:a :!TO4] ; CleanShot recording
                  ;[:s :!CO5] ; TODO: Pause/unpause ScreenFlow recording
                  [:f :!CO5] ; Start/stop ScreenFlow recording
-                 [:g [:km "w: GCP"]]
-                 [:h [:km "w: AWS"]]
                  [:j [:km "w: YouTube"]]
                  [:k [:km "w: GitHub"]]
                  [:l [:km "w: Localhost"]]
-                 [:semicolon :semicolon]
-                 ;[:n [:km "w: Learn Anything"]]
-                 [:n [:km "w: Phabricator"]]
-                 [:m [:km "w: GitLab"]]
+                 [:semicolon [:km "w: GitLab"]]
+                 [:quote [:km "w: Learn Anything"]]
+                 [:b [:km "w: AWS"]]
+                 [:n [:km "w: GCP"]]
+                 [:m [:km "w: Phabricator"]]
                  [:comma [:km "w: Diagrams"]]
                  [:period [:km "w: Excalidraw"]]
                  [:slash [:km "w: GitHub PR"]]]} ; TODO:
