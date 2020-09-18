@@ -1,9 +1,9 @@
 {:profiles
  {:goku {:default true
-         :sim     50
-         :delay   80
-         :alone   100
-         :held    70}}
+         :alone   85
+         :held    50
+         :delay   0
+         :sim     50}}
  :templates {:alfred "osascript -e 'tell application \"Alfred 4\" to run trigger \"%s\" in workflow \"%s\" with argument \"%s\"'"
              :km "osascript -e 'tell application \"Keyboard Maestro Engine\" to do script \"%s\"'"
              :open "open \"%s\""
@@ -81,10 +81,10 @@
         {:des "swap : and ;"
          :rules [[:#Psemicolon :!Ssemicolon]
                  [:!Ssemicolon :semicolon]]}
-        {:des "right cmd -> Alfred"
-         :rules [[:right_command :right_command nil {:alone :!CTOSspacebar}]]}
         {:des "left cmd -> cmd+tab"
          :rules [[:left_command :left_command nil {:alone :!Ctab}]]}
+        ;{:des "right cmd -> Alfred"
+        ; :rules [[:right_command :right_command nil {:alone :!CTOSspacebar}]]}
         ;{:des "§ -> Karabiner on/off"
         ; :rules [[:non_us_backslash [:km "Karabiner on/off"]]]}
         {:des "jsim"
@@ -204,8 +204,8 @@
                  [:b [:km "open: BetterTouchTool"]]
                  [:n [:km "open: Sublime Text"]]
                  [:m [:km "open: Sublime Merge"]]
-                 [:period [:km "open: Proxyman"]]
-                 ;[:period [:km "open: Cypress"]]
+                 ;[:period [:km "open: Proxyman"]]
+                 [:period [:km "open: Cypress"]]
                  [:spacebar :!CT7]]} ; Start Google search with selection
         {:des "ekey (cmd)"
          :rules [:e-mode
