@@ -692,12 +692,12 @@
                  [:r [:alfred "search alfred" "nikivi.utilities" "react "]]
                  [:t [:alfred "search alfred" "nikivi.utilities" "ts "]]
                  [:a [:alfred "search alfred" "nikivi.utilities" "man "]]
-                 ;[:a [:alfred "search alfred" "nikivi.utilities" "apple "]]
+                 [:d [:alfred "search alfred" "nikivi.utilities" "docker "]]
+                 [:f [:alfred "search alfred" "nikivi.utilities" "apple "]]
                  [:s [:alfred "search alfred" "nikivi.utilities" "lodash "]]
                  [:d [:alfred "search alfred" "nikivi.utilities" "node "]]
-                 [:f [:alfred "search alfred" "nikivi.utilities" "css "]]
                  [:g [:alfred "search alfred" "nikivi.utilities" "godoc "]]
-                 [:c [:alfred "search alfred" "nikivi.utilities" "docker "]]
+                 [:c [:alfred "search alfred" "nikivi.utilities" "css "]]
                  [:v [:alfred "search alfred" "nikivi.utilities" "vim "]]
                  [:b [:alfred "search alfred" "nikivi.utilities" "bash "]]]}
          {:des "dotkey (1-3, q-u, caps, tab)"

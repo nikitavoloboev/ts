@@ -43,7 +43,7 @@
   "files.insertFinalNewline": true,
   "files.eol": "\n",
   // Workbench
-  "workbench.colorTheme": "GitHub Light",
+  "workbench.colorTheme": "GitHub Dark",
   "workbench.preferredLightColorTheme": "GitHub Light",
   "workbench.preferredDarkColorTheme": "GitHub Dark",
   "workbench.list.horizontalScrolling": true,
@@ -61,7 +61,7 @@
   // },
   // Window
   "window.autoDetectColorScheme": true,
-  "window.zoomLevel": -2,
+  "window.zoomLevel": -1,
   "window.restoreWindows": "all",
   "window.newWindowDimensions": "maximized",
   // Breadcrumbs
@@ -240,5 +240,8 @@
         "underline": "#368ddc"
       }
     }
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   }
 }
