@@ -786,6 +786,7 @@
                  [:a :!TO4] ; CleanShot recording
                  ;[:s :!CO5] ; TODO: Pause/unpause ScreenFlow recording
                  [:f :!CO5] ; Start/stop ScreenFlow recording
+                 [:h [:km "w: Roam Research"]]
                  [:j [:km "w: YouTube"]]
                  [:k [:km "w: GitHub"]]
                  [:l [:km "w: Localhost"]]
