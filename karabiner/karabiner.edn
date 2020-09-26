@@ -466,7 +466,6 @@
                  [:i :!Ckeypad_hyphen] ; Zoom out
                  [:o :!Ckeypad_plus] ; Zoom in
                  [:a [:!Cc :!Ctab]] ; Copy & activate previous app
-                 ;[:f [:km "Middle click & right tab"]]
                  [:j {:mkey {:vwheel 60}}] ; Scroll down
                  [:k {:mkey {:vwheel -60}}] ; Scroll up
                  [:l [:km "Google clipboard"]]
@@ -631,8 +630,7 @@
                  [:spacebar :!CSOv]]} ; Selection -> Google Images
         {:des "bkey (break)"
          :rules [:b-mode
-                 [:7 [:alfred "search hn" "com.vitorgalvao.alfred.hackerboard"]]
-                 [:8 [:km "w: HckrNews"]]
+                 [:8 [:alfred "search hn" "com.vitorgalvao.alfred.hackerboard"]]
                  [:9 [:km "w: Lobsters"]]
                  [:0 [:km "w: HN"]]
                  [:q [:km "w: KM forum"]]
@@ -655,6 +653,7 @@
                  [:k [:km "w: GitHub (front page)"]]
                  [:l [:km "w: Lobsters (new)"]]
                  [:semicolon [:km "w: HN (new)"]]
+                 [:quote [:km "w: HckrNews"]]
                  [:n [:km "w: Inoreader"]]
                  [:m [:km "w: Mastodon"]]
                  [:comma [:km "w: GitHub (trending)"]]
