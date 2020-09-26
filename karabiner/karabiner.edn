@@ -466,6 +466,7 @@
                  [:i :!Ckeypad_hyphen] ; Zoom out
                  [:o :!Ckeypad_plus] ; Zoom in
                  [:a [:!Cc :!Ctab]] ; Copy & activate previous app
+                 ;[:f [:km "Middle click & right tab"]]
                  [:j {:mkey {:vwheel 60}}] ; Scroll down
                  [:k {:mkey {:vwheel -60}}] ; Scroll up
                  [:l [:km "Google clipboard"]]
@@ -634,7 +635,6 @@
                  [:e [:km "w: Behance"]]
                  [:r [:km "w: Medium (network)"]]
                  [:t [:km "w: Medium (bookmarks)"]]
-                 [:u [:km "w: Product Hunt (new)"]]
                  [:i [:km "w: Dribble"]]
                  [:o [:km "w: Pinboard"]]
                  [:p [:km "w: HN (show new)"]]
@@ -645,13 +645,16 @@
                  [:d [:km "w: Indie Hackers"]]
                  [:f [:km "w: Alfred Forum"]]
                  [:h [:alfred "search hn" "com.vitorgalvao.alfred.hackerboard"]]
-                 [:j [:km "w: HckrNews"]]
+                 ;[:j [:km "w: HckrNews"]]
+                 [:h [:km "w: Product Hunt (new)"]]
+                 [:j [:km "w: HN (new)"]]
                  [:k [:km "w: GitHub (front page)"]]
-                 [:l [:km "w: Lobsters"]]
-                 [:semicolon [:km "w: HN (new)"]]
-                 [:quote [:km "w: Lobsters (new)"]]
-                 [:n [:km "w: HN"]]
-                 [:m [:km "w: Product Hunt"]]
+                 [:l [:km "w: Lobsters (new)"]]
+                 [:semicolon [:km "w: Reddit (new)"]]
+                 ;[:l [:km "w: Lobsters"]]
+                 ;[:n [:km "w: HN"]]
+                 [:n [:km "w: Inoreader"]]
+                 [:m [:km "w: Mastodon"]]
                  [:comma [:km "w: GitHub (trending)"]]
                  [:period [:km "w: YouTube (subs)"]]
                  [:spacebar :!TOSs]]} ; Selection -> DuckDuckGo

@@ -9,6 +9,7 @@
   "editor.scrollBeyondLastLine": false,
   "editor.tabSize": 2,
   "editor.lineHeight": 26,
+  // "editor.lineNumbers": "off",
   "editor.occurrencesHighlight": false,
   "editor.overviewRulerBorder": false,
   "editor.renderIndentGuides": true,
@@ -17,7 +18,6 @@
   "editor.lightbulb.enabled": false,
   "editor.minimap.enabled": false,
   "editor.cursorBlinking": "solid",
-  "editor.lineNumbers": "off",
   "editor.cursorStyle": "line",
   "editor.fontFamily": "JetBrains Mono",
   "editor.fontLigatures": true,
@@ -55,10 +55,18 @@
   "workbench.editor.showIcons": false,
   "workbench.settings.enableNaturalLanguageSearch": false,
   "workbench.statusBar.visible": false, // formatting only supports LF line endings
+  "workbench.sideBar.location": "left",
   // Color changes
-  // "workbench.colorCustomizations": {
-  //   "editorGutter.background": "#ffffff",
-  // },
+  "workbench.colorCustomizations": {
+    "[GitHub Dark]": {
+      "editorLineNumber.foreground": "#23292f",
+      "editor.lineHighlightBackground": "#23292f"
+    },
+    "[GitHub Light]": {
+      "editorLineNumber.foreground": "#ffffff",
+      "editor.lineHighlightBackground": "#ffffff"
+    }
+  },
   // Window
   "window.autoDetectColorScheme": true,
   "window.zoomLevel": -2,
@@ -72,6 +80,7 @@
   "debug.toolBarLocation": "hidden",
   // Search
   "search.quickOpen.includeHistory": false,
+  "search.searchEditor.defaultNumberOfContextLines": null,
   "search.smartCase": true,
   "search.exclude": {
     "**/node_modules": true,

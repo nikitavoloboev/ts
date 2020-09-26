@@ -68,7 +68,7 @@ set ignorecase " Search case insensitive:
 set smartcase " .. but not when search pattern contains upper case characters
 set nocursorcolumn
 set nocursorline
-set number
+set number " See line numbers
 set wrap
 set textwidth=79
 set formatoptions=qrn1
@@ -197,6 +197,5 @@ autocmd VimLeave * set guicursor=a:ver25-blinkon25 " Make cursor block when leav
 set signcolumn=yes
 set foldcolumn=0 " Remove sidebar column
 
-" only show active line number
-hi LineNr ctermfg=16 guifg=bg
-
+" only show active line number. colored black.
+hi CursorLineNr guifg=#050505
