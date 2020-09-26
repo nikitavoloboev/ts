@@ -199,3 +199,4 @@ set foldcolumn=0 " Remove sidebar column
 
 " only show active line number. colored black.
 hi CursorLineNr guifg=#050505
+hi LineNr guifg=#ffffff
