@@ -363,7 +363,6 @@
                  [:3 :!TO3] ; Screenshot -> Annotate
                  [:4 :!TO9] ; Picture of screen -> Clipboard
                  [:5 :!TO0] ; Picture of screen -> ~/Desktop
-                 [:q [:km "Open 2Do Life"]]
                  [:w [:km "wiki: My workflow"]]
                  [:e [:km "edit: Private notes"]]
                  [:r [:km "wiki: Rules"]]
@@ -377,8 +376,8 @@
                  [:s [:km "Open 2Do Wiki"]]
                  [:d [:open "notion://nikitavoloboev/Ideas-0b5a4e8a88f34fe29a1f33dad02e5332"]]
                  [:f [:km "Search 2Do"]]
-                 [:g [:open "notion://nikitavoloboev/Learn-05c0eac7be904e0da89cd8a3bf7ab509"]]
-                 [:h [:open "notion://nikitavoloboev/Papers-Courses-8f00c7c500d5460490a5800c5d5db431"]]
+                 [:g [:km "Open 2Do Life"]]
+                 [:h [:open "notion://nikitavoloboev/Learn-05c0eac7be904e0da89cd8a3bf7ab509"]]
                  [:j [:km "Open 2Do Today"]]
                  [:k [:km "Open 2Do GitHub"]]
                  [:l [:km "Open 2Do Later"]]
@@ -386,6 +385,7 @@
                  [:quote [:km "Open 2Do Other"]] ; TODO: remove once its empty
                  [:c [:km "Look back"]]
                  [:v [:km "wiki: Goals"]]
+                 [:b [:open "notion://nikitavoloboev/Papers-Courses-8f00c7c500d5460490a5800c5d5db431"]]
                  [:n [:km "Open 2Do Clean"]]
                  [:m [:km "Open 2Do Work"]]
                  [:period [:km "Open 2Do LA"]]]}
@@ -630,8 +630,8 @@
                  [:spacebar :!CSOv]]} ; Selection -> Google Images
         {:des "bkey (break)"
          :rules [:b-mode
-                 [:7 [:km "w: Product Hunt"]]
-                 [:8 [:alfred "search hn" "com.vitorgalvao.alfred.hackerboard"]]
+                 [:7 [:alfred "search hn" "com.vitorgalvao.alfred.hackerboard"]]
+                 [:8 [:km "w: Product Hunt"]]
                  [:9 [:km "w: Lobsters"]]
                  [:0 [:km "w: HN"]]
                  [:q [:km "w: KM forum"]]
