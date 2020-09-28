@@ -660,6 +660,7 @@
                  [:m [:km "w: Mastodon"]]
                  [:comma [:km "w: GitHub (trending)"]]
                  [:period [:km "w: YouTube (subs)"]]
+                 [:slash [:km "w: GitHub (explore)"]]
                  [:spacebar :!TOSs]]} ; Selection -> DuckDuckGo
         {:des "nkey (alfred)"
          :rules [:n-mode
