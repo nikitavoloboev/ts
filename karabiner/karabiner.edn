@@ -630,6 +630,7 @@
                  [:spacebar :!CSOv]]} ; Selection -> Google Images
         {:des "bkey (break)"
          :rules [:b-mode
+                 [:7 [:km "w: Product Hunt"]]
                  [:8 [:alfred "search hn" "com.vitorgalvao.alfred.hackerboard"]]
                  [:9 [:km "w: Lobsters"]]
                  [:0 [:km "w: HN"]]
@@ -637,6 +638,7 @@
                  [:e [:km "w: Behance"]]
                  [:r [:km "w: Medium (network)"]]
                  [:t [:km "w: Medium (bookmarks)"]]
+                 [:i [:km "w: Reddit"]]
                  [:u [:km "w: Reddit (all)"]]
                  [:i [:km "w: Dribble"]]
                  [:o [:km "w: Pinboard"]]

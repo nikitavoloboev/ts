@@ -221,7 +221,6 @@
   "git.enableSmartCommit": true,
   "git.ignoreMissingGitWarning": true,
   // GitLens
-  "gitlens.codeLens.enabled": false,
   "gitlens.keymap": "chorded",
   "gitlens.codeLens.scopes": ["containers", "document"],
   "gitlens.views.fileHistory.enabled": true,
