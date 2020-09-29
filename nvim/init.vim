@@ -124,7 +124,7 @@ set grepformat^=%f:%l:%c:%m
 set viewoptions=cursor,slash,unix
 
 " Theme (mirage, light)
-let ayucolor="light"
+let ayucolor="mirage"
 colorscheme ayu
 
 " Bufferline
@@ -178,6 +178,9 @@ nnoremap <Leader>s :source ~/.dotfiles/nvim/init.vim<CR>
 " Space d
 nmap <Leader>d :bd<CR>
 
+" Space f
+nmap <Leader>f :source ~/.dotfiles/nvim/init.vim<CR>
+
 " Auto commands
 au FileType dirvish call fugitive#detect(@%)
 au FocusLost * :wa " Auto save everything
@@ -197,6 +200,10 @@ autocmd VimLeave * set guicursor=a:ver25-blinkon25 " Make cursor block when leav
 set signcolumn=yes
 set foldcolumn=0 " Remove sidebar column
 
-" only show active line number. colored black.
-hi CursorLineNr guifg=#050505
-hi LineNr guifg=#ffffff
+" only show active line number
+if ayucolor ==# "light"
+    hi CursorLineNr guifg=#050505
+    hi LineNr guifg=#ffffff
+else
+    hi LineNr guifg=#23292c
+endif

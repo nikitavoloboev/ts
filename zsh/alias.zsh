@@ -106,6 +106,7 @@ alias cos='docker-compose ps'
 alias ca='docker container ls'
 alias css='docker stop $(docker ps -a -q)' # Stop running containers
 alias csr='docker rm -f $(docker ps -q)' # Stop & remove running containers
+# alias csr='docker kill $(docker ps -q)' # Kill active containers
 
 # Kubernetes
 alias k='kubectl'
