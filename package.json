@@ -1,0 +1,19 @@
+{
+  "name": "bun",
+  "type": "module",
+  "devDependencies": {
+    "bun-types": "^0.5.0"
+  },
+  "prettier": {
+    "semi": false
+  },
+  "dependencies": {
+    "@clack/core": "^0.2.0",
+    "@clack/prompts": "^0.5.0",
+    "chatgpt": "^4.7.1",
+    "dotenv": "^16.0.3",
+    "execa": "^7.0.0",
+    "magic-regexp": "^0.6.2",
+    "zx": "^7.1.1"
+  }
+}
