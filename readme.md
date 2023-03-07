@@ -2,7 +2,7 @@
 
 I run all code with [Bun](https://bun.sh).
 
-Neet to setup a nice way to export things inside [lib](lib) folder to NPM.
+Need to setup a nice way to export things inside [lib](lib) folder to NPM.
 
 ## Develop
 
