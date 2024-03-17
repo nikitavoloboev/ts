@@ -5,10 +5,7 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "bun-types": "^0.5.0"
-  },
-  "dependencies": {
-    "@nikiv/util": "^0.0.1"
+    "bun-types": "canary"
   },
   "prettier": {
     "semi": false

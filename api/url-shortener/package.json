@@ -4,10 +4,10 @@
     "deploy": "wrangler publish src/index.ts"
   },
   "dependencies": {
-    "hono": "^3.12.6"
+    "hono": "^4.1.1"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "^4.20240117.0",
-    "wrangler": "^3.23.0"
+    "@cloudflare/workers-types": "^4.20240314.0",
+    "wrangler": "^3.34.2"
   }
 }

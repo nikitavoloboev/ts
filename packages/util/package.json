@@ -28,15 +28,12 @@
     "./dist"
   ],
   "license": "MIT",
-  "devafependencies": {
-    "tsup": "^7.2.0",
+  "devDependencies": {
+    "tsup": "^8.0.2",
     "bun-types": "canary",
-    "typescript": "^5.2.2"
+    "typescript": "^5.4.2"
   },
   "prettier": {
     "semi": false
-  },
-  "dependencies": {
-    "@types/bun": "^1.0.8"
   }
 }
