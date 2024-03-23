@@ -36,3 +36,12 @@ const homotopy: Homotopy<number, number> = (t, s) =>
 // Compute the value of the homotopy at a specific point
 const value = homotopy(0.7, 0.3)(0.5);
 console.log(value);
+
+// In above example:
+// The Path<A, B> type represents a path between two elements of types A and B. It is defined as a function that takes a parameter t (representing the path parameter) and returns either an element of type A or B.
+// The refl function represents the identity path, which is a path from an element to itself.
+// The compose function represents path composition, allowing you to combine two paths into a single path.
+// The Homotopy<A, B> type represents a homotopy between two paths. It is defined as a function that takes two parameters: t (representing the homotopy parameter) and s (representing the path parameter), and returns a Path<A, B>.
+// The constHomotopy function represents a constant homotopy between two identical paths.
+// The homotopyCompose function represents homotopy composition, allowing you to combine two homotopies into a single homotopy.
+// In the example usage, we define two paths (path1 and path2) and a homotopy between them. We then compute the value of the homotopy at a specific point using homotopy(0.7, 0.3)(0.5).
