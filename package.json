@@ -47,5 +47,8 @@
     "ufo": "^1.5.1",
     "watcher": "^2.3.0",
     "zx": "^7.2.3"
+  },
+  "prettier": {
+    "semi": false
   }
 }

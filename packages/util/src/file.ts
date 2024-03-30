@@ -261,3 +261,17 @@ export async function checkIfFieldExistsInJsonFile(
   const json = JSON.parse(data)
   return json[fieldName] !== undefined
 }
+
+// TODO: broken
+export function getMarkdownFiles(dirPath: string) {
+  let mdFiles = <string[]>[]
+  fs.readdirSync(dirPath).forEach((file) => {
+    const fullPath = path.join(dirPath, file)
+    if (fs.statSync(fullPath).isDirectory()) {
+      mdFiles = mdFiles.concat(getMarkdownFiles(fullPath))
+    } else if (path.extname(fullPath) === ".md") {
+      mdFiles.push(fullPath)
+    }
+  })
+  return mdFiles
+}
