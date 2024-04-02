@@ -2,7 +2,7 @@
 
 > Redirecting URLs
 
-## File structure
+## Files
 
 - [src](src)
   - [index.ts](src/index.ts) - API routes defined with [Hono](https://hono.dev/)

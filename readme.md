@@ -2,7 +2,7 @@
 
 > TS libraries and other code
 
-## File structure
+## Files
 
 - [packages](packages) - TS packages
   - [util](packages/util) - Utility functions
