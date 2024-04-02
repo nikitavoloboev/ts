@@ -10,6 +10,11 @@ async function transformClipboard() {
     case "clean-timestamps-from-cloudflare-logs":
       await appendToClipboard(clean)
       break
+    case "clean-timestamps-from-cloudflare-logs-for-gpt": {
+      const formattedClean = `These are build logs from Cloudflare Pages.\n\n${clean}\n\nFix it.`
+      await appendToClipboard(formattedClean)
+      break
+    }
     case undefined:
       console.log("No command provided")
       break
