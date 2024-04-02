@@ -4,15 +4,19 @@ async function transformClipboard() {
   const args = Bun.argv
   const command = args[2]
   const clipboard = await getClipboard()
-  const clean = cleanTimestampsFromCloudflareLogs(clipboard)
 
   switch (command) {
-    case "clean-timestamps-from-cloudflare-logs":
-      await appendToClipboard(clean)
+    case "clean-timestamps-from-cloudflare-logs": {
+      const cloudFlareLogsWithoutTimestamps =
+        cleanTimestampsFromCloudflareLogs(clipboard)
+      await appendToClipboard(cloudFlareLogsWithoutTimestamps)
       break
+    }
     case "clean-timestamps-from-cloudflare-logs-for-gpt": {
-      const formattedClean = `These are build logs from Cloudflare Pages.\n\n${clean}\n\nFix it.`
-      await appendToClipboard(formattedClean)
+      const cloudFlareLogsWithoutTimestamps =
+        cleanTimestampsFromCloudflareLogs(clipboard)
+      const instructionsToFix = `These are build logs from Cloudflare Pages.\n\n${cloudFlareLogsWithoutTimestamps}\n\nFix it.`
+      await appendToClipboard(instructionsToFix)
       break
     }
     case undefined:
