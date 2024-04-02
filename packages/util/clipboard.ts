@@ -4,7 +4,9 @@ export function getClipboard() {
   return clipboard.readSync()
 }
 
-export function appendToClipboard(newClipboard: string | object | Array<any>) {
+export function appendToClipboard(
+  newClipboard: string | object | Array<unknown>,
+) {
   if (typeof newClipboard === "object" || Array.isArray(newClipboard)) {
     clipboard.writeSync(JSON.stringify(newClipboard))
     return

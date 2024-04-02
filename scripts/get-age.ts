@@ -5,7 +5,7 @@ if (date) {
   console.log(getAge(date))
 }
 
-function getAge(dateString: string): string {
+function getAge(dateString: string) {
   const today = new Date()
   const [day, month, year] = dateString.split("/")
   const birthDate = new Date(`${month}/${day}/${year}`)
