@@ -24,4 +24,4 @@ wip.json
 wip.md
 bun.lockb
 *.gz
-packages/util
+packages/ts-utils
