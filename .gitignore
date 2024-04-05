@@ -1,5 +1,10 @@
+# core
+.DS_Store
 node_modules
 .env
+.env*.local
+
+# other
 *.db
 private/*
 lib/git
@@ -19,3 +24,4 @@ wip.json
 wip.md
 bun.lockb
 *.gz
+packages/util
