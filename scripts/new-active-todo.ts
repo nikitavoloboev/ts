@@ -1,8 +1,7 @@
 import { promises as fs } from "fs"
 import path from "path"
 import os from "os"
-import { getClipboard } from "../packages/util/clipboard.js"
-// import { readJsonFromFile } from "@nikiv/util"
+import { getClipboard } from "../packages/ts-utils/mod.js"
 
 const args = Bun.argv
 const app = args[2]

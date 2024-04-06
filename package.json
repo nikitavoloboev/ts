@@ -10,9 +10,6 @@
     "test:util": "bun test --watch packages/util/src/util.test.ts",
     "node": "tput reset && tsx run.ts"
   },
-  "workspaces": [
-    "packages/ts-utils"
-  ],
   "dependencies": {
     "@clack/core": "^0.3.4",
     "@clack/prompts": "^0.7.0",
