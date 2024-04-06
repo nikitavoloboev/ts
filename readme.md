@@ -4,10 +4,10 @@
 
 ## Setup
 
-[Bun](https://bun.sh/) is used to run/install things.
+[PNPM](https://pnpm.io) is used to manage dependencies. [Bun](https://bun.sh) is used to run things.
 
 ```
-bun i
+pnpm i
 ```
 
 ## Run

@@ -1,14 +1,13 @@
-// TODO: should use packages (pnpm/bun workspace setup)
-import { getClipboard } from "../packages/util/clipboard.js"
+import { appendObjectToJsonArrayFile } from "@nikiv/ts-utils/bun/file.js"
+import { getClipboard } from "@nikiv/ts-utils/src/clipboard.js"
 import {
   getCurrentMonth,
   getCurrentMonthAndDay,
-} from "../packages/util/src/date.js"
-import { appendObjectToJsonArrayFile } from "../packages/util/src/file.js"
+} from "@nikiv/ts-utils/src/date.js"
 import {
   getCurrentSafariTechPreviewUrlAndTitle,
   getCurrentSafariUrlAndTitle,
-} from "../packages/util/src/safari.js"
+} from "@nikiv/ts-utils/src/safari.js"
 
 const args = Bun.argv
 
