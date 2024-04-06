@@ -9,10 +9,7 @@
 It requires [ts-utils](https://github.com/nikitavoloboev/ts-utils) to be present in packages.
 
 ```
-mkdir packages
-cd packages
-git clone https://github.com/nikitavoloboev/ts-utils
-cd ..
+mkdir packages && cd packages && git clone https://github.com/nikitavoloboev/ts-utils && cd ..
 bun i
 ```
 
