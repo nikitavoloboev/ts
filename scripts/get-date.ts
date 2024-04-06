@@ -1,7 +1,4 @@
-import {
-  getCurrentMonth,
-  getCurrentMonthAndDay,
-} from "../packages/util/src/date.js"
+import { getCurrentMonth, getCurrentMonthAndDay } from "@nikiv/ts-utils"
 
 const args = Bun.argv
 

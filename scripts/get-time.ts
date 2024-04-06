@@ -6,7 +6,8 @@ if (timezone) {
 }
 
 // TODO: add more timezones
-function getCurrentTime(timezone: "sf" | "all") {
+// timezone type should be: "sf" | "all"
+function getCurrentTime(timezone: string) {
   const date = new Date()
   const options: Intl.DateTimeFormatOptions = {
     timeZone: "America/Los_Angeles",

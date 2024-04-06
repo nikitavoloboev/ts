@@ -1,11 +1,11 @@
 import {
   readConfigFileValue,
   updateConfigFile,
-} from "../packages/util/src/file.js"
+} from "@nikiv/ts-utils/bun/file.js"
 
 const dailyBreaksAllowed = await readConfigFileValue(
   ".focus",
-  "dailyBreaksAllowed"
+  "dailyBreaksAllowed",
 )
 if (Number(dailyBreaksAllowed) > 0) {
   const forcedBreakTimeEnd = new Date()
@@ -14,7 +14,7 @@ if (Number(dailyBreaksAllowed) > 0) {
   await updateConfigFile(
     ".focus",
     "forcedBreakTimeEnd",
-    forcedBreakTimeEndString
+    forcedBreakTimeEndString,
   )
   const updatedBreaksAllowed = (Number(dailyBreaksAllowed) - 1).toString()
   await updateConfigFile(".focus", "dailyBreaksAllowed", updatedBreaksAllowed)

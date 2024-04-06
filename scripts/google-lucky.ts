@@ -1,5 +1,5 @@
+import { getClipboard } from "@nikiv/ts-utils/src/clipboard.js"
 import open from "open"
-import { getClipboard } from "../packages/util/clipboard.js"
 
 async function getFinalUrl(url) {
   const response = await fetch(url, {

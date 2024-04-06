@@ -1,4 +1,4 @@
-import { readConfigFileValue } from "../packages/util/src/file.js"
+import { readConfigFileValue } from "@nikiv/ts-utils/bun/file.js"
 
 console.log(await focusing())
 

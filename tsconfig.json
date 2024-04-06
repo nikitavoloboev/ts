@@ -13,10 +13,7 @@
     "forceConsistentCasingInFileNames": true,
     "allowJs": true,
     "outDir": "./dist",
-    "types": [
-      "bun-types", // add Bun global
-      "node"
-    ]
+    "types": ["bun-types", "node"]
   },
   "exclude": ["**/*.cjs", "**/postcss.config.cjs"]
 }
