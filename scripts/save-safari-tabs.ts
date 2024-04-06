@@ -1,7 +1,7 @@
 import os from "os"
 import path from "path"
 import fs from "fs"
-import { executeJxa } from "../packages/util/src/jxa.js"
+import { executeJxa } from "../packages/ts-utils/src/jxa.js"
 
 // TODO: support safari tech preview
 
