@@ -1,7 +1,7 @@
 import {
   readConfigFileValue,
   updateConfigFile,
-} from "@nikiv/ts-utils/bun/file.js"
+} from "../packages/ts-utils/bun/file.js"
 
 const dailyBreaksAllowed = await readConfigFileValue(
   ".focus",

@@ -4,10 +4,16 @@
 
 ## Setup
 
-[PNPM](https://pnpm.io) is used to manage dependencies. [Bun](https://bun.sh) is used to run things.
+[Bun](https://bun.sh) is used to run/install things.
+
+It requires [ts-utils](https://github.com/nikitavoloboev/ts-utils) to be present in packages.
 
 ```
-pnpm i
+mkdir packages
+cd packages
+git clone https://github.com/nikitavoloboev/ts-utils
+cd ..
+bun i
 ```
 
 ## Run

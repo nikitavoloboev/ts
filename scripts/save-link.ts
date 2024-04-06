@@ -1,14 +1,3 @@
-import { appendObjectToJsonArrayFile } from "@nikiv/ts-utils/bun/file.js"
-import { getClipboard } from "@nikiv/ts-utils/src/clipboard.js"
-import {
-  getCurrentMonth,
-  getCurrentMonthAndDay,
-} from "@nikiv/ts-utils/src/date.js"
-import {
-  getCurrentSafariTechPreviewUrlAndTitle,
-  getCurrentSafariUrlAndTitle,
-} from "@nikiv/ts-utils/src/safari.js"
-
 const args = Bun.argv
 
 console.log(await main())
