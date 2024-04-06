@@ -1,5 +1,5 @@
+import { getCurrentSafariTechPreviewUrlAndTitle } from "@nikiv/ts-utils"
 import { test } from "bun:test"
-import { getCurrentSafariTechPreviewUrlAndTitle } from "../packages/util/src/safari.js"
 
 test("Scripts", async () => {
   const res = await getCurrentSafariTechPreviewUrlAndTitle()

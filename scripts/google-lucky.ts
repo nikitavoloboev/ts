@@ -1,7 +1,7 @@
 import { getClipboard } from "@nikiv/ts-utils/src/clipboard.js"
 import open from "open"
 
-async function getFinalUrl(url) {
+async function getFinalUrl(url: string) {
   const response = await fetch(url, {
     method: "GET",
     redirect: "follow",

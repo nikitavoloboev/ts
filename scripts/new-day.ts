@@ -1,4 +1,4 @@
-import { updateConfigFile } from "../packages/util/src/file.js"
+import { updateConfigFile } from "@nikiv/ts-utils"
 
 await createFocusConfig()
 
@@ -8,7 +8,7 @@ async function createFocusConfig() {
   await updateConfigFile(
     ".focus",
     "dailyBreaksAllowed",
-    dailyBreaksAllowed.toString()
+    dailyBreaksAllowed.toString(),
   )
   await updateConfigFile(".focus", "forcedBreakTimeEnd", "")
 }

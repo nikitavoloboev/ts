@@ -1,9 +1,9 @@
+import { getClipboard } from "@nikiv/ts-utils"
 import fs from "fs"
 import open from "open"
 import path from "path"
-import { getClipboard } from "../packages/util/clipboard.js"
 
-function findNearestGitFolder(startPath) {
+function findNearestGitFolder(startPath: string) {
   let currentPath = startPath
 
   while (currentPath !== path.parse(currentPath).root) {

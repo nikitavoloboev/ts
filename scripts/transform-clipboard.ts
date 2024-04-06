@@ -1,4 +1,4 @@
-import { appendToClipboard, getClipboard } from "../packages/util/clipboard.js"
+import { appendToClipboard, getClipboard } from "@nikiv/ts-utils"
 
 async function transformClipboard() {
   const args = Bun.argv

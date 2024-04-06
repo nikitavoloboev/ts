@@ -5,13 +5,13 @@ import {
   getCurrentMonthAndDay,
   getCurrentSafariTechPreviewUrlAndTitle,
   getCurrentSafariUrlAndTitle,
-} from "../packages/ts-utils/mod.js"
+} from "@nikiv/ts-utils"
 
 const args = Bun.argv
 
 console.log(await main())
 async function main() {
-  const fileName = getCurrentMonth().toLocaleLowerCase() + `.json`
+  const fileName = getCurrentMonth()!.toLocaleLowerCase() + `.json`
   const filePath = `~/data/links/${fileName}`
   let newLink
   switch (args[2]) {

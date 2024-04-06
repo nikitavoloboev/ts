@@ -1,19 +1,26 @@
 {
   "compilerOptions": {
-    "lib": ["ESNext", "DOM"],
-    "module": "Node16",
     "target": "esnext",
-    "strict": true,
-    "moduleResolution": "Node16",
-    "downlevelIteration": true,
-    "skipLibCheck": true,
-    "jsx": "preserve",
-    "noImplicitAny": false,
+    "module": "esnext",
+    "lib": ["ESNext", "dom"],
+    "moduleResolution": "node",
+    "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "strict": true,
     "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "noEmit": true,
     "allowJs": true,
-    "outDir": "./dist",
-    "types": ["bun-types", "node"]
+    "paths": {
+      "@grafbase/generated": ["./api/grafbase/generated"]
+    },
+    "allowImportingTsExtensions": true,
+    "moduleDetection": "force",
+    "composite": true,
+    "downlevelIteration": true,
+    "noUncheckedIndexedAccess": true,
+    "types": ["bun-types"]
   },
-  "exclude": ["**/*.cjs", "**/postcss.config.cjs"]
+  "include": ["**/*.ts", "**/*.tsx", "**/*.js"]
 }
