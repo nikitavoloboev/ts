@@ -18,6 +18,7 @@
     "@orama/orama": "^2.0.11",
     "@types/node": "^20.11.28",
     "@upstash/redis": "^1.28.4",
+    "arktype": "^2.0.0.dev-5",
     "chatgpt": "^5.2.5",
     "citty": "^0.1.6",
     "clipboardy": "^4.0.0",

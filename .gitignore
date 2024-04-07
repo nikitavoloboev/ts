@@ -25,3 +25,4 @@ wip.md
 bun.lockb
 *.gz
 packages/ts-utils
+.flox
