@@ -1,5 +1,7 @@
 import { type } from "arktype"
 
+// -- basic validation
+
 // Definitions are statically parsed and inferred as TS.
 export const user = type({
   name: "string",
@@ -14,17 +16,48 @@ export const { out, errors } = user({
   name: "Alan Turing",
   device: {
     // errors.summary: "device/platform must be 'android' or 'ios' (was 'enigma')"
-    platform: "ios",
+    platform: "testing",
   },
 })
+// console.log(errors)
 
-// console.log(out)
-
-const out2 = user.assert({
+// assert
+const assertTest = user.assert({
   name: "Alan Turing",
   device: {
     // errors.summary: "device/platform must be 'android' or 'ios' (was 'enigma')"
     platform: "wat",
   },
 })
-console.log(out2)
+console.log(assertTest)
+
+// -- scope
+
+import { scope } from "arktype"
+
+// Scopes are collections of types that can reference each other.
+export const types = scope({
+  package: {
+    name: "string",
+    "dependencies?": "package[]",
+    "contributors?": "contributor[]",
+  },
+  contributor: {
+    // Subtypes like 'email' are inferred like 'string' but provide additional validation at runtime.
+    email: "email",
+    "packages?": "package[]",
+  },
+}).export()
+
+// Cyclic types are inferred to arbitrary depth...
+export type Package = typeof types.package.infer
+
+// And can validate cyclic data.
+const packageData: Package = {
+  name: "arktype",
+  dependencies: [{ name: "typescript" }],
+  contributors: [{ email: "david@sharktypeio" }],
+}
+// packageData.dependencies![0].dependencies = [packageData]
+
+// export const { data, problems } = types.package(packageData)
