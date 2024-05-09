@@ -3,6 +3,7 @@
   "scripts": {
     "watch": "bun cmd.ts run",
     "dev": "bun --watch run.ts",
+    "try": "bun --watch try/try.ts",
     "cmd": "bun --watch cmd.ts",
     "build": "tsup lib/file.ts --format esm --dts",
     "test:watch": "bun test --watch",
@@ -16,6 +17,7 @@
     "@libsql/client": "^0.5.6",
     "@nozbe/microfuzz": "^1.0.0",
     "@orama/orama": "^2.0.11",
+    "@swan-io/boxed": "^2.3.0",
     "@types/node": "^20.11.28",
     "@upstash/redis": "^1.28.4",
     "arktype": "^2.0.0.dev-5",
