@@ -1,6 +1,8 @@
-import { writeContentToDesktopFile } from "@nikiv/ts-utils"
-import { getClipboard } from "@nikiv/ts-utils/src/clipboard.js"
-import { isValidBase64 } from "@nikiv/ts-utils/src/other"
+import {
+  writeContentToDesktopFile,
+  getClipboard,
+  isValidBase64,
+} from "@nikiv/ts-utils"
 
 // takes a base64 string from clipboard and writes it to a file
 // by default its `~/Desktop/base64-decoded.png`
