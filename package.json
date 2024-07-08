@@ -12,6 +12,7 @@
     "node": "tput reset && tsx run.ts"
   },
   "dependencies": {
+    "@nikiv/ts-utils": "link:@nikiv/ts-utils",
     "@clack/core": "^0.3.4",
     "@clack/prompts": "^0.7.0",
     "@libsql/client": "^0.5.6",
