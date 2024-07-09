@@ -15,9 +15,8 @@ async function main() {
           await $`tput reset && bun ${event}`
         }
       })
-      if (args[3]) {
-        await $`tput reset && bun scripts/${args[3]}.ts`
-      }
+    case "run-script":
+      await $`tput reset && bun --watch scripts/${args[3]}.ts`
       break
     // trigger fzf search over all scripts and run them with bun --watch
     case undefined:
