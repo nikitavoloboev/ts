@@ -16,5 +16,4 @@ async function main() {
   await commitRepoWithDot(gitDir)
 }
 
-// test
 main()
