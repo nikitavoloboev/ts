@@ -5,6 +5,7 @@ import {
 } from "@nikiv/ts-utils"
 
 // TODO: always prompts for pass, annoying, not sure how to make it not ask for pass
+// there is attempt to do it below with ssh but that is failing even more
 
 // assumes clipboard has file path that is inside some .git folder
 async function main() {
