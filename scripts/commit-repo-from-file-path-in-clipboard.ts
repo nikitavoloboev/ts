@@ -19,38 +19,53 @@ async function main() {
 
     const gitDir = findGitDirPath(clipboardContent)
 
-    // Start SSH agent and get its environment variables
-    console.log("Starting SSH agent...")
-    let sshAgentOutput: string
+    // Check if SSH agent is already running
+    console.log("Checking for existing SSH agent...")
+    let sshAgentPid: string | undefined
     try {
-      const sshAgentResult = await $`ssh-agent -s`
-      sshAgentOutput = sshAgentResult.stdout.toString().trim()
+      sshAgentPid = process.env.SSH_AGENT_PID
+      if (sshAgentPid) {
+        console.log("Existing SSH agent found.")
+      } else {
+        console.log("Starting new SSH agent...")
+        const sshAgentResult = await $`ssh-agent -s`
+        const sshAgentOutput = sshAgentResult.stdout.toString().trim()
 
-      const envVars = sshAgentOutput.split(";").reduce(
-        (acc, line) => {
-          const [key, value] = line.split("=")
-          if (key && value) {
-            acc[key.trim()] = value.trim()
-          }
-          return acc
-        },
-        {} as Record<string, string>,
-      )
+        const envVars = sshAgentOutput.split(";").reduce(
+          (acc, line) => {
+            const [key, value] = line.split("=")
+            if (key && value) {
+              acc[key.trim()] = value.trim()
+            }
+            return acc
+          },
+          {} as Record<string, string>,
+        )
 
-      process.env.SSH_AUTH_SOCK = envVars.SSH_AUTH_SOCK
-      process.env.SSH_AGENT_PID = envVars.SSH_AGENT_PID
+        process.env.SSH_AUTH_SOCK = envVars.SSH_AUTH_SOCK
+        process.env.SSH_AGENT_PID = envVars.SSH_AGENT_PID
 
-      console.log("SSH agent started successfully")
+        console.log("New SSH agent started successfully")
+      }
+
+      // Check if any identities are already added
+      console.log("Checking for existing identities...")
+      try {
+        const listResult = await $`ssh-add -l`
+        console.log("Identities already present in the agent.")
+      } catch (error: any) {
+        if (error.stdout.includes("The agent has no identities.")) {
+          console.log(
+            "No identities found in the agent. Adding default identity...",
+          )
+          // Add the SSH key with passphrase
+          await $`ssh-add ~/.ssh/id_rsa` // This will prompt for the passphrase once
+        } else {
+          throw error
+        }
+      }
     } catch (error) {
-      console.error("Error starting SSH agent:", error)
-      throw error
-    }
-
-    // Add SSH key
-    try {
-      await $`ssh-add`
-    } catch (error) {
-      console.error("Error adding SSH key:", error)
+      console.error("Error with SSH agent:", error)
       throw error
     }
 
