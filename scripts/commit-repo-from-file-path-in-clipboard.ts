@@ -4,8 +4,11 @@ import {
   getClipboard,
 } from "@nikiv/ts-utils"
 
-// TODO: always prompts for pass, annoying, not sure how to make it not ask for pass
-// there is attempt to do it below with ssh but that is failing even more
+const args = Bun.argv
+const option = args[2]
+
+if (option) {
+}
 
 // assumes clipboard has file path that is inside some .git folder
 async function main() {
@@ -20,6 +23,10 @@ async function main() {
 }
 
 main()
+
+// TODO: below todo, no longer applicable I think
+// TODO: always prompts for pass, annoying, not sure how to make it not ask for pass
+// there is attempt to do it below with ssh but that is failing even more
 
 // TODO: below code is attempt to make it work with ssh and not ask for pass, failing..
 

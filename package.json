@@ -12,10 +12,10 @@
     "node": "tput reset && tsx run.ts"
   },
   "dependencies": {
-    "@nikiv/ts-utils": "link:@nikiv/ts-utils",
     "@clack/core": "^0.3.4",
     "@clack/prompts": "^0.7.0",
     "@libsql/client": "^0.5.6",
+    "@nikiv/ts-utils": "link:@nikiv/ts-utils",
     "@nozbe/microfuzz": "^1.0.0",
     "@orama/orama": "^2.0.11",
     "@swan-io/boxed": "^2.3.0",
@@ -35,6 +35,7 @@
     "magic-regexp": "^0.8.0",
     "markdown-link-extractor": "^4.0.2",
     "micromark": "^4.0.0",
+    "ollama": "^0.5.6",
     "open": "^10.1.0",
     "osascript-tag": "^0.1.2",
     "prettier": "^3.2.5",
