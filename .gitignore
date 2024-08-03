@@ -12,7 +12,6 @@ archive.ts
 output.md
 redis/*
 wiki/*
-bun.lockb
 seed
 packages/git
 packages/other
@@ -22,7 +21,7 @@ dist
 run.ts
 wip.json
 wip.md
-bun.lockb
 *.gz
 packages/ts-utils
 .flox
+past-*
