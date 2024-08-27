@@ -13,8 +13,8 @@ output.md
 redis/*
 wiki/*
 seed
-packages/git
-packages/other
+lib/git
+lib/other
 deno
 docs/private-todo.md
 dist
@@ -22,6 +22,6 @@ run.ts
 wip.json
 wip.md
 *.gz
-packages/ts-utils
+lib/ts-utils
 .flox
 past-*

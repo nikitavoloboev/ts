@@ -8,7 +8,7 @@
     "build": "tsup lib/file.ts --format esm --dts",
     "test:watch": "bun test --watch",
     "test:scripts": "bun test --watch scripts/scripts.test.ts",
-    "test:util": "bun test --watch packages/util/src/util.test.ts",
+    "test:util": "bun test --watch lib/util/src/util.test.ts",
     "node": "tput reset && tsx run.ts"
   },
   "dependencies": {

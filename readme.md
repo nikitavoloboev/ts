@@ -4,18 +4,18 @@
 
 ## Setup
 
-[Bun](https://bun.sh) is used to run/install things.
+Using [Bun](https://bun.sh).
 
-It requires [ts-utils](https://github.com/nikitavoloboev/ts-utils) to be present in packages.
+Currently requires [ts-utils](https://github.com/nikitavoloboev/ts-utils) to be present in `lib` folder (will be improved, PRs welcome).
 
 ```
-mkdir packages && cd packages && git clone https://github.com/nikitavoloboev/ts-utils && cd ..
+mkdir lib && cd lib && git clone https://github.com/nikitavoloboev/ts-utils && cd ..
 bun i
 ```
 
 ## Run
 
-I use this repo to test TS code fast. Create a file `run.ts` in root, if you want to be able to run below command.
+I use this repo to test TS code fast.
 
 ```
 bun dev
@@ -23,15 +23,9 @@ bun dev
 
 Runs: `tput reset && bun --watch run.ts`
 
-## Tests
+## Libraries
 
-```
-bun test:watch
-```
-
-## Packages
-
-Currently I only publish [TS Utils package](https://github.com/nikitavoloboev/ts-utils).
+I publish [TS Utils lib](https://github.com/nikitavoloboev/ts-utils).
 
 ## Contribute
 
