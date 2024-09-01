@@ -27,6 +27,10 @@ Runs: `tput reset && bun --watch run.ts`
 
 I publish [TS Utils lib](https://github.com/nikitavoloboev/ts-utils).
 
+## Scripts
+
+Mostly use ts and this repo for scripts. [scripts/get-git-project-of-path.ts](scripts/get-git-project-of-path.ts) is good example. I then run them with [KM](https://www.keyboardmaestro.com/main/).
+
 ## Contribute
 
 Always open to useful ideas or fixes in form of issues or PRs.
