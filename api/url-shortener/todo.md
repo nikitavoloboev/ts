@@ -1,3 +1,0 @@
-- don't hard code my own values in the code
-  - so the service can be easily used by others
-  - perhaps allow supplying a JSON config with routes + destinations defined?
