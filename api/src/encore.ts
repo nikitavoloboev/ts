@@ -1,3 +1,4 @@
+// used for testing out encore-ts apis
 import { api } from "encore.dev/api"
 
 // Welcome to Encore!
@@ -12,17 +13,18 @@ import { api } from "encore.dev/api"
 //
 //	curl http://localhost:4000/hello/World
 //
-export const get = api(
-  { expose: true, method: "GET", path: "/hello/:name" },
-  async ({ name }: { name: string }): Promise<Response> => {
-    const msg = `Hello ${name}!`
-    return { message: msg }
-  },
-)
+// TODO: for some reason, if I have this it will crash
+// export const get = api(
+//   { expose: true, method: "GET", path: "/hello/:name" },
+//   async ({ name }: { name: string }): Promise<Response> => {
+//     const msg = `Hello ${name}!`
+//     return { message: msg }
+//   },
+// )
 
-interface Response {
-  message: string
-}
+// interface Response {
+//   message: string
+// }
 
 // ==================================================================
 
