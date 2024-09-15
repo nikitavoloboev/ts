@@ -12,7 +12,7 @@ const args = Bun.argv
 console.log(await main())
 async function main() {
   const fileName = getCurrentMonth()!.toLocaleLowerCase() + `.json`
-  const filePath = `~/data/links/${fileName}`
+  const filePath = `~/data/private/links/${fileName}`
   let newLink
   switch (args[2]) {
     case "top":
