@@ -18,7 +18,6 @@ lib/other
 deno
 docs/private-todo.md
 dist
-run.ts
 wip.json
 wip.md
 *.gz
