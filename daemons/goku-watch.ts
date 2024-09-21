@@ -1,12 +1,22 @@
 import Watcher from "watcher"
 import { $ } from "bun"
+import path from "node:path"
+import os from "node:os"
 
-const watcher = new Watcher("/Users/nikiv/src/config/karabiner")
+async function main() {
+  const watchPath = path.join(os.homedir(), "src/config/karabiner")
+  const watcher = new Watcher(watchPath)
+  watcher.on("change", async (filePath) => {
+    const targetFile = path.join(
+      os.homedir(),
+      "src/config/karabiner/karabiner.edn",
+    )
+    if (filePath === targetFile) {
+      // TODO: if error, show notification
+      // on success it says `Done!`, can check for that?
+      await $`/opt/homebrew/bin/goku`
+    }
+  })
+}
 
-watcher.on("change", async (filePath) => {
-  if (filePath === "/Users/nikiv/src/config/karabiner/karabiner.edn") {
-    // TODO: if error, show notification
-    // on success it says `Done!`, can check for that?
-    await $`/opt/homebrew/bin/goku`
-  }
-})
+await main()
