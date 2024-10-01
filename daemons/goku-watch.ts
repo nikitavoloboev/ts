@@ -4,9 +4,9 @@ import path from "node:path"
 import os from "node:os"
 
 async function main() {
-  const watchPath = path.join(os.homedir(), "src/config/karabiner")
-  const watcher = new Watcher(watchPath)
-  watcher.on("change", async (filePath) => {
+  const gokuConfigPath = path.join(os.homedir(), "src/config/karabiner")
+  const gokuConfigPathWatcher = new Watcher(gokuConfigPath)
+  gokuConfigPathWatcher.on("change", async (filePath) => {
     const targetFile = path.join(
       os.homedir(),
       "src/config/karabiner/karabiner.edn",
