@@ -1,14 +1,16 @@
-// import clipboardy from "clipboardy"
-// import { ChatGPTUnofficialProxyAPI } from "chatgpt"
+import OpenAI from "openai"
 
-// const clipboard = clipboardy.readSync()
-// console.log(clipboard)
+const client = new OpenAI({
+  apiKey: process.env["OPENAI_API_KEY"],
+})
 
-// const api = new ChatGPTUnofficialProxyAPI({
-//   accessToken: process.env.OPENAI_ACCESS_TOKEN as string,
-// })
+async function main() {
+  const chatCompletion = await client.chat.completions.create({
+    messages: [{ role: "user", content: "What is capital of France?" }],
+    model: "gpt-3.5-turbo",
+  })
+  const responseMessage = chatCompletion?.choices[0]?.message
+  console.log(responseMessage?.content)
+}
 
-// const res = await api.sendMessage("Explain " + clipboard)
-// console.log(res.text)
-
-// TODO: try https://regexp.dev/getting-started/usage
+await main()
