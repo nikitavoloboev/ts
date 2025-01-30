@@ -12,9 +12,6 @@
     "skipLibCheck": true,
     "noEmit": true,
     "allowJs": true,
-    "paths": {
-      "@grafbase/generated": ["./api/grafbase/generated"]
-    },
     "allowImportingTsExtensions": true,
     "moduleDetection": "force",
     "composite": true,
