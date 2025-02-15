@@ -20,4 +20,8 @@ Currently use this repo to run [scripts](scripts) or [daemons](daemons).
 
 Run `.ts` files with `bun --watch`.
 
+## Other
+
+Do TS exploration [here](https://github.com/nikitavoloboev/ts-test).
+
 [![Discord](https://go.nikiv.dev/badge-discord)](https://go.nikiv.dev/discord) [![X](https://go.nikiv.dev/badge-x)](https://x.com/nikitavoloboev) [![nikiv.dev](https://go.nikiv.dev/badge-nikiv)](https://nikiv.dev)
