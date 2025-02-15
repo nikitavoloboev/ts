@@ -2,9 +2,7 @@
 
 ## Setup
 
-Using [Bun](https://bun.sh).
-
-It relies on [ts-utils](https://github.com/nikitavoloboev/ts-utils) to be linked.
+Relies on [ts-utils](https://github.com/nikitavoloboev/ts-utils) to be linked for some things to work.
 
 Clone it, then run `bun link` in `ts-utils`. Then run `bun link @nikiv/ts-utils` inside `ts` repo.
 
@@ -18,7 +16,7 @@ bun i
 
 Currently use this repo to run [scripts](scripts) or [daemons](daemons).
 
-Run `.ts` files with `bun --watch`.
+Can run `.ts` files with `bun --watch`.
 
 ## Other
 
