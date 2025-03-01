@@ -14,7 +14,7 @@ async function main() {
     )
     if (filePath === targetFile) {
       // TODO: if error, show notification
-      await $`/opt/homebrew/bin/goku`
+      await $`${os.homedir()}/bin/goku`
     }
   })
   // TODO: has issues crushing
