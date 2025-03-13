@@ -17,6 +17,7 @@
   "dependencies": {
     "@clack/core": "^0.4.1",
     "@clack/prompts": "^0.10.0",
+    "@google/genai": "^0.3.1",
     "@libsql/client": "^0.14.0",
     "@nikiv/ts-utils": "link:@nikiv/ts-utils",
     "@nozbe/microfuzz": "^1.0.0",
