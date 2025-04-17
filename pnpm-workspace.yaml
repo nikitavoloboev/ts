@@ -1,0 +1,7 @@
+packages:
+  - "packages/*"
+
+onlyBuiltDependencies:
+  - aws-sdk
+  - esbuild
+  - sqlite3

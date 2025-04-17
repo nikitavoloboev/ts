@@ -2,21 +2,15 @@
 
 ## Setup
 
-Relies on [ts-utils](https://github.com/nikitavoloboev/ts-utils) to be linked for some things to work.
-
-Clone it, then run `bun link` in `ts-utils`. Then run `bun link @nikiv/ts-utils` inside `ts` repo.
-
-Then:
-
 ```
-bun i
+pnpm i
 ```
 
 ## Run
 
-Currently use this repo to run [scripts](scripts) or [daemons](daemons).
-
 Can run `.ts` files with `bun --watch`.
+
+See [scripts](scripts), [daemons](daemons) or [packages](packages).
 
 ## Other
 
