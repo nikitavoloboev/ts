@@ -3,7 +3,7 @@
 ## Setup
 
 ```
-pnpm i
+bun i
 ```
 
 ## Run
@@ -14,7 +14,7 @@ See [scripts](scripts), [daemons](daemons) or [packages](packages).
 
 ## Other
 
-I wrap a lot of ts functionality in [cli](https://github.com/nikitavoloboev/cli-ts) & [server](https://github.com/nikitavoloboev/api-ts-hono).
+I wrap some of these ts functions in [cli](https://github.com/nikitavoloboev/cli-ts) & [api](https://github.com/nikitavoloboev/api-ts-hono).
 
 More ts exploration [here](https://github.com/nikitavoloboev/ts-test).
 

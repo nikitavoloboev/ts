@@ -60,5 +60,8 @@
   "prettier": {
     "semi": false
   },
-  "type": "module"
+  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ]
 }
