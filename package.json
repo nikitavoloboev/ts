@@ -15,7 +15,7 @@
   "dependencies": {
     "@clack/core": "^0.5.0",
     "@clack/prompts": "^0.11.0",
-    "@google/genai": "^1.4.0",
+    "@google/genai": "^1.5.1",
     "@libsql/client": "^0.15.9",
     "@nikiv/ts-utils": "workspace:*",
     "@nozbe/microfuzz": "^1.0.0",
@@ -23,13 +23,13 @@
     "@swan-io/boxed": "^3.2.0",
     "@types/node": "^24.0.1",
     "@upstash/redis": "^1.35.0",
-    "alchemy": "^0.27.0",
+    "alchemy": "^0.28.0",
     "arktype": "^2.1.20",
     "chatgpt": "^5.2.5",
     "citty": "^0.1.6",
     "clipboardy": "^4.0.0",
     "dotenv": "^16.5.0",
-    "effect": "^3.16.5",
+    "effect": "^3.16.7",
     "execa": "^9.6.0",
     "fs-nano-store": "^0.3.1",
     "gray-matter": "^4.0.3",
@@ -45,7 +45,7 @@
     "prettier": "^3.5.3",
     "simple-git": "^3.28.0",
     "sqlite3": "^5.1.7",
-    "sst": "^3.17.4",
+    "sst": "^3.17.5",
     "telegraf": "^4.16.3",
     "tinybase": "^6.2.1",
     "tsup": "^8.5.0",
@@ -54,7 +54,7 @@
     "zx": "^8.5.5"
   },
   "devDependencies": {
-    "bun-types": "1.2.15"
+    "bun-types": "1.2.16"
   },
   "prettier": {
     "semi": false
