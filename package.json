@@ -15,6 +15,8 @@
   "dependencies": {
     "@clack/core": "^0.5.0",
     "@clack/prompts": "^0.11.0",
+    "@effect/cli": "^0.66.1",
+    "@effect/platform-node": "^0.88.3",
     "@google/genai": "^1.5.1",
     "@libsql/client": "^0.15.9",
     "@nikiv/ts-utils": "workspace:*",

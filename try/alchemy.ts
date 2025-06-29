@@ -1,3 +1,1 @@
-async function main() {}
-
-main()
+export async function tryAlchemy() {}
