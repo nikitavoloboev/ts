@@ -26,3 +26,5 @@ past/
 *.log
 private
 .blade
+
+ui/

@@ -12,7 +12,7 @@ Can run `.ts` files with `bun --watch`.
 
 See [scripts](scripts), [daemons](daemons) or [packages](packages).
 
-## Other
+### 🖤
 
 I wrap some of these ts functions in [cli](https://github.com/nikitavoloboev/cli-ts) & [api](https://github.com/nikitavoloboev/api-ts-hono).
 
