@@ -1,20 +1,18 @@
 # TS
 
-> TS tools, libraries and other code
-
 ## Flow
 
 > CLI to do things fast
 
 See [cli/flow](cli/flow).
 
-## Other code
+## Notes
 
-There is other code here like packages or me trying some code out.
+- there is other code here like packages or me trying some code out
 
 ## Contributing
 
-Any PR to improve is welcome. I do most of the dev with [codex](https://github.com/openai/codex) & hand writing code with [Cursor](https://cursor.com). But I would love good **working** & **useful** patches (ideally).
+Any PR to improve is welcome. [codex](https://github.com/openai/codex) & [cursor](https://cursor.com) are nice for dev. Great **working** & **useful** patches are most appreciated (ideally).
 
 ### 🖤
 
