@@ -1,0 +1,69 @@
+{
+  "name": "ts",
+  "scripts": {
+    "s": "bun --watch scripts/i.ts",
+    "try": "bun --watch scripts/try.ts",
+    "watch": "bun cmd.ts run",
+    "dev": "bun --watch run.ts",
+    "cmd": "bun --watch cmd.ts",
+    "build": "tsup lib/file.ts --format esm --dts",
+    "test:watch": "bun test --watch",
+    "test:scripts": "bun test --watch scripts/scripts.test.ts",
+    "test:util": "bun test --watch lib/util/src/util.test.ts",
+    "node": "tput reset && tsx run.ts"
+  },
+  "dependencies": {
+    "@clack/core": "^0.5.0",
+    "@clack/prompts": "^0.11.0",
+    "@effect/cli": "^0.66.11",
+    "@effect/platform-node": "^0.89.3",
+    "@google/genai": "^1.9.0",
+    "@libsql/client": "^0.15.9",
+    "@nikiv/ts-utils": "workspace:*",
+    "@nozbe/microfuzz": "^1.0.0",
+    "@orama/orama": "^3.1.10",
+    "@swan-io/boxed": "^3.2.0",
+    "@types/node": "^24.0.12",
+    "@upstash/redis": "^1.35.1",
+    "alchemy": "^0.45.1",
+    "arktype": "^2.1.20",
+    "chatgpt": "^5.2.5",
+    "citty": "^0.1.6",
+    "clipboardy": "^4.0.0",
+    "dotenv": "^17.2.0",
+    "effect": "^3.16.12",
+    "execa": "^9.6.0",
+    "fs-nano-store": "^0.3.1",
+    "gray-matter": "^4.0.3",
+    "jest-fixtures": "^0.6.0",
+    "jszip": "^3.10.1",
+    "magic-regexp": "^0.10.0",
+    "markdown-link-extractor": "^4.0.2",
+    "micromark": "^4.0.2",
+    "ollama": "^0.5.16",
+    "open": "^10.1.2",
+    "openai": "^5.8.3",
+    "osascript-tag": "^0.1.2",
+    "prettier": "^3.6.2",
+    "simple-git": "^3.28.0",
+    "sqlite3": "^5.1.7",
+    "sst": "^3.17.10",
+    "telegraf": "^4.16.3",
+    "tinybase": "^6.3.1",
+    "ts-pattern": "^5.7.1",
+    "tsup": "^8.5.0",
+    "ufo": "^1.6.1",
+    "watcher": "^2.3.1",
+    "zx": "^8.6.2"
+  },
+  "devDependencies": {
+    "bun-types": "1.2.18"
+  },
+  "prettier": {
+    "semi": false
+  },
+  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ]
+}

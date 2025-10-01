@@ -1,0 +1,21 @@
+version: "3"
+
+vars:
+  bin_dir: "{{.HOME}}/bin"
+  bin_name: "flow-ts"
+
+tasks:
+  run:
+    desc: Run the flow-ts CLI with Bun (passes CLI args through).
+    cmds:
+      - |
+        set -euo pipefail
+        bun ./src/main.ts {{.CLI_ARGS}}
+
+  publish:
+    desc: Install the flow-ts CLI script to ~/bin/flow-ts using Bun.
+    cmds:
+      - |
+        set -euo pipefail
+        mkdir -p "{{.bin_dir}}"
+        FLOW_TS_BIN_NAME="{{.bin_name}}" bun run publish
