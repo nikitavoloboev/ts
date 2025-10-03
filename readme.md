@@ -1,14 +1,16 @@
 # TS
 
-## Flow
+## Setup
 
-> CLI to do things fast
+Install [Task](https://taskfile.dev/docs/installation). Then run `task setup` & follow instructions until it says `✔️ you are setup`.
 
-See [cli/flow](cli/flow).
+## Run
 
-## Notes
+Run `task` to see all possible commands.
 
-- there is other code here like packages or me trying some code out
+## Flow CLI
+
+[flow](https://github.com/nikitavoloboev/flow) repo explains purpose of flow well. See [cli/flow](cli/flow) for its code.
 
 ## Contributing
 

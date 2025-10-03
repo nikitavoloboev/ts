@@ -2,24 +2,6 @@
 
 > CLI to do things fast
 
-## Setup
-
-This project installs its executable into `~/bin`, so create that directory and ensure it is on your `$PATH` first.
-
-Clone the repository, install [Taskfile](https://taskfile.dev), then run:
-
-```
-task publish
-```
-
-`task publish` uses Bun to generate `~/bin/flow-ts`, a small shim that imports `src/main.ts`. After installing you can confirm things are wired up with:
-
-```
-flow-ts --version
-```
-
-If you change the CLI, re-run `task publish` to refresh the shim.
-
 ## Usage
 
 Running the command without arguments prints the built-in help:
@@ -72,11 +54,3 @@ Body content in Markdown...
 ```
 
 You can supply `cc`, `bcc`, and `replyTo` fields in the front matter or via `RESEND_CC`, `RESEND_BCC`, and `RESEND_REPLY_TO`. CLI flags (`--from`, `--to`, `--subject`) and their corresponding environment variables override the template values when present.
-
-## Contributing
-
-PRs are always welcome. I mainly work in [codex](https://github.com/openai/codex) and [Cursor](https://cursor.com), but I'm happy to review **working**, **useful** changes that make the CLI better.
-
-### 🖤
-
-[![Discord](https://go.nikiv.dev/badge-discord)](https://go.nikiv.dev/discord) [![X](https://go.nikiv.dev/badge-x)](https://x.com/nikitavoloboev) [![nikiv.dev](https://go.nikiv.dev/badge-nikiv)](https://nikiv.dev)
